@@ -1,4 +1,22 @@
 {
+  "7dd0a1b94839": {
+    "key": "7dd0a1b94839",
+    "url": "https://docs.qualys.com/en/ps/release-notes/ps/release_2_3.htm",
+    "title": "Network Passive Sensor 2.3",
+    "tags": [
+      "PNS"
+    ],
+    "month_label": "April 2026"
+  },
+  "c2a394fc1a5b": {
+    "key": "c2a394fc1a5b",
+    "url": "https://docs.qualys.com/en/portal-cloud-platform-rn/cloud_platform/release_3_23_2.htm",
+    "title": "Enterprise TruRisk\u2122 Platform 3.23.2",
+    "tags": [
+      "Admin"
+    ],
+    "month_label": "April 2026"
+  },
   "0f08d7b6f604": {
     "key": "0f08d7b6f604",
     "url": "https://docs.qualys.com/en/cs-sensor/release-notes/cluster_sensor/release_1_5_0.htm",
@@ -20,7 +38,7 @@
   "edd6d9bc89a6": {
     "key": "edd6d9bc89a6",
     "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/linux_arm/release_6_1_2.htm",
-    "title": "Cloud Agent Linux ARM 6.1.1",
+    "title": "Cloud Agent Linux ARM 6.1.2",
     "tags": [
       "CA"
     ],
@@ -2840,15 +2858,6 @@
     ],
     "month_label": "May 2025"
   },
-  "7e5530369669": {
-    "key": "7e5530369669",
-    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/aws_bottlerocket/release_5_0_1_43.htm",
-    "title": "Cloud Agent AWS Bottlerocket 5.0.1-43",
-    "tags": [
-      "CA"
-    ],
-    "month_label": "May 2025"
-  },
   "9e84321e9062": {
     "key": "9e84321e9062",
     "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/linux_coreos/release_4_2_5_11.htm",
@@ -2874,6 +2883,15 @@
     "tags": [
       "CSAM",
       "GAV"
+    ],
+    "month_label": "May 2025"
+  },
+  "7e5530369669": {
+    "key": "7e5530369669",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/aws_bottlerocket/release_5_0_1_43.htm",
+    "title": "Cloud Agent AWS Bottlerocket 5.0.1-43",
+    "tags": [
+      "CA"
     ],
     "month_label": "May 2025"
   },
