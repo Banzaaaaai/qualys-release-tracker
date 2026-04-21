@@ -1,4 +1,22 @@
 {
+  "eca020df5fc3": {
+    "key": "eca020df5fc3",
+    "url": "https://docs.qualys.com/en/fim/release-notes/file_integrity_monitoring/release_4_9_1.htm",
+    "title": "File Integrity Monitoring  4.9.1",
+    "tags": [
+      "FIM"
+    ],
+    "month_label": "April 2026"
+  },
+  "62699158598c": {
+    "key": "62699158598c",
+    "url": "https://docs.qualys.com/en/car/release-notes/car/release_2_8_2.htm",
+    "title": "Custom Assessment and Remediation 2.8.2",
+    "tags": [
+      "CAR"
+    ],
+    "month_label": "April 2026"
+  },
   "7dd0a1b94839": {
     "key": "7dd0a1b94839",
     "url": "https://docs.qualys.com/en/ps/release-notes/ps/release_2_3.htm",
@@ -2867,6 +2885,15 @@
     ],
     "month_label": "May 2025"
   },
+  "7e5530369669": {
+    "key": "7e5530369669",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/aws_bottlerocket/release_5_0_1_43.htm",
+    "title": "Cloud Agent AWS Bottlerocket 5.0.1-43",
+    "tags": [
+      "CA"
+    ],
+    "month_label": "May 2025"
+  },
   "f4822ad5c7d5": {
     "key": "f4822ad5c7d5",
     "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/gcp_cos/release_5_0_1_41.htm",
@@ -2883,15 +2910,6 @@
     "tags": [
       "CSAM",
       "GAV"
-    ],
-    "month_label": "May 2025"
-  },
-  "7e5530369669": {
-    "key": "7e5530369669",
-    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/aws_bottlerocket/release_5_0_1_43.htm",
-    "title": "Cloud Agent AWS Bottlerocket 5.0.1-43",
-    "tags": [
-      "CA"
     ],
     "month_label": "May 2025"
   },
