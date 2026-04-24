@@ -1,4 +1,22 @@
 {
+  "08b78d47e3e1": {
+    "key": "08b78d47e3e1",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/linux_intel/release_7_4.htm",
+    "title": "Cloud Agent Linux x86_64 7.4",
+    "tags": [
+      "CA"
+    ],
+    "month_label": "April 2026"
+  },
+  "f516abf1249d": {
+    "key": "f516abf1249d",
+    "url": "https://docs.qualys.com/en/vmdr-ot/release-notes/vmdr-ot/release_1_6.htm",
+    "title": "VMDR OT 1.6",
+    "tags": [
+      "VMDR OT"
+    ],
+    "month_label": "April 2026"
+  },
   "eca020df5fc3": {
     "key": "eca020df5fc3",
     "url": "https://docs.qualys.com/en/fim/release-notes/file_integrity_monitoring/release_4_9_1.htm",
