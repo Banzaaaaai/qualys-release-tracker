@@ -5654,9 +5654,9 @@
     ],
     "month_label": "April 2024"
   },
-  "828919885d39": {
-    "key": "828919885d39",
-    "url": "https://docs.qualys.com/en/conn/release-notes/connector/release_2.2.htm",
+  "bb682c30c80e": {
+    "key": "bb682c30c80e",
+    "url": "https://docs.qualys.com/en/conn/release-notes/connector/release_2_2.htm",
     "title": "Connector 2.2",
     "tags": [
       "Conn"
@@ -5673,9 +5673,9 @@
     ],
     "month_label": "April 2024"
   },
-  "e10788180690": {
-    "key": "e10788180690",
-    "url": "https://docs.qualys.com/en/tc/release-notes/totalcloud/release_2.9.htm",
+  "3562f665d477": {
+    "key": "3562f665d477",
+    "url": "https://docs.qualys.com/en/tc/release-notes/totalcloud/release_2_9.htm",
     "title": "TotalCloud 2.9",
     "tags": [
       "TC"
@@ -5762,9 +5762,9 @@
     ],
     "month_label": "March 2024"
   },
-  "759354995279": {
-    "key": "759354995279",
-    "url": "https://docs.qualys.com/en/cs-sensor/release-notes/cs_sensor/release_132.htm",
+  "2c66ed1a2e6b": {
+    "key": "2c66ed1a2e6b",
+    "url": "https://docs.qualys.com/en/cs-sensor/release-notes/cs_sensor/release_1.32.htm",
     "title": "Container Security Sensor 1.32",
     "tags": [
       "CS"
@@ -5916,9 +5916,9 @@
     ],
     "month_label": "February 2024"
   },
-  "a0694e5bd5ee": {
-    "key": "a0694e5bd5ee",
-    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/Release_10.25.3.htm",
+  "21436ed33d93": {
+    "key": "21436ed33d93",
+    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10.25.3.htm",
     "title": "Cloud Platform 10.25.3",
     "tags": [
       "PC",
@@ -5946,9 +5946,9 @@
     ],
     "month_label": "February 2024"
   },
-  "06b760e64ceb": {
-    "key": "06b760e64ceb",
-    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/Release_10.25.4.htm",
+  "314e3c858f59": {
+    "key": "314e3c858f59",
+    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10.25.4.htm",
     "title": "Cloud Platform 10.25.4",
     "tags": [
       "PC",
