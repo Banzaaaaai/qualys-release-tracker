@@ -1,4 +1,14 @@
 {
+  "6c69b1baf350": {
+    "key": "6c69b1baf350",
+    "url": "https://docs.qualys.com/en/pm/release-notes/patch_management/release_3_14.htm",
+    "title": "Patch Management Release 3.14",
+    "tags": [
+      "ISL",
+      "PM"
+    ],
+    "month_label": "May 2026"
+  },
   "08b78d47e3e1": {
     "key": "08b78d47e3e1",
     "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/linux_intel/release_7_4.htm",
