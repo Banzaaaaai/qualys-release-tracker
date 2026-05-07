@@ -9,6 +9,34 @@
     ],
     "month_label": "May 2026"
   },
+  "b516814b9096": {
+    "key": "b516814b9096",
+    "url": "https://docs.qualys.com/en/conn/release-notes/connector/release_2_17.htm",
+    "title": "Connector Release 2.17",
+    "tags": [
+      "Conn"
+    ],
+    "month_label": "May 2026"
+  },
+  "fe3e3515d15f": {
+    "key": "fe3e3515d15f",
+    "url": "https://docs.qualys.com/en/tc/release-notes/totalcloud/release_2_24.htm",
+    "title": "TotalCloud Release 2.24",
+    "tags": [
+      "TC"
+    ],
+    "month_label": "May 2026"
+  },
+  "1b2009950848": {
+    "key": "1b2009950848",
+    "url": "https://docs.qualys.com/en/tc/release-notes/totalcloud/release_2_24_api.htm",
+    "title": "TotalCloud Release 2.24 API",
+    "tags": [
+      "API",
+      "TC"
+    ],
+    "month_label": "May 2026"
+  },
   "08b78d47e3e1": {
     "key": "08b78d47e3e1",
     "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/linux_intel/release_7_4.htm",
