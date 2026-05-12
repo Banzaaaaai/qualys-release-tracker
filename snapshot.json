@@ -1,4 +1,25 @@
 {
+  "6cf2e5c26aad": {
+    "key": "6cf2e5c26aad",
+    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10_38_3_api.htm",
+    "title": "Enterprise TruRisk\u2122 Platform Release 10.38.3 API",
+    "tags": [
+      "API",
+      "PC",
+      "VM"
+    ],
+    "month_label": "May 2026"
+  },
+  "30594463121f": {
+    "key": "30594463121f",
+    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10_38_3.htm",
+    "title": "Enterprise TruRisk\u2122 Platform Release 10.38.3",
+    "tags": [
+      "PC",
+      "VM"
+    ],
+    "month_label": "May 2026"
+  },
   "6c69b1baf350": {
     "key": "6c69b1baf350",
     "url": "https://docs.qualys.com/en/pm/release-notes/patch_management/release_3_14.htm",
