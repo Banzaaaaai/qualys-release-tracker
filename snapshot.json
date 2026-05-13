@@ -39,6 +39,17 @@
     ],
     "month_label": "May 2026"
   },
+  "9ebad5d29af1": {
+    "key": "9ebad5d29af1",
+    "url": "https://docs.qualys.com/en/pm/release-notes/patch_management/release_3_14_api.htm",
+    "title": "Patch Management Release 3.14 API",
+    "tags": [
+      "API",
+      "ISL",
+      "PM"
+    ],
+    "month_label": "May 2026"
+  },
   "fe3e3515d15f": {
     "key": "fe3e3515d15f",
     "url": "https://docs.qualys.com/en/tc/release-notes/totalcloud/release_2_24.htm",
@@ -5802,21 +5813,21 @@
     ],
     "month_label": "March 2024"
   },
-  "147416c9e846": {
-    "key": "147416c9e846",
-    "url": "https://docs.qualys.com/en/cs/release-notes/container_security/release_132.htm",
-    "title": "Container Security 1.32",
-    "tags": [
-      "CS"
-    ],
-    "month_label": "March 2024"
-  },
   "38a9a30e2069": {
     "key": "38a9a30e2069",
     "url": "https://cdn2.qualys.com/docs/release-notes/qualys-container-security-1.32-api-release-notes.pdf",
     "title": "Container Security 1.32 API",
     "tags": [
       "API",
+      "CS"
+    ],
+    "month_label": "March 2024"
+  },
+  "147416c9e846": {
+    "key": "147416c9e846",
+    "url": "https://docs.qualys.com/en/cs/release-notes/container_security/release_132.htm",
+    "title": "Container Security 1.32",
+    "tags": [
       "CS"
     ],
     "month_label": "March 2024"
