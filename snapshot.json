@@ -1,4 +1,32 @@
 {
+  "6f54354019e3": {
+    "key": "6f54354019e3",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/gcp_cos/release_5_0_2_18.htm",
+    "title": "Cloud Agent GCP Container Optimized OS 5.0.2-18",
+    "tags": [
+      "CA"
+    ],
+    "month_label": "May 2026"
+  },
+  "931e05baae60": {
+    "key": "931e05baae60",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/aws_bottlerocket/release_5_0_3_27.htm",
+    "title": "Cloud Agent AWS Bottlerocket 5.0.3-27",
+    "tags": [
+      "CA"
+    ],
+    "month_label": "May 2026"
+  },
+  "575106a01b90": {
+    "key": "575106a01b90",
+    "url": "https://docs.qualys.com/en/csam/release-notes/cybersecurity_asset_management/release_3_7_1_1.htm",
+    "title": "Global AssetView/CyberSecurity Asset Management 3.7.1.1",
+    "tags": [
+      "CSAM",
+      "GAV"
+    ],
+    "month_label": "May 2026"
+  },
   "6cf2e5c26aad": {
     "key": "6cf2e5c26aad",
     "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10_38_3_api.htm",
@@ -5813,21 +5841,21 @@
     ],
     "month_label": "March 2024"
   },
+  "147416c9e846": {
+    "key": "147416c9e846",
+    "url": "https://docs.qualys.com/en/cs/release-notes/container_security/release_132.htm",
+    "title": "Container Security 1.32",
+    "tags": [
+      "CS"
+    ],
+    "month_label": "March 2024"
+  },
   "38a9a30e2069": {
     "key": "38a9a30e2069",
     "url": "https://cdn2.qualys.com/docs/release-notes/qualys-container-security-1.32-api-release-notes.pdf",
     "title": "Container Security 1.32 API",
     "tags": [
       "API",
-      "CS"
-    ],
-    "month_label": "March 2024"
-  },
-  "147416c9e846": {
-    "key": "147416c9e846",
-    "url": "https://docs.qualys.com/en/cs/release-notes/container_security/release_132.htm",
-    "title": "Container Security 1.32",
-    "tags": [
       "CS"
     ],
     "month_label": "March 2024"
