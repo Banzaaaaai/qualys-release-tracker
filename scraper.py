@@ -30,8 +30,8 @@ SMTP_PASSWORD = os.getenv("SMTP_PASSWORD", "")
 EMAIL_TO      = os.getenv("EMAIL_TO", "")
 FORCE_NOTIFY  = os.getenv("FORCE_NOTIFY", "false").lower() == "true"
 
-HIGH_PRIORITY_TAGS   = {"VM", "VMDR", "PC", "API", "VMDR OT"}
-MEDIUM_PRIORITY_TAGS = {"CA", "ETM", "CSAM", "GAV", "PM", "EDR", "FIM"}
+HIGH_PRIORITY_TAGS   = {"VM", "VMDR", "PC", "API", "CA", "CSAM", "GAV"}
+MEDIUM_PRIORITY_TAGS = {"VMDR OT", "ETM", "PM", "EDR", "FIM"}
 
 REQUEST_HEADERS = {
     "User-Agent": (
