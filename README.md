@@ -50,11 +50,11 @@ Toggle `force_notify = true` on the first run to verify the email arrives.
 
 ## Priority tiers
 
-| Tier       | Module tags                              |
-|------------|------------------------------------------|
-| 🔴 HIGH    | `VM` `VMDR` `PC` `API` `VMDR OT`        |
-| 🟡 MEDIUM  | `CA` `ETM` `CSAM` `GAV` `PM` `EDR` `FIM`|
-| 🔵 OTHER   | Everything else                          |
+| Tier       | Module tags                                  |
+|------------|----------------------------------------------|
+| 🔴 HIGH    | `VM` `VMDR` `PC` `API` `CA` `CSAM` `GAV`    |
+| 🟡 MEDIUM  | `VMDR OT` `ETM` `PM` `EDR` `FIM`            |
+| 🔵 OTHER   | Everything else                              |
 
 ---
 
