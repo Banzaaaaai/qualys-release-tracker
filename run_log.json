@@ -1,0 +1,12 @@
+[
+  {
+    "timestamp": "2026-05-18T17:20:42+00:00",
+    "status": "success",
+    "new_releases": 3,
+    "total_tracked": 1506,
+    "email_sent": true,
+    "stale_alert": false,
+    "duration_s": 2.3,
+    "error": ""
+  }
+]
