@@ -1,4 +1,14 @@
 {
+  "a52ef8c6c47f": {
+    "key": "a52ef8c6c47f",
+    "url": "https://docs.qualys.com/en/car/release-notes/car/release_2_9.htm",
+    "title": "Custom Assessment and Remediation 2.9",
+    "tags": [
+      "CAR"
+    ],
+    "month_label": "May 2026",
+    "detected_at": "2026-05-22T10:31:06+00:00"
+  },
   "8c6b1ac500bd": {
     "key": "8c6b1ac500bd",
     "url": "https://docs.qualys.com/en/ud/release-notes/unified_dashboard/release_2_13.htm",
@@ -758,20 +768,20 @@
     "month_label": "March 2026",
     "detected_at": "2026-05-18T17:20:41+00:00"
   },
-  "77d2b79e89eb": {
-    "key": "77d2b79e89eb",
-    "url": "https://docs.qualys.com/en/cs-sensor/release-notes/cs_sensor/release_1_41_2.htm",
-    "title": "Container Security Sensor 1.41.2",
+  "bbd83232ead4": {
+    "key": "bbd83232ead4",
+    "url": "https://docs.qualys.com/en/qscanner/release-notes/qscanner/release_4_8_0.htm",
+    "title": "QScanner 4.8.0",
     "tags": [
       "CS"
     ],
     "month_label": "February 2026",
     "detected_at": "2026-05-18T17:20:41+00:00"
   },
-  "bbd83232ead4": {
-    "key": "bbd83232ead4",
-    "url": "https://docs.qualys.com/en/qscanner/release-notes/qscanner/release_4_8_0.htm",
-    "title": "QScanner 4.8.0",
+  "77d2b79e89eb": {
+    "key": "77d2b79e89eb",
+    "url": "https://docs.qualys.com/en/cs-sensor/release-notes/cs_sensor/release_1_41_2.htm",
+    "title": "Container Security Sensor 1.41.2",
     "tags": [
       "CS"
     ],
