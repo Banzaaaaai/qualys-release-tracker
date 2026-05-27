@@ -1,4 +1,28 @@
 {
+  "a9c4b8a36d22": {
+    "key": "a9c4b8a36d22",
+    "url": "https://docs.qualys.com/en/portal-cloud-platform-rn/cloud_platform/release_3_24.htm",
+    "title": "Enterprise TruRisk™ Platform 3.24",
+    "tags": [
+      "CA",
+      "CSAM",
+      "SAQ",
+      "WAS"
+    ],
+    "month_label": "May 2026",
+    "detected_at": "2026-05-27T11:02:57+00:00"
+  },
+  "3b191821f997": {
+    "key": "3b191821f997",
+    "url": "https://docs.qualys.com/en/portal-cloud-platform-rn/cloud_platform/release_3_24_api.htm",
+    "title": "Enterprise TruRisk™ Platform 3.24 API",
+    "tags": [
+      "API",
+      "CA"
+    ],
+    "month_label": "May 2026",
+    "detected_at": "2026-05-27T11:02:57+00:00"
+  },
   "a52ef8c6c47f": {
     "key": "a52ef8c6c47f",
     "url": "https://docs.qualys.com/en/car/release-notes/car/release_2_9.htm",
@@ -18,6 +42,17 @@
     ],
     "month_label": "May 2026",
     "detected_at": "2026-05-18T17:20:41+00:00"
+  },
+  "bd2ba52d8a0d": {
+    "key": "bd2ba52d8a0d",
+    "url": "https://docs.qualys.com/en/tas/release-notes/total_app_sec/tas_2_8_was_1_28.htm",
+    "title": "TotalAppSec 2.8 | Web Application Scanning 1.28",
+    "tags": [
+      "TAS",
+      "WAS"
+    ],
+    "month_label": "May 2026",
+    "detected_at": "2026-05-27T11:02:57+00:00"
   },
   "6f54354019e3": {
     "key": "6f54354019e3",
@@ -59,6 +94,37 @@
     ],
     "month_label": "May 2026",
     "detected_at": "2026-05-18T17:20:41+00:00"
+  },
+  "647f18f11eb2": {
+    "key": "647f18f11eb2",
+    "url": "https://docs.qualys.com/en/cs-sensor/release-notes/cs_sensor/release_1_43.htm",
+    "title": "Container Security Sensor 1.43",
+    "tags": [
+      "CS"
+    ],
+    "month_label": "May 2026",
+    "detected_at": "2026-05-27T11:02:57+00:00"
+  },
+  "c95970e8275c": {
+    "key": "c95970e8275c",
+    "url": "https://docs.qualys.com/en/cs/release-notes/container_security/release_1_43.htm",
+    "title": "Container Security 1.43",
+    "tags": [
+      "CS"
+    ],
+    "month_label": "May 2026",
+    "detected_at": "2026-05-27T11:02:57+00:00"
+  },
+  "9c243f6cc7d0": {
+    "key": "9c243f6cc7d0",
+    "url": "https://docs.qualys.com/en/cs/release-notes/container_security/release_1_43_api.htm",
+    "title": "Container Security 1.43 API",
+    "tags": [
+      "API",
+      "CS"
+    ],
+    "month_label": "May 2026",
+    "detected_at": "2026-05-27T11:02:57+00:00"
   },
   "3c0c25e501ff": {
     "key": "3c0c25e501ff",
@@ -608,6 +674,16 @@
     ],
     "month_label": "March 2026",
     "detected_at": "2026-05-18T17:20:41+00:00"
+  },
+  "7baef58508e9": {
+    "key": "7baef58508e9",
+    "url": "https://docs.qualys.com/en/cs-sensor/release-notes/cs_sensor/release_1_42.htm",
+    "title": "Container Security Sensor 1.42",
+    "tags": [
+      "CS"
+    ],
+    "month_label": "March 2026",
+    "detected_at": "2026-05-27T11:02:57+00:00"
   },
   "eb04a9b66767": {
     "key": "eb04a9b66767",
