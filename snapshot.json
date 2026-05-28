@@ -23,6 +23,16 @@
     "month_label": "May 2026",
     "detected_at": "2026-05-27T11:02:57+00:00"
   },
+  "43fbc72706b3": {
+    "key": "43fbc72706b3",
+    "url": "https://docs.qualys.com/en/ta/release-notes/total_ai/release_1_7.htm",
+    "title": "TotalAI 1.7",
+    "tags": [
+      "TA"
+    ],
+    "month_label": "May 2026",
+    "detected_at": "2026-05-28T11:04:52+00:00"
+  },
   "a52ef8c6c47f": {
     "key": "a52ef8c6c47f",
     "url": "https://docs.qualys.com/en/car/release-notes/car/release_2_9.htm",
