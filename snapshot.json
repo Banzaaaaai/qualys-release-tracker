@@ -1,4 +1,24 @@
 {
+  "cdbb3653e146": {
+    "key": "cdbb3653e146",
+    "url": "https://docs.qualys.com/en/vmdr-ot/release-notes/vmdr-ot/release_1_6_1.htm",
+    "title": "VMDR OT 1.6.1",
+    "tags": [
+      "VMDR OT"
+    ],
+    "month_label": "May 2026",
+    "detected_at": "2026-05-30T09:28:40+00:00"
+  },
+  "ea70147222e0": {
+    "key": "ea70147222e0",
+    "url": "https://docs.qualys.com/en/ps/release-notes/ps/release_2_4.htm",
+    "title": "Network Passive Sensor 2.4",
+    "tags": [
+      "PNS"
+    ],
+    "month_label": "May 2026",
+    "detected_at": "2026-05-30T09:28:40+00:00"
+  },
   "312d40f2a4b4": {
     "key": "312d40f2a4b4",
     "url": "https://docs.qualys.com/en/ud/release-notes/unified_dashboard/release_2_13_1.htm",
