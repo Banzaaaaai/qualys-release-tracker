@@ -1,4 +1,14 @@
 {
+  "3560b1b2a71b": {
+    "key": "3560b1b2a71b",
+    "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_vmdr_rn/vmdr/release_2_11.htm",
+    "title": "Vulnerability Management, Detection and Response 2.11",
+    "tags": [
+      "VMDR"
+    ],
+    "month_label": "June 2026",
+    "detected_at": "2026-06-06T09:32:40+00:00"
+  },
   "cdbb3653e146": {
     "key": "cdbb3653e146",
     "url": "https://docs.qualys.com/en/vmdr-ot/release-notes/vmdr-ot/release_1_6_1.htm",
