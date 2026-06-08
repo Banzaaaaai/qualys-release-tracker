@@ -1,4 +1,14 @@
 {
+  "db6be30cad74": {
+    "key": "db6be30cad74",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/linux_arm/release_7_3.htm",
+    "title": "Cloud Agent Linux ARM 7.3",
+    "tags": [
+      "CA"
+    ],
+    "month_label": "June 2026",
+    "detected_at": "2026-06-08T12:13:19+00:00"
+  },
   "3560b1b2a71b": {
     "key": "3560b1b2a71b",
     "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_vmdr_rn/vmdr/release_2_11.htm",
@@ -82,6 +92,26 @@
     ],
     "month_label": "May 2026",
     "detected_at": "2026-05-22T10:31:06+00:00"
+  },
+  "4b5c70ac9956": {
+    "key": "4b5c70ac9956",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/linux_coreos/release_4_2_7_10.htm",
+    "title": "Cloud Agent CoreOS 4.2.7-10",
+    "tags": [
+      "CA"
+    ],
+    "month_label": "May 2026",
+    "detected_at": "2026-06-08T12:13:19+00:00"
+  },
+  "390164a9c14b": {
+    "key": "390164a9c14b",
+    "url": "https://docs.qualys.com/en/ca/release-notes/deep_scan/windows/release_1_7.htm",
+    "title": "Deep Scan Binary for Windows 1.7",
+    "tags": [
+      "CA"
+    ],
+    "month_label": "May 2026",
+    "detected_at": "2026-06-08T12:13:19+00:00"
   },
   "8c6b1ac500bd": {
     "key": "8c6b1ac500bd",
@@ -12083,11 +12113,12 @@
     "month_label": "June 2021",
     "detected_at": "2026-05-18T17:20:41+00:00"
   },
-  "3529320bc6f8": {
-    "key": "3529320bc6f8",
-    "url": "https://www.qualys.com/docs/release-notes/qualys-cloudview-1.16-release-notes.pdf",
+  "ed5133bead9f": {
+    "key": "ed5133bead9f",
+    "url": "https://www.qualys.com/docs/release-notes/qualys-cloudview-1.16-api-release-notes.pdf",
     "title": "CloudView 1.16 API",
     "tags": [
+      "API",
       "CI",
       "CSA",
       "TC"
@@ -12095,12 +12126,11 @@
     "month_label": "June 2021",
     "detected_at": "2026-05-18T17:20:41+00:00"
   },
-  "ed5133bead9f": {
-    "key": "ed5133bead9f",
-    "url": "https://www.qualys.com/docs/release-notes/qualys-cloudview-1.16-api-release-notes.pdf",
+  "3529320bc6f8": {
+    "key": "3529320bc6f8",
+    "url": "https://www.qualys.com/docs/release-notes/qualys-cloudview-1.16-release-notes.pdf",
     "title": "CloudView 1.16 API",
     "tags": [
-      "API",
       "CI",
       "CSA",
       "TC"
