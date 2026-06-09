@@ -9,6 +9,16 @@
     "month_label": "June 2026",
     "detected_at": "2026-06-08T12:13:19+00:00"
   },
+  "8af8336f21fc": {
+    "key": "8af8336f21fc",
+    "url": "https://docs.qualys.com/en/etm/release-notes/etm/release_1_9.htm",
+    "title": "Enterprise TruRisk Management 1.9.0",
+    "tags": [
+      "ETM"
+    ],
+    "month_label": "June 2026",
+    "detected_at": "2026-06-09T10:44:41+00:00"
+  },
   "3560b1b2a71b": {
     "key": "3560b1b2a71b",
     "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_vmdr_rn/vmdr/release_2_11.htm",
@@ -12113,12 +12123,11 @@
     "month_label": "June 2021",
     "detected_at": "2026-05-18T17:20:41+00:00"
   },
-  "ed5133bead9f": {
-    "key": "ed5133bead9f",
-    "url": "https://www.qualys.com/docs/release-notes/qualys-cloudview-1.16-api-release-notes.pdf",
+  "3529320bc6f8": {
+    "key": "3529320bc6f8",
+    "url": "https://www.qualys.com/docs/release-notes/qualys-cloudview-1.16-release-notes.pdf",
     "title": "CloudView 1.16 API",
     "tags": [
-      "API",
       "CI",
       "CSA",
       "TC"
@@ -12126,11 +12135,12 @@
     "month_label": "June 2021",
     "detected_at": "2026-05-18T17:20:41+00:00"
   },
-  "3529320bc6f8": {
-    "key": "3529320bc6f8",
-    "url": "https://www.qualys.com/docs/release-notes/qualys-cloudview-1.16-release-notes.pdf",
+  "ed5133bead9f": {
+    "key": "ed5133bead9f",
+    "url": "https://www.qualys.com/docs/release-notes/qualys-cloudview-1.16-api-release-notes.pdf",
     "title": "CloudView 1.16 API",
     "tags": [
+      "API",
       "CI",
       "CSA",
       "TC"
