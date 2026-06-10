@@ -1,4 +1,14 @@
 {
+  "5c3529e32904": {
+    "key": "5c3529e32904",
+    "url": "https://docs.qualys.com/en/mroc/release-notes/managed_risk_operations_center/release_2_1.htm",
+    "title": "Managed Risk Operations Center 2.1",
+    "tags": [
+      "mROC"
+    ],
+    "month_label": "June 2026",
+    "detected_at": "2026-06-10T11:07:11+00:00"
+  },
   "db6be30cad74": {
     "key": "db6be30cad74",
     "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/linux_arm/release_7_3.htm",
@@ -12,7 +22,7 @@
   "8af8336f21fc": {
     "key": "8af8336f21fc",
     "url": "https://docs.qualys.com/en/etm/release-notes/etm/release_1_9.htm",
-    "title": "Enterprise TruRisk Management 1.9.0",
+    "title": "Enterprise TruRisk Management 1.9",
     "tags": [
       "ETM"
     ],
@@ -126,7 +136,7 @@
   "8c6b1ac500bd": {
     "key": "8c6b1ac500bd",
     "url": "https://docs.qualys.com/en/ud/release-notes/unified_dashboard/release_2_13.htm",
-    "title": "Unified Dashboard 2.13.0",
+    "title": "Unified Dashboard 2.13",
     "tags": [
       "UD"
     ],
@@ -226,6 +236,17 @@
     "month_label": "May 2026",
     "detected_at": "2026-05-18T17:20:41+00:00"
   },
+  "ef3678166fbb": {
+    "key": "ef3678166fbb",
+    "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_pa/pa/release_1_11_api.htm",
+    "title": "Policy Audit Release 1.11 API",
+    "tags": [
+      "API",
+      "PA"
+    ],
+    "month_label": "May 2026",
+    "detected_at": "2026-06-10T11:07:11+00:00"
+  },
   "6cf2e5c26aad": {
     "key": "6cf2e5c26aad",
     "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10_38_3_api.htm",
@@ -248,6 +269,16 @@
     ],
     "month_label": "May 2026",
     "detected_at": "2026-05-18T17:20:41+00:00"
+  },
+  "a02a1d730b0f": {
+    "key": "a02a1d730b0f",
+    "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_pa/pa/release_1_11.htm",
+    "title": "Policy Audit Release 1.11",
+    "tags": [
+      "PA"
+    ],
+    "month_label": "May 2026",
+    "detected_at": "2026-06-10T11:07:11+00:00"
   },
   "6c69b1baf350": {
     "key": "6c69b1baf350",
