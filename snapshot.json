@@ -1,4 +1,15 @@
 {
+  "9b6ec8144a57": {
+    "key": "9b6ec8144a57",
+    "url": "https://docs.qualys.com/en/certview/release-notes/certview/release_4_8_1.htm",
+    "title": "Certificate View 4.8.1",
+    "tags": [
+      "CRA",
+      "CRI"
+    ],
+    "month_label": "June 2026",
+    "detected_at": "2026-06-19T11:45:57+00:00"
+  },
   "5c3529e32904": {
     "key": "5c3529e32904",
     "url": "https://docs.qualys.com/en/mroc/release-notes/managed_risk_operations_center/release_2_1.htm",
