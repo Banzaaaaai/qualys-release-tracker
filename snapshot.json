@@ -10,6 +10,48 @@
     "month_label": "June 2026",
     "detected_at": "2026-06-19T11:45:57+00:00"
   },
+  "76b20a6379f7": {
+    "key": "76b20a6379f7",
+    "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_pa/pa/release_1_12_api.htm",
+    "title": "Policy Audit Release 1.12 API",
+    "tags": [
+      "API",
+      "PA"
+    ],
+    "month_label": "June 2026",
+    "detected_at": "2026-06-24T10:30:01+00:00"
+  },
+  "9628415df1ac": {
+    "key": "9628415df1ac",
+    "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_pa/pa/release_1_12.htm",
+    "title": "Policy Audit Release 1.12",
+    "tags": [
+      "PA"
+    ],
+    "month_label": "June 2026",
+    "detected_at": "2026-06-24T10:30:01+00:00"
+  },
+  "9fba145d0b24": {
+    "key": "9fba145d0b24",
+    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10_39_api.htm",
+    "title": "Enterprise TruRisk™ Platform Release 10.39 API",
+    "tags": [
+      "API",
+      "VM"
+    ],
+    "month_label": "June 2026",
+    "detected_at": "2026-06-24T10:30:01+00:00"
+  },
+  "28d1ec2c9b29": {
+    "key": "28d1ec2c9b29",
+    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10_39.htm",
+    "title": "Enterprise TruRisk™ Platform Release 10.39",
+    "tags": [
+      "VM"
+    ],
+    "month_label": "June 2026",
+    "detected_at": "2026-06-24T10:30:01+00:00"
+  },
   "5c3529e32904": {
     "key": "5c3529e32904",
     "url": "https://docs.qualys.com/en/mroc/release-notes/managed_risk_operations_center/release_2_1.htm",
