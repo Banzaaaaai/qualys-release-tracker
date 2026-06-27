@@ -1,8 +1,39 @@
 {
+  "c5866f908f50": {
+    "key": "c5866f908f50",
+    "url": "https://docs.qualys.com/en/cs-sensor/release-notes/cs_sensor/release_1_44.htm",
+    "title": "Container Security Sensor 1.44",
+    "tags": [
+      "CS"
+    ],
+    "month_label": "June 2026",
+    "detected_at": "2026-06-27T09:36:21+00:00"
+  },
+  "dd75c7ab908b": {
+    "key": "dd75c7ab908b",
+    "url": "https://docs.qualys.com/en/cs/release-notes/container_security/release_1_44_api.htm",
+    "title": "Container Security 1.44 API",
+    "tags": [
+      "API",
+      "CS"
+    ],
+    "month_label": "June 2026",
+    "detected_at": "2026-06-27T09:36:21+00:00"
+  },
+  "a8c57a86a601": {
+    "key": "a8c57a86a601",
+    "url": "https://docs.qualys.com/en/cs/release-notes/container_security/release_1_44.htm",
+    "title": "Container Security 1.44",
+    "tags": [
+      "CS"
+    ],
+    "month_label": "June 2026",
+    "detected_at": "2026-06-27T09:36:21+00:00"
+  },
   "13776a6ccffb": {
     "key": "13776a6ccffb",
     "url": "https://docs.qualys.com/en/ca/release-notes/caps/release_1_0.htm",
-    "title": "Cloud Agent Passive Snesor 1.0",
+    "title": "Cloud Agent Passive Sensor 1.0",
     "tags": [
       "CA"
     ],
