@@ -30,6 +30,16 @@
     "month_label": "June 2026",
     "detected_at": "2026-06-27T09:36:21+00:00"
   },
+  "cee4bee94db5": {
+    "key": "cee4bee94db5",
+    "url": "https://docs.qualys.com/en/saasdr/release-notes/saasdr/release_1_15_0.htm",
+    "title": "SaaS Detection and Response 1.15",
+    "tags": [
+      "SaaS DR"
+    ],
+    "month_label": "June 2026",
+    "detected_at": "2026-07-02T10:17:33+00:00"
+  },
   "7b2d01d797de": {
     "key": "7b2d01d797de",
     "url": "https://docs.qualys.com/en/etm/release-notes/etm/release_1_10.htm",
@@ -39,6 +49,48 @@
     ],
     "month_label": "June 2026",
     "detected_at": "2026-06-29T12:14:10+00:00"
+  },
+  "bf7b68b50ff4": {
+    "key": "bf7b68b50ff4",
+    "url": "https://docs.qualys.com/en/conn/release-notes/connector/release_2_18_api.htm",
+    "title": "Connector Release 2.18 API",
+    "tags": [
+      "API",
+      "Conn"
+    ],
+    "month_label": "June 2026",
+    "detected_at": "2026-07-02T10:17:33+00:00"
+  },
+  "2295dbba74a4": {
+    "key": "2295dbba74a4",
+    "url": "https://docs.qualys.com/en/conn/release-notes/connector/release_2_18.htm",
+    "title": "Connector Release 2.18",
+    "tags": [
+      "Conn"
+    ],
+    "month_label": "June 2026",
+    "detected_at": "2026-07-02T10:17:33+00:00"
+  },
+  "e0849589c5e8": {
+    "key": "e0849589c5e8",
+    "url": "https://docs.qualys.com/en/tc/release-notes/totalcloud/release_2_25_api.htm",
+    "title": "TotalCloud Release 2.25 API",
+    "tags": [
+      "API",
+      "TC"
+    ],
+    "month_label": "June 2026",
+    "detected_at": "2026-07-02T10:17:33+00:00"
+  },
+  "1a534d3decf5": {
+    "key": "1a534d3decf5",
+    "url": "https://docs.qualys.com/en/tc/release-notes/totalcloud/release_2_25.htm",
+    "title": "TotalCloud Release 2.25",
+    "tags": [
+      "TC"
+    ],
+    "month_label": "June 2026",
+    "detected_at": "2026-07-02T10:17:33+00:00"
   },
   "c6d559583f6e": {
     "key": "c6d559583f6e",
