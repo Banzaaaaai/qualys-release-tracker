@@ -50,8 +50,9 @@ STALENESS_DAYS = 7
 ARCHIVE_AFTER_DAYS = 730          # 2 years
 SNAPSHOT_WARN_BYTES = 1_000_000   # 1 MB
 
-HIGH_PRIORITY_TAGS   = {"VM", "VMDR", "PC", "API", "CA", "CSAM", "GAV"}
+HIGH_PRIORITY_TAGS   = {"VM", "VMDR", "PC", "API", "CA", "CSAM", "GAV", "Conn", "TC", "CRA", "CS", "PA"}
 MEDIUM_PRIORITY_TAGS = {"VMDR OT", "ETM", "PM", "EDR", "FIM"}
+LOW_PRIORITY_TAGS    = {"ID"}
 
 REQUEST_HEADERS = {
     "User-Agent": (
@@ -345,6 +346,8 @@ def _priority(tags: list[str]) -> tuple[str, str]:
         return "🔴 HIGH",   "#c0392b"
     if tag_set & MEDIUM_PRIORITY_TAGS:
         return "🟡 MEDIUM", "#d68910"
+    if tag_set & LOW_PRIORITY_TAGS:
+        return "⚪ LOW",        "#4a4a6a"
     return "🔵 OTHER",      "#1a5276"
 
 
