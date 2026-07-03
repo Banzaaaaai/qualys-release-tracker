@@ -1,4 +1,29 @@
 {
+  "c5d2ded9fc6e": {
+    "key": "c5d2ded9fc6e",
+    "url": "https://docs.qualys.com/en/portal-cloud-platform-rn/cloud_platform/release_3_24_1_api.htm",
+    "title": "Enterprise TruRisk™ Platform 3.24.1 API",
+    "tags": [
+      "API",
+      "CA",
+      "CSAM"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-03T10:13:02+00:00"
+  },
+  "7920e59fe977": {
+    "key": "7920e59fe977",
+    "url": "https://docs.qualys.com/en/portal-cloud-platform-rn/cloud_platform/release_3_24_1.htm",
+    "title": "Enterprise TruRisk™ Platform 3.24.1",
+    "tags": [
+      "CA",
+      "CSAM",
+      "TP",
+      "WAS"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-03T10:13:02+00:00"
+  },
   "c5866f908f50": {
     "key": "c5866f908f50",
     "url": "https://docs.qualys.com/en/cs-sensor/release-notes/cs_sensor/release_1_44.htm",
@@ -121,6 +146,16 @@
     ],
     "month_label": "June 2026",
     "detected_at": "2026-06-26T10:33:59+00:00"
+  },
+  "fca60d86cc35": {
+    "key": "fca60d86cc35",
+    "url": "https://docs.qualys.com/en/qgs/release-notes/qgs/release_3_15_1.htm",
+    "title": "Qualys Gateway Service 3.15.1",
+    "tags": [
+      "QGS"
+    ],
+    "month_label": "June 2026",
+    "detected_at": "2026-07-03T10:13:02+00:00"
   },
   "9b6ec8144a57": {
     "key": "9b6ec8144a57",
@@ -530,6 +565,16 @@
     ],
     "month_label": "May 2026",
     "detected_at": "2026-05-18T17:20:41+00:00"
+  },
+  "7f1ecf1706d0": {
+    "key": "7f1ecf1706d0",
+    "url": "https://docs.qualys.com/en/qgs/release-notes/qgs/release_3_15.htm",
+    "title": "Qualys Gateway Service 3.15",
+    "tags": [
+      "QGS"
+    ],
+    "month_label": "April 2026",
+    "detected_at": "2026-07-03T10:13:02+00:00"
   },
   "08b78d47e3e1": {
     "key": "08b78d47e3e1",
