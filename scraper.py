@@ -46,6 +46,7 @@ MONTHLY_DIGEST = os.getenv("MONTHLY_DIGEST", "false").lower() == "true"
 
 # Staleness: alert if no new release detected in this many days
 STALENESS_DAYS = 7
+STALENESS_SILENCE_DAYS = 10          # min days between two staleness alert emails
 # Archive entries older than this many days when snapshot exceeds WARN_BYTES
 ARCHIVE_AFTER_DAYS = 730          # 2 years
 SNAPSHOT_WARN_BYTES = 1_000_000   # 1 MB
@@ -277,6 +278,40 @@ def check_staleness(snapshot: dict) -> bool:
         )
         return True
     return False
+
+
+def last_staleness_alert_age() -> int | None:
+    """
+    Return the number of days since the last staleness alert email was sent,
+    by scanning run_log.json for entries where stale_alert=True and email_sent=True.
+    Returns None if no such entry exists (i.e. never sent before).
+    """
+    if not RUN_LOG_FILE.exists():
+        return None
+    try:
+        entries = json.loads(RUN_LOG_FILE.read_text(encoding="utf-8"))
+        if not isinstance(entries, list):
+            return None
+    except (json.JSONDecodeError, OSError):
+        return None
+
+    last_sent = None
+    for entry in entries:
+        if entry.get("stale_alert") and entry.get("email_sent"):
+            ts = entry.get("timestamp")
+            if ts:
+                try:
+                    dt = datetime.fromisoformat(ts)
+                    if dt.tzinfo is None:
+                        dt = dt.replace(tzinfo=timezone.utc)
+                    if last_sent is None or dt > last_sent:
+                        last_sent = dt
+                except (ValueError, TypeError):
+                    pass
+
+    if last_sent is None:
+        return None
+    return (datetime.now(timezone.utc) - last_sent).days
 
 
 # ── 6. Run log ───────────────────────────────────────────────────────────────
@@ -745,7 +780,16 @@ def main() -> None:
             email_sent = True
 
         if stale and not new:
-            send_staleness_email(STALENESS_DAYS, len(snapshot))
+            _silence = last_staleness_alert_age()
+            _suppress = _silence is not None and _silence < STALENESS_SILENCE_DAYS
+            if _suppress:
+                log.info(
+                    "Staleness suppressed — last alert was %d day(s) ago "
+                    "(silence window: %d days)",
+                    _silence, STALENESS_SILENCE_DAYS,
+                )
+            else:
+                send_staleness_email(STALENESS_DAYS, len(snapshot))
 
         # Save updated snapshot (carry forward detected_at for known entries)
         for r in current:
