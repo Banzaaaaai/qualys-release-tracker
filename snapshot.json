@@ -1,4 +1,37 @@
 {
+  "02bd9399a529": {
+    "key": "02bd9399a529",
+    "url": "https://docs.qualys.com/en/edr/release-notes/endpoint_detection_and_response/release_3_8_3.htm",
+    "title": "Endpoint Detection and Response 3.8.3",
+    "tags": [
+      "EDR"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-07T10:36:57+00:00"
+  },
+  "4f705442c9b7": {
+    "key": "4f705442c9b7",
+    "url": "https://docs.qualys.com/en/csam/release-notes/cybersecurity_asset_management/release_3_7_2.htm",
+    "title": "Global AssetView/CyberSecurity Asset Management 3.7.2",
+    "tags": [
+      "CSAM",
+      "GAV"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-07T10:36:57+00:00"
+  },
+  "79da757cf2b4": {
+    "key": "79da757cf2b4",
+    "url": "https://docs.qualys.com/en/csam/release-notes/cybersecurity_asset_management/release_3_7_2_api.htm",
+    "title": "Global AssetView/CyberSecurity Asset Management 3.7.2 API",
+    "tags": [
+      "API",
+      "CSAM",
+      "GAV"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-07T10:36:57+00:00"
+  },
   "c5d2ded9fc6e": {
     "key": "c5d2ded9fc6e",
     "url": "https://docs.qualys.com/en/portal-cloud-platform-rn/cloud_platform/release_3_24_1_api.htm",
