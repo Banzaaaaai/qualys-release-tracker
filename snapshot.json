@@ -32,6 +32,16 @@
     "month_label": "July 2026",
     "detected_at": "2026-07-07T10:36:57+00:00"
   },
+  "35f589fd0c39": {
+    "key": "35f589fd0c39",
+    "url": "https://docs.qualys.com/en/car/release-notes/car/release_2_9_1.htm",
+    "title": "Custom Assessment and Remediation 2.9.1",
+    "tags": [
+      "CAR"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-09T10:35:57+00:00"
+  },
   "c5d2ded9fc6e": {
     "key": "c5d2ded9fc6e",
     "url": "https://docs.qualys.com/en/portal-cloud-platform-rn/cloud_platform/release_3_24_1_api.htm",
@@ -189,6 +199,16 @@
     ],
     "month_label": "June 2026",
     "detected_at": "2026-07-03T10:13:02+00:00"
+  },
+  "3bde9b8a27b6": {
+    "key": "3bde9b8a27b6",
+    "url": "https://docs.qualys.com/en/fim/release-notes/file_integrity_monitoring/release_4_9_2.htm",
+    "title": "File Integrity Monitoring 4.9.2",
+    "tags": [
+      "FIM"
+    ],
+    "month_label": "June 2026",
+    "detected_at": "2026-07-09T10:35:57+00:00"
   },
   "9b6ec8144a57": {
     "key": "9b6ec8144a57",
