@@ -32,6 +32,16 @@
     "month_label": "July 2026",
     "detected_at": "2026-07-07T10:36:57+00:00"
   },
+  "0f03fb58fc77": {
+    "key": "0f03fb58fc77",
+    "url": "https://docs.qualys.com/en/scanner/release-notes/virtual_scanner/release_4_2.htm",
+    "title": "Virtual Scanner Appliance 4.2",
+    "tags": [
+      "SA"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-10T10:32:02+00:00"
+  },
   "35f589fd0c39": {
     "key": "35f589fd0c39",
     "url": "https://docs.qualys.com/en/car/release-notes/car/release_2_9_1.htm",
