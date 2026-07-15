@@ -1,4 +1,14 @@
 {
+  "84c878eb8c09": {
+    "key": "84c878eb8c09",
+    "url": "https://docs.qualys.com/en/ps/release-notes/ps/release_2_5.htm",
+    "title": "Network Passive Sensor 2.5",
+    "tags": [
+      "PNS"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-15T09:26:18+00:00"
+  },
   "02bd9399a529": {
     "key": "02bd9399a529",
     "url": "https://docs.qualys.com/en/edr/release-notes/endpoint_detection_and_response/release_3_8_3.htm",
@@ -31,6 +41,29 @@
     ],
     "month_label": "July 2026",
     "detected_at": "2026-07-07T10:36:57+00:00"
+  },
+  "a7dc17757b52": {
+    "key": "a7dc17757b52",
+    "url": "https://docs.qualys.com/en/tas/release-notes/total_app_sec/tas_2_9_was_1_29_api.htm",
+    "title": "TotalAppSec 2.9 | Web Application Scanning 1.29 API",
+    "tags": [
+      "API",
+      "TAS",
+      "WAS"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-15T09:26:18+00:00"
+  },
+  "a0b8ce2cb008": {
+    "key": "a0b8ce2cb008",
+    "url": "https://docs.qualys.com/en/tas/release-notes/total_app_sec/tas_2_9_was_1_29.htm",
+    "title": "TotalAppSec 2.9 | Web Application Scanning 1.29",
+    "tags": [
+      "TAS",
+      "WAS"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-15T09:26:18+00:00"
   },
   "0f03fb58fc77": {
     "key": "0f03fb58fc77",
