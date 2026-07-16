@@ -1,4 +1,46 @@
 {
+  "22c479f9401e": {
+    "key": "22c479f9401e",
+    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10_39_1_api.htm",
+    "title": "Enterprise TruRisk™ Platform Release 10.39.1 API",
+    "tags": [
+      "API",
+      "VM"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-16T09:33:15+00:00"
+  },
+  "22f1c121ef98": {
+    "key": "22f1c121ef98",
+    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10_39_1.htm",
+    "title": "Enterprise TruRisk™ Platform Release 10.39.1",
+    "tags": [
+      "VM"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-16T09:33:15+00:00"
+  },
+  "36749d2f8d99": {
+    "key": "36749d2f8d99",
+    "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_pa/pa/release_1_13_api.htm",
+    "title": "Policy Audit Release 1.13 API",
+    "tags": [
+      "API",
+      "PA"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-16T09:33:15+00:00"
+  },
+  "ffc8c32492d2": {
+    "key": "ffc8c32492d2",
+    "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_pa/pa/release_1_13.htm",
+    "title": "Policy Audit Release 1.13",
+    "tags": [
+      "PA"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-16T09:33:15+00:00"
+  },
   "84c878eb8c09": {
     "key": "84c878eb8c09",
     "url": "https://docs.qualys.com/en/ps/release-notes/ps/release_2_5.htm",
