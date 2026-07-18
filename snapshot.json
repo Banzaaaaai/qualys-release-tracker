@@ -1,4 +1,14 @@
 {
+  "ec0018bf484a": {
+    "key": "ec0018bf484a",
+    "url": "https://docs.qualys.com/en/ud/release-notes/unified_dashboard/release_2_14_1.htm",
+    "title": "Unified Dashboard 2.14.1",
+    "tags": [
+      "UD"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-18T09:07:33+00:00"
+  },
   "22c479f9401e": {
     "key": "22c479f9401e",
     "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10_39_1_api.htm",
