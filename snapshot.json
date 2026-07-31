@@ -1,4 +1,25 @@
 {
+  "8bf235993d2a": {
+    "key": "8bf235993d2a",
+    "url": "https://docs.qualys.com/en/qscanner/release-notes/qscanner/release_5_1_0.htm",
+    "title": "QScanner 5.1",
+    "tags": [
+      "CS",
+      "QS"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-31T10:03:32+00:00"
+  },
+  "20e7c8787aae": {
+    "key": "20e7c8787aae",
+    "url": "https://docs.qualys.com/en/etm/release-notes/etm/release_1_11.htm",
+    "title": "Enterprise TruRisk Management 1.11",
+    "tags": [
+      "ETM"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-31T10:03:32+00:00"
+  },
   "43eeb3d09c6e": {
     "key": "43eeb3d09c6e",
     "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_vmdr_rn/vmdr/release_2_12.htm",
