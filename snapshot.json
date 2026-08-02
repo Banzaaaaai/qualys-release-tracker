@@ -84,6 +84,16 @@
     "month_label": "July 2026",
     "detected_at": "2026-07-24T09:41:37+00:00"
   },
+  "05d5241e6ace": {
+    "key": "05d5241e6ace",
+    "url": "https://docs.qualys.com/en/qflow/release-notes/qflow/release_1_23.htm",
+    "title": "Qualys Flow 1.23",
+    "tags": [
+      "QF"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-08-02T09:29:48+00:00"
+  },
   "f0af97d22768": {
     "key": "f0af97d22768",
     "url": "https://docs.qualys.com/en/ud/release-notes/unified_dashboard/release_2_14_2.htm",
@@ -818,6 +828,16 @@
     ],
     "month_label": "April 2026",
     "detected_at": "2026-07-03T10:13:02+00:00"
+  },
+  "d1d3994c02f4": {
+    "key": "d1d3994c02f4",
+    "url": "https://docs.qualys.com/en/qflow/release-notes/qflow/release_1_22.htm",
+    "title": "Qualys Flow 1.22",
+    "tags": [
+      "QF"
+    ],
+    "month_label": "April 2026",
+    "detected_at": "2026-08-02T09:29:48+00:00"
   },
   "08b78d47e3e1": {
     "key": "08b78d47e3e1",
