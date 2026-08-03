@@ -104,6 +104,28 @@
     "month_label": "July 2026",
     "detected_at": "2026-07-22T09:54:32+00:00"
   },
+  "e428651371e3": {
+    "key": "e428651371e3",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/macos_apple_silicon/release_6_5.htm",
+    "title": "Cloud Agent MacOS Apple Silicon 6.5",
+    "tags": [
+      "CA",
+      "PM"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-08-03T10:53:25+00:00"
+  },
+  "fd7d33daf851": {
+    "key": "fd7d33daf851",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/macos_intel/release_6_4.htm",
+    "title": "Cloud Agent MacOS Intel x86_64 6.4",
+    "tags": [
+      "CA",
+      "PM"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-08-03T10:53:25+00:00"
+  },
   "ec0018bf484a": {
     "key": "ec0018bf484a",
     "url": "https://docs.qualys.com/en/ud/release-notes/unified_dashboard/release_2_14_1.htm",
