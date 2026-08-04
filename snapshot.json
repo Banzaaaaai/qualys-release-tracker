@@ -1,4 +1,25 @@
 {
+  "6587f624fb6f": {
+    "key": "6587f624fb6f",
+    "url": "https://docs.qualys.com/en/fim/release-notes/file_integrity_monitoring/release_4_9_3.htm",
+    "title": "File Integrity Monitoring 4.9.3",
+    "tags": [
+      "FIM"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-04T10:06:12+00:00"
+  },
+  "22b8001fe553": {
+    "key": "22b8001fe553",
+    "url": "https://docs.qualys.com/en/fim/release-notes/file_integrity_monitoring/release_4_9_3_api.htm",
+    "title": "File Integrity Monitoring 4.9.3 API",
+    "tags": [
+      "API",
+      "FIM"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-04T10:06:12+00:00"
+  },
   "8bf235993d2a": {
     "key": "8bf235993d2a",
     "url": "https://docs.qualys.com/en/qscanner/release-notes/qscanner/release_5_1_0.htm",
@@ -9,6 +30,56 @@
     ],
     "month_label": "July 2026",
     "detected_at": "2026-07-31T10:03:32+00:00"
+  },
+  "16b20466c0cf": {
+    "key": "16b20466c0cf",
+    "url": "https://docs.qualys.com/en/ca/release-notes/swca/linux/release_1_4_1.htm",
+    "title": "SwCA Scanner for Linux 1.4.1",
+    "tags": [
+      "CA"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-08-04T10:06:12+00:00"
+  },
+  "28dfae1731a7": {
+    "key": "28dfae1731a7",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/aws_bottlerocket/release_5_0_3_35.htm",
+    "title": "Cloud Agent AWS Bottlerocket 5.0.3-35",
+    "tags": [
+      "CA"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-08-04T10:06:12+00:00"
+  },
+  "701ebf4ad978": {
+    "key": "701ebf4ad978",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/aws_bottlerocket_arm/release_6_0_3_57.htm",
+    "title": "Cloud Agent AWS Bottlerocket ARM 6.0.3-57",
+    "tags": [
+      "CA"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-08-04T10:06:12+00:00"
+  },
+  "eea8607d35c4": {
+    "key": "eea8607d35c4",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/gcp_cos/release_5_0_2_22.htm",
+    "title": "Cloud Agent GCP Container Optimized OS 5.0.2-22",
+    "tags": [
+      "CA"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-08-04T10:06:12+00:00"
+  },
+  "c3e92d5eb649": {
+    "key": "c3e92d5eb649",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/linux_coreos/release_4_2_7_18.htm",
+    "title": "Cloud Agent CoreOS 4.2.7-18",
+    "tags": [
+      "CA"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-08-04T10:06:12+00:00"
   },
   "20e7c8787aae": {
     "key": "20e7c8787aae",
