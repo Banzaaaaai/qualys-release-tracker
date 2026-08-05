@@ -91,6 +91,16 @@
     "month_label": "July 2026",
     "detected_at": "2026-07-31T10:03:32+00:00"
   },
+  "906092e4b589": {
+    "key": "906092e4b589",
+    "url": "https://docs.qualys.com/en/pci/release-notes/pci_ui/release_6_7.htm",
+    "title": "PCI Compliance 6.7",
+    "tags": [
+      "PCI"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-08-05T10:03:28+00:00"
+  },
   "43eeb3d09c6e": {
     "key": "43eeb3d09c6e",
     "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_vmdr_rn/vmdr/release_2_12.htm",
