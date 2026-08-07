@@ -1,4 +1,14 @@
 {
+  "82813e0a0665": {
+    "key": "82813e0a0665",
+    "url": "https://docs.qualys.com/en/etm/release-notes/etm/release_1_12.htm",
+    "title": "Enterprise TruRisk Management 1.12",
+    "tags": [
+      "ETM"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-07T08:33:03+00:00"
+  },
   "6587f624fb6f": {
     "key": "6587f624fb6f",
     "url": "https://docs.qualys.com/en/fim/release-notes/file_integrity_monitoring/release_4_9_3.htm",
@@ -4168,16 +4178,6 @@
     "month_label": "May 2025",
     "detected_at": "2026-05-18T17:20:41+00:00"
   },
-  "7e5530369669": {
-    "key": "7e5530369669",
-    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/aws_bottlerocket/release_5_0_1_43.htm",
-    "title": "Cloud Agent AWS Bottlerocket 5.0.1-43",
-    "tags": [
-      "CA"
-    ],
-    "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
-  },
   "9e84321e9062": {
     "key": "9e84321e9062",
     "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/linux_coreos/release_4_2_5_11.htm",
@@ -4217,6 +4217,16 @@
       "API",
       "CSAM",
       "GAV"
+    ],
+    "month_label": "May 2025",
+    "detected_at": "2026-05-18T17:20:41+00:00"
+  },
+  "7e5530369669": {
+    "key": "7e5530369669",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/aws_bottlerocket/release_5_0_1_43.htm",
+    "title": "Cloud Agent AWS Bottlerocket 5.0.1-43",
+    "tags": [
+      "CA"
     ],
     "month_label": "May 2025",
     "detected_at": "2026-05-18T17:20:41+00:00"
