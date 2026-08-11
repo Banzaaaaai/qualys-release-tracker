@@ -1,4 +1,14 @@
 {
+  "82a1e3b4070f": {
+    "key": "82a1e3b4070f",
+    "url": "https://docs.qualys.com/en/qgs/release-notes/qgs/release_3_16.htm",
+    "title": "Qualys Gateway Service 3.16",
+    "tags": [
+      "QGS"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-11T08:28:48+00:00"
+  },
   "82813e0a0665": {
     "key": "82813e0a0665",
     "url": "https://docs.qualys.com/en/etm/release-notes/etm/release_1_12.htm",
@@ -29,6 +39,16 @@
     ],
     "month_label": "August 2026",
     "detected_at": "2026-08-04T10:06:12+00:00"
+  },
+  "05760d8f9e11": {
+    "key": "05760d8f9e11",
+    "url": "https://docs.qualys.com/en/ud/release-notes/unified_dashboard/release_2_15.htm",
+    "title": "Unified Dashboard 2.15.0.0",
+    "tags": [
+      "UD"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-11T08:28:48+00:00"
   },
   "8bf235993d2a": {
     "key": "8bf235993d2a",
@@ -4198,6 +4218,16 @@
     "month_label": "May 2025",
     "detected_at": "2026-05-18T17:20:41+00:00"
   },
+  "7e5530369669": {
+    "key": "7e5530369669",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/aws_bottlerocket/release_5_0_1_43.htm",
+    "title": "Cloud Agent AWS Bottlerocket 5.0.1-43",
+    "tags": [
+      "CA"
+    ],
+    "month_label": "May 2025",
+    "detected_at": "2026-05-18T17:20:41+00:00"
+  },
   "868c2690c720": {
     "key": "868c2690c720",
     "url": "https://docs.qualys.com/en/csam/release-notes/cybersecurity_asset_management/release_3_5.htm",
@@ -4217,16 +4247,6 @@
       "API",
       "CSAM",
       "GAV"
-    ],
-    "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
-  },
-  "7e5530369669": {
-    "key": "7e5530369669",
-    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/aws_bottlerocket/release_5_0_1_43.htm",
-    "title": "Cloud Agent AWS Bottlerocket 5.0.1-43",
-    "tags": [
-      "CA"
     ],
     "month_label": "May 2025",
     "detected_at": "2026-05-18T17:20:41+00:00"

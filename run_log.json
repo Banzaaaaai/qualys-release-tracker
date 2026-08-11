@@ -808,5 +808,15 @@
     "stale_alert": false,
     "duration_s": 1.1,
     "error": ""
+  },
+  {
+    "timestamp": "2026-08-11T08:28:49+00:00",
+    "status": "success",
+    "new_releases": 2,
+    "total_tracked": 1588,
+    "email_sent": true,
+    "stale_alert": false,
+    "duration_s": 2.3,
+    "error": ""
   }
 ]
