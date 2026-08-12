@@ -1,4 +1,14 @@
 {
+  "5b76ac0077c8": {
+    "key": "5b76ac0077c8",
+    "url": "https://docs.qualys.com/en/edr/release-notes/endpoint_detection_and_response/release_3_8_4.htm",
+    "title": "Endpoint Detection and Response 3.8.4",
+    "tags": [
+      "EDR"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-12T08:44:21+00:00"
+  },
   "82a1e3b4070f": {
     "key": "82a1e3b4070f",
     "url": "https://docs.qualys.com/en/qgs/release-notes/qgs/release_3_16.htm",
@@ -43,7 +53,7 @@
   "05760d8f9e11": {
     "key": "05760d8f9e11",
     "url": "https://docs.qualys.com/en/ud/release-notes/unified_dashboard/release_2_15.htm",
-    "title": "Unified Dashboard 2.15.0.0",
+    "title": "Unified Dashboard 2.15",
     "tags": [
       "UD"
     ],
@@ -4208,20 +4218,20 @@
     "month_label": "May 2025",
     "detected_at": "2026-05-18T17:20:41+00:00"
   },
-  "f4822ad5c7d5": {
-    "key": "f4822ad5c7d5",
-    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/gcp_cos/release_5_0_1_41.htm",
-    "title": "Cloud Agent GCP Container Optimized OS 5.0.1-41",
+  "7e5530369669": {
+    "key": "7e5530369669",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/aws_bottlerocket/release_5_0_1_43.htm",
+    "title": "Cloud Agent AWS Bottlerocket 5.0.1-43",
     "tags": [
       "CA"
     ],
     "month_label": "May 2025",
     "detected_at": "2026-05-18T17:20:41+00:00"
   },
-  "7e5530369669": {
-    "key": "7e5530369669",
-    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/aws_bottlerocket/release_5_0_1_43.htm",
-    "title": "Cloud Agent AWS Bottlerocket 5.0.1-43",
+  "f4822ad5c7d5": {
+    "key": "f4822ad5c7d5",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/gcp_cos/release_5_0_1_41.htm",
+    "title": "Cloud Agent GCP Container Optimized OS 5.0.1-41",
     "tags": [
       "CA"
     ],
