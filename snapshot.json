@@ -1,4 +1,46 @@
 {
+  "920d16f9dca1": {
+    "key": "920d16f9dca1",
+    "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_pa/pa/release_1_14_api.htm",
+    "title": "Policy Audit Release 1.14 API",
+    "tags": [
+      "API",
+      "PA"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-14T08:41:40+00:00"
+  },
+  "46000150a344": {
+    "key": "46000150a344",
+    "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_pa/pa/release_1_14.htm",
+    "title": "Policy Audit Release 1.14",
+    "tags": [
+      "PA"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-14T08:41:40+00:00"
+  },
+  "47d9630685dc": {
+    "key": "47d9630685dc",
+    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10_39_2_api.htm",
+    "title": "Enterprise TruRisk™ Platform Release 10.39.2 API",
+    "tags": [
+      "API",
+      "VM"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-14T08:41:40+00:00"
+  },
+  "d9b905d71c85": {
+    "key": "d9b905d71c85",
+    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10_39_2.htm",
+    "title": "Enterprise TruRisk™ Platform Release 10.39.2",
+    "tags": [
+      "VM"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-14T08:41:40+00:00"
+  },
   "5b76ac0077c8": {
     "key": "5b76ac0077c8",
     "url": "https://docs.qualys.com/en/edr/release-notes/endpoint_detection_and_response/release_3_8_4.htm",
@@ -4208,20 +4250,20 @@
     "month_label": "May 2025",
     "detected_at": "2026-05-18T17:20:41+00:00"
   },
-  "9e84321e9062": {
-    "key": "9e84321e9062",
-    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/linux_coreos/release_4_2_5_11.htm",
-    "title": "Cloud Agent CoreOS 4.2.5-11",
+  "7e5530369669": {
+    "key": "7e5530369669",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/aws_bottlerocket/release_5_0_1_43.htm",
+    "title": "Cloud Agent AWS Bottlerocket 5.0.1-43",
     "tags": [
       "CA"
     ],
     "month_label": "May 2025",
     "detected_at": "2026-05-18T17:20:41+00:00"
   },
-  "7e5530369669": {
-    "key": "7e5530369669",
-    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/aws_bottlerocket/release_5_0_1_43.htm",
-    "title": "Cloud Agent AWS Bottlerocket 5.0.1-43",
+  "9e84321e9062": {
+    "key": "9e84321e9062",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/linux_coreos/release_4_2_5_11.htm",
+    "title": "Cloud Agent CoreOS 4.2.5-11",
     "tags": [
       "CA"
     ],
