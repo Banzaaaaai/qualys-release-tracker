@@ -71,6 +71,16 @@
     "month_label": "August 2026",
     "detected_at": "2026-08-07T08:33:03+00:00"
   },
+  "c6429fa5701d": {
+    "key": "c6429fa5701d",
+    "url": "https://docs.qualys.com/en/etm-identity/release-notes/etm_identity/release_1_4.htm",
+    "title": "ETM Identity 1.4",
+    "tags": [
+      "ID"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-18T08:00:24+00:00"
+  },
   "6587f624fb6f": {
     "key": "6587f624fb6f",
     "url": "https://docs.qualys.com/en/fim/release-notes/file_integrity_monitoring/release_4_9_3.htm",
