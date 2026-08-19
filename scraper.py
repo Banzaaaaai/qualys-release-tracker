@@ -16,6 +16,7 @@ import hashlib
 import json
 import logging
 import os
+import re
 import smtplib
 import sys
 import time
@@ -138,6 +139,66 @@ def parse_releases(html: str) -> list[dict]:
 
     log.info("Parsed %d releases from the page", len(releases))
     return releases
+
+
+CVE_PATTERN = re.compile(r"CVE-\d{4}-\d+")
+
+
+def fetch_release_details(url: str) -> dict:
+    """
+    Fetch a Qualys release-notes detail page (RoboHelp HTML on docs.qualys.com)
+    and extract release_date, features, issues_fixed, and referenced CVEs.
+    """
+    html = fetch_page(url)
+    soup = BeautifulSoup(html, "lxml")
+
+    release_date = ""
+    h1 = soup.find("h1")
+    if h1:
+        nxt = h1.find_next_sibling()
+        if nxt:
+            release_date = nxt.get_text(strip=True)
+        else:
+            nxt_text = h1.find_next(string=True)
+            if nxt_text:
+                release_date = nxt_text.strip()
+
+    features = []
+    issues_header = None
+    for h2 in soup.find_all("h2"):
+        heading = h2.get_text(strip=True)
+        if heading.lower() == "issues addressed":
+            issues_header = issues_header or h2
+            continue
+        p = h2.find_next("p")
+        summary = p.get_text(strip=True) if p else ""
+        if len(summary) > 250:
+            summary = summary[:250].rstrip() + "…"
+        features.append({"heading": heading, "summary": summary})
+
+    issues_fixed = []
+    if issues_header:
+        table = issues_header.find_next("table")
+        if table:
+            for row in table.find_all("tr"):
+                cells = row.find_all(["td", "th"])
+                if len(cells) < 2:
+                    continue
+                component = cells[0].get_text(strip=True)
+                issue = cells[1].get_text(strip=True)
+                if component.lower() == "component" and issue.lower() in ("issue", "description"):
+                    continue  # header row
+                if component or issue:
+                    issues_fixed.append({"component": component, "issue": issue})
+
+    cves = sorted(set(CVE_PATTERN.findall(soup.get_text(" ", strip=True))))
+
+    return {
+        "release_date": release_date,
+        "features":     features,
+        "issues_fixed": issues_fixed,
+        "cves":         cves,
+    }
 
 
 # ── 2. Snapshot — load with integrity check ──────────────────────────────────
@@ -396,16 +457,45 @@ def _tag_badge(tag: str, colour: str) -> str:
 
 # ── Email builders ───────────────────────────────────────────────────────────
 
+def _release_details_html(r: dict) -> str:
+    """Feature bullets + issues-fixed summary line for a release card, if details were fetched."""
+    details = r.get("details") or {}
+    features = details.get("features") or []
+    issues = details.get("issues_fixed") or []
+
+    html = ""
+    if features:
+        bullets = "".join(
+            f'<li style="margin-bottom:3px;"><strong>{f["heading"]}</strong>'
+            + (f' — {f["summary"]}' if f.get("summary") else "")
+            + "</li>"
+            for f in features
+        )
+        html += f'<ul style="margin:8px 0 0;padding-left:16px;font-size:12px;color:#555;line-height:1.5;">{bullets}</ul>'
+
+    if issues:
+        components = sorted({i["component"] for i in issues if i.get("component")})
+        comp_str = ", ".join(components) if components else "—"
+        html += (
+            f'<div style="margin-top:6px;font-size:11px;color:#888;">'
+            f"🛠️ Issues fixed: {len(issues)} ({comp_str})</div>"
+        )
+
+    return html
+
+
 def build_html_email(new_releases: list[dict], run_date: str) -> str:
     rows = ""
     for r in new_releases:
         priority_label, colour = _priority(r["tags"])
         badges = "".join(_tag_badge(t, colour) for t in r["tags"])
+        detail_html = _release_details_html(r)
         rows += f"""
         <tr>
           <td style="padding:12px 10px;border-bottom:1px solid #eee;vertical-align:top;">
             <a href="{r['url']}" style="color:#1a5276;font-weight:600;text-decoration:none;font-size:14px;">{r['title']}</a><br>
             <span style="color:#aaa;font-size:11px;">{r['month_label']}</span>
+            {detail_html}
           </td>
           <td style="padding:12px 10px;border-bottom:1px solid #eee;vertical-align:top;">{badges}</td>
           <td style="padding:12px 10px;border-bottom:1px solid #eee;vertical-align:top;font-size:12px;white-space:nowrap;">{priority_label}</td>
@@ -765,6 +855,17 @@ def main() -> None:
         now_iso = datetime.now(timezone.utc).isoformat(timespec="seconds")
         for r in new:
             r["detected_at"] = now_iso
+
+            if r["url"].lower().endswith(".pdf"):
+                log.info("Skipping detail fetch for PDF release: %s", r["url"])
+                continue
+
+            try:
+                r["details"] = fetch_release_details(r["url"])
+            except Exception as exc:
+                log.warning("Could not fetch release details for %s: %s", r["url"], exc)
+
+            time.sleep(1.5)
 
         # Staleness check
         merged_snapshot = {r["key"]: r for r in current}
