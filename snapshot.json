@@ -1,4 +1,442 @@
 {
+  "920d16f9dca1": {
+    "key": "920d16f9dca1",
+    "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_pa/pa/release_1_14_api.htm",
+    "title": "Policy Audit Release 1.14 API",
+    "tags": [
+      "API",
+      "PA"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-14T08:41:40+00:00"
+  },
+  "46000150a344": {
+    "key": "46000150a344",
+    "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_pa/pa/release_1_14.htm",
+    "title": "Policy Audit Release 1.14",
+    "tags": [
+      "PA"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-14T08:41:40+00:00"
+  },
+  "47d9630685dc": {
+    "key": "47d9630685dc",
+    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10_39_2_api.htm",
+    "title": "Enterprise TruRisk™ Platform Release 10.39.2 API",
+    "tags": [
+      "API",
+      "VM"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-14T08:41:40+00:00"
+  },
+  "d9b905d71c85": {
+    "key": "d9b905d71c85",
+    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10_39_2.htm",
+    "title": "Enterprise TruRisk™ Platform Release 10.39.2",
+    "tags": [
+      "VM"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-14T08:41:40+00:00"
+  },
+  "5b76ac0077c8": {
+    "key": "5b76ac0077c8",
+    "url": "https://docs.qualys.com/en/edr/release-notes/endpoint_detection_and_response/release_3_8_4.htm",
+    "title": "Endpoint Detection and Response 3.8.4",
+    "tags": [
+      "EDR"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-12T08:44:21+00:00"
+  },
+  "82a1e3b4070f": {
+    "key": "82a1e3b4070f",
+    "url": "https://docs.qualys.com/en/qgs/release-notes/qgs/release_3_16.htm",
+    "title": "Qualys Gateway Service 3.16",
+    "tags": [
+      "QGS"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-11T08:28:48+00:00"
+  },
+  "82813e0a0665": {
+    "key": "82813e0a0665",
+    "url": "https://docs.qualys.com/en/etm/release-notes/etm/release_1_12.htm",
+    "title": "Enterprise TruRisk Management 1.12",
+    "tags": [
+      "ETM"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-07T08:33:03+00:00"
+  },
+  "c6429fa5701d": {
+    "key": "c6429fa5701d",
+    "url": "https://docs.qualys.com/en/etm-identity/release-notes/etm_identity/release_1_4.htm",
+    "title": "ETM Identity 1.4",
+    "tags": [
+      "ID"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-18T08:00:24+00:00"
+  },
+  "6587f624fb6f": {
+    "key": "6587f624fb6f",
+    "url": "https://docs.qualys.com/en/fim/release-notes/file_integrity_monitoring/release_4_9_3.htm",
+    "title": "File Integrity Monitoring 4.9.3",
+    "tags": [
+      "FIM"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-04T10:06:12+00:00"
+  },
+  "22b8001fe553": {
+    "key": "22b8001fe553",
+    "url": "https://docs.qualys.com/en/fim/release-notes/file_integrity_monitoring/release_4_9_3_api.htm",
+    "title": "File Integrity Monitoring 4.9.3 API",
+    "tags": [
+      "API",
+      "FIM"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-04T10:06:12+00:00"
+  },
+  "05760d8f9e11": {
+    "key": "05760d8f9e11",
+    "url": "https://docs.qualys.com/en/ud/release-notes/unified_dashboard/release_2_15.htm",
+    "title": "Unified Dashboard 2.15",
+    "tags": [
+      "UD"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-11T08:28:48+00:00"
+  },
+  "8bf235993d2a": {
+    "key": "8bf235993d2a",
+    "url": "https://docs.qualys.com/en/qscanner/release-notes/qscanner/release_5_1_0.htm",
+    "title": "QScanner 5.1",
+    "tags": [
+      "CS",
+      "QS"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-31T10:03:32+00:00"
+  },
+  "16b20466c0cf": {
+    "key": "16b20466c0cf",
+    "url": "https://docs.qualys.com/en/ca/release-notes/swca/linux/release_1_4_1.htm",
+    "title": "SwCA Scanner for Linux 1.4.1",
+    "tags": [
+      "CA"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-08-04T10:06:12+00:00"
+  },
+  "28dfae1731a7": {
+    "key": "28dfae1731a7",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/aws_bottlerocket/release_5_0_3_35.htm",
+    "title": "Cloud Agent AWS Bottlerocket 5.0.3-35",
+    "tags": [
+      "CA"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-08-04T10:06:12+00:00"
+  },
+  "701ebf4ad978": {
+    "key": "701ebf4ad978",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/aws_bottlerocket_arm/release_6_0_3_57.htm",
+    "title": "Cloud Agent AWS Bottlerocket ARM 6.0.3-57",
+    "tags": [
+      "CA"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-08-04T10:06:12+00:00"
+  },
+  "eea8607d35c4": {
+    "key": "eea8607d35c4",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/gcp_cos/release_5_0_2_22.htm",
+    "title": "Cloud Agent GCP Container Optimized OS 5.0.2-22",
+    "tags": [
+      "CA"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-08-04T10:06:12+00:00"
+  },
+  "c3e92d5eb649": {
+    "key": "c3e92d5eb649",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/linux_coreos/release_4_2_7_18.htm",
+    "title": "Cloud Agent CoreOS 4.2.7-18",
+    "tags": [
+      "CA"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-08-04T10:06:12+00:00"
+  },
+  "20e7c8787aae": {
+    "key": "20e7c8787aae",
+    "url": "https://docs.qualys.com/en/etm/release-notes/etm/release_1_11.htm",
+    "title": "Enterprise TruRisk Management 1.11",
+    "tags": [
+      "ETM"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-31T10:03:32+00:00"
+  },
+  "906092e4b589": {
+    "key": "906092e4b589",
+    "url": "https://docs.qualys.com/en/pci/release-notes/pci_ui/release_6_7.htm",
+    "title": "PCI Compliance 6.7",
+    "tags": [
+      "PCI"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-08-05T10:03:28+00:00"
+  },
+  "43eeb3d09c6e": {
+    "key": "43eeb3d09c6e",
+    "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_vmdr_rn/vmdr/release_2_12.htm",
+    "title": "Vulnerability Management, Detection and Response 2.12",
+    "tags": [
+      "VMDR"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-24T09:41:37+00:00"
+  },
+  "a70a34d302c2": {
+    "key": "a70a34d302c2",
+    "url": "https://docs.qualys.com/en/conn/release-notes/connector/release_2_19.htm",
+    "title": "Connector Release 2.19",
+    "tags": [
+      "Conn"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-24T09:41:37+00:00"
+  },
+  "88381d17129e": {
+    "key": "88381d17129e",
+    "url": "https://docs.qualys.com/en/tc/release-notes/totalcloud/release_2_26_api.htm",
+    "title": "TotalCloud Release 2.26 API",
+    "tags": [
+      "API",
+      "TC"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-24T09:41:37+00:00"
+  },
+  "9cb2306ad62d": {
+    "key": "9cb2306ad62d",
+    "url": "https://docs.qualys.com/en/tc/release-notes/totalcloud/release_2_26.htm",
+    "title": "TotalCloud Release 2.26",
+    "tags": [
+      "TC"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-24T09:41:37+00:00"
+  },
+  "329c834ee50b": {
+    "key": "329c834ee50b",
+    "url": "https://docs.qualys.com/en/pm/release-notes/patch_management/release_4_0_api.htm",
+    "title": "Patch Management Release 4.0 API",
+    "tags": [
+      "API",
+      "PM"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-24T09:41:37+00:00"
+  },
+  "b36304705f70": {
+    "key": "b36304705f70",
+    "url": "https://docs.qualys.com/en/pm/release-notes/patch_management/release_4_0.htm",
+    "title": "Patch Management Release 4.0",
+    "tags": [
+      "ISL",
+      "MTG",
+      "PM"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-24T09:41:37+00:00"
+  },
+  "05d5241e6ace": {
+    "key": "05d5241e6ace",
+    "url": "https://docs.qualys.com/en/qflow/release-notes/qflow/release_1_23.htm",
+    "title": "Qualys Flow 1.23",
+    "tags": [
+      "QF"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-08-02T09:29:48+00:00"
+  },
+  "f0af97d22768": {
+    "key": "f0af97d22768",
+    "url": "https://docs.qualys.com/en/ud/release-notes/unified_dashboard/release_2_14_2.htm",
+    "title": "Unified Dashboard Release 2.14.2",
+    "tags": [
+      "UD"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-22T09:54:32+00:00"
+  },
+  "e428651371e3": {
+    "key": "e428651371e3",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/macos_apple_silicon/release_6_5.htm",
+    "title": "Cloud Agent MacOS Apple Silicon 6.5",
+    "tags": [
+      "CA",
+      "PM"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-08-03T10:53:25+00:00"
+  },
+  "fd7d33daf851": {
+    "key": "fd7d33daf851",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/macos_intel/release_6_4.htm",
+    "title": "Cloud Agent MacOS Intel x86_64 6.4",
+    "tags": [
+      "CA",
+      "PM"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-08-03T10:53:25+00:00"
+  },
+  "ec0018bf484a": {
+    "key": "ec0018bf484a",
+    "url": "https://docs.qualys.com/en/ud/release-notes/unified_dashboard/release_2_14_1.htm",
+    "title": "Unified Dashboard 2.14.1",
+    "tags": [
+      "UD"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-18T09:07:33+00:00"
+  },
+  "22c479f9401e": {
+    "key": "22c479f9401e",
+    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10_39_1_api.htm",
+    "title": "Enterprise TruRisk™ Platform Release 10.39.1 API",
+    "tags": [
+      "API",
+      "VM"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-16T09:33:15+00:00"
+  },
+  "22f1c121ef98": {
+    "key": "22f1c121ef98",
+    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10_39_1.htm",
+    "title": "Enterprise TruRisk™ Platform Release 10.39.1",
+    "tags": [
+      "VM"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-16T09:33:15+00:00"
+  },
+  "36749d2f8d99": {
+    "key": "36749d2f8d99",
+    "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_pa/pa/release_1_13_api.htm",
+    "title": "Policy Audit Release 1.13 API",
+    "tags": [
+      "API",
+      "PA"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-16T09:33:15+00:00"
+  },
+  "ffc8c32492d2": {
+    "key": "ffc8c32492d2",
+    "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_pa/pa/release_1_13.htm",
+    "title": "Policy Audit Release 1.13",
+    "tags": [
+      "PA"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-16T09:33:15+00:00"
+  },
+  "84c878eb8c09": {
+    "key": "84c878eb8c09",
+    "url": "https://docs.qualys.com/en/ps/release-notes/ps/release_2_5.htm",
+    "title": "Network Passive Sensor 2.5",
+    "tags": [
+      "PNS"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-15T09:26:18+00:00"
+  },
+  "02bd9399a529": {
+    "key": "02bd9399a529",
+    "url": "https://docs.qualys.com/en/edr/release-notes/endpoint_detection_and_response/release_3_8_3.htm",
+    "title": "Endpoint Detection and Response 3.8.3",
+    "tags": [
+      "EDR"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-07T10:36:57+00:00"
+  },
+  "4f705442c9b7": {
+    "key": "4f705442c9b7",
+    "url": "https://docs.qualys.com/en/csam/release-notes/cybersecurity_asset_management/release_3_7_2.htm",
+    "title": "Global AssetView/CyberSecurity Asset Management 3.7.2",
+    "tags": [
+      "CSAM",
+      "GAV"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-07T10:36:57+00:00"
+  },
+  "79da757cf2b4": {
+    "key": "79da757cf2b4",
+    "url": "https://docs.qualys.com/en/csam/release-notes/cybersecurity_asset_management/release_3_7_2_api.htm",
+    "title": "Global AssetView/CyberSecurity Asset Management 3.7.2 API",
+    "tags": [
+      "API",
+      "CSAM",
+      "GAV"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-07T10:36:57+00:00"
+  },
+  "a7dc17757b52": {
+    "key": "a7dc17757b52",
+    "url": "https://docs.qualys.com/en/tas/release-notes/total_app_sec/tas_2_9_was_1_29_api.htm",
+    "title": "TotalAppSec 2.9 | Web Application Scanning 1.29 API",
+    "tags": [
+      "API",
+      "TAS",
+      "WAS"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-15T09:26:18+00:00"
+  },
+  "a0b8ce2cb008": {
+    "key": "a0b8ce2cb008",
+    "url": "https://docs.qualys.com/en/tas/release-notes/total_app_sec/tas_2_9_was_1_29.htm",
+    "title": "TotalAppSec 2.9 | Web Application Scanning 1.29",
+    "tags": [
+      "TAS",
+      "WAS"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-15T09:26:18+00:00"
+  },
+  "0f03fb58fc77": {
+    "key": "0f03fb58fc77",
+    "url": "https://docs.qualys.com/en/scanner/release-notes/virtual_scanner/release_4_2.htm",
+    "title": "Virtual Scanner Appliance 4.2",
+    "tags": [
+      "SA"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-10T10:32:02+00:00"
+  },
+  "35f589fd0c39": {
+    "key": "35f589fd0c39",
+    "url": "https://docs.qualys.com/en/car/release-notes/car/release_2_9_1.htm",
+    "title": "Custom Assessment and Remediation 2.9.1",
+    "tags": [
+      "CAR"
+    ],
+    "month_label": "July 2026",
+    "detected_at": "2026-07-09T10:35:57+00:00"
+  },
   "c5d2ded9fc6e": {
     "key": "c5d2ded9fc6e",
     "url": "https://docs.qualys.com/en/portal-cloud-platform-rn/cloud_platform/release_3_24_1_api.htm",
@@ -156,6 +594,16 @@
     ],
     "month_label": "June 2026",
     "detected_at": "2026-07-03T10:13:02+00:00"
+  },
+  "3bde9b8a27b6": {
+    "key": "3bde9b8a27b6",
+    "url": "https://docs.qualys.com/en/fim/release-notes/file_integrity_monitoring/release_4_9_2.htm",
+    "title": "File Integrity Monitoring 4.9.2",
+    "tags": [
+      "FIM"
+    ],
+    "month_label": "June 2026",
+    "detected_at": "2026-07-09T10:35:57+00:00"
   },
   "9b6ec8144a57": {
     "key": "9b6ec8144a57",
@@ -575,6 +1023,16 @@
     ],
     "month_label": "April 2026",
     "detected_at": "2026-07-03T10:13:02+00:00"
+  },
+  "d1d3994c02f4": {
+    "key": "d1d3994c02f4",
+    "url": "https://docs.qualys.com/en/qflow/release-notes/qflow/release_1_22.htm",
+    "title": "Qualys Flow 1.22",
+    "tags": [
+      "QF"
+    ],
+    "month_label": "April 2026",
+    "detected_at": "2026-08-02T09:29:48+00:00"
   },
   "08b78d47e3e1": {
     "key": "08b78d47e3e1",
