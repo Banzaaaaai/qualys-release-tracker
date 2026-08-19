@@ -180,14 +180,13 @@ def fetch_release_details(url: str) -> dict:
     if issues_header:
         table = issues_header.find_next("table")
         if table:
-            for row in table.find_all("tr"):
+            rows = table.find_all("tr")[1:]  # first row is always the header
+            for row in rows:
                 cells = row.find_all(["td", "th"])
                 if len(cells) < 2:
                     continue
                 component = cells[0].get_text(strip=True)
                 issue = cells[1].get_text(strip=True)
-                if component.lower() == "component" and issue.lower() in ("issue", "description"):
-                    continue  # header row
                 if component or issue:
                     issues_fixed.append({"component": component, "issue": issue})
 
