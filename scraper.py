@@ -52,7 +52,7 @@ STALENESS_SILENCE_DAYS = 10          # min days between two staleness alert emai
 ARCHIVE_AFTER_DAYS = 730          # 2 years
 SNAPSHOT_WARN_BYTES = 1_000_000   # 1 MB
 
-HIGH_PRIORITY_TAGS   = {"VM", "VMDR", "PC", "API", "CA", "CSAM", "GAV", "Conn", "TC", "CRA", "CS", "PA"}
+HIGH_PRIORITY_TAGS   = {"VM", "VMDR", "PC", "API", "CA", "CSAM", "GAV", "Conn", "TC", "CRA", "CS", "PA", "TAS", "WAS"}
 MEDIUM_PRIORITY_TAGS = {"VMDR OT", "ETM", "PM", "EDR", "FIM"}
 LOW_PRIORITY_TAGS    = {"ID"}
 
@@ -533,7 +533,7 @@ def build_html_email(new_releases: list[dict], run_date: str) -> str:
   </div>
   <div style="padding:4px 28px 18px;font-size:11px;color:#888;line-height:1.8;">
     <strong>Priority tiers:</strong>
-    🔴 HIGH = VM / VMDR / PC / API / CA / CSAM / GAV &nbsp;|&nbsp;
+    🔴 HIGH = VM / VMDR / PC / API / CA / CSAM / GAV / TAS / WAS &nbsp;|&nbsp;
     🟡 MEDIUM = VMDR OT / ETM / PM / EDR / FIM &nbsp;|&nbsp;
     🔵 OTHER
   </div>
