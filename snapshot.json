@@ -1,4 +1,38 @@
 {
+  "8e2ceb20ea4b": {
+    "key": "8e2ceb20ea4b",
+    "url": "https://docs.qualys.com/en/tas/release-notes/total_app_sec/tas_2_10_was_1_30_api.htm",
+    "title": "TotalAppSec 2.10 | Web Application Scanning 1.30 API",
+    "tags": [
+      "API",
+      "TAS",
+      "WAS"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-21T08:03:41+00:00"
+  },
+  "644abfdab576": {
+    "key": "644abfdab576",
+    "url": "https://docs.qualys.com/en/tas/release-notes/total_app_sec/tas_2_10_was_1_30.htm",
+    "title": "TotalAppSec 2.10 | Web Application Scanning 1.30",
+    "tags": [
+      "TAS",
+      "WAS"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-21T08:03:41+00:00"
+  },
+  "68f885f349a4": {
+    "key": "68f885f349a4",
+    "url": "https://docs.qualys.com/en/pci/release-notes/pcim/release_1_9_api.htm",
+    "title": "PCI Compliance 1.9 API",
+    "tags": [
+      "API",
+      "PCI"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-21T08:03:41+00:00"
+  },
   "920d16f9dca1": {
     "key": "920d16f9dca1",
     "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_pa/pa/release_1_14_api.htm",
