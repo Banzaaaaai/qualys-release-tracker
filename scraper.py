@@ -465,83 +465,110 @@ def _release_details_html(r: dict) -> str:
     html = ""
     if features:
         bullets = "".join(
-            f'<li style="margin-bottom:3px;"><strong>{f["heading"]}</strong>'
+            f'<li style="margin-bottom:6px;"><strong>{f["heading"]}</strong>'
             + (f' — {f["summary"]}' if f.get("summary") else "")
             + "</li>"
             for f in features
         )
-        html += f'<ul style="margin:8px 0 0;padding-left:16px;font-size:12px;color:#555;line-height:1.5;">{bullets}</ul>'
+        html += (
+            f'<ul style="margin:10px 0 0;padding-left:18px;font-size:13px;'
+            f'color:#444;line-height:1.5;">{bullets}</ul>'
+        )
 
     if issues:
         components = sorted({i["component"] for i in issues if i.get("component")})
         comp_str = ", ".join(components) if components else "—"
         html += (
-            f'<div style="margin-top:6px;font-size:11px;color:#888;">'
+            f'<div style="margin-top:8px;font-size:12px;color:#888;line-height:1.5;">'
             f"🛠️ Issues fixed: {len(issues)} ({comp_str})</div>"
         )
 
     return html
 
 
+def _release_card_html(r: dict) -> str:
+    """One full-width, single-column release card — stacks cleanly on mobile."""
+    priority_label, colour = _priority(r["tags"])
+    badges = "".join(_tag_badge(t, colour) for t in r["tags"])
+    detail_html = _release_details_html(r)
+    release_date = (r.get("details") or {}).get("release_date") or r.get("month_label", "")
+
+    return f"""
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+               style="width:100%;border-collapse:collapse;background:#ffffff;
+                      border:1px solid #e5e9ef;border-radius:6px;margin-bottom:14px;">
+          <tr>
+            <td style="padding:16px;font-family:Arial,Helvetica,sans-serif;">
+              <a href="{r['url']}" style="display:block;color:#1a5276;font-weight:700;
+                        text-decoration:none;font-size:16px;line-height:1.4;">{r['title']}</a>
+              <div style="margin-top:10px;line-height:2;">
+                {badges}<span style="display:inline-block;font-size:12px;font-weight:700;
+                        color:{colour};margin-left:4px;">{priority_label}</span>
+              </div>
+              <div style="color:#999;font-size:12px;margin-top:6px;">{release_date}</div>
+              {detail_html}
+            </td>
+          </tr>
+        </table>"""
+
+
 def build_html_email(new_releases: list[dict], run_date: str) -> str:
-    rows = ""
-    for r in new_releases:
-        priority_label, colour = _priority(r["tags"])
-        badges = "".join(_tag_badge(t, colour) for t in r["tags"])
-        detail_html = _release_details_html(r)
-        rows += f"""
-        <tr>
-          <td style="padding:12px 10px;border-bottom:1px solid #eee;vertical-align:top;">
-            <a href="{r['url']}" style="color:#1a5276;font-weight:600;text-decoration:none;font-size:14px;">{r['title']}</a><br>
-            <span style="color:#aaa;font-size:11px;">{r['month_label']}</span>
-            {detail_html}
-          </td>
-          <td style="padding:12px 10px;border-bottom:1px solid #eee;vertical-align:top;">{badges}</td>
-          <td style="padding:12px 10px;border-bottom:1px solid #eee;vertical-align:top;font-size:12px;white-space:nowrap;">{priority_label}</td>
-        </tr>"""
+    cards = "".join(_release_card_html(r) for r in new_releases)
 
     count  = len(new_releases)
     suffix = "s" if count != 1 else ""
     return f"""<!DOCTYPE html>
-<html><head><meta charset="utf-8"></head>
-<body style="font-family:Arial,sans-serif;background:#f4f6f9;margin:0;padding:20px;">
-<div style="max-width:800px;margin:0 auto;background:#fff;border-radius:6px;
-            box-shadow:0 2px 8px rgba(0,0,0,.09);overflow:hidden;">
-  <div style="background:#1a3a5c;padding:24px 28px;">
-    <h1 style="margin:0;color:#fff;font-size:20px;">
-      🔔 Qualys Release Notes — {count} New Release{suffix} Detected
-    </h1>
-    <p style="margin:8px 0 0;color:#adc8e6;font-size:13px;">
-      Detected on {run_date} &nbsp;·&nbsp;
-      <a href="{RELEASE_NOTES_URL}" style="color:#adc8e6;">View full release notes ↗</a>
-    </p>
-  </div>
-  <div style="padding:20px 28px;">
-    <table style="width:100%;border-collapse:collapse;font-size:13px;">
-      <thead>
-        <tr style="background:#f0f4f8;">
-          <th style="padding:10px;text-align:left;color:#444;font-weight:700;
-                     border-bottom:2px solid #dde3ea;width:50%;">Release</th>
-          <th style="padding:10px;text-align:left;color:#444;font-weight:700;
-                     border-bottom:2px solid #dde3ea;width:35%;">Modules</th>
-          <th style="padding:10px;text-align:left;color:#444;font-weight:700;
-                     border-bottom:2px solid #dde3ea;width:15%;">Priority</th>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qualys Release Notes</title>
+</head>
+<body style="margin:0;padding:0;background:#f4f6f9;font-family:Arial,Helvetica,sans-serif;
+             font-size:15px;line-height:1.5;color:#333;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;background:#f4f6f9;">
+  <tr>
+    <td align="center" style="padding:20px 10px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+             style="width:100%;max-width:600px;background:#ffffff;border-radius:6px;overflow:hidden;">
+        <tr>
+          <td style="background:#1a3a5c;padding:24px 20px;">
+            <h1 style="margin:0;color:#ffffff;font-size:20px;line-height:1.3;
+                       font-family:Arial,Helvetica,sans-serif;">
+              🔔 Qualys Release Notes — {count} New Release{suffix} Detected
+            </h1>
+            <p style="margin:8px 0 0;color:#adc8e6;font-size:13px;font-family:Arial,Helvetica,sans-serif;">
+              Detected on {run_date} &nbsp;·&nbsp;
+              <a href="{RELEASE_NOTES_URL}" style="color:#adc8e6;">View full release notes ↗</a>
+            </p>
+          </td>
         </tr>
-      </thead>
-      <tbody>{rows}</tbody>
-    </table>
-  </div>
-  <div style="padding:4px 28px 18px;font-size:11px;color:#888;line-height:1.8;">
-    <strong>Priority tiers:</strong>
-    🔴 HIGH = VM / VMDR / PC / API / CA / CSAM / GAV / TAS / WAS &nbsp;|&nbsp;
-    🟡 MEDIUM = VMDR OT / ETM / PM / EDR / FIM &nbsp;|&nbsp;
-    🔵 OTHER
-  </div>
-  <div style="background:#f0f4f8;padding:12px 28px;font-size:11px;color:#aaa;text-align:center;">
-    Automated by <strong>qualys-release-tracker</strong> · GitHub Actions
-  </div>
-</div>
-</body></html>"""
+        <tr>
+          <td style="padding:16px;">
+            {cards}
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:4px 20px 18px;font-size:12px;color:#888;line-height:1.7;
+                     font-family:Arial,Helvetica,sans-serif;">
+            <strong>Priority tiers:</strong><br>
+            🔴 HIGH = VM / VMDR / PC / API / CA / CSAM / GAV / TAS / WAS<br>
+            🟡 MEDIUM = VMDR OT / ETM / PM / EDR / FIM<br>
+            🔵 OTHER
+          </td>
+        </tr>
+        <tr>
+          <td style="background:#f0f4f8;padding:14px 20px;font-size:11px;color:#aaa;
+                     text-align:center;font-family:Arial,Helvetica,sans-serif;">
+            Automated by <strong>qualys-release-tracker</strong> · GitHub Actions
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>"""
 
 
 def build_failure_email(error_summary: str) -> str:
