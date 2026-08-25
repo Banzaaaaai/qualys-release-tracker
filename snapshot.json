@@ -1,4 +1,94 @@
 {
+  "30110b5061e9": {
+    "key": "30110b5061e9",
+    "url": "https://docs.qualys.com/en/vmdr-ot/release-notes/vmdr-ot/release_1_7.htm",
+    "title": "VMDR OT 1.7",
+    "tags": [
+      "VMDR OT"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-25T07:30:16+00:00",
+    "details": {
+      "release_date": "August 24, 2026",
+      "features": [
+        {
+          "heading": "Enhanced User Interface for VMDR OT",
+          "summary": "We introduced an improved user experience across all VMDR OT pages, with updates to fonts, colors, typography, and buttons that make the interface more intuitive and user-friendly. Enhancements to the User Interface and design system improve visual c…"
+        },
+        {
+          "heading": "Asset Criticality Score (ACS) and TruRisk™ Score",
+          "summary": "VMDR OT now supports Qualys TruRisk™ Score and Asset Criticality Score (ACS) for OT assets, enabling organizations to prioritize remediation based on both asset importance and security risk."
+        },
+        {
+          "heading": "Asset Details Enhancements",
+          "summary": "The asset details now include security, risk, and business context of an asset to help you better understand the asset's risk posture, prioritize remediation, and make informed decisions."
+        },
+        {
+          "heading": "Vulnerability Details Enhancements",
+          "summary": "You can now view additional vulnerability details to better understand the risk and impact of a vulnerability. TheVulnerability Detailspage includes the following additional information:"
+        },
+        {
+          "heading": "Enhancements to VMDR OT Reports",
+          "summary": "You can now create more comprehensiveAsset,Vulnerability, andMonitoringDetailsreports by including additional TruRisk™, business information, and vulnerability fields in the report. These details provide visibility into asset criticality, business co…"
+        },
+        {
+          "heading": "Criticality Score for Tags",
+          "summary": "You can now assign an Asset Criticality Score (ACS) to a tag. The assigned score helps the system determine the criticality of assets associated with that tag."
+        },
+        {
+          "heading": "Re-evaluation Status for Tags",
+          "summary": "You can now monitor the progress of the dynamic tag application to affected assets after creating or updating a dynamic tag. The system evaluates the updated tag conditions and applies the tag to all matching assets."
+        },
+        {
+          "heading": "Tag-based User Scoping for PIM Events and Network Traffic",
+          "summary": "You can now view Process Integrity Monitoring (PIM) events and Network Traffic only for the assets within your assigned tag scope. This ensures that you can access only the data for assets you are authorized to manage."
+        },
+        {
+          "heading": "New QQL Tokens",
+          "summary": "The following new QQL tokens are added in this release:"
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following reported and notable customer issue is fixed in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    }
+  },
+  "6312435c5d56": {
+    "key": "6312435c5d56",
+    "url": "https://docs.qualys.com/en/ud/release-notes/unified_dashboard/release_2_15_1.htm",
+    "title": "Unified Dashboard 2.15.1",
+    "tags": [
+      "UD"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-25T07:30:16+00:00",
+    "details": {
+      "release_date": "August 24, 2026",
+      "features": [
+        {
+          "heading": "Introducing the User Scope Filter: See What Your Sub-Users See",
+          "summary": "You can now scope your dashboard data to a specific sub-user under your account, so you can view the dashboard exactly as that sub-user sees it without creating a separate dashboard for each user."
+        },
+        {
+          "heading": "Asset Tag Column Support in Vulnerability Simple List Widgets",
+          "summary": "You can now add anAsset Tagscolumn toSimple Listtable widgets built on vulnerability data, so you can see which asset tags a detection belongs to directly in the widget, without opening each asset. Previously, theAsset Tagsoption was available only w…"
+        },
+        {
+          "heading": "Year to Date and This Year Options in the Dashboard Time Filter",
+          "summary": "You can now filter dashboard data byYear to DateorThis Year, so you can report on a full year of activity, such as an annual audit, without defining a custom date range each time. Previously, the time filter offered only week-level and month-level op…"
+        },
+        {
+          "heading": "Sorting and Display Limit for Tags in Table Widgets",
+          "summary": "You can now sort the results of a table widget that displays tags, so you can order tags by the value that matters to you, such as the highest TruRisk™ Score or the largest asset count, instead of reading through them in the order they were added."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    }
+  },
   "8e2ceb20ea4b": {
     "key": "8e2ceb20ea4b",
     "url": "https://docs.qualys.com/en/tas/release-notes/total_app_sec/tas_2_10_was_1_30_api.htm",
@@ -31,6 +121,43 @@
     ],
     "month_label": "August 2026",
     "detected_at": "2026-08-22T07:52:27+00:00"
+  },
+  "272c8ce1314f": {
+    "key": "272c8ce1314f",
+    "url": "https://docs.qualys.com/en/car/release-notes/car/release_2_9_2.htm",
+    "title": "Custom Assessment and Remediation 2.9.2",
+    "tags": [
+      "CAR"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-25T07:30:16+00:00",
+    "details": {
+      "release_date": "August 19, 2026",
+      "features": [
+        {
+          "heading": "Import Assets from a CSV File to Run Scripts and Schedule at Scale",
+          "summary": "You can now upload a CSV file containing asset names to quickly select up to 5,000 assets when testing, running, or scheduling a script. This feature eliminates the need for manual asset selection, making it easier to target large sets of assets at o…"
+        },
+        {
+          "heading": "Target the Right Assets for Script Execution Using a QQL Query",
+          "summary": "You can now use theAutomated Asset Selectionoption to search and filter assets for script execution using a QQL query. This enhancement helps you quickly target the required assets while reducing manual selection effort."
+        },
+        {
+          "heading": "Edit Technologies for Approved Control ID Remediation Scripts",
+          "summary": "You can now edit theTechnologieslist for approved Control ID Remediation scripts created directly in CAR or imported from the Library. This enhancement lets you update the technologies associated with an approved script without creating a duplicate s…"
+        },
+        {
+          "heading": "",
+          "summary": "TheControl CID Numberfield is not editable after the script is approved."
+        },
+        {
+          "heading": "Enhanced Readability and Visual Clarity",
+          "summary": "With this release, we have introduced an improved user experience across all CAR pages. You can see updates across fonts, colors, typography, and buttons, making the interface more intuitive and easier to use."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    }
   },
   "68f885f349a4": {
     "key": "68f885f349a4",
