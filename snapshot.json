@@ -1,4 +1,203 @@
 {
+  "a6866e6a305c": {
+    "key": "a6866e6a305c",
+    "url": "https://docs.qualys.com/en/tc/release-notes/totalcloud/release_2_27.htm",
+    "title": "TotalCloud Release 2.27",
+    "tags": [
+      "TC"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-25T14:47:33+00:00",
+    "details": {
+      "release_date": "August 21, 2026",
+      "features": [
+        {
+          "heading": "Granular Access Control for Policies and Controls",
+          "summary": "Applicable for:"
+        },
+        {
+          "heading": "Event-Driven Connector processing via Azure EventGrid",
+          "summary": "Applicable for:"
+        },
+        {
+          "heading": "Attack Path Visibility at the Instance Level",
+          "summary": "Applicable for:"
+        },
+        {
+          "heading": "Wildcard (*) Support for Tag-Based Search",
+          "summary": "Applicable for:"
+        },
+        {
+          "heading": "Copy and Create new Policy from an existing one",
+          "summary": "Applicable for:"
+        },
+        {
+          "heading": "Look up Query Functions",
+          "summary": "Applicable for:"
+        },
+        {
+          "heading": "Extended Inventory Coverage",
+          "summary": "Applicable for:"
+        },
+        {
+          "heading": "Navigate to Azure Cloud directly from Posture",
+          "summary": "Applicable for:"
+        },
+        {
+          "heading": "Date Range Filtering for All Inventory",
+          "summary": "Applicable for:"
+        },
+        {
+          "heading": "Smarter Inventory Filter Dropdown",
+          "summary": "Applicable for:"
+        },
+        {
+          "heading": "View Overall Compliance Score in Assessment Report",
+          "summary": "Applicable for:"
+        },
+        {
+          "heading": "Set a Default Time Period in Preferences",
+          "summary": "Applicable for:"
+        },
+        {
+          "heading": "Simplified CSPM Connector Health Monitoring",
+          "summary": "Applicable for:"
+        },
+        {
+          "heading": "Resource Name Update in Inventory",
+          "summary": "Applicable for:"
+        },
+        {
+          "heading": "CDR Enhancements and Updates",
+          "summary": "The following sections describe the enhancements made to the Cloud Detection and Response (CDR) environment in the upcoming CDR release."
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "The following section describes the new tokens introduced as part of TotalCloud 2.27.0"
+        },
+        {
+          "heading": "Control Updates",
+          "summary": "Applicable for:"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "CV - False Positive",
+          "issue": "CID-50001 was incorrectly failing for Azure SQL Database resources on the EU02 platform even though Data Encryption was already enabled on those resources, the same resources evaluated correctly as passing on the EU01 platform. The false failure was traced to how the control was reading resource data during evaluation, which caused valid, encrypted resources to be reported as non‑compliant. We have fixed the control's evaluation logic so CID-50001 now correctly reflects the Data Encryption status of the resource. The fix is included in this release.Multiple resource groups were incorrectly flagged as FAILED for CID 50036 (\"Ensure that Resource Locks are set for Mission‑Critical Azure Resources\"), even though the Azure Portal confirmed an active DenyDelete lock on each affected resource group. This was a false positive caused by the control not correctly picking up existing resource‑group‑level lock data during evaluation. We have identified the root cause and are updating the control's evaluation logic to correctly detect existing locks.CID-50051 and CID-50088 were incorrectly flagged as failing (false positive) even though TLS 1.3 was already configured, the evidence captured for the control wasn't showing the exact TLS version being evaluated. We have resolved this by updating the control signature with the correct JSONPath to handle the updated evaluation structure. The fix has been tested and verified on p19 and p04, confirming correct control evaluation for both CIDs."
+        },
+        {
+          "component": "CV - Reports",
+          "issue": "CID 50016 was moved from the CIS Azure Foundations policy to the Azure Best Practices policy in a recent release. The UI correctly reflected the change, but the exported CIS Microsoft Azure Foundations Benchmark PDF still listed CID 50016. The PDF export was still built from the older policy‑to‑control mapping and hadn't picked up the reassignment. We have updated the PDF export to use the current policy mapping, so CID 50016 will no longer appear in the CIS Microsoft Azure Foundations Benchmark export."
+        },
+        {
+          "component": "CV - API",
+          "issue": "Microsoft flagged that Qualys' Azure connector (service principal \"Qualys Agent\") was calling Event Hub Namespace control‑plane operations using an API version scheduled for retirement at the end of September 2026. A small number of controls were still pinned to that older Event Hub API version. We have updated the affected controls to API version 2024‑01‑01, newer than Microsoft's required 2021‑11‑01 minimum, so these controls keep working after the retirement date."
+        }
+      ],
+      "cves": []
+    }
+  },
+  "972383b30301": {
+    "key": "972383b30301",
+    "url": "https://docs.qualys.com/en/tc/release-notes/totalcloud/release_2_27_api.htm",
+    "title": "TotalCloud Release 2.27 API",
+    "tags": [
+      "API",
+      "TC"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-25T14:47:33+00:00",
+    "details": {
+      "release_date": "August 21, 2026",
+      "features": [
+        {
+          "heading": "Get the List of All Supported Resource Types",
+          "summary": "Applicable for:"
+        },
+        {
+          "heading": "Get Resources API: Support added for new resources",
+          "summary": "Applicable for:"
+        },
+        {
+          "heading": "Get Resources API: Added hasAttackPath Field for Compute Assets",
+          "summary": "Applicable for:"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    }
+  },
+  "f746be155c8c": {
+    "key": "f746be155c8c",
+    "url": "https://docs.qualys.com/en/conn/release-notes/connector/release_2_20.htm",
+    "title": "Connector Release 2.20",
+    "tags": [
+      "Conn"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-25T14:47:33+00:00",
+    "details": {
+      "release_date": "August 21, 2026",
+      "features": [
+        {
+          "heading": "EventGrid Support for Azure Connectors",
+          "summary": "Applicable for:"
+        },
+        {
+          "heading": "Cloud Perimeter Scan (CPS) Support for OCI Cloud",
+          "summary": "Applicable for:"
+        },
+        {
+          "heading": "Connector Errors is now Connector Logs",
+          "summary": "Applicable for:"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    }
+  },
+  "d7feb4d21e4d": {
+    "key": "d7feb4d21e4d",
+    "url": "https://docs.qualys.com/en/conn/release-notes/connector/release_2_20_api.htm",
+    "title": "Connector Release 2.20 API",
+    "tags": [
+      "API",
+      "Conn"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-25T14:47:33+00:00",
+    "details": {
+      "release_date": "August 21, 2026",
+      "features": [
+        {
+          "heading": "Create and Update OCI Connector API: Support for CPS (VM Module) Activation",
+          "summary": "Applicable for:"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    }
+  },
+  "30110b5061e9": {
+    "key": "30110b5061e9",
+    "url": "https://docs.qualys.com/en/vmdr-ot/release-notes/vmdr-ot/release_1_7.htm",
+    "title": "VMDR OT 1.7",
+    "tags": [
+      "VMDR OT"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-25T07:30:16+00:00"
+  },
+  "6312435c5d56": {
+    "key": "6312435c5d56",
+    "url": "https://docs.qualys.com/en/ud/release-notes/unified_dashboard/release_2_15_1.htm",
+    "title": "Unified Dashboard 2.15.1",
+    "tags": [
+      "UD"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-25T07:30:16+00:00"
+  },
   "8e2ceb20ea4b": {
     "key": "8e2ceb20ea4b",
     "url": "https://docs.qualys.com/en/tas/release-notes/total_app_sec/tas_2_10_was_1_30_api.htm",
@@ -31,6 +230,16 @@
     ],
     "month_label": "August 2026",
     "detected_at": "2026-08-22T07:52:27+00:00"
+  },
+  "272c8ce1314f": {
+    "key": "272c8ce1314f",
+    "url": "https://docs.qualys.com/en/car/release-notes/car/release_2_9_2.htm",
+    "title": "Custom Assessment and Remediation 2.9.2",
+    "tags": [
+      "CAR"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-08-25T07:30:16+00:00"
   },
   "68f885f349a4": {
     "key": "68f885f349a4",
