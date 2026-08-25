@@ -1,8 +1,8 @@
 # Qualys Release Tracker
 
-Daily tracker that monitors the [Qualys Suite Release Notes](https://www.qualys.com/documentation/release-notes) page and sends an HTML email notification whenever new releases are published.
+Tracker that monitors the [Qualys Suite Release Notes](https://www.qualys.com/documentation/release-notes) page and sends an HTML email notification whenever new releases are published.
 
-Runs automatically every day at **09:25 Madrid time** via GitHub Actions (DST-adjusted automatically).
+Runs automatically twice a day — **08:45** and **16:00 Amsterdam time** — via GitHub Actions (DST-adjusted automatically).
 
 ---
 
@@ -14,12 +14,14 @@ Runs automatically every day at **09:25 Madrid time** via GitHub Actions (DST-ad
 | **Failure email** | Sends an alert email if the run crashes, so you know immediately |
 | **Snapshot integrity** | Validates `snapshot.json` structure on every run; aborts if corrupt |
 | **Staleness detection** | Warns by email if no new release is found for 7+ consecutive days |
-| **DST auto-adjustment** | `dst_adjuster.yml` patches the cron each March/October — 09:25 Madrid year-round |
+| **DST auto-adjustment** | `dst_adjuster.yml` patches both daily crons each March/October — 08:45 & 16:00 Amsterdam year-round |
 | **Run log** | Appends a JSON entry to `run_log.json` after every run (status, counts, duration) |
 | **Status badge** | Writes `badge.json` (Shields.io endpoint format) after every run |
+| **Release detail enrichment** | For each new release, fetches its detail page and extracts feature summaries, issues-fixed (by component), and referenced CVEs |
+| **Mobile-friendly email** | Single-column stacked card layout (inline styles, no `@media`) so it renders cleanly in Gmail mobile |
 | **Monthly digest** | First day of each month: sends a stats summary (runs, new releases, priority breakdown) |
 | **Snapshot size guard** | When `snapshot.json` exceeds 1 MB, archives entries older than 2 years automatically |
-| **Offline unit tests** | `tests/test_parser.py` — 20 tests covering parser and priority logic, no HTTP needed |
+| **Offline unit tests** | `tests/test_parser.py` — 37 tests covering parser and priority logic, no HTTP needed |
 
 ---
 
@@ -27,8 +29,9 @@ Runs automatically every day at **09:25 Madrid time** via GitHub Actions (DST-ad
 
 1. **Scrapes** `qualys.com/documentation/release-notes` and parses every release entry (title, URL, module tags).
 2. **Diffs** against `snapshot.json` to identify new entries.
-3. **Emails** a formatted HTML report with module badges and priority tiers.
-4. **Commits** the updated snapshot, run log, and badge back to the repo.
+3. **Fetches details** for each new (non-PDF) release — feature summaries, issues fixed, referenced CVEs — with a 1.5s delay between requests.
+4. **Emails** a mobile-friendly HTML report: one card per release, with module badges, priority tiers, feature bullets, and an issues-fixed summary.
+5. **Commits** the updated snapshot, run log, and badge back to the repo.
 
 ---
 
@@ -72,9 +75,9 @@ Runs automatically every day at **09:25 Madrid time** via GitHub Actions (DST-ad
 
 | Tier | Module tags |
 |---|---|
-| 🔴 HIGH | `VM` `VMDR` `PC` `API` `CA` `CSAM` `GAV` |
-| 🟡 MEDIUM | `VMDR OT` `ETM` `PM` `EDR` `FIM` |
-| 🔵 OTHER | Everything else |
+| 🔴 HIGH | `VM` `VMDR` `PC` `API` `CA` `CSAM` `GAV` `Conn` `TC` `CRA` `CS` `PA` `TAS` `WAS` |
+| 🟡 MEDIUM | `ETM` `PM` `EDR` `FIM` `UD` |
+| ⚪ LOW | Everything else (including `ID`, `VMDR OT`) |
 
 ---
 
@@ -88,7 +91,7 @@ Runs automatically every day at **09:25 Madrid time** via GitHub Actions (DST-ad
 | `run_log.json` | Per-run audit log (auto-updated, last 365 entries) |
 | `badge.json` | Shields.io endpoint — embed in README as a live badge |
 | `requirements.txt` | Python dependencies |
-| `.github/workflows/tracker.yml` | Daily + monthly schedule |
+| `.github/workflows/tracker.yml` | Twice-daily + monthly schedule |
 | `.github/workflows/dst_adjuster.yml` | Automatic DST cron patching |
 | `tests/test_parser.py` | Offline unit tests for parser + priority logic |
 
@@ -141,5 +144,5 @@ Delete `snapshot.json` before the first local run to treat all current entries a
 
 **Actions → DST Schedule Adjuster → Run workflow**
 
-- `force_offset = 2` → sets CEST (summer, UTC+2) → cron `25 7 * * *`
-- `force_offset = 1` → sets CET (winter, UTC+1) → cron `25 8 * * *`
+- `force_offset = 2` → sets CEST (summer, UTC+2) → crons `45 6 * * *` (08:45) and `0 14 * * *` (16:00)
+- `force_offset = 1` → sets CET (winter, UTC+1) → crons `45 7 * * *` (08:45) and `0 15 * * *` (16:00)
