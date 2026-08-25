@@ -30,26 +30,7 @@
       "CA"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-08-22T07:52:27+00:00",
-    "details": {
-      "release_date": "August 20, 2026",
-      "features": [],
-      "issues_fixed": [
-        {
-          "component": "False Positive Detection",
-          "issue": "Fixed an issue where SwCA reported vulnerabilities from a ZIP file even when only the Runtime detection mode was enabled. Runtime mode now correctly excludes ZIP-based software package detection, preventing these unexpected vulnerability findings and aligning scan results with the selected detection mode."
-        },
-        {
-          "component": "Temporary File Detection",
-          "issue": "Fixed an issue where SwCA scans could detect vulnerable software components from temporary files (sca*.tmp) created during the scan process. The scanner now correctly excludes temporary scan-generated files from the SwCA scan, preventing duplicate or inaccurate findings and ensuring that reported vulnerabilities correspond only to actual software present on the asset."
-        },
-        {
-          "component": "Software Component Path Mapping",
-          "issue": "Fixed an issue where SwCA scans incorrectly mapped certain software components to generic Windows system paths (for example, C:? Windows\\system32). SwCA scanner now correctly identifies and filters MSI-encoded system directory paths, so components are mapped to their actual install locations."
-        }
-      ],
-      "cves": []
-    }
+    "detected_at": "2026-08-22T07:52:27+00:00"
   },
   "68f885f349a4": {
     "key": "68f885f349a4",
@@ -74,62 +55,7 @@
       "WAS"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-08-22T07:52:27+00:00",
-    "details": {
-      "release_date": "August 18, 2026",
-      "features": [],
-      "issues_fixed": [
-        {
-          "component": "Cloud Agent Search",
-          "issue": "Cloud Agent"
-        },
-        {
-          "component": "Asset Reporting",
-          "issue": "Shared Platform"
-        },
-        {
-          "component": "Reporting",
-          "issue": "Administration"
-        },
-        {
-          "component": "Asset Reporting",
-          "issue": "Threat Protection"
-        },
-        {
-          "component": "Dashboard Widgets",
-          "issue": "Shared Platform"
-        },
-        {
-          "component": "Policy Audit Jobs",
-          "issue": "Shared Platform"
-        },
-        {
-          "component": "WAS Scans",
-          "issue": "WAS"
-        },
-        {
-          "component": "Scan Schedule API",
-          "issue": "WAS API"
-        },
-        {
-          "component": "Scan Schedule API",
-          "issue": "WAS API"
-        },
-        {
-          "component": "Authentication",
-          "issue": "WAS API"
-        },
-        {
-          "component": "Authentication",
-          "issue": "WAS API"
-        },
-        {
-          "component": "API Support",
-          "issue": "Malware Detection Service API"
-        }
-      ],
-      "cves": []
-    }
+    "detected_at": "2026-08-22T07:52:27+00:00"
   },
   "eb443804efa7": {
     "key": "eb443804efa7",
@@ -141,34 +67,7 @@
       "WAS"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-08-22T07:52:27+00:00",
-    "details": {
-      "release_date": "August 18, 2026",
-      "features": [],
-      "issues_fixed": [
-        {
-          "component": "Scan Schedule API",
-          "issue": "WAS API"
-        },
-        {
-          "component": "Scan Schedule API",
-          "issue": "WAS API"
-        },
-        {
-          "component": "Authentication",
-          "issue": "WAS API"
-        },
-        {
-          "component": "Authentication",
-          "issue": "WAS API"
-        },
-        {
-          "component": "API Support",
-          "issue": "Malware Detection Service API"
-        }
-      ],
-      "cves": []
-    }
+    "detected_at": "2026-08-22T07:52:27+00:00"
   },
   "b06b86a71c82": {
     "key": "b06b86a71c82",
@@ -178,79 +77,7 @@
       "CA"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-08-22T07:52:27+00:00",
-    "details": {
-      "release_date": "August 16, 2026",
-      "features": [
-        {
-          "heading": "Peer-to-Peer Distribution",
-          "summary": "We have introduced a decentralized peer-to-peer content distribution model for Windows Cloud Agent. With this enhancement, Windows Cloud Agent can download content from the Qualys server and distribute it among other Cloud Agents sharing the same net…"
-        },
-        {
-          "heading": "Track and Review On-Demand Scan Status",
-          "summary": "We have enhanced the on-demand scan workflow to improve scan tracking. This enhancement provides complete visibility into on-demand scans, allowing you to track scan status and details and download scan reports. Previously, on-demand scan progress wa…"
-        },
-        {
-          "heading": "Control SwCA Binary Download",
-          "summary": "With Windows Cloud Agent, you can now control the SwCA binary download on your assets. This feature enables you to control the SwCA version used by Cloud Agent and to install it manually based on system availability."
-        },
-        {
-          "heading": "Delay Policy Audit Scans During Group Policy Updates",
-          "summary": "We have enhanced Cloud Agent configuration to support delaying Policy Audit scans during group policy execution. Windows Cloud Agent can now detect whether a Group Policy update is in progress and delay Policy Audit scans for the configured duration."
-        },
-        {
-          "heading": "Secure Endpoints with Block Connection",
-          "summary": "Qualys Cloud Agent now supportsEndpoint Detection and Response (EDR) Block Connectionfeature to block suspicious or unauthorized network connections at endpoints. This feature can block specific IPv4 and IPv6 addresses without terminating an entire p…"
-        },
-        {
-          "heading": "Enhanced ETM Identity",
-          "summary": "Cloud Agent now has support for two new ETM Identity features: Active Directory (AD) Real-Time Monitoring and Foreign Security Principal (FSP) Support."
-        },
-        {
-          "heading": "Scan WSL Instances with Windows Cloud Agent",
-          "summary": "Cloud Agent is enhanced to support scanning Windows Subsystem for Linux (WSL) instances installed on Windows assets. This enables Cloud Agent to collect inventory and monitor WSL instances. It provides visibility intoinstalled packages, WSL status, u…"
-        },
-        {
-          "heading": "Behavior Changes",
-          "summary": "Database Assessment login fallback: We have updated the database assessment login behavior for the MSSQL server. Windows Cloud Agent 6.6 and later, first attempt MSSQL server login with theLog on as Batch Jobpermissions. If that login attempt fails,…"
-        },
-        {
-          "heading": "Platform Coverage Support",
-          "summary": "No new platform coverage is added in this release."
-        }
-      ],
-      "issues_fixed": [
-        {
-          "component": "Resource Utilization",
-          "issue": "Fixed an issue where Endpoint Protection Platform (EPP) caused high CPU utilization. We have updated the EDR policy. Cloud Agent assets no longer have high CPU utilization due to EPP installation."
-        },
-        {
-          "component": "Cloud Agent Auto-upgrade",
-          "issue": "Fixed an issue where Cloud Agent auto-upgrade failed due to incorrect MSI cache validation. We have updated the MSI validation workflow. Cloud Agent now completes auto-upgrades successfully."
-        },
-        {
-          "component": "Patch Installation",
-          "issue": "Fixed an issue where Patch deployment jobs using theInstall Softwarepre-action failed when downloading software packages from Qualys CDN endpoints. We have fixed the certificate validation issue. Cloud Agent now successfully downloads and installs patches."
-        },
-        {
-          "component": "Patch Installation Status",
-          "issue": "Fixed an issue where successfully installed patches were incorrectly reported as Complete with Failure in the patch deployment job results. Cloud Agent now displays the patch installation status correctly."
-        },
-        {
-          "component": "Patch Job Failure",
-          "issue": "Fixed an issue where scheduled patch jobs timed out before utilizing the full configured patch window due to a communication failure. Patch jobs now successfully use the configured patch job window and no longer fail prematurely."
-        },
-        {
-          "component": "Cloud Agent Provisioning",
-          "issue": "Fixed an issue where Cloud Agent re-provisioning created duplicate asset records even when the Asset Identity and Agent Provisioning Rule criteria matched. Cloud Agent no longer creates duplicate records during provisioning."
-        },
-        {
-          "component": "Database Authentication",
-          "issue": "Fixed an issue where Database Assessment did not show any status in database assessment report due to incorrect credentials. We now correctly show the correct status in reports."
-        }
-      ],
-      "cves": []
-    }
+    "detected_at": "2026-08-22T07:52:27+00:00"
   },
   "920d16f9dca1": {
     "key": "920d16f9dca1",
