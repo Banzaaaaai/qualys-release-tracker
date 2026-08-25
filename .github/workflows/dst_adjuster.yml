@@ -2,7 +2,7 @@ name: DST Schedule Adjuster — Qualys Tracker
 
 # Fires on the last Sunday of March (CEST, clocks forward) and the last
 # Sunday of October (CET, clocks back) to repatch tracker.yml's two daily
-# cron lines so they keep firing at 08:10 and 16:00 Amsterdam local time.
+# cron lines so they keep firing at 08:45 and 16:00 Amsterdam local time.
 # Also runnable manually with force_offset for testing.
 
 on:
@@ -73,7 +73,7 @@ jobs:
 
           # (comment marker in tracker.yml, local Amsterdam hour, local minute)
           SCHEDULES = [
-              ("Morning run",   8, 10),
+              ("Morning run",   8, 45),
               ("Afternoon run", 16, 0),
           ]
 
@@ -112,5 +112,5 @@ jobs:
           print(2 if ls(y,3)<=d<ls(y,10) else 1)
           ")
           LABEL=$([ "$OFFSET" = "2" ] && echo "CEST UTC+2" || echo "CET UTC+1")
-          git commit -m "chore: adjust cron to $LABEL (08:10 & 16:00 Amsterdam)"
+          git commit -m "chore: adjust cron to $LABEL (08:45 & 16:00 Amsterdam)"
           git push

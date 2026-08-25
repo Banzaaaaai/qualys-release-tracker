@@ -2,9 +2,9 @@ name: Qualys Release Tracker
 
 on:
   schedule:
-    # Morning run — 08:10 Amsterdam (CEST, summer)
+    # Morning run — 08:45 Amsterdam (CEST, summer)
     # DST adjuster patches this line automatically each Oct/Mar
-    - cron: "10 6 * * *"
+    - cron: "45 6 * * *"
     # Afternoon run — 16:00 Amsterdam (CEST, summer)
     # DST adjuster patches this line automatically each Oct/Mar
     - cron: "0 14 * * *"
