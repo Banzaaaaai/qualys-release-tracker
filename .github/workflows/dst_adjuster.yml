@@ -1,7 +1,8 @@
 name: DST Schedule Adjuster — Qualys Tracker
 
-# Fires on the last Sunday of March (CEST, clocks forward → UTC+2 → cron hour 7)
-# and the last Sunday of October (CET,  clocks back  → UTC+1 → cron hour 8).
+# Fires on the last Sunday of March (CEST, clocks forward) and the last
+# Sunday of October (CET, clocks back) to repatch tracker.yml's two daily
+# cron lines so they keep firing at 08:10 and 16:00 Amsterdam local time.
 # Also runnable manually with force_offset for testing.
 
 on:
@@ -65,28 +66,35 @@ jobs:
               utc_offset   = 2 if summer_start <= today < summer_end else 1
               reason = f"auto (today={today}, summer={summer_start}→{summer_end})"
 
-          cron_hour = 9 - utc_offset          # 09:25 Madrid local time
-          new_cron  = f'"25 {cron_hour} * * *"'
-          print(f"UTC offset={utc_offset} ({reason}) → cron hour={cron_hour}")
+          print(f"UTC offset={utc_offset} ({reason})")
 
           wf_path = ".github/workflows/tracker.yml"
           text    = open(wf_path).read()
 
-          # Match the daily schedule cron line (not the monthly digest cron)
-          pattern = r'(# Daily tracker.*?cron:\s*")[^"]+(")'
-          new_text, n = re.subn(pattern, rf'\g<1>25 {cron_hour} * * *\2', text, flags=re.DOTALL)
+          # (comment marker in tracker.yml, local Amsterdam hour, local minute)
+          SCHEDULES = [
+              ("Morning run",   8, 10),
+              ("Afternoon run", 16, 0),
+          ]
 
-          if n == 0:
-              # Fallback: patch any schedule cron that starts with "25 "
-              pattern2 = r'(- cron: "25 )\d+( \* \* \*")'
-              new_text, n = re.subn(pattern2, rf'\g<1>{cron_hour}\2', text, count=1)
+          total_n = 0
+          for label, local_hour, local_minute in SCHEDULES:
+              utc_hour = (local_hour - utc_offset) % 24
+              pattern  = rf'(# {re.escape(label)}.*?cron:\s*")[^"]+(")'
+              text, n  = re.subn(
+                  pattern, rf'\g<1>{local_minute} {utc_hour} * * *\2', text, flags=re.DOTALL
+              )
+              total_n += n
+              status = "patched" if n else "NOT FOUND"
+              print(f"{label} → {local_hour:02d}:{local_minute:02d} Amsterdam "
+                    f"= {utc_hour:02d}:{local_minute:02d} UTC ({status})")
 
-          if n == 0:
-              print("WARNING: Could not locate daily-tracker cron line — no changes made.")
+          if total_n == 0:
+              print("WARNING: Could not locate any daily-tracker cron line — no changes made.")
           else:
               with open(wf_path, "w") as f:
-                  f.write(new_text)
-              print(f"Patched {wf_path} → cron hour {cron_hour} UTC")
+                  f.write(text)
+              print(f"Patched {wf_path} ({total_n} line(s) updated)")
           EOF
 
       - name: Commit cron change
@@ -104,5 +112,5 @@ jobs:
           print(2 if ls(y,3)<=d<ls(y,10) else 1)
           ")
           LABEL=$([ "$OFFSET" = "2" ] && echo "CEST UTC+2" || echo "CET UTC+1")
-          git commit -m "chore: adjust cron to $LABEL (09:25 Madrid)"
+          git commit -m "chore: adjust cron to $LABEL (08:10 & 16:00 Amsterdam)"
           git push
