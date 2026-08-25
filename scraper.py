@@ -53,8 +53,8 @@ ARCHIVE_AFTER_DAYS = 730          # 2 years
 SNAPSHOT_WARN_BYTES = 1_000_000   # 1 MB
 
 HIGH_PRIORITY_TAGS   = {"VM", "VMDR", "PC", "API", "CA", "CSAM", "GAV", "Conn", "TC", "CRA", "CS", "PA", "TAS", "WAS"}
-MEDIUM_PRIORITY_TAGS = {"VMDR OT", "ETM", "PM", "EDR", "FIM"}
-LOW_PRIORITY_TAGS    = {"ID"}
+MEDIUM_PRIORITY_TAGS = {"ETM", "PM", "EDR", "FIM", "UD"}
+# Anything not in HIGH or MEDIUM (including "ID", "VMDR OT", and any unlisted tag) is LOW.
 
 REQUEST_HEADERS = {
     "User-Agent": (
@@ -441,9 +441,7 @@ def _priority(tags: list[str]) -> tuple[str, str]:
         return "🔴 HIGH",   "#c0392b"
     if tag_set & MEDIUM_PRIORITY_TAGS:
         return "🟡 MEDIUM", "#d68910"
-    if tag_set & LOW_PRIORITY_TAGS:
-        return "⚪ LOW",        "#4a4a6a"
-    return "🔵 OTHER",      "#1a5276"
+    return "⚪ LOW", "#4a4a6a"
 
 
 def _tag_badge(tag: str, colour: str) -> str:
@@ -553,8 +551,8 @@ def build_html_email(new_releases: list[dict], run_date: str) -> str:
                      font-family:Arial,Helvetica,sans-serif;">
             <strong>Priority tiers:</strong><br>
             🔴 HIGH = VM / VMDR / PC / API / CA / CSAM / GAV / TAS / WAS<br>
-            🟡 MEDIUM = VMDR OT / ETM / PM / EDR / FIM<br>
-            🔵 OTHER
+            🟡 MEDIUM = ETM / PM / EDR / FIM / UD<br>
+            ⚪ LOW
           </td>
         </tr>
         <tr>
@@ -699,7 +697,7 @@ def build_monthly_digest_email(
     </table>"""
 
     # Priority breakdown across snapshot
-    high, medium, other = 0, 0, 0
+    high, medium, low = 0, 0, 0
     for entry in snapshot.values():
         tags = set(entry.get("tags", []))
         if tags & HIGH_PRIORITY_TAGS:
@@ -707,7 +705,7 @@ def build_monthly_digest_email(
         elif tags & MEDIUM_PRIORITY_TAGS:
             medium += 1
         else:
-            other += 1
+            low += 1
 
     def stat_cell(value, label, colour="#1a3a5c"):
         return f"""
@@ -758,9 +756,9 @@ def build_monthly_digest_email(
         <td style="padding:8px 12px;text-align:right;font-weight:700;">{medium}</td>
       </tr>
       <tr>
-        <td style="padding:8px 12px;background:#eaf4fc;border-radius:4px;
-                   font-weight:700;color:#1a5276;">🔵 OTHER</td>
-        <td style="padding:8px 12px;text-align:right;font-weight:700;">{other}</td>
+        <td style="padding:8px 12px;background:#f1f2f4;border-radius:4px;
+                   font-weight:700;color:#4a4a6a;">⚪ LOW</td>
+        <td style="padding:8px 12px;text-align:right;font-weight:700;">{low}</td>
       </tr>
     </table>
     {released_section}

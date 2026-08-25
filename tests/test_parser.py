@@ -160,14 +160,14 @@ class TestPriority:
         assert "MEDIUM" in label
         assert colour == "#d68910"
 
-    def test_unknown_tag_is_other(self):
+    def test_unknown_tag_is_low(self):
         label, colour = _priority(["SOMETHING_UNKNOWN"])
-        assert "OTHER" in label
-        assert colour == "#1a5276"
+        assert "LOW" in label
+        assert colour == "#4a4a6a"
 
-    def test_empty_tags_is_other(self):
+    def test_empty_tags_is_low(self):
         label, _ = _priority([])
-        assert "OTHER" in label
+        assert "LOW" in label
 
     def test_high_beats_medium_when_mixed(self):
         mixed = list(HIGH_PRIORITY_TAGS)[:1] + list(MEDIUM_PRIORITY_TAGS)[:1]
