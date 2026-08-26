@@ -143,6 +143,65 @@ def parse_releases(html: str) -> list[dict]:
 
 CVE_PATTERN = re.compile(r"CVE-\d{4}-\d+")
 
+# Qualys detail pages render module-applicability as icons after an
+# "Applicable for:" label — the icons carry no text, so extracted text
+# ends up with a dangling "— Applicable for:" tail (or, if the label sits
+# mid-string, garbage after it). MAX_FEATURE_SUMMARY_CHARS caps how long
+# an already-cleaned feature summary may be before it's truncated.
+_APPLICABLE_FOR_RE = re.compile(
+    r"\s*[—–-]?\s*Applicable\s+for\s*:?.*$", re.IGNORECASE | re.DOTALL
+)
+_TRAILING_SEP_RE = re.compile(r"[—–\-:]\s*$")
+_DOUBLE_SPACE_RE = re.compile(r" {2,}")
+
+MAX_FEATURE_SUMMARY_CHARS = 250
+
+
+def _clean_feature_text(s: str) -> str:
+    """
+    Clean a feature/issue text fragment before it goes into the email:
+    strip a dangling "Applicable for:" tail (see module comment above),
+    trailing whitespace, any leftover trailing separator/colon, and
+    collapse doubled spaces.
+    """
+    if not s:
+        return ""
+    s = _APPLICABLE_FOR_RE.sub("", s)
+    s = s.rstrip()
+    s = _TRAILING_SEP_RE.sub("", s).rstrip()
+    s = _DOUBLE_SPACE_RE.sub(" ", s)
+    return s
+
+
+def _cap_feature_summary(s: str, limit: int = MAX_FEATURE_SUMMARY_CHARS) -> str:
+    """
+    Cap an already-cleaned summary at `limit` chars, breaking on the last
+    full word and never leaving a dangling separator/colon before the
+    ellipsis. Only appends "…" when content was actually removed.
+    """
+    if len(s) <= limit:
+        return s
+    truncated = s[:limit].rsplit(" ", 1)[0]
+    truncated = _TRAILING_SEP_RE.sub("", truncated).rstrip()
+    return f"{truncated}…" if truncated else s
+
+
+def _warn_if_dangling_colon(features: list[dict], release_label: str) -> None:
+    """
+    Tripwire: if a feature bullet still ends with ':' after cleanup,
+    Qualys markup likely changed shape in a new way — log it so it
+    surfaces in the Actions log instead of silently shipping a broken
+    bullet in the email.
+    """
+    for f in features:
+        text = f"{f['heading']} — {f['summary']}" if f["summary"] else f["heading"]
+        if text.rstrip().endswith(":"):
+            log.warning(
+                "Feature text still ends with ':' after cleanup — Qualys markup "
+                "may have changed. release=%s text=%r",
+                release_label, text
+            )
+
 
 def fetch_release_details(url: str) -> dict:
     """
@@ -154,6 +213,7 @@ def fetch_release_details(url: str) -> dict:
 
     release_date = ""
     h1 = soup.find("h1")
+    h1_text = h1.get_text(strip=True) if h1 else ""
     if h1:
         nxt = h1.find_next_sibling()
         if nxt:
@@ -166,15 +226,17 @@ def fetch_release_details(url: str) -> dict:
     features = []
     issues_header = None
     for h2 in soup.find_all("h2"):
-        heading = h2.get_text(strip=True)
+        heading = _clean_feature_text(h2.get_text(strip=True))
         if heading.lower() == "issues addressed":
             issues_header = issues_header or h2
             continue
         p = h2.find_next("p")
-        summary = p.get_text(strip=True) if p else ""
-        if len(summary) > 250:
-            summary = summary[:250].rstrip() + "…"
-        features.append({"heading": heading, "summary": summary})
+        summary = _clean_feature_text(p.get_text(strip=True) if p else "")
+        summary = _cap_feature_summary(summary)
+        if heading or summary:
+            features.append({"heading": heading, "summary": summary})
+
+    _warn_if_dangling_colon(features, h1_text or url)
 
     issues_fixed = []
     if issues_header:
@@ -185,8 +247,8 @@ def fetch_release_details(url: str) -> dict:
                 cells = row.find_all(["td", "th"])
                 if len(cells) < 2:
                     continue
-                component = cells[0].get_text(strip=True)
-                issue = cells[1].get_text(strip=True)
+                component = _clean_feature_text(cells[0].get_text(strip=True))
+                issue = _clean_feature_text(cells[1].get_text(strip=True))
                 if component or issue:
                     issues_fixed.append({"component": component, "issue": issue})
 
