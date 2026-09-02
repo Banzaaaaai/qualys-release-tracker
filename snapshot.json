@@ -1,4 +1,25 @@
 {
+  "07be0e39c96e": {
+    "key": "07be0e39c96e",
+    "url": "https://docs.qualys.com/en/ps/release-notes/ps/release_2_6.htm",
+    "title": "Network Passive Sensor 2.6",
+    "tags": [
+      "PNS"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-09-02T17:41:13+00:00",
+    "details": {
+      "release_date": "August 31, 2026",
+      "features": [
+        {
+          "heading": "Enhanced User Interface for NPS",
+          "summary": "We introduced an improved user experience across the NPS user interface, with updates to fonts, colors, typography, and buttons that make the interface more intuitive and user-friendly. Enhancements to the user interface and design system improve…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    }
+  },
   "a6866e6a305c": {
     "key": "a6866e6a305c",
     "url": "https://docs.qualys.com/en/tc/release-notes/totalcloud/release_2_27.htm",
@@ -112,58 +133,7 @@
       "CA"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-09-02T11:43:43+00:00",
-    "details": {
-      "release_date": "August 19, 2026",
-      "features": [
-        {
-          "heading": "Enhanced Cloud Agent User Interface",
-          "summary": "We have introduced an improved user experience for theAgentstab in Cloud Agent user interface. You can see updates across menus, fonts, colors, typography, and buttons, making the interface more intuitive and easier to use. This release features…"
-        },
-        {
-          "heading": "Track Scan and Report Download Status with the Requests Tab",
-          "summary": "TheAgent Managementwindow now includes a dedicatedRequeststab to track agent report downloads, on-demand vulnerability scans, and vulnerability scan status. Previously, there was no option in Cloud Agent user interface to track these actions."
-        },
-        {
-          "heading": "Control User Permissions with Tag-based Access",
-          "summary": "We are introducing theTag-based User Accessfor Cloud Agent. Tag-based access provides precise, scalable permission control, ensuring that each user can view and edit only the assets assigned to them."
-        },
-        {
-          "heading": "New Application - Qualys TruConfirm",
-          "summary": "Cloud Agent now supports activating a new Qualys application, TruConfirm, from the Cloud Agent user interface."
-        },
-        {
-          "heading": "Configure Additional Cloud Agent Settings in New Tab",
-          "summary": "We introduced a new tab,Additional Settings,in Cloud Agent user interface. The Additional Settings tab provides you with the following options"
-        },
-        {
-          "heading": "Control Secondary Binary Updates",
-          "summary": "Cloud Agent now gives you control over secondary binary updates, such as SwCA, Cloud Agent Passive Sensor (CAPS), and Deep Scan. This prevents unplanned changes in sensitive environments and keeps binary updates aligned with your maintenance…"
-        },
-        {
-          "heading": "Independent Activation for ETM Identity",
-          "summary": "We have updated the ETM Identity activation workflow to support independent activation. You can now activate ETM Identity without activating the dependent Qualys applications, such as Vulnerability Management (VM) and Policy Audit (PA). This removes…"
-        },
-        {
-          "heading": "Updated Default Ports for Peer-to-Peer Distribution",
-          "summary": "We have updated the default transfer and admin ports for peer-to-peer distribution to 7400 and 7401, respectively. These new ports avoid security conflicts in user environments and provide a clean, risk-free gateway for peer-to-peer content…"
-        },
-        {
-          "heading": "Preview Cloud Agent Custom Logo",
-          "summary": "You can now preview the custom logo before applying it to a Cloud Agent. This enhancement helps you test the custom logo during upload and ensures the correct logo is applied to the asset."
-        },
-        {
-          "heading": "Optimized CPU Limits for SwCA Scans",
-          "summary": "We have optimized the CPU usage limits for SwCA scans on Linux assets. The new CPU limit range for Linux assets is 10-99%. The optimized CPU limit provides smoother scan performance and reduces scan failures by preventing users from setting CPU…"
-        },
-        {
-          "heading": "Cloud Agent API Release Notes",
-          "summary": "To learn more about Cloud Agent API updates, refer toCloud Agent Application 2.8 Release API."
-        }
-      ],
-      "issues_fixed": [],
-      "cves": []
-    }
+    "detected_at": "2026-09-02T11:43:43+00:00"
   },
   "d13e0855c28d": {
     "key": "d13e0855c28d",
@@ -174,30 +144,7 @@
       "CA"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-09-02T11:43:43+00:00",
-    "details": {
-      "release_date": "August 19, 2026",
-      "features": [
-        {
-          "heading": "Configure Peer-to-Peer Distribution",
-          "summary": "Cloud Agent now supports peer-to-peer distribution. With this enhancement, you can configure Cloud Agents to distribute the downloaded patch artifacts within the same Local Area Network (LAN). This reduces reliance on the Content Delivery Network…"
-        },
-        {
-          "heading": "Control Cloud Agent Secondary Binary Updates",
-          "summary": "You can now control the auto-update behavior for secondary Cloud Agent binaries such as Deep Scan, Cloud Agent Passive Sensor (CAPS), Software Composition Analysis (SwCA), TruRisk Isolate (ISL), TruRisk Mitigate (MTG), Endpoint Detection and…"
-        },
-        {
-          "heading": "Activate Qualys TruConfirm™",
-          "summary": "Qualys Cloud Agent now supports a new application,Qualys TruConfirm. Qualys TruConfirm helps you validate the exploitability of vulnerabilities detected on your assets. TruConfirm provides a proof-based prioritization for vulnerable assets. It helps…"
-        },
-        {
-          "heading": "Cloud Agent UI Release Notes",
-          "summary": "To learn more about Cloud Agent UI updates and enhancements, refer toCloud Agent Application Release 2.8."
-        }
-      ],
-      "issues_fixed": [],
-      "cves": []
-    }
+    "detected_at": "2026-09-02T11:43:43+00:00"
   },
   "68f885f349a4": {
     "key": "68f885f349a4",
