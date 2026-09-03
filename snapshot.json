@@ -1,4 +1,59 @@
 {
+  "5713ffdf5a0f": {
+    "key": "5713ffdf5a0f",
+    "url": "https://docs.qualys.com/en/qflow/release-notes/qflow/release_1_24_api.htm",
+    "title": "Qualys Flow 1.24 API",
+    "tags": [
+      "API",
+      "QF"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-03T11:43:31+00:00",
+    "details": {
+      "release_date": "August 25, 2026",
+      "features": [
+        {
+          "heading": "New Clone Workflow API",
+          "summary": "Use this API to create copies of one or more existing workflows."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    }
+  },
+  "bd21439389f5": {
+    "key": "bd21439389f5",
+    "url": "https://docs.qualys.com/en/qflow/release-notes/qflow/release_1_24.htm",
+    "title": "Qualys Flow 1.24",
+    "tags": [
+      "QF"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-03T11:43:31+00:00",
+    "details": {
+      "release_date": "August 25, 2026",
+      "features": [
+        {
+          "heading": "Generate Workflows with AI",
+          "summary": "You can now create QFlow workflows just by describing them.Generate with AIoption is now available on the Create Workflow screen along withFrom scratchandUse a template, so instead of building a workflow node by node, you can tell QFlow what you…"
+        },
+        {
+          "heading": "Deploy workflows based on tags",
+          "summary": "When saving a QFlow workflow, you can now choose how it gets deployed across your cloud environment"
+        },
+        {
+          "heading": "API and parameter descriptions for AWS and Azure",
+          "summary": "When configuring a Resource, Action, or Raw node against an AWS or Azure service, QFlow now shows in-context descriptions for"
+        },
+        {
+          "heading": "Added support for New AWS and Azure templates",
+          "summary": "We have added 13 new QFlow templates across AWS and Azure, bringing the total in the template library from407 to 420. These templates enable one-click remediation of cloud vulnerabilities and misconfigurations, reducing manual effort and improving…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    }
+  },
   "07be0e39c96e": {
     "key": "07be0e39c96e",
     "url": "https://docs.qualys.com/en/ps/release-notes/ps/release_2_6.htm",
@@ -7,18 +62,7 @@
       "PNS"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-09-02T17:41:13+00:00",
-    "details": {
-      "release_date": "August 31, 2026",
-      "features": [
-        {
-          "heading": "Enhanced User Interface for NPS",
-          "summary": "We introduced an improved user experience across the NPS user interface, with updates to fonts, colors, typography, and buttons that make the interface more intuitive and user-friendly. Enhancements to the user interface and design system improve…"
-        }
-      ],
-      "issues_fixed": [],
-      "cves": []
-    }
+    "detected_at": "2026-09-02T17:41:13+00:00"
   },
   "a6866e6a305c": {
     "key": "a6866e6a305c",
