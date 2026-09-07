@@ -1,4 +1,25 @@
 {
+  "6ce3ab2bd870": {
+    "key": "6ce3ab2bd870",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/windows/release_6_7_2.htm",
+    "title": "Cloud Agent Windows 6.7.2",
+    "tags": [
+      "CA"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-07T18:38:04+00:00",
+    "details": {
+      "release_date": "September 07, 2026",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "False Positive Reporting",
+          "issue": "Fixed an issue causing Cloud Agent to report certain vulnerability detections as false positives. With this update, these detections are now reported accurately."
+        }
+      ],
+      "cves": []
+    }
+  },
   "2eb3231a32e9": {
     "key": "2eb3231a32e9",
     "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/linux_intel/release_7_5.htm",
@@ -7,55 +28,7 @@
       "CA"
     ],
     "month_label": "September 2026",
-    "detected_at": "2026-09-07T13:01:23+00:00",
-    "details": {
-      "release_date": "September 03, 2026",
-      "features": [
-        {
-          "heading": "Track On-Demand Scan Progress in Cloud Agent UI",
-          "summary": "Cloud Agent for Linux now supports tracking On-Demand Scan requests. This enhancement provides better visibility into the status and results of on-demand scans triggered from the Cloud Agent user interface or the command line."
-        },
-        {
-          "heading": "Authenticate Database for UDC Manifests",
-          "summary": "Cloud Agent for Linux now supports Database Authentication for User Defined Controls (UDC) manifests generated for auto-discovered middleware instances. Database Authentication support for UDC middleware enables seamless onboarding of…"
-        },
-        {
-          "heading": "Reduce Redundant Requests with Exponential Backoff",
-          "summary": "Cloud Agent for Linux now applies an exponential backoff mechanism when it retries requests to the Qualys platform, reducing redundant requests to the Qualys platform and network traffic from retried requests. Instead of retrying at a fixed…"
-        },
-        {
-          "heading": "Behavior Changes",
-          "summary": "There are no behavior changes in this release."
-        },
-        {
-          "heading": "Platform Coverage Support",
-          "summary": "No new platform coverage is added in this release."
-        },
-        {
-          "heading": "Known Issues",
-          "summary": "Endpoint Protection Platform (EPP) scans may get blocked under certain conditions. A crash of the Endpoint Detection and Response (EDR) process may block EDR Regression, Quarantine Host, and Remote Shell operations."
-        }
-      ],
-      "issues_fixed": [
-        {
-          "component": "Remote Log Collection",
-          "issue": "Fixed an issue where the Cloud Agent user interface (CAUI) did not reflect the correct status for Remote Log Collection. Cloud Agent now sends the correct status to CAUI after Remote Log Collection is complete, and correct status is displayed on the user interface."
-        },
-        {
-          "component": "Reduced Activity Period",
-          "issue": "Fixed an issue where Reduce Activity Period (RAP) schedules were not reset after a RAP was fully removed, causing stale reduced activity windows to persist and execute scans after an agent restart. Cloud Agent now resets RAP schedules when RAP is fully removed or disabled, and avoids unnecessary scans."
-        },
-        {
-          "component": "Agent Startup",
-          "issue": "Fixed an issue where Cloud Agent startup took considerably more time on non-cloud systems because the cloud provider metadata request had no connection timeout. Cloud Agent now has a thirty-second connection timeout for the cloud provider metadata request. This has considerably reduced the Cloud Agent startup time."
-        },
-        {
-          "component": "Cloud Agent Scans",
-          "issue": "Fixed an issue where cloud provider metadata retrieval failed for inventory scans and Cloud Agent on systems without a system curl installation. Cloud Agent now completes the scans successfully by using the system curl and bundled qualys-curl as alternatives."
-        }
-      ],
-      "cves": []
-    }
+    "detected_at": "2026-09-07T13:01:23+00:00"
   },
   "5713ffdf5a0f": {
     "key": "5713ffdf5a0f",
