@@ -1,4 +1,508 @@
 {
+  "91864e12279a": {
+    "key": "91864e12279a",
+    "url": "https://docs.qualys.com/en/cs/release-notes/container_security/release_1_45_api.htm",
+    "title": "Container Security Release 1.45 API",
+    "tags": [
+      "API",
+      "CS"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-08T11:44:57+00:00",
+    "details": {
+      "release_date": "September 07, 2026",
+      "features": [
+        {
+          "heading": "Enhancement in Reports",
+          "summary": "This release updates report templates to improve CSV export content and support additional reporting data."
+        },
+        {
+          "heading": "Enhancement in Registry Repository Refresh",
+          "summary": "The registry schedule list API now includes a newscheduleTypefield, making it easier to identify the purpose of each schedule. You can use this field to distinguish repository refresh schedules from standard registry scan schedules."
+        },
+        {
+          "heading": "New Support for AWS Fargate Serverless Workloads in QLP",
+          "summary": "Qualys Container Security now discovers and scans AWS Fargate serverless workloads through the Qualys Locator Path (QLP) APIs. You can gain visibility into containers running in Fargate environments. Workload records include AWS ECS identifiers,…"
+        },
+        {
+          "heading": "Enhancements Serverless Function (AWS Lambda Scan)",
+          "summary": "Qualys Container Security now includes image identification details for scanned serverless functions. Serverless function responses include theimageShafield. This field returns the SHA256 digest of the container image that backs a function deployed…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2022-23307",
+        "CVE-2025-52999",
+        "CVE-2026-22184",
+        "CVE-2026-2673",
+        "CVE-2026-27171",
+        "CVE-2026-28387",
+        "CVE-2026-28388",
+        "CVE-2026-28389",
+        "CVE-2026-28390",
+        "CVE-2026-31789",
+        "CVE-2026-31790",
+        "CVE-2026-3219",
+        "CVE-2026-40200",
+        "CVE-2026-40894",
+        "CVE-2026-6042"
+      ]
+    }
+  },
+  "b05f2fa18247": {
+    "key": "b05f2fa18247",
+    "url": "https://docs.qualys.com/en/cs-sensor/release-notes/cs_sensor/release_1_45.htm",
+    "title": "Container Security Sensor Release 1.45",
+    "tags": [
+      "CS"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-08T11:44:57+00:00",
+    "details": {
+      "release_date": "September 07, 2026",
+      "features": [
+        {
+          "heading": "Container Crashloop Detection Support",
+          "summary": "With this release, the Container Security sensor reduces unnecessary scan activity for unstable workloads by detecting containers stuck in a CrashLoopBackOff restart loop and deferring scanning of those containers."
+        },
+        {
+          "heading": "Detection of Package-in-Use for Running Containers",
+          "summary": "With this release, package-in-use detection helps you prioritize remediation toward the packages a container is actually exercising at runtime. This capability identifies which installed packages are actually loaded and active in a running…"
+        },
+        {
+          "heading": "Discover Repositories Available in a Registry",
+          "summary": "The Container Security sensor now enables you to view the complete list of repositories available in a connected registry directly from the Qualys Cloud Platform. To retrieve the list, navigate toRegistry > Repositoriesand selectRefresh…"
+        },
+        {
+          "heading": "Scanning Support for BusyBox-Based Images",
+          "summary": "You can now scan container images built on BusyBox. Previously, BusyBox-based images were not fully supported for scanning, which meant customers using minimal or embedded-style images built on BusyBox had incomplete visibility into their operating…"
+        },
+        {
+          "heading": "Enhanced JAR Detection for Offline Scans",
+          "summary": "With this release, Java vulnerability scans in offline or network-restricted environments are more accurate and complete, and no longer require a separate proxy allowance for an external Java database URL. Previously, the Java package database…"
+        },
+        {
+          "heading": "Static Scanning Support for CRI-O and Podman Container Runtimes",
+          "summary": "We have extended static container scanning to the CRI-O and Podman container runtimes. Static scanning lets you scan container images without requiring the container to be running, which is useful for scanning images at rest or during a build…"
+        },
+        {
+          "heading": "JFrog Registry Enhancement for Docker Login and Pull Commands",
+          "summary": "Registry scans that previously failed for JFrog registries configured with a virtual repository backed by a local repository now succeed. In some JFrog configurations, the repository name returned during discovery did not match the name required to…"
+        },
+        {
+          "heading": "New Parameter for Containerd Socket Directory in installsensor.sh",
+          "summary": "With this release, you can pass a new parameter to installsensor.sh to specify a custom containerd socket directory. Use this parameter when the containerd socket on your host is located at a non-default path — for example, because Docker 29…"
+        },
+        {
+          "heading": "Sensor Deployment with Minimum Required Linux Capabilities",
+          "summary": "Previously, the QCS sensor deployment had no capability restrictions defined in thesecurityContext- onlyallowPrivilegeEscalation: falsewas set. This meant the sensor container ran with the full default set of Linux capabilities."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Helm Chart",
+          "issue": "Fixed an issue where scans failed when customers hardened the sensor Helm chart deployment by dropping all Linux capabilities in the security context. The Helm chart now defines the minimum required Linux capabilities in the sensor security context so that scans continue to work in hardened deployments."
+        },
+        {
+          "component": "Vulnerability Detection",
+          "issue": "Fixed an issue where the operating system package-based vulnerability QIDs reported for an image differed depending on whether the image was scanned statically or dynamically. Operating system package-based vulnerability results are now consistent between static and dynamic scans of the same image."
+        },
+        {
+          "component": "Sensor / Podman",
+          "issue": "Fixed an issue where scans failed on Podman for containers that were created after the sensor was launched. Containers created after the sensor is launched on Podman are now scanned successfully."
+        },
+        {
+          "component": "Sensor / Containerd",
+          "issue": "Fixed an issue where the sensor did not provide a clear scan error for untagged or dangling images on containerd. The sensor now reports a valid, descriptive error for untagged or dangling images so you can identify why a scan did not complete."
+        },
+        {
+          "component": "Sensor Installation",
+          "issue": "Fixed an issue where the sensor Universally Unique Identifier (UUID) and sensor details did not update accurately after installation on some hosts. Sensor UUID and details now update accurately after installation."
+        },
+        {
+          "component": "General Sensor",
+          "issue": "Fixed an issue where a local image built with the buildah tool on containerd was not scanned for all its architectures on the General Sensor. All architectures of a locally built multi-architecture image are now scanned on the General Sensor."
+        },
+        {
+          "component": "Sensor",
+          "issue": "Fixed an issue where the sensor entered an infinite scan and recheck loop when a targeted image scan repeatedly failed. The sensor now applies a retry limit and reports the scan as failed after exceeding it, instead of retrying indefinitely."
+        },
+        {
+          "component": "Vulnerability Detection",
+          "issue": "Fixed an issue where the vulnerability count reported for a container did not match the vulnerability count reported for the image it was created from. Container and image vulnerability counts are now consistent for the same image."
+        },
+        {
+          "component": "Registry Sensor / JFrog",
+          "issue": "Fixed an issue where registry scanning failed with a manifest not found error for a subset of images in a JFrog registry, even though the same images could be pulled manually. Registry scans for JFrog registries now correctly resolve the manifest for these images."
+        },
+        {
+          "component": "Image Details",
+          "issue": "Fixed an issue where theLayer CommandandCreated Datefields were displayed empty in the Image Details Layers section for newly scanned images. Layer command and created date information is now displayed correctly for newly scanned images."
+        },
+        {
+          "component": "Container Security UI",
+          "issue": "Fixed an issue where a container scan completed successfully but the results were not updated in the Container Security UI. Completed container scan results are now updated in the Container Security UI as expected."
+        },
+        {
+          "component": "General Sensor",
+          "issue": "Fixed an issue where the General Sensor checked only the first batch of pending containers and did not check the remaining containers in the same cycle. All pending containers are now checked within the same cycle."
+        },
+        {
+          "component": "GKE Autopilot Deployment",
+          "issue": "Fixed an issue where sensor deployment failed on Google Kubernetes Engine (GKE) Autopilot with a specific combination of sensor and Helm chart versions. Sensor deployment now succeeds on GKE Autopilot with the supported sensor and Helm chart versions."
+        }
+      ],
+      "cves": []
+    }
+  },
+  "541ab2dc709a": {
+    "key": "541ab2dc709a",
+    "url": "https://docs.qualys.com/en/cs/release-notes/container_security/release_1_45.htm",
+    "title": "Container Security Release 1.45",
+    "tags": [
+      "CS"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-08T11:44:57+00:00",
+    "details": {
+      "release_date": "September 07, 2026Container Security 1.45 introduces AWS Fargate workload-level vulnerability tracking using QLP, Azure Function scanning, active package-in-use detection, runtime network event monitoring, subscription-level OAuth for QScanner, and configurable CI/CD policy audit and enforce modes.",
+      "features": [
+        {
+          "heading": "Introduced AWS Fargate Container QLP: Workload-Level Vulnerability Tracking",
+          "summary": "What'S NEW For You"
+        },
+        {
+          "heading": "Introduced Azure Function Scanning: Vulnerability and SCA Detection for Serverless Functions",
+          "summary": "What'S NEW For You"
+        },
+        {
+          "heading": "Enhanced Lambda Function Scanning: Image Association and Scan Data Retention",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Introduced Active Package Detection: Runtime Package-in-Use Visibility",
+          "summary": "What'S NEW For You"
+        },
+        {
+          "heading": "Extended JAR SCA in Offline Mode: JAVADB Resolution Without Network Access",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Introduced Network Events Monitoring: Bi-Directional Traffic Visibility for Running Containers",
+          "summary": "What'S NEW For You"
+        },
+        {
+          "heading": "Introduced Subscription-Level OAuth for QScanner: Centralized Token Authentication",
+          "summary": "What'S NEW For You"
+        },
+        {
+          "heading": "Enhancements in Vulnerability and Compliance Reports: New Attributes and Renamed CSV Columns",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Enhancements in KSPM Controls: Ability to Filter Controls based on Policy Name",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Vulnerability Count Filter: Faster Risk Prioritization in Images and Containers",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Introduced On-Demand Repository Refresh: Instant Repository Discovery for Registries",
+          "summary": "What'S NEW For You"
+        },
+        {
+          "heading": "Extended JFrog Artifactory Scanning: Support for Subdomain-Based Registry URLs",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Enhanced Regex Process Ignore List: Flexible Pattern Matching in Runtime Sensor Profiles",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Security Insights & Attack Paths on Container Details",
+          "summary": "What'S NEW For You"
+        },
+        {
+          "heading": "Enhanced Cloud Metadata Collection: Richer Host Context from AWS, Azure, and GCP",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Enhanced Policy Scoping and Exclusions",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Introduced Unpatchable QIDs Excluded: Cleaner Vulnerability Results by Default",
+          "summary": "What'S NEW For You"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    }
+  },
+  "ca30c50f727d": {
+    "key": "ca30c50f727d",
+    "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_pa/pa/release_1_16.htm",
+    "title": "Policy Audit Release 1.16",
+    "tags": [
+      "PA"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-08T11:44:57+00:00",
+    "details": {
+      "release_date": "September 7, 2026",
+      "features": [
+        {
+          "heading": "New Policy Audit Home Page",
+          "summary": "We have now introduced a new Policy Audit Home page that provides a tailored experience based on your onboarding status."
+        },
+        {
+          "heading": "Granular Access Control for Audit Fix Using Tag-Based User Scoping",
+          "summary": "Access to remediation jobs and schedules created through the Policy Audit Fix (PAF) feature can now be restricted by each users assigned asset tags, in addition to their existing role and permissions. This is referred to as Tag-Based User Scoping…"
+        },
+        {
+          "heading": "Support for new QQL Tokens to Manage CVE IDs",
+          "summary": "With this release, we support the following 2 new Qualys Query Language (QQL) tokens"
+        },
+        {
+          "heading": "Enhanced User Interface",
+          "summary": "With this release, we have introduced an improved user experience across all Policy Audit pages. You can see updates across fonts, colors, typography, and buttons, making the interface more intuitive and easier to use. This release features User…"
+        },
+        {
+          "heading": "View Additional Controls Anytime with the New CSV Download Option",
+          "summary": "While creating a policy from a framework, you can now download the list of Additional Controls,  the controls not mapped to any of the selected benchmarks, such as CIS, Qualys Vendor, and DISA STIG in a CSV report for offline reference."
+        },
+        {
+          "heading": "Track Framework Policy Creation Activity Like Any Other Policy",
+          "summary": "You can now view framework policy details directly in the Activity Log tab."
+        },
+        {
+          "heading": "UDC Support for Ubuntu 26.x, Debian 13.x, and Oracle Linux 10.x Technologies",
+          "summary": "You can now selectUbuntu 26.x, Debian GNU/Linux 13.x, and Oracle Enterprise Linux 10.x technologieswhen creating a new control for Unix Control types."
+        },
+        {
+          "heading": "Oracle Database UDC Support for Linux Agent-based Compliance Scans",
+          "summary": "You can now scan and report Oracle databases for User-Defined Controls (UDCs) using Linux Intel Cloud Agent."
+        },
+        {
+          "heading": "Update - Policy Audit Alerting",
+          "summary": "We previously introduced the Alerting feature that allowed you to receive real time updates of the events or incidents related to your configurations."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PA - UI",
+          "issue": "When the user accessed the Account Info page, the page consistently took approximately 3 to 6 minutes to load. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - PCRS Reports",
+          "issue": "When the user generated a Compliance report for a user-manually-locked policy, the Policy Locking status displayed as Unlocked, regardless of the actual policy locking status. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - Scans",
+          "issue": "When the user generated a Compliance scan result in XML format, the Hosts Not Alive and Excluded Hosts sections were missing for scans using DNS tracking. As a result, dead and excluded hosts were not included in the downloaded XML report, although these hosts were correctly included in the PDF and HTML reports. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - UDC",
+          "issue": "When the user exported and imported User Defined Controls (UDCs) from one account to another, the import failed due to missing support for the UNIX platform. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - Schedule Report",
+          "issue": "When the user scheduled a Policy report to run every 3 months, the report was generated approximately one month earlier than expected. The scheduled report did not run according to the configured schedule. Processing logs have been added to provide additional details for troubleshooting report scheduling and processing."
+        },
+        {
+          "component": "PA - API",
+          "issue": "When the user updated a PostgreSQL Authentication record using the/api/3.0/fo/auth/postgresql/API, the API call returned a successful response, but the specified IP address was not added to the Authentication record. The issue occurred when the 'tag support' feature was enabled and the API request did not specify an asset type. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - New UI",
+          "issue": "When the user navigated to the Posture tab and selected the Assets data list, filtering for the operating system value - using the quick filter did not return the correct asset data. Relevant code changes have been made to fix the issue. The quick filter now displays the relevant asset data when the user selects the - operating system value."
+        },
+        {
+          "component": "PA - New UI",
+          "issue": "When the user navigated to the CyberSecurity Asset Management (CSAM) application and in Compliance Control section attempted to download the control details, an error message was displayed. Relevant code changes have been made to fix the issue."
+        }
+      ],
+      "cves": [
+        "CVE-2021-30566",
+        "CVE-2022-30594"
+      ]
+    }
+  },
+  "8f194aadc483": {
+    "key": "8f194aadc483",
+    "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_pa/pa/release_1_16_api.htm",
+    "title": "Policy Audit Release 1.16 API",
+    "tags": [
+      "API",
+      "PA"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-08T11:44:57+00:00",
+    "details": {
+      "release_date": "September 7, 2026",
+      "features": [
+        {
+          "heading": "Update and Delete Report Template APIs",
+          "summary": "In the previous release, we have introduced the report template APIs that enable you to list, retrieve, and create compliance report templates. With this release , you can also perform the update and delete action using Report Template APIs."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PA - API",
+          "issue": "When the user updated a PostgreSQL Authentication record using the /api/3.0/fo/auth/postgresql/ API, the API call returned a successful response, but the specified IP address was not added to the Authentication record. The issue occurred when the 'tag support' feature was enabled and the API request did not specify an asset type. Relevant code changes have been made to fix the issue."
+        }
+      ],
+      "cves": []
+    }
+  },
+  "24c1862a488b": {
+    "key": "24c1862a488b",
+    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10_40.htm",
+    "title": "Enterprise TruRisk™ Platform Release 10.40",
+    "tags": [
+      "VM"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-08T11:44:57+00:00",
+    "details": {
+      "release_date": "September 7, 2026",
+      "features": [
+        {
+          "heading": "Launch Organization-Wide Cloud Perimeter Scans With a Single Connector",
+          "summary": "You can now launch Cloud Perimeter Scans (CPS) using Organization-Level Connectors across AWS, Azure, and GCP. Previously, perimeter scans were created for individual cloud connectors, which often resulted in multiple scan schedules in large cloud…"
+        },
+        {
+          "heading": "Track Last Scan Dates for Specific Scan Types in Asset Search Reports",
+          "summary": "You can now view and filter assets based on theirLast VM Scanner Scan Date,Last VM Agent Scan Date, andLast VM Flex Scan Datein theAsset Search Report. Previously, when asset merging was enabled, Qualys combined your Cloud Agent, scanner, and Flex…"
+        },
+        {
+          "heading": "Deploy Cloud Agents Using Multiple Scanner Appliances",
+          "summary": "You can now select multiple scanner appliances when launching a Cloud Agent Deployment Scan. Previously, Cloud Agent Deployment Scans supported only a single scanner appliance. This enhancement adds support for selecting multiple scanners through…"
+        },
+        {
+          "heading": "Use One Password for Both the UI and API",
+          "summary": "You can now create and update passwords using a consistent set of supported characters across both the UI and APIs. Previously, passwords created through the UI could contain characters that were not supported by API authentication, resulting in…"
+        },
+        {
+          "heading": "See Your Scanner's CPU, Memory, Swap, and Disk Information at a Glance",
+          "summary": "You can now view hardware resource information directly from the Scanner Appliance Information page. Previously, obtaining scanner sizing information often required access to the underlying virtualization or infrastructure platform."
+        },
+        {
+          "heading": "Visibility into Scanner Platform Versions and End of Support Status for Scanner Appliances",
+          "summary": "You can now view scanner platform versions directly from the Scanner Appliances listing page and quickly identify scanner appliances approaching End of Support (EOS). Previously, scanner platform version information was available only in…"
+        },
+        {
+          "heading": "Enhanced User Interface",
+          "summary": "With this release, we have introduced an improved user experience across all Vulnerability Management pages. You can see updates across fonts, colors, typography, and buttons, making the interface more intuitive and easier to use. This release…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Scan Schedule",
+          "issue": "When users created or edited a scheduled scan job and changed the scanner appliance option toAll Scanners in TagSet, theConfirm Tag Removaldialog was displayed when selected tags did not meet the required criteria. If users clickedNo, the scan configuration could remain in an inconsistent state. The scanner appliance selection, Include and Exclude tag settings, and scanner selection view were not restored correctly.The issue is now resolved. ClickingNoon theConfirm Tag Removaldialog correctly restores the previous scanner appliance selection, tag settings, and scanner selection view."
+        },
+        {
+          "component": "VM - User Management",
+          "issue": "When users removed VM module access while editing a user account by going to Administration > User Management, the changes were not getting saved. An error message was displayed as \"Latest Vulnerabilities – Invalid input.\" This error message was also displayed for Scan Summary Notification or Map Notification settings.The issue is now resolved. Saving user changes after removing VM module access now completes successfully. The Invalid input error no longer occurs for these notification settings."
+        },
+        {
+          "component": "VM - Remediation",
+          "issue": "When users opened the Remediation tickets page for large subscriptions, it took a long time to load. The Activity Log page also loaded slowly in some cases. The issue is now resolved. The Remediation tickets page and Activity Log page now load faster, even on large subscriptions."
+        },
+        {
+          "component": "VM - Host List API",
+          "issue": "When users viewed theHost Informationpage, some user-defined attribute values were missing. This happened for values set through API with a different network ID than the host. The Host List API still returned these values, creating inconsistent data between the API and UI.This issue is now resolved. The Host List API and Host Information page now show consistent user-defined attribute data. Values from a network different from the host's are excluded from both."
+        },
+        {
+          "component": "VM - Scan API",
+          "issue": "When users tried to launch the Ignore Vulnerability API with the tag_set_include parameter, the API returned an error stating that \"parameter tag_set_include has an invalid value\", even when a valid tag was specified. This issue occurred with certain asset-tracking configurations and prevented vulnerabilities from being ignored for assets associated with the specified tags. This issue is now resolved, and the API correctly processes valid tags during ignore and restore operations."
+        },
+        {
+          "component": "VM - Knowledge Base",
+          "issue": "When users created or edited a Dynamic Search List, the page was taking a long time to load or respond, impacting the overall user experience. This issue is now resolved, and Dynamic Search List pages load more efficiently, providing faster access to search criteria and improved responsiveness when creating or editing search lists."
+        },
+        {
+          "component": "Sensor - Scanner",
+          "issue": "When users created or activated new scanner appliances, the scanners were appearing offline even when they were operational. This issue was caused by delays in processing scanner status information. This issue is now resolved, and scanner status updates are processed more efficiently, ensuring that activated scanner appliances are displayed accurately."
+        }
+      ],
+      "cves": []
+    }
+  },
+  "93f9f353c3c9": {
+    "key": "93f9f353c3c9",
+    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10_40_api.htm",
+    "title": "Enterprise TruRisk™ Platform Release 10.40 API",
+    "tags": [
+      "API",
+      "VM"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-08T11:44:57+00:00",
+    "details": {
+      "release_date": "September 7, 2026",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "You can now retrieve the last VM Agent Scan Date, last VM Scanner (ML) Scan Date, and last VM Flex Scan Date for each asset using Asset Search API. Previously, the Asset Search API returned only one generic last scan date (LAST_SCAN_DATE) for each…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    }
+  },
+  "63f5a2021339": {
+    "key": "63f5a2021339",
+    "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_pa/pa/release_1_15.htm",
+    "title": "Policy Audit Release 1.15",
+    "tags": [
+      "PA"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-08T11:44:57+00:00",
+    "details": {
+      "release_date": "September 2, 2026",
+      "features": [
+        {
+          "heading": "Support for New Technology Microsoft SQL Server 2025",
+          "summary": "Microsoft SQL Server 2025 technology is supported for Policy Audit authenticated scans using scanners and agents. This technology is now available for use at the following places, at both the scanner and the agent"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    }
+  },
+  "4d2592e16bcd": {
+    "key": "4d2592e16bcd",
+    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10_39_3.htm",
+    "title": "Enterprise TruRisk™ Platform Release 10.39.3",
+    "tags": [
+      "VM"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-08T11:44:57+00:00",
+    "details": {
+      "release_date": "September 2, 2026",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "You can now view the recipient email addresses for a scheduled report directly from the Run History page. To view this information, navigate toReports>Schedules> Select a report from the report listing page > SelectInfounder theQuick Actionsmenu…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - UI General",
+          "issue": "When users opened a scheduled vulnerability scan directly in Edit mode from theQuick Actionsmenu, the resize handle at the bottom-right corner of the window was too small to locate and drag, preventing users from resizing the window as needed. This issue is now resolved. The resize handle is now larger and clearly visible, allowing users to resize the Edit window as expected."
+        },
+        {
+          "component": "VM - Scans",
+          "issue": "When users set up a scheduled scan with dynamic tags to include or exclude certain assets, an asset expected to be excluded still appeared in the scan results, which created confusion. This happened because dynamic tags update in real time, so whether an asset is included or excluded depends on which tags it matches when the scan runs, not when it is scheduled. This behavior is now documented in the Online Help."
+        }
+      ],
+      "cves": []
+    }
+  },
   "6ce3ab2bd870": {
     "key": "6ce3ab2bd870",
     "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/windows/release_6_7_2.htm",
@@ -7,18 +511,7 @@
       "CA"
     ],
     "month_label": "September 2026",
-    "detected_at": "2026-09-07T18:38:04+00:00",
-    "details": {
-      "release_date": "September 07, 2026",
-      "features": [],
-      "issues_fixed": [
-        {
-          "component": "False Positive Reporting",
-          "issue": "Fixed an issue causing Cloud Agent to report certain vulnerability detections as false positives. With this update, these detections are now reported accurately."
-        }
-      ],
-      "cves": []
-    }
+    "detected_at": "2026-09-07T18:38:04+00:00"
   },
   "2eb3231a32e9": {
     "key": "2eb3231a32e9",
