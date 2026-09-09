@@ -1,4 +1,131 @@
 {
+  "1796f6b0011b": {
+    "key": "1796f6b0011b",
+    "url": "https://docs.qualys.com/en/ta/release-notes/total_ai/release_2_0.htm",
+    "title": "TotalAI 2.0",
+    "tags": [
+      "TA"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-09T11:51:56+00:00",
+    "details": {
+      "release_date": "September 9, 2026AI now runs everywhere in your environment: in the cloud, in your code, in the SaaS apps your teams use, even on employee laptops, and most of it stays invisible to security. TotalAI Release 2.0 puts it all in one view: every AI asset, workload, model, and risk across your entire AI estate, scored with TruRisk™ so you know what to fix first. And when a live LLM exploit needs to be stopped, you don't have to wait for a retrain. Apply a Guardrail and block it now, while the permanent fix is on its way.",
+      "features": [
+        {
+          "heading": "Get a Unified View of Your AI Estate",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Identify AI Workloads and Prioritize Risk",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Track AI SaaS Usage Across Your Organization",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Identify AI-Related Code and Prioritize Remediation",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Discover AI Applications on Windows Hosts",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Align AI Security Policies",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Strengthen Your Security Posture",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Block LLM Exploits with Guardrails",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Simplify AI Model Authentication",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Test for Vector Embedding Attacks",
+          "summary": "What Changed For You"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    }
+  },
+  "622a18f4b5ac": {
+    "key": "622a18f4b5ac",
+    "url": "https://docs.qualys.com/en/ta/release-notes/total_ai/release_2_0_api.htm",
+    "title": "TotalAI 2.0 API",
+    "tags": [
+      "API",
+      "TA"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-09T11:51:56+00:00",
+    "details": {
+      "release_date": "September 9, 2026This release adds connector-based (credential-free) authentication for AWS Bedrock and Azure OpenAI models, plus a full new Asset API for creating, searching, updating, counting, and deleting AI assets like LLM models and MCP servers.",
+      "features": [
+        {
+          "heading": "AI Model Connector-based Authentication",
+          "summary": "With this release, you can authenticate an AWS Bedrock or Azure OpenAI model using an existing connector instead of providing long-lived credentials when creating a new model or updating an existing one"
+        },
+        {
+          "heading": "Asset API",
+          "summary": "With this release, we are introducing the following Asset APIs to create, retrieve, search, update, count, and delete AI assets, including LLM models and MCP servers, in your account"
+        },
+        {
+          "heading": "New API: Create an Asset",
+          "summary": "Create a new asset with the provided attributes. This feature supports creating LLM models and MCP servers with their respective configurations. Required fields vary based on the asset type and runtime."
+        },
+        {
+          "heading": "NEW API: Count Assets",
+          "summary": "Count all assets or only those that match the provided QQL filter. This operation returns the total number of accessible assets and applies the specified QQL criteria when provided. Use it to get quick statistics without retrieving full asset data."
+        },
+        {
+          "heading": "New API: Delete Asset(s) Using Filter",
+          "summary": "Delete multiple assets that match the specified QQL query criteria in a single operation. This operation permanently removes all assets that match the provided filter. The response includes the ID of each deleted asset and the deletion status for…"
+        },
+        {
+          "heading": "Search Assets",
+          "summary": "Search and retrieve assets that match the specified QQL criteria, with support for pagination, sorting, and field selection. When the fields parameter is omitted, this operation returns the default response fields. When fields is specified, it…"
+        },
+        {
+          "heading": "New API: Get an Asset by ID",
+          "summary": "Retrieve detailed information about a specific asset. Use the optional fields parameter to return only selected properties. When fields is not specified, the operation returns all available asset properties."
+        },
+        {
+          "heading": "Update an Asset",
+          "summary": "Update an asset with the specified ID. This operation supports partial updates and modifies only the fields included in the request body. For example, to update only the asset name, provide only the name field in the request body. The operation…"
+        },
+        {
+          "heading": "Delete Asset",
+          "summary": "Delete an asset with the specified ID. This operation permanently removes the asset and returns the deletion status."
+        },
+        {
+          "heading": "Create API: Create AWS Bedrock Model with Connector-based Authentication",
+          "summary": "You can now authenticate an AWS Bedrock model using an existing AWS connector instead of providing a long-lived access key and secret key when you create the model. When you associate a connector, TotalAI exchanges the connector's role details for…"
+        },
+        {
+          "heading": "Update API: Update AWS Bedrock Model with Connector-based Authentication",
+          "summary": "You can now update an existing AWS Bedrock model to use connector-based authentication, associating an AWS connector in place of a long-lived access key and secret key. When you associate a connector, TotalAI exchanges the connector's role details…"
+        },
+        {
+          "heading": "Create API: Create Azure OpenAI Model with Connector-based Authentication",
+          "summary": "You can now authenticate an Azure OpenAI model using an Azure Service Principal connector instead of a manually entered API key when you create the model. When you associate a connector, TotalAI retrieves the tenant, application, and client secret…"
+        },
+        {
+          "heading": "Update API: Update Azure OpenAI Model with Connector-based Authentication",
+          "summary": "You can now update an existing Azure OpenAI model to use an Azure Service Principal connector in place of a manually entered API key. When you associate a connector, TotalAI retrieves the tenant, application, and client secret details from the…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    }
+  },
   "91864e12279a": {
     "key": "91864e12279a",
     "url": "https://docs.qualys.com/en/cs/release-notes/container_security/release_1_45_api.htm",
