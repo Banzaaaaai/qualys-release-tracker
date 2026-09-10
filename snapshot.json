@@ -2,23 +2,12 @@
   "93d63dfeb57b": {
     "key": "93d63dfeb57b",
     "url": "https://docs.qualys.com/en/pci/release-notes/pci_ui/release_6_8.htm",
-    "title": "PCI Compliance 1.9",
+    "title": "PCI Compliance 6.8",
     "tags": [
       "PCI"
     ],
     "month_label": "September 2026",
-    "detected_at": "2026-09-10T11:49:41+00:00",
-    "details": {
-      "release_date": "September 10, 2026",
-      "features": [
-        {
-          "heading": "Delete Merchant User Accounts",
-          "summary": "PCI Merchant Point of Contact (POC) users can now delete sub-user accounts directly from the PCI Compliance user interface (UI). This release gives merchants a proper offboarding workflow while keeping scan history, audit trails, and compliance…"
-        }
-      ],
-      "issues_fixed": [],
-      "cves": []
-    }
+    "detected_at": "2026-09-10T11:49:41+00:00"
   },
   "17b576dc31a0": {
     "key": "17b576dc31a0",
@@ -28,34 +17,7 @@
       "FIM"
     ],
     "month_label": "September 2026",
-    "detected_at": "2026-09-10T11:49:41+00:00",
-    "details": {
-      "release_date": "September 09, 2026",
-      "features": [
-        {
-          "heading": "Create Incident for Individual Events",
-          "summary": "You can now select individual events on theEvent Reviewtab and create an incident for only those events, so you can raise an incident for a chosen set of file changes without building a search query that isolates exactly those events."
-        },
-        {
-          "heading": "This Year and Year to date Timeframe Options",
-          "summary": "You can now filter events and incidents byThis YearorYear to date, so you can report on a full calendar year or on the year so far, such as for an annual audit, without defining a custom date range each time."
-        },
-        {
-          "heading": "Event Limit for Ignore and Restore Actions",
-          "summary": "The ignore and restore action now accepts up to 100 events. On theEvent Reviewtab, you can select up to 100 events for a single ignore action. On theIgnoredtab, you can select up to 100 events for a single restore action. When you select more than…"
-        },
-        {
-          "heading": "Enhanced User Interface",
-          "summary": "With this release, we have introduced an improved user experience across all FIM pages. You can see updates across fonts, colors, typography, and buttons, making the interface more intuitive and easier to use. This release features User Interface…"
-        },
-        {
-          "heading": "New Tokens in FIM",
-          "summary": "©2026Qualys, Inc. All rights reserved.Privacy Policy."
-        }
-      ],
-      "issues_fixed": [],
-      "cves": []
-    }
+    "detected_at": "2026-09-10T11:49:41+00:00"
   },
   "e62090c88a31": {
     "key": "e62090c88a31",
@@ -67,75 +29,7 @@
       "PM"
     ],
     "month_label": "September 2026",
-    "detected_at": "2026-09-10T11:49:41+00:00",
-    "details": {
-      "release_date": "September 09, 2026",
-      "features": [
-        {
-          "heading": "TruRisk™ Eliminate Unifies Patch Management, Mitigate and Isolate",
-          "summary": "TruRisk™ EliminatecombinesPatch,Mitigate,Isolate, andCustom Assessment and Remediation (CAR)capabilities in a single application to help you reduce cyber risk. You can select a fix that best suits your needs. CAR is maintained separately under the…"
-        },
-        {
-          "heading": "Get a Complete View of Risk and Remediation Opportunities",
-          "summary": "The newTruRisk™ EliminateOverviewdashboard is your central landing page for risk elimination insights and remediation planning. The page highlights your organization's addressable vulnerability exposure and provides actionable recommendations to…"
-        },
-        {
-          "heading": "Track Operational Status of Remediation in One View",
-          "summary": "The Operational Status page provides a centralized, user-specific view of your organization's patching posture and outcomes within Patch Management. It serves as a single destination for operational insights, providing key patch data across asset…"
-        },
-        {
-          "heading": "Improved Asset Status in Job Progress",
-          "summary": "Assets with a revoked manifest now display a newRevokedstatus instead ofPendingin theJobProgressview. An informational message is also shown to explain why the manifest was revoked, making it easier to identify the reason and understand the asset's…"
-        }
-      ],
-      "issues_fixed": [
-        {
-          "component": "PM - UI",
-          "issue": "An issue occurred in which deployment jobs displayed an incorrect time zone during job creation. This issue occurred because the agent automatically selected the first entry in theTimeZonedrop-down list, instead of the correct entry.This issue is now fixed, and new jobs automatically select the user's local timezone."
-        },
-        {
-          "component": "PM - UI",
-          "issue": "An issue was fixed where theNextTriggerDatefor scheduled patch jobs disappeared after the page finished loading. The next trigger dates only for applicable jobs is now displayed in the UI."
-        },
-        {
-          "component": "PM - UI",
-          "issue": "Anissueoccurredwhere theDeploymentJobspage made repeated requests to retrieve tag information, resulting in slower page load times.Thisissuewasfixed, and the performance has improved."
-        },
-        {
-          "component": "PM - Job Scheduling",
-          "issue": "Anissueoccurredin which some patch jobs scheduled between 12:00 AM and 3:00 AM started about 24 hours after their scheduled times.Thisissuewasfixed, and the jobs now run at the intended scheduled time."
-        },
-        {
-          "component": "PM - UI",
-          "issue": "Anissueoccurredwhere Microsoft Edge patch failures withMSIerror1603displayed incorrect troubleshooting information. Thisissuehas been fixed, and the correct error details and guidance are now displayed."
-        },
-        {
-          "component": "PM - UI",
-          "issue": "An issue occurred where thevulnerabilities.statustoken in the patch job vulnerability search was not found, although the same token was found in VMDR search. This issue is now fixed, and the token is displayed in the patch job vulnerability search."
-        },
-        {
-          "component": "PM - UI",
-          "issue": "An issue occurred in which software uploads via the Pre/Post Deploy and Install Software actions failed at 500 MB, even for files within that limit. This happened because the file size was not calculated in binary units, misrepresenting the actual size. This issue is now fixed with an accurate binary-based size calculation, and the updated supported file size is now visible in the UI."
-        },
-        {
-          "component": "PM - Assets",
-          "issue": "An issue occurred where therebootrequiredflag was reset, due to which expected results for theasset.isPendingReboottoken were not returned. This issue is now fixed and the QQL token results are now displayed correctly."
-        },
-        {
-          "component": "PM - Job Windows",
-          "issue": "An issue occurred where the time zone selected for a scheduled patch deployment job changed to a different time zone after the job was saved. This issue has been fixed, and the selected time zone is now retained and displayed correctly in the job details."
-        },
-        {
-          "component": "PM - Job Scheduling",
-          "issue": "An issue occurred where some Patch Tuesday jobs scheduled between 12.00 AM and 3.00 AM were not getting executed. This issue is fixed and the jobs now run at the scheduled time."
-        },
-        {
-          "component": "PM - UI",
-          "issue": "An issue occurred where navigating to theOptionssection from theJob Informationpage caused the Patch Management application to crash and display an error message. This issue has been fixed, and users can now access theOptionssection without application crashes or errors."
-        }
-      ],
-      "cves": []
-    }
+    "detected_at": "2026-09-10T11:49:41+00:00"
   },
   "1796f6b0011b": {
     "key": "1796f6b0011b",
