@@ -77,7 +77,7 @@ Runs automatically twice a day — **08:45** and **16:00 Amsterdam time** — vi
 |---|---|
 | 🔴 HIGH | `VM` `VMDR` `PC` `API` `CA` `CSAM` `GAV` `Conn` `TC` `CRA` `CS` `PA` `TAS` `WAS` |
 | 🟡 MEDIUM | `ETM` `PM` `EDR` `FIM` `UD` |
-| ⚪ LOW | Everything else (including `ID`, `VMDR OT`) |
+| 🟢 LOW | Everything else (including `ID`, `VMDR OT`) |
 
 ---
 

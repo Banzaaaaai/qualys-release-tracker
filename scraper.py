@@ -503,7 +503,7 @@ def _priority(tags: list[str]) -> tuple[str, str]:
         return "🔴 HIGH",   "#c0392b"
     if tag_set & MEDIUM_PRIORITY_TAGS:
         return "🟡 MEDIUM", "#d68910"
-    return "⚪ LOW", "#4a4a6a"
+    return "🟢 LOW", "#27ae60"
 
 
 def _tag_badge(tag: str, colour: str) -> str:
@@ -614,7 +614,7 @@ def build_html_email(new_releases: list[dict], run_date: str) -> str:
             <strong>Priority tiers:</strong><br>
             🔴 HIGH = VM / VMDR / PC / API / CA / CSAM / GAV / TAS / WAS<br>
             🟡 MEDIUM = ETM / PM / EDR / FIM / UD<br>
-            ⚪ LOW
+            🟢 LOW
           </td>
         </tr>
         <tr>
@@ -818,8 +818,8 @@ def build_monthly_digest_email(
         <td style="padding:8px 12px;text-align:right;font-weight:700;">{medium}</td>
       </tr>
       <tr>
-        <td style="padding:8px 12px;background:#f1f2f4;border-radius:4px;
-                   font-weight:700;color:#4a4a6a;">⚪ LOW</td>
+        <td style="padding:8px 12px;background:#eafaf1;border-radius:4px;
+                   font-weight:700;color:#27ae60;">🟢 LOW</td>
         <td style="padding:8px 12px;text-align:right;font-weight:700;">{low}</td>
       </tr>
     </table>

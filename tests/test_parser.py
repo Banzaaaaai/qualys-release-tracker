@@ -163,7 +163,7 @@ class TestPriority:
     def test_unknown_tag_is_low(self):
         label, colour = _priority(["SOMETHING_UNKNOWN"])
         assert "LOW" in label
-        assert colour == "#4a4a6a"
+        assert colour == "#27ae60"
 
     def test_empty_tags_is_low(self):
         label, _ = _priority([])
