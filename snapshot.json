@@ -18093,5 +18093,63 @@
     ],
     "month_label": "June 2016",
     "detected_at": "2026-05-18T17:20:41+00:00"
+  },
+  "756b44852e03": {
+    "key": "756b44852e03",
+    "url": "https://docs.qualys.com/en/saasdr/release-notes/saasdr/release_1_16_0.htm",
+    "title": "SaaS Detection and Response 1.16.0",
+    "tags": [
+      "SaaS DR"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-16T17:59:52+00:00",
+    "details": {
+      "release_date": "September 16, 2026",
+      "features": [],
+      "issues_fixed": [],
+      "cves": []
+    }
+  },
+  "f82e0a4ecf59": {
+    "key": "f82e0a4ecf59",
+    "url": "https://docs.qualys.com/en/saasdr/release-notes/saasdr/release_1_16_0_api.htm",
+    "title": "SaaS Detection and Response 1.16.0 API",
+    "tags": [
+      "API",
+      "SaaS DR"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-16T17:59:52+00:00",
+    "details": {
+      "release_date": "September 16, 2026",
+      "features": [],
+      "issues_fixed": [],
+      "cves": []
+    }
+  },
+  "24fd733afa3e": {
+    "key": "24fd733afa3e",
+    "url": "https://docs.qualys.com/en/scanner/release-notes/virtual_scanner/release_4_2_21.htm",
+    "title": "Virtual Scanner Appliance 4.2.21",
+    "tags": [
+      "SA"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-16T17:59:52+00:00",
+    "details": {
+      "release_date": "September 16, 2026",
+      "features": [
+        {
+          "heading": "New Features",
+          "summary": "You can now deploy qVSA using UEFI-based boot mode across all supported platforms. GCP UEFI support was introduced in qVSA 4.1 and subsequently extended to other supported platforms."
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "Total Scan Capacity"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    }
   }
 }
