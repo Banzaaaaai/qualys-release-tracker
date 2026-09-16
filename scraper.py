@@ -302,14 +302,23 @@ def load_snapshot() -> dict:
     return data
 
 
-def save_snapshot(releases: list[dict]) -> None:
+def save_snapshot(releases: list[dict]) -> dict:
     index = {r["key"]: r for r in releases}
-    SNAPSHOT_FILE.write_text(json.dumps(index, indent=2, ensure_ascii=False))
+    SNAPSHOT_FILE.write_text(json.dumps(index, indent=2, ensure_ascii=False), encoding="utf-8")
     log.info("Snapshot saved (%d entries)", len(index))
     return index
 
 
 # ── 3. Snapshot size guard + archive ─────────────────────────────────────────
+
+def load_archive() -> dict:
+    if not SNAPSHOT_ARCHIVE.exists():
+        return {}
+    data = json.loads(SNAPSHOT_ARCHIVE.read_text(encoding="utf-8"))
+    if not isinstance(data, dict) or not all(isinstance(v, dict) for v in data.values()):
+        raise RuntimeError("snapshot_archive.json must contain an object of release entries")
+    return data
+
 
 def snapshot_size_guard(snapshot: dict) -> dict:
     """
@@ -338,12 +347,7 @@ def snapshot_size_guard(snapshot: dict) -> dict:
             keep[key] = entry         # no timestamp → keep
 
     if archive:
-        existing: dict = {}
-        if SNAPSHOT_ARCHIVE.exists():
-            try:
-                existing = json.loads(SNAPSHOT_ARCHIVE.read_text(encoding="utf-8"))
-            except json.JSONDecodeError:
-                pass
+        existing = load_archive()
         existing.update(archive)
         SNAPSHOT_ARCHIVE.write_text(
             json.dumps(existing, indent=2, ensure_ascii=False), encoding="utf-8"
@@ -370,7 +374,7 @@ def check_staleness(snapshot: dict) -> bool:
     """
     Return True (and log a warning) if snapshot has entries but none were
     detected within the past STALENESS_DAYS days.
-    Freshness is tracked via the 'detected_at' field written by append_run_log.
+    Freshness is tracked via the 'detected_at' field saved with each release.
     """
     if not snapshot:
         return False
@@ -701,7 +705,7 @@ def build_monthly_digest_email(
     run_log: list[dict], snapshot: dict, target_month: datetime | None = None
 ) -> str:
     now = datetime.now(timezone.utc)
-    target = target_month or now
+    target = target_month or (now.replace(day=1) - timedelta(days=1))
     month_name = target.strftime("%B %Y")
 
     month_start = target.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
@@ -790,7 +794,7 @@ def build_monthly_digest_email(
 
   <div style="padding:20px 28px;">
     <p style="color:#555;font-size:13px;margin-top:0;">
-      Summary of tracker activity over the past 30 days.
+      Summary of tracker activity during {month_name}.
     </p>
     <table style="width:100%;border-collapse:collapse;
                   background:#f8fafc;border-radius:6px;overflow:hidden;">
@@ -881,7 +885,10 @@ def send_staleness_email(days: int, total: int) -> None:
 def send_monthly_digest(
     run_log: list[dict], snapshot: dict, target_month: datetime | None = None
 ) -> None:
-    month_name = (target_month or datetime.now(timezone.utc)).strftime("%B %Y")
+    target_month = target_month or (
+        datetime.now(timezone.utc).replace(day=1) - timedelta(days=1)
+    )
+    month_name = target_month.strftime("%B %Y")
     _send(
         f"[Qualys Tracker] 📊 Monthly digest — {month_name}",
         build_monthly_digest_email(run_log, snapshot, target_month),
@@ -897,7 +904,7 @@ def main() -> None:
     # Handle monthly digest mode — send stats then exit
     if MONTHLY_DIGEST:
         log.info("MONTHLY_DIGEST=true — sending digest and exiting")
-        snapshot = load_snapshot() if SNAPSHOT_FILE.exists() else {}
+        snapshot = {**load_archive(), **load_snapshot()}
         run_log: list[dict] = []
         if RUN_LOG_FILE.exists():
             try:
@@ -920,22 +927,32 @@ def main() -> None:
     snapshot: dict  = {}
     email_sent = False
     stale      = False
+    stale_alert_sent = False
+    total_count = 0
 
     try:
         # Load + validate snapshot
         try:
             snapshot = load_snapshot()
+            total_count = len(snapshot)
         except RuntimeError as exc:
             raise RuntimeError(f"Snapshot integrity check failed: {exc}") from exc
 
-        # Guard snapshot size
-        snapshot = snapshot_size_guard(snapshot)
+        archive = load_archive()
+        total_count = len({**archive, **snapshot})
 
         # Fetch live releases
         current = fetch_releases()
+        if not current:
+            raise RuntimeError("No releases parsed; refusing to replace the saved snapshot")
+
+        snapshot = snapshot_size_guard(snapshot)
+        archive = load_archive()
+        known = {**archive, **snapshot}
+        total_count = len(known)
 
         # Diff
-        new = find_new_releases(current, snapshot)
+        new = find_new_releases(current, known)
 
         # Stamp detected_at on new entries so staleness tracking works
         now_iso = datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -954,10 +971,9 @@ def main() -> None:
             time.sleep(1.5)
 
         # Staleness check
-        merged_snapshot = {r["key"]: r for r in current}
-        for key, entry in snapshot.items():
-            if key not in merged_snapshot:
-                merged_snapshot[key] = entry
+        merged_snapshot = dict(known)
+        for r in current:
+            merged_snapshot[r["key"]] = {**known.get(r["key"], {}), **r}
         stale = check_staleness(merged_snapshot)
 
         # Email
@@ -976,13 +992,16 @@ def main() -> None:
                     _silence, STALENESS_SILENCE_DAYS,
                 )
             else:
-                send_staleness_email(STALENESS_DAYS, len(snapshot))
+                send_staleness_email(STALENESS_DAYS, len(known))
+                stale_alert_sent = True
+                email_sent = True
 
-        # Save updated snapshot (carry forward detected_at for known entries)
-        for r in current:
-            if r["key"] in snapshot and "detected_at" not in r:
-                r["detected_at"] = snapshot[r["key"]].get("detected_at", now_iso)
-        save_snapshot(current)
+        # Preserve metadata and history while keeping archived entries out of the active file.
+        snapshot = save_snapshot([
+            entry for key, entry in merged_snapshot.items()
+            if key not in archive or key in snapshot
+        ])
+        total_count = len(merged_snapshot)
 
     except Exception as exc:
         status    = "failure"
@@ -996,16 +1015,16 @@ def main() -> None:
         # Run log
         append_run_log(
             new_count    = len(new),
-            total_count  = len(snapshot),
+            total_count  = total_count,
             email_sent   = email_sent,
-            stale        = stale,
+            stale        = stale_alert_sent,
             status       = status,
             error        = error_msg[:500] if error_msg else "",
             duration_s   = duration,
         )
 
         # Badge
-        write_badge(len(snapshot), status)
+        write_badge(total_count, status)
 
         log.info("=== Done in %.1fs (status=%s) ===", duration, status)
 

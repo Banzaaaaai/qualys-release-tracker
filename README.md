@@ -21,7 +21,7 @@ Runs automatically twice a day — **08:45** and **16:00 Amsterdam time** — vi
 | **Mobile-friendly email** | Single-column stacked card layout (inline styles, no `@media`) so it renders cleanly in Gmail mobile |
 | **Monthly digest** | First day of each month: sends a stats summary (runs, new releases, priority breakdown) |
 | **Snapshot size guard** | When `snapshot.json` exceeds 1 MB, archives entries older than 2 years automatically |
-| **Offline unit tests** | `tests/test_parser.py` — 37 tests covering parser and priority logic, no HTTP needed |
+| **Offline tests** | 44 tests covering parsing, priority, snapshot preservation, archiving, staleness, and digest dates; no HTTP or email needed |
 
 ---
 
@@ -109,7 +109,9 @@ After the first run, add this to any README or dashboard:
 
 ## Monthly digest
 
-Sent automatically on the 1st of each month. Includes: runs, successful runs, new releases found, emails sent, staleness alerts, and a priority breakdown of the full snapshot. Trigger manually via **Run workflow → `monthly_digest = true`**.
+Sent automatically on the 1st of each month for the previous calendar month. Includes: runs, successful runs, new releases found, emails sent, staleness alerts actually sent, and a priority breakdown of active and archived releases. Trigger manually via **Run workflow → `monthly_digest = true`**; set `digest_month` to override the target month.
+
+Empty scrapes fail without replacing the snapshot. Known releases retain their timestamps and details, including when they disappear from the listing. Archived releases remain known for duplicate detection. Badge and run-log totals include active and archived releases, and failure logs and badges are committed even when the tracker fails.
 
 ---
 
@@ -117,7 +119,7 @@ Sent automatically on the 1st of each month. Includes: runs, successful runs, ne
 
 ```bash
 pip install -r requirements.txt
-pytest tests/test_parser.py -v
+pytest tests -v
 ```
 
 ---
