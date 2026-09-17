@@ -18151,5 +18151,42 @@
       "issues_fixed": [],
       "cves": []
     }
+  },
+  "e5b7f86d6054": {
+    "key": "e5b7f86d6054",
+    "url": "https://docs.qualys.com/en/mroc/release-notes/managed_risk_operations_center/release_2_3.htm",
+    "title": "Managed Risk Operations Center Release 2.3",
+    "tags": [
+      "mROC"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-17T17:58:37+00:00",
+    "details": {
+      "release_date": "SEPTEMBER 17, 2026This release introduces the Growth Opportunities option, a new risk scope graph on the Risk Overview tab, account-level quick actions, and a breakdown of the factors driving each account's TruRisk score.",
+      "features": [
+        {
+          "heading": "Spot Every Growth Opportunity Across Your Customer Base",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Filter Findings Faster with the Martini Glass Funnel",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Investigate Account Risks Faster with Quick Actions",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Generate Reports to Prioritize Remediation Efforts",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Identify the risks contributing most to the score",
+          "summary": "What Changed For You"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    }
   }
 }
