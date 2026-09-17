@@ -18,6 +18,7 @@ import logging
 import os
 import re
 import smtplib
+import ssl
 import sys
 import time
 import traceback
@@ -25,6 +26,7 @@ from datetime import datetime, timezone, timedelta
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
+from urllib.parse import urljoin, urlsplit, urldefrag
 
 import requests
 from bs4 import BeautifulSoup
@@ -51,6 +53,9 @@ STALENESS_SILENCE_DAYS = 10          # min days between two staleness alert emai
 # Archive entries older than this many days when snapshot exceeds WARN_BYTES
 ARCHIVE_AFTER_DAYS = 730          # 2 years
 SNAPSHOT_WARN_BYTES = 1_000_000   # 1 MB
+ENRICHMENT_BATCH_SIZE = 5
+ENRICHMENT_MAX_ATTEMPTS = 3
+ENRICHMENT_RETRY_HOURS = 24
 
 HIGH_PRIORITY_TAGS   = {"VM", "VMDR", "PC", "API", "CA", "CSAM", "GAV", "Conn", "TC", "CRA", "CS", "PA", "TAS", "WAS"}
 MEDIUM_PRIORITY_TAGS = {"ETM", "PM", "EDR", "FIM", "UD"}
@@ -109,6 +114,7 @@ def parse_releases(html: str) -> list[dict]:
     soup = BeautifulSoup(html, "lxml")
     releases: list[dict] = []
     current_month = "Unknown"
+    seen = set()
 
     for li in soup.select("li"):
         css_classes = li.get("class", [])
@@ -125,7 +131,10 @@ def parse_releases(html: str) -> list[dict]:
             continue
 
         title = anchor.get_text(strip=True)
-        url   = anchor["href"]
+        url = urldefrag(urljoin(RELEASE_NOTES_URL, anchor["href"].strip()))[0]
+        if not title or urlsplit(url).scheme not in {"http", "https"} or url in seen:
+            continue
+        seen.add(url)
         tags  = [d.get_text(strip=True) for d in li.select("div[title]")]
         key   = hashlib.sha1(url.encode()).hexdigest()[:12]
 
@@ -230,7 +239,13 @@ def fetch_release_details(url: str) -> dict:
         if heading.lower() == "issues addressed":
             issues_header = issues_header or h2
             continue
-        p = h2.find_next("p")
+        p = None
+        for following in h2.find_all_next():
+            if following.name in {"h1", "h2"}:
+                break
+            if following.name == "p":
+                p = following
+                break
         summary = _clean_feature_text(p.get_text(strip=True) if p else "")
         summary = _cap_feature_summary(summary)
         if heading or summary:
@@ -363,9 +378,44 @@ def snapshot_size_guard(snapshot: dict) -> dict:
 # ── 4. Diff ──────────────────────────────────────────────────────────────────
 
 def find_new_releases(current: list[dict], snapshot: dict) -> list[dict]:
-    new = [r for r in current if r["key"] not in snapshot]
+    unique = {r["key"]: r for r in current}
+    new = [r for r in unique.values() if r["key"] not in snapshot]
     log.info("%d new release(s) detected", len(new))
     return new
+
+
+def enrich_releases(entries: list[dict]) -> None:
+    """Bound detail work per run; retry failures and backfill missing HTML details."""
+    now = datetime.now(timezone.utc)
+    attempted = 0
+    for entry in entries:
+        if entry.get("details") or urlsplit(entry["url"]).path.lower().endswith(".pdf"):
+            continue
+        state = entry.get("enrichment", {})
+        attempts = state.get("attempts", 0)
+        if attempts >= ENRICHMENT_MAX_ATTEMPTS:
+            continue
+        last_attempt = state.get("last_attempt_at")
+        if last_attempt:
+            last = datetime.fromisoformat(last_attempt)
+            if now - last < timedelta(hours=ENRICHMENT_RETRY_HOURS):
+                continue
+        if attempted >= ENRICHMENT_BATCH_SIZE:
+            break
+        if attempted:
+            time.sleep(1.5)
+        attempted += 1
+        state = {"attempts": attempts + 1, "last_attempt_at": now.isoformat()}
+        try:
+            details = fetch_release_details(entry["url"])
+            if not any(details.values()):
+                raise ValueError("No release details parsed")
+            entry["details"] = details
+            state["status"] = "success"
+        except Exception as exc:
+            state.update(status="failed", error=str(exc)[:500])
+            log.warning("Could not fetch release details for %s: %s", entry["url"], exc)
+        entry["enrichment"] = state
 
 
 # ── 5. Staleness detection ───────────────────────────────────────────────────
@@ -841,20 +891,24 @@ def build_monthly_digest_email(
 
 def _send(subject: str, html_body: str, recipients: list[str] | None = None) -> None:
     if not SMTP_USER or not SMTP_PASSWORD or not EMAIL_TO:
-        log.error("Email credentials not configured — skipping send")
-        return
-    to = recipients or [e.strip() for e in EMAIL_TO.split(",") if e.strip()]
+        raise RuntimeError("SMTP_USER, SMTP_PASSWORD and EMAIL_TO must be configured")
+    to = [e.strip() for e in (recipients if recipients is not None else EMAIL_TO.split(",")) if e.strip()]
+    if not to:
+        raise RuntimeError("At least one email recipient must be configured")
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
     msg["From"]    = SMTP_USER
     msg["To"]      = ", ".join(to)
     msg.attach(MIMEText(html_body, "html", "utf-8"))
     log.info("Connecting to %s:%s", SMTP_HOST, SMTP_PORT)
-    with smtplib.SMTP(SMTP_HOST, SMTP_PORT) as server:
+    with smtplib.SMTP(SMTP_HOST, SMTP_PORT, timeout=30) as server:
         server.ehlo()
-        server.starttls()
+        server.starttls(context=ssl.create_default_context())
+        server.ehlo()
         server.login(SMTP_USER, SMTP_PASSWORD)
-        server.sendmail(SMTP_USER, to, msg.as_bytes())
+        refused = server.sendmail(SMTP_USER, to, msg.as_bytes())
+        if refused:
+            raise smtplib.SMTPRecipientsRefused(refused)
     log.info("Email sent → %s", to)
 
 
@@ -959,26 +1013,22 @@ def main() -> None:
         for r in new:
             r["detected_at"] = now_iso
 
-            if r["url"].lower().endswith(".pdf"):
-                log.info("Skipping detail fetch for PDF release: %s", r["url"])
-                continue
-
-            try:
-                r["details"] = fetch_release_details(r["url"])
-            except Exception as exc:
-                log.warning("Could not fetch release details for %s: %s", r["url"], exc)
-
-            time.sleep(1.5)
-
         # Staleness check
         merged_snapshot = dict(known)
         for r in current:
             merged_snapshot[r["key"]] = {**known.get(r["key"], {}), **r}
+        # New releases first, followed by active history missing details. Archived
+        # entries are intentionally excluded because they are persisted separately.
+        new_keys = {r["key"] for r in new}
+        candidates = [merged_snapshot[r["key"]] for r in new]
+        candidates.extend(entry for key, entry in merged_snapshot.items()
+                          if key not in new_keys and key not in archive)
+        enrich_releases(candidates)
         stale = check_staleness(merged_snapshot)
 
         # Email
         if new or FORCE_NOTIFY:
-            sample = new if new else current[:5]
+            sample = [merged_snapshot[r["key"]] for r in (new if new else current[:5])]
             send_release_email(sample)
             email_sent = True
 

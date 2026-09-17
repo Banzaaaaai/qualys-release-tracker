@@ -25,6 +25,10 @@ on:
         required: false
         default: ""
 
+concurrency:
+  group: qualys-state-${{ github.ref }}
+  cancel-in-progress: false
+
 permissions:
   contents: write   # needed to commit snapshot.json, run_log.json, badge.json
 

@@ -17,6 +17,10 @@ on:
         required: false
         default: ""
 
+concurrency:
+  group: qualys-state-${{ github.ref }}
+  cancel-in-progress: false
+
 permissions:
   contents: write
 

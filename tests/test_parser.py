@@ -131,9 +131,9 @@ class TestParseReleases:
         assert len(result) == 1
         assert result[0]["url"] == "https://qualys.com/notes/valid"
 
-    def test_duplicate_url_produces_same_key(self):
+    def test_duplicate_url_is_only_returned_once(self):
         result = parse_releases(DUPLICATE_URL_HTML)
-        assert result[0]["key"] == result[1]["key"]
+        assert len(result) == 1
 
     def test_title_is_non_empty_string(self):
         for entry in parse_releases(MINIMAL_HTML):

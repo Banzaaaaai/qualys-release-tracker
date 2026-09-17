@@ -87,6 +87,39 @@ def test_corrupt_archive_fails_without_overwriting_it(tracker):
     scraper.send_release_email.assert_not_called()
 
 
+def test_delivery_failure_preserves_new_release_for_retry(tracker):
+    before = scraper.SNAPSHOT_FILE.read_bytes()
+    tracker.return_value = [release("new")]
+    scraper.send_release_email.side_effect = RuntimeError("Delivery failed")
+    with pytest.raises(SystemExit):
+        scraper.main()
+    assert scraper.SNAPSHOT_FILE.read_bytes() == before
+    assert not read(scraper.RUN_LOG_FILE)[-1]["email_sent"]
+    scraper.send_release_email.side_effect = None
+    scraper.main()
+    assert "new" in read(scraper.SNAPSHOT_FILE)
+    assert read(scraper.RUN_LOG_FILE)[-1]["email_sent"]
+
+
+def test_known_release_details_are_backfilled_and_persisted(tracker, monkeypatch):
+    entry = release(detected_at=datetime.now(timezone.utc).isoformat())
+    entry["url"] = "https://example.invalid/known"
+    scraper.save_snapshot([entry])
+    tracker.return_value = [entry.copy()]
+    fetch = Mock(side_effect=RuntimeError("Temporary failure"))
+    monkeypatch.setattr(scraper, "fetch_release_details", fetch)
+    scraper.main()
+    saved = read(scraper.SNAPSHOT_FILE)
+    assert saved["known"]["enrichment"]["status"] == "failed"
+    saved["known"]["enrichment"]["last_attempt_at"] = "2020-01-01T00:00:00+00:00"
+    scraper.save_snapshot(list(saved.values()))
+    fetch.side_effect = None
+    fetch.return_value = {"features": [{"heading": "Recovered", "summary": ""}]}
+    scraper.main()
+    assert read(scraper.SNAPSHOT_FILE)["known"]["details"] == fetch.return_value
+    scraper.send_release_email.assert_not_called()
+
+
 @pytest.mark.parametrize("now,expected", [("2026-01-01", "December 2025"),
                                          ("2026-03-01", "February 2026")])
 def test_digest_defaults_to_completed_month(monkeypatch, now, expected):

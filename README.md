@@ -21,7 +21,10 @@ Runs automatically twice a day — **08:45** and **16:00 Amsterdam time** — vi
 | **Mobile-friendly email** | Single-column stacked card layout (inline styles, no `@media`) so it renders cleanly in Gmail mobile |
 | **Monthly digest** | First day of each month: sends a stats summary (runs, new releases, priority breakdown) |
 | **Snapshot size guard** | When `snapshot.json` exceeds 1 MB, archives entries older than 2 years automatically |
-| **Offline tests** | 44 tests covering parsing, priority, snapshot preservation, archiving, staleness, and digest dates; no HTTP or email needed |
+| **Offline tests** | 58 tests covering parsing, SMTP failures, enrichment retries, priority, snapshot preservation, archiving, staleness, and digest dates; no HTTP or email needed |
+| **SMTP correctness** | Missing settings, empty recipient lists, connection failures, and partial recipient refusals fail the run; verified STARTTLS and a 30-second socket timeout |
+| **Workflow concurrency** | Tracker and DST adjuster share a per-branch concurrency group; an active run is never cancelled by a newer run |
+| **Enrichment retries** | Up to 5 HTML detail fetches per run, new releases first; failed enrichment retries after 24 hours, up to 3 attempts per release |
 
 ---
 
@@ -29,7 +32,7 @@ Runs automatically twice a day — **08:45** and **16:00 Amsterdam time** — vi
 
 1. **Scrapes** `qualys.com/documentation/release-notes` and parses every release entry (title, URL, module tags).
 2. **Diffs** against `snapshot.json` to identify new entries.
-3. **Fetches details** for each new (non-PDF) release — feature summaries, issues fixed, referenced CVEs — with a 1.5s delay between requests.
+3. **Fetches details** for up to 5 non-PDF releases — feature summaries, issues fixed, referenced CVEs — prioritizing new releases, then backfilling active history, with a 1.5s delay between detail fetches.
 4. **Emails** a mobile-friendly HTML report: one card per release, with module badges, priority tiers, feature bullets, and an issues-fixed summary.
 5. **Commits** the updated snapshot, run log, and badge back to the repo.
 
@@ -112,6 +115,10 @@ After the first run, add this to any README or dashboard:
 Sent automatically on the 1st of each month for the previous calendar month. Includes: runs, successful runs, new releases found, emails sent, staleness alerts actually sent, and a priority breakdown of active and archived releases. Trigger manually via **Run workflow → `monthly_digest = true`**; set `digest_month` to override the target month.
 
 Empty scrapes fail without replacing the snapshot. Known releases retain their timestamps and details, including when they disappear from the listing. Archived releases remain known for duplicate detection. Badge and run-log totals include active and archived releases, and failure logs and badges are committed even when the tracker fails.
+
+SMTP errors preserve the previous snapshot so new releases remain eligible for notification on the next run. If only some recipients accept a message, the run fails and retries the whole notification next time; recipients who already accepted it may receive a duplicate. SMTP acceptance does not guarantee inbox delivery. A failure after sending but before saving or pushing state can also cause duplicate notifications.
+
+Enrichment failures are saved under each release's `enrichment` field (`status`, `attempts`, `last_attempt_at`, and `error` on failure). Successful details are reused. After three failed attempts, remove that release's `enrichment` field to allow another retry cycle. Backfilling details does not send another release notification; archived releases and PDFs are excluded. The limits are defined by `ENRICHMENT_BATCH_SIZE`, `ENRICHMENT_MAX_ATTEMPTS`, and `ENRICHMENT_RETRY_HOURS` in `scraper.py`.
 
 ---
 
