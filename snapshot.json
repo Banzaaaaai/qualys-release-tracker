@@ -37,7 +37,36 @@
       "VMDR"
     ],
     "month_label": "September 2026",
-    "detected_at": "2026-09-15T12:08:06+00:00"
+    "detected_at": "2026-09-15T12:08:06+00:00",
+    "details": {
+      "release_date": "September 15, 2026",
+      "features": [
+        {
+          "heading": "Enhanced VMDR User Interface",
+          "summary": "With this release, we have introduced an improved user experience across all the VMDR application pages. You can view updates across fonts, colors, typography, and buttons, making the interface more intuitive and easier to use. This release features…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Vulnerabilities Tab",
+          "issue": "We fixed an issue where the total vulnerability count displayed in theAssetspage on theVulnerabilitiestab did not match the actual count for assets with more than 500 vulnerabilities.You can now view the correct total vulnerability count (for example, 3.42K) in theAssetspage on theVulnerabilitiestab with more than 500 vulnerabilities. TheVulnerabilitiestab listing displays up to 500 vulnerabilities."
+        },
+        {
+          "component": "Vulnerabilities Tab",
+          "issue": "We fixed an issue where multiple widgets on theVulnerabilitiestab page displayed the same asset count, even if the widgets used different QQL filters.You can now view the correct asset count based on the QQL configured for each widget. For example,TruRisk Score >=700, Asset Criticality Score >=91, Public Facing Assets, and Not Scanned -30 Days."
+        },
+        {
+          "component": "Asset Details Page",
+          "issue": "We fixed an issue where vulnerabilities filtered by QDS on assets with more than 50 vulnerabilities were not displayed in a consistent descending QDS order across all pages in theAsset Details>Vulnerabilities.You can now view vulnerabilities in an accurate, globally consistent descending QDS order across all pages on theAsset Detailstab when filtering by QDS. This also applies to assets with multiple vulnerabilities."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-18T17:34:12.215372+00:00",
+      "status": "success"
+    }
   },
   "93d63dfeb57b": {
     "key": "93d63dfeb57b",
@@ -47,7 +76,23 @@
       "PCI"
     ],
     "month_label": "September 2026",
-    "detected_at": "2026-09-10T11:49:41+00:00"
+    "detected_at": "2026-09-10T11:49:41+00:00",
+    "details": {
+      "release_date": "September 10, 2026",
+      "features": [
+        {
+          "heading": "Delete Merchant User Accounts",
+          "summary": "PCI Merchant Point of Contact (POC) users can now delete sub-user accounts directly from the PCI Compliance user interface (UI). This release gives merchants a proper offboarding workflow while keeping scan history, audit trails, and compliance…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-18T17:34:12.215372+00:00",
+      "status": "success"
+    }
   },
   "17b576dc31a0": {
     "key": "17b576dc31a0",
@@ -57,7 +102,39 @@
       "FIM"
     ],
     "month_label": "September 2026",
-    "detected_at": "2026-09-10T11:49:41+00:00"
+    "detected_at": "2026-09-10T11:49:41+00:00",
+    "details": {
+      "release_date": "September 09, 2026",
+      "features": [
+        {
+          "heading": "Create Incident for Individual Events",
+          "summary": "You can now select individual events on theEvent Reviewtab and create an incident for only those events, so you can raise an incident for a chosen set of file changes without building a search query that isolates exactly those events."
+        },
+        {
+          "heading": "This Year and Year to date Timeframe Options",
+          "summary": "You can now filter events and incidents byThis YearorYear to date, so you can report on a full calendar year or on the year so far, such as for an annual audit, without defining a custom date range each time."
+        },
+        {
+          "heading": "Event Limit for Ignore and Restore Actions",
+          "summary": "The ignore and restore action now accepts up to 100 events. On theEvent Reviewtab, you can select up to 100 events for a single ignore action. On theIgnoredtab, you can select up to 100 events for a single restore action. When you select more than…"
+        },
+        {
+          "heading": "Enhanced User Interface",
+          "summary": "With this release, we have introduced an improved user experience across all FIM pages. You can see updates across fonts, colors, typography, and buttons, making the interface more intuitive and easier to use. This release features User Interface…"
+        },
+        {
+          "heading": "New Tokens in FIM",
+          "summary": "©2026Qualys, Inc. All rights reserved.Privacy Policy."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-18T17:34:12.215372+00:00",
+      "status": "success"
+    }
   },
   "e62090c88a31": {
     "key": "e62090c88a31",
@@ -69,7 +146,80 @@
       "PM"
     ],
     "month_label": "September 2026",
-    "detected_at": "2026-09-10T11:49:41+00:00"
+    "detected_at": "2026-09-10T11:49:41+00:00",
+    "details": {
+      "release_date": "September 06, 2026This release unifies Patch, Mitigate, and Isolate underTruRisk™ Eliminate, adds new Overview and Operational Status dashboards for risk and remediation visibility, and improves asset status reporting in Job Progress.",
+      "features": [
+        {
+          "heading": "TruRisk™ Eliminate Unifies Patch Management, Mitigate, and Isolate",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Get a Complete View of Risk and Remediation Opportunities",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Track Operational Status of Remediation in One View",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Improved Asset Status in Job Progress",
+          "summary": "What Changed For You"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PM - UI",
+          "issue": "An issue occurred in which deployment jobs displayed an incorrect time zone during job creation. This issue occurred because the agent automatically selected the first entry in theTime Zonedrop-down list, instead of the correct entry.This issue is now fixed, and new jobs automatically select the user's local timezone."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "An issue was fixed where theNext Trigger Datefor scheduled patch jobs disappeared after the page finished loading.The next trigger dates only for applicable jobs is now displayed in the UI."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "An issue occurred where theDeployment Jobspage made repeated requests to retrieve tag information, resulting in slower page load times.This issue was fixed, and the performance has improved."
+        },
+        {
+          "component": "PM - Job Scheduling",
+          "issue": "An issue occurred in which some patch jobs scheduled between 12:00 AM and 3:00 AM started about 24 hours after their scheduled times.This issue was fixed, and the jobs now run at the intended scheduled time."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "An issue occurred where Microsoft Edge patch failures with MSI error1603displayed incorrect troubleshooting information.This issue has been fixed, and the correct error details and guidance are now displayed."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "An issue occurred where thevulnerabilities.statustoken in the patch job vulnerability search was not found, although the same token was found in VMDR search.This issue is now fixed, and the token is displayed in the patch job vulnerability search."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "An issue occurred in which software uploads via the Pre/Post Deploy and Install Software actions failed at 500 MB, even for files within that limit. This happened because the file size was not calculated in binary units, misrepresenting the actual size.This issue is now fixed with an accurate binary-based size calculation, and the updated supported file size is now visible in the UI."
+        },
+        {
+          "component": "PM - Assets",
+          "issue": "An issue occurred where therebootrequiredflag was reset, due to which expected results for theasset.isPendingReboottoken were not returned.This issue is now fixed and the QQL token results are now displayed correctly."
+        },
+        {
+          "component": "PM - Job Windows",
+          "issue": "An issue occurred where the time zone selected for a scheduled patch deployment job changed to a different time zone after the job was saved.This issue has been fixed, and the selected time zone is now retained and displayed correctly in the job details."
+        },
+        {
+          "component": "PM - Job Scheduling",
+          "issue": "An issue occurred where some Patch Tuesday jobs scheduled between 12.00 AM and 3.00 AM were not getting executed.This issue is fixed and the jobs now run at the scheduled time."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "An issue occurred where navigating to theOptionssection from theJob Informationpage caused the Patch Management application to crash and display an error message.This issue has been fixed, and users can now access theOptionssection without application crashes or errors."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-18T17:34:12.215372+00:00",
+      "status": "success"
+    }
   },
   "1796f6b0011b": {
     "key": "1796f6b0011b",
@@ -79,7 +229,59 @@
       "TA"
     ],
     "month_label": "September 2026",
-    "detected_at": "2026-09-09T11:51:56+00:00"
+    "detected_at": "2026-09-09T11:51:56+00:00",
+    "details": {
+      "release_date": "September 9, 2026AI now runs everywhere in your environment: in the cloud, in your code, in the SaaS apps your teams use, even on employee laptops, and most of it stays invisible to security. TotalAI Release 2.0 puts it all in one view: every AI asset, workload, model, and risk across your entire AI estate, scored with TruRisk™ so you know what to fix first. And when a live LLM exploit needs to be stopped, you don't have to wait for a retrain. Apply a Guardrail and block it now, while the permanent fix is on its way.",
+      "features": [
+        {
+          "heading": "Get a Unified View of Your AI Estate",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Identify AI Workloads and Prioritize Risk",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Track AI SaaS Usage Across Your Organization",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Identify AI-Related Code and Prioritize Remediation",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Discover AI Applications on Windows Hosts",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Align AI Security Policies",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Strengthen Your Security Posture",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Block LLM Exploits with Guardrails",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Simplify AI Model Authentication",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Test for Vector Embedding Attacks",
+          "summary": "What Changed For You"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-18T17:34:12.215372+00:00",
+      "status": "success"
+    }
   },
   "622a18f4b5ac": {
     "key": "622a18f4b5ac",
