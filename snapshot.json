@@ -7,7 +7,27 @@
       "QGS"
     ],
     "month_label": "September 2026",
-    "detected_at": "2026-09-15T12:08:06+00:00"
+    "detected_at": "2026-09-15T12:08:06+00:00",
+    "details": {
+      "release_date": "September 11, 2026",
+      "features": [
+        {
+          "heading": "QGS UI Service Version Update",
+          "summary": "The QGS UI service is now updated to version2.10.0-15. This release includes internal maintenance and stability updates to the service."
+        },
+        {
+          "heading": "Enhanced User Interface",
+          "summary": "With this release, we have introduced an improved user experience across all QGS pages. You can see updates across fonts, colors, typography, and buttons, making the interface more intuitive and easier to use. This release features User Interface…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-18T11:49:47.592448+00:00",
+      "status": "success"
+    }
   },
   "011e58391cf3": {
     "key": "011e58391cf3",
@@ -2058,9 +2078,10 @@
   "bbd83232ead4": {
     "key": "bbd83232ead4",
     "url": "https://docs.qualys.com/en/qscanner/release-notes/qscanner/release_4_8_0.htm",
-    "title": "QScanner 4.8.0",
+    "title": "QScanner 4.8",
     "tags": [
-      "CS"
+      "CS",
+      "QS"
     ],
     "month_label": "February 2026",
     "detected_at": "2026-05-18T17:20:41+00:00"
@@ -2779,7 +2800,7 @@
     "url": "https://docs.qualys.com/en/qscanner/release-notes/qscanner/release_4_7_0.htm",
     "title": "QScanner 4.7.0",
     "tags": [
-      "CS"
+      "QS"
     ],
     "month_label": "December 2025",
     "detected_at": "2026-05-18T17:20:41+00:00"
@@ -4805,7 +4826,7 @@
   "8a378aca3f86": {
     "key": "8a378aca3f86",
     "url": "https://docs.qualys.com/en/scanner/release-notes/virtual_scanner/release_qvsa_4_1_64_1.htm",
-    "title": "Virtual Scanner Appliance 4.1: VMWare | HyperV",
+    "title": "Virtual Scanner Appliance 4.1: Oracle",
     "tags": [
       "SA"
     ],
@@ -10150,7 +10171,7 @@
   "b3210f238a9a": {
     "key": "b3210f238a9a",
     "url": "https://www.qualys.com/docs/release-notes/qualys-car-1.6-release-notes.pdf",
-    "title": "Custom Assessment and Remediation 1.6",
+    "title": "Custom Assessment and Remediation 1.6.0",
     "tags": [
       "CAR"
     ],
@@ -10370,9 +10391,10 @@
     "url": "https://www.qualys.com/docs/release-notes/qualys-fim-3.6-api-release-notes.pdf",
     "title": "File Integrity Monitoring 3.6 API",
     "tags": [
+      "API",
       "FIM"
     ],
-    "month_label": "October 2022",
+    "month_label": "December 2022",
     "detected_at": "2026-05-18T17:20:41+00:00"
   },
   "3ab97c9e7e48": {
@@ -17109,11 +17131,11 @@
   "49dc76745229": {
     "key": "49dc76745229",
     "url": "https://www.qualys.com/docs/release-notes/qualys-cloud-agent-linux-1.7.0-release-notes.pdf",
-    "title": "Cloud Agent Linux 1.7.0",
+    "title": "Cloud Agent Linux 1.7.1",
     "tags": [
       "CA"
     ],
-    "month_label": "March 2018",
+    "month_label": "April 2018",
     "detected_at": "2026-05-18T17:20:41+00:00"
   },
   "0f76c2f5d408": {
@@ -18188,5 +18210,214 @@
       "issues_fixed": [],
       "cves": []
     }
+  },
+  "30e11c2f7340": {
+    "key": "30e11c2f7340",
+    "url": "https://docs.qualys.com/en/etm/release-notes/etm/release_1_3_2_api.htm",
+    "title": "Enterprise TruRisk Management 1.3.2 API",
+    "tags": [
+      "API",
+      "ETM"
+    ],
+    "month_label": "July 2025",
+    "detected_at": "2026-09-18T11:49:47+00:00",
+    "details": {
+      "release_date": "July 07, 2025",
+      "features": [
+        {
+          "heading": "Enhanced Reporting Columns in Download Report API with Patch, Finding, and Asset Details",
+          "summary": "With this update, we have enhanced reporting columns. The output response of theDownload report using the resource name APInow includes information for patches, findings from Qualys apps and third-party sources, additional asset information, along…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2001-0775",
+        "CVE-2015-2808",
+        "CVE-2024-7264"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-18T11:49:47.592448+00:00",
+      "status": "success"
+    }
+  },
+  "9e59ef16d780": {
+    "key": "9e59ef16d780",
+    "url": "https://docs.qualys.com/en/pm/release-notes/patch_management/release_3_6.htm",
+    "title": "Patch Management 3.6",
+    "tags": [
+      "PM"
+    ],
+    "month_label": "May 2025",
+    "detected_at": "2026-09-18T11:49:47+00:00",
+    "details": {
+      "release_date": "May 19, 2025",
+      "features": [
+        {
+          "heading": "Eliminations Workflow from VMDR Prioritization tab",
+          "summary": "You can now initiate the Eliminations workflow from theVMDR Prioritizationtab. This workflow allows you to select multiple assets using tags and apply a fix when a patch is not available for those assets. Unlike the workflow through…"
+        },
+        {
+          "heading": "Support Patching for Non-Security Updates for Linux Platform",
+          "summary": "We now support patching for non-security updates for the Linux assets. For more information on the supported operating systems, seeNSU Supported Linux Operating Systems."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-18T11:49:47.592448+00:00",
+      "status": "success"
+    }
+  },
+  "b9be10c41f6e": {
+    "key": "b9be10c41f6e",
+    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10_33_api.htm",
+    "title": "Enterprise TruRisk™ Platform 10.33 API",
+    "tags": [
+      "API",
+      "VM"
+    ],
+    "month_label": "April 2025",
+    "detected_at": "2026-09-18T11:49:47+00:00",
+    "details": {
+      "release_date": "April 2, 2025",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "With this release, we have added MITRE ATT&CK Tactics and Technique details in the scan template and host detection list API. Previously, it was available on the Prioritization tab of Qualys Vulnerability Management, Detection, and Response (VMDR),…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-18T11:49:47.592448+00:00",
+      "status": "success"
+    }
+  },
+  "d9b083fe2e45": {
+    "key": "d9b083fe2e45",
+    "url": "https://docs.qualys.com/en/vmdr-mobile/release-notes/vmdr_mobile/release_1_5_9_0.htm",
+    "title": "VMDR Mobile 1.5.9",
+    "tags": [
+      "VMDR Mobile"
+    ],
+    "month_label": "January 2025",
+    "detected_at": "2026-09-18T11:49:47+00:00",
+    "details": {
+      "release_date": "January 24, 2025",
+      "features": [],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-18T11:49:47.592448+00:00",
+      "status": "success"
+    }
+  },
+  "7784c4bf40d9": {
+    "key": "7784c4bf40d9",
+    "url": "https://www.qualys.com/docs/release-notes/qualys-cloud-platform-3.16.1-release-notes.pdf",
+    "title": "Cloud Platform 3.16.1",
+    "tags": [
+      "CA",
+      "TC",
+      "VMDR",
+      "WAS"
+    ],
+    "month_label": "October 2023",
+    "detected_at": "2026-09-18T11:49:47+00:00"
+  },
+  "5156dea313b8": {
+    "key": "5156dea313b8",
+    "url": "https://www.qualys.com/docs/release-notes/qualys-container-security-sensor-1.27-release-notes.pdf",
+    "title": "Container Security Sensor 1.27",
+    "tags": [
+      "CS"
+    ],
+    "month_label": "July 2023",
+    "detected_at": "2026-09-18T11:49:47+00:00"
+  },
+  "4b1486c52176": {
+    "key": "4b1486c52176",
+    "url": "https://www.qualys.com/docs/release-notes/qualys-endpoint-detection-and-response-2.3-release-notes.pdf",
+    "title": "Endpoint Detection and Response 2.3",
+    "tags": [
+      "EDR"
+    ],
+    "month_label": "February 2023",
+    "detected_at": "2026-09-18T11:49:47+00:00"
+  },
+  "62ad51d91425": {
+    "key": "62ad51d91425",
+    "url": "https://www.qualys.com/docs/release-notes/qualys-cloudview-2.0-api-release-notes.pdf",
+    "title": "CloudView 2.0 API",
+    "tags": [
+      "API",
+      "CI",
+      "CSA",
+      "TC"
+    ],
+    "month_label": "February 2023",
+    "detected_at": "2026-09-18T11:49:47+00:00"
+  },
+  "f788ca58111e": {
+    "key": "f788ca58111e",
+    "url": "https://www.qualys.com/docs/release-notes/qualys-certificateview-2.12.0-release-notes.pdf",
+    "title": "Certificate View 2.12",
+    "tags": [
+      "CRA",
+      "CRI"
+    ],
+    "month_label": "January 2023",
+    "detected_at": "2026-09-18T11:49:47+00:00"
+  },
+  "7af7e975f195": {
+    "key": "7af7e975f195",
+    "url": "https://www.qualys.com/docs/release-notes/qualys-cloud-agent-unix-4.17-release-notes.pdf",
+    "title": "Cloud Agent AIX 4.17",
+    "tags": [
+      "CA",
+      "CSAM",
+      "FIM",
+      "PC",
+      "SCA",
+      "VM"
+    ],
+    "month_label": "August 2022",
+    "detected_at": "2026-09-18T11:49:47+00:00"
+  },
+  "6b844fbc6982": {
+    "key": "6b844fbc6982",
+    "url": "https://www.qualys.com/docs/release-notes/qualys-cloud-agent-powerpc-3.21-release-notes.pdf",
+    "title": "Cloud Agent PowerPC 3.21",
+    "tags": [
+      "CA",
+      "GAV",
+      "PC",
+      "VM"
+    ],
+    "month_label": "August 2022",
+    "detected_at": "2026-09-18T11:49:47+00:00"
+  },
+  "62087f16a2a9": {
+    "key": "62087f16a2a9",
+    "url": "https://www.qualys.com/docs/release-notes/qualys-cloud-platform-3.5-release-notes.pdf",
+    "title": "Cloud Platform 3.5",
+    "tags": [
+      "Admin",
+      "AV",
+      "CA",
+      "UD",
+      "VMDR",
+      "WAS"
+    ],
+    "month_label": "February 2021",
+    "detected_at": "2026-09-18T11:49:47+00:00"
   }
 }
