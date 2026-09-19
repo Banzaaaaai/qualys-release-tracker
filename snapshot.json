@@ -673,7 +673,28 @@
       "PA"
     ],
     "month_label": "September 2026",
-    "detected_at": "2026-09-08T11:44:57+00:00"
+    "detected_at": "2026-09-08T11:44:57+00:00",
+    "details": {
+      "release_date": "September 7, 2026",
+      "features": [
+        {
+          "heading": "Update and Delete Report Template APIs",
+          "summary": "In the previous release, we have introduced the report template APIs that enable you to list, retrieve, and create compliance report templates. With this release , you can also perform the update and delete action using Report Template APIs."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PA - API",
+          "issue": "When the user updated a PostgreSQL Authentication record using the /api/3.0/fo/auth/postgresql/ API, the API call returned a successful response, but the specified IP address was not added to the Authentication record. The issue occurred when the 'tag support' feature was enabled and the API request did not specify an asset type. Relevant code changes have been made to fix the issue."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-19T17:02:11.670547+00:00",
+      "status": "success"
+    }
   },
   "24c1862a488b": {
     "key": "24c1862a488b",
@@ -683,7 +704,76 @@
       "VM"
     ],
     "month_label": "September 2026",
-    "detected_at": "2026-09-08T11:44:57+00:00"
+    "detected_at": "2026-09-08T11:44:57+00:00",
+    "details": {
+      "release_date": "September 7, 2026 (Updated on September 17, 2026)",
+      "features": [
+        {
+          "heading": "Launch Organization-Wide Cloud Perimeter Scans With a Single Connector",
+          "summary": "You can now launch Cloud Perimeter Scans (CPS) using Organization-Level Connectors across AWS, Azure, and GCP. Previously, perimeter scans were created for individual cloud connectors, which often resulted in multiple scan schedules in large cloud…"
+        },
+        {
+          "heading": "Track Last Scan Dates for Specific Scan Types in Asset Search Reports",
+          "summary": "You can now view and filter assets based on theirLast VM Scanner Scan Date,Last VM Agent Scan Date, andLast VM Flex Scan Datein theAsset Search Report. Previously, when asset merging was enabled, Qualys combined your Cloud Agent, scanner, and Flex…"
+        },
+        {
+          "heading": "Deploy Cloud Agents Using Multiple Scanner Appliances",
+          "summary": "You can now select multiple scanner appliances when launching a Cloud Agent Deployment Scan. Previously, Cloud Agent Deployment Scans supported only a single scanner appliance. This enhancement adds support for selecting multiple scanners through…"
+        },
+        {
+          "heading": "Use One Password for Both the UI and API",
+          "summary": "You can now create and update passwords using a consistent set of supported characters across both the UI and APIs. Previously, passwords created through the UI could contain characters that were not supported by API authentication, resulting in…"
+        },
+        {
+          "heading": "See Your Scanner's CPU, Memory, Swap, and Disk Information at a Glance",
+          "summary": "You can now view hardware resource information directly from the Scanner Appliance Information page. Previously, obtaining scanner sizing information often required access to the underlying virtualization or infrastructure platform."
+        },
+        {
+          "heading": "Visibility into Scanner Platform Versions and End of Support Status for Scanner Appliances",
+          "summary": "You can now view scanner platform versions directly from the Scanner Appliances listing page and quickly identify scanner appliances approaching End of Support (EOS). Previously, scanner platform version information was available only in…"
+        },
+        {
+          "heading": "Enhanced User Interface",
+          "summary": "The enhancement is temporarily rolled back to ensure a stable user experience and will be reintroduced in an upcoming release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Scan Schedule",
+          "issue": "When users created or edited a scheduled scan job and changed the scanner appliance option toAll Scanners in TagSet, theConfirm Tag Removaldialog was displayed when selected tags did not meet the required criteria. If users clickedNo, the scan configuration could remain in an inconsistent state. The scanner appliance selection, Include and Exclude tag settings, and scanner selection view were not restored correctly.The issue is now resolved. ClickingNoon theConfirm Tag Removaldialog correctly restores the previous scanner appliance selection, tag settings, and scanner selection view."
+        },
+        {
+          "component": "VM - User Management",
+          "issue": "When users removed VM module access while editing a user account by going to Administration > User Management, the changes were not getting saved. An error message was displayed as \"Latest Vulnerabilities – Invalid input.\" This error message was also displayed for Scan Summary Notification or Map Notification settings.The issue is now resolved. Saving user changes after removing VM module access now completes successfully. The Invalid input error no longer occurs for these notification settings."
+        },
+        {
+          "component": "VM - Remediation",
+          "issue": "When users opened the Remediation tickets page for large subscriptions, it took a long time to load. The Activity Log page also loaded slowly in some cases. The issue is now resolved. The Remediation tickets page and Activity Log page now load faster, even on large subscriptions."
+        },
+        {
+          "component": "VM - Host List API",
+          "issue": "When users viewed theHost Informationpage, some user-defined attribute values were missing. This happened for values set through API with a different network ID than the host. The Host List API still returned these values, creating inconsistent data between the API and UI.This issue is now resolved. The Host List API and Host Information page now show consistent user-defined attribute data. Values from a network different from the host's are excluded from both."
+        },
+        {
+          "component": "VM - Scan API",
+          "issue": "When users tried to launch the Ignore Vulnerability API with the tag_set_include parameter, the API returned an error stating that \"parameter tag_set_include has an invalid value\", even when a valid tag was specified. This issue occurred with certain asset-tracking configurations and prevented vulnerabilities from being ignored for assets associated with the specified tags. This issue is now resolved, and the API correctly processes valid tags during ignore and restore operations."
+        },
+        {
+          "component": "VM - Knowledge Base",
+          "issue": "When users created or edited a Dynamic Search List, the page was taking a long time to load or respond, impacting the overall user experience. This issue is now resolved, and Dynamic Search List pages load more efficiently, providing faster access to search criteria and improved responsiveness when creating or editing search lists."
+        },
+        {
+          "component": "Sensor - Scanner",
+          "issue": "When users created or activated new scanner appliances, the scanners were appearing offline even when they were operational. This issue was caused by delays in processing scanner status information. This issue is now resolved, and scanner status updates are processed more efficiently, ensuring that activated scanner appliances are displayed accurately."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-19T17:02:11.670547+00:00",
+      "status": "success"
+    }
   },
   "93f9f353c3c9": {
     "key": "93f9f353c3c9",
@@ -694,7 +784,23 @@
       "VM"
     ],
     "month_label": "September 2026",
-    "detected_at": "2026-09-08T11:44:57+00:00"
+    "detected_at": "2026-09-08T11:44:57+00:00",
+    "details": {
+      "release_date": "September 7, 2026",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "You can now retrieve the last VM Agent Scan Date, last VM Scanner (ML) Scan Date, and last VM Flex Scan Date for each asset using Asset Search API. Previously, the Asset Search API returned only one generic last scan date (LAST_SCAN_DATE) for each…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-19T17:02:11.670547+00:00",
+      "status": "success"
+    }
   },
   "63f5a2021339": {
     "key": "63f5a2021339",
@@ -704,7 +810,23 @@
       "PA"
     ],
     "month_label": "September 2026",
-    "detected_at": "2026-09-08T11:44:57+00:00"
+    "detected_at": "2026-09-08T11:44:57+00:00",
+    "details": {
+      "release_date": "September 2, 2026",
+      "features": [
+        {
+          "heading": "Support for New Technology Microsoft SQL Server 2025",
+          "summary": "Microsoft SQL Server 2025 technology is supported for Policy Audit authenticated scans using scanners and agents. This technology is now available for use at the following places, at both the scanner and the agent"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-19T17:02:11.670547+00:00",
+      "status": "success"
+    }
   },
   "4d2592e16bcd": {
     "key": "4d2592e16bcd",
@@ -714,7 +836,32 @@
       "VM"
     ],
     "month_label": "September 2026",
-    "detected_at": "2026-09-08T11:44:57+00:00"
+    "detected_at": "2026-09-08T11:44:57+00:00",
+    "details": {
+      "release_date": "September 2, 2026",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "You can now view the recipient email addresses for a scheduled report directly from the Run History page. To view this information, navigate toReports>Schedules> Select a report from the report listing page > SelectInfounder theQuick Actionsmenu…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - UI General",
+          "issue": "When users opened a scheduled vulnerability scan directly in Edit mode from theQuick Actionsmenu, the resize handle at the bottom-right corner of the window was too small to locate and drag, preventing users from resizing the window as needed. This issue is now resolved. The resize handle is now larger and clearly visible, allowing users to resize the Edit window as expected."
+        },
+        {
+          "component": "VM - Scans",
+          "issue": "When users set up a scheduled scan with dynamic tags to include or exclude certain assets, an asset expected to be excluded still appeared in the scan results, which created confusion. This happened because dynamic tags update in real time, so whether an asset is included or excluded depends on which tags it matches when the scan runs, not when it is scheduled. This behavior is now documented in the Online Help."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-19T17:02:11.670547+00:00",
+      "status": "success"
+    }
   },
   "6ce3ab2bd870": {
     "key": "6ce3ab2bd870",
