@@ -871,7 +871,23 @@
       "CA"
     ],
     "month_label": "September 2026",
-    "detected_at": "2026-09-07T18:38:04+00:00"
+    "detected_at": "2026-09-07T18:38:04+00:00",
+    "details": {
+      "release_date": "September 07, 2026",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "False Positive Reporting",
+          "issue": "Fixed an issue causing Cloud Agent to report certain vulnerability detections as false positives. With this update, these detections are now reported accurately."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-20T11:48:34.024932+00:00",
+      "status": "success"
+    }
   },
   "2eb3231a32e9": {
     "key": "2eb3231a32e9",
@@ -881,7 +897,60 @@
       "CA"
     ],
     "month_label": "September 2026",
-    "detected_at": "2026-09-07T13:01:23+00:00"
+    "detected_at": "2026-09-07T13:01:23+00:00",
+    "details": {
+      "release_date": "September 03, 2026 (Updated September 10, 2026)",
+      "features": [
+        {
+          "heading": "Track On-Demand Scan Progress in Cloud Agent UI",
+          "summary": "Cloud Agent for Linux now supports tracking On-Demand Scan requests. This enhancement provides better visibility into the status and results of on-demand scans triggered from the Cloud Agent user interface or the command line."
+        },
+        {
+          "heading": "Authenticate Database for UDC Manifests",
+          "summary": "Cloud Agent for Linux now supports Database Authentication for User Defined Controls (UDC) manifests generated for auto-discovered middleware instances. Database Authentication support for UDC middleware enables seamless onboarding of…"
+        },
+        {
+          "heading": "Reduce Redundant Requests with Exponential Backoff",
+          "summary": "Cloud Agent for Linux now applies an exponential backoff mechanism when it retries requests to the Qualys platform, reducing redundant requests to the Qualys platform and network traffic from retried requests. Instead of retrying at a fixed…"
+        },
+        {
+          "heading": "Launch On-Demand Scans for Middleware Assets",
+          "summary": "Cloud Agent for Linux Intel now supports On-Demand Scan for the Middleware assets. You can now immediately scan the middleware assets without waiting for the next scheduled scan. This enhancement gives you instant visibility to the security threats…"
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "No new platform coverage is added in this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Remote Log Collection",
+          "issue": "Fixed an issue where the Cloud Agent user interface (CAUI) did not reflect the correct status for Remote Log Collection. Cloud Agent now sends the correct status to CAUI after Remote Log Collection is complete, and correct status is displayed on the user interface."
+        },
+        {
+          "component": "Reduced Activity Period",
+          "issue": "Fixed an issue where Reduce Activity Period (RAP) schedules were not reset after a RAP was fully removed, causing stale reduced activity windows to persist and execute scans after an agent restart. Cloud Agent now resets RAP schedules when RAP is fully removed or disabled, and avoids unnecessary scans."
+        },
+        {
+          "component": "Agent Startup",
+          "issue": "Fixed an issue where Cloud Agent startup took considerably more time on non-cloud systems because the cloud provider metadata request had no connection timeout. Cloud Agent now has a thirty-second connection timeout for the cloud provider metadata request. This has considerably reduced the Cloud Agent startup time."
+        },
+        {
+          "component": "Cloud Agent Scans",
+          "issue": "Fixed an issue where cloud provider metadata retrieval failed for inventory scans and Cloud Agent on systems without a system curl installation. Cloud Agent now completes the scans successfully by using the system curl and bundled qualys-curl as alternatives."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-20T11:48:34.024932+00:00",
+      "status": "success"
+    }
   },
   "5713ffdf5a0f": {
     "key": "5713ffdf5a0f",
@@ -892,7 +961,23 @@
       "QF"
     ],
     "month_label": "September 2026",
-    "detected_at": "2026-09-03T11:43:31+00:00"
+    "detected_at": "2026-09-03T11:43:31+00:00",
+    "details": {
+      "release_date": "August 25, 2026",
+      "features": [
+        {
+          "heading": "New Clone Workflow API",
+          "summary": "Use this API to create copies of one or more existing workflows."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-20T11:48:34.024932+00:00",
+      "status": "success"
+    }
   },
   "bd21439389f5": {
     "key": "bd21439389f5",
@@ -902,7 +987,35 @@
       "QF"
     ],
     "month_label": "September 2026",
-    "detected_at": "2026-09-03T11:43:31+00:00"
+    "detected_at": "2026-09-03T11:43:31+00:00",
+    "details": {
+      "release_date": "August 25, 2026",
+      "features": [
+        {
+          "heading": "Generate Workflows with AI",
+          "summary": "You can now create QFlow workflows just by describing them.Generate with AIoption is now available on the Create Workflow screen along withFrom scratchandUse a template, so instead of building a workflow node by node, you can tell QFlow what you…"
+        },
+        {
+          "heading": "Deploy workflows based on tags",
+          "summary": "When saving a QFlow workflow, you can now choose how it gets deployed across your cloud environment"
+        },
+        {
+          "heading": "API and parameter descriptions for AWS and Azure",
+          "summary": "When configuring a Resource, Action, or Raw node against an AWS or Azure service, QFlow now shows in-context descriptions for"
+        },
+        {
+          "heading": "Added support for New AWS and Azure templates",
+          "summary": "We have added 13 new QFlow templates across AWS and Azure, bringing the total in the template library from407 to 420. These templates enable one-click remediation of cloud vulnerabilities and misconfigurations, reducing manual effort and improving…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-20T11:48:34.024932+00:00",
+      "status": "success"
+    }
   },
   "07be0e39c96e": {
     "key": "07be0e39c96e",
@@ -912,7 +1025,23 @@
       "PNS"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-09-02T17:41:13+00:00"
+    "detected_at": "2026-09-02T17:41:13+00:00",
+    "details": {
+      "release_date": "August 31, 2026",
+      "features": [
+        {
+          "heading": "Enhanced User Interface for NPS",
+          "summary": "We introduced an improved user experience across the NPS user interface, with updates to fonts, colors, typography, and buttons that make the interface more intuitive and user-friendly. Enhancements to the user interface and design system improve…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-20T11:48:34.024932+00:00",
+      "status": "success"
+    }
   },
   "a6866e6a305c": {
     "key": "a6866e6a305c",
