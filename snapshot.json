@@ -1051,7 +1051,100 @@
       "TC"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-08-25T14:47:33+00:00"
+    "detected_at": "2026-08-25T14:47:33+00:00",
+    "details": {
+      "release_date": "August 21, 2026",
+      "features": [
+        {
+          "heading": "Granular Access Control for Policies and Controls",
+          "summary": ""
+        },
+        {
+          "heading": "Event-Driven Connector processing via Azure EventGrid",
+          "summary": ""
+        },
+        {
+          "heading": "Attack Path Visibility at the Instance Level",
+          "summary": ""
+        },
+        {
+          "heading": "Wildcard (*) Support for Tag-Based Search",
+          "summary": ""
+        },
+        {
+          "heading": "Copy and Create new Policy from an existing one",
+          "summary": ""
+        },
+        {
+          "heading": "Look up Query Functions",
+          "summary": ""
+        },
+        {
+          "heading": "Extended Inventory Coverage",
+          "summary": ""
+        },
+        {
+          "heading": "Navigate to Azure Cloud directly from Posture",
+          "summary": ""
+        },
+        {
+          "heading": "Date Range Filtering for All Inventory",
+          "summary": ""
+        },
+        {
+          "heading": "Smarter Inventory Filter Dropdown",
+          "summary": ""
+        },
+        {
+          "heading": "View Overall Compliance Score in Assessment Report",
+          "summary": ""
+        },
+        {
+          "heading": "Set a Default Time Period in Preferences",
+          "summary": ""
+        },
+        {
+          "heading": "Simplified CSPM Connector Health Monitoring",
+          "summary": ""
+        },
+        {
+          "heading": "Resource Name Update in Inventory",
+          "summary": ""
+        },
+        {
+          "heading": "CDR Enhancements and Updates",
+          "summary": "The following sections describe the enhancements made to the Cloud Detection and Response (CDR) environment in the upcoming CDR release."
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "The following section describes the new tokens introduced as part of TotalCloud 2.27.0"
+        },
+        {
+          "heading": "Control Updates",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "CV - False Positive",
+          "issue": "CID-50001 was incorrectly failing for Azure SQL Database resources on the EU02 platform even though Data Encryption was already enabled on those resources, the same resources evaluated correctly as passing on the EU01 platform. The false failure was traced to how the control was reading resource data during evaluation, which caused valid, encrypted resources to be reported as non‑compliant. We have fixed the control's evaluation logic so CID-50001 now correctly reflects the Data Encryption status of the resource. The fix is included in this release.Multiple resource groups were incorrectly flagged as FAILED for CID 50036 (\"Ensure that Resource Locks are set for Mission‑Critical Azure Resources\"), even though the Azure Portal confirmed an active DenyDelete lock on each affected resource group. This was a false positive caused by the control not correctly picking up existing resource‑group‑level lock data during evaluation. We have identified the root cause and are updating the control's evaluation logic to correctly detect existing locks.CID-50051 and CID-50088 were incorrectly flagged as failing (false positive) even though TLS 1.3 was already configured, the evidence captured for the control wasn't showing the exact TLS version being evaluated. We have resolved this by updating the control signature with the correct JSONPath to handle the updated evaluation structure. The fix has been tested and verified on p19 and p04, confirming correct control evaluation for both CIDs."
+        },
+        {
+          "component": "CV - Reports",
+          "issue": "CID 50016 was moved from the CIS Azure Foundations policy to the Azure Best Practices policy in a recent release. The UI correctly reflected the change, but the exported CIS Microsoft Azure Foundations Benchmark PDF still listed CID 50016. The PDF export was still built from the older policy‑to‑control mapping and hadn't picked up the reassignment. We have updated the PDF export to use the current policy mapping, so CID 50016 will no longer appear in the CIS Microsoft Azure Foundations Benchmark export."
+        },
+        {
+          "component": "CV - API",
+          "issue": "Microsoft flagged that Qualys' Azure connector (service principal \"Qualys Agent\") was calling Event Hub Namespace control‑plane operations using an API version scheduled for retirement at the end of September 2026. A small number of controls were still pinned to that older Event Hub API version. We have updated the affected controls to API version 2024‑01‑01, newer than Microsoft's required 2021‑11‑01 minimum, so these controls keep working after the retirement date."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-20T17:19:51.403053+00:00",
+      "status": "success"
+    }
   },
   "972383b30301": {
     "key": "972383b30301",
@@ -1062,7 +1155,31 @@
       "TC"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-08-25T14:47:33+00:00"
+    "detected_at": "2026-08-25T14:47:33+00:00",
+    "details": {
+      "release_date": "August 21, 2026",
+      "features": [
+        {
+          "heading": "Get the List of All Supported Resource Types",
+          "summary": ""
+        },
+        {
+          "heading": "Get Resources API: Support added for new resources",
+          "summary": ""
+        },
+        {
+          "heading": "Get Resources API: Added hasAttackPath Field for Compute Assets",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-20T17:19:51.403053+00:00",
+      "status": "success"
+    }
   },
   "f746be155c8c": {
     "key": "f746be155c8c",
@@ -1072,7 +1189,31 @@
       "Conn"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-08-25T14:47:33+00:00"
+    "detected_at": "2026-08-25T14:47:33+00:00",
+    "details": {
+      "release_date": "August 21, 2026",
+      "features": [
+        {
+          "heading": "EventGrid Support for Azure Connectors",
+          "summary": ""
+        },
+        {
+          "heading": "Cloud Perimeter Scan (CPS) Support for OCI Cloud",
+          "summary": ""
+        },
+        {
+          "heading": "Connector Errors is now Connector Logs",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-20T17:19:51.403053+00:00",
+      "status": "success"
+    }
   },
   "d7feb4d21e4d": {
     "key": "d7feb4d21e4d",
@@ -1083,7 +1224,23 @@
       "Conn"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-08-25T14:47:33+00:00"
+    "detected_at": "2026-08-25T14:47:33+00:00",
+    "details": {
+      "release_date": "August 21, 2026",
+      "features": [
+        {
+          "heading": "Create and Update OCI Connector API: Support for CPS (VM Module) Activation",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-20T17:19:51.403053+00:00",
+      "status": "success"
+    }
   },
   "30110b5061e9": {
     "key": "30110b5061e9",
@@ -1093,7 +1250,59 @@
       "VMDR OT"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-08-25T07:30:16+00:00"
+    "detected_at": "2026-08-25T07:30:16+00:00",
+    "details": {
+      "release_date": "August 24, 2026",
+      "features": [
+        {
+          "heading": "Enhanced User Interface for VMDR OT",
+          "summary": "We introduced an improved user experience across all VMDR OT pages, with updates to fonts, colors, typography, and buttons that make the interface more intuitive and user-friendly. Enhancements to the User Interface and design system improve visual…"
+        },
+        {
+          "heading": "Asset Criticality Score (ACS) and TruRisk™ Score",
+          "summary": "VMDR OT now supports Qualys TruRisk™ Score and Asset Criticality Score (ACS) for OT assets, enabling organizations to prioritize remediation based on both asset importance and security risk."
+        },
+        {
+          "heading": "Asset Details Enhancements",
+          "summary": "The asset details now include security, risk, and business context of an asset to help you better understand the asset's risk posture, prioritize remediation, and make informed decisions."
+        },
+        {
+          "heading": "Vulnerability Details Enhancements",
+          "summary": "You can now view additional vulnerability details to better understand the risk and impact of a vulnerability. TheVulnerability Detailspage includes the following additional information"
+        },
+        {
+          "heading": "Enhancements to VMDR OT Reports",
+          "summary": "You can now create more comprehensiveAsset,Vulnerability, andMonitoringDetailsreports by including additional TruRisk™, business information, and vulnerability fields in the report. These details provide visibility into asset criticality, business…"
+        },
+        {
+          "heading": "Criticality Score for Tags",
+          "summary": "You can now assign an Asset Criticality Score (ACS) to a tag. The assigned score helps the system determine the criticality of assets associated with that tag."
+        },
+        {
+          "heading": "Re-evaluation Status for Tags",
+          "summary": "You can now monitor the progress of the dynamic tag application to affected assets after creating or updating a dynamic tag. The system evaluates the updated tag conditions and applies the tag to all matching assets."
+        },
+        {
+          "heading": "Tag-based User Scoping for PIM Events and Network Traffic",
+          "summary": "You can now view Process Integrity Monitoring (PIM) events and Network Traffic only for the assets within your assigned tag scope. This ensures that you can access only the data for assets you are authorized to manage."
+        },
+        {
+          "heading": "New QQL Tokens",
+          "summary": "The following new QQL tokens are added in this release"
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following reported and notable customer issue is fixed in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-20T17:19:51.403053+00:00",
+      "status": "success"
+    }
   },
   "6312435c5d56": {
     "key": "6312435c5d56",
