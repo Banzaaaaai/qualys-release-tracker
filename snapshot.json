@@ -1312,7 +1312,35 @@
       "UD"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-08-25T07:30:16+00:00"
+    "detected_at": "2026-08-25T07:30:16+00:00",
+    "details": {
+      "release_date": "August 24, 2026",
+      "features": [
+        {
+          "heading": "Introducing the User Scope Filter: See What Your Sub-Users See",
+          "summary": "You can now scope your dashboard data to a specific sub-user under your account, so you can view the dashboard exactly as that sub-user sees it without creating a separate dashboard for each user."
+        },
+        {
+          "heading": "Asset Tag Column Support in Vulnerability Simple List Widgets",
+          "summary": "You can now add anAsset Tagscolumn toSimple Listtable widgets built on vulnerability data, so you can see which asset tags a detection belongs to directly in the widget, without opening each asset. Previously, theAsset Tagsoption was available only…"
+        },
+        {
+          "heading": "Year to Date and This Year Options in the Dashboard Time Filter",
+          "summary": "You can now filter dashboard data byYear to DateorThis Year, so you can report on a full year of activity, such as an annual audit, without defining a custom date range each time. Previously, the time filter offered only week-level and month-level…"
+        },
+        {
+          "heading": "Sorting and Display Limit for Tags in Table Widgets",
+          "summary": "You can now sort the results of a table widget that displays tags, so you can order tags by the value that matters to you, such as the highest TruRisk™ Score or the largest asset count, instead of reading through them in the order they were added."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-21T13:21:42.365786+00:00",
+      "status": "success"
+    }
   },
   "8e2ceb20ea4b": {
     "key": "8e2ceb20ea4b",
@@ -1324,7 +1352,40 @@
       "WAS"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-08-21T08:03:41+00:00"
+    "detected_at": "2026-08-21T08:03:41+00:00",
+    "details": {
+      "release_date": "August 06, 2026",
+      "features": [
+        {
+          "heading": "Subscription-Based API Rate Limits",
+          "summary": "We have updated the Public API rate-limiting framework. This aligns API consumption limits with your Qualys subscription level. It also provides a consistent rate-limiting experience across all supported API versions."
+        },
+        {
+          "heading": "New APIs: Schedule Scans",
+          "summary": "The Scheduled Scans API now supports automated scan schedules. You can create, update, delete, search, and control their activation. Flexible scheduling options, such as time-based schedules and green windows, let you automate vulnerability,…"
+        },
+        {
+          "heading": "Enhancements in API",
+          "summary": "Purge API (Deprecated)"
+        },
+        {
+          "heading": "Enhancements in Web Application",
+          "summary": "Purge Web Application (Deprecated)"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "TAS and WAS",
+          "issue": "V3 Schedule Scan API Response Format"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-21T13:21:42.365786+00:00",
+      "status": "success"
+    }
   },
   "644abfdab576": {
     "key": "644abfdab576",
@@ -1335,7 +1396,136 @@
       "WAS"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-08-21T08:03:41+00:00"
+    "detected_at": "2026-08-21T08:03:41+00:00",
+    "details": {
+      "release_date": "August 06, 2026",
+      "features": [
+        {
+          "heading": "Scan Listing: Application Type Column and Scan Type Filter",
+          "summary": "You can now view theApplication Typedirectly in the Scans list, making it easy to identify whether a scan is associated with aWeb Applicationor anAPIwithout opening the scan details.In addition, you can now filter the Scans list byScan Typeto…"
+        },
+        {
+          "heading": "Subdomain Validation Enhancements",
+          "summary": "We have enhanced the validation behavior for theSubdomainfield in theAdd Newwizard.The field now validates subdomain entries against the configured main URL, providing more accurate and predictable validation during web application setup. For…"
+        },
+        {
+          "heading": "Search Token Update",
+          "summary": "We have renamed the Qualys Query Language (QQL) search tokens by renaming vulnerability tokens to finding tokens. For example,vulnerability.idis nowfinding.id."
+        },
+        {
+          "heading": "Optional Distribution Group",
+          "summary": "You can now create a report schedule without specifying a distribution list or additional recipients in the Notifications section. If you do not specify recipients, Qualys automatically sends notification emails to users who own or have access to…"
+        },
+        {
+          "heading": "Detection Score Filter for Detection Groups",
+          "summary": "You can now filter detections using theDetections> Group By >Detection Score.The detection score ranges from 1 to 100, so you can sort and prioritize detections by score for easier analysis and management."
+        },
+        {
+          "heading": "Enhanced User Interface",
+          "summary": "With this release, we have introduced an improved user experience across all TotalAppSec and Web Application Scanning pages. You can see updates across fonts, colors, typography, and buttons, making the interface more intuitive and easier to use.…"
+        },
+        {
+          "heading": "Asset Action Renaming",
+          "summary": "To improve consistency across the platform, we have renamed the following asset actions for Web Application and API assets"
+        },
+        {
+          "heading": "Standardized \"Client\" Field Values in Activity Log",
+          "summary": "You can now use the standardized Client field in QQL filters on the Activity page to accurately distinguish UI-driven activity from API-driven activity. For example, useclient:Browserorclient:APIto filter results based on the source of the activity."
+        },
+        {
+          "heading": "Column Hiding for Data List Pages",
+          "summary": "You can now customize data list pages by showing or hiding columns using theColumnsoption. This enhancement allows you to customize the list view to your needs, making it easier to focus on the most relevant information while reducing visual…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Online Reports",
+          "issue": "We fixed an issue where theEditbutton appeared disabled for API-generated Online Reports after the QSS Reports migration."
+        },
+        {
+          "component": "Scan Launch and Processing Flow",
+          "issue": "We fixed an issue where scheduled WAS scans failed to launch with the errorMore than one row with the given identifier was found. Query-level handling has been introduced to prevent duplicate records, and database uniqueness is now enforced for Scan IDs."
+        },
+        {
+          "component": "Detection & Web Application Search",
+          "issue": "We fixed an issue where searches using thefinding.urlQQL token failed and returned an error when the URL contained SQL injection payload patterns. Users can now search detections and web applications using finding.url, including URLs containing vulnerability payloads, and records are retrieved correctly."
+        },
+        {
+          "component": "Adding Web Application",
+          "issue": "We fixed an issue where users were unable to create a Web Application in the WAS module when a Potential Web Application with the same name already existed in the EASM module. Users can now successfully create and save a WAS Web Application using the same name as an EASM Potential Web Application, while duplicate names across WAS-managed assets continue to be prevented."
+        },
+        {
+          "component": "Scan Status Display forNon-QSS Schedules",
+          "issue": "We fixed an issue where successfully completed scans were reported asErrorin the UI due to schedule validation logic rather than an actual scan failure. Scan status reporting now accurately reflects the real execution outcome, ensuring completed scans remain in their correct state."
+        },
+        {
+          "component": "API Scan Reporting",
+          "issue": "We fixed an issue where certain API vulnerability findings displayedNAfor the Response section in API Scan Reports even though valid request and response data was available in the scan results."
+        },
+        {
+          "component": "TruRisk Score",
+          "issue": "We fixed an issue where TruRisk scores were not displayed in the data list. TruRisk scores are now displayed correctly and consistently for affected web applications."
+        },
+        {
+          "component": "TAS Scheduled Reports Visibility",
+          "issue": "We fixed an issue where users with access to a Parent Tag could view web applications associated with Child Tags but were unable to see TAS Scheduled Reports associated with those same Child Tags."
+        },
+        {
+          "component": "Vulnerability Closure on Non-Found URL",
+          "issue": "We fixed an issue with theClose Vulnerabilities on Non Found URLfeature where findings closed due to a missing vulnerable URL were recorded with an incorrect status message. Findings closed because the vulnerable URL cannot be located are now recorded using the appropriate statusNOT_TESTED: Vulnerable URL cannot be found anymore, accurately reflecting the scan outcome."
+        },
+        {
+          "component": "Tag Permissions",
+          "issue": "We fixed an issue where users without Tag management permissions could still view and modify Tags withinAuthentication Recordswhen assigned editor permissions. Tag access validation is now applied consistently across Authentication Records and Web Applications, ensuring that only users with the appropriate Tag permissions can view, assign, or modify Tags."
+        },
+        {
+          "component": "API Authentication",
+          "issue": "We fixed an issue where API Authentication Records did not provide aNoneauthentication type option. API Authentication Records now include aNoneoption in the Authentication Type dropdown, allowing Server and/or Header authentication to be configured without requiring an unrelated authentication."
+        },
+        {
+          "component": "Ignored Findings Reason and Comment Synchronization",
+          "issue": "We fixed an issue where findings that were globally ignored from the Knowledge Base were correctly marked as Ignored in the Detections module, but the Reason and Comment entered during the ignore action were not displayed inDetection Details > Additional Information."
+        },
+        {
+          "component": "Scheduled Scan Launch After QSS Migration",
+          "issue": "We fixed an issue where scheduled scans stopped launching after QSS migration and failed with the messageThere is already a scan with this title in your subscription. The issue occurred when schedules that exceeded the new QSS run-count limit were deactivated and later reactivated."
+        },
+        {
+          "component": "Scheduled Scan Proxy Validation",
+          "issue": "We fixed an issue where users were unable to create or modify schedules using global proxies. The validation logic now allows proxies that are either associated with the Web Application or configured as global proxies."
+        },
+        {
+          "component": "Scheduled Scan Launch Reliability",
+          "issue": "We fixed an issue where scheduled scans were not triggered as scheduled and eventually became permanently skipped after database connection timeouts occurred during schedule processing."
+        },
+        {
+          "component": "Data Loading Reliability",
+          "issue": "We fixed an issue where users intermittently sawNo Data Availableon the Applications, Authentication Records, Scan List, and Option Profiles pages, even though data existed and the user had the appropriate permissions. Data for these modules now loads correctly and is displayed consistently without requiring repeated page refreshes."
+        },
+        {
+          "component": "Scan Status Display forQSS Schedules",
+          "issue": "We fixed an issue where long-running progressive or scheduled scans were incorrectly displayed asErrorin the user interface even though scan execution completed successfully and valid results were generated."
+        },
+        {
+          "component": "Scan Launch via Scanner Pool",
+          "issue": "We fixed an issue where the scan launch process took longer than expected to determine scanner availability and initiate scans. Scan launches now complete more efficiently and consistently."
+        },
+        {
+          "component": "Active Scan Schedules",
+          "issue": "We fixed an issue where active and valid scan schedules were incorrectly displayed under theInvalidquick filter and returned by the QQL search token for invalid schedules. The validation logic has been corrected so that schedules are now classified accurately."
+        },
+        {
+          "component": "Authentication Records Management",
+          "issue": "We fixed an issue where some authentication records that relied only on server authentication and/or header authentication were incorrectly classified asWEBAPPauthentication records. The authentication record classification now correctly reflects the configured authentication method."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-21T13:21:42.365786+00:00",
+      "status": "success"
+    }
   },
   "68e2a98bb9ed": {
     "key": "68e2a98bb9ed",
@@ -1345,7 +1535,31 @@
       "CA"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-08-22T07:52:27+00:00"
+    "detected_at": "2026-08-22T07:52:27+00:00",
+    "details": {
+      "release_date": "August 20, 2026",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "False Positive Detection",
+          "issue": "Fixed an issue where SwCA reported vulnerabilities from a ZIP file even when only the Runtime detection mode was enabled. Runtime mode now correctly excludes ZIP-based software package detection, preventing these unexpected vulnerability findings and aligning scan results with the selected detection mode."
+        },
+        {
+          "component": "Temporary File Detection",
+          "issue": "Fixed an issue where SwCA scans could detect vulnerable software components from temporary files (sca*.tmp) created during the scan process. The scanner now correctly excludes temporary scan-generated files from the SwCA scan, preventing duplicate or inaccurate findings and ensuring that reported vulnerabilities correspond only to actual software present on the asset."
+        },
+        {
+          "component": "Software Component Path Mapping",
+          "issue": "Fixed an issue where SwCA scans incorrectly mapped certain software components to generic Windows system paths (for example, C:? Windows\\system32). SwCA scanner now correctly identifies and filters MSI-encoded system directory paths, so components are mapped to their actual install locations."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-21T13:21:42.365786+00:00",
+      "status": "success"
+    }
   },
   "272c8ce1314f": {
     "key": "272c8ce1314f",
@@ -1355,7 +1569,39 @@
       "CAR"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-08-25T07:30:16+00:00"
+    "detected_at": "2026-08-25T07:30:16+00:00",
+    "details": {
+      "release_date": "August 19, 2026",
+      "features": [
+        {
+          "heading": "Import Assets from a CSV File to Run Scripts and Schedule at Scale",
+          "summary": "You can now upload a CSV file containing asset names to quickly select up to 5,000 assets when testing, running, or scheduling a script. This feature eliminates the need for manual asset selection, making it easier to target large sets of assets at…"
+        },
+        {
+          "heading": "Target the Right Assets for Script Execution Using a QQL Query",
+          "summary": "You can now use theAutomated Asset Selectionoption to search and filter assets for script execution using a QQL query. This enhancement helps you quickly target the required assets while reducing manual selection effort."
+        },
+        {
+          "heading": "Edit Technologies for Approved Control ID Remediation Scripts",
+          "summary": "You can now edit theTechnologieslist for approved Control ID Remediation scripts created directly in CAR or imported from the Library. This enhancement lets you update the technologies associated with an approved script without creating a duplicate…"
+        },
+        {
+          "heading": "",
+          "summary": "TheControl CID Numberfield is not editable after the script is approved."
+        },
+        {
+          "heading": "Enhanced Readability and Visual Clarity",
+          "summary": "With this release, we have introduced an improved user experience across all CAR pages. You can see updates across fonts, colors, typography, and buttons, making the interface more intuitive and easier to use."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-21T13:21:42.365786+00:00",
+      "status": "success"
+    }
   },
   "f5f90b66b29a": {
     "key": "f5f90b66b29a",
