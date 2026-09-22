@@ -1861,7 +1861,88 @@
       "CA"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-08-22T07:52:27+00:00"
+    "detected_at": "2026-08-22T07:52:27+00:00",
+    "details": {
+      "release_date": "August 16, 2026 (Updated September 18, 2026)",
+      "features": [
+        {
+          "heading": "Peer-to-Peer Distribution",
+          "summary": "We have introduced a decentralized peer-to-peer content distribution model for Windows Cloud Agent. With this enhancement, Windows Cloud Agent can download content from the Qualys server and distribute it among other Cloud Agents sharing the same…"
+        },
+        {
+          "heading": "Track and Review On-Demand Scan Status",
+          "summary": "We have enhanced the on-demand scan workflow to improve scan tracking. This enhancement provides complete visibility into on-demand scans, allowing you to track scan status and details and download scan reports. Previously, on-demand scan progress…"
+        },
+        {
+          "heading": "Control SwCA Binary Download",
+          "summary": "With Windows Cloud Agent, you can now control the SwCA binary download on your assets. This feature enables you to control the SwCA version used by Cloud Agent and to install it manually based on system availability."
+        },
+        {
+          "heading": "Delay Policy Audit Scans During Group Policy Updates",
+          "summary": "We have enhanced Cloud Agent configuration to support delaying Policy Audit scans during group policy execution. Windows Cloud Agent can now detect whether a Group Policy update is in progress and delay Policy Audit scans for the configured duration."
+        },
+        {
+          "heading": "Secure Endpoints with Block Connection",
+          "summary": "Qualys Cloud Agent now supportsEndpoint Detection and Response (EDR) Block Connectionfeature to block suspicious or unauthorized network connections at endpoints. This feature can block specific IPv4 and IPv6 addresses without terminating an entire…"
+        },
+        {
+          "heading": "Enhanced ETM Identity",
+          "summary": "Cloud Agent now has support for two new ETM Identity features: Active Directory (AD) Real-Time Monitoring and Foreign Security Principal (FSP) Support."
+        },
+        {
+          "heading": "Scan WSL Instances with Windows Cloud Agent",
+          "summary": "Cloud Agent is enhanced to support scanning Windows Subsystem for Linux (WSL) instances installed on Windows assets. This enables Cloud Agent to collect inventory and monitor WSL instances. It provides visibility intoinstalled packages, WSL status,…"
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "Database Assessment login fallback: We have updated the database assessment login behavior for the MSSQL server. Windows Cloud Agent 6.6 and later, first attempt MSSQL server login with theLog on as Batch Jobpermissions. If that login attempt fails,…"
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "No new platform coverage is added in this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Resource Utilization",
+          "issue": "Fixed an issue where Endpoint Protection Platform (EPP) caused high CPU utilization. We have updated the EDR policy. Cloud Agent assets no longer have high CPU utilization due to EPP installation."
+        },
+        {
+          "component": "Cloud Agent Auto-upgrade",
+          "issue": "Fixed an issue where Cloud Agent auto-upgrade failed due to incorrect MSI cache validation. We have updated the MSI validation workflow. Cloud Agent now completes auto-upgrades successfully."
+        },
+        {
+          "component": "Patch Installation",
+          "issue": "Fixed an issue where Patch deployment jobs using theInstall Softwarepre-action failed when downloading software packages from Qualys CDN endpoints. We have fixed the certificate validation issue. Cloud Agent now successfully downloads and installs patches."
+        },
+        {
+          "component": "Patch Installation Status",
+          "issue": "Fixed an issue where successfully installed patches were incorrectly reported as Complete with Failure in the patch deployment job results. Cloud Agent now displays the patch installation status correctly."
+        },
+        {
+          "component": "Patch Job Failure",
+          "issue": "Fixed an issue where scheduled patch jobs timed out before utilizing the full configured patch window due to a communication failure. Patch jobs now successfully use the configured patch job window and no longer fail prematurely."
+        },
+        {
+          "component": "Cloud Agent Provisioning",
+          "issue": "Fixed an issue where Cloud Agent re-provisioning created duplicate asset records even when the Asset Identity and Agent Provisioning Rule criteria matched. Cloud Agent no longer creates duplicate records during provisioning."
+        },
+        {
+          "component": "Database Authentication",
+          "issue": "Fixed an issue where Database Assessment did not show any status in the database assessment report due to incorrect credentials. We now correctly show the correct status in reports."
+        },
+        {
+          "component": "Cloud Agent Provisioning",
+          "issue": "Resolved an issue where Cloud Agent provisioning on cloud instances failed when the agent could not retrieve the instance ID from the Instance Metadata Service (IMDS). Cloud agent now continues provisioning, ensuring successful onboarding for cloud workloads despite the IMDS accessibility issues."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-22T12:03:12.041374+00:00",
+      "status": "success"
+    }
   },
   "920d16f9dca1": {
     "key": "920d16f9dca1",
@@ -1872,7 +1953,35 @@
       "PA"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-08-14T08:41:40+00:00"
+    "detected_at": "2026-08-14T08:41:40+00:00",
+    "details": {
+      "release_date": "August 13, 2026",
+      "features": [
+        {
+          "heading": "Manage Compliance Frameworks Using Various Framework Policy APIs",
+          "summary": "Compliance Framework policies help you meet specific technical and regulatory requirements. To assess a framework's overall posture, policies must be created using controls mapped to that framework. Creating these policies involves a defined process…"
+        },
+        {
+          "heading": "Middleware Asset API",
+          "summary": "We now support the Middleware Asset API that helps you list, activate, or deactivate middleware assets."
+        },
+        {
+          "heading": "List Reports API: View Response Progress Updates",
+          "summary": "The List Reports API now provides progress updates in the response, showing the number of reports processed out of the total reports being retrieved."
+        },
+        {
+          "heading": "Report Template APIs",
+          "summary": "With this release, we have introduced the report template APIs that enable you to list, retrieve, and create compliance report templates."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-22T12:03:12.041374+00:00",
+      "status": "success"
+    }
   },
   "46000150a344": {
     "key": "46000150a344",
@@ -1882,7 +1991,64 @@
       "PA"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-08-14T08:41:40+00:00"
+    "detected_at": "2026-08-14T08:41:40+00:00",
+    "details": {
+      "release_date": "August 13, 2026",
+      "features": [
+        {
+          "heading": "Manage Policies Using the New Policy Tab Interface",
+          "summary": "With this release, we have introduced a new interface for thePolicytab that provides a more organized and intuitive experience for managing policies. The new interface organizes policy management into dedicated tabs forWorkspace,Library, andTasks,…"
+        },
+        {
+          "heading": "Enhanced User Access and Role Management for PAF",
+          "summary": "We have enhanced user access and role management for Policy Audit Fix (PAF) to provide greater flexibility in managing user access and permissions."
+        },
+        {
+          "heading": "Search Assets by Criticality Score Using QQL Token",
+          "summary": "With this release, you can use the newasset.criticalityScoreQQL token in the Posture tab to filter assets based on their Asset Criticality Score (ACS). This helps you quickly identify assets with a specific criticality score and prioritize…"
+        },
+        {
+          "heading": "Support for New Authentication Technologies",
+          "summary": "With this release, we have introduced the following new Authentication technologies"
+        },
+        {
+          "heading": "Cloud Perimeter Scan Support for Oracle Cloud Infrastructure",
+          "summary": "You can now discover and scan Oracle Cloud Infrastructure (OCI) assets using Cloud Perimeter Scan. Previously, Cloud Perimeter Scan supported AWS, Azure, and Google Cloud Platform (GCP), requiring organizations with OCI workloads to use separate…"
+        },
+        {
+          "heading": "Update - Policy Creation using Compliance Framework",
+          "summary": "We previously introduced the ability to create policies using controls mapped to Compliance Frameworks, enabling quick alignment with industry standards such as CIS, DISA, and others for accurate compliance posture evaluation."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PA - Reports",
+          "issue": "When the user attempted to generate a Control Chaining Policy Report, some previously imported policies were not displayed in the policy selection dropdown. This issue occurred when the policies were imported into the subscription before they were disabled in the Policy Library. Although the imported policies remained active in the users subscription, they were unavailable for selection when generating the report. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - Scan Processing",
+          "issue": "When the user performed a Policy Audit scan on an asset that had a valid Agent Correlation ID, the existing Agent Correlation ID could be cleared if the scan results did not include the correlation ID. As a result, the Cloud Agent asset and the corresponding scanner-detected asset were not merged as expected, causing duplicate asset entries to appear. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - Reports",
+          "issue": "When the user attempted to generate a Policy Audit report using the Group by Control option, the report generation process consistently stopped when the progress reached 5%. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - Scan",
+          "issue": "When the user configured multiple scheduled compliance scans with identical target IP ranges to run within a short time interval, the scans were initiated successfully. However, the results of the second scan were incorrectly marked as discarded and were not processed, resulting in the loss of scan data. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - Scan Processing",
+          "issue": "When the user added assets to an Asset Group with tags included in the asset scope, the expected tags were not assigned to the associated assets, resulting in incorrect asset tagging. Relevant code changes have been made to fix the issue."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-22T12:03:12.041374+00:00",
+      "status": "success"
+    }
   },
   "47d9630685dc": {
     "key": "47d9630685dc",
@@ -1893,7 +2059,23 @@
       "VM"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-08-14T08:41:40+00:00"
+    "detected_at": "2026-08-14T08:41:40+00:00",
+    "details": {
+      "release_date": "August 13, 2026",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "/api/3.0/fo/auth/unix"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-22T12:03:12.041374+00:00",
+      "status": "success"
+    }
   },
   "d9b905d71c85": {
     "key": "d9b905d71c85",
@@ -1903,7 +2085,52 @@
       "VM"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-08-14T08:41:40+00:00"
+    "detected_at": "2026-08-14T08:41:40+00:00",
+    "details": {
+      "release_date": "August 13, 2026",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "You can now select the agent version to deploy when you launch a Cloud Agent Deployment scan. This helps when you need to install a specific supported version instead of always using the latest available version.Previously, Cloud Agent Deployment…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - User Management",
+          "issue": "When users opened the Users tab, the page was taking significantly longer to load, especially in subscriptions with a large number of user accounts. This issue is now resolved, and the Users tab loads more efficiently."
+        },
+        {
+          "component": "VM - Report Schedule",
+          "issue": "When users launched scheduled or on-demand reports, the reports did not launch and were not displayed in the report list. This issue is now resolved, and reports are retained correctly during processing and are displayed in the report list as expected."
+        },
+        {
+          "component": "VM - IP License Container",
+          "issue": "When users compared the Unique Hosts Scanned count with the asset counts displayed in Vulnerability Management, a discrepancy was observed in the VM unique host. This issue is now resolved. We have now documented this in the Online Help, which clarifies that the Unique Hosts Scanned count includes only unique hosts with a VM scan date."
+        },
+        {
+          "component": "VM - Certificates",
+          "issue": "When users searched for API support for bulk certificate deletion, the available certificate management capabilities were unclear. We have updated the API Guide to clarify that bulk certificate deletion through the API is not currently supported."
+        },
+        {
+          "component": "VM - Assets",
+          "issue": "When users viewed the Vulnerabilities tab for assets with a large number of vulnerabilities, the page was taking a take a long time to load. This issue is now resolved, and the Vulnerabilities tab loads more efficiently, providing faster access to vulnerability information."
+        },
+        {
+          "component": "VM - Host List Detection API",
+          "issue": "When users generated host-based reports with large vulnerability datasets, report generation could take longer than expected, impacting performance. This issue is now resolved, and host-based reports that include vulnerability information, vulnerability reopen data, vulnerability transitions, and Information Gathered (IG) details are generated more efficiently."
+        },
+        {
+          "component": "VM",
+          "issue": "When users viewed scan or map retention information, the remaining retention days were being calculated based on the retention policy of the logged-in user instead of the scan or map owner. This issue is now resolved, and retention days are calculated based on the retention policy configured by the owner of the scan or map, ensuring consistent and accurate retention information across user accounts."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-22T12:03:12.041374+00:00",
+      "status": "success"
+    }
   },
   "5b76ac0077c8": {
     "key": "5b76ac0077c8",
