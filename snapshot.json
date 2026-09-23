@@ -2431,7 +2431,32 @@
       "UD"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-08-11T08:28:48+00:00"
+    "detected_at": "2026-08-11T08:28:48+00:00",
+    "details": {
+      "release_date": "August 03, 2026",
+      "features": [
+        {
+          "heading": "Download JSON for Scheduled Dashboard Reports",
+          "summary": "You can now download scheduled Unified Dashboard (UD) reports inJSONformat, along with the existing PDF formats. This makes it easier to use your dashboard data in other tools."
+        },
+        {
+          "heading": "Enhanced User Interface",
+          "summary": "With this release, we have introduced an improved user experience across all UD pages. You can see updates across fonts, colors, typography, and buttons, making the interface more intuitive and easier to use. This release features User Interface and…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "UD - VMDR",
+          "issue": "We fixed an issue where dashboards were visible to users with limited privileges under the Frequently Used tab, even when those dashboards were outside their tag-based scope or RBAC permissions.Now, theFrequently Usedtab applies RBAC and tag-based user scoping and displays only the dashboards the user has access to."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-23T18:17:57.179618+00:00",
+      "status": "success"
+    }
   },
   "8bf235993d2a": {
     "key": "8bf235993d2a",
@@ -2442,7 +2467,55 @@
       "QS"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-31T10:03:32+00:00"
+    "detected_at": "2026-07-31T10:03:32+00:00",
+    "details": {
+      "release_date": "July 30, 2026",
+      "features": [
+        {
+          "heading": "Support for Serverless Lambda Function Scanning",
+          "summary": "Organizations increasingly rely on serverless architectures but lack a unified security-scanning solution for containerized and serverless workloads. This often leads to security blind spots and inconsistent risk assessments."
+        },
+        {
+          "heading": "Support for Code Scanning",
+          "summary": "With this release, QScanner introduces thecodecommand, enabling security scanning of source code repositories before they are built and packaged. The command supports scanning both local source code and remote repositories, helping organizations…"
+        },
+        {
+          "heading": "AI Workload Compliance Scanning for Code Assets",
+          "summary": "While traditional security tools focus on containers, infrastructure, and application vulnerabilities, they provide limited visibility into AI agent implementations. As a result, organizations struggle to assess whether their AI systems comply with…"
+        },
+        {
+          "heading": "Enhanced Secret Detection",
+          "summary": "QScanner 5.1.0 introduces multiple enhancements to improve secret detection accuracy, coverage, and usability. Together, these enhancements help organizations identify genuine secrets more effectively while reducing noise from benign matches."
+        },
+        {
+          "heading": "CycloneDX Report Format Support",
+          "summary": "QScanner now supportsCycloneDXas a report format using the--report-format cyclonedxcommand. Previously, SARIF was the only industry-standard report format supported by QScanner and was primarily focused on vulnerability reporting. With this…"
+        },
+        {
+          "heading": "Support for Alibaba Cloud Linux OS",
+          "summary": "Alibaba Cloud Linux is a Linux server operating system developed and maintained by Alibaba Cloud. It is designed and optimized for Alibaba Cloud infrastructure, including ECS (Elastic Compute Service) instances and cloud-native applications.QScanner…"
+        },
+        {
+          "heading": "Support for Chisel-based Images",
+          "summary": "QScanner 5.1.0 introduces support for scanning images built using Chisel manifests. Chisel is commonly used to create minimal Debian/Ubuntu-based container images by extracting only the files required for an application, resulting in smaller and…"
+        },
+        {
+          "heading": "Support for Scanning of Locally built Multiarch images using Buildx on Docker v29",
+          "summary": "Modern applications are increasingly deployed across heterogeneous environments that require support for multiple CPU architectures. Security teams often need to validate each platform-specific image separately, making vulnerability assessment more…"
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following issue has been fixed with this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-23T18:17:57.179618+00:00",
+      "status": "success"
+    }
   },
   "16b20466c0cf": {
     "key": "16b20466c0cf",
@@ -2452,7 +2525,23 @@
       "CA"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-08-04T10:06:12+00:00"
+    "detected_at": "2026-08-04T10:06:12+00:00",
+    "details": {
+      "release_date": "July 30, 2026",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "Vulnerability Detection",
+          "issue": "We fixed an issue where SwCA reported vulnerabilities due to an out-of-date Go library in the SwCA package. We have updated the SwCA package with the latest Go library version to fix this issue."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-23T18:17:57.179618+00:00",
+      "status": "success"
+    }
   },
   "28dfae1731a7": {
     "key": "28dfae1731a7",
@@ -2462,7 +2551,35 @@
       "CA"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-08-04T10:06:12+00:00"
+    "detected_at": "2026-08-04T10:06:12+00:00",
+    "details": {
+      "release_date": "July 29, 2026",
+      "features": [
+        {
+          "heading": "Updated Base Image for Compliance",
+          "summary": "We have updated the base image used for AWS Bottlerocket Cloud Agent to fix the vulnerabilities."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-23T18:17:57.179618+00:00",
+      "status": "success"
+    }
   },
   "701ebf4ad978": {
     "key": "701ebf4ad978",
@@ -2472,7 +2589,35 @@
       "CA"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-08-04T10:06:12+00:00"
+    "detected_at": "2026-08-04T10:06:12+00:00",
+    "details": {
+      "release_date": "July 29, 2026",
+      "features": [
+        {
+          "heading": "Updated Base Image for Compliance",
+          "summary": "With this release, we have updated the base image used for the AWS Bottlerocket ARM Cloud Agent to fix the vulnerabilities."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes for this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-23T18:17:57.179618+00:00",
+      "status": "success"
+    }
   },
   "eea8607d35c4": {
     "key": "eea8607d35c4",
