@@ -2410,7 +2410,18 @@
       "FIM"
     ],
     "month_label": "August 2026",
-    "detected_at": "2026-08-04T10:06:12+00:00"
+    "detected_at": "2026-08-04T10:06:12+00:00",
+    "details": {
+      "release_date": "August 03, 2026",
+      "features": [],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-23T12:11:55.778257+00:00",
+      "status": "success"
+    }
   },
   "05760d8f9e11": {
     "key": "05760d8f9e11",
@@ -20319,5 +20330,170 @@
     ],
     "month_label": "February 2021",
     "detected_at": "2026-09-18T11:49:47+00:00"
+  },
+  "f9f53b6656a8": {
+    "key": "f9f53b6656a8",
+    "url": "https://docs.qualys.com/en/csam/release-notes/cybersecurity_asset_management/release_3_7_3.htm",
+    "title": "Global AssetView/CyberSecurity Asset Management 3.7.3",
+    "tags": [
+      "CSAM",
+      "GAV"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-23T12:11:55+00:00",
+    "details": {
+      "release_date": "September 23, 2026This release adds new asset identification and merging controls, IPv6 support for OCI assets, and resolves several reported issues in CSAM and GAV.",
+      "features": [
+        {
+          "heading": "Merge Duplicate Assets using Qualys Scanner Rules",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Prevent Incorrect Asset Merging with Custom Exclusions",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Access Public and Private IPv6 Details for OCI Assets",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "View DNS Records for Unresolved Domains",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Fixes",
+          "summary": "The following reported and notable customer issues are fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-23T12:11:55.778257+00:00",
+      "status": "success"
+    }
+  },
+  "71fa265d4111": {
+    "key": "71fa265d4111",
+    "url": "https://docs.qualys.com/en/csam/release-notes/cybersecurity_asset_management/release_3_7_3_api.htm",
+    "title": "Global AssetView/CyberSecurity Asset Management 3.7.3 API",
+    "tags": [
+      "API",
+      "CSAM",
+      "GAV"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-23T12:11:55+00:00",
+    "details": {
+      "release_date": "September 23, 2026This release includes two API enhancements: the List Software Components for Specific Asset ID API now shows when an asset's Software Bill of Materials (SBOM) was last updated, and the Domain APIs now support DNS search tokens to filter unresolved domains by specific DNS record details.",
+      "features": [
+        {
+          "heading": "Get the Last Updated Date for an Asset SBOM",
+          "summary": "What Changed for You"
+        },
+        {
+          "heading": "Search Unresolved Domains using DNS Search Tokens",
+          "summary": "What Changed for You"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-23T12:11:55.778257+00:00",
+      "status": "success"
+    }
+  },
+  "b6a1d119837c": {
+    "key": "b6a1d119837c",
+    "url": "https://docs.qualys.com/en/pm/release-notes/patch_management/release_4_2.htm",
+    "title": "TruRisk™ Eliminate Release 4.2",
+    "tags": [
+      "ISL",
+      "MTG",
+      "PM"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-23T12:11:55+00:00",
+    "details": {
+      "release_date": "September 22, 2026This release introduces patch-blocking rules that prevent specific patches from being deployed and a built-in job-approval workflow that requires review before jobs run.",
+      "features": [
+        {
+          "heading": "Stop Specific Patches from Deployment with Patch Blocking Rules",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Control Deployments with Built-In Approvals",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "API Release Updates",
+          "summary": "For more details on the API updates for this release, seePatch Management API Release 4.2."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PM - UI",
+          "issue": "An issue occurred in which Mitigation and Isolation options did not consistently appear in the Elimination Job Type filter on the Jobs page for some users.This issue is now fixed, and the filters appear correctly."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "An issue occurred where scrolling the asset list on the Windows, Linux, and Mac tabs could display unexpected blank space on the page.This issue is now fixed, and all assets now load and display properly without missing records."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "An issue occurred in which Patch Reliability information was not visible on the Patches tab for some sub-users, even when the customer had an activeTruRisk™ Eliminatelicense.The issue is now fixed, and the Patch Reliability data is now displayed correctly for entitled customers regardless of individual application assignments."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "An issue occurred in which assets did not appear in the job progress after the job was triggered.This issue is now fixed, and the assets appear correctly in the job progress."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "An issue occurred in which the mitigation indicator on the VMDR page was displayed inconsistently.This issue is now fixed, and the indicator is consistently displayed for all mitigable QIDs."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-23T12:11:55.778257+00:00",
+      "status": "success"
+    }
+  },
+  "b127960d1ed5": {
+    "key": "b127960d1ed5",
+    "url": "https://docs.qualys.com/en/pm/release-notes/patch_management/release_4_2_api.htm",
+    "title": "TruRisk™ Eliminate Release 4.2 API",
+    "tags": [
+      "ISL",
+      "ISL",
+      "MTG",
+      "PM"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-23T12:11:55+00:00",
+    "details": {
+      "release_date": "September 22, 2026",
+      "features": [
+        {
+          "heading": "Block Unwanted Patches Before Deployment",
+          "summary": "With this release, users can retrieve a list of blocking rules. The feature supports both Windows and Linux platforms. If the platform parameter is not provided, all Windows blocking rules will be fetched by default."
+        },
+        {
+          "heading": "Approve Deployment Jobs Before They Run",
+          "summary": "With this new API, you can check the history of actions and the status of the job approval, along with the comments provided by the job approver."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-23T12:11:55.778257+00:00",
+      "status": "success"
+    }
   }
 }
