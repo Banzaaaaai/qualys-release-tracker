@@ -143,7 +143,8 @@
     "tags": [
       "ISL",
       "MTG",
-      "PM"
+      "PM",
+      "TE"
     ],
     "month_label": "September 2026",
     "detected_at": "2026-09-10T11:49:41+00:00",
@@ -2627,7 +2628,35 @@
       "CA"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-08-04T10:06:12+00:00"
+    "detected_at": "2026-08-04T10:06:12+00:00",
+    "details": {
+      "release_date": "July 29, 2026",
+      "features": [
+        {
+          "heading": "Updated Base Image for Compliance",
+          "summary": "With this release, we have updated the base image used for the Google Cloud Platform Container-Optimized OS (GCP-COS) Cloud Agent to fix the vulnerabilities."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-24T12:12:19.942747+00:00",
+      "status": "success"
+    }
   },
   "c3e92d5eb649": {
     "key": "c3e92d5eb649",
@@ -2637,7 +2666,35 @@
       "CA"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-08-04T10:06:12+00:00"
+    "detected_at": "2026-08-04T10:06:12+00:00",
+    "details": {
+      "release_date": "July 29, 2026",
+      "features": [
+        {
+          "heading": "Updated Base Image for Compliance",
+          "summary": "We have updated the base image used for Redhat Enterprise Linux CoreOS Cloud Agent to fix the vulnerabilities."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes for this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues or limitations for this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-24T12:12:19.942747+00:00",
+      "status": "success"
+    }
   },
   "20e7c8787aae": {
     "key": "20e7c8787aae",
@@ -2647,7 +2704,84 @@
       "ETM"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-31T10:03:32+00:00"
+    "detected_at": "2026-07-31T10:03:32+00:00",
+    "details": {
+      "release_date": "July 27, 2026",
+      "features": [
+        {
+          "heading": "Enhanced Visibility with Status-Based Breakdown in Scan Results",
+          "summary": "TheExploitation Validatedcolumn on theScantab now provides a detailed, status-based breakdown of TruConfirm findings, enhancing visibility into scan results. Along with the count of validated exploits, it also displays validation outcomes across…"
+        },
+        {
+          "heading": "Scan Pause, Resume, and Delete for TruConfirm Scans",
+          "summary": "You can now pause, resume, and delete TruConfirm scans from theScantab. These actions are available for individual scans and for multiple scans in bulk. The following scan statuses have been introduced to indicate the current state of a scan"
+        },
+        {
+          "heading": "DNS-based Scans for TruConfirm",
+          "summary": "You can now launch scans usingFQDNs/DNSURLs in addition toIPv4andIPv6addresses and ranges. This enhancement allows you to target assets based on their FQDNs or DNS URLs when configuring scans."
+        },
+        {
+          "heading": "Default Option Profile for TruConfirm Scans",
+          "summary": "When you launch a TruConfirm scan from theScantab or theRisk Managementtab, theOption Profilefield inStep 1: Basic Informationnow displays a pre-selected default option profile."
+        },
+        {
+          "heading": "ETM Integration with TruRisk Eliminate",
+          "summary": "Risk Workbench Prioritization is now integrated with TruRisk Eliminate, enabling organizations to move seamlessly from vulnerability prioritization to remediation within a single workflow."
+        },
+        {
+          "heading": "CVSS v4 Support Fields Support",
+          "summary": "This release introduces support for CVSS v4 metrics and attributes across multiple Qualys platform components, enabling you to leverage the latest vulnerability scoring standard for analysis, reporting, search, grouping, alerting, and integrations."
+        },
+        {
+          "heading": "New Tokens to Support CVSS v4",
+          "summary": "We added new tokens to help you refine your findings based on CVSS v4."
+        },
+        {
+          "heading": "Finding Count Breakdown by QVSS Range in ETM Tag Widgets",
+          "summary": "This enhancement introduces a QVSS-based breakdown of finding counts (Critical, High, Medium, Low) in the Tag Hierarchy Widget of ETM dashboards."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Dashboard",
+          "issue": "The user could not select all Business Entities while creating the Explore Business Entities Insights Widget because the system limited the list to fewer items. This was caused by a limit setting in the API/UI. The issue is now fixed, and more entities can be fetched and selected correctly."
+        },
+        {
+          "component": "Dashboard",
+          "issue": "Some Business Entities were not visible in the dashboard filters even though they existed. This happened due to a display limit on the UI. The issue is now fixed, and all entities are correctly shown and selectable."
+        },
+        {
+          "component": "HomePage",
+          "issue": "Users experienced slow loading (more than 1 minute) when navigating from VMDR to ETM. This was caused by a cache check. The issue is resolved, and the page now loads faster."
+        },
+        {
+          "component": "Dashboard",
+          "issue": "Dashboard Venn Type widgets showed no data when one of the QQL queries had no data, even if other queries had valid data. This was due to incorrect handling of mixed query results. The issue is resolved, and widgets now show available data correctly."
+        },
+        {
+          "component": "HomePage",
+          "issue": "Users could see Business Entities and vulnerabilities outside their assigned scope. This happened because scope restrictions were not applied properly. The issue is fixed, and users now only see data within their permitted scope."
+        },
+        {
+          "component": "Custom Attributes",
+          "issue": "Group by Sensors Activated Modules showed no data because the required support was missing. The issue is now fixed, and grouping works correctly with proper data display."
+        },
+        {
+          "component": "Findings",
+          "issue": "Vulnerabilities marked as fixed in VMDR were still shown as active in ETM due to a sync issue between systems. The issue is resolved, and the vulnerability status now reflects correctly in ETM."
+        },
+        {
+          "component": "Dashboard",
+          "issue": "Dashboard widgets had limited Group By options, restricting reporting flexibility. The issue is resolved, and more grouping fields are now available for better reporting."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-24T12:12:19.942747+00:00",
+      "status": "success"
+    }
   },
   "906092e4b589": {
     "key": "906092e4b589",
@@ -2657,7 +2791,36 @@
       "PCI"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-08-05T10:03:28+00:00"
+    "detected_at": "2026-08-05T10:03:28+00:00",
+    "details": {
+      "release_date": "July 24, 2026",
+      "features": [
+        {
+          "heading": "View Consolidated Findings from PCI and TAS Scans",
+          "summary": "We enhanced the PCI Compliance - TotalAppSec (TAS) integration to merge vulnerability findings from both the PCI and TAS scansfor IP or DNS assets. This enhancement provides a consolidated view of unique vulnerabilities detected in both scans and…"
+        },
+        {
+          "heading": "Optimize Resource Consumption by Automatic Data Purge Support",
+          "summary": "We optimized the PCI Scan data retention policy to purge the old, irrelevant PCI scan data. PCI Compliance now automatically purges all the scan data older than three years. The new data retention policy also provides a 180-day recovery window after…"
+        },
+        {
+          "heading": "View PCI Scan Results from Email Notification",
+          "summary": "We have updated scan links shared in scan launch and scan summary emails to support direct access to the scan status and scan report in the PCI Compliance user interface. You can now access the PCI scan status and results directly from the scan…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Vulnerability Reporting",
+          "issue": "Fixed an issue where historical vulnerability findings detected during older scans were displayed in theVulnerabilitiestab after latest scan. Now, older vulnerability detections are not included, and only vulnerabilities from the current scans are displayed in theVulnerabilitiestab."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-24T12:12:19.942747+00:00",
+      "status": "success"
+    }
   },
   "43eeb3d09c6e": {
     "key": "43eeb3d09c6e",
@@ -20558,7 +20721,8 @@
     "tags": [
       "ISL",
       "MTG",
-      "PM"
+      "PM",
+      "TE"
     ],
     "month_label": "September 2026",
     "detected_at": "2026-09-23T12:11:55+00:00",
@@ -20614,9 +20778,9 @@
     "title": "TruRisk™ Eliminate Release 4.2 API",
     "tags": [
       "ISL",
-      "ISL",
       "MTG",
-      "PM"
+      "PM",
+      "TE"
     ],
     "month_label": "September 2026",
     "detected_at": "2026-09-23T12:11:55+00:00",
@@ -20638,6 +20802,36 @@
     "enrichment": {
       "attempts": 1,
       "last_attempt_at": "2026-09-23T12:11:55.778257+00:00",
+      "status": "success"
+    }
+  },
+  "19b31f07fb98": {
+    "key": "19b31f07fb98",
+    "url": "https://docs.qualys.com/en/ud/release-notes/unified_dashboard/release_2_16.htm",
+    "title": "Unified Dashboard 2.16",
+    "tags": [
+      "UD"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-24T12:12:19+00:00",
+    "details": {
+      "release_date": "September 23, 2026",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "UD",
+          "issue": "We fixed an issue where a widget did not stay in its new position when it was dragged to a different location on a dashboard, and instead reverted to its original position or displaced another widget.Now, widgets remain in the position where you place them, and the updated dashboard layout is retained."
+        },
+        {
+          "component": "UD",
+          "issue": "We fixed an issue where the number of days shown forMean Time to Resolution (MTTR)widgets in a scheduled dashboard report was higher than the number of days shown on the dashboard and in the manually downloaded dashboard. This happened because the number of days in the scheduled report was rounded up.Now,MTTRwidget values are consistent across the dashboard, the manually downloaded dashboard, and the scheduled dashboard report."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-24T12:12:19.942747+00:00",
       "status": "success"
     }
   }
