@@ -2830,7 +2830,36 @@
       "VMDR"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-24T09:41:37+00:00"
+    "detected_at": "2026-07-24T09:41:37+00:00",
+    "details": {
+      "release_date": "July 23, 2026",
+      "features": [
+        {
+          "heading": "Manage Asset Tags from the Assets List",
+          "summary": "In this release, we have introduced static asset tagging on theAssetlisting page on theVulnerabilitiestab. You can add or remove static tags directly from theAssetpage for multiple assets to simplify grouping, filtering, and reporting."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "TruRisk™ Report",
+          "issue": "We fixed an issue where the posture data count in theVMDR> TruRisk™ report did not match the count displayed on the Policy Audit (PA) >Posturetab for assets associated with specific tags.You can now view consistent and accurate posture misconfiguration counts in the TruRisk™ report and thePosturetab for tagged assets, including APP: APP20940."
+        },
+        {
+          "component": "Responses Tab",
+          "issue": "We fixed an issue where editing rules underVMDR>Responsetab >Rule Managercaused the application to crash.You can now edit rules without errors and experience consistent performance across all browsers and sessions."
+        },
+        {
+          "component": "Responses Tab",
+          "issue": "We fixed an issue where updating an action underVMDR>Responsetab module got stuck in a loading state when switching from Email to Post to Teams.You can now update actions with Post to Teams, and the changes are saved without delays or errors."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-24T18:17:51.565017+00:00",
+      "status": "success"
+    }
   },
   "a70a34d302c2": {
     "key": "a70a34d302c2",
@@ -2840,7 +2869,35 @@
       "Conn"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-24T09:41:37+00:00"
+    "detected_at": "2026-07-24T09:41:37+00:00",
+    "details": {
+      "release_date": "July 20, 2026",
+      "features": [
+        {
+          "heading": "Workload Identity Federation Authentication for GCP Cloud (Beta)",
+          "summary": ""
+        },
+        {
+          "heading": "Expanded Audit Log Coverage for Connector Operations",
+          "summary": ""
+        },
+        {
+          "heading": "Test Connection Support for OCI Connector",
+          "summary": ""
+        },
+        {
+          "heading": "Update to \"Select All Regions\" Behavior",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-24T18:17:51.565017+00:00",
+      "status": "success"
+    }
   },
   "88381d17129e": {
     "key": "88381d17129e",
@@ -2851,7 +2908,27 @@
       "TC"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-24T09:41:37+00:00"
+    "detected_at": "2026-07-24T09:41:37+00:00",
+    "details": {
+      "release_date": "July 20, 2026",
+      "features": [
+        {
+          "heading": "Extended Azure Inventory and Evaluations APIs to filter on Azure Tags",
+          "summary": ""
+        },
+        {
+          "heading": "Get Resources API: Support for New Detailed Inventory Resources",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-24T18:17:51.565017+00:00",
+      "status": "success"
+    }
   },
   "9cb2306ad62d": {
     "key": "9cb2306ad62d",
@@ -2861,7 +2938,84 @@
       "TC"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-24T09:41:37+00:00"
+    "detected_at": "2026-07-24T09:41:37+00:00",
+    "details": {
+      "release_date": "July 20, 2026",
+      "features": [
+        {
+          "heading": "Multi-Cloud Inventory Overview",
+          "summary": ""
+        },
+        {
+          "heading": "Sensitive Data Scanning for GCP",
+          "summary": ""
+        },
+        {
+          "heading": "TruRisk™ Insights Catalog",
+          "summary": ""
+        },
+        {
+          "heading": "Investigate Cloud Configurations",
+          "summary": ""
+        },
+        {
+          "heading": "Extended AWS, Azure, and OCI Inventory Coverage",
+          "summary": ""
+        },
+        {
+          "heading": "Comprehensive Findings for Azure Virtual Machines",
+          "summary": ""
+        },
+        {
+          "heading": "Enhanced Azure CIEM Entitlements",
+          "summary": ""
+        },
+        {
+          "heading": "Enhanced Alert Messages to include Connector context",
+          "summary": ""
+        },
+        {
+          "heading": "Azure Resource Tag Support",
+          "summary": ""
+        },
+        {
+          "heading": "Vertex AI - Resource Name Updated",
+          "summary": ""
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "The following section describes the new tokens introduced as part of TotalCloud 2.26.0"
+        },
+        {
+          "heading": "Control Updates",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "CV - EC2 Connector",
+          "issue": "Resolved an issue where terminated AWS EC2 instances continued to appear as “Running” in the AssetView/Global AssetView UI. The issue occurred due to incorrect handling of connector ARN values (NULL ARN for CSA identifier), which caused failures during stale asset processing and prevented proper status updates. Users previously saw terminated assets incorrectly listed as active. The issue is now resolved and terminated EC2 instances are correctly marked in the UI.Resolved an issue where users encountered a 500 Internal Server Error while merging connectors in the TotalCloud module. The issue occurred due to improper request handling during connector merge operations. Users previously could not merge connectors and received errors. The issue is now resolved and connector merge works correctly."
+        },
+        {
+          "component": "CV - Reports",
+          "issue": "Resolved an issue where users encountered an error while creating CSPM reports when selecting the“last” option for monthly scheduling. The issue occurred due to incorrect recurrence handling logic. Users previously experienced report generation failures for this option while other options worked correctly. The issue is now resolved and report scheduling works correctly for all monthly recurrence options."
+        },
+        {
+          "component": "CV - API",
+          "issue": "Resolved an issue in the API endpoint /evaluation/applyTags where applying tags using a regex pattern failed with“No resources/evaluations found” or NOT_FOUND errors. The issue occurred due to limitations in handling large datasets and failures during Elasticsearch query processing. Users previously could not apply tags using regex across multiple resources. The issue is now resolved and regex-based tagging works correctly as expected.Addressed the use of a deprecated Azure Management API version (api-version=2014-04-01). The issue occurred due to outdated API usage in integration calls, which triggered Microsoft deprecation alerts. Users previously received warnings about potential impact. The issue is now resolved and supported API versions are used."
+        },
+        {
+          "component": "CV - False Positive",
+          "issue": "Resolved a false positive issue where encrypted EBS volumes were incorrectly flagged as non-compliant for CID-203 (KMS encryption check). The issue occurred due to incorrect validation of encryption and KMS key details. Users previously saw compliant resources marked as failed. The issue is now resolved and compliance evaluation correctly reflects actual encryption status."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-24T18:17:51.565017+00:00",
+      "status": "success"
+    }
   },
   "329c834ee50b": {
     "key": "329c834ee50b",
@@ -2872,7 +3026,114 @@
       "PM"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-24T09:41:37+00:00"
+    "detected_at": "2026-07-24T09:41:37+00:00",
+    "details": {
+      "release_date": "July 22, 2026",
+      "features": [
+        {
+          "heading": "Run Jobs Without Waiting for a System Reboot",
+          "summary": "We have enhanced this API to allow a subsequent job to execute even if there are pending assets to reboot from the previous job. The enhancement includes a new parameter,allowExecutionWithPendingReboot, in the API request."
+        },
+        {
+          "heading": "Retry Failed Patch Deployments with Enhanced Time Interval",
+          "summary": "The following APIs are enhanced for the new retry failed patches time interval"
+        },
+        {
+          "heading": "Fetch Patches Published on Qualys PM Platform",
+          "summary": "The following APIs are enhanced with the qualysPublishedDate parameter in the API response"
+        },
+        {
+          "heading": "UI Release Updates",
+          "summary": "To know more about the UI features, enhancements, and issues addressed, seePatch Management Release 4.0."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PM - Assets",
+          "issue": "We fixed an issue where the following parameters were missing from the API response:completionpercentandassetResultReceivedCount.These two parameters are now generated in the API response.Impacted API:/pm/v1/deploymentjobs"
+        }
+      ],
+      "cves": [
+        "CVE-2016-7193",
+        "CVE-2017-0001",
+        "CVE-2017-0005",
+        "CVE-2017-0014",
+        "CVE-2017-0022",
+        "CVE-2017-0025",
+        "CVE-2017-0038",
+        "CVE-2017-0039",
+        "CVE-2017-0042",
+        "CVE-2017-0043",
+        "CVE-2017-0045",
+        "CVE-2017-0047",
+        "CVE-2017-0050",
+        "CVE-2017-0055",
+        "CVE-2017-0056",
+        "CVE-2017-0060",
+        "CVE-2017-0061",
+        "CVE-2017-0062",
+        "CVE-2017-0063",
+        "CVE-2017-0072",
+        "CVE-2017-0073",
+        "CVE-2017-0075",
+        "CVE-2017-0076",
+        "CVE-2017-0083",
+        "CVE-2017-0084",
+        "CVE-2017-0085",
+        "CVE-2017-0086",
+        "CVE-2017-0087",
+        "CVE-2017-0088",
+        "CVE-2017-0089",
+        "CVE-2017-0090",
+        "CVE-2017-0091",
+        "CVE-2017-0092",
+        "CVE-2017-0097",
+        "CVE-2017-0099",
+        "CVE-2017-0100",
+        "CVE-2017-0102",
+        "CVE-2017-0103",
+        "CVE-2017-0104",
+        "CVE-2017-0108",
+        "CVE-2017-0109",
+        "CVE-2017-0111",
+        "CVE-2017-0112",
+        "CVE-2017-0113",
+        "CVE-2017-0114",
+        "CVE-2017-0115",
+        "CVE-2017-0116",
+        "CVE-2017-0117",
+        "CVE-2017-0118",
+        "CVE-2017-0119",
+        "CVE-2017-0120",
+        "CVE-2017-0121",
+        "CVE-2017-0122",
+        "CVE-2017-0123",
+        "CVE-2017-0124",
+        "CVE-2017-0125",
+        "CVE-2017-0126",
+        "CVE-2017-0127",
+        "CVE-2017-0128",
+        "CVE-2017-0143",
+        "CVE-2017-0144",
+        "CVE-2017-0145",
+        "CVE-2017-0146",
+        "CVE-2017-0147",
+        "CVE-2017-0148",
+        "CVE-2020-1108",
+        "CVE-2022-34301",
+        "CVE-2022-34302",
+        "CVE-2022-34303",
+        "CVE-2024-30105",
+        "CVE-2024-35264",
+        "CVE-2024-38081",
+        "CVE-2024-38095"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-24T18:17:51.565017+00:00",
+      "status": "success"
+    }
   },
   "b36304705f70": {
     "key": "b36304705f70",
