@@ -3345,7 +3345,56 @@
       "PM"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-08-03T10:53:25+00:00"
+    "detected_at": "2026-08-03T10:53:25+00:00",
+    "details": {
+      "release_date": "July 20, 2026 (Updated August 28, 2026)",
+      "features": [
+        {
+          "heading": "Assess Cloud Agent Health Status",
+          "summary": "MacOS Intel Cloud Agent now supports Cloud Agent Health Check Tool. This tool provides a summarized agent health report in JSON and text format through the Command-Line Interface (CLI). The health check report helps you verify Cloud Agent package…"
+        },
+        {
+          "heading": "Reattempt Failed Patches",
+          "summary": "You can now configure the system to reattempt failed patch installations. This feature lets you specify the exact number of retry attempts and the time interval between them to ensure critical updates deploy successfully. The agent will not…"
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There are no new platform coverage added for this release."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "macOS Intel Cloud Agent 6.4 and later do not support non-root users configured with UseSudo=0. When a previous Cloud Agent is upgraded to 6.4 or later, its configuration is automatically upgraded to UseSudo=1."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Remote Log Collection",
+          "issue": "We fixed an issue where the macOS Cloud Agent was unable to generate remote logs from Cloud Agent user interface. Now, the MacOS Cloud Agent successfully completes remote log requests."
+        },
+        {
+          "component": "Cloud Agent Reporting",
+          "issue": "We fixed an issue where the macOS Cloud Agent reported an incorrect MAC address for the hosts. Now, Cloud Agent correctly reports the host asset addresses."
+        },
+        {
+          "component": "Cloud Agent Operation",
+          "issue": "We fixed an issue where macOS Cloud Agent became unresponsive after the post-update restart when the  Endpoint Protection Platform (EPP) is enabled for the asset. Now, macOS Cloud Agent works smoothly after the upgrades for EPP-enabled assets."
+        },
+        {
+          "component": "Cloud Agent Operation",
+          "issue": "Fixed an issue in the macOS Cloud Agent where the Endpoint Detection and Response (EDR) service startup was attempted on systems that were not activated for EDR. The Cloud Agent now correctly validates EDR services and prevents EDR startup when it is not activated."
+        },
+        {
+          "component": "Cloud Agent Upgrade",
+          "issue": "Fixed an issue where Cloud Agent showedQualysCloudAgent is damaged and can't be openederror after upgrades due to Apple Gatekeeper Policy enforcement. Cloud Agent now automatically manages required permissions to successfully complete Cloud Agent upgrades."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-25T18:17:24.567747+00:00",
+      "status": "success"
+    }
   },
   "ec0018bf484a": {
     "key": "ec0018bf484a",
@@ -3355,7 +3404,36 @@
       "UD"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-18T09:07:33+00:00"
+    "detected_at": "2026-07-18T09:07:33+00:00",
+    "details": {
+      "release_date": "July 17, 2026",
+      "features": [
+        {
+          "heading": "New Negate Query Support for Ratio Widgets",
+          "summary": "Unified Dashboard now supports negate queries for Ratio-type widgets, allowing you to exclude specific conditions from your queries and perform ratio calculations using the remaining data. With this enhancement, you can simplify complex calculations…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "UD",
+          "issue": "We fixed an issue where scheduled dashboard PDF reports did not render widgets correctly, resulting in some widgets being missing and comparison lines in trending widgets not displaying in white, regardless of the configured color. This issue caused incomplete and inaccurate reporting.Now, all widgets are correctly included in scheduled reports, and comparison lines are displayed in the configured colors, ensuring consistent and accurate report output."
+        },
+        {
+          "component": "UD - VMDR",
+          "issue": "We fixed an issue where dashboard widgets created using Threat Intelligence (ThreatIntel) QQL displayed vulnerability counts for assets but returned no data upon drill-down. This issue occurred due to improper processing of ThreatIntel-related QQL filters, resulting in inconsistencies between widget counts and detailed vulnerability results.Now, all ThreatIntel QQLs are correctly processed, ensuring that vulnerability details are accurately retrieved and displayed when users drill down from dashboard widgets, providing consistent and reliable results."
+        },
+        {
+          "component": "UD - ETM",
+          "issue": "We fixed an issue where the dashboard Venn-type widget configured with multiple QQL queries failed to display results when one of the queries returned no data. This condition caused the widget to render an empty state even though valid data was available for other queries.Now, the widget processes each QQL independently and displays results for queries that return data, even if one or more configured queries have no associated results, ensuring consistent and expected dashboard behavior."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-25T18:17:24.567747+00:00",
+      "status": "success"
+    }
   },
   "22c479f9401e": {
     "key": "22c479f9401e",
@@ -3366,7 +3444,23 @@
       "VM"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-16T09:33:15+00:00"
+    "detected_at": "2026-07-16T09:33:15+00:00",
+    "details": {
+      "release_date": "July 2, 2026",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "/api/4.0/fo/subscription/option_profile/vm"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-25T18:17:24.567747+00:00",
+      "status": "success"
+    }
   },
   "22f1c121ef98": {
     "key": "22f1c121ef98",
@@ -3376,7 +3470,40 @@
       "VM"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-16T09:33:15+00:00"
+    "detected_at": "2026-07-16T09:33:15+00:00",
+    "details": {
+      "release_date": "July 2, 2026",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "Authenticated scans depend on successful access to target hosts. In some environments, host policies can block standard WinRM-based authentication, causing authenticated scans to fail before collecting the data needed for accurate vulnerability…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Knowledge Base",
+          "issue": "When users viewed QID 19273, incorrect authentication requirement information was displayed due to an issue in QID configuration or validation logic. This resulted in inaccurate vulnerability details. The issue is now resolved by correcting the authentication requirement logic, and QID 19273 now displays accurate information."
+        },
+        {
+          "component": "VM",
+          "issue": "When users viewed the scan preview panel in the scan list, status summary messages were generic, ambiguous, or inconsistent across different scan end states. As a result, the messages did not provide sufficient information to help users understand the issue or take corrective action. This issue is resolved. The scan preview panel now displays detailed, actionable messages that clearly indicate the root cause and the suggested resolution steps."
+        },
+        {
+          "component": "VM - Scan API",
+          "issue": "When users configured a scheduled VM or Compliance scan with Scanner Appliance = All Scanners in TagSet, the schedule scan list API (/api/5.0/fo/schedule/scan/?action=list) incorrectly returned <USE_IP_NT_RANGE_TAGS_INCLUDE>0</USE_IP_NT_RANGE_TAGS_INCLUDE>. This occurred even when asset tags included IP range rules and the option was enabled in the UI. This issue is resolved. The API now returns the correct value, ensuring accurate representation of the Use IP Network Range Tags for Include setting."
+        },
+        {
+          "component": "VM - Knowledge Base",
+          "issue": "When users accessed the Knowledgebase page, the UI took a long time to load. Actions such as viewing QID details or scan summaries were also delayed. This issue has been addressed by improving how the Knowledgebase page and filters are loaded. As a result, users now experience faster access and more responsive interactions when searching and viewing vulnerability details."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-25T18:17:24.567747+00:00",
+      "status": "success"
+    }
   },
   "36749d2f8d99": {
     "key": "36749d2f8d99",
@@ -3387,7 +3514,32 @@
       "PA"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-16T09:33:15+00:00"
+    "detected_at": "2026-07-16T09:33:15+00:00",
+    "details": {
+      "release_date": "July 13, 2026",
+      "features": [
+        {
+          "heading": "PCAS Control List API",
+          "summary": "A new Control List API is now available through the PCAS service to retrieve control details more efficiently."
+        },
+        {
+          "heading": "Mandatory Input Parameters for Updating HashiCorp and WAB Vaults",
+          "summary": "With this release, we have made certain input parameters mandatory for updating authentication records created using HashiCorp or Wallix AdminBastian (WAB) authentication vaults. Previously, this existed for the Infloblox authentication technology…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PA - API",
+          "issue": "When the user updated authentication records for Cisco APIC, using HashiCorp vault, they observed that the authentication record type was getting incorrectly converted to basic. Relevant code changes have been made to fix the issue."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-25T18:17:24.567747+00:00",
+      "status": "success"
+    }
   },
   "ffc8c32492d2": {
     "key": "ffc8c32492d2",
