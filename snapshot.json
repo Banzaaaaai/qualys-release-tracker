@@ -3145,7 +3145,80 @@
       "PM"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-24T09:41:37+00:00"
+    "detected_at": "2026-07-24T09:41:37+00:00",
+    "details": {
+      "release_date": "July 22, 2026",
+      "features": [
+        {
+          "heading": "Enterprise TruRisk Management to TruRisk™ Eliminate Risk Remediation Workflow",
+          "summary": "EnterpriseTruRiskManagement(ETM)now integrates directly withTruRiskEliminate (TRE),providing a unified, risk-driven approach to vulnerability remediation. Unlike the VMDR workflow, which prioritizes vulnerabilities at the QID level, ETM focuses…"
+        },
+        {
+          "heading": "New Linux Operating Systems Support",
+          "summary": ""
+        },
+        {
+          "heading": "View Skipped Patches and Actions in Aggregate Job Progress Reports",
+          "summary": "You can now includeSkippedpatches and actions in the Windows Aggregate Job Progress Report using the newSkippedfilter. This enhancement provides better visibility into skipped items, helping you quickly identify and review patches or actions that…"
+        },
+        {
+          "heading": "Enhanced Reattempt Failed Patch Time Interval",
+          "summary": "You can now configure the retry interval for failed patches from 1 second up to 59 minutes. This extended time window provides the Cloud Agent additional time to retry failed patch installations and improve deployment success rates.Configure this…"
+        },
+        {
+          "heading": "Improved Visibility into Skipped Patches",
+          "summary": "You can now gain better visibility into patch deployments, with clear explanations for patches skipped due to assets in the pending reboot state, helping you quickly identify and resolve deployment issues."
+        },
+        {
+          "heading": "Enhanced User Interface",
+          "summary": "With this release, we have introduced an improved user experience across all TruRisk Eliminate pages. You can see updates across fonts, colors, typography, and buttons, making the interface more intuitive and easier to use. This release features…"
+        },
+        {
+          "heading": "New QQL Tokens",
+          "summary": "Refer to the following table to learn more about the new token in this release."
+        },
+        {
+          "heading": "API Release Updates",
+          "summary": "For more details on the API updates for this release, seePatch Management API Release 4.0."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PM - Assets",
+          "issue": "An issue occurred where assets requiring a reboot were not displayed when using theasset.isPendingReboot: truequery.The issue is now fixed, and accurate query results showing the assets with pending reboot status are displayed."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "An issue occurred in which misleading warning messages andFixJoboptions were displayed for dynamic QQL-based jobs, even though these jobs automatically excluded deprecated patches.The issue is now resolved, and the system suppresses these warnings and options for dynamic jobs, and the UI reflects job behavior automatically without requiring manual actions."
+        },
+        {
+          "component": "PM - Job Windows",
+          "issue": "An issue occurred where Patch Tuesday plus 7 (or more) days scheduled jobs did not execute at the configured time, despite correct setup and stable agent connectivity. The issue is resolved, and these jobs now execute as expected according to the defined schedule, ensuring reliable patch deployment."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "An issue occurred in which CDN URLs were not stored correctly when uploaded file names contained spaces.This issue is now resolved, and the CDN URLs are correctly stored with file names that contain spaces."
+        },
+        {
+          "component": "PM - Jobs - Scheduling",
+          "issue": "An issue occurred where theNextRunfield on theJobDetails>BasicInformationpage displayed an incorrect patch job run time for a ring job.Now, theNextRunvalue is not displayed on theJobProgress>BasicInformationpage to resolve this issue."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "An issue was fixed where file uploads to Qualys Cloud Storage could fail due to an incorrect 500 MB file size limit check. Users can now upload supported file sizes successfully without upload errors."
+        },
+        {
+          "component": "Apps - Patch Management",
+          "issue": "An issue was fixed where some assets remained in aPendingstate in the PM UI even after the associated job had completed successfully.The issue is now resolved and the asset status is now updated correctly after job completion."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-25T12:14:58.457528+00:00",
+      "status": "success"
+    }
   },
   "05d5241e6ace": {
     "key": "05d5241e6ace",
@@ -3155,7 +3228,27 @@
       "QF"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-08-02T09:29:48+00:00"
+    "detected_at": "2026-08-02T09:29:48+00:00",
+    "details": {
+      "release_date": "July 21, 2026",
+      "features": [
+        {
+          "heading": "Modernized Create QFlow Workflow",
+          "summary": "With this release, we have revamped theCreate QFlowworkflow to introduce a sleek, modern pop-up."
+        },
+        {
+          "heading": "Support for AWS SDK V3",
+          "summary": "QFlow now supportsAWS SDK V3in addition to the existing AWS SDK V2, enabling compatibility with the latest AWS SDK, services, and APIs. You can use AWS SDK V3 through the following nodes"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-25T12:14:58.457528+00:00",
+      "status": "success"
+    }
   },
   "f0af97d22768": {
     "key": "f0af97d22768",
@@ -3165,7 +3258,23 @@
       "UD"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-22T09:54:32+00:00"
+    "detected_at": "2026-07-22T09:54:32+00:00",
+    "details": {
+      "release_date": "July 21, 2026",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "UD - TAS/WAS",
+          "issue": "We fixed an issue where the Web Malware Detection (MDS) module did not appear in the new module picker with TotalAppSec (TAS) or Web Application Scanning (WAS) when the module subscription had expired, even though it remained accessible through the Administrator module in the classic UI. This inconsistency made it difficult to locate the module and check its status.Now, the MDS module continues to appear in the module picker after expiration, with a clear status indication. You can access the MDS landing page and view expiration details directly, giving you a consistent experience."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-25T12:14:58.457528+00:00",
+      "status": "success"
+    }
   },
   "e428651371e3": {
     "key": "e428651371e3",
@@ -3176,7 +3285,56 @@
       "PM"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-08-03T10:53:25+00:00"
+    "detected_at": "2026-08-03T10:53:25+00:00",
+    "details": {
+      "release_date": "July 20, 2026 (Updated August 28, 2026)",
+      "features": [
+        {
+          "heading": "Assess Cloud Agent Health Status",
+          "summary": "MacOS Intel Cloud Agent now supports Cloud Agent Health Check Tool. This tool provides a consolidated agent health report in JSON format directly on the Command-Line Interface (CLI). The health check report helps you verify Cloud Agent package…"
+        },
+        {
+          "heading": "Reattempt Failed Patches",
+          "summary": "You can now configure the system to reattempt failed patch installations. This feature lets you specify the exact number of retry attempts and the time interval between them to ensure critical updates deploy successfully. The agent will not…"
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There are no new platform coverage added for this release."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "macOS Apple Silicon Cloud Agent 6.5 and later versions do not support non-root users configured with UseSudo=0. When a previous Cloud Agent is upgraded to 6.5 or later, its configuration is automatically upgraded to UseSudo=1."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Remote Log Collection",
+          "issue": "We fixed an issue where the macOS Cloud Agent was unable to generate remote logs from Cloud Agent user interface. Now, the MacOS Cloud Agent successfully completes remote log requests."
+        },
+        {
+          "component": "Cloud Agent Reporting",
+          "issue": "We fixed an issue where the macOS Cloud Agent reported an incorrect MAC address for the hosts. Now, Cloud Agent correctly reports the host asset addresses."
+        },
+        {
+          "component": "Cloud Agent Operation",
+          "issue": "We fixed an issue in which macOS Cloud Agent became unresponsive after the post-update restart when Endpoint Protection Platform (EPP) is enabled for the asset. Now, macOS Cloud Agent works smoothly after the upgrades for EPP-enabled assets."
+        },
+        {
+          "component": "Cloud Agent Operation",
+          "issue": "Fixed an issue in the macOS Cloud Agent where the Endpoint Detection and Response (EDR) service startup was attempted on systems that were not activated for EDR. The Cloud Agent now correctly validates EDR services and prevents EDR startup when it is not activated."
+        },
+        {
+          "component": "Cloud Agent Upgrade",
+          "issue": "Fixed an issue where Cloud Agent showedQualysCloudAgent is damaged and can't be openederror after upgrades due to Apple Gatekeeper Policy enforcement. Cloud Agent now automatically manages required permissions to successfully complete Cloud Agent upgrades."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-25T12:14:58.457528+00:00",
+      "status": "success"
+    }
   },
   "fd7d33daf851": {
     "key": "fd7d33daf851",
@@ -21093,6 +21251,58 @@
     "enrichment": {
       "attempts": 1,
       "last_attempt_at": "2026-09-24T12:12:19.942747+00:00",
+      "status": "success"
+    }
+  },
+  "85aa40d415a4": {
+    "key": "85aa40d415a4",
+    "url": "https://docs.qualys.com/en/etm/release-notes/etm/release_1_13.htm",
+    "title": "Enterprise TruRisk Management 1.13",
+    "tags": [
+      "ETM"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-25T12:14:58+00:00",
+    "details": {
+      "release_date": "September 24, 2026This release introduces Attack Path in Risk Management, letting you see how an attacker could chain findings across connected assets to reach your most critical ones. It also brings industry-specific threat intelligence to findings through TruLens and multiple scanner selection to TruConfirm scans.",
+      "features": [
+        {
+          "heading": "Trace Attack Paths to Your Critical Assets",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Prioritize Remediation Using CISA BOD 26-04",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "TruLens Enhancements",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Select Multiple Scanners for TruConfirm Scans",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "New Tokens for Attack Path",
+          "summary": "You can use the following tokens to search attack paths and rules in theAttack Pathtab"
+        },
+        {
+          "heading": "New Tokens to Build CISA BOD 26-04 Worklists",
+          "summary": "You can usethese Qualys Query Language (QQL) tokens to build CISA BOD 26-04 worklists"
+        },
+        {
+          "heading": "Fixes",
+          "summary": "The following reported and notable customer issues are fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2021-44228"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-25T12:14:58.457528+00:00",
       "status": "success"
     }
   }
