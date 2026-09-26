@@ -3549,7 +3549,76 @@
       "PA"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-16T09:33:15+00:00"
+    "detected_at": "2026-07-16T09:33:15+00:00",
+    "details": {
+      "release_date": "July 13, 2026",
+      "features": [
+        {
+          "heading": "Authenticate NSX using additional vault providers",
+          "summary": "You can now use more vault providers to authenticate NSX environments. Previously, vault-based authentication for NSX supported only HashiCorp Vault. With this release, you can choose from multiple supported vault providers, giving you greater…"
+        },
+        {
+          "heading": "Policy Revision Visibility with Change Log",
+          "summary": "With this release, we have introduced the View Changelog feature that displays the changes made to a policy. The changelog records all additions, modifications, and deletions, including control-level changes made to the policy."
+        },
+        {
+          "heading": "Support for Tags in Widgets",
+          "summary": "You can now use Tags while configuring widgets, making it easier to visualize and analyze tag-related asset data directly from the dashboard."
+        },
+        {
+          "heading": "UDC Support for SUSE Linux Enterprise 16.x Technology",
+          "summary": "You can now select SUSE Linux Enterprise 16.x as the control technology when creating a new control for Unix Control types."
+        },
+        {
+          "heading": "Support for New Authentication Technology - Verint Financial Compliance 10.x",
+          "summary": "Verint Financial Compliance 10.x technology is supported for Policy Audit authenticated scans using scanners. This technology is now available for use at the following places"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PA",
+          "issue": "When the user imported a policy in XML format, certain controls with multiple associated data points were reset to their default values, causing the updated values to be lost after import. Additionally, if the uploaded XML file was corrupted, no validation message was displayed to notify the user. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA",
+          "issue": "When the user created a policy with multiple technologies, newly supported controls for an existing technology were automatically included in the policy when support for that technology was added. As a result, the controls became part of the policy without any manual policy modification or change to the policy's last modified date. This is expected behavior. We have now documented this behavior in the Online Help."
+        },
+        {
+          "component": "PA - New UI",
+          "issue": "When the user attempted to download Posture results in CSV format from the Posture tab, the report download failed when the export contained only one posture record for an asset. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - New UI",
+          "issue": "When the user viewed the asset trend graph, it displayed incorrect details for the total number of assets. This resulted in inconsistent trend data. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - New UI",
+          "issue": "When the user viewed the Audit Score (percentage) in a dashboard widget, the displayed score did not match the Audit Score shown in the Posture tab, resulting in an incorrect percentage being displayed. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - Reports",
+          "issue": "When the user edited a scheduled scorecard report, the mapped policies were not displayed immediately because they were still loading, making it appear as though no policies were associated with the schedule. Relevant code changes have been made to fix the issue. A loading message has now been added to indicate that the policies are loading."
+        },
+        {
+          "component": "PA",
+          "issue": "When users needed to clear stale Redis cache entries, there was no option to delete specific cache keys without waiting for the scheduled cache rebuild. Relevant code changes have been made to address this issue. A command-line script has been added to delete specific Redis cache keys, allowing stale cache entries to be cleared immediately when required."
+        },
+        {
+          "component": "PA - New UI",
+          "issue": "When the user viewed the control count on Posture tab, they observed a discrepancy between the number of controls displayed on the Posture tab and the downloaded CSV report. The CSV report displayed the correct control count. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - API",
+          "issue": "When the user updated authentication records for Cisco APIC, using HashiCorp vault, they observed that the authentication record type was getting incorrectly converted to basic. Relevant code changes have been made to fix the issue."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-26T11:47:34.380865+00:00",
+      "status": "success"
+    }
   },
   "84c878eb8c09": {
     "key": "84c878eb8c09",
@@ -3559,7 +3628,27 @@
       "PNS"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-15T09:26:18+00:00"
+    "detected_at": "2026-07-15T09:26:18+00:00",
+    "details": {
+      "release_date": "July 14, 2026",
+      "features": [
+        {
+          "heading": "Sensor Auto Upgrade Status",
+          "summary": "You can now view the upgrade status of your sensors during automatic upgrades, helping you track upgrade progress and identify upgrade-related interruptions. The sensor status is displayed on theSensorstab."
+        },
+        {
+          "heading": "Support Logs Collection for CDR Appliances",
+          "summary": "NPS now supports collecting support logs from CDR appliances. This helps Qualys to more effectively troubleshoot and diagnose issues related to CDR appliances."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-26T11:47:34.380865+00:00",
+      "status": "success"
+    }
   },
   "02bd9399a529": {
     "key": "02bd9399a529",
@@ -3569,7 +3658,35 @@
       "EDR"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-07T10:36:57+00:00"
+    "detected_at": "2026-07-07T10:36:57+00:00",
+    "details": {
+      "release_date": "July 06, 2026",
+      "features": [
+        {
+          "heading": "Block and Unblock Connection Remediation",
+          "summary": "The Block and Unblock Connection feature for network events is now available. This feature lets you to instantly block active IP connections and unblock them later when required. This feature leverages the existing remediation framework by…"
+        },
+        {
+          "heading": "Download Exclusions to JSON",
+          "summary": ""
+        },
+        {
+          "heading": "Edit Capability for Blocklist, Application Control, and Exclusions",
+          "summary": ""
+        },
+        {
+          "heading": "New QQL Tokens",
+          "summary": "We have introduced the following new tokensto align with the QQL Token Standardization introduced intheEDR 3.8.0 Release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-26T11:47:34.380865+00:00",
+      "status": "success"
+    }
   },
   "4f705442c9b7": {
     "key": "4f705442c9b7",
@@ -3580,7 +3697,92 @@
       "GAV"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-07T10:36:57+00:00"
+    "detected_at": "2026-07-07T10:36:57+00:00",
+    "details": {
+      "release_date": "July 06, 2026",
+      "features": [
+        {
+          "heading": "AI-powered Asset Criticality Score",
+          "summary": "You can now leverage Artificial Intelligence (AI) to calculate the criticality scores of your assets. This helps you identify potential high-criticality assets in your environment and prioritize remediation."
+        },
+        {
+          "heading": "Support for IP with Virtual Host Tracking in Asset Activation",
+          "summary": "The Asset Activation workflow now includes support forIP with Virtual Hosttracking method. This enables the system to create virtual hosts for IP addresses that host multiple websites or services and make them available for scanning. As a result,…"
+        },
+        {
+          "heading": "Categorization for Asset Identification Rules",
+          "summary": "You can now easily find, view, and manage both system-defined and user-defined asset identification rules with the newQualys SensorsandConnectorstabs underRules > Asset Identification > Rules. This enhancement helps you quickly differentiate…"
+        },
+        {
+          "heading": "Activity Logs for Tagging and Alerting Actions",
+          "summary": "You can now track actions performed on tags and alerts in the CSAM application. This provides better visibility into user activities across tagging and alerting workflows. These actions are captured and displayed in theAdministratorapplication under…"
+        },
+        {
+          "heading": "New Tokens in CSAM",
+          "summary": "We have introduced the following new tokens in CSAM"
+        },
+        {
+          "heading": "New Tokens in CSAM and GAV",
+          "summary": "We have introduced the following new tokens in CSAM and GAV"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "CSAM - Scoped Tag",
+          "issue": "We fixed an issue where users were unable to create a scope-based tag after the feature was enabled for their subscription.Now, you can successfully create scope-based tags when a parent tag is selected."
+        },
+        {
+          "component": "CSAM - Software Instance Details",
+          "issue": "We fixed an issue where openingSoftware Instancedetails from theVMDR Asset Detailspage resulted in a404 Page Not Founderror.Now, software instance details are displayed correctly when accessed from the VMDR UI."
+        },
+        {
+          "component": "CSAM - EASM Scan",
+          "issue": "We fixed an issue where sub-users with all required EASM permissions were unable to add any seed value, update, or delete EASM profiles when theEnable EASM Scantoggle was enabled for the profile.Now, sub-users can add seed values, update, and delete EASM profiles regardless of whether EASM scanning is enabled or disabled."
+        },
+        {
+          "component": "CSAM - Installed Software",
+          "issue": "We fixed an issue where the IBM Db2 database was incorrectly identified and displayed as IBM Db2 Server in theAsset Details >Installed Softwaretab.Now, IBM Db2 software is displayed correctly."
+        },
+        {
+          "component": "CSAM - Asset Activation Rule",
+          "issue": "We fixed an issue where editing anAsset Activation Workflowrule displayed the default asset group instead of the asset group originally selected during rule creation.Now, theAsset Activation Workflowdisplays the correct asset group that you selected during rule creation."
+        },
+        {
+          "component": "CSAM - Operating System EOS",
+          "issue": "We fixed an issue where the End-of-Support (EOS) date for some operating systems (OS) was displayed incorrectly, causing the EOS date to appear earlier than the vendor-supported lifecycle.Now, the EOS date is displayed correctly for the affected OS."
+        },
+        {
+          "component": "CSAM - Trending Widget",
+          "issue": "We fixed an issue where trending widgets on the dashboard displayed only the latest data, resulting in incomplete trend analysis.Now, trending widgets display historical data."
+        },
+        {
+          "component": "CSAM - Asset Tagging",
+          "issue": "We fixed an issue where static tags already assigned to an asset were not displayed in the tag selection list.Now, the tag selection list displays all the available static tags."
+        },
+        {
+          "component": "CSAM - EASM Vulnerabilities",
+          "issue": "We fixed an issue where date range filters in QQL tokens on theEASM > Vulnerabilitiestab failed and returned an error.Now, you can successfully apply date-range filters to QQL tokens on theEASM > Vulnerabilitiestab."
+        },
+        {
+          "component": "CSAM - Software EOS",
+          "issue": "We fixed an issue where CSAM displays software packages running on RHEL 7.9 systems as completed EOS even when extended support was active for those packages.Now, CSAM correctly recognizes extended support coverage and displays the correct EOS for affected packages."
+        },
+        {
+          "component": "CSAM - Download Report",
+          "issue": "We fixed an issue where downloading a CSV report failed when the Group By filter was applied on asset listing pages.Now, you can successfully download CSV reports from grouped views without encountering errors."
+        },
+        {
+          "component": "CSAM - Software Installation Path",
+          "issue": "We fixed an issue where installation path information was not displayed for certain EOS software.Now, software details include the correct installation path information, providing the visibility required to remediate affected software instances."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-26T11:47:34.380865+00:00",
+      "status": "success"
+    }
   },
   "79da757cf2b4": {
     "key": "79da757cf2b4",
@@ -3592,7 +3794,23 @@
       "GAV"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-07T10:36:57+00:00"
+    "detected_at": "2026-07-07T10:36:57+00:00",
+    "details": {
+      "release_date": "July 06, 2026",
+      "features": [
+        {
+          "heading": "Support for AI-powered Asset Criticality Score in Asset Host Data APIs",
+          "summary": "You can now fetch criticality score details for assets whose criticality scores are calculated using the AI-powered Asset Criticality Score (ACS). To support this capability, we have introduced the following input filters to theAsset Host Data APIs"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-26T11:47:34.380865+00:00",
+      "status": "success"
+    }
   },
   "a7dc17757b52": {
     "key": "a7dc17757b52",
