@@ -3822,7 +3822,27 @@
       "WAS"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-15T09:26:18+00:00"
+    "detected_at": "2026-07-15T09:26:18+00:00",
+    "details": {
+      "release_date": "July 05, 2026",
+      "features": [
+        {
+          "heading": "External Identity Provider Authentication Support for WAS V4 APIs",
+          "summary": "We are introducing support for External Identity Provider (IdP) authentication for WAS V4 Public APIs (/qps/rest/webapp/4.0and related endpoints). You can now authenticate WAS API requests using Bearer JWT tokens issued by third-party OIDC-compliant…"
+        },
+        {
+          "heading": "New V4 APIs for TotalAppSec and Web Application Scanning",
+          "summary": "Over the past several releases, we have continued to enhance the TotalAppSec API framework to provide broader functionality, improved consistency, and expanded integration capabilities."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-26T17:38:53.647906+00:00",
+      "status": "success"
+    }
   },
   "a0b8ce2cb008": {
     "key": "a0b8ce2cb008",
@@ -3833,7 +3853,108 @@
       "WAS"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-15T09:26:18+00:00"
+    "detected_at": "2026-07-15T09:26:18+00:00",
+    "details": {
+      "release_date": "July 05, 2026",
+      "features": [
+        {
+          "heading": "Access Control Testing for API Assets",
+          "summary": "You can now validate authorization controls for API assets directly within the platform, without additional tools or manual coordination."
+        },
+        {
+          "heading": "Enhancements for Green Window Scheduling",
+          "summary": "The following enhancements are available for green window scheduling."
+        },
+        {
+          "heading": "Authorization Code with PKCE Support for OAuth 2.0 Authentication",
+          "summary": "A new grant type, Authorization Code (with PKCE), is available for OAuth 2.0 authentication. You can configure PKCE-based authentication flows directly in TotalAppSec for scanning APIs used by mobile apps and single-page applications (SPAs),…"
+        },
+        {
+          "heading": "Discover Potential Web Applications in Microsoft Azure Cloud using TotalCloud",
+          "summary": "TotalAppSec now extends its TotalCloud (TC) integration to discover potential web applications from Azure Cloud, in addition to the existing AWS Cloud support. This expansion strengthens your organization's web application security posture by…"
+        },
+        {
+          "heading": "DNS Override for API Assets",
+          "summary": "DNS override configuration is now available for API assets, extending the support previously available for Web assets. This brings consistent network configuration across both asset types. This is especially useful when the same hostname resolves to…"
+        },
+        {
+          "heading": "Debug Scan Support for Test Authentication",
+          "summary": "We have extended the debug scan support to Authentication Test scans, which were previously available only for vulnerability scans. You can now enable a debug option in the Authentication Test scan settings to obtain detailed diagnostic output when…"
+        },
+        {
+          "heading": "CSV and XML Report Enhancements for Web Application and Scan Reports",
+          "summary": "Web application and scan reports downloaded in Comma-Separated Value CSV V2, or Extensible Markup Language (XML) formats now include new fields, and deliver faster download performance. The new fields provide security teams with richer vulnerability…"
+        },
+        {
+          "heading": "Enhanced Time Zone Configuration",
+          "summary": "You can now define a preferred time zone in the profile, either the browser time zone or a custom user-defined time zone. The defined time zone applies across all scheduled scans and reports."
+        },
+        {
+          "heading": "Enhanced Scan Status Display",
+          "summary": "TheScanstab displays a dedicated UI status for the error code -5001 asERRORdirectly within the interface."
+        },
+        {
+          "heading": "Enhanced Application Report Download Limits",
+          "summary": "The report download limit is increased to 100,000 records per report for CSV, XML, and CSV V2 formats. This limit applies to application reports for web applications and APIs."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "TAS and WAS",
+          "issue": "Asset Purging"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scan launch"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scheduled scan"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Option profile"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scan status"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Authentication record"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scans"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scans"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "QQL search"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scans"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Option profile"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Web application"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-26T17:38:53.647906+00:00",
+      "status": "success"
+    }
   },
   "0f03fb58fc77": {
     "key": "0f03fb58fc77",
@@ -3843,7 +3964,34 @@
       "SA"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-10T10:32:02+00:00"
+    "detected_at": "2026-07-10T10:32:02+00:00",
+    "details": {
+      "release_date": "July 03, 2026(Updated on August 03, 2026)",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "This release brings new features and updates to data centers and desktop platforms."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Security Fixes",
+          "issue": "Earlier versions of qVSA included an Oracle Enterprise Linux kernel that did not contain the kernel updates for CVE-2026-43284 -https://nvd.nist.gov/vuln/detail/CVE-2026-43284Although the affected kernel package was present, this vulnerability is not considered exploitable on earlier qVSA releases because the Qualys scanner appliance is a hardened, self-contained appliance with no open TCP ports and does not permit the installation of guest agents or other software that could enable remote privilege escalation.For additional information, refer to theScanner Appliance Security: FAQsThis release of qVSA-4.2 has updated the Oracle UEK7 kernel package to kernel-uek-5.15.0-320.202.8.3.el8uek.x86_64.rpm, meeting the security compliance requirements for CVE-2026-43284.References:Oracle CVE Advisory:linux.oracle.com | CVE-2026-43284Oracle ELSA Advisory:linux.oracle.com | ELSA-2026-50261This issue has been addressed for all platforms."
+        },
+        {
+          "component": "Scan Capacity Correction",
+          "issue": "Fixed an issue where scan capacity was incorrectly calculated, resulting in a higher-than-expected reported capacity."
+        }
+      ],
+      "cves": [
+        "CVE-2026-43284"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-26T17:38:53.647906+00:00",
+      "status": "success"
+    }
   },
   "35f589fd0c39": {
     "key": "35f589fd0c39",
@@ -3853,7 +4001,23 @@
       "CAR"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-09T10:35:57+00:00"
+    "detected_at": "2026-07-09T10:35:57+00:00",
+    "details": {
+      "release_date": "July 2, 2026",
+      "features": [
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following reported and notable customer issue is fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-26T17:38:53.647906+00:00",
+      "status": "success"
+    }
   },
   "c5d2ded9fc6e": {
     "key": "c5d2ded9fc6e",
@@ -3865,7 +4029,27 @@
       "CSAM"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-03T10:13:02+00:00"
+    "detected_at": "2026-07-03T10:13:02+00:00",
+    "details": {
+      "release_date": "July 01, 2026",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "Connector Reporting",
+          "issue": "CSAM"
+        },
+        {
+          "component": "On-Demand Scan",
+          "issue": "Cloud Agent API"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-26T17:38:53.647906+00:00",
+      "status": "success"
+    }
   },
   "7920e59fe977": {
     "key": "7920e59fe977",
