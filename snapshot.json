@@ -4062,7 +4062,47 @@
       "WAS"
     ],
     "month_label": "July 2026",
-    "detected_at": "2026-07-03T10:13:02+00:00"
+    "detected_at": "2026-07-03T10:13:02+00:00",
+    "details": {
+      "release_date": "July 01, 2026 (Updated August 13, 2026)",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "Asset Identification",
+          "issue": "CSAM"
+        },
+        {
+          "component": "Dashboard Widgets",
+          "issue": "VMDR"
+        },
+        {
+          "component": "Reporting",
+          "issue": "Threat Protection"
+        },
+        {
+          "component": "WAS Scans",
+          "issue": "WAS"
+        },
+        {
+          "component": "Reporting",
+          "issue": "Administration"
+        },
+        {
+          "component": "Connector Reporting",
+          "issue": "CSAM"
+        },
+        {
+          "component": "On-Demand Scan",
+          "issue": "Cloud Agent API"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-27T12:27:27.987536+00:00",
+      "status": "success"
+    }
   },
   "c5866f908f50": {
     "key": "c5866f908f50",
@@ -4072,7 +4112,31 @@
       "CS"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-06-27T09:36:21+00:00"
+    "detected_at": "2026-06-27T09:36:21+00:00",
+    "details": {
+      "release_date": "June 15, 2026",
+      "features": [
+        {
+          "heading": "Enhancement in CIS Docker Compliance Scan for Containers",
+          "summary": "Earlier, Qualys Container Security started supporting CIS Docker Compliance for Images. With this release, Qualys Container Security Sensor now supports CIS Docker Compliance Benchmark v1.7.0 scans for containers across all runtimes.Previously, CIS…"
+        },
+        {
+          "heading": "Support of Container Static Scanning in Docker",
+          "summary": "Earlier, CS Sensor used to support only Dynamic scan for containers. This release also offers Static Scan for containers."
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following issue has been fixed with this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-27T12:27:27.987536+00:00",
+      "status": "success"
+    }
   },
   "dd75c7ab908b": {
     "key": "dd75c7ab908b",
@@ -4083,7 +4147,56 @@
       "CS"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-06-27T09:36:21+00:00"
+    "detected_at": "2026-06-27T09:36:21+00:00",
+    "details": {
+      "release_date": "June 30, 2026 (Updated on July 30, 2026)",
+      "features": [
+        {
+          "heading": "Enhancement in Sensor Profile",
+          "summary": "Previously, users had to configure the--perform-sca-scansensor parameter and restart or reinstall the sensor to enable or disable SCA scanning. With this release, users can enable or disable SCA scanning directly from the Sensor Profile in the UI,…"
+        },
+        {
+          "heading": "Enhancement in Vulnerability Reports",
+          "summary": "Previously, SCA QIDs were included in reports by default, with no option to exclude them. With this release, users can choose to include or exclude SCA QIDs in reports, allowing greater control over report content. To support this, the following API…"
+        },
+        {
+          "heading": "New Asset Type - Serverless Function (AWS Lambda Scan)",
+          "summary": "Qualys Container Security now supportsserverless functionsas a new asset type. Users can view and manage scanned serverless function assets through dedicated views in the UI and gateway APIs. Scan results provide visibility into AWS serverless…"
+        },
+        {
+          "heading": "New Asset Type - Code Repository Scan",
+          "summary": "Qualys Container Security now supportsCodeas a separate asset type for code scan results. Scanned local and remote repositories can be viewed and managed from a centralized location through dedicated asset listing and details views, as well as…"
+        },
+        {
+          "heading": "Enhancement in Registry Scan Status",
+          "summary": "Previously, Registry scan jobs used a single status field for all scan types. As a result, users could not easily see the status of individual scans, Secrets and Malware scan statuses were not tracked, and jobs could appear completed before all…"
+        },
+        {
+          "heading": "Enhancement in Secret Detector",
+          "summary": "We have enhanced the global secretExclude Blocksand global secretAllow RulesAPI in Secret Detector."
+        },
+        {
+          "heading": "Compliance Posture for a Container",
+          "summary": "With this release, Qualys Container Security enhances compliance scanning capabilities by introducing new controls, removing outdated controls, and adding support for aSKIPPEDposture for running containers in addition to container images. These…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2020-36182",
+        "CVE-2020-36184",
+        "CVE-2022-42004",
+        "CVE-2024-38820",
+        "CVE-2024-56326",
+        "CVE-2026-27199",
+        "CVE-2026-44431",
+        "CVE-2026-45134"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-27T12:27:27.987536+00:00",
+      "status": "success"
+    }
   },
   "a8c57a86a601": {
     "key": "a8c57a86a601",
@@ -4093,7 +4206,67 @@
       "CS"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-06-27T09:36:21+00:00"
+    "detected_at": "2026-06-27T09:36:21+00:00",
+    "details": {
+      "release_date": "June 30, 2026",
+      "features": [
+        {
+          "heading": "AWS Lambda Function Scanning for Vulnerabilities & SCA",
+          "summary": "With Container Security 1.44.0, Qualys introduces scanning for AWS Lambda functions, enabling continuous security assessment of serverless workloads without manual intervention."
+        },
+        {
+          "heading": "Code Repository Scanning",
+          "summary": "With Container Security 1.44.0, Qualys introduces Code Repository Scanning, enabling customers to view and analyze code scan results directly within the Container Security application. This capability extends visibility beyond containers and images…"
+        },
+        {
+          "heading": "Compliance Scanning on Containers",
+          "summary": "In the past, compliance scanning for running containers (For example, CIS Docker) was only available with dynamic scanning. With this release, Qualys extends its compliance scanning to a static scan of containers, including new compliance checks,…"
+        },
+        {
+          "heading": "New Insights for Container Intelligence",
+          "summary": "With Container Security 1.44.0, Qualys Container Security introduces 16 new Insights and Attack Paths to enhance visibility into the usage of AI, including LLMs and MCP Servers, as well as EOL/EOS Software on container images. These insights are…"
+        },
+        {
+          "heading": "DNS Events for Runtime Monitoring & Threat Detection",
+          "summary": "With Container Security 1.44.0, Qualys Container Security expands runtime visibility by introducing the ability to collect DNS Events using the Container Runtime eBPF Sensor. Security teams can view DNS Events underEvents>Runtime.TheDNS Eventstab…"
+        },
+        {
+          "heading": "Expanded Label-based Filtering using Cluster Sensor",
+          "summary": "With Container Security 1.44.0, Qualys enhances container filtering capabilities by improving support for Pod, Namespace, and Cluster labels, enabling more flexible and granular container discovery and analysis."
+        },
+        {
+          "heading": "Optimized Image Scanning Based on Configuration Changes",
+          "summary": "Previously, images were re-scanned only when their content changed. As a result, updates to scan settings, such as vulnerability, compliance, malware, or secret scanning configurations, were not always reflected in scan results. With Container…"
+        },
+        {
+          "heading": "Enhanced SCA Visibility and Reporting Controls",
+          "summary": "With Container Security 1.44.0, Qualys introduces new controls and reporting options inQualysEnterprise TruRisk™ Platform>Container Securitythat give you greater visibility and control over SCA (Software Composition Analysis) vulnerabilities, both…"
+        },
+        {
+          "heading": "Granular Scan Status for Registry Scanned Images",
+          "summary": "With Container Security 1.44.0, Qualys improves registry scan transparency by introducing separate status tracking for each scan type, providing clearer visibility into scan progress and results. Earlier, you had limited visibility into individual…"
+        },
+        {
+          "heading": "Sensitive Data Detection (Previously Secret Detection)",
+          "summary": "With Container Security 1.44.0,Secret Detectionis renamed toSensitive Data Detectionto better reflect its expanded capabilities. This enhancement improves detection accuracy and performance, reduces false positives, and supports the identification…"
+        },
+        {
+          "heading": "Deprecation of Google Container Registry (GCR)",
+          "summary": "Starting with Container Security 1.44.0, Google Container Registry (GCR) support is deprecated and no longer available as a selectable registry type 'Create New: Registry' workflow in QualysEnterprise TruRisk™ Platform."
+        },
+        {
+          "heading": "'Repo Digest' Field Support in Images Reports",
+          "summary": "Container Security now supports theRepo Digestfield in report generation for theImagesreport template. This enhancement enables you to include container image repository digest values directly in reports, providing a scalable and reliable way to…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-27T12:27:27.987536+00:00",
+      "status": "success"
+    }
   },
   "cee4bee94db5": {
     "key": "cee4bee94db5",
@@ -4103,7 +4276,18 @@
       "SaaS DR"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-07-02T10:17:33+00:00"
+    "detected_at": "2026-07-02T10:17:33+00:00",
+    "details": {
+      "release_date": "June 29, 2026",
+      "features": [],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-27T12:27:27.987536+00:00",
+      "status": "success"
+    }
   },
   "7b2d01d797de": {
     "key": "7b2d01d797de",
