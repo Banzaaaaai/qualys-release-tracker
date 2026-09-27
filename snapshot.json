@@ -4297,7 +4297,52 @@
       "ETM"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-06-29T12:14:10+00:00"
+    "detected_at": "2026-06-29T12:14:10+00:00",
+    "details": {
+      "release_date": "June 29, 2026",
+      "features": [
+        {
+          "heading": "Introduced Agent Val",
+          "summary": "Agent Val is an autonomous risk remediation agent integrated into the Qualys TruRisk platform. It leverages real attacker techniques in a controlled environment to validate exploitability, prioritize remediation, and mitigate. Agent Val ensures that…"
+        },
+        {
+          "heading": "Schedule TruConfirm Scans",
+          "summary": "This release introduces the schedule scan feature, providing greater control and automation for your TruConfirm vulnerability scans. This allows you to configure precise scan schedules to launch automated scans without manual intervention. The key…"
+        },
+        {
+          "heading": "Usability Enhancements in TruConfirm",
+          "summary": "Following are the usability enhancements in TruConfirm tab"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "ETM Business Entities",
+          "issue": "Resolved an issue where users received a business entity limit exceeded error after their configured limit unexpectedly reverted to a lower value (for example, from 75 to 50). The issue was caused by the application applying a default limit instead of the customer-specific configured limit. The logic has been corrected to consistently use the customer-configured limit, allowing users to create business entities up to their entitled capacity without encountering errors."
+        },
+        {
+          "component": "ETM Dashboard",
+          "issue": "Fixed an issue where dashboard widgets displayed inconsistent asset counts, while drill-down views showed accurate values. This was caused by incorrect aggregation or data calculation in widget rendering. Dashboard widgets now display accurate and consistent asset counts, aligning with detailed views and eliminating misleading reporting trends."
+        },
+        {
+          "component": "ETM Dashboard",
+          "issue": "Updated theHow to Searchlinks in dashboard widgets to ensure they direct users to the appropriate help documentation, providing a more consistent and reliable help experience across applications."
+        },
+        {
+          "component": "ETM Dashboard",
+          "issue": "Resolved an issue where dashboard widgets did not provide an option to view unique vulnerability counts, making it difficult to analyze distinct vulnerabilities across assets. Users can now choose to display unique vulnerability counts in widgets, enabling more accurate and consistent reporting."
+        },
+        {
+          "component": "ETM Dashboard",
+          "issue": "Resolved an issue where some users with a UAI-enabled account could view historical trend data beyond the assets and findings they were authorized to access. Historical trend data is now filtered by user permissions, ensuring that dashboard trends display only data within each user's assigned scope and provide more accurate, secure reporting."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-27T18:05:21.861916+00:00",
+      "status": "success"
+    }
   },
   "bf7b68b50ff4": {
     "key": "bf7b68b50ff4",
@@ -4308,7 +4353,35 @@
       "Conn"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-07-02T10:17:33+00:00"
+    "detected_at": "2026-07-02T10:17:33+00:00",
+    "details": {
+      "release_date": "June 29, 2026",
+      "features": [
+        {
+          "heading": "Service Accounts API",
+          "summary": "Aservice accountrepresents a cloud provider account(e.g.,a GCP project,AWS account,or Azure subscription)that Flexscan is authorized to scan.You must register a service account before configuring or scanning it."
+        },
+        {
+          "heading": "Target Accounts API",
+          "summary": "Atarget accountis a child cloud account, or subscription scoped under a parent service account(e.g.,an AWS member account in an AWS Organization,or an Azure target subscription).Target accounts inherit infrastructure from the parent service account…"
+        },
+        {
+          "heading": "Scan Logs API",
+          "summary": "Provides read-only access to scan status records.Each record represents a single VM/resource scan attempt.Sensitive internal fields(resultFileName,correlationIds)are excluded by default."
+        },
+        {
+          "heading": "Audit Trail API",
+          "summary": "Provides visibility into the execution history of the scan workflow.Events are stored in OpenSearch;resource state is cross-referenced from the Oracle database(RESOURCE_SCAN_STATUS)."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-27T18:05:21.861916+00:00",
+      "status": "success"
+    }
   },
   "2295dbba74a4": {
     "key": "2295dbba74a4",
@@ -4318,7 +4391,39 @@
       "Conn"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-07-02T10:17:33+00:00"
+    "detected_at": "2026-07-02T10:17:33+00:00",
+    "details": {
+      "release_date": "June 29, 2026",
+      "features": [
+        {
+          "heading": "Flexscan Support for Google Cloud Platform (GCP) Snapshots (Beta)",
+          "summary": ""
+        },
+        {
+          "heading": "EventBridge Support for AWS Connectors",
+          "summary": ""
+        },
+        {
+          "heading": "AWS Unified CloudFormation Template Enhancement",
+          "summary": ""
+        },
+        {
+          "heading": "Connector Audit Log Visibility",
+          "summary": ""
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "The following section describes the new tokens introduced in release 2.18.0."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-27T18:05:21.861916+00:00",
+      "status": "success"
+    }
   },
   "e0849589c5e8": {
     "key": "e0849589c5e8",
@@ -4329,7 +4434,35 @@
       "TC"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-07-02T10:17:33+00:00"
+    "detected_at": "2026-07-02T10:17:33+00:00",
+    "details": {
+      "release_date": "June 29, 2026",
+      "features": [
+        {
+          "heading": "New Get Policy v2 API with Pagination Support",
+          "summary": ""
+        },
+        {
+          "heading": "Manage Account Tags Across All AWS Inventory APIs",
+          "summary": ""
+        },
+        {
+          "heading": "Manage Exception APIs - Support added for OCI",
+          "summary": ""
+        },
+        {
+          "heading": "Azure Resources API - Support added for new CIEM resource types",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-27T18:05:21.861916+00:00",
+      "status": "success"
+    }
   },
   "1a534d3decf5": {
     "key": "1a534d3decf5",
@@ -4339,7 +4472,92 @@
       "TC"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-07-02T10:17:33+00:00"
+    "detected_at": "2026-07-02T10:17:33+00:00",
+    "details": {
+      "release_date": "June 29, 2026",
+      "features": [
+        {
+          "heading": "Edit Policy Details Directly from Policy Page",
+          "summary": ""
+        },
+        {
+          "heading": "Enhanced Inventory Export with Lambda Runtime Details",
+          "summary": ""
+        },
+        {
+          "heading": "Unified View for GCP Firewall Rules and Source Ranges",
+          "summary": ""
+        },
+        {
+          "heading": "Expanded Visibility of AWS Account Tags in Inventory",
+          "summary": ""
+        },
+        {
+          "heading": "AI Security Controls for Cloud Posture Management",
+          "summary": ""
+        },
+        {
+          "heading": "Expanded Azure CIEM Inventory Coverage",
+          "summary": ""
+        },
+        {
+          "heading": "Extended Default Time Filter (7 Days)",
+          "summary": ""
+        },
+        {
+          "heading": "GCP Vertex AI Resource Inventory Support",
+          "summary": ""
+        },
+        {
+          "heading": "CDR Enhancements and Updates",
+          "summary": "The following sections describe the enhancements made to the Cloud Detection and Response (CDR) environment in the upcoming CDR release."
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "The following section describes the new tokens introduced as part of TotalCloud 2.25.0"
+        },
+        {
+          "heading": "Control Updates",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "TotalCloud-UI",
+          "issue": "We have resolved the issue where IAM User Access Key controls (CID-4andCID-5) caused false positives due to AWS reassigning Access Key 2 to Access Key 1 after deletion, which also preventedCID-5evaluation. To address this without impacting existing customer configurations or exceptions, both controls have been retained and a new control (CID 699) has been introduced to handle this scenario effectively.We have resolved the issue where the GCP controls52062,52072,52071were giving false positives and logical errors."
+        },
+        {
+          "component": "CV-ControlEnhancement",
+          "issue": "We have resolved the issue forCID-351andCID-562where certain resources were not being evaluated due to changes in the AWS response format. To address this, the JSONPath in the predicate logic has been updated to align with the latest response structure, ensuring accurate evaluation going forward."
+        },
+        {
+          "component": "CV - False Positive, CV-ControlEnhancement",
+          "issue": "We have resolved the issue raised regarding controlsCID 50008andCID 50006due to parameter deprecation in Azure Microsoft Defender for Cloud’s Microsoft Cloud Security Benchmark.CID 50008has been deprecated as its parameter is no longer supported, whileCID 50016has been updated with the revised parameter name along with necessary predicate enhancements and evidence additions to ensure correct evaluation."
+        },
+        {
+          "component": "CV-IaC",
+          "issue": "We have resolved the issue where IaC scanning was stuck in SUBMITTED state."
+        },
+        {
+          "component": "CV - Reports, CV - UI",
+          "issue": "We have resolved the issue where CIS references were missing in the UI and reports."
+        },
+        {
+          "component": "CV-Monitor",
+          "issue": "We have resolved the issue of inconsistent evaluations of AWS controls related to EBS snapshots, caused by limitations in the DCEF-based implementation handling large volumes of snapshots across accounts. The controls (CID127,146,204) have been migrated to an annotation-based approach, enabling consistent evaluation in a single call and ensuring expected performance."
+        },
+        {
+          "component": "CV-Connectors",
+          "issue": "We have resolved the issue where incorrect pagination handling for AWS Bedrock Agents and Knowledge Bases caused repeated data retrieval due to misconfigured token injection. The pagination logic has been corrected to align with API requirements, ensuring proper data collection and preventing infinite loops."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-27T18:05:21.861916+00:00",
+      "status": "success"
+    }
   },
   "c6d559583f6e": {
     "key": "c6d559583f6e",
