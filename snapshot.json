@@ -4567,7 +4567,51 @@
       "ID"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-06-29T12:14:10+00:00"
+    "detected_at": "2026-06-29T12:14:10+00:00",
+    "details": {
+      "release_date": "June 25, 2026",
+      "features": [
+        {
+          "heading": "Introduced Foreign Security Principal Support",
+          "summary": "ETM Identity now identifies and processes Foreign Security Principal (FSP) within Active Directory environments. FSPs are accounts that exist in another forest but have rights in the AD forest."
+        },
+        {
+          "heading": "Introduced Role-Based Access Control",
+          "summary": "We have introduced Role-Based Access Control (RBAC) to enhance security, streamline access management, and ensure users can only access authorized features and data. RBAC restricts system access by assigning roles, permissions, and privileges,…"
+        },
+        {
+          "heading": "Multi-Factor Authentication (MFA) Status Display (Unified Asset Inventory Enabled Account)",
+          "summary": "ETM Identity now supports Multi-Factor Authentication (MFA) enrollment status directly in the Qualys Inventory dashboard. This enhancement gives security and identity teams immediate visibility into whether multi-factor authentication is enabled or…"
+        },
+        {
+          "heading": "New Tenant and Policy Tabs (Unified Asset Inventory Enabled Account)",
+          "summary": "We have introduced two new tabs in the UI: Tenant and Policy. These tabs provide a unified and centralized view of identity environments and policies across multiple identity providers."
+        },
+        {
+          "heading": "Interactive Cards In Risk Management and Inventory Tabs",
+          "summary": "We introduced interactive cards across multiple tabs to help you quickly identify risks, prioritize actions, and monitor users and groups more efficiently."
+        },
+        {
+          "heading": "AD Real-Time Monitoring",
+          "summary": "AD Real-Time Monitoring continuously captures Active Directory events and converts them into actionable security alerts.This feature includes"
+        },
+        {
+          "heading": "Automated Group Scoring",
+          "summary": "We introduced Automated Group Scoring to simplify and accelerate identity risk assessment. The platform can now automatically assign default ACS (Asset Criticality Score) values to groups that lack manually configured scores."
+        },
+        {
+          "heading": "Attack Path Analysis Enhancement",
+          "summary": "Attack Path Analysis has been improved to provide clearer visuals and more accurate, context-aware metrics, making it easier for analysts to quickly understand and investigate potential attack paths."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-28T14:29:24.220162+00:00",
+      "status": "success"
+    }
   },
   "13776a6ccffb": {
     "key": "13776a6ccffb",
@@ -4577,7 +4621,35 @@
       "CA"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-06-26T10:33:59+00:00"
+    "detected_at": "2026-06-26T10:33:59+00:00",
+    "details": {
+      "release_date": "June 22, 2026",
+      "features": [
+        {
+          "heading": "IPv6 Asset Detection Support",
+          "summary": "Qualys CAPS now supports IPv6-based asset detection. This enhancement adds packet-level visibility and processing for IPv6 traffic, enabling more comprehensive asset discovery in network environments. This support improves asset visibility in…"
+        },
+        {
+          "heading": "Behavioral Change",
+          "summary": "There is no behavior change for this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "No new platform coverage support is added in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "The following are the known issues and workarounds for this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-28T14:29:24.220162+00:00",
+      "status": "success"
+    }
   },
   "26604fbbb0aa": {
     "key": "26604fbbb0aa",
@@ -4587,7 +4659,48 @@
       "CA"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-06-26T10:33:59+00:00"
+    "detected_at": "2026-06-26T10:33:59+00:00",
+    "details": {
+      "release_date": "June 23, 2026",
+      "features": [
+        {
+          "heading": "Enforce CPU Limit for CEP Processes",
+          "summary": "We have introduced CPU limit enforcement for the Agent Command Execution Pipeline (qualys-cep process). The enhancement enforces precise CPU throttling based on the CPU limit specified in the Cloud Agent configuration. It helps you precisely control…"
+        },
+        {
+          "heading": "SwCA Enhancements for Linux Intel Cloud Agent",
+          "summary": "We introduced the following enhancements to the SwCA Scanner for Linux"
+        },
+        {
+          "heading": "Behavior Change",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "No new platform coverage added in this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Cloud Agent Communication",
+          "issue": "We fixed an issue where Linux Cloud Agent communication stopped on the SuSE Linux platform due to certificate validation failure. We updated the certificate validation workflow, and now Cloud Agent communicates correctly on the SuSE Linux platform."
+        },
+        {
+          "component": "Cloud Agent Communication",
+          "issue": "Fixed an issue where multiplexer startup failed with the default log level configuration. Now multiplexer startup works correctly."
+        },
+        {
+          "component": "SwCA Scan",
+          "issue": "We fixed an issue where Cloud Agent immediately launched a SwCA scan and did not follow the configured scan interval when a new SwCA scan manifest was published. The agent now follows the configured scan interval and launches the SwCA scan as per the configured time. This update is available for SwCA Scanner for Linux 1.4 and later."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-28T14:29:24.220162+00:00",
+      "status": "success"
+    }
   },
   "fca60d86cc35": {
     "key": "fca60d86cc35",
@@ -4597,7 +4710,23 @@
       "QGS"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-07-03T10:13:02+00:00"
+    "detected_at": "2026-07-03T10:13:02+00:00",
+    "details": {
+      "release_date": "June 15, 2026",
+      "features": [
+        {
+          "heading": "Updates to CAMS/QGS Images and Containers",
+          "summary": "QGS 3.15.1 includes updated images and containers for camsd, cams-mgr, and cams-metrics to improve stability and platform compatibility."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-28T14:29:24.220162+00:00",
+      "status": "success"
+    }
   },
   "3bde9b8a27b6": {
     "key": "3bde9b8a27b6",
@@ -4607,7 +4736,40 @@
       "FIM"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-07-09T10:35:57+00:00"
+    "detected_at": "2026-07-09T10:35:57+00:00",
+    "details": {
+      "release_date": "June 19, 2026",
+      "features": [
+        {
+          "heading": "Customize Monitoring Profile for Container Event Detection",
+          "summary": "FIM now supports customized monitoring profiles for the updated Container Security (CS) policies. You can import monitoring profiles from the library, and add, update, delete, or rename the rules within the imported profile. FIM uses these…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "FIM Configuration > Profiles > New Profile",
+          "issue": "Previously, clickingCancelduring new FIM Profile creation still created the profile and placed it in theInactivestate, even without clicking Save.Profile is now created only when you save the profile during FIM profile creation on FIMConfiguration > Profiles > New Profilepage.When you clickCancelduring new profile creation, the profile creation is canceled, and no longer appears in the Inactive state."
+        },
+        {
+          "component": "FIM Activity Logs",
+          "issue": "In FIM Activity Logs, some automated actions showed incorrect user information. When a Cloud Agent was deactivated, and the system automatically removed its assets from monitoring profiles, the activity log displayed the name of the last user who edited the profile, even though that user did not perform the removal.This issue has been fixed. When the system automatically removes an asset from a monitoring profile due to a deactivated Cloud Agent, the activity log now shows System as the actor. This makes it clear which actions were performed automatically by the system and which were performed by users."
+        },
+        {
+          "component": "FIM Report > Report Rules",
+          "issue": "Previously, a Super User could not edit, delete, or resume paused FIM report rules on theReport > Report Rulespage that were created by inactive users, and encountered errors when attempting to perform these actions.Now, Super User can edit, resume, and delete paused report rules without errors. Super Users with full access can view and manage all report rules, regardless of the rule creator."
+        },
+        {
+          "component": "Schedule Reports",
+          "issue": "Previously, event data in CSV reports differed from the data displayed in the UI. Additionally, some reports remained in the processing state and were not completed successfully.Now, event data is consistent between CSV reports and the UI. Reports are also processed successfully in the processing state."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-28T14:29:24.220162+00:00",
+      "status": "success"
+    }
   },
   "9b6ec8144a57": {
     "key": "9b6ec8144a57",
