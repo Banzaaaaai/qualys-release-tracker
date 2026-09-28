@@ -4780,7 +4780,27 @@
       "CRI"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-06-19T11:45:57+00:00"
+    "detected_at": "2026-06-19T11:45:57+00:00",
+    "details": {
+      "release_date": "June 18, 2026",
+      "features": [
+        {
+          "heading": "Introducing the newPQC Asset Readiness Widget",
+          "summary": "The newQuantum Readiness custom widgetis now available in the Certificate View dashboard to help assess asset readiness for Post-Quantum Cryptography (PQC). It provides a color-coded view of internal and external assets, highlighting PQC-supported…"
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following reported and notable customer issue is fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-28T20:24:39.476340+00:00",
+      "status": "success"
+    }
   },
   "76b20a6379f7": {
     "key": "76b20a6379f7",
@@ -4791,7 +4811,35 @@
       "PA"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-06-24T10:30:01+00:00"
+    "detected_at": "2026-06-24T10:30:01+00:00",
+    "details": {
+      "release_date": "June 15, 2026",
+      "features": [
+        {
+          "heading": "Support for One Identity Safeguard Vault Across all Authentication Record APIs",
+          "summary": "We now support integration with One Identity Safeguard vault for authenticated scanning. You can now create One Identity Safeguard vaults and use them in authentication technologies."
+        },
+        {
+          "heading": "Compliance Framework Reports APIs",
+          "summary": "We are introducing new Compliance Framework Reports APIs. These APIs help in providing the required data and for managing compliance framework reports. The following are the list of APIs"
+        },
+        {
+          "heading": "List Policies API: View Response Progress Updates",
+          "summary": "The List Policies API now provides progress updates in the response, showing the number of policy asset tags processed out of the total asset tags being retrieved."
+        },
+        {
+          "heading": "Use Asset Tags and Tag Rules Across all Authentication Record APIs",
+          "summary": "You can now use asset tags and tag based rules across all authentication record APIs, enabling consistent scoping of authentication records beyond Unix and Windows authentication types."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-28T20:24:39.476340+00:00",
+      "status": "success"
+    }
   },
   "9628415df1ac": {
     "key": "9628415df1ac",
@@ -4801,7 +4849,60 @@
       "PA"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-06-24T10:30:01+00:00"
+    "detected_at": "2026-06-24T10:30:01+00:00",
+    "details": {
+      "release_date": "June 15, 2026",
+      "features": [
+        {
+          "heading": "Support for One Identity Safeguard Vault",
+          "summary": "We now support integration with One Identity Safeguard vault for authenticated scanning."
+        },
+        {
+          "heading": "Add Policies when Generating Audit Readiness Report",
+          "summary": "You can now add policies when generating an Audit Readiness Report, allowing policy details to be included in the report."
+        },
+        {
+          "heading": "Support for New Authentication Technology - IBM DB2 12",
+          "summary": "IBM DB2 12 technology is supported for Policy Audit authenticated scans using both scanners and agent. This technology is now available for use at the following places"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PA - Authentication Records",
+          "issue": "When the user edited the Username field for a Unix authentication record, they were unable to save a username longer than 31 characters. Relevant code changes have been made to fix the issue. Now, the maximum supported length for the Username field in Unix authentication records has been increased to 255 characters."
+        },
+        {
+          "component": "PA - Policy Editor",
+          "issue": "When the user attempted to create a policy using the Create from Host option, the asset selection window continued loading and then failed to display any assets. As a result, users were unable to select hosts and proceed with policy creation. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - Policy Editor",
+          "issue": "When the user viewed the log entries in the Activity Log tab under Users, they observed incorrect entries for updating or saving the Policy that they had not performed. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - Reports",
+          "issue": "When the user attempted to generate a Control Chaining compliance report from the Templates tab, the policy list displayed all available policies instead of only compatible CIS-based policies with supported operating system technologies. As a result, selecting an incompatible policy caused the report generation to fail and display an Unknown Error message. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA",
+          "issue": "When the user viewed assets from the View IPs section while manually evaluating a Control, they observed a higher asset count than the number of assets included in the policy. This behavior occurs by design, as the View IPs section displays all assets that matches the technology of the control during evaluation, allowing users to identify and use additional relevant assets. We have now documented this behavior in theOnline Help."
+        },
+        {
+          "component": "PA",
+          "issue": "When the user accessed Audit Fix after their trial subscription was extended, they observed that the Remediate Now option is not displayed, even though these options had been available before the trial expiration. This behavior was observed for a user with Unit Manager responsibilities. This was the expected behavior as the user was not given Unit Manager responsibilities in the Admin module. We have now documented this behavior in theOnline Help."
+        },
+        {
+          "component": "PA",
+          "issue": "When the user enabled the Policy Audit Fix (PAF) subscription, they observed that the system-created Audit Fix Manager and Audit Fix Unit Manager roles were automatically assigned to Manager and Unit Manager users, respectively. Also, any manual changes (like custom roles with custom permissions) are overridden by the original default roles during synchronization. This is expected behavior. We have now documented this behavior in theOnline Help."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-28T20:24:39.476340+00:00",
+      "status": "success"
+    }
   },
   "9fba145d0b24": {
     "key": "9fba145d0b24",
@@ -4812,7 +4913,34 @@
       "VM"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-06-24T10:30:01+00:00"
+    "detected_at": "2026-06-24T10:30:01+00:00",
+    "details": {
+      "release_date": "June 8, 2026",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "With this feature, we have provided support to CVSS4.0 in the following APIs, which provide enhanced vulnerability scoring with greater precision and contextual relevance. This helps to deliver accurate and standardized vulnerability insights by…"
+        },
+        {
+          "heading": "Support for One Identity Safeguard Vault",
+          "summary": "With this release, we now support integration with One Identity Safeguard vault for authenticated scanning. You can now create One Identity Safeguard vaults and use them in authentication technologies."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM",
+          "issue": "When users invoked the Host List Detection (HLD) API with parameters such as show_igs and show_results, the API response took significantly longer to return for large datasets, impacting performance. This issue has been resolved by improving how data is retrieved and processed, ensuring the HLD API now delivers results more efficiently and reliably across all supported versions."
+        }
+      ],
+      "cves": [
+        "CVE-2025-1744"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-28T20:24:39.476340+00:00",
+      "status": "success"
+    }
   },
   "28d1ec2c9b29": {
     "key": "28d1ec2c9b29",
@@ -4822,7 +4950,56 @@
       "VM"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-06-24T10:30:01+00:00"
+    "detected_at": "2026-06-24T10:30:01+00:00",
+    "details": {
+      "release_date": "June 8, 2026",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "We have provided support to Common Vulnerability Scoring System version 4 (CVSS4.0 Base Score) in the following sections to have a more accurate and realistic way to measure the severity of vulnerabilities. This enhances the transparency and…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Scan UI",
+          "issue": "When a “Scanner Unavailable” email notification was generated, it provided only a basic message indicating that the appliance was offline or did not pick up the scan. It did not include diagnostic details such as appliance status, last successful contact time, or available capacity at dispatch, limiting visibility.This issue is now resolved. The notification includes all the diagnostic information, enabling users to self-diagnose issues more effectively."
+        },
+        {
+          "component": "VM - Reports General",
+          "issue": "When users received a Host-Based report in CSV format, the report was truncated when delivered through a Mimecast email appliance. Reports that must have contained more than 900 lines were reduced to only 117 lines. This occurred because attachments were sent with an incorrect MIME type (application/octet-stream) instead of text/csv. The issue is now resolved, and scheduled Host-Based report emails include the correct Content-Type: text/csv header, ensuring complete report content is preserved."
+        },
+        {
+          "component": "VM - Scan UI",
+          "issue": "When users launched a scan with the Option Profile set toSelect at Runtimefor Vulnerability Detection, and the Scanner Appliance set toAll Scanners in TagSet, the scan launch encountered an error. This issue is now resolved, and scans launch successfully with this configuration."
+        },
+        {
+          "component": "VM - Assets",
+          "issue": "When users with the Reader role searched for applications by entering only the application name (Assets > Applications), no results were returned. This issue is now resolved, and users can search applications using only the application name."
+        },
+        {
+          "component": "VM - Assets (Scanner)",
+          "issue": "When users opened the Authentication record details page, it experienced significant delays or failed to load for records containing a large number of IPs, impacting usability. The behavior has been improved to handle large datasets more efficiently, resulting in faster and more reliable loading of authentication record details across all supported configurations."
+        },
+        {
+          "component": "VM - Report Schedule",
+          "issue": "When users reviewed scheduled VM reports, theRun Historyindicated that a job had executed, but the report was not visible in the UI and no notification was delivered, leading to confusion about the job status. This issue occurred when report validation failed at runtime and was not reflected in the Run History. The behavior has been improved so that validation failures are now properly recorded, ensuring that Run History accurately reflects the outcome of scheduled report executions and helps users understand the status of their jobs more clearly."
+        },
+        {
+          "component": "VM",
+          "issue": "When the Manager edited user roles on SCA‑only subscriptions with expired PC entitlements, the update failed due to unsupported compliance notification parameters being submitted. This issue has been resolved so that only supported options are processed, allowing user updates to be saved successfully."
+        },
+        {
+          "component": "VM",
+          "issue": "When users invoked the Host List Detection (HLD) API with parameters such as show_igs and show_results, the API response took significantly longer to return for large datasets, impacting performance. This issue has been resolved by improving how data is retrieved and processed, ensuring the HLD API now delivers results more efficiently and reliably across all supported versions."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-28T20:24:39.476340+00:00",
+      "status": "success"
+    }
   },
   "d1bd1077f929": {
     "key": "d1bd1077f929",
