@@ -5290,7 +5290,63 @@
       "QS"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-06-11T11:53:26+00:00"
+    "detected_at": "2026-06-11T11:53:26+00:00",
+    "details": {
+      "release_date": "June 04, 2026",
+      "features": [
+        {
+          "heading": "OAuth-based Authentication Support",
+          "summary": "QScanner 5.0.0 introduces OAuth-based authentication for secure communication with QualysEnterprise TruRisk™ Platform. This enhancement replaces long-lived, subscription-based tokens with short-lived, OAuth-enabled tokens that can be securely…"
+        },
+        {
+          "heading": "Support for Developer Scoped Token",
+          "summary": "QScanner 5.0.0 introduces support for developer-scoped OAuth tokens designed specifically for development and CI/CD workflows. These tokens have limited permissions and ensure that development scans do not impact or clutter production…"
+        },
+        {
+          "heading": "Support for Static Compliance Scan",
+          "summary": "With this release, QScanner offers a Static Compliance scan for images using the--scan-types complianceoption. Images are evaluated against built‑in compliance controls aligned with the CIS Docker Benchmark to determine an overall posture (PASS,…"
+        },
+        {
+          "heading": "Build Pipeline Metadata Collection",
+          "summary": "QScanner now automatically collects the build pipeline context from CI/CD environments during its scan. This includes repository details, branch, commit hash, author information, and other pipeline attributes sourced directly from available…"
+        },
+        {
+          "heading": "Improved Visibility & Continuous Assessment with Static Asset Tagging",
+          "summary": "QScanner 5.0.0 introduces static asset tagging using the--qualys-tagsflag, allowing you to assign and manage tags directly from the Command Line Interface (CLI). Tags are automatically created if they do not already exist, making it easier to…"
+        },
+        {
+          "heading": "Enhancement in Tabular Report",
+          "summary": "In the QDS column, QScanner now shows the QDS severity level along with the QDS score. Displaying QDS severity alongside the score helps you quickly understand risk levels without additional interpretation."
+        },
+        {
+          "heading": "Improved Data Collection & File Insight Scan",
+          "summary": "With this release, QScanner has upgraded its Data collection during SCA scan and File Insight Scan."
+        },
+        {
+          "heading": "Updated GitLab Report File Names",
+          "summary": "The following GitLab Report file names are updated."
+        },
+        {
+          "heading": "LZMA Compressed 'SBOM' Formats",
+          "summary": "Earlier, Changelist.db file was LZMA-compressed. With this release, QScanner supports SBOM formats (SPDX, CycloneDX) in LZMA compressed format. LZMA compression reduces SBOM file size, improving storage efficiency, accelerating transfers, and…"
+        },
+        {
+          "heading": "Flag Updates",
+          "summary": "With this release, QScanner is deprecating the '--poll-timeout'and '--poll-wait-interval' arguments. Instead, you are requested to use the newly introduced '--max-network-retries' and '--network-retry-wait-min'arguments."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-29T19:10:36.685819+00:00",
+      "status": "success"
+    }
   },
   "cdbb3653e146": {
     "key": "cdbb3653e146",
@@ -5300,7 +5356,23 @@
       "VMDR OT"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-30T09:28:40+00:00"
+    "detected_at": "2026-05-30T09:28:40+00:00",
+    "details": {
+      "release_date": "May 22, 2026",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "VMDR OT Dashboard",
+          "issue": "Tag filtering in theVMDR OT > Dashboarddid not work correctly when selecting tags and conditions (AnyorAll), resulting in no data and vulnerability counts in theNew Vulnerabilities,Active Vulnerabilities,Unpatched Vulnerabilities, andFixed Vulnerabilitieswidgets.After fixing the issue, the affected widgets now reflect data accurately based on the selected tags and conditions."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-29T19:10:36.685819+00:00",
+      "status": "success"
+    }
   },
   "ea70147222e0": {
     "key": "ea70147222e0",
@@ -5310,7 +5382,23 @@
       "PNS"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-30T09:28:40+00:00"
+    "detected_at": "2026-05-30T09:28:40+00:00",
+    "details": {
+      "release_date": "May 22, 2026",
+      "features": [
+        {
+          "heading": "FedRAMP High Support for CDR Appliance",
+          "summary": "You can now register Cloud Detection and Response (CDR) appliances in environments with FedRAMP High compliance requirements. To support this, we have enhanced the CDR registration flow to align with stricter security and regulatory standards."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-29T19:10:36.685819+00:00",
+      "status": "success"
+    }
   },
   "312d40f2a4b4": {
     "key": "312d40f2a4b4",
@@ -5320,7 +5408,23 @@
       "UD"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-29T10:55:30+00:00"
+    "detected_at": "2026-05-29T10:55:30+00:00",
+    "details": {
+      "release_date": "May 29, 2026",
+      "features": [
+        {
+          "heading": "Copy Actual Numeric Values from Widget Tooltips",
+          "summary": "Widgets are now enhanced to provide access to precise numeric data by allowing users to view and copy actual values from the tooltips. Previously, large numbers were displayed in a rounded format in the widget view due to space constraints. Now,…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-29T19:10:36.685819+00:00",
+      "status": "success"
+    }
   },
   "a9c4b8a36d22": {
     "key": "a9c4b8a36d22",
@@ -5333,7 +5437,56 @@
       "WAS"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-27T11:02:57+00:00"
+    "detected_at": "2026-05-27T11:02:57+00:00",
+    "details": {
+      "release_date": "May 26, 2026",
+      "features": [
+        {
+          "heading": "Cloud Agent",
+          "summary": "We have introduced a new module,Policy Audit Fix (PAF), in the Policy Audit (PA) application. The PAF module helps you identify failed controls on your assets and remediate them to meet the policy audit standards. The controls are the set of…"
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues or limitations for this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Cloud Agent Scans",
+          "issue": "Cloud Agent"
+        },
+        {
+          "component": "CSPM Connector",
+          "issue": "Enterprise TruRisk™ Platform"
+        },
+        {
+          "component": "Vulnerability Management",
+          "issue": "Enterprise TruRisk™ Platform"
+        },
+        {
+          "component": "EC2 Scans",
+          "issue": "Enterprise TruRisk™ Platform"
+        },
+        {
+          "component": "Asset Activation",
+          "issue": "CSAM"
+        },
+        {
+          "component": "WAS Scan Notification",
+          "issue": "WAS"
+        },
+        {
+          "component": "Vendor Risk Management",
+          "issue": "SAQ"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-29T19:10:36.685819+00:00",
+      "status": "success"
+    }
   },
   "3b191821f997": {
     "key": "3b191821f997",
