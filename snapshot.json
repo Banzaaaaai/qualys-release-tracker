@@ -5009,7 +5009,44 @@
       "CA"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-06-26T10:33:59+00:00"
+    "detected_at": "2026-06-26T10:33:59+00:00",
+    "details": {
+      "release_date": "June 09, 2026",
+      "features": [
+        {
+          "heading": "Configure SwCA Log-level in Cloud Agent UI",
+          "summary": "The SwCA Scanner now uses log levels configured in the Cloud Agent configuration profile. You are no longer required to set the SwCA log levels separately. This enhancement provides a simpler way to set the log level and collect the SwCA process…"
+        },
+        {
+          "heading": "Extended Language Support for SwCA Runtime Analysis",
+          "summary": "We have extended the language support for SwCA Runtime Analysis on Linux platforms to the following languages"
+        },
+        {
+          "heading": "Behavior Change",
+          "summary": "There are no behavior changes for this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "No new platform coverage is added in this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "SwCA Scan",
+          "issue": "We fixed an issue where Cloud Agent immediately launched a SwCA scan and did not follow the configured scan interval when a new SwCA scan manifest was published. The agent now follows the configured scan interval and launches the SwCA scan as per the configured time. This update is available for Linux Intel Cloud Agent 7.4.2 and later."
+        },
+        {
+          "component": "Third-party Library Updated",
+          "issue": "The SwCA Go library was outdated. We have updated the Go library version from 1.25.8 to 1.26.3."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-29T13:19:49.469353+00:00",
+      "status": "success"
+    }
   },
   "5c3529e32904": {
     "key": "5c3529e32904",
@@ -5019,7 +5056,23 @@
       "mROC"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-06-10T11:07:11+00:00"
+    "detected_at": "2026-06-10T11:07:11+00:00",
+    "details": {
+      "release_date": "June 9, 2026",
+      "features": [
+        {
+          "heading": "Multi-Factor Authentication Support for mROC Account",
+          "summary": "You can now secure partner and super partner accounts with multi-factor authentication (MFA) in the Managed Risk Operations Center (mROC). MFA adds an additional verification step during sign-in to help reduce the risk of unauthorized access caused…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-29T13:19:49.469353+00:00",
+      "status": "success"
+    }
   },
   "db6be30cad74": {
     "key": "db6be30cad74",
@@ -5029,7 +5082,52 @@
       "CA"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-06-08T12:13:19+00:00"
+    "detected_at": "2026-06-08T12:13:19+00:00",
+    "details": {
+      "release_date": "June 01, 2026",
+      "features": [
+        {
+          "heading": "Rollback Installed Patches",
+          "summary": "We introducedPatch Rollbacksupport in Patch Management application to roll back installed application patches. Patch rollback enables users to restore their upgraded application to any previous version when needed. This helps you better control the…"
+        },
+        {
+          "heading": "Install FedRAMP Compatible Linux ARM Cloud Agent",
+          "summary": "We have upgraded the Linux ARM Cloud Agent to meet the FedRAMP-compliance requirements. You can now install the new Linux ARM Cloud Agent on theFedRAMP-high Cloud Platform (https://qualysguard.gov1.qualys.us)."
+        },
+        {
+          "heading": "Behavior Change",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "No new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues or limitations for this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Asset Merge",
+          "issue": "We fixed an issue where Cloud Agent was not able to collect cloud metadata because curl was not installed on the host. Now the host properly collects Cloud metadata."
+        },
+        {
+          "component": "Cloud Agent Reporting",
+          "issue": "We fixed an issue where the RPM command failures were not reported correctly. Now QID 45613 reports the RPMcommand failure."
+        },
+        {
+          "component": "Cloud Agent Notifications",
+          "issue": "We fixed an issue where theuseSudoForCepconfiguration was always honored for root users. Now, the sudo configuration is honored only whenuseSudois set to 1."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-29T13:19:49.469353+00:00",
+      "status": "success"
+    }
   },
   "8af8336f21fc": {
     "key": "8af8336f21fc",
@@ -5039,7 +5137,128 @@
       "ETM"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-06-09T10:44:41+00:00"
+    "detected_at": "2026-06-09T10:44:41+00:00",
+    "details": {
+      "release_date": "June 05, 2026",
+      "features": [
+        {
+          "heading": "Stay Informed with TruConfirm Scan Notifications",
+          "summary": "You can now set up and manage email notifications for your TruConfirm scans to stay updated on the scan status. Whether it is a launched, errored, or a finished scan, you can receive clear, detailed email updates to help you stay on top of your…"
+        },
+        {
+          "heading": "Residual Exposure Gap Tooltip Enhancement",
+          "summary": "TheResidual Exposure Gap(REG) section tooltip is enhanced for improved clarity and usability"
+        },
+        {
+          "heading": "Exploit Status Visibility Enhancements for Improved Threat Prioritization",
+          "summary": "We have refined how exploit statuses are displayed to provide clearer, more actionable insights into vulnerabilities."
+        },
+        {
+          "heading": "KnowledgeBase Tab Enhancements",
+          "summary": "This release introduces the following enhancements in theKnowledgeBasetab"
+        },
+        {
+          "heading": "Exploitability Tag in Overview",
+          "summary": "You can now view anExploitabilitytag (Actively Exploited, Exploited) on trending CVEs in theOverviewpage, along with a tooltip displaying the last exploited date, helping you quickly assess the relevance of active threats."
+        },
+        {
+          "heading": "CVE Details Page Enhancements",
+          "summary": "Following are the enhancements in CVE Details tab"
+        },
+        {
+          "heading": "Business Entity Enhancements",
+          "summary": "Business Entities help you organize assets to match real business units, services, and applications. When you link assets to these entities, your organization can assess cybersecurity risk based on business value, financial impact, and risk…"
+        },
+        {
+          "heading": "Cyber Risk AI Assistant – ROCky Enhancements",
+          "summary": "We have enhanced the Cyber Risk AI Assistant ROCky to improve usability, transparency, and user engagement. These updates introduce chat history management and real-time response streaming, enabling you to track better, reuse, and understand…"
+        },
+        {
+          "heading": "Risk Factor and Compensatory Factor Enhancements",
+          "summary": "We enhancedRisk FactorsandCompensatory Factorsto improve filtering, consistency, and user control.It focuses on global exclude filters, clearer status updates, and better rule behavior, all while making sure not to disrupt any current workflows."
+        },
+        {
+          "heading": "Risk Workbench Enhancements",
+          "summary": "We have enhanced usability, filtering, action, and reporting to theRisk Workbenchfeature."
+        },
+        {
+          "heading": "Bulk Risk Acceptance and Rule Creation",
+          "summary": "The Risk Acceptance feature allows you to process up to 200 findings at once. You can select multiple findings and accept the risk or mark them as false positives. When you accept a risk or mark a finding as a false positive, the TruRisk score…"
+        },
+        {
+          "heading": "QQL Token Standardization",
+          "summary": "We implemented Qualys Query Language (QQL) token standardization across all Qualys applications, introducing a consistent <entity>.<attribute> format for ETM and common tokens. The UI now shows only new tokens in search suggestions, while…"
+        },
+        {
+          "heading": "Default Currency Updated to US Dollar for Business Entities",
+          "summary": "The default currency for the Business Entity has been set to US Dollar across all relevant screens, including the Company Profile creation flow, Business Entity creation flow, SMG graph, TruConfirm overview page, and Home screen."
+        },
+        {
+          "heading": "Vulnerabilities Tab Enhancements",
+          "summary": "We have enhanced the Vulnerabilities tab to improve visibility and analysis of security findings. With new grouping options based on CVSS ratings, improved vendor product identification, and the ability to filter vulnerabilities related to…"
+        },
+        {
+          "heading": "Dashboard Enhancement: Simple List Table Widget for Findings",
+          "summary": "We have enhanced the dashboard by introducing a newSimple List(Table) widget type that enables you to view vulnerability and risk management findings in a structured tabular format with configurable columns and sorting. You can create custom queries…"
+        },
+        {
+          "heading": "Available Storage for Supporting Artifacts Improvement",
+          "summary": "Enhanced the Available Storage display in the Add Supporting Artifacts modal to provide more accurate and user-friendly storage information. Storage values are now dynamically represented based on the configured upload limit, and you can hover over…"
+        },
+        {
+          "heading": "Purge Rule Enhancement (Fixed Findings)",
+          "summary": "A new attribute,Fixed Findings, is now available while configuring purge rules for Findings. The rule specifically targetsFixed Findingsthat have remained unchanged for a defined duration, ensuring safe cleanup without impacting active workflows.…"
+        },
+        {
+          "heading": "Finding Details Page Enhancements",
+          "summary": "We have introduced several enhancements to make it easier to use, clearer, and more helpful. Now, information is presented more straightforwardly, details about the lifecycle of vulnerabilities are easier to understand, and you can quickly see how…"
+        },
+        {
+          "heading": "Group By Enhancements for Vulnerability Findings for Qualys Sourced Account (Non UAI Account)",
+          "summary": "We have expanded the Group By capabilities for Vulnerability Findings to provide analysis and more flexible data filtering. These enhancements are now available for Qualys Sourced Account (Non UAI Account) . You can organize and interpret findings…"
+        },
+        {
+          "heading": "New Tokens for UAI-Enabled Account Assets",
+          "summary": "Token"
+        },
+        {
+          "heading": "New Token for Vulnerabilities",
+          "summary": "Token"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "ETM UI",
+          "issue": "Fixed an issue where tags containing the & character caused incorrect QQL generation. When navigating from MITRE&ATTACK Tactics to exposed assets, tag names were incorrectly truncated after &, leading to empty dashboards or incorrect Findings page redirects.This issue has been resolved, ensuring accurate filtering and redirection for tags containing&chracter."
+        },
+        {
+          "component": "ETM Dashboard",
+          "issue": "Fixed an issue where users encountered anUnauthorized accesserror when adding the Risk Arrival vs Remediation Burndown and Risk Reprioritization Flow widgets to dashboards, while other widgets functioned normally. The widgets now load and work as expected."
+        },
+        {
+          "component": "ETM Dashboard",
+          "issue": "Fixed an issue where the Trending widget displayed incorrect historical data for users with restricted access based on tags. This is now resolved for applicable users, ensuring consistent filtering across both current and historical data."
+        },
+        {
+          "component": "ETM Findings",
+          "issue": "Resolved inconsistencies in purge rule execution where eligible findings were not reflected correctly and UI counts differed after completion."
+        },
+        {
+          "component": "ETM Findings",
+          "issue": "Fixed an issue where the CVE description in Finding Details was truncated in the UI even after selecting Read more, preventing users from viewing the full content. The complete description is now displayed correctly, ensuring full visibility of vulnerability details."
+        },
+        {
+          "component": "ETM Business Entities",
+          "issue": "Fixed the mismatch in the number of Business Entities shown between the widget and the Business Entities list page, so they now use the same data and display consistent results."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-29T13:19:49.469353+00:00",
+      "status": "success"
+    }
   },
   "3560b1b2a71b": {
     "key": "3560b1b2a71b",
@@ -5049,7 +5268,18 @@
       "VMDR"
     ],
     "month_label": "June 2026",
-    "detected_at": "2026-06-06T09:32:40+00:00"
+    "detected_at": "2026-06-06T09:32:40+00:00",
+    "details": {
+      "release_date": "June 05, 2026",
+      "features": [],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-29T13:19:49.469353+00:00",
+      "status": "success"
+    }
   },
   "69c3cd4bb950": {
     "key": "69c3cd4bb950",
