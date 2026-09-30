@@ -5497,7 +5497,23 @@
       "CA"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-27T11:02:57+00:00"
+    "detected_at": "2026-05-27T11:02:57+00:00",
+    "details": {
+      "release_date": "May 26, 2026",
+      "features": [
+        {
+          "heading": "Cloud Agent",
+          "summary": "Cloud Agent now supports a new module, Policy Audit Fix (PAF). The PAF module helps you identify failed controls on your assets and remediate them to meet the policy audit standards."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-30T13:00:47.846066+00:00",
+      "status": "success"
+    }
   },
   "43fbc72706b3": {
     "key": "43fbc72706b3",
@@ -5507,7 +5523,47 @@
       "TA"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-28T11:04:52+00:00"
+    "detected_at": "2026-05-28T11:04:52+00:00",
+    "details": {
+      "release_date": "May 21, 2026",
+      "features": [
+        {
+          "heading": "MCP Server Asset Management, Scanning, and Reporting",
+          "summary": "Building on the Model Context Protocol (MCP) discovery capabilities introduced in the TotalAI 1.6.2 release, this release expands MCP's asset management, scanning, and reporting capabilities. You can now add discovered or new MCP servers to your…"
+        },
+        {
+          "heading": "Enhanced Model Scan Reports",
+          "summary": "The model scan report is enhanced to provide details of findings. The enhanced format helps you prioritize remediation by providing severity levels and a breakdown of passed and failed results for each QID."
+        },
+        {
+          "heading": "TotalAI - Container Security Integration",
+          "summary": "The integration between TotalAI and Qualys Container Security (CS) provides unified visibility into AI-related risks at the container level. You can view AI software inventory, vulnerability data, and TruRisk scores for AI-related images and…"
+        },
+        {
+          "heading": "New Compliance and Framework Filters",
+          "summary": "TheModel Detectionstab includes two new filters in theQuick Filterslist -MITRE ATTACK TechniqueandEU AI Article. These filters help align your security findings with global regulatory and compliance frameworks."
+        },
+        {
+          "heading": "QQL Token Changes in the Scans Tab",
+          "summary": "With the introduction of MCP server support, QQL tokens in theScanstab are updated from model-specific tokens to asset tokens to cover both models and MCP servers."
+        },
+        {
+          "heading": "Enhanced Detection Capability with New Attack Methods",
+          "summary": "TotalAI detection coverage is expanded by incorporating new attack methods, jailbreak and hallucination attacks into the model scanning process, increasing the range of vulnerabilities that can be identified during a scan."
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following notable and notable customer issue is fixed in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-30T13:00:47.846066+00:00",
+      "status": "success"
+    }
   },
   "a52ef8c6c47f": {
     "key": "a52ef8c6c47f",
@@ -5517,7 +5573,27 @@
       "CAR"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-22T10:31:06+00:00"
+    "detected_at": "2026-05-22T10:31:06+00:00",
+    "details": {
+      "release_date": "May 20, 2026",
+      "features": [
+        {
+          "heading": "Customize Uninstallation Scope for Software Package on Windows",
+          "summary": "You now have granular control over software package uninstallations on Windows systems. You can choose to uninstall a software package for a specific user space or uninstall it from all locations in the system. This provision helps you manage assets…"
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following reported and notable customer issue is fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-30T13:00:47.846066+00:00",
+      "status": "success"
+    }
   },
   "4b5c70ac9956": {
     "key": "4b5c70ac9956",
@@ -5527,7 +5603,35 @@
       "CA"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-06-08T12:13:19+00:00"
+    "detected_at": "2026-06-08T12:13:19+00:00",
+    "details": {
+      "release_date": "May 18, 2026",
+      "features": [
+        {
+          "heading": "Updated Base Image for Compliance",
+          "summary": "We have updated the base image used for Redhat Enterprise Linux CoreOS Cloud Agent to fix the vulnerabilities."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes for this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues or limitations for this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-30T13:00:47.846066+00:00",
+      "status": "success"
+    }
   },
   "390164a9c14b": {
     "key": "390164a9c14b",
@@ -5537,7 +5641,36 @@
       "CA"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-06-08T12:13:19+00:00"
+    "detected_at": "2026-06-08T12:13:19+00:00",
+    "details": {
+      "release_date": "May 04, 2026",
+      "features": [
+        {
+          "heading": "Behavior Change",
+          "summary": "There is no behavior change for this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "No new platform coverage is added in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues or limitations for this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Software Data Collection",
+          "issue": "Fixed an issue where the Deep Scan snapshot could not collect file metadata such as product name, company name, publisher, and other extended file properties in certain cases. The deep-scan binary can now collect all the metadata."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-30T13:00:47.846066+00:00",
+      "status": "success"
+    }
   },
   "8c6b1ac500bd": {
     "key": "8c6b1ac500bd",
