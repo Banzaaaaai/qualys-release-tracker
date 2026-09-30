@@ -23116,5 +23116,333 @@
       "last_attempt_at": "2026-09-25T12:14:58.457528+00:00",
       "status": "success"
     }
+  },
+  "9776b8b0f591": {
+    "key": "9776b8b0f591",
+    "url": "https://docs.qualys.com/en/tas/release-notes/total_app_sec/tas_2_11_was_1_31.htm",
+    "title": "TotalAppSec 2.11 | Web Application Scanning 1.31",
+    "tags": [
+      "TAS",
+      "WAS"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-30T18:52:00+00:00",
+    "details": {
+      "release_date": "September 30 2026This release adds CyberArk Central Credential Provider vault support, automatic redundant link pattern detection, WAS dashboard trending widgets, and expanded PCI and OWASP Top 10 compliance coverage, along with a duplicate-URL check for discovered applications and a set of reporting, scanning, and authentication fixes.",
+      "features": [
+        {
+          "heading": "CyberArk Central Credential Provider Support for Authentication Records",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Duplicate URL Validation for Discovered Applications",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Auto-Apply Detected Redundant Link Patterns",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "PCI Compliance Coverage Improvements",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "OWASP Top 10 (2021) Category Removed from Option Profile",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Discover APIs using Source Code API Connectors",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Trending Widget Support for WAS",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "PPT Format Disabled for Unsupported Reports",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Clear App Data Now Completely Removes Associated Scans and Detections",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Custom Attributes Toggle for Web Applications",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "CSV and XML Report Enhancements for Scorecard Reports",
+          "summary": "What Changed For You"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "API Report Generation",
+          "issue": "We fixed an issue where creating a web application PDF report through the API failed with a module not supported error for accounts with RSV2 enabled. Now, PDF report creation through the API completes successfully for RSV2-enabled accounts."
+        },
+        {
+          "component": "Retesting",
+          "issue": "We fixed an issue where a large number of findings could remain stuck in the Retesting status and never complete. Now, retest scans progress and complete as expected without requiring manual intervention."
+        },
+        {
+          "component": "Scan Cancellation",
+          "issue": "We fixed an issue where a scan with results already available could not be canceled. Now, you can cancel a scan with existing results without encountering an error."
+        },
+        {
+          "component": "Scheduled Report Downloads",
+          "issue": "We fixed an issue where downloaded scheduled report files no longer included the web application name in the file name, causing reports downloaded on the same day to overwrite each other. Now, downloaded report file names include the web application name so multiple reports remain distinguishable."
+        },
+        {
+          "component": "Report Privacy Settings",
+          "issue": "We fixed an issue where user names appeared in a report even when theExclude Usernameoption was selected in the report template. Now, reports generated with the Exclude Username option no longer display user names."
+        },
+        {
+          "component": "Scheduled Report Notifications",
+          "issue": "We fixed an issue where scheduled report notification emails were sent from an unexpected sender address instead of the standard Qualys notification address. Now, scheduled report notifications are sent consistently from the expected sender address."
+        },
+        {
+          "component": "QQL Search: Scheduled Scans",
+          "issue": "We fixed an issue where two similar QQL token queries for scheduled scan status returned inconsistent results, causing some schedules with a completed last scan to be excluded from search results. Now, QQL searches on scheduled scan status return consistent and complete results."
+        },
+        {
+          "component": "Report Schedules",
+          "issue": "We fixed an issue where a report schedule failed to launch, with no clear error, after the search list it depended on was deleted. Now, launching a report schedule with a deleted dependency displays a clear validation error instead of failing silently."
+        },
+        {
+          "component": "Scan List",
+          "issue": "We fixed an issue where theScanslist crashed for certain users when opened. Now, the Scans list loads correctly for all users."
+        },
+        {
+          "component": "API Discovery",
+          "issue": "We fixed an issue where a Swagger file exported directly from TotalAppSec could not be re-imported to onboard the corresponding API for scanning. Now, you can import a Swagger file that was previously exported from TotalAppSec without error."
+        },
+        {
+          "component": "Report Email Delivery",
+          "issue": "We fixed an issue where email notifications for encrypted PDF reports were not delivered due to an email formatting error. Now, encrypted PDF report notifications are delivered as expected."
+        },
+        {
+          "component": "Scan Title Localization",
+          "issue": "We fixed an issue where switching between TotalAppSec and other modules while using a Japanese locale caused the configured scan title format to display garbled characters, which then carried over into new scan titles. Now, the scan title format and resulting scan titles display Japanese characters correctly regardless of module switching."
+        },
+        {
+          "component": "On Demand Scan",
+          "issue": "We fixed an issue where launching an On Demand vulnerability or discovery scan on more than 200 applications at once displayed a blank application list, preventing you from selecting additional applications. Now, you can select and scan more than 200 applications in a single On Demand scan."
+        },
+        {
+          "component": "Authentication Record Permissions",
+          "issue": "We fixed an issue where a user without Tag management permission could still view and create tags from the Authentication Record page. Now, tag access on the Authentication Record page is restricted consistently with your assigned Tag permissions, matching the existing behavior for web applications."
+        },
+        {
+          "component": "TruRisk Score",
+          "issue": "We fixed an issue where the TruRisk score did not display in the WAS data list for some subscriptions because required baseline processing had not run. Now, the TruRisk score displays correctly in the WAS data list."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-30T18:52:00.879540+00:00",
+      "status": "success"
+    }
+  },
+  "458f49fa9da9": {
+    "key": "458f49fa9da9",
+    "url": "https://docs.qualys.com/en/tas/release-notes/total_app_sec/tas_2_11_was_1_31_api.htm",
+    "title": "TotalAppSec 2.11 | Web Application Scanning 1.31 API",
+    "tags": [
+      "API",
+      "TAS",
+      "WAS"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-30T18:52:00+00:00",
+    "details": {
+      "release_date": "September 30, 2026",
+      "features": [
+        {
+          "heading": "New APIs: Vault Connection",
+          "summary": "TotalAppSec now supports CyberArk Central Credential Provider vaults through a new set of Vault Connection APIs. You can create, retrieve, update, delete, search, count, and tag vault connections, and then reference a connection from an…"
+        },
+        {
+          "heading": "New APIs: Knowledge Base",
+          "summary": "The Knowledge Base APIs are now available in the public API. You can look up QIDs, search and count knowledge base entries, change or restore the severity of a QID, activate or ignore a QID, and manage custom signatures programmatically."
+        },
+        {
+          "heading": "New API: Get Retest Status of Findings",
+          "summary": "A new Finding API returns the retest status of one or more findings. After you trigger a retest, use this operation to confirm whether the retest has run, what the retest scan detected, and who requested it, without having to fetch the full finding…"
+        },
+        {
+          "heading": "Enhancements in Authentication Record",
+          "summary": "Vault Connection Details in Authentication Record Responses"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2023-22946",
+        "CVE-2023-48777",
+        "CVE-2024-23897",
+        "CVE-2024-34102",
+        "CVE-2024-37084",
+        "CVE-2024-37902",
+        "CVE-2024-42448",
+        "CVE-2024-45436",
+        "CVE-2024-50379",
+        "CVE-2024-51567",
+        "CVE-2024-52289",
+        "CVE-2025-0851",
+        "CVE-2025-2905",
+        "CVE-2025-30220",
+        "CVE-2025-32756",
+        "CVE-2025-43797",
+        "CVE-2025-49223",
+        "CVE-2025-49535",
+        "CVE-2025-49539",
+        "CVE-2025-49544",
+        "CVE-2025-54253",
+        "CVE-2025-54574",
+        "CVE-2025-58360",
+        "CVE-2025-6000"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-30T18:52:00.879540+00:00",
+      "status": "success"
+    }
+  },
+  "baf934df6e2a": {
+    "key": "baf934df6e2a",
+    "url": "https://docs.qualys.com/en/conn/release-notes/connector/release_2_21.htm",
+    "title": "Connector Release 2.21",
+    "tags": [
+      "Conn"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-30T18:52:00+00:00",
+    "details": {
+      "release_date": "September 30, 2026",
+      "features": [
+        {
+          "heading": "Default Capability Selection Updated for New Connectors",
+          "summary": ""
+        },
+        {
+          "heading": "Delta Sync Support for Organization Connectors",
+          "summary": ""
+        },
+        {
+          "heading": "AV Connector Limit for Organization Connectors",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-30T18:52:00.879540+00:00",
+      "status": "success"
+    }
+  },
+  "c291bca1f33a": {
+    "key": "c291bca1f33a",
+    "url": "https://docs.qualys.com/en/tc/release-notes/totalcloud/release_2_28.htm",
+    "title": "TotalCloud Release 2.28",
+    "tags": [
+      "TC"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-30T18:52:00+00:00",
+    "details": {
+      "release_date": "September 30, 2026",
+      "features": [
+        {
+          "heading": "Dynamic Tagging across Inventory and Posture",
+          "summary": ""
+        },
+        {
+          "heading": "Streamline Your CSPM Reports with Custom Column Selection",
+          "summary": ""
+        },
+        {
+          "heading": "Interactive Visual Charts for Instant Posture Health Visibility",
+          "summary": ""
+        },
+        {
+          "heading": "Extended Inventory Coverage",
+          "summary": ""
+        },
+        {
+          "heading": "Extended CIS Benchmark Coverage",
+          "summary": ""
+        },
+        {
+          "heading": "Control Updates",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "CV - False Positive",
+          "issue": "CID-50382 and CID-50384 are based on Azure Database for PostgreSQL - Single Server, which Microsoft has now deprecated, leading some customers to question why these controls are still active. Both controls continue to evaluate any existing PostgreSQL Single Server resources still running in an environment, so we are not deprecating them currently. To cover the replacement service, we have also added four new controls for PostgreSQL Flexible Server and MySQL Flexible Server activity log alerts."
+        },
+        {
+          "component": "TotalCloud - Connectors",
+          "issue": "The AWS connector was missing the apigateway:GET permission for :aws:apigateway:*::/domainnames/*, which could prevent API Gateway custom domain name resources from being evaluated correctly. Corrected the connector's permission set to include this permission."
+        },
+        {
+          "component": "TotalCloud - UI",
+          "issue": "GCP Cloud SQL instance controls have been showing inconsistent evidences in reports/UI, it was due to evidence data was missing during evaluation. Fixed that by adding all mandatory evidences providing consistency, so all Cloud SQL instance controls now capture and report evidence consistently."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-30T18:52:00.879540+00:00",
+      "status": "success"
+    }
+  },
+  "769d9bbc8b34": {
+    "key": "769d9bbc8b34",
+    "url": "https://docs.qualys.com/en/tc/release-notes/totalcloud/release_2_28_api.htm",
+    "title": "TotalCloud Release 2.28 API",
+    "tags": [
+      "API",
+      "TC"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-30T18:52:00+00:00",
+    "details": {
+      "release_date": "September 30, 2026",
+      "features": [
+        {
+          "heading": "Get Flagged TruRisk Insights (List API)",
+          "summary": ""
+        },
+        {
+          "heading": "Get Resources for a Flagged TruRisk Insight (Resource API)",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-09-30T18:52:00.879540+00:00",
+      "status": "success"
+    }
+  },
+  "766777046f17": {
+    "key": "766777046f17",
+    "url": "https://docs.qualys.com/en/qscanner/release-notes/qscanner/release_5_2_0.htm",
+    "title": "QScanner 5.2",
+    "tags": [
+      "CS",
+      "QS"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-09-30T18:52:00+00:00"
   }
 }
