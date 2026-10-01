@@ -5886,7 +5886,51 @@
       "ID"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 08, 2026",
+      "features": [
+        {
+          "heading": "Support for New Connectors",
+          "summary": "We are expanding our connector ecosystem with three new integrations."
+        },
+        {
+          "heading": "Active Directory",
+          "summary": "The Microsoft Active Directory Connector automatically pulls user and group identity data from on-premises Active Directory systems into Qualys Enterprise TruRisk Management, eliminating manual identity asset tracking and enabling centralized…"
+        },
+        {
+          "heading": "Microsoft Entra ID",
+          "summary": "The Microsoft Entra ID Connector integrates identity data from Microsoft's cloud directory into Qualys ETM Identity, enabling security teams to maintain a centralized inventory of users, groups, and roles across their organization. Synchronize…"
+        },
+        {
+          "heading": "Okta",
+          "summary": "The Okta Connector integrates identity data from Okta's Universal Directory into Qualys Enterprise TruRisk Management, enabling security teams to maintain a centralized inventory of users and groups. Synchronize identity assets into the Unified…"
+        },
+        {
+          "heading": "Integration with Unified Asset Inventory (UAI)",
+          "summary": "We have integrated Unified Asset Inventory (UAI) with ETM Identity. With help of UAI, the Identity Assets capability provides a centralized view of identities across your environment, including users, groups, and roles. This integration helps…"
+        },
+        {
+          "heading": "Integration with ETM for Unified Misconfiguration Experience",
+          "summary": "ETM Identity now integrates with ETM application, providing a unified platform for managing misconfigurations. Identity and infrastructure findings are now consolidated into one streamlined interface as theMisconfigurationstab."
+        },
+        {
+          "heading": "CSV Download Capability for Identity Tab Listing",
+          "summary": "We introduced the capability to download data as a CSV file directly from the Identity tab. This feature is now available across all three tabs:User,Group,andRole."
+        },
+        {
+          "heading": "TruRisk™ Score Widget in the Default Dashboard",
+          "summary": "We have introduced theTruRisk of AD Assetswidget in the default dashboard. This update provides visibility into Active Directory (AD) asset risk without requiring manual addition or configuration of the widget. You can edit the widget name after…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-01T19:19:04.178515+00:00",
+      "status": "success"
+    }
   },
   "575106a01b90": {
     "key": "575106a01b90",
@@ -5897,7 +5941,76 @@
       "GAV"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 11, 2026",
+      "features": [
+        {
+          "heading": "Smart Software Component Mapping for Software Component Visibility",
+          "summary": "You can now view accurate mapping of software components to their parent applications in CSAM to help you better understand software composition. To support this, we have introducedSmart Software Atlas Mappingpowered by the advanced vector-based…"
+        },
+        {
+          "heading": "Access Asset Identification Rules from the Rules Tab",
+          "summary": "You can now accessAsset Identificationrules from theRulestab in CSAM, centralizing all rules-related configurations in one location. This helps you to find and manage rules without switching between tabs."
+        },
+        {
+          "heading": "New QQL Tokens",
+          "summary": "We have introduced the following new finding tokens on theEASM > Vulnerabilitiestab to align with the QQL Token Standardization introduced inCSAM/GAV Release 3.7.0.0"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "CSAM - Database",
+          "issue": "We fixed an issue where the incorrect database instance count was displayed on theCSAM > Database > Database Serverstab.Now, the database instance count is displayed correctly."
+        },
+        {
+          "component": "CSAM - Software Details Report",
+          "issue": "We fixed an issue where selecting all columns to create aSoftware Detailsreport did not display all columns after saving the report.All columns are now properly displayed after saving the report."
+        },
+        {
+          "component": "CSAM - Activity Logs",
+          "issue": "We fixed an issue where purging assets on demand logged a misleading entry in theActivity Logtab in theAdministrationapplication, indicating that a purge rule was deleted without providing any asset-specific details.TheActivity Logtab now reflects the correct details for the purged asset."
+        },
+        {
+          "component": "GAV - Asset Identification Rules",
+          "issue": "We fixed an issue where theAsset Identification Rulestab displays an incorrect rule count.TheAsset Identification Rulestab now displays the correct number of rules for a GAV user."
+        },
+        {
+          "component": "CSAM+GAV - Asset Data",
+          "issue": "We fixed an issue where theLast Seen Datewas incorrectly updated for your assets. This caused stale assets to appear as active.The system now correctly updates theLast Seen Date."
+        },
+        {
+          "component": "CSAM - Installed Software",
+          "issue": "We fixed an issue where software rules incorrectly detected assets not having specific software installed, even when it was present.The system now accurately detects installed software called Zabbix, and this is correctly reflected in the software rule."
+        },
+        {
+          "component": "CSAM+GAV - Operating System Version",
+          "issue": "We fixed an issue where the operating system version did not display for Cisco devices, even when SNMP authentication was successful.The system now correctly retrieves and shows the operating system version for such devices."
+        },
+        {
+          "component": "CSAM+GAV - Reporting",
+          "issue": "We fixed an issue where the date displayed on theLast Synced Date for Agentcolumn in CSAM reports did not align with theLast Checked-Indate in the Cloud Agent report. This discrepancy caused some inactive or stale assets to appear as recently synced in CSAM.TheLast Synced Date for Agentcolumn now displays the correct date."
+        },
+        {
+          "component": "CSAM+GAV - Dashboard",
+          "issue": "We fixed an issue where the TruRisk™ value appeared as “-” for all assets in some dashboard widgets.These widgets now display the TruRisk™ value for all applicable assets."
+        },
+        {
+          "component": "CSAM+GAV - Software Installation Path",
+          "issue": "We fixed an issue where the installation path for Mozilla Firefox was displayed incorrectly in theInstalled Softwaresection of theAsset Detailspage.The installation path is now correctly displayed."
+        },
+        {
+          "component": "CSAM+GAV - Software Rule",
+          "issue": "We fixed an issue whereSoftware Rulesincorrectly classified authorized software as unauthorized.TheSoftware Rulenow accurately categorizes software based on the defined rules."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-01T19:19:04.178515+00:00",
+      "status": "success"
+    }
   },
   "647f18f11eb2": {
     "key": "647f18f11eb2",
@@ -5907,7 +6020,39 @@
       "CS"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-27T11:02:57+00:00"
+    "detected_at": "2026-05-27T11:02:57+00:00",
+    "details": {
+      "release_date": "May 13, 2026 (Updated on June 01, 2026)",
+      "features": [
+        {
+          "heading": "Support Scanning of Multi-architecture Images using Registry Sensor",
+          "summary": "Multi-architecture (multi-arch) images are container images that support multiple CPU architectures (For example, x86_64, ARM64, and so on), allowing a single image reference to work across different hardware platforms. You can scan…"
+        },
+        {
+          "heading": "Enhancement in CIS Docker Compliance Scan for Images",
+          "summary": "The CIS Docker Benchmark defines security best practices to help secure Docker containers and their runtime environments against common threats and misconfigurations."
+        },
+        {
+          "heading": "Support of Container Static Scanning",
+          "summary": "Earlier, CS Sensor used to support only Dynamic scan for containers. With this release, it offers Static Scan for the containers as well."
+        },
+        {
+          "heading": "CS Sensor Containerd YamlUpdates",
+          "summary": "The Qualys Container Security package consists of the 'cssensor-containerd-ds.yml' file, which deploys the sensor in an environment with Containerd runtime.This section explains the updates in the latestcssensor-containerd-ds.ymlfile. Refer toQCS…"
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following issue has been fixed with this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-01T19:19:04.178515+00:00",
+      "status": "success"
+    }
   },
   "c95970e8275c": {
     "key": "c95970e8275c",
@@ -5917,7 +6062,39 @@
       "CS"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-27T11:02:57+00:00"
+    "detected_at": "2026-05-27T11:02:57+00:00",
+    "details": {
+      "release_date": "May 13, 2026 (Updated on July 02, 2026)",
+      "features": [
+        {
+          "heading": "Rules to Enforce Image Compliance",
+          "summary": "Qualys Container Security now enables you to block or limit non‑compliant container images based on defined compliance controls and vulnerability criticality. To support this, Qualys has introduced the following two rule sub-types."
+        },
+        {
+          "heading": "Automated Sensor Profile Assignment for Cluster and Runtime Sensors",
+          "summary": "Earlier, tag‑based sensor profile assignment was supported only for General and CI/CD sensors. With this release, Qualys Container Security extends this capability to Cluster and Runtime sensors, enabling automated and consistent sensor profile…"
+        },
+        {
+          "heading": "Software End Of Life (EOL) Report Template",
+          "summary": "Previously, Qualys Container Security supported End Of Life (EOL) and End Of Support (EOS) software details within container images. With this release, these details are available in a new report template:Image Softwares. With this new template, you…"
+        },
+        {
+          "heading": "Exclude Repository from Automatic Registry Scans",
+          "summary": "Qualys Container Security now allows you to exclude specific repositories from a registry’s automatic scan. This enhancement gives you greater control over what gets scanned when an automatic scan schedule runs."
+        },
+        {
+          "heading": "Development Environment Scanning with QScanner",
+          "summary": "Qualys Container Security now introduces OAuth-based authentication for QScanner in development environments, enabling developers to securely scan container images without impacting production data.This enhancement helps development teams validate…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-01T19:19:04.178515+00:00",
+      "status": "success"
+    }
   },
   "9c243f6cc7d0": {
     "key": "9c243f6cc7d0",
@@ -5928,7 +6105,55 @@
       "CS"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-27T11:02:57+00:00"
+    "detected_at": "2026-05-27T11:02:57+00:00",
+    "details": {
+      "release_date": "May 13, 2026",
+      "features": [
+        {
+          "heading": "Compliance Posture for an Image",
+          "summary": "Qualys Container Securitynow supportsimage-compliance scanning. It allows you to evaluate and report compliance during image scans. This capability strengthens control over the container compliance posture and simplifies compliance validation within…"
+        },
+        {
+          "heading": "Vulnerability Details for an Image",
+          "summary": "Qualys Container Securitynow supportsAI QIDs, which help to get more vulnerability counts associated with AI packages or files. To support this, thefollowing API includes updated vulnerability details for an image."
+        },
+        {
+          "heading": "Enhancement in Asset Tagging",
+          "summary": "Qualys Container Security now supports two new fields:entityShaandtagNameto the assign tag API. TheentityShafield helps you identify the target image or container when the entity UUID is not provided. ThetagName specifies the tag to assign, and…"
+        },
+        {
+          "heading": "Enhancement in Policy Rule Compliance",
+          "summary": "We have enhanced the policy rule compliance for Centralized Policy (CICD) and the Kubernetes (K8S) admission controller policy."
+        },
+        {
+          "heading": "Introduced New Report Template - Image Softwares",
+          "summary": "With this release, Qualys Container Security has introduced the new Image Softwares report template (CS_IMAGE_SOFTWARE_DETAILS). You can use this template to fetch the list of reports, create a report request and a report schedule, and update the…"
+        },
+        {
+          "heading": "Improvement in Dynamic Tags",
+          "summary": "Previously, the dynamic tags could be created by using Container Security APIs. You can now use the following APIs to update or delete these tags."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2026-22184",
+        "CVE-2026-2673",
+        "CVE-2026-27171",
+        "CVE-2026-28387",
+        "CVE-2026-28388",
+        "CVE-2026-28389",
+        "CVE-2026-28390",
+        "CVE-2026-31789",
+        "CVE-2026-31790",
+        "CVE-2026-40200",
+        "CVE-2026-6042"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-01T19:19:04.178515+00:00",
+      "status": "success"
+    }
   },
   "3c0c25e501ff": {
     "key": "3c0c25e501ff",
