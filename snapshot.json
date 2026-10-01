@@ -5680,7 +5680,35 @@
       "UD"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 18, 2026",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "UD - VMDR",
+          "issue": "We fixed an issue where widgets imported asSummary widgetsthat were converted toRegular widgetscould not be resized inEdit Layoutmode in theDashboard>Settingsmenu. Additionally, inconsistent widget sizing during import, copy, or conversion caused widgets to expand beyond supported layout limits, leading to excessive width and horizontal scrolling.Now, the dashboard displays widgets in proper dimensions and can be resized correctly after conversion."
+        },
+        {
+          "component": "UD",
+          "issue": "We fixed an issue where the system displayed a \"Software Composition Analysis (SwCA) license limit reached\"error when accessing theConfigurationtab in CAUI, even though the number of SwCA‑activated assets was within the licensed limit. Default system settings overrode the defined SwCA license values, which caused the issue.The system now gives precedence to defined SwCA license limits. The CAUI and related APIs now reflect the correct SwCA license count."
+        },
+        {
+          "component": "UD",
+          "issue": "We fixed an issue where thescheduled PDF dashboard reports did not include the IP Addresscolumn, even though the column was configured and visible in the correspondingSimple Listwidget. This issue led to incomplete host information in scheduled reports.The scheduled dashboard reports now correctly include theIP Addresscolumn as configured in the widget."
+        },
+        {
+          "component": "UD - PA",
+          "issue": "We fixed an issue where posture data was not displayed when navigating from anAsset Compliance Score widgetto thePosturetab. The widget rendered correctly on the dashboard, but thePosturepage showed no data after clicking on theAsset Compliance Scorewidget.The posture data is now displayed correctly for all asset compliance score ranges when navigating from dashboard widgets."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-01T13:54:26.140699+00:00",
+      "status": "success"
+    }
   },
   "bd2ba52d8a0d": {
     "key": "bd2ba52d8a0d",
@@ -5691,7 +5719,88 @@
       "WAS"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-27T11:02:57+00:00"
+    "detected_at": "2026-05-27T11:02:57+00:00",
+    "details": {
+      "release_date": "May 17, 2026",
+      "features": [
+        {
+          "heading": "Green Window Scheduling for Vulnerability Scans",
+          "summary": "You can schedule vulnerability scans to run progressively within defined hourly time windows - Daily, Weekly, or Monthly. Scans execute only during approved windows and progress across multiple cycles until full application coverage is achieved,…"
+        },
+        {
+          "heading": "Enhancements to Authenticated Scans",
+          "summary": "We are introducing the following enhancements to the authenticated scan workflow"
+        },
+        {
+          "heading": "Scan and Report Schedule Enhancements",
+          "summary": "The following enhancements provide information onnew scheduling capabilities that give you more control over when scans run, how they progress, and how reports are generated and distributed."
+        },
+        {
+          "heading": "Reporting Enhancements",
+          "summary": "This release enhances Web Application, Scan, and Scorecard Reports with richer vulnerability data, improved formatting, and new usability options."
+        },
+        {
+          "heading": "OWASP Top 10 2025 Support",
+          "summary": "Qualys WAS and TotalAppSec now support the OWASP Top 10: 2025 version, which includes updates based on the latest data and security trends. With this release, support for the OWASP Top 10 2021 is discontinued and replaced by the OWASP Top 10 2025…"
+        },
+        {
+          "heading": "View Authentication Scan Network Activity with HAR Capture",
+          "summary": "TotalAppSec now captures an HTTP Archive (HAR) file during authentication when you perform Selenium-based Test Authentication scans. The HAR data is included in the Selenium diagnostic output underQID 150100. The captured data includes request URLs…"
+        },
+        {
+          "heading": "Access Request and Response Payloads in Detection History",
+          "summary": "You can now view request and response payloads in theDetection Details>History & Commentspage for current and historical detection records. When payload data is not available, thePayloadscolumn displays the-indicator."
+        },
+        {
+          "heading": "Enhanced Dynamic Search List",
+          "summary": "You can now build search criteria in dynamic search lists using QQL (Qualys Query Language) tokens. This gives you more granular control over search conditions and helps you create a precise, customized dynamic search list."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "WAS",
+          "issue": "New subscription provisioning"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "QQL Token"
+        },
+        {
+          "component": "TAS",
+          "issue": "MuleSoft API Discovery Connectors"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Detections"
+        },
+        {
+          "component": "WAS",
+          "issue": "Report creation API"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scans"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Detection details"
+        },
+        {
+          "component": "TAS",
+          "issue": "Google Apigee API Discovery Connectors"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Reports"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-01T13:54:26.140699+00:00",
+      "status": "success"
+    }
   },
   "6f54354019e3": {
     "key": "6f54354019e3",
@@ -5701,7 +5810,35 @@
       "CA"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 11, 2026",
+      "features": [
+        {
+          "heading": "Updated Base Image for Compliance",
+          "summary": "With this release, we have updated the base image used for the Google Cloud Platform Container-Optimized OS (GCP-COS) Cloud Agent to fix the vulnerabilities."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-01T13:54:26.140699+00:00",
+      "status": "success"
+    }
   },
   "931e05baae60": {
     "key": "931e05baae60",
@@ -5711,7 +5848,35 @@
       "CA"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 11, 2026",
+      "features": [
+        {
+          "heading": "Updated Base Image for Compliance",
+          "summary": "We have updated the base image used for AWS Bottlerocket Cloud Agent to fix the vulnerabilities."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-01T13:54:26.140699+00:00",
+      "status": "success"
+    }
   },
   "dcd7af20baf9": {
     "key": "dcd7af20baf9",
@@ -23444,5 +23609,35 @@
     ],
     "month_label": "September 2026",
     "detected_at": "2026-09-30T18:52:00+00:00"
+  },
+  "0904a1375a75": {
+    "key": "0904a1375a75",
+    "url": "https://docs.qualys.com/en/etm-identity/release-notes/etm_identity/release_1_5.htm",
+    "title": "ETM Identity Release 1.5",
+    "tags": [
+      "ID"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-10-01T13:54:26+00:00",
+    "details": {
+      "release_date": "September 28, 2026",
+      "features": [
+        {
+          "heading": "Evaluate Identity Exposure withBlast Radius",
+          "summary": "Understand the potential impact of a compromised identity with the newBlast Radiuscapability.UnlikeAttack Path Analysis, which shows how an attackercan reach a target, Blast Radius reveals what an attackercan access after compromising a specific…"
+        },
+        {
+          "heading": "Accelerate Attack PathRemediationwith AISummary",
+          "summary": "Quickly understand how to remediate attack paths with AI-generated remediation summaries. Building on theAI Overviewcapabilityintroduced in ETM Identity 1.4.0, this enhancement provides a more efficient and actionable investigation experience."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-01T13:54:26.140699+00:00",
+      "status": "success"
+    }
   }
 }
