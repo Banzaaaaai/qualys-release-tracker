@@ -6503,7 +6503,76 @@
       "PM"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 04, 2026",
+      "features": [
+        {
+          "heading": "Rule-Based Automated Asset Isolation",
+          "summary": "Automate asset isolation efficiently using the rule-based triggers in Vulnerability Management and Detection Response (VMDR). This functionality helps you to reduce manual effort, define the condition once, and instantly isolate at-risk assets,…"
+        },
+        {
+          "heading": "Acquired From Vendor Patch Support",
+          "summary": "The vendor-acquired patches are now available on theVMDR>Vulnerabilitiestab and you can now directly create a Remediation job including these patches from VMDR. Both enabled and non-enabled vendor-acquired patches are visible, allowing you to view…"
+        },
+        {
+          "heading": "Support for Linux ARM Architecture Rollback Patching",
+          "summary": "You can now perform patch rollbacks for Linux ARM architecture assets. To include the Linux ARM patches in a rollback job, in theCreate Linux Rollback Jobworkflow, go to theSelect Patchestab, use the QQL tokenpatch.architecture: aarch64to filter the…"
+        },
+        {
+          "heading": "Patching Support for Mac 26 on M5 Architecture",
+          "summary": "You can now patch Mac 26 assets running on M5 architecture. You can filter these patches on thePatcheslisting page, using the QQL tokenpatch.supportedOs: `macOS 26 Tahoe`and patch.architecture: arm64`."
+        },
+        {
+          "heading": "New QQL Tokens",
+          "summary": "Refer to the following table to learn more about the new token in this release."
+        },
+        {
+          "heading": "Updated Tokens",
+          "summary": "Refer to the following table to learn more about the updated tokens in this release."
+        },
+        {
+          "heading": "API Release Updates",
+          "summary": "For more details on the API updates for this release, seePatch Management API Release 3.14."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PM - Job Linux",
+          "issue": "An issue occurred in which, although email notifications were set in the Linux deployment job, the emails forExecution StartedandExecution Completednotification were not received.This issue is now fixed, and notification emails are received successfully."
+        },
+        {
+          "component": "PM - Job Windows",
+          "issue": "An issue occurred where if a deployment job is scheduled at a particular time that fell under the Daylight Saving Time (DST) transition gap, the job was stuck in the Prepared state.This issue is now resolved, and the job runs at the scheduled time without getting stuck."
+        },
+        {
+          "component": "PM - Job Windows",
+          "issue": "An issue occurred when the acquired vendor patches from theVMDR>Vulnerabilitiestab were used to create a remediation job, an error occurred while saving the job, and job creation failed.This issue is now resolved, and we support creating remediation jobs for Vendor Acquired patches from theVMDR>Vulnerabilitiestab."
+        },
+        {
+          "component": "PM - Linux_Content",
+          "issue": "An issue occurred in which the patch published date for Linux patches was shown incorrectly on thePatch>ViewDetailspage. This issue is now fixed and the published date is correctly displayed."
+        },
+        {
+          "component": "PM - Job Windows",
+          "issue": "An issue was observed in which the Windows default deployment job did not trigger for the newly added asset. This issue is now resolved, and the default job runs on the newly added asset."
+        },
+        {
+          "component": "PM - Assets",
+          "issue": "An issue was observed where the missing patches were not displayed on theVMDR> Vulnerabilities>  Actions > View Missing Patches. This issue is now fixed and all the missing patches are displayed."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "An issue occurred in which the failed deployment job actions, the pre and post-actions results were not displayed in theJobResultsreport. This issue is now fixed, and the job action results are displayed in the report."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-02T19:02:14.013681+00:00",
+      "status": "success"
+    }
   },
   "b516814b9096": {
     "key": "b516814b9096",
@@ -6513,7 +6582,27 @@
       "Conn"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 29, 2026",
+      "features": [
+        {
+          "heading": "New Icons for FlexScan Techniques in Connector Listing",
+          "summary": "This release introduces a new icon-based display for FlexScan techniques on the connector listing page and the configure FlexScan menu. Each enabled FlexScan capability now appears as a compact icon, making scan capabilities easier to identify and…"
+        },
+        {
+          "heading": "Improved Inventory Count Behavior for AV-only Connectors",
+          "summary": "Inventory counts for AssetView (AV) connectors are no longer clickable. AV-only connectors do not support Inventory views, so the count shows only theasset total. For CSPM connectors, you can still click the inventory count to open the TotalCloud…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-02T19:02:14.013681+00:00",
+      "status": "success"
+    }
   },
   "9ebad5d29af1": {
     "key": "9ebad5d29af1",
@@ -6525,7 +6614,27 @@
       "PM"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 04, 2026",
+      "features": [
+        {
+          "heading": "Acquired From Vendor Patch Support",
+          "summary": "We have enhanced this API, to fetch the list of acquired from vendor patches. The enhanced API includes a new parameterisCustomizedDownloadUrlin the API response. If the patch for the specified QID is in the enabled state, this parameter value is…"
+        },
+        {
+          "heading": "Isolate and Unisolate an Asset",
+          "summary": "We have introduced a new Isolate and Unisolate Assets API as part of automatic rule-based isolation. These APIs help you to isolate or unisolate the assets in bulk using tags or individual assets using asset IDs. You must have the Isolation Manager…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-02T19:02:14.013681+00:00",
+      "status": "success"
+    }
   },
   "fe3e3515d15f": {
     "key": "fe3e3515d15f",
@@ -6535,7 +6644,84 @@
       "TC"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 29, 2026",
+      "features": [
+        {
+          "heading": "FedRAMP High Support for TotalCloud and CDR",
+          "summary": ""
+        },
+        {
+          "heading": "Extended TruRisk™ Insights Coverage for Microsoft Azure",
+          "summary": ""
+        },
+        {
+          "heading": "Expanded Cloud Tag Support for AWS Cloud Inventory",
+          "summary": ""
+        },
+        {
+          "heading": "Default Cloud Provider Preferences Across UI",
+          "summary": ""
+        },
+        {
+          "heading": "Manage/Create Exceptions in Oracle Cloud Infrastructure (OCI)",
+          "summary": ""
+        },
+        {
+          "heading": "AWS Connector Permissions Validation and Visibility",
+          "summary": ""
+        },
+        {
+          "heading": "Enhanced Visibility for Azure Virtual Machine Scale Sets",
+          "summary": ""
+        },
+        {
+          "heading": "Enhanced AWS WorkSpaces Inventory",
+          "summary": ""
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "The following section describes the new tokens introduced as part of TotalCloud 2.24.0"
+        },
+        {
+          "heading": "Control Updates",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Controls",
+          "issue": "CID 24: Ensure S3 bucket access logging is enabled on the CloudTrail S3 bucketThe control logic is updated to skip evaluations for org cloudtrails created in a different account than the one used to create the connector."
+        },
+        {
+          "component": "TotalCloud-UI",
+          "issue": "We fixed an issue in which the tag.name and tags.name QQL filters caused discrepancies in subscription data and inconsistent Posture results."
+        },
+        {
+          "component": "CV-Reports",
+          "issue": "We fixed the issue where removing a connector from an existing or newly created on‑screen report unexpectedly removed all connectors from the connectors list is now resolved."
+        },
+        {
+          "component": "CV-Monitor",
+          "issue": "We fixed the issue that led to inconsistent AWS Control evaluations, in which the AWS account ID intermittently failed to appear in the Posture tab."
+        },
+        {
+          "component": "AV-GCP",
+          "issue": "We fixed the issue where asset tags from the GCP Org Connector were not correctly applied to associated assets."
+        },
+        {
+          "component": "CV-GCP Connector",
+          "issue": "We fixed the issue where the GCP Org Connector failed and recurring Cloud Perimeter Scan job creation was blocked due to start date validation errors. Date selection now works correctly across all available years."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-02T19:02:14.013681+00:00",
+      "status": "success"
+    }
   },
   "1b2009950848": {
     "key": "1b2009950848",
@@ -6546,7 +6732,31 @@
       "TC"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 29, 2026",
+      "features": [
+        {
+          "heading": "New Inventory support for Get Resources API",
+          "summary": ""
+        },
+        {
+          "heading": "Cloud Tags Support for all AWS Inventory & Evaluation APIs",
+          "summary": ""
+        },
+        {
+          "heading": "Updated Get all evaluated resources across accounts and controls",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-02T19:02:14.013681+00:00",
+      "status": "success"
+    }
   },
   "7f1ecf1706d0": {
     "key": "7f1ecf1706d0",
