@@ -6163,7 +6163,48 @@
       "VMDR"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 13, 2026",
+      "features": [
+        {
+          "heading": "Platform Level TruRisk™ v2 Formula",
+          "summary": "This release provides the Platform Level TruRisk™ v2 formula and calculations in the VMDR module. To enable the v2 formula for TruRisk™ Score, ensure that all dependent applications, such as Enterprise TruRisk Platform 3.24.0.0 and VMDR 2.10.0, are…"
+        },
+        {
+          "heading": "CVSS V4 Base Score Support for Vulnerability Analysis",
+          "summary": "This release adds support for the CVSS V4 Base Score in VMDR in addition to the existing CVSS Base Score values. This update helps you group, investigate, and export vulnerability data using the latest CVSS scoring standard. You can view the CVSS V4…"
+        },
+        {
+          "heading": "Rule‑based Asset Isolation Using TruRisk Eliminate",
+          "summary": "We have added theIsolate Asset with TruRisk Eliminateoption to isolate risky assets while creating a new action. Using this option, you can now detect, notify, and automatically isolate assets using a rule-based workflow powered by Custom Assessment…"
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "The following new tokens are added to theVulnerabilityandPrioritizationtabs"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Vulnerabilities Page",
+          "issue": "We fixed an issue where theNamecolumn on theAssettab did not display any names after switching from theVulnerabilitytab in theVMDRmodule >Vulnerabilities>Vulnerability>Asset. Only after refreshing the page, theNamecolumn displayed the assets' names correctly.You can now view assets' names correctly in theNamecolumn when you switch between theVulnerabilityandAssettabs."
+        },
+        {
+          "component": "Vulnerabilities Page",
+          "issue": "We fixed an issue where theDetectedFirstandDetectedLastcolumns did not display any data in the downloaded report when theGroup by:Vulnerabilityoption was selected. The issue occurred during the report download from theVMDRmodule >Vulnerabilities>Group by:  Vulnerability> Download () >Download Detailed Report>Download.Now, when you select theGroup by: Vulnerabilityoption and download the detailed report, theDetectedFirstandDetectedLastcolumns display the data correctly."
+        },
+        {
+          "component": "Vulnerabilities Page",
+          "issue": "We fixed an issue where the table on theAssettab did not display any data after switching between theVulnerabilityandAssettabs. For example, when you accessthe VMDR module > Vulnerabilities > Vulnerability > Asset, the data does not appear in the table on theAssettab.Now, when you switch between theVulnerabilityandAssettabs, the data loads completely, and the table on theAssettab displays data correctly."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-02T13:11:28.892329+00:00",
+      "status": "success"
+    }
   },
   "ef3678166fbb": {
     "key": "ef3678166fbb",
@@ -6174,7 +6215,44 @@
       "PA"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-06-10T11:07:11+00:00"
+    "detected_at": "2026-06-10T11:07:11+00:00",
+    "details": {
+      "release_date": "May 11, 2026",
+      "features": [
+        {
+          "heading": "Get Policy List API: View Tag Information for Policy",
+          "summary": "With this release, a new input parameter,requireTagInfo, is introduced to display tag information for a policy. When enabled, the response includes the following sections underrequireTagInfo"
+        },
+        {
+          "heading": "Added Active Directory Support to VMware NSX Authentication",
+          "summary": "You can now use Active Directory (AD) support with HashiCorp Vault when you create, update, list, and delete VMware NSX authentication records, This enables you to securely retrieve AD credentials from Vault."
+        },
+        {
+          "heading": "Scans API: Support for Google Cloud Platform Instance-Based Scans for IPv4",
+          "summary": "We have now provided support to Google Cloud Platform instance based scans. You can now create and update internal scans for Assets in GCP Cloud. Earlier, GCP supported only perimeter scans, while AWS EC2 and Azure supported both internal and…"
+        },
+        {
+          "heading": "Revised EOS and EOL dates for Posture Streaming APIs",
+          "summary": "With this release, we have revised the End of Support (EOS) and End of Life (EOL) dates for the following APIs"
+        },
+        {
+          "heading": "Extended EOL Timelines for API Endpoints",
+          "summary": "With this release, we have extended the End of Life (EOL) dates from June 2026 to December 2026 for the following list of APIs."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PA - PCRS API",
+          "issue": "When the user retrieved posture data for policies through the Get Posture Info API (pcrs/4.0/posture/postureInfo/), stale assets that were no longer associated with the policy were included in the results. This led to inaccurate reporting and outdated policy associations. Relevant code changes have been made to resolve this issue."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-02T13:11:28.892329+00:00",
+      "status": "success"
+    }
   },
   "6cf2e5c26aad": {
     "key": "6cf2e5c26aad",
@@ -6186,7 +6264,40 @@
       "VM"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 11, 2026",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "Cloud Internal Scan now supports Google Cloud Platform instance based scans. You can now create and update internal scans for Assets in GCP Cloud. Earlier, GCP supported only perimeter scans, while AWS EC2 and Azure supported both internal and…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Auth API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Host List Detection API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "Integrations - Splunk",
+          "issue": "Vulnerability Management"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-02T13:11:28.892329+00:00",
+      "status": "success"
+    }
   },
   "30594463121f": {
     "key": "30594463121f",
@@ -6197,7 +6308,84 @@
       "VM"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 11, 2026",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "Cloud Internal Scan support is now available for Google Cloud Platform (GCP). This enhancement allows you to perform authenticated scans on private IP addresses of GCP cloud instances and provides deeper visibility into internal assets, along with…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - ML",
+          "issue": "When users performed VM scans using SNMPv3 authentication on certain network devices, scans failed even though the same credentials worked with external SNMP verification tools. The issue has been fixed so that supported encryption options are handled consistently during authentication. As a result, SNMPv3 scans now work as expected when valid credentials and encryption settings are used."
+        },
+        {
+          "component": "VM - Knowledge Base",
+          "issue": "When users selected a QID, the preview page displayed the KnowledgeBase section data shifted one row above the expected fields. As a result, subsequent fields appeared in incorrect rows, causing misalignment in the displayed information. This issue has been resolved, and all KnowledgeBase fields are now displayed in their correct rows."
+        },
+        {
+          "component": "VM - Knowledge Base",
+          "issue": "When users accessed the KnowledgeBase API, they experienced intermittent delays or received corrupted XML responses, which impacted integrations and data processing workflows. This issue has been resolved to ensure the API consistently returns valid, well‑formed responses and operates reliably across requests. As a result, customers can now retrieve KnowledgeBase data without interruptions or data integrity issues."
+        },
+        {
+          "component": "VM - Auth API",
+          "issue": "When users attempted to create multiple Windows domain authentication records using the API with the same domain but different networks, the request failed with an 'already exists' error, even though this configuration is valid and worked when performed through the UI. This issue has been resolved so that domain authentication records can now be created and updated correctly across different networks using the API, while existing validation behavior remains unchanged for same‑network or non‑network‑supported scenarios."
+        },
+        {
+          "component": "VM - Authentication Records",
+          "issue": "When users configure VMware ESXi authentication records to use vCenter authentication, the ESXi records incorrectly appear under theUnusedtab (Scans > Authentication > Unused). This occurred even when the associated IPs were successfully authenticated through the parent vCenter record, and the Auth ESXi Vcenter status indicated successful authentication. This issue has been resolved, and the VMware ESXi authentication records now appear correctly in theAlltab."
+        },
+        {
+          "component": "VM - Assets",
+          "issue": "When users added or edited entries in the Excluded host section, commas were unexpectedly inserted into the Comments section, even though the user did not enter them. This issue has been resolved so that no additional characters are added when comments are added for the addition or removal of IPs from the Excluded host section."
+        },
+        {
+          "component": "VM - Assets",
+          "issue": "When users edited an existing domain or created a new domain with a large number of associated IP addresses, the UI became unresponsive and did not display all domain details on the UI like approved hosts section. This issue was caused by a UI display limitation that prevented all content from being visible when managing large IP sets. The UI has been updated so that all associated IPs and the Approved Hosts controls are now fully visible and accessible, allowing users to correctly review, add, or remove IPs as expected."
+        },
+        {
+          "component": "VM - Assets",
+          "issue": "When users reviewed the User Activity Log under VMDR, the log incorrectly showed that a user had invoked a CSAM‑related API, even though the user had not made any API calls and was only authorized for GUI access. This issue occurred because certain internal system‑initiated requests were being logged as user actions. The behavior has been corrected so that internally triggered infrastructure calls are no longer recorded as user‑initiated activity, ensuring the User Activity Log accurately reflects genuine user actions only."
+        },
+        {
+          "component": "VM - Assets",
+          "issue": "When users viewed excluded host details (Scans > Setup > Excluded Hosts), a discrepancy was observed between the total count of excluded hosts displayed on theExcluded Hostspage and the count in the downloaded CSV file (View > Existing Excluded Hosts > Download)."
+        },
+        {
+          "component": "VM - Assets",
+          "issue": "When users attempted to edit theBusiness/CVSSinformation for an Asset Group (select an asset group >Quick Actionsmenu>Info > Edit), theBusiness Impactfield dropdown was not functional. This occurred because theViewlink next to theBusiness Impactfield overlapped the dropdown, preventing selection. This issue has been resolved, and theViewlink no longer overlaps the dropdown, allowing theBusiness Impactfield to be updated successfully."
+        },
+        {
+          "component": "VM - Host Based Report",
+          "issue": "When users generated VM reports using asset groups that contained only DNS‑tracked assets, the report returned no data even though the scans completed successfully and Information Gathered (IG) data was available. This issue has been resolved so that reports now correctly include DNS‑tracked assets with IG‑only data when reporting by DNS name, provided the report template is configured accordingly. As a result, reporting by DNS asset groups now returns the expected data across supported report formats."
+        },
+        {
+          "component": "VM - Scan API",
+          "issue": "When users retrieved scan results using the /api/2.0/fo/scan/?action=fetch endpoint, the response included two additional columns, Result Errors and Result Debug, that were not documented, leading to confusion. This behavior occurs only for subscriptions where the QRDI feature is enabled. The documentation has now been updated to include these additional columns in both the brief and extended scan result outputs when QRDI is enabled, ensuring the API output aligns with customer expectations."
+        },
+        {
+          "component": "VM - User Management",
+          "issue": "When users attempted to add or edit the Email Address field by creating or editing a user record, users were unable to use valid email addresses containing an apostrophe (') in the email address (for example: Sean.O'[email protected]). This issue has been resolved, and users can now successfully update email addresses that include apostrophes in the email address."
+        },
+        {
+          "component": "VM - Host List Detection API",
+          "issue": "When users launched Host List Detection API by excluding the host_metadata input parameter and status set to fixed, the API returned malformed CSV output with misaligned columns. The issue has now been resolved, and the CSV output is generated with correctly aligned columns.Impacted API:/api/2.0/fo/asset/host/vm/detection/"
+        },
+        {
+          "component": "Integrations - Splunk",
+          "issue": "When users launched the Host List Detection API endpoint with the vuln_detection_source input parameter set to 1, an error occurred while processing the API response.When the application continuously retried the same API calls, repeatedly encountered the same error, and received no new data. This issue has been resolved, and the API output is now processed successfully, allowing data to be received as expected.Impacted API:/api/4.0/fo/asset/host/vm/detection/"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-02T13:11:28.892329+00:00",
+      "status": "success"
+    }
   },
   "a02a1d730b0f": {
     "key": "a02a1d730b0f",
@@ -6207,7 +6395,104 @@
       "PA"
     ],
     "month_label": "May 2026",
-    "detected_at": "2026-06-10T11:07:11+00:00"
+    "detected_at": "2026-06-10T11:07:11+00:00",
+    "details": {
+      "release_date": "May 11, 2026 (Updated on June 9, 2026)",
+      "features": [
+        {
+          "heading": "View TruRisk™ Score in Policy Reports in CSV Format",
+          "summary": "With this release, you can enable the TruRisk™ score in Policy report templates and view it in Policy reports generated in CSV format. You can enable the TruRisk™ score feature for report templates that use the followingGroup Byoptions"
+        },
+        {
+          "heading": "Support for Active Directory VMware NSX Authentication",
+          "summary": "You can now use Active Directory (AD) support with HashiCorp Vault when you create, update, list, and delete VMware NSX authentication records for authenticated scans of VMware NSX environments. This enables you to securely retrieve AD credentials…"
+        },
+        {
+          "heading": "Support for GCP Instance-Based Scans for IPv4",
+          "summary": "With this release, Cloud Internal Scan support is available for Google Cloud Platform (GCP)."
+        },
+        {
+          "heading": "Support for Tag Rule and Asset Tag for Authentication Technologies",
+          "summary": "With this release, we have added support for addingIP Range inTag RuleandAsset Tagsfor the following authentication technologies"
+        },
+        {
+          "heading": "Download Compliance Controls for an Asset",
+          "summary": "With this release, we have added a new download icon that allows you to download the list of all compliance controls associated to an asset."
+        },
+        {
+          "heading": "Navigate from Dashboard PA Widget to Posture Tab",
+          "summary": "With this release, you can now navigate directly from the Dashboard Policy Audit (PA) widget (for Controls and Assets) to thePosturetab. This enhancement enables you to access Posture details (for controls and assets) directly from theDashboardstab."
+        },
+        {
+          "heading": "Support for Sorting of Table Widget",
+          "summary": "With this release, you can now sort table widgets in ascending or descending order based on selected columns. Previously, table widgets did not support sorting, limiting your ability to organize data effectively."
+        },
+        {
+          "heading": "Support for New Authentication Technologies",
+          "summary": "With this release, we have added support for the following new technologies"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PA - Reports",
+          "issue": "When the user updated a User Defined Control (UDC), existing host compliance posture data was incorrectly deleted during task processing, resulting in loss of historical compliance results and affecting reporting accuracy. Relevant code changes have been made to fix this issue."
+        },
+        {
+          "component": "PA - Reports",
+          "issue": "When the user edited a scheduled compliance scorecard report, they were unable to view any policies mapped to the report. However, the same generated scheduled report displayed multiple mapped policies. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - New UI",
+          "issue": "When the user edited specific Network User Defined Controls (UDCs) in a policy, the window appeared blank. Relevant code changes have been made to resolve this issue. Users can now view network UDC details correctly and make the necessary edits."
+        },
+        {
+          "component": "PA - PCRS API",
+          "issue": "When the user retrieved posture data for policies through the Get Posture Info API (pcrs/4.0/posture/postureInfo), stale assets that were no longer associated with the policy were included in the results. This led to inaccurate reporting and outdated policy associations. Relevant code changes have been made to resolve this issue."
+        },
+        {
+          "component": "OCA - Config Upload",
+          "issue": "When the user performed a bulk upload of a configuration file associated with an asset, using the OCA application, the Last Accessed On date for that asset was displayed incorrectly. Relevant code changes have been made to resolve this issue."
+        },
+        {
+          "component": "PA - New UI",
+          "issue": "When the user viewed posture details on the Posture tab, the Evidence section under General Information, displayed no information. Relevant code changes have been made to fix this issue."
+        },
+        {
+          "component": "PA - New UI",
+          "issue": "When the user selected Posture Criticality in the Group By option for a widget on the Dashboard tab, the pie chart representation was not displayed correctly. Relevant code changes have been made to fix this issue."
+        },
+        {
+          "component": "PA - New UI",
+          "issue": "When the user viewed the Top Failing Policies widget on the Dashboards tab, they observed that for some of the policies the audit score was missing. However, the score was correctly displayed for the same policies on the Posture tab. Relevant code changes have been made to fix this issue."
+        },
+        {
+          "component": "PA - New UI",
+          "issue": "When the user entered a Qualys Query Language (QQL) query on the Dashboards tab, they were redirected to the Posture tab and received the error - Invalid QQL specified. Please review QQL syntax. Additionally, extra query lines were automatically appended to the QQL after redirection. This issue has been resolved with the latest code changes."
+        },
+        {
+          "component": "PA - New UI",
+          "issue": "When the user viewed the Trends widget on the Dashboards tab, the graph displayed data only for the current day. For all historical entries in the graph, no data was displayed. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - New UI",
+          "issue": "When the user selected the download icon to export the Posture details, they encountered the error - Failed to download the report. This error occurred because the number of Posture details exceeded the set limit of 10,000 entries. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - New UI",
+          "issue": "When the user viewed posture details for Controls and Assets on the Posture tab, some redundant entries were displayed. Selecting these entries resulted in a 404 – Page not found error. Relevant code changes have been made to fix the issue. The redundant Posture entries are no longer displayed."
+        },
+        {
+          "component": "PA - PCRS Reports",
+          "issue": "When reports were either launched or scheduled to run at a specific time, they did not generate as expected. This occurred because the report expiration date was set similar to the creation date at the time of report creation. Relevant code changes have been made to fix the issue. Reports now retain their configured expiration date when created. This ensures that reports run as expected and remain available for the defined retention period."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-02T13:11:28.892329+00:00",
+      "status": "success"
+    }
   },
   "6c69b1baf350": {
     "key": "6c69b1baf350",
