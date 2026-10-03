@@ -6990,7 +6990,27 @@
       "CAR"
     ],
     "month_label": "April 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 24, 2026",
+      "features": [
+        {
+          "heading": "Script Imports with Custom GitLab Domains and Host Names",
+          "summary": "We have made the following updates to the URL and Path Parameters options when importing a script from GitLab."
+        },
+        {
+          "heading": "Tag‑Based User Scope Extended to Reports",
+          "summary": "We have added a new CAR entity-Reportsfor theTag-based User Scopefeature(Get Started > Tag-based User Scope in CAR).Now, auser with tag‑based user scoping enabled can create, download, and delete reports within the assigned scope."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-03T17:49:58.494157+00:00",
+      "status": "success"
+    }
   },
   "7dd0a1b94839": {
     "key": "7dd0a1b94839",
@@ -7000,7 +7020,23 @@
       "PNS"
     ],
     "month_label": "April 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 20, 2026",
+      "features": [
+        {
+          "heading": "MAC Address Visibility for Identifying Sniffing Interfaces",
+          "summary": "You can now identify multiple sniffing interfaces on an appliance deployed in your network based on their MAC addresses. This helps you distinguish and manage sniffing interfaces during configuration and troubleshooting."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-03T17:49:58.494157+00:00",
+      "status": "success"
+    }
   },
   "c2a394fc1a5b": {
     "key": "c2a394fc1a5b",
@@ -7010,7 +7046,27 @@
       "Admin"
     ],
     "month_label": "April 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 15, 2026",
+      "features": [
+        {
+          "heading": "QFlex Subscription Model with Qualys Units (QLU)",
+          "summary": "Qualys introduces QFlex, a new flexible subscription model based on Qualys Units (QLUs),tosimplify subscription management and enable flexible usage across supported products.Instead ofpurchasingseparate licenses for each product, you can now buy a…"
+        },
+        {
+          "heading": "Enhanced Administration Online Help",
+          "summary": "The Administration Online Help now displays a centralized view of default roles and their associated permissions for each application. These roles and permissions are automatically created when you subscribe to an application."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-03T17:49:58.494157+00:00",
+      "status": "success"
+    }
   },
   "0f08d7b6f604": {
     "key": "0f08d7b6f604",
@@ -7020,7 +7076,44 @@
       "CS"
     ],
     "month_label": "April 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 15, 2026",
+      "features": [
+        {
+          "heading": "Support for Kubernetes Priority Class",
+          "summary": "Qualys Cluster Sensor 1.5.0 adds support for Kubernetes Priority Class, allowing you to control pod scheduling priority for the cluster sensor. Such pod scheduling is crucial on busy clusters. It also helps in the unnecessary termination (eviction)…"
+        },
+        {
+          "heading": "Support for CIS OKE Benchmark in Oracle Cloud Infrastructure",
+          "summary": "Designed for Oracle Cloud Infrastructure (OCI),  the CIS Oracle Kubernetes Engine (OKE) Benchmark offers security-focused configuration guidance for managing and protecting Kubernetes clusters. You can now assess your OKE clusters against the CIS…"
+        },
+        {
+          "heading": "Support for CPU and Memory Statistics",
+          "summary": "With this release, Qualys Cluster Sensor provides visibility into the CPU and memory usage of the CPU and Memory usage of Cluster Sensor container running in your cluster. This usage statistics are collected and reported every 2 minutes in the…"
+        },
+        {
+          "heading": "Unified Helm Chart (qualys-tc 2.8.0) Updates",
+          "summary": "The unified helm chart can be used to install QCS Sensor, Admission Controller, Cluster Sensor, and Container Runtime Sensor.Refer toQualys Unified Helm Chart (qualys-tc)."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Workload report",
+          "issue": "Cluster Sensor failed to report a few Cluster resources. Now, Cluster Sensor has added a resource version-based tracking to monitor the cluster resources."
+        },
+        {
+          "component": "Inventory scan",
+          "issue": "Cluster Sensor container crashed due to 'OOMKilled' error on large cluster.This is fixed by optimizing Memory utilization which prevents excessive resource consumption."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-03T17:49:58.494157+00:00",
+      "status": "success"
+    }
   },
   "52efe9660257": {
     "key": "52efe9660257",
@@ -7030,7 +7123,52 @@
       "CS"
     ],
     "month_label": "April 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 14, 2026",
+      "features": [
+        {
+          "heading": "Runtime Information Visibility",
+          "summary": "With this release, the Container Runtime Sensor sends container runtime type and version to the QualysEnterprise TruRisk™ Platformduring sensor provisioning. With this change, you can easily identify the container runtime (Containerd, Cri-O, or…"
+        },
+        {
+          "heading": "Support for Kubernetes Priority Class",
+          "summary": "Container Runtime Sensor 1.5.0 adds support for Kubernetes Priority Class, allowing you to control pod scheduling priority for the runtime sensor. Such pod scheduling is crucial on busy clusters. It also helps in the unnecessary termination…"
+        },
+        {
+          "heading": "Support for Pod Label Filter in Runtime Tracing Policies",
+          "summary": "Runtime tracing policies now support pod label filters (pod selectors), allowing policies to be applied only to specific pods rather than all workloads in the cluster. Policies are enforced exclusively on pods that match the specified label selector."
+        },
+        {
+          "heading": "Support for Docker Standalone Environment",
+          "summary": "With this release, the Qualys Container Runtime Sensor supports Docker standalone environments, enabling runtime visibility beyond Kubernetes and OpenShift. When deployed on a Docker host with the required environment variables, the sensor captures…"
+        },
+        {
+          "heading": "Enhancement in Rate Limiting",
+          "summary": "CRS 1.5.0 release introduces enhancements in FIM rate-limit as well as Global event rate-limit."
+        },
+        {
+          "heading": "Deprecation of PCI‑FIM Policies",
+          "summary": "Container Runtime Sensor 1.5.0 includes updates to PCI‑related File Integrity Monitoring (FIM) policies to reduce unnecessary event generation. PCI‑FIM open policies are deprecated to avoid sending open‑only file events. Along with this, the…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "File Difference operation",
+          "issue": "File diff was blank when using write diff policy for operations like `cat file1 file2` or `cp file1 file2`. The sensor now displays the number of bytes written when diff data is unavailable, providing better visibility into file modification events."
+        },
+        {
+          "component": "Process Event Null Pointer Handling",
+          "issue": "Container Runtime sensor could crash when process execution events lacked capabilities or credentials information. Added null checks to prevent crashes when processing incomplete process events, improving sensor stability and reliability."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-03T17:49:58.494157+00:00",
+      "status": "success"
+    }
   },
   "edd6d9bc89a6": {
     "key": "edd6d9bc89a6",
