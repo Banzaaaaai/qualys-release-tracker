@@ -6766,7 +6766,43 @@
       "QGS"
     ],
     "month_label": "April 2026",
-    "detected_at": "2026-07-03T10:13:02+00:00"
+    "detected_at": "2026-07-03T10:13:02+00:00",
+    "details": {
+      "release_date": "April 24, 2026",
+      "features": [
+        {
+          "heading": "Updates to CAMS/QGS Images and Containers",
+          "summary": "QGS 3.15.0 includes updated camsd, cams-mgr, and cams-metrics images and containers to improve stability and platform compatibility."
+        },
+        {
+          "heading": "Support for QCOW2 Image in New Hypervisors",
+          "summary": "QGS now supportsQCOW2 appliance images, expanding hypervisor compatibility."
+        },
+        {
+          "heading": "View the Historical Concurrent Connections in QGS",
+          "summary": "The QGS Web UI now displaysconcurrent (active) connectionscurrently being served by the appliance. Data is refreshed every10 minutes."
+        },
+        {
+          "heading": "Reboot the Appliance directly from the QGS Interface.",
+          "summary": "Administrators can nowreboot a specific QGS appliance directly from the web interface, eliminating the need to access the text-based appliance interface."
+        },
+        {
+          "heading": "View the Appliance Uptime",
+          "summary": "The QGS Web UI now displaysappliance uptime, showing how long the system has been running (in hours or days). Uptime resets automatically after a reboot. View the Appliance Details of any appliance to find theUptimeunder theActivitysection."
+        },
+        {
+          "heading": "Remote Troubleshooting Activated by Default",
+          "summary": "QGS now activates remote troubleshooting by default on all the existing and new appliances. Most troubleshooting scenarios in QGS require remote troubleshooting to be active. This enhancement simplifies support and troubleshooting efforts from…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-03T12:02:21.908571+00:00",
+      "status": "success"
+    }
   },
   "d1d3994c02f4": {
     "key": "d1d3994c02f4",
@@ -6776,7 +6812,27 @@
       "QF"
     ],
     "month_label": "April 2026",
-    "detected_at": "2026-08-02T09:29:48+00:00"
+    "detected_at": "2026-08-02T09:29:48+00:00",
+    "details": {
+      "release_date": "April 24, 2026",
+      "features": [
+        {
+          "heading": "Extract Query Parameters in the HTTP Node",
+          "summary": "This release introduces a newQuery Paramstab in the HTTP Node to simplify and enhance query parameter management. You can add, modify, or delete query parameters directly in the tab, even when the URL does not include parameters. It also supports…"
+        },
+        {
+          "heading": "Trigger Workflows Based on AWS Cognito Events",
+          "summary": "This release adds support for integrating withAWS Cognito eventsinto QFlow workflows through AWS CloudTrail and EventBridge."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-03T12:02:21.908571+00:00",
+      "status": "success"
+    }
   },
   "08b78d47e3e1": {
     "key": "08b78d47e3e1",
@@ -6786,7 +6842,52 @@
       "CA"
     ],
     "month_label": "April 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 23, 2026 (Updated on May 6, 2026)",
+      "features": [
+        {
+          "heading": "New Feature - Collect Forensic Data for Linux Assets",
+          "summary": "Cloud Agent for Linux Intel now supports collecting forensic data for analyzing Linux assets. You can use this forensic data to verify tampering with assets, conduct system health assessments, support incident response, and perform post-incident…"
+        },
+        {
+          "heading": "Automate Certificate Management with Packaged Certificates",
+          "summary": "Cloud Agent for Linux Intel now supports configuring automatic certificate management with packagedRoot certificates. This enhancement automates certificate assignments and improves communication between the host and the Qualys platform by reducing…"
+        },
+        {
+          "heading": "Control SwCA Binary Download",
+          "summary": "With Cloud Agent for Linux Intel, you can now control the SwCA binary download on your assets. This feature enables you to control the SwCA version used by Cloud Agent and to install it manually based on system availability."
+        },
+        {
+          "heading": "Behavior Change",
+          "summary": "There is no behavior change for this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "No new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues and limitations for this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Cloud Agent Scans",
+          "issue": "We fixed an issue where Cloud Agent processes stopped due to the wildcard characters in the configuration name. Now, Cloud Agent supports wildcard characters in configuration names, and Cloud Agent processes are not stopped."
+        },
+        {
+          "component": "Cloud Agent Remote Logs",
+          "issue": "The remote log files were getting decompression errors due to LZMA compression. We have now removed LZMA compression to prevent these errors and eliminate the need for third-party tools to decompress remote log files."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-03T12:02:21.908571+00:00",
+      "status": "success"
+    }
   },
   "f516abf1249d": {
     "key": "f516abf1249d",
@@ -6796,7 +6897,35 @@
       "VMDR OT"
     ],
     "month_label": "April 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 23, 2026",
+      "features": [
+        {
+          "heading": "Assess High-risk External IPs in OT Environment",
+          "summary": "You can now assess the security risk of external IPs communicating with assets in your OT environment using their reputation scores and geolocation details. This helps you identify potentially malicious, suspicious, or high-risk assets."
+        },
+        {
+          "heading": "Visibility of Passive Sensor in Monitoring Integrity Events",
+          "summary": "You can now view the details of network passive sensors that monitor process integrity events in your network. To view these details, navigate toEvent Details > Summary > Passive Sensor Details. You can view the sensor information, such…"
+        },
+        {
+          "heading": "Updated QQL Token Names",
+          "summary": "This release updates several Qualys Query Language (QQL) token names to align with the token standardization introduced inVMDR OT Release 1.3.1"
+        },
+        {
+          "heading": "New QQL Tokens",
+          "summary": "We have introduced the following new tokens in VMDR OT"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-03T12:02:21.908571+00:00",
+      "status": "success"
+    }
   },
   "eca020df5fc3": {
     "key": "eca020df5fc3",
@@ -6806,7 +6935,52 @@
       "FIM"
     ],
     "month_label": "April 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 20, 2026",
+      "features": [
+        {
+          "heading": "Extended Support for Agentless FIM on Additional Network Devices",
+          "summary": "We have extended support forAgentless File Integrity Monitoring (FIM)to additional network device technologies. This enhancement enables you to monitor configuration or file changes on these devices without installing an agent."
+        },
+        {
+          "heading": "Download FIM Network Devices Report with Technology and Last Scanned Date Information",
+          "summary": "The File Integrity MonitoringNetwork Devicesreport (FIM Assets > Downloading Network Devices) now includes two new columns:TechnologyandLast Scanned Datein the downloaded CSV file. The enhanced report provides you with clearer operational insights…"
+        },
+        {
+          "heading": "Updated QQL Tokens",
+          "summary": "We have now updated the following QQL token names forEvent TokensandAsset Tokensto align with the Token Standardization available in theOld and New Search Token Mappingstopic."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "FIM Roles and Permissions",
+          "issue": "The super admin can now perform all actions on any incident, regardless of the reviewer’s status."
+        },
+        {
+          "component": "FIM Reports > Report Rules",
+          "issue": "We fixed an issue where report generation forFile Path(under Event Source Type) was failing due to spaces and special characters.Now, report generation works correctly for theFile Pathwithout fail."
+        },
+        {
+          "component": "FIM Reports > Report Rules",
+          "issue": "We fixed an issue when users used to select the Report Queryprofile.name,it was incorrectly replaced with profile.file.name on theViewpage upon rule creation. It did not retain the string profile.name as is.Now, theViewpage accurately displays the query string-profile.name. The system retains the string as is."
+        },
+        {
+          "component": "FIM Prerequisite script",
+          "issue": "We fixed an issue where the FIM prerequisite script was running automatically on assets even when the FIM module was not enabled.Now, the script does not run for FIM-disabled assets."
+        },
+        {
+          "component": "FIM Report > Report Rules",
+          "issue": "We fixed an issue where the system generated the scheduled report notification emails with incorrect recipient information. The system replaced the intended recipient in theTofield with the report creator’s email address, moved the intended recipient toCC, and added the creator’s name in the email body.We have now improved the scheduled report email workflow to ensure notification emails are sent to the correct recipients as configured. The system now sends the report directly to the email address entered in theTofield, preserves the configured recipient fields, and no longer inserts the report creator’s name. This update ensures accurate delivery and better control over email settings."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-03T12:02:21.908571+00:00",
+      "status": "success"
+    }
   },
   "62699158598c": {
     "key": "62699158598c",
