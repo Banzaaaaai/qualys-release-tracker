@@ -7178,7 +7178,36 @@
       "CA"
     ],
     "month_label": "April 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 14, 2026",
+      "features": [
+        {
+          "heading": "Behavior Change",
+          "summary": "There is no behavior change for this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "Cloud Agent for Linux ARM 6.1.2 and later no longer support Ubuntu 12.04 LTS."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues for this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Cloud Agent Installation",
+          "issue": "We fixed an issue where the latest version of Linux ARM Cloud Agent could not be installed due to an incompatible GNU C library. We updated the GNU C library, enabling Cloud Agent installation on the following platforms: Amazon Linux 2, RHEL 7, CentOS 7, OEL 7, Ubuntu 14.04 LTS, Ubuntu 15.04/15.10, Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, and Debian 9 and earlier versions."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-04T12:51:28.559177+00:00",
+      "status": "success"
+    }
   },
   "7a41ac2e7601": {
     "key": "7a41ac2e7601",
@@ -7188,7 +7217,40 @@
       "ETM"
     ],
     "month_label": "April 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 14, 2026",
+      "features": [
+        {
+          "heading": "Attach Supporting Evidence to Review and Close Findings",
+          "summary": "TheSupporting Artifactsfeature lets you attach files or links as evidence to findings. This makes it easier to review or close findings while maintaining a clear record of supporting evidence. You can use this feature from theFindingstab for one or…"
+        },
+        {
+          "heading": "Asset Visibility for Unified Asset Inventory (UAI) Enabled Accounts",
+          "summary": "You can now view software details and open port information for your assets using theSoftwareandOpen Portstabs in UAI‑enabled accounts."
+        },
+        {
+          "heading": "Introduced a New Token for Findings",
+          "summary": "Token"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "ETM Findings",
+          "issue": "Duplicate findings caused due to case differences, such asWindows 11 23h2versus Windows 11 23H2 are no longer created. Findings are now consolidated by ignoring case differences, improving result accuracy and reducing duplication."
+        },
+        {
+          "component": "TruRisk™ Customization",
+          "issue": "Some users were unable to access asset details from the Inventory view and received an unauthorized access message.You can now successfully open and view full asset details, including TruRisk, from the inventory on your assigned tag scope, ensuring consistent access across views and smoother daily workflows."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-04T12:51:28.559177+00:00",
+      "status": "success"
+    }
   },
   "b3f67fa590ae": {
     "key": "b3f67fa590ae",
@@ -7198,7 +7260,48 @@
       "CA"
     ],
     "month_label": "April 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 11, 2026",
+      "features": [
+        {
+          "heading": "Optimized Logging for Linux SwCA Scanners",
+          "summary": "We optimized the logging process for Linux SwCA Scanners to ensure efficient operation and accessibility."
+        },
+        {
+          "heading": "Behavior Change",
+          "summary": "There is no behavior change for this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "No new platform coverage is added in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues for this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "SwCA Scans",
+          "issue": "We fixed an issue where temporary files created in/tmpduring SwCA scans were not getting deleted. Now, SwCA cleans temporary files after scan completion."
+        },
+        {
+          "component": "SwCA Memory Usage",
+          "issue": "We fixed an issue where the SwCA scan was causing high memory consumption. We have enhanced SwCA for optimal memory usage during the scan."
+        },
+        {
+          "component": "Third-party Library Update",
+          "issue": "The SwCA third-party libraries were outdated. We have updated these third-party libraries."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-04T12:51:28.559177+00:00",
+      "status": "success"
+    }
   },
   "481039dea193": {
     "key": "481039dea193",
@@ -7208,7 +7311,31 @@
       "VMDR Mobile"
     ],
     "month_label": "April 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 10, 2026",
+      "features": [
+        {
+          "heading": "Implementation of QQL Token Standardization",
+          "summary": "We have now implemented Qualys Query Language (QQL) token standardization across all Qualys applications. As part of this enhancement, both common and VMDR Mobile-specific tokens are updated with new token names that follow a standard, consistent…"
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "The following new Finding tokens are added to theVulnerabilitytab"
+        },
+        {
+          "heading": "Support for Auth ID Client Management from UI",
+          "summary": "With this release, we have extended our support for OpenID Connect Authentication Client Management capabilities from the UI. This update enables secure authentication and authorization for API access directly from the user interface. Our API…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-04T12:51:28.559177+00:00",
+      "status": "success"
+    }
   },
   "61f13f0186b9": {
     "key": "61f13f0186b9",
@@ -7219,7 +7346,23 @@
       "VM"
     ],
     "month_label": "April 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 2, 2026",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "VM - API General",
+          "issue": "Vulnerability Management"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-04T12:51:28.559177+00:00",
+      "status": "success"
+    }
   },
   "e727581e60d1": {
     "key": "e727581e60d1",
