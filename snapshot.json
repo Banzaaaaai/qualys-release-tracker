@@ -7373,7 +7373,23 @@
       "VM"
     ],
     "month_label": "April 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 2, 2026",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "VM - API General",
+          "issue": "Vulnerability Management"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-04T18:01:15.932332+00:00",
+      "status": "success"
+    }
   },
   "71c00ccc9bf5": {
     "key": "71c00ccc9bf5",
@@ -7384,7 +7400,64 @@
       "VM"
     ],
     "month_label": "April 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 2, 2026",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "Deep Scan, available for Qualys Cloud Agent VM scans, improves detection accuracy by inspecting deeper file system locations, increasing coverage for non-standard application paths, and enhancing visibility into modern and custom-built workloads.…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Knowledge Base",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - User Management",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - API General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Report Schedule",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Purge Assets",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - VMSP",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - API General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Assets",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Assets",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Knowledge Base",
+          "issue": "Vulnerability Management"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-04T18:01:15.932332+00:00",
+      "status": "success"
+    }
   },
   "e7577ffef0d9": {
     "key": "e7577ffef0d9",
@@ -7395,7 +7468,36 @@
       "VM"
     ],
     "month_label": "April 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 2, 2026",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "Deep Scan, available for Qualys Cloud Agent VM scans, improves detection accuracy by inspecting deeper file system locations, increasing coverage for non-standard application paths, and enhancing visibility into modern and custom-built workloads.…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - API General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - API General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Knowledge Base",
+          "issue": "Vulnerability Management"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-04T18:01:15.932332+00:00",
+      "status": "success"
+    }
   },
   "ddcb0ca10c1d": {
     "key": "ddcb0ca10c1d",
@@ -7405,7 +7507,76 @@
       "PA"
     ],
     "month_label": "April 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 2, 2026",
+      "features": [
+        {
+          "heading": "Availability of Policy Audit Fix",
+          "summary": "Policy Audit Fix is a feature of the Policy Audit application that allows remediation of failed controls in order to fix misconfigurations on assets at a larger scale. Failed controls correspond to settings that are not configured as per security…"
+        },
+        {
+          "heading": "Run Audit Fix Scripts by Bypassing PowerShell Execution Policy",
+          "summary": "When remediating failed controls to fix misconfigurations on assets, certain Audit fix scripts may fail to execute due to unauthorized access caused by PowerShell execution policies configured on target assets."
+        },
+        {
+          "heading": "View Script Failure Details in Audit Fix Jobs",
+          "summary": "When an Audit Fix job is complete, you can view the number of scripts that passed or failed for the selected asset(s)."
+        },
+        {
+          "heading": "View 180 Days of Data in Trends Widget",
+          "summary": "Previously, the Trends widget in the Dashboards tab displayed data for a maximum of 90 days. This limited the ability to analyze longer-term trends."
+        },
+        {
+          "heading": "Improved Selection Behavior",
+          "summary": "Previously, when you selected an item such as a policy, control, mandate, or exception, the item is highlighted and the corresponding checkbox was automatically selected by default. This behavior made it difficult to simply view an item or access…"
+        },
+        {
+          "heading": "VMware Renamed to Hypervisors and Virtualization",
+          "summary": "With this release, VMware has been renamed toHypervisors and Virtualization."
+        },
+        {
+          "heading": "Support for New Authentication Technology - Oracle Linux Virtualization Manager",
+          "summary": "With this release, Oracle Linux Virtualization Manager (OLVM) technology is supported for Policy Audit authenticated scans using scanners. This technology is now available for use at the following places"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PA - UI",
+          "issue": "When the user copied controls from one policy to another, the reference numbers associated with the controls were not copied to the target policy. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - New UI",
+          "issue": "When the user was using the Classic User Interface (UI) in the Dashboards tab in Policy Audit, the option to switch to Switch to New PA Dashboard was unavailable. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - PCRS",
+          "issue": "When the user sets a specific date format and timezone for their account, they expect the same format to be displayed in the Compliance Reports in HTML and XML formats in PA application and API. However, the reports continued to display dates in the default format instead of the selected format. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "SCA",
+          "issue": "When the user was launching a Cloud Perimeter scan from the SCA application, an error stating 'License does not exist' was displayed. Since users with SCA-only subscriptions cannot perform Cloud Perimeter scans, the scan option should not appear for these subscriptions (SCA application and API). Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - New UI",
+          "issue": "When the user downloaded the posture data report, the number of assets shown did not match the number displayed in the Posture tab when using the QQL filter, resulting in a discrepancy in the asset count. The user also verified that a specific asset was shown as scanned in the report but was missing from the asset count in the Posture tab. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA",
+          "issue": "When the user performed a compliance scan and downloaded the scan results in PDF and CSV formats, the data was displayed in the PDF file but was not present in the CSV file. Relevant code changes have been made to fix the issue. Now, when the user performs a new scan, the scan results are displayed in both PDF and CSV formats."
+        },
+        {
+          "component": "PA - New UI",
+          "issue": "When the user viewed the group-by-posture-criticality widget on their dashboard, they observed that it displayed incomplete data and failed to display some criticality details. Relevant code changes have been made to fix the issue."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-04T18:01:15.932332+00:00",
+      "status": "success"
+    }
   },
   "68712872c4cf": {
     "key": "68712872c4cf",
@@ -7416,7 +7587,36 @@
       "PA"
     ],
     "month_label": "April 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 2, 2026",
+      "features": [
+        {
+          "heading": "PCAS Policy Export API: Confirm Control Definition Updates",
+          "summary": "With this release, the API response includes a new field, controlDefinitionUpdateAvailable, which indicates whether any updates have been made to the existing controls fix values. This helps you identify if any changes are made to the control fix…"
+        },
+        {
+          "heading": "PCAS Policy Section Control Technology Evaluate API: Retrieve Control Definition Updates",
+          "summary": "With this release, a new input parameter, showUpdatedControlDefinition, is introduced to help view updates made to control definitions for a technology."
+        },
+        {
+          "heading": "New Oracle Linux Virtualization Manager Record API",
+          "summary": "With this release, we now support Oracle Linux Virtualization Manager (OLVM) Record API. The new Oracle Linux Virtualization Manager Record API lets you create, update, delete, and list OLVM authentication records."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "SCA",
+          "issue": "When the user was launching a Cloud Perimeter scan from the SCA application, an error stating 'License does not exist' was displayed. Since users with SCA-only subscriptions cannot perform Cloud Perimeter scans, the scan option should not appear for these subscriptions (SCA application and API). Relevant code changes have been made to fix the issue."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-04T18:01:15.932332+00:00",
+      "status": "success"
+    }
   },
   "a51d274658ee": {
     "key": "a51d274658ee",
