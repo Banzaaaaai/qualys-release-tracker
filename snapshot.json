@@ -25014,5 +25014,208 @@
       "last_attempt_at": "2026-10-01T13:54:26.140699+00:00",
       "status": "success"
     }
+  },
+  "f457d250d488": {
+    "key": "f457d250d488",
+    "url": "https://docs.qualys.com/en/cs-sensor/release-notes/cluster_sensor/release_1_8_0.htm",
+    "title": "Cluster Sensor 1.8",
+    "tags": [
+      "CS"
+    ],
+    "month_label": "October 2026",
+    "detected_at": "2026-10-05T15:16:53+00:00",
+    "details": {
+      "release_date": "October 01, 2026This release adds crash loop detection to suppress events from containers stuck in CrashLoopBackOff and lets you store your Customer ID and Activation ID as Kubernetes secrets.",
+      "features": [
+        {
+          "heading": "Introduced Crash Loop Detection: Event Suppression for CrashLoopBackOff Containers",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Customer ID and Activation ID as Kubernetes Secrets",
+          "summary": "What's New for You"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-05T15:16:53.991870+00:00",
+      "status": "success"
+    }
+  },
+  "97e3504ab8cf": {
+    "key": "97e3504ab8cf",
+    "url": "https://docs.qualys.com/en/cs-sensor/release-notes/crs/release_1_8_0.htm",
+    "title": "Container Runtime Sensor 1.8",
+    "tags": [
+      "CS"
+    ],
+    "month_label": "October 2026",
+    "detected_at": "2026-10-05T15:16:53+00:00",
+    "details": {
+      "release_date": "October 01, 2026The Qualys Container Runtime Sensor (CRS) 1.8.0 release introduces threat detection-based event filtering, network events monitoring, CIDR-based network policy support, regex-based process ignore lists, Kubernetes secret-based credential management, and package-in-use detection for running containers.",
+      "features": [
+        {
+          "heading": "Detection of Package-in-Use for Running Containers",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Network Events Monitoring with Qualys Enterprise TruRisk™ Platform",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Threat Detection-based Event Filtering",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "CIDR Support for Network Policy IP Ranges",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Regex Support for the Process Ignore List",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Fixes",
+          "summary": "The following issues have been fixed with this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-05T15:16:53.991870+00:00",
+      "status": "success"
+    }
+  },
+  "d0f7363e7ddc": {
+    "key": "d0f7363e7ddc",
+    "url": "https://docs.qualys.com/en/ud/release-notes/unified_dashboard/release_2_16_1.htm",
+    "title": "Unified Dashboard 2.16.1",
+    "tags": [
+      "UD"
+    ],
+    "month_label": "October 2026",
+    "detected_at": "2026-10-05T15:16:53+00:00",
+    "details": {
+      "release_date": "October 01, 2026",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "Unified Dashboard - Enterprise TruRisk Management (ETM)",
+          "issue": "We fixed an issue in which ETM widgets that use the Color Mapping option displayed colors within the wrong ranges. For example, in a widget that groups findings byDetection Age, the color mapped to the 0–30 days range was displayed for findings older than 180 days. As a result, you could misread the widget and prioritize the wrong items. Now, each range in the widget displays the color you mapped to it."
+        },
+        {
+          "component": "Unified Dashboard",
+          "issue": "We fixed an issue where long tag names in theTagscolumn of a table widget were cut off at the column edge without an ellipsis. In addition, hovering over a cut-off tag name did not display the full name. Now, truncated tag names end with an ellipsis (…), and hovering over them displays the full name in a tooltip."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-05T15:16:53.991870+00:00",
+      "status": "success"
+    }
+  },
+  "f6d04c799dc8": {
+    "key": "f6d04c799dc8",
+    "url": "https://docs.qualys.com/en/edr/release-notes/endpoint_detection_and_response/release_3_8_5.htm",
+    "title": "Endpoint Detection and Response 3.8.5",
+    "tags": [
+      "EDR"
+    ],
+    "month_label": "September 2026",
+    "detected_at": "2026-10-05T15:16:53+00:00",
+    "details": {
+      "release_date": "September 28, 2026",
+      "features": [
+        {
+          "heading": "Block Threats Directly from Hunting Events",
+          "summary": "You can now use theAdd to Blocklistoption to add a SHA256, Appname, URL, or IP to your EDR profile blocklists in one action. Previously, you had to add each entry manually in every profile."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-05T15:16:53.991870+00:00",
+      "status": "success"
+    }
+  },
+  "000ceef902f2": {
+    "key": "000ceef902f2",
+    "url": "https://docs.qualys.com/en/cs-sensor/release-notes/crs/release_1_7_0.htm",
+    "title": "Container Runtime Sensor 1.7",
+    "tags": [
+      "CS"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-10-05T15:16:53+00:00",
+    "details": {
+      "release_date": "August 03, 2026",
+      "features": [
+        {
+          "heading": "DNS Flow Logging for Threat Detection",
+          "summary": "CRS now parses DNS responses inside containers and reports every domain name resolved by container workloads to the QualysEnterprise TruRisk™ Platform. DNS traffic is intercepted for auditing only - CRS never blocks or interferes with DNS resolution."
+        },
+        {
+          "heading": "Egress Filtering by IP or FQDN",
+          "summary": "Without explicit egress controls, a compromised container can freely connect to attacker-controlled infrastructure — traditional network controls operate at the node or cluster boundary, not the individual container. CRS now enforces container…"
+        },
+        {
+          "heading": "Ingress Filtering by IP",
+          "summary": "Containers are reachable from any source IP unless inbound access is controlled at the workload level, exposing them to unauthorized access and east-west lateral movement that perimeter controls cannot block."
+        },
+        {
+          "heading": "File Integrity Enforcement using BPF LSM",
+          "summary": "Kernel Requirement:- BPF LSM enforcement requires a host kernel built withCONFIG_BPF_LSM=yand bpf listed in the kernel'slsm=boot parameter.- Linux Kernel: 6.1.x or later"
+        },
+        {
+          "heading": "New Policy Configuration using Qualys Runtime CRD",
+          "summary": "Managing runtime security policies outside the Kubernetes control plane creates operational overhead, policy drift. CRS now supports configuring runtime policies for Ingress filtering, Egress filtering, and BPF LSM file enforcement logging using the…"
+        },
+        {
+          "heading": "Process Event Deduplication",
+          "summary": "In steady-state clusters, most process execution events are repetitions of known behavior. Forwarding every instance inflates storage costs, degrades query performance, and buries actionable signals in noise. CRS now deduplicates repeated process…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Egress Policy",
+          "issue": "CRS crashed while setting up the Egress Policy with exit status 2 and entered a continuous restart loop."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-05T15:16:53.991870+00:00",
+      "status": "success"
+    }
+  },
+  "0e3419775227": {
+    "key": "0e3419775227",
+    "url": "https://docs.qualys.com/en/cs-sensor/release-notes/cluster_sensor/release_1_7_0.htm",
+    "title": "Cluster Sensor 1.7",
+    "tags": [
+      "CS"
+    ],
+    "month_label": "August 2026",
+    "detected_at": "2026-10-05T15:16:53+00:00"
+  },
+  "2921ca045bf7": {
+    "key": "2921ca045bf7",
+    "url": "https://docs.qualys.com/en/cs-sensor/release-notes/crs/release_1_6_0.htm",
+    "title": "Container Runtime Sensor 1.6",
+    "tags": [
+      "CS"
+    ],
+    "month_label": "June 2026",
+    "detected_at": "2026-10-05T15:16:53+00:00"
   }
 }
