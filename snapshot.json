@@ -8052,7 +8052,53 @@
       "ETM"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 27, 2026",
+      "features": [
+        {
+          "heading": "Introduced TruConfirm",
+          "summary": "TruConfirm is a new automated exposure validation capability integrated directly into Qualys Enterprise TruRisk Management (ETM). It introduces a proof‑based approach to vulnerability risk. It confirms whether a detected vulnerability is truly…"
+        },
+        {
+          "heading": "Enhanced TruLens",
+          "summary": "This release introduces comprehensive threat intelligence and vulnerability management capabilities. These capabilities provide security teams with actionable insights into threats affecting their organizations."
+        },
+        {
+          "heading": "Introduced Exploitability and Exposure Metrics in CVE Details",
+          "summary": "We introduced a new card on theCVE Detailspage to provide insights into exploitability and exposure metrics. This enhancement helps security teams better understand attacker behavior and assess the effectiveness of their responses."
+        },
+        {
+          "heading": "Introduced Tag-based Widget",
+          "summary": "This release introduces the Tag-based Widget, a new visualization component that enables you to view and analyze security findings organized by tags."
+        },
+        {
+          "heading": "Enhanced Sorting for Bar, Table, and Pie Widgets",
+          "summary": "We introduced improved sorting capabilities for widgets that support grouping by Criticality Score (ACS). This sorting is available for Bar, Table, and Pie widgets."
+        },
+        {
+          "heading": "Introduced AI-Generated Title Indicator for CVE Details",
+          "summary": "We introduced a visual indicator to highlight when a CVE title is generated using AI. Theicon is now displayed alongside the title on the CVE Details page. This icon signifies that the displayed title is generated using AI."
+        },
+        {
+          "heading": "Introduced Tokens for Risk Management Tab",
+          "summary": "Token"
+        },
+        {
+          "heading": "Introduced a New Token for Assets",
+          "summary": "Token"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2026-32705"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-06T19:20:02.614772+00:00",
+      "status": "success"
+    }
   },
   "fa08e97afb73": {
     "key": "fa08e97afb73",
@@ -8062,7 +8108,72 @@
       "TC"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 27, 2026",
+      "features": [
+        {
+          "heading": "AWS AI Service Inventory Coverage Updates",
+          "summary": ""
+        },
+        {
+          "heading": "Inventory for IaC via GitHub Apps",
+          "summary": ""
+        },
+        {
+          "heading": "Report Scheduling and Notifications",
+          "summary": ""
+        },
+        {
+          "heading": "Azure Databricks Resource Identification Improvement",
+          "summary": ""
+        },
+        {
+          "heading": "Inventory/Posture: Resource Discovery and Visibility Enhancements",
+          "summary": ""
+        },
+        {
+          "heading": "CDR Enhancements and Updates",
+          "summary": "The following sections describe the enhancements made to the Cloud Detection and Response (CDR) environment in the upcoming CDR release."
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "The following section describes the new tokens introduced as part of TotalCloud 2.23.0"
+        },
+        {
+          "heading": "Control Updates",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "TotalCloud - UI",
+          "issue": "Previously, existing controls validated password policy settings only for the legacy OCI Global IAM architecture. Customers who migrated to the newer Identity Domains (ID) architecture could not validate their IAM password policies using these controls.To close this gap, new controls have been added specifically for Identity Domains–based IAM environments. These controls ensure that password policy requirements set within Identity Domains are properly checked.The following checks have been added for Identity Domains password policies:CID- 40097Ensure password policy in Identity Domains requires at least one lowercase letterCID- 40098Ensure password policy in Identity Domains requires at least one uppercase letterCID- 40099Ensure password policy in Identity Domains requires at least one numeric characterCID- 40100Ensure password policy in Identity Domains requires at least one special characterCID- 40101Ensure password policy in Identity Domains enforces minimum password length of 14 characters or greaterThe following existing controls are marked as Legacy :CID-40010,CID-40011,CID-40012,CID-40013,CID-40026"
+        },
+        {
+          "component": "CV - False Positive",
+          "issue": "CID 40030The OCI Event Rule controls for IdP Group Mapping and alerting are updated to align with recent OCI response format changes. The predicate logic is corrected to reflect the new field structure, resolving the false positive cases previously observed.CID 52178The control is enhanced to recognize PostgreSQL instances configured with Private Service Connect (PSC), resolving the false‑positive reported for CID‑52178."
+        },
+        {
+          "component": "Controls",
+          "issue": "CID 52000The evaluation logic is updated to correctly handle API responses that return no resources. The check now properly recognizes the absence of applicable resources instead of incorrectly flagging the evaluation as a failure, resolving the issue."
+        },
+        {
+          "component": "CV - UICV - ConnectorsCV - EC2 Connector",
+          "issue": "We have resolved the issues where the user was able to see the data under the inventory tab, but not in the Posture tab of TotalCloud, and the Scoped assets were not visible to users in Total Cloud. The issue was caused by scalability limitations in the current implementation under growing data volumes. To address this, we have implemented targeted architectural improvements to enhance consistency, reliability, and scalability. These changes are intended to prevent recurrence as data volumes continue to grow."
+        },
+        {
+          "component": "TotalCloud - UI",
+          "issue": "We have resolved the issues where thePassword policy related CID's evaluated as \"FAIL\" for the controlsCID 40010,CID 40011,CID 40012,CID 40013, andCID 40026."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-06T19:20:02.614772+00:00",
+      "status": "success"
+    }
   },
   "45cd11341351": {
     "key": "45cd11341351",
@@ -8072,7 +8183,23 @@
       "CS"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 26, 2026",
+      "features": [
+        {
+          "heading": "K8s Deployment Attributes in 'Container Vulnerability' Report",
+          "summary": "(QualysEnterprise TruRisk™ Platform>CS>Reports>Create Report>Container Vulnerability>Report Display)"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-06T19:20:02.614772+00:00",
+      "status": "success"
+    }
   },
   "e57089deaf48": {
     "key": "e57089deaf48",
@@ -8083,7 +8210,23 @@
       "CS"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 26, 2026",
+      "features": [
+        {
+          "heading": "New Attributes in Container Vulnerability Reports",
+          "summary": "With Container Security 1.42.10 release, Qualys Container Security has introduced with the new vulnerability report attributes:deploymentuuidanddeploymentName. To support this, the following APIs are updated."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-06T19:20:02.614772+00:00",
+      "status": "success"
+    }
   },
   "f41df6f1e375": {
     "key": "f41df6f1e375",
@@ -8094,7 +8237,84 @@
       "GAV"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 26, 2026 (Updated on April 08, 2026)",
+      "features": [
+        {
+          "heading": "Improved EASM Discovery",
+          "summary": "EASM Discovery is enhanced to identify leased IPv4 Netblocks and discover assets exposed on those IPs using Shodan data. This improves the accuracy of asset attribution and expands the ability to discover externally exposed assets hosted on leased…"
+        },
+        {
+          "heading": "Asset Import using Source Native Key",
+          "summary": "Third-party assets imported through connectors are now identified and merged with existing assets in your inventory using a new asset identification rule, theSource Native Key Rule. CSAM uses the unique native key provided by a third-party asset…"
+        },
+        {
+          "heading": "Asset Purge using Source Last Seen Attribute",
+          "summary": "CSAM now displays the date and time when a third-party source first found and last updated an asset. To view the details, navigate toAsset Details > SOURCES > Summary"
+        },
+        {
+          "heading": "Identify Assets Protected by Web Application Firewall",
+          "summary": "CSAM can now identify External Attack Surface Management (EASM) assets protected by a Web Application Firewall (WAF) in your EASM inventory. When an EASM asset is discovered through Shodan and includes WAF information, the system automatically…"
+        },
+        {
+          "heading": "Limit Asset Tagging to your Scope",
+          "summary": "You can now create a tag that applies only to assets within a parent tag that is in your scope. This allows you to restrict tag application to your required assets rather than all assets in your organization."
+        },
+        {
+          "heading": "Improved Timestamp Display Format",
+          "summary": "Time information across CSAM listing pages is now displayed in a consistent and easy-to-read format (for example, “5 days ago”, “2 hours ago”). This improvement ensures consistent formatting across listing pages and makes the information easier to…"
+        },
+        {
+          "heading": "Visibility of User Activity Performed Using CSAM APIs",
+          "summary": "User actions performed through CSAM APIs are now captured and displayed in theAdministratorapplication under theActivity Logstab. This helps you monitor API activity performed by users in your organization."
+        },
+        {
+          "heading": "Database Inventory in GAV",
+          "summary": "Databases often store sensitive information such as customer and user data, making them common targets for cyber-attacks and misuse. Having visibility into database instances helps organizations determine whether specific databases fall within the…"
+        },
+        {
+          "heading": "Updated QQL Tokens",
+          "summary": "We have updated the following token names to align with the QQL Token Standardization introduced inCSAM/GAV Release 3.7.0.0"
+        },
+        {
+          "heading": "New Tokens in GAV",
+          "summary": "We have introduced the following new tokens in GAV"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "CSAM - Cloud Agent Assets",
+          "issue": "We fixed an issue where agent‑based assets were visible to sub‑users even when theExclude Agent Assets from IP Range Tagsoption was enabled in theAdministrationapplication.Now, agent-based assets are excluded from a sub-user's scope when this option is enabled."
+        },
+        {
+          "component": "CSAM+GAV - Installed Software",
+          "issue": "We fixed an issue where theInstalled Softwaresection inAsset Detailsdisplayed incorrect software names for some assets.Now, theInstalled Softwaresection displays the correct software names for all assets."
+        },
+        {
+          "component": "CSAM - System Information",
+          "issue": "We fixed an issue where an incorrect CPU count was displayed for some Windows and MAC assets.Now, the correct CPU count is displayed inAsset Details > System Information."
+        },
+        {
+          "component": "CSAM - Third-party Connectors",
+          "issue": "We fixed an issue where previously purged connector IDs were still displayed for selection when configuringAsset Purge Rulesfor third-party connectors.Now, when a connector is deleted and no assets are associated with it, its name and ID are automatically removed from theAsset Purge Ruleconfiguration page."
+        },
+        {
+          "component": "CSAM - EASM Summary Report",
+          "issue": "We fixed an issue where some CVEs displayed in theEASM Summary Reportdid not match the CVEs shown in theShodan Vulnerability Report.Now, the CVE data in both reports aligns correctly."
+        },
+        {
+          "component": "CSAM - Asset Purge Rules",
+          "issue": "We fixed an issue where the Asset Purge Rules tab displayed all timestamps as 12:00 AM instead of showing the actual time.Now, all purge rules display the correct created, updated, and last-executed times."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-06T19:20:02.614772+00:00",
+      "status": "success"
+    }
   },
   "9db78e67d9e9": {
     "key": "9db78e67d9e9",
