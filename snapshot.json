@@ -7784,7 +7784,35 @@
       "CA"
     ],
     "month_label": "April 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 02, 2026",
+      "features": [
+        {
+          "heading": "Updated Base Image for Compliance",
+          "summary": "We have updated the base image used for Redhat Enterprise Linux CoreOS Cloud Agent to fix the vulnerabilities."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There is no behavior change in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-06T13:37:46.377248+00:00",
+      "status": "success"
+    }
   },
   "25e378ed9460": {
     "key": "25e378ed9460",
@@ -7794,7 +7822,35 @@
       "CA"
     ],
     "month_label": "April 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 02, 2026",
+      "features": [
+        {
+          "heading": "Updated Base Image for Compliance",
+          "summary": "With this release, we have updated the base image used for the Google Cloud Platform Container Optimized OS (GCP-COS) Cloud Agent to fix the vulnerabilities."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There is no behavior change in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-06T13:37:46.377248+00:00",
+      "status": "success"
+    }
   },
   "85285590ab4b": {
     "key": "85285590ab4b",
@@ -7806,7 +7862,96 @@
       "PM"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 29, 2026",
+      "features": [
+        {
+          "heading": "AI-Assisted Patch Job Creation with AI Agents",
+          "summary": "We have introduced an advanced Agentic AI capability where the AI agents Sara and Nyra automatically create tag-based patch deployment jobs in the Enterprise Management (ETM) application. These jobs are listed directly on the Patch Management (PM)…"
+        },
+        {
+          "heading": "Support for Vendor-Acquired MacOS Patches",
+          "summary": "You can now enable macOS patches acquired from vendors and include them in your deployment jobs. This enhancement extends the patching support for the macOS assets. You can also configure the repository URL that the Cloud Agent can use to download…"
+        },
+        {
+          "heading": "Simplified Sharing of Elimination Views",
+          "summary": "You can now prioritize the vulnerabilities and quickly copy and share an Elimination View using a direct link. This link can be used in your email communication to IT Ops team, automation orchestration or in an ITSM or any ticketing system for…"
+        },
+        {
+          "heading": "Report Enhancements",
+          "summary": "We have now introduced the following enhancements for reports generated from various tabs"
+        },
+        {
+          "heading": "Support for Large Software Installer File Uploads",
+          "summary": "The previous 500 MB limit on uploading software files to Qualys Cloud storage has been removed. You can now upload larger software installer files using theUploadFiletoQualysCloudoption when creating patch jobs withInstall Softwarepre- or…"
+        },
+        {
+          "heading": "Add Assets to Mitigation Job from VMDR",
+          "summary": "You can now add mitigation enabled assets when creating a mitigation job from theVMDR>Prioritizationtab. This enhancement allows you to include individual assets to the mitigation job, providing more flexibility and control over the job creation.…"
+        },
+        {
+          "heading": "Extended Randomized Download Time",
+          "summary": "The patch download start time window has been extended from 2 to 8 hours, allowing better distribution of patch download schedules across large asset deployments. This enhancement prevents network congestion by staggering download start times,…"
+        },
+        {
+          "heading": "Support Added for Linux OS",
+          "summary": "We have now support patching for the following versions of Linux Operating system"
+        },
+        {
+          "heading": "Auto-Validation and Extended Limits for Deployment Job Co-Authors",
+          "summary": "When a deployment job is saved, automatic validation is performed to ensure that only active users and users with appropriate permissions are added as co-authors. Any deactivated users or users without appropriate permissions are removed."
+        },
+        {
+          "heading": "Interim Patch Counts for Linux Job",
+          "summary": "You can now view the patch count for Linux jobs during execution on theJobProgresspage. The number ofInstalled,SkippedandFailedpatches are marked with an asterisk (*) to indicate that the count is interim and may change as the job progresses."
+        },
+        {
+          "heading": "Version-Specific ESU Licensing for Windows Patching",
+          "summary": "The Extended Security Update (ESU) licenses are now aligned with specific Windows operating system versions, replacing the previous generic ESU license model. This allows you to purchase and apply ESU licenses tailored to the required Windows…"
+        },
+        {
+          "heading": "New QQL Tokens",
+          "summary": "Refer to the following table to learn more about the new and updated tokens in this release."
+        },
+        {
+          "heading": "API Release Updates",
+          "summary": "For more details on the API updates for this release, seePatch Management API Release 3.13."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PM - Job Linux",
+          "issue": "An issue was observed in which the Linux patch jobs were stuck in Pending status. This issue is now fixed and the jobs are no more stuck in Pending state."
+        },
+        {
+          "component": "PM Job Windows",
+          "issue": "An issue was observed in which the job failed to be sent to the Cloud Agent. This issue is now fixed, and the job is sent to Agent on correct time."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "The Assets tab incorrectly displayed multiple IP addresses for assets. This issue has been fixed, and we now display only single IPv4 address for those assets."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "An issue where the UI was slow to respond when entering text in theNameandDescriptionfields during report generation has been resolved."
+        },
+        {
+          "component": "PM - Job Windows",
+          "issue": "An issue where users without the required permission could save and enable a patch deployment job has been fixed. Now, only users with the permission to enable the job can enable jobs."
+        },
+        {
+          "component": "PM - Job Windows",
+          "issue": "Previously, there was no limit on the number of co-authors in a deployment job. Each deployment job can now include up to 200 co-authors, restricted to active users."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-06T13:37:46.377248+00:00",
+      "status": "success"
+    }
   },
   "e3fe36f97614": {
     "key": "e3fe36f97614",
@@ -7819,7 +7964,59 @@
       "PM"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 29, 2026",
+      "features": [
+        {
+          "heading": "Assets IDs in Jobs",
+          "summary": "With this release, we have updated the Create MTG Deployment Job API which supports including Asset IDs in On-Demand and Run Once mitigation jobs. Previously, only Asset Tag IDs were supported. This enhancement applies to both Windows and Linux…"
+        },
+        {
+          "heading": "Updated Random Downtime Parameter",
+          "summary": "With this release, we have enhanced the Create Deployment Job API to configure therandomdowntimeparameterupto8 hours. This extended duration allows agents more time to download patches, which is especially useful for jobs involving a large number of…"
+        },
+        {
+          "heading": "New Result Type Column in Reports",
+          "summary": "With this release, this API now supports theresultTypefield in the request.The generated report includes a newResult Typecolumn. This enhancement applies to Windows and Linux platforms for Job Progress report."
+        },
+        {
+          "heading": "Patch and Action Filters In Reports",
+          "summary": "/pm/v1/report/mitigationjobprogress/{deploymentJobId}"
+        },
+        {
+          "heading": "IPv6 Address Visibility",
+          "summary": "With this release, we have enhanced the Generate Isolation Job Progress Report API to include IPv6 address in the API request. Thismakes it easier to identify and track assets in IPv6 environments."
+        },
+        {
+          "heading": "Support to Download PDF Reports",
+          "summary": "With this release, we have enhanced certain report APIs that now allow you to download report in PDF format."
+        },
+        {
+          "heading": "Extended Limits for Deployment Job Co-Authors",
+          "summary": "With this release, we have updated certain Deployment Job APIs with v2 version. These APIs are enhanced to restrict addition of only 200 users as co-authors to a deployment job. If you try to add more than 200 co-authors to a job, the API response…"
+        },
+        {
+          "heading": "Version-Specific ESU Licensing for Windows Patching",
+          "summary": "With this release, we have enhanced the Patch Details for Patches API to include the ESU operating system version in the API response. A new field esuOsVersion is displayed in the response."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2025-21189",
+        "CVE-2025-21268",
+        "CVE-2025-21269",
+        "CVE-2025-21276",
+        "CVE-2025-21328",
+        "CVE-2025-21329",
+        "CVE-2025-21332"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-06T13:37:46.377248+00:00",
+      "status": "success"
+    }
   },
   "58764d2e2802": {
     "key": "58764d2e2802",
@@ -7829,7 +8026,23 @@
       "Conn"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 27, 2026",
+      "features": [
+        {
+          "heading": "Updated GitHub Connector Behavior Based on TotalCloud Licensing",
+          "summary": "With this release, we are introducing the GitHub connector that allows you to connect your GitHub repositories and importInfrastructure‑as‑Code(IaC) scanning results into TotalCloud (TC). The connector is now displayed in theConnector…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-06T13:37:46.377248+00:00",
+      "status": "success"
+    }
   },
   "2e490d9478a9": {
     "key": "2e490d9478a9",
