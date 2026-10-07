@@ -8326,7 +8326,31 @@
       "GAV"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 26, 2026",
+      "features": [
+        {
+          "heading": "Import Third-Party Assets with Source Timestamps",
+          "summary": "TheImport Third-Party Assets APIis enhanced to import assets into your inventory using the timestamp details of when the third-party source discovered the asset. To support this capability, we have introduced the following two new input parameters"
+        },
+        {
+          "heading": "Get Software Components using Time-based Filters",
+          "summary": "You can now get a list of software components based on when they were first or last detected by the system. We have enhanced theGet List of All Software Components APIto support the following new input filters"
+        },
+        {
+          "heading": "Report Creation using API",
+          "summary": "We have introduced a new API to create theExternal Attack Surface Management (EASM) Summary Report. You can specify filters, asset scope, report format, and notification settings to create the report and receive notifications when it is generated."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-07T13:56:36.240789+00:00",
+      "status": "success"
+    }
   },
   "d265bd93fc24": {
     "key": "d265bd93fc24",
@@ -8336,7 +8360,31 @@
       "EDR"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 25, 2026",
+      "features": [
+        {
+          "heading": "Introduced Forensics Collection Support for Linux",
+          "summary": "With this release, we have extended forensic data collection capabilities to Linux assets. Until now, forensic collection was available only for Windows. This enhancement enables you to conduct a deeper investigation of Linux systems by gathering…"
+        },
+        {
+          "heading": "Enhanced Incident Assignee Display",
+          "summary": "TheAssigneecolumn now displays the assignee's full name along with their username on theIncidentstab.Previously, the Assignee column displayed only usernames, which made it harder to identify the assigned user. This enhancement improves clarity and…"
+        },
+        {
+          "heading": "Introduced Password Prompt Support for Encrypted or Protected Files",
+          "summary": "This release includes a new capability in theOn‑Demand Scansettings that lets you to configure the password prompt for password-protected files. Previously, there was no configurable option in theOn-Demand Scansettings for handling encrypted or…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-07T13:56:36.240789+00:00",
+      "status": "success"
+    }
   },
   "43292e7e6d95": {
     "key": "43292e7e6d95",
@@ -8349,7 +8397,60 @@
       "PM"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 24, 2026",
+      "features": [
+        {
+          "heading": "Shuffle Randomization for Patch Downloads",
+          "summary": "We have introduced agent-side shuffle randomization for patch downloads with the newShuffle Randomizationcapability. Previously, agents downloaded patches in a fixed sequential order, which caused multiple agents to request and download the same…"
+        },
+        {
+          "heading": "EDR Manifest Lifecycle Status Reporting",
+          "summary": "We have introduced Endpoint Detection and Response (EDR) manifest lifecycle status reporting for the Agent Health Status feature. Cloud Agent now sends EDR manifest lifecycle status updates to the Qualys Platform, ensuring accurate monitoring of EDR…"
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "Database authentication with Windows Cloud Agent 6.4.1 and later no longer requires theLog on Locallypermission and now supports non-interactive access using only theLog on as a Batch jobpermission."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues and limitations for this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "FIM Event Exclusion",
+          "issue": "We fixed an issue where the FIM event exclusion rules with multiple conditions were not working correctly. Now, we have optimized the FIM event exclusion logic to ensure that exclusion rules work correctly with multiple exclusion conditions."
+        },
+        {
+          "component": "Patch Management Job Status",
+          "issue": "We fixed an issue where patch job status was incorrectly marked asJob Startedon Patch Management user interface when the job was completed."
+        },
+        {
+          "component": "Reporting - False Positives",
+          "issue": "We fixed an issue where several Control IDs (CIDs) reported false positives for Windows server assets, as Cloud Agent failed to correctly read the configuration settings."
+        },
+        {
+          "component": "SwCA Scanning",
+          "issue": "We fixed an issue where SwCA scans were failing for a few assets due to the multiple scan recursion."
+        },
+        {
+          "component": "Cloud Agent - Cross Platform Migration",
+          "issue": "Cloud Agents could not be migrated from a shared Qualys platform to a private cloud platform (PCP) due to the distinct URL lengths. We fixed this issue by implementing a solution to correctly replace PCP URLs during cross platform Cloud Agent migration."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-07T13:56:36.240789+00:00",
+      "status": "success"
+    }
   },
   "0b1846f6226a": {
     "key": "0b1846f6226a",
@@ -8360,7 +8461,104 @@
       "WAS"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 20, 2026",
+      "features": [
+        {
+          "heading": "OpenAPI Compliance Terminology Updates",
+          "summary": "We have updated terminology related to API compliance to improve consistency and reflect the adoption ofOpenAPIspecifications."
+        },
+        {
+          "heading": "QDS Information Added to Knowledge Base",
+          "summary": "With this enhancement, theKnowledge Basenow displays Qualys Detection Score (QDS) information directly for relevant QIDs."
+        },
+        {
+          "heading": "Filter Findings by Detection Reason Using QQL",
+          "summary": "You can now search and analyze detections by reason using a new QQL tokenfinding.reason. This token is available in theDetections,Web Applications, andAPIstabs. TheAPIstab is available only with TotalAppSec."
+        },
+        {
+          "heading": "Search Scans by Progression Count QQL Token",
+          "summary": "A new QQL token,scan.progressionNumber, is now available in theScan Listtab to help identify scans based on their progression count."
+        },
+        {
+          "heading": "Enhanced Scan Duration Display",
+          "summary": "We updated the scan duration format in theScan Listtab. Previously, for scans that ran for less than one hour, theStatuscolumn in theScan ListdisplayedTook 0 hours, which did not reflect the actual scan time."
+        },
+        {
+          "heading": "Report Ignored Findings to ETM for TruRisk™ Calculation",
+          "summary": "With this enhancement, TotalAppSec now reports ignored findings to Enterprise TruRisk™ Management (ETM), enabling more accurate TruRisk™ score calculation."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "TAS and WAS",
+          "issue": "Proxy Configuration"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Web application creation and editing - Crawling scripts"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Ignore, Activate, and Purge Findings"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Knowledge Base"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Authentication Records"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scan Schedules"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Dynamic Search List"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Detection Details"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scan Schedule"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Community Subscription"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scans"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Test Authentication"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scans"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scans"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Web Applications"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-07T13:56:36.240789+00:00",
+      "status": "success"
+    }
   },
   "074e0f5de0b4": {
     "key": "074e0f5de0b4",
@@ -8370,7 +8568,36 @@
       "UD"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 20, 2026",
+      "features": [
+        {
+          "heading": "Download JSON for Dashboards and Widgets",
+          "summary": "This release introduces theDownload as JSONcapability, which enables you to download dashboard and widget data in JSON format. With this feature, you can easily export dashboard and widget data along with their configuration in JSON format, giving…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "UD",
+          "issue": "Fixed an issue where theLinux PPC 64 Cloud Agentpackage download button failed to respond on clicking. The problem occurred specifically on Linux PPC 64, while other package types, such as Windows and Linux DEB, downloaded correctly.This issue is now fixed, and the Linux PPC 64 Cloud Agent package responds to the download button correctly when clicked."
+        },
+        {
+          "component": "UD - VMDR",
+          "issue": "Fixed an issue where theCyber Essentials - Bluestemdashboard displayed inconsistent data after it was pinned. The detection counts in the widgets changed when the dashboard was pinned.This issue is now fixed, and the widgets display the correct data after the dashboard is pinned."
+        },
+        {
+          "component": "UD",
+          "issue": "Fixed an issue in the Report Schedule feature where scheduled dashboard reports sent by email, as well as the report downloaded directly from the UI, failed to display data in THREAT PROTECT widgets in the PDF.This issue is now fixed, and scheduled reports now generate complete PDF output."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-07T13:56:36.240789+00:00",
+      "status": "success"
+    }
   },
   "178b18c60aad": {
     "key": "178b18c60aad",
