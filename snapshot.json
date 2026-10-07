@@ -8608,7 +8608,27 @@
       "PA"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 12, 2026",
+      "features": [
+        {
+          "heading": "Retrieve and Import Library Polices",
+          "summary": "With this release, we are introducing new Library Policy APIs. These APIs allow you to retrieve and import library policies. They make the process faster and more efficient, helping users save both time and effort."
+        },
+        {
+          "heading": "Get Posture Info API: View Scan Source and Last Detection Date",
+          "summary": "In the previous release, two enhancements were introduced to the Get Posture AP, viewing the QDS score in the API response and retrieving posture information using the Posture ID. With this release, the Get Posture Info API response now also…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-07T19:46:55.417363+00:00",
+      "status": "success"
+    }
   },
   "b9d47cec0dd7": {
     "key": "b9d47cec0dd7",
@@ -8618,7 +8638,52 @@
       "PA"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 12, 2026",
+      "features": [
+        {
+          "heading": "Update - View QDS in Downloaded Reports",
+          "summary": "In the previous release, we introduced the feature to display the Qualys Detection Score (QDS) in the downloaded CSV reports. With this release, we have extended support to view QDS in PDF, HTML, and XML formats report."
+        },
+        {
+          "heading": "View Posture Count Details in Activity Logs",
+          "summary": "With this release, you can view the total count of postures (Posture Count) for a user in theActivity Logstab underUsers. This helps in understanding how many postures associated with a policy a particular user is compliant with."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PA",
+          "issue": "When the user accessed the Scans page in the Policy Audit application and selected Launch Help, a 404 Not Found error was displayed due to an incorrect help link. Relevant code changes have been made to fix the issue. The link has been updated with the correct one."
+        },
+        {
+          "component": "PA - Policy Editor",
+          "issue": "When the user tried to create a new policy using hosts, the page became unresponsive at the first step due to the large number of assets to be displayed. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - Reports",
+          "issue": "When the user generated a compliance report in CSV format, the Extended Evidence column was misaligned due to Microsoft Excel’s limit of 32,000 characters per cell. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - Exceptions",
+          "issue": "When the users created an exception, the assignee did not receive email notifications for the exception status levels pending, approved, reopened, or rejected. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - Scan Backend",
+          "issue": "When a non-POC Manager user performed a compliance scan on an account with agent correlation enabled, agent merging did not function properly, resulting in duplicate asset entries. Relevant code changes have been made to fix the issue."
+        },
+        {
+          "component": "PA - SCAP",
+          "issue": "When the user configures an SCAP scan and adds a distribution list to it and launches an SCAP scan, the scan fails and crashes during execution. Relevant code changes have been made to fix the issue."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-07T19:46:55.417363+00:00",
+      "status": "success"
+    }
   },
   "7bfed54073d6": {
     "key": "7bfed54073d6",
@@ -8629,7 +8694,36 @@
       "VM"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 12, 2026",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "With this release, we have expanded SNMPv3 Authentication and Encryption algorithm support. The API validation logic is updated to recognize new algorithm values for creating or editing SNMPv3 authentication records across API versions2.0and3.0."
+        },
+        {
+          "heading": "Qualys Policy Compliance (PC)",
+          "summary": "For the list of features and improvements made in Policy Compliance/Policy Audit, refer to thePolicy Audit API Release Notes for Release 1.9."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Scan API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "Apps - VM",
+          "issue": "Vulnerability Management"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-07T19:46:55.417363+00:00",
+      "status": "success"
+    }
   },
   "aee7013af4ec": {
     "key": "aee7013af4ec",
@@ -8640,7 +8734,68 @@
       "VM"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 12, 2026",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "With this release, we have enhanced theSNMPv3configuration experience by adding support for additionalSNMPv3 Authenticationand encryption algorithms. You can now select from an extended list of supported values directly in the user interface."
+        },
+        {
+          "heading": "Qualys Policy Audit (PA)",
+          "summary": "For the list of features and improvements we have made in Policy Audit, refer to thePolicy Audit UI Release Notes for Release 1.9."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - SAML Authentication",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scans",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scans UI",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Reports General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Reports General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Assets",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Knowledge Base",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "Apps - VM",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM-Scan based Report",
+          "issue": "Vulnerability Management"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-07T19:46:55.417363+00:00",
+      "status": "success"
+    }
   },
   "12d2222622a3": {
     "key": "12d2222622a3",
@@ -8650,7 +8805,35 @@
       "ID"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 10, 2026",
+      "features": [
+        {
+          "heading": "Introduced Domain Trust Map",
+          "summary": "The Domain Trust Map provides a visual representation of trust relationships across Active Directory domains and forests. It helps security teams understand how authentication and access can flow between trusted environments and identify trust…"
+        },
+        {
+          "heading": "ID Misconfigurations View in Risk Management",
+          "summary": "The ID Misconfigurations page provides centralized visibility into identity-related security weaknesses that can increase the risk of unauthorized access, privilege abuse, and lateral movement across your environment. We currently support…"
+        },
+        {
+          "heading": "Identity TruRisk Score Calculation",
+          "summary": "We have introduced features for Asset Criticality Scoring and TruRisk calculation. Administrators can assign risk scores to users and groups in Active Directory, which are essential for evaluating identity-related risks."
+        },
+        {
+          "heading": "Introduced Identities Tab",
+          "summary": "With this release, we have introduced the new Identities tab. This tab provides centralized visibility and risk-based assessment of all user and group identities discovered in your environment."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-07T19:46:55.417363+00:00",
+      "status": "success"
+    }
   },
   "9f59da56d4c5": {
     "key": "9f59da56d4c5",
