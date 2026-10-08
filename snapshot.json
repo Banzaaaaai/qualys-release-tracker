@@ -9087,7 +9087,31 @@
       "QF"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "",
+      "features": [
+        {
+          "heading": "Mark Evaluation as Failed When No Resource Found (Azure – TotalCloud Node)",
+          "summary": "You can now configure the TotalCloud node to mark an evaluation asFailedwhen no resources are detected."
+        },
+        {
+          "heading": "Improved Default Case Handling in Decision Nodes",
+          "summary": "We have improved the behavior when changing theDefault Casein a decision node."
+        },
+        {
+          "heading": "Sensitive Credentials Excluded from Workflow Export",
+          "summary": "Sensitive credentials are now excluded by default when exporting a workflow to JSON."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-08T19:42:11.775796+00:00",
+      "status": "success"
+    }
   },
   "e9b677acb74e": {
     "key": "e9b677acb74e",
@@ -9097,7 +9121,35 @@
       "VMDR OT"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 09, 2026",
+      "features": [
+        {
+          "heading": "Alerting in VMDR OT",
+          "summary": "You can now configure alerts to monitor changes across events, assets, and networks in your OT environment. These alerts are rule-based and help you stay informed about changes by automatically triggering alerts when defined conditions are…"
+        },
+        {
+          "heading": "Visibility for Special Asset Types",
+          "summary": "Some assets detected in your environment may fall outside your OT environment or may not be inventoried. These assets are grouped into the following special categories"
+        },
+        {
+          "heading": "Import Support for Johnson Controls .dbexport Files",
+          "summary": "VMDR OT now supports .dbexport project files used by Johnson Controls. You can import these project files into VMDR OT to extract asset information and include the asset in your OT inventory."
+        },
+        {
+          "heading": "New QQL Tokens for Alerting",
+          "summary": "We have introduced new tokens to define the rule query when configuring an alert rule, based on the sources below. Click a source to see the corresponding tokens in VMDR OT Online Help."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-08T19:42:11.775796+00:00",
+      "status": "success"
+    }
   },
   "033680f19df7": {
     "key": "033680f19df7",
@@ -9108,7 +9160,23 @@
       "VMDR OT"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 09, 2026",
+      "features": [
+        {
+          "heading": "VMDR OT API Versioning",
+          "summary": "With the introduction of API versioning inVMDR OT Release 1.2.1 API, all/ot/v1/APIs are now End-of-Life (EOL) from this release. We recommend using the new/ot/1.0/endpoints to ensure continued compatibility, support, and access to the latest…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-08T19:42:11.775796+00:00",
+      "status": "success"
+    }
   },
   "dc44b8f90342": {
     "key": "dc44b8f90342",
@@ -9118,7 +9186,35 @@
       "Conn"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 09, 2026",
+      "features": [
+        {
+          "heading": "Extended Support for On-Demand Snapshot-Based Scans for Azure Connector",
+          "summary": "With this release, you can now trigger Azure VM scans on demand, without waiting for the configured scan interval."
+        },
+        {
+          "heading": "Azure Snapshot Scan – Migration from Terraform to Bicep",
+          "summary": "Azure Snapshot Scan has been updated to use Bicep instead of Terraform for infrastructure deployment and teardown."
+        },
+        {
+          "heading": "Azure Snapshot Scan – Windows OS Support",
+          "summary": "Azure Snapshot Scan now supportsWindows-based operating systems."
+        },
+        {
+          "heading": "Support for Auth ID Client Management from UI",
+          "summary": "With this release, we have extended our support forOpenID Connect Authentication Client Management capabilitiesfrom the Connector UI. This update allows for secure authentication and authorization of API access directly from the user interface. Our…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-08T19:42:11.775796+00:00",
+      "status": "success"
+    }
   },
   "eb39c3c37eaf": {
     "key": "eb39c3c37eaf",
@@ -9129,7 +9225,79 @@
       "Conn"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 09, 2026",
+      "features": [
+        {
+          "heading": "JWT Token Generation using Client ID and Secret Key",
+          "summary": "You can generate the JWT access token by providing the client ID and client secret key in the following API request headers."
+        },
+        {
+          "heading": "Introduced Support for AWS Organization Connector APIs",
+          "summary": "With this release, we have increased our API collection to add support for the AWS Organization connectors."
+        },
+        {
+          "heading": "Test AWS Organization Connector",
+          "summary": "Test the Organization connector connection to AWS."
+        },
+        {
+          "heading": "Create AWS Organization Connector",
+          "summary": "Creates an AWS Organization connector."
+        },
+        {
+          "heading": "List AWS Organization Connectors",
+          "summary": "Lists all AWS Organization connectors."
+        },
+        {
+          "heading": "Get AWS Organization Connector Details",
+          "summary": "Gets AWS Organization connector details."
+        },
+        {
+          "heading": "Edit AWS Organization Connector",
+          "summary": "Updates AWS Organization connector details."
+        },
+        {
+          "heading": "Run AWS Organization Connector",
+          "summary": "Manual Run API triggers execution of an AWS Organization connector and creates member connectors."
+        },
+        {
+          "heading": "Enable/Disable AWS Organization Connector",
+          "summary": "Update the enable/disable status of an AWS Organization connector."
+        },
+        {
+          "heading": "Detach AWS Organization Connector",
+          "summary": "Detach a member connector from an AWS Organization (ORG) connector."
+        },
+        {
+          "heading": "Delete AWS Organization Connector",
+          "summary": "Delete an AWS Organization (ORG) Connector using its unique connector identifier."
+        },
+        {
+          "heading": "Attach AWS Organization Connector",
+          "summary": "Attach a member connector to an AWS Organization (ORG) connector."
+        },
+        {
+          "heading": "Get Valid ORG Connectors for Attach",
+          "summary": "Retrieve all valid AWS Organization connectors that can be attached to a specified member connector."
+        },
+        {
+          "heading": "Get Last Job Summary of AWS Organization Connector",
+          "summary": "Retrieve the most recent job summary for the specified AWS Organization connector."
+        },
+        {
+          "heading": "Get AWS OU Details",
+          "summary": "Retrieve AWS Organization Unit (OU) details with pagination support for the specified AWS Organization connector context."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-08T19:42:11.775796+00:00",
+      "status": "success"
+    }
   },
   "20d886a72796": {
     "key": "20d886a72796",
