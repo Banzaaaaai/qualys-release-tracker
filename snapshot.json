@@ -8843,7 +8843,35 @@
       "mROC"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 09, 2026",
+      "features": [
+        {
+          "heading": "Managed Security Service Provider (MSSP) Renamed to Managed Risk Operation Center (mROC)",
+          "summary": "Qualys Managed Security Service Provider (MSSP) portal is now available asQualysManagedRiskOperationCenter(mROC)portal.The mROC Portal, powered by Qualys Enterprise TruRiskTMManagement,  enables partners to deliver advisory, onboarding, integration,…"
+        },
+        {
+          "heading": "New Home Page - Portfolio Overview",
+          "summary": "With the new mROC portal improvements, we are introducing a newHomepage that provides a centralized view of portfolio-wide risk management. The portal consolidates critical insights into a single dashboard that includes"
+        },
+        {
+          "heading": "New Risk Overview Tab",
+          "summary": "We are introducing a newRiskOverviewtab that provides a centralized view of key customer risk data across your portfolio. The tab includes"
+        },
+        {
+          "heading": "Customers Tab Renamed to Manage Customers",
+          "summary": "TheCustomerstab is now renamed toManageCustomersfor improved clarity and naming consistency."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-08T14:02:34.851871+00:00",
+      "status": "success"
+    }
   },
   "0d201ab5b78e": {
     "key": "0d201ab5b78e",
@@ -8853,7 +8881,35 @@
       "CA"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 17, 2026",
+      "features": [
+        {
+          "heading": "Extended Language Support for SwCA Runtime Analysis",
+          "summary": "We have extended the language support forSwCA Runtime Analysison Windows platforms to the following languages"
+        },
+        {
+          "heading": "Behavior Change",
+          "summary": "There are no behavior changes for this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "No new platform coverage is added in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "SwCA scanner may generate duplicate detection from temporary extraction files (sca*.tmp) during Rust and Go binary scanning. This may result in redundant database entries with non-existent file paths in scan reports. We recommend ignoring these…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-08T14:02:34.851871+00:00",
+      "status": "success"
+    }
   },
   "7baef58508e9": {
     "key": "7baef58508e9",
@@ -8863,7 +8919,27 @@
       "CS"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-27T11:02:57+00:00"
+    "detected_at": "2026-05-27T11:02:57+00:00",
+    "details": {
+      "release_date": "March 16, 2026",
+      "features": [
+        {
+          "heading": "Added Support for new Operating Systems",
+          "summary": "CS Sensor 1.42 expands the coverage of scan targets' OSes by introducing support for the following Operating Systems."
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following issue has been fixed with this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-08T14:02:34.851871+00:00",
+      "status": "success"
+    }
   },
   "eb04a9b66767": {
     "key": "eb04a9b66767",
@@ -8873,7 +8949,56 @@
       "VMDR"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 12, 2026",
+      "features": [
+        {
+          "heading": "Customize Column Visibility in Vulnerabilities and Assets Tabs",
+          "summary": "In this release, we have introduced column visibility control in theVulnerabilityandAssettabs inVMDR. You can use this feature to control which columns to display or hide in the listing tables. This helps you to tailor the table view for your…"
+        },
+        {
+          "heading": "Implementation of QQL Token Standardization",
+          "summary": "We have now implementedQualysQuery Language (QQL) token standardization across all theQualysapplications. As part of this enhancement, VMDR tokens are updated to new token names that follow a standard and consistent nomenclature."
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "The following new Finding tokens are added to theVulnerabilitytab"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Vulnerabilities page",
+          "issue": "We fixed an issue where theInstancecolumn underCSAM>Inventory>Asset Details>Vulnerabilitiespage was not displaying any data.Now you can view the detected instances correctly in theInstancecolumn in theVulnerabilitiespage."
+        },
+        {
+          "component": "Vulnerabilities Page",
+          "issue": "We fixed an issue where the vulnerability data did not appear when clicking theView Alllink onVMDR>Vulnerabilities>Asset Details>VMDR Vulnerabilities.You can now view the vulnerability data correctly when you click theView Alllink in theVulnerabilitiespage."
+        },
+        {
+          "component": "Vulnerabilities Page",
+          "issue": "We fixed an issue where selecting theView Missing Patchesoption from theVulnerabilitiespage >Actionsopened theWindowstab instead of theLinuxtab for the Linux assets.Now, when you clickView Missing Patchesfrom theActionsmenu, theLinuxtab opens correctly for the Linux systems."
+        },
+        {
+          "component": "Vulnerabilities Page",
+          "issue": "We fixed an issue where theoperatingSystem.nameQQL token did not return search results in theVulnerabilitiespage in theVMDRmodule, even though it returned correct results in CSAM.Now, theoperatingSystem.nameQQL token works consistently across both CSAM and the VMDR modules."
+        },
+        {
+          "component": "Prioritization Page",
+          "issue": "We fixed an issue where theAsset Namecolumn on theAssetstab of theVMDR Prioritizationpage did not display the first character of the IP, MAC, and IPv6 addresses. This resulted in displaying incomplete values.You can now view all IP, MAC, and IPv6 addresses fully and correctly in theAsset Namecolumn on theAssetstab of theVMDR Prioritizationpage."
+        },
+        {
+          "component": "Reporting Schedule on Dashboard",
+          "issue": "We fixed an issue where theDashboard>>Reporting Schedulefeature generated an incomplete PDF report for theAsset with Unpatchable Vulnerabilitieswidget, which was shared through an email.Now, the scheduled and emailed Dashboard PDF report for theAsset with Unpatchable Vulnerabilitieswidget correctly displays data."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-08T14:02:34.851871+00:00",
+      "status": "success"
+    }
   },
   "dd437f460131": {
     "key": "dd437f460131",
@@ -8887,7 +9012,72 @@
       "WAS"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 10, 2026",
+      "features": [
+        {
+          "heading": "Cloud Agent",
+          "summary": "We have updated the following search tokens available for Cloud Agent"
+        },
+        {
+          "heading": "Security Assessment Questionnaire",
+          "summary": "We have introduced support to remove the uploaded questionnaire attachment files from the SAQ repository. Earlier, the option to remove these files was not available."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "SwCA profile assignment",
+          "issue": "Cloud Agent"
+        },
+        {
+          "component": "Remote log collection",
+          "issue": "Cloud Agent"
+        },
+        {
+          "component": "Threat Protection RTIs",
+          "issue": "Threat Protection"
+        },
+        {
+          "component": "Action Logs",
+          "issue": "Administration"
+        },
+        {
+          "component": "User management",
+          "issue": "CSAM"
+        },
+        {
+          "component": "Asset Inventory",
+          "issue": "CSAM"
+        },
+        {
+          "component": "WAS Reporting",
+          "issue": "WAS"
+        },
+        {
+          "component": "Vulnerability count",
+          "issue": "Shared Portal"
+        },
+        {
+          "component": "QQL Search token",
+          "issue": "Shared Portal"
+        },
+        {
+          "component": "QID Reporting",
+          "issue": "Shared Portal"
+        },
+        {
+          "component": "TruRisk Score Reports",
+          "issue": "Shared Portal"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-08T14:02:34.851871+00:00",
+      "status": "success"
+    }
   },
   "b2ded4e048ab": {
     "key": "b2ded4e048ab",
