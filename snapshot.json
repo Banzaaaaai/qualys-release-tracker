@@ -9596,7 +9596,49 @@
       "CS"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 03, 2026",
+      "features": [
+        {
+          "heading": "New Report Templates - Images, Containers, Pods, & Vulnerability",
+          "summary": "With this release, Qualys Container Security has introduced the following new report templates: Images, Containers, Pods, and Vulnerability. To support this, the following new report formats are introduced."
+        },
+        {
+          "heading": "Vulnerability View for Images",
+          "summary": "With this release, Qualys Container Security now supports vulnerability-related activities. In this phase, you can obtain a list of vulnerabilities in your account along with their details on the dedicated Vulnerabilities page. The following APIs…"
+        },
+        {
+          "heading": "Software Lifecycle Details for Images",
+          "summary": "Qualys Container Security now supports software lifecycle details in image APIs. The APIs mentioned below provide lifecycle details such as, Stage, Lifecycle confidence (lifeCycleConfidence), End of life (eol), End of support (eos), and General…"
+        },
+        {
+          "heading": "New Rules for Images - Unauthorised Author, Old Vulnerabilities, & Deployment Scope",
+          "summary": "With this release, Container Security can block images with unauthorized authors and old vulnerabilities with the help of Centralized Admission Controller and Image Assessment (CICD) policies."
+        },
+        {
+          "heading": "Vulnerability Propagation in Sensor Profile",
+          "summary": "With this release, you can enable or disable Vulnerability propagation for your sensor profiles using CS APIs."
+        },
+        {
+          "heading": "Qualys Locator Path (QLP)",
+          "summary": "With this release, Qualys Container Security provides a unique identification method to locate your containers. This method is known as Qualys Locator Path (QLP). To support this feature, the following APIs are updated."
+        },
+        {
+          "heading": "Firstfound Field in Image APIs",
+          "summary": "With this release, Qualys Container Security now shows you when an image was first found. To support this, 'firstFound' field is added in below APIs."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2025-61727"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-09T19:18:46.141495+00:00",
+      "status": "success"
+    }
   },
   "387dc504907f": {
     "key": "387dc504907f",
@@ -9607,7 +9649,148 @@
       "WAS"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 03, 2026",
+      "features": [
+        {
+          "heading": "Discover APIs using Google Apigee API Discovery Connector",
+          "summary": "With the GCP API Connectors, TotalAppSec can discover Swagger files with all endpoints exposed in your GCP environment. This enhancement strengthens TotalAppSec’s API discovery capabilities and helps improve your overall security posture."
+        },
+        {
+          "heading": "Discover APIs using KONG Gateway API Connectors",
+          "summary": "TotalAppSec now supports API discovery using Kong Gateway Discovery API Connectors. With this enhancement, TotalAppSec can discover Swagger files, including all endpoints, from Kong Gateway instances, expanding API visibility and helping strengthen…"
+        },
+        {
+          "heading": "Renamed API Connectors for Improved Clarity and Consistency",
+          "summary": "We have renamed API Connectors in TotalAppSec to follow a standardized naming convention. The updated names clearly indicate the vendor brand, define the gateway product, making the API discovery capability and target environment easier to recognize."
+        },
+        {
+          "heading": "Enhanced Visibility for Mean Time to Remediate Widget",
+          "summary": "While building a widget in the TotalAppSec dashboard, theAverageoption is always available in theFunction Typesection in theWidget Detailspage.Earlier, theAverageoption was available only for some data sources selected in theDisplay results aslist…"
+        },
+        {
+          "heading": "Limited Visibility of WAF Features",
+          "summary": "The TotalAppSec user interface now displays Web Application Firewall (WAF)–related features only when the WAF application is available, and the user has the required permissions. As a result, WAF-specific options may have limited visibility and…"
+        },
+        {
+          "heading": "Enhanced Progressive Scan Behavior",
+          "summary": "Previously, when a progressive scan was launched, TotalAppSec used the summary from the most recent matching progressive scan. As a result, the progression continued from the previous scan state."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "TAS and WAS",
+          "issue": "Download Report"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scheduled Scan Settings"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Authorization API"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Knowledge Base"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scan Reports"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scan Schedules"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scan Schedule"
+        },
+        {
+          "component": "WAS",
+          "issue": "WAS Widget"
+        },
+        {
+          "component": "WAS",
+          "issue": "WAS Widget"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Reports"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Detection Details"
+        },
+        {
+          "component": "WAS",
+          "issue": "WAS Widget"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Authentication Record"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scan Schedules"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Web Application Configuration"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scan Schedule Report"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Option Profile"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scan Report"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scan Schedules"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Detections"
+        },
+        {
+          "component": "TAS",
+          "issue": "Discovery"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Detection Count"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Discovered APIs"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Finding status"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scanner Appliance"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scan Report"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-09T19:18:46.141495+00:00",
+      "status": "success"
+    }
   },
   "102bd15ed25e": {
     "key": "102bd15ed25e",
@@ -9617,7 +9800,27 @@
       "UD"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 03, 2026",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "UD",
+          "issue": "An issue occurred where users were unable to view the custom labels in the multi-stacked bar widget on the dashboard, even after adding them correctly in theDisplay Settings.This issue is now resolved, and users can view all the configured custom labels correctly."
+        },
+        {
+          "component": "UD",
+          "issue": "An issue occurred where scheduled reportscontaining the table widget with date columns, such asFirst DetectedandLast Detected, displayed[Object]instead of the actual date values.This issue is now resolved, and the scheduled reports correctly reflect the date values in theFirst DetectedandLast Detectedcolumns of the table widget."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-09T19:18:46.141495+00:00",
+      "status": "success"
+    }
   },
   "bbd83232ead4": {
     "key": "bbd83232ead4",
@@ -9628,7 +9831,56 @@
       "QS"
     ],
     "month_label": "February 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 27, 2026",
+      "features": [
+        {
+          "heading": "Automated QScanner Version Updates",
+          "summary": "With this release, QScanner introduces a new command - 'update' - to help you stay on the latest version effortlessly."
+        },
+        {
+          "heading": "Support for MacOS (darwin-arm64)",
+          "summary": "QScanner now supports scanning images on MacOS systems running both Intel (Darwin) and Apple Silicon (ARM64 – M1, M2, etc.) processors, improving compatibility with modern Mac development and CI/CD environments."
+        },
+        {
+          "heading": "'Overlayfs' Storage Driver Support for Docker",
+          "summary": "Along with 'overlay2' file system, QScanner now supports 'overlayfs (containerd snapshotter) for Docker environment. Many modern container runtimes and Docker configurations—especially on lightweight Linux distributions, and VM‑based CI runners—use…"
+        },
+        {
+          "heading": "Added Support for new Operating Systems and Package Manager",
+          "summary": "QScanner v4.8.0 expands the coverage for OS of scan targets by introducing support for"
+        },
+        {
+          "heading": "Support for a new Scan Type - File Insight",
+          "summary": "Earlier, QScanner enabled its support for OS, SCA, and Secret scans on images. With this release, QScanner offers the 'File Insight' scan for images."
+        },
+        {
+          "heading": "Improvement in Static Scan on Container Image",
+          "summary": "QScanner performs a Static scan of the target to collect different types of information based on the scan types that have been specified by you. Scans to perform can be specified using '--scan-types' flag and can have multiple values like 'pkg' and…"
+        },
+        {
+          "heading": "Renaming Policy Evaluation Argument",
+          "summary": "With this release, QScanner is deprecating the '--tags' argument. Policy evaluation was based on such tags. Instead, you are requested to use the newly introduced '--policy-tags' argument. The purpose remains the same."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Reporting",
+          "issue": "QScanner failed to detect some of the QIDs associated with OS."
+        },
+        {
+          "component": "Scan",
+          "issue": "QScanner failed to scan images with stripped history."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-09T19:18:46.141495+00:00",
+      "status": "success"
+    }
   },
   "77d2b79e89eb": {
     "key": "77d2b79e89eb",
@@ -9638,7 +9890,27 @@
       "CS"
     ],
     "month_label": "February 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 02, 2026",
+      "features": [
+        {
+          "heading": "Support for Docker Version 29",
+          "summary": "Docker version 29 deprecates the legacyoverlay2storage driver and transitions to thecontainerd image store, which continues to useoverlayfsas its underlying technology.Qualys Container Security sensor now supports installation on Docker version 29."
+        },
+        {
+          "heading": "Known Issue",
+          "summary": "Please note the following known issue in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-09T19:18:46.141495+00:00",
+      "status": "success"
+    }
   },
   "95e294769e94": {
     "key": "95e294769e94",
