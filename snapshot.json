@@ -9307,7 +9307,104 @@
       "ETM"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 09, 2026",
+      "features": [
+        {
+          "heading": "Introduced TruRisk Customization Using Risk and Compensatory Factors",
+          "summary": "A customizable rule that adjusts the TruRisk™ Score of an asset based on specific conditions without changing the raw security data itself. This aligns security scoring with business priorities and risk appetite."
+        },
+        {
+          "heading": "Introduced ACS Score Recomputing",
+          "summary": "The Asset Criticality Score (ACS) system helps you evaluate and manage the importance level of assets within your organization. This feature provides a structured approach to assigning, updating, and tracking criticality ratings for all assets…"
+        },
+        {
+          "heading": "Introduced Risk Reprioritization Flow Widget Represented by Sankey Chart",
+          "summary": "The Risk Reprioritization Flow widget is a new dashboard visualization that helps security teams understand how vulnerability findings move between different risk scoring models. It visually shows how findings are deprioritized or reprioritized when…"
+        },
+        {
+          "heading": "Introduced Risk Arrival and Remediation Burndown Widget",
+          "summary": "The Risk Arrival and Remediation Burndown widget helps you understand how findings are entering your environment, how quickly they are being resolved, and whether a backlog is building up over time. The widget visualizes arrival and remediation…"
+        },
+        {
+          "heading": "Introduced Customized Merge Rules for UAI Account",
+          "summary": "This release introduces customized finding identification rules, enabling tailored de-duplication and identification logic for individual user environments."
+        },
+        {
+          "heading": "Enhanced Purge Rule for UAI-Enabled Accounts",
+          "summary": "The Asset Purging feature enables administrators to remove outdated or irrelevant assets from the system based on defined conditions. This helps maintain accurate inventory data and ensures a clean and reliable security posture."
+        },
+        {
+          "heading": "Extended Support to View Activity Logs",
+          "summary": "With this release, we introduced comprehensive Activity log support for tracking user and system actions. This feature enhances visibility, traceability, and compliance by recording critical operations through the shared services activity log…"
+        },
+        {
+          "heading": "Enhanced Processing Parent-Child Tag Management for Asset Tags",
+          "summary": "With this release, we have improved system efficiency and ensured consistent data handling across all tag operations."
+        },
+        {
+          "heading": "Enhanced TruRisk V2 Formula: Environment-Based Configuration",
+          "summary": "We introduced new configuration capabilities in the TruRisk V2 formula, enabling users to better align risk calculations with their operational environment."
+        },
+        {
+          "heading": "Extended CVSS v4 Support",
+          "summary": "With this release, we introduced CVSS v4 support. Let us see how CVSS information is displayed across the platform. The change ensures alignment with the latest industry standards and improves clarity in the user interface."
+        },
+        {
+          "heading": "Enhanced Finding Details Page",
+          "summary": "This release includes updates to the Finding Details page, improvements in tab structure, technology/category visibility, lifecycle graph enhancements, and performance comparison messaging updates."
+        },
+        {
+          "heading": "Increased Limit for Business Entities",
+          "summary": "With this release, you can now create more Business Entities in Qualys ETM. Previously, the maximum limit was capped at 50 Business Entities. This enhancement increases the allowable limit, enabling organizations to model and manage risk across a…"
+        },
+        {
+          "heading": "Introduced New Tokens",
+          "summary": "We have introduced two new tokens"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "ETM Dashboard",
+          "issue": "Resolved an issue where the Trendline widget did not update correctly when tags were selected from the Dashboard tag selector.Tag filtering now works consistently across all widgets, including support for bothAnyandAllfilter options, ensuring accurate and expected results."
+        },
+        {
+          "component": "ETM Dashboard",
+          "issue": "Resolved an issue where the Risk Removal Velocity widget was not showing accurate data for findings marked as Fixed within the last 7 days. The logic has been corrected to ensure that recently fixed findings are correctly counted. The widget now reflects accurate results."
+        },
+        {
+          "component": "ETM Dashboard",
+          "issue": "Resolved an issue where the Funnel widget does not take into account the dashboard tags or the entity. Due to this, there was a discrepancy between the actual findings and those displayed in the widget."
+        },
+        {
+          "component": "ETM Dashboard",
+          "issue": "Resolved an issue in the Dynamic Trending Widget where the configured color for the third query was not being saved and reverted to the default (lime green) after logout and login. The color settings now save correctly between sessions."
+        },
+        {
+          "component": "ETM User Interface",
+          "issue": "Resolved an issue where the Add button was turned off in the Custom Merge section under Finding Rules, confusing users.A tooltip has been added to clarify the behavior. The application now clearly indicates when no additional attributes are available to add because all supported attributes are already included in the custom merge rule."
+        },
+        {
+          "component": "ETM Findings",
+          "issue": "Resolved a discrepancy when the user encountered an issue while purging a large asset.We corrected the logic to ensure proper updates and prevent unintended entries."
+        },
+        {
+          "component": "ETM Findings",
+          "issue": "Resolved an issue in the TTD (Time to Detect) calculation for ttd QQL where certain findings were showing incorrect detection timelines.The calculation logic has been corrected to ensure TTD values are accurately aligned with the CVE publish date and finding detection timeline."
+        },
+        {
+          "component": "ETM User Interface",
+          "issue": "Addressed user confusion regarding NULL TruRisk™ Scores in the Asset Inventory.Clarified system behavior in the documentation:Assets that have not been scanned recently do not have a TruRisk™ Score calculated and display “–” in the UI.Assets that have been scanned and contain no active vulnerabilities display a TruRisk™ Score of 0.This update ensures a clear understanding of how TruRisk™ Scores are represented."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-09T13:47:08.111300+00:00",
+      "status": "success"
+    }
   },
   "3ce7bce3f9a8": {
     "key": "3ce7bce3f9a8",
@@ -9317,7 +9414,55 @@
       "TC"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 09, 2026",
+      "features": [
+        {
+          "heading": "Customizable Inventory Column View in TotalCloud",
+          "summary": ""
+        },
+        {
+          "heading": "Attack Path Visualization Extended to GCP in TruRisk™ Insights",
+          "summary": ""
+        },
+        {
+          "heading": "Enhanced Cloud Posture Trend Graph Dashboard Widget",
+          "summary": ""
+        },
+        {
+          "heading": "Enhanced TotalCloud CNAPP Dashboard Template (Prebuilt Dashboard)",
+          "summary": ""
+        },
+        {
+          "heading": "Azure On-Demand Snapshot Scan Enhancements",
+          "summary": ""
+        },
+        {
+          "heading": "Direct Download of CloudFormation Template (CFT)",
+          "summary": ""
+        },
+        {
+          "heading": "CDR Enhancements and Updates",
+          "summary": "The following sections describe the enhancements made to the CDR environment in the upcoming CDR release."
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "The following section describes the new tokens introduced as part of TotalCloud 2.22.0"
+        },
+        {
+          "heading": "Control Updates",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-09T13:47:08.111300+00:00",
+      "status": "success"
+    }
   },
   "f21d50a122c3": {
     "key": "f21d50a122c3",
@@ -9328,7 +9473,27 @@
       "TC"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 26, 2026",
+      "features": [
+        {
+          "heading": "New Get Evaluated Resources and Get Resources API (v2)",
+          "summary": ""
+        },
+        {
+          "heading": "New Get all evaluated resources across accounts and controls",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-09T13:47:08.111300+00:00",
+      "status": "success"
+    }
   },
   "4c298b6a6f7a": {
     "key": "4c298b6a6f7a",
@@ -9338,7 +9503,23 @@
       "SaaS DR"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 06, 2026",
+      "features": [
+        {
+          "heading": "New APIs for Customizing Controls",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-09T13:47:08.111300+00:00",
+      "status": "success"
+    }
   },
   "801427755daf": {
     "key": "801427755daf",
@@ -9348,7 +9529,63 @@
       "CS"
     ],
     "month_label": "March 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 03, 2026",
+      "features": [
+        {
+          "heading": "Qualys Locator Path (QLP) for Container Grouping (Beta)",
+          "summary": "As containerized environments scale, you face growing difficulty in manually tracking individual containers, especially when hundreds or thousands of instances are listed independently. The lack of a hierarchical view makes organization and…"
+        },
+        {
+          "heading": "New Unified 'Vulnerability' Tab with Layer Intelligence (Beta)",
+          "summary": "Container environments generate vast amounts of vulnerability data across images, layers, and workloads. This often results in duplication, broken context, and slower, more difficult priortize. The current Container Security dashboards and reports…"
+        },
+        {
+          "heading": "EOL & EOS Details for Images",
+          "summary": "Qualys Container Security now shows lifecycle details for the software installed in an image. With programming languages evolving rapidly, outdated or EOL/EOS software has become increasingly common, often carrying unaddressed vulnerabilities. By…"
+        },
+        {
+          "heading": "Custom Filters for Continuous Assessment",
+          "summary": "Earlier, Qualys Container Security began supporting Continuous Assessment for these settings: Images in Use, Registry images, and Images with a Special tag."
+        },
+        {
+          "heading": "Token Standardization for Container Security",
+          "summary": "Qualys has implemented Qualys Query Language (QQL) token standardization across all Qualys applications. As part of this enhancement, all Container Security tokens are updated with new token names that follow a standard, consistent nomenclature."
+        },
+        {
+          "heading": "Enhancement in Vulnerability Propagation",
+          "summary": "With Vulnerability Propagation, vulnerabilities are passed from images to containers during image scan and container creation events. Earlier, the Vulnerability Propagation support was available only through Qualys TAM or CS Support. With this…"
+        },
+        {
+          "heading": "'User Level' Permissions for Authentication",
+          "summary": "Currently, QScanner uses an Access Token (Container Security>Configurations>Access Token) to communicate with the QualysEnterprise TruRisk™ Platform. However, Role-Based Access Control (RBAC) can not be applied to such a token."
+        },
+        {
+          "heading": "Enhancement in Policy Rules",
+          "summary": "With this release, Qualys Container Security introduces two new rule sub-types forImage Assessment(CI/CD) andAdmission Controllerpolicies."
+        },
+        {
+          "heading": "New 'Deployment' Scope in Admission Controller Policy",
+          "summary": "With this release, Qualys Container Security has introduced a new scope to the Admission Controller policy -Deployment. Admission Controller policies can now be applied at the Deployment level in addition to existing scopes. This enhancement enables…"
+        },
+        {
+          "heading": "Expanded Asset Export Support (5k+ Records)",
+          "summary": "Earlier, you were able to download only 5k asset records. But with this release, you can now download more than 5k records.To support this, a new option,Create Report, is available when you selectAssets>Containers/Images>Downloadoption."
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following issue is addressed in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-09T13:47:08.111300+00:00",
+      "status": "success"
+    }
   },
   "d9224f1163c6": {
     "key": "d9224f1163c6",
