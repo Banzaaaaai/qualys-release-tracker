@@ -9920,7 +9920,28 @@
       "VM"
     ],
     "month_label": "February 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 23, 2026",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "With this feature, we have provided the ability to search Deep Scan QIDs in Knowledge Base and Search List, which helps to filter all the Deep Scan QIDs and list them on the Knowledge Base listing page. To support this, we have added a new…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Host List Detection API",
+          "issue": "Vulnerability Management"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-10T13:03:30.644047+00:00",
+      "status": "success"
+    }
   },
   "c5f2d0ee78db": {
     "key": "c5f2d0ee78db",
@@ -9931,7 +9952,28 @@
       "VM"
     ],
     "month_label": "February 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 23, 2026",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "With this feature, we have introduced support for filtering Deep Scan QIDs in theKnowledgeBaseandDynamic Search ListAPIs. This enhancement allows you to retrieve QIDs associated withDeep Scan - Windowsscans."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Host List Detection API",
+          "issue": "Vulnerability Management"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-10T13:03:30.644047+00:00",
+      "status": "success"
+    }
   },
   "50b38aafed63": {
     "key": "50b38aafed63",
@@ -9941,7 +9983,27 @@
       "ETM"
     ],
     "month_label": "February 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 20, 2026",
+      "features": [
+        {
+          "heading": "Introduced New Autonomous Security Partners (Agentic AI)",
+          "summary": "We have introduced the newAgentic AI Suite, a groundbreaking collection of four intelligent, autonomous agents designed to transform how your organization manages cybersecurity risk. Built to function with intelligence and autonomy, these agents…"
+        },
+        {
+          "heading": "Introduced Cyber Risk AI Assistant ROCky",
+          "summary": "With this release, ETM now has ROCky – the Cyber Risk AI Assistant, an intelligent, conversational chatbot designed to help you quickly access insights, explore risks, and make informed security decisions. ROCky provides a guided, intuitive…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-10T13:03:30.644047+00:00",
+      "status": "success"
+    }
   },
   "8e4b7daf069d": {
     "key": "8e4b7daf069d",
@@ -9951,7 +10013,31 @@
       "QGS"
     ],
     "month_label": "February 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 20, 2026",
+      "features": [
+        {
+          "heading": "Updated CAMS/QGS Images and Containers",
+          "summary": "In QGS 3.14, we updated the CAMS and QGS container images to improve overall stability and performance."
+        },
+        {
+          "heading": "Bandwidth and Speed Test Support in TextUI",
+          "summary": "With this release, QGS introduces theBandwidth and Speed Testfeature in the TextUI."
+        },
+        {
+          "heading": "QGS Home Page Enhancements",
+          "summary": "We have enhanced the QGS Home page to improve visibility and usability."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-10T13:03:30.644047+00:00",
+      "status": "success"
+    }
   },
   "055fbbb56a6a": {
     "key": "055fbbb56a6a",
@@ -9962,7 +10048,50 @@
       "VM"
     ],
     "month_label": "February 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 5, 2026",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "With this release, the column (Scan Capacity Available (%)) on the Appliance listing page (Scans > Appliances) is renamed toAvg. Available Scan Capacity(%)."
+        },
+        {
+          "heading": "Qualys Policy Audit (PA)",
+          "summary": "For the list of features and improvements we have made in Policy Audit, refer to thePolicy Audit UI Release Notes for Release 1.8."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Asset Groups",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "Apps - VM",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Host List Detection API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan Based Report",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - QID Service",
+          "issue": "Vulnerability Management"
+        }
+      ],
+      "cves": [
+        "CVE-2023-50495"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-10T13:03:30.644047+00:00",
+      "status": "success"
+    }
   },
   "ffab710b5629": {
     "key": "ffab710b5629",
