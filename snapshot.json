@@ -10102,7 +10102,42 @@
       "VM"
     ],
     "month_label": "February 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 5, 2026",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "/api/5.0/fo/subscription/option_profile/?action=import/api/5.0/fo/subscription/option_profile/?action=export"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Asset Groups",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Host List Detection API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan Based Report",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - QID Service",
+          "issue": "Vulnerability Management"
+        }
+      ],
+      "cves": [
+        "CVE-2023-50495"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-10T18:15:54.657747+00:00",
+      "status": "success"
+    }
   },
   "dad7f161fab5": {
     "key": "dad7f161fab5",
@@ -10112,7 +10147,56 @@
       "PA"
     ],
     "month_label": "February 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 5, 2026",
+      "features": [
+        {
+          "heading": "Qualys Policy Audit - Update",
+          "summary": "Policy Audit was introduced in June 2025. At the time of its announcement, it was communicated that Policy Compliance would be discontinued for all users, with a complete migration from Policy Compliance to Policy Audit scheduled to be completed by…"
+        },
+        {
+          "heading": "Update - Implementation of QQL Token Standardization",
+          "summary": "With this release, we have updated the names of two Qualys Query Language (QQL) tokens. The new token format follows the syntax:entity.attribute"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PA - New UI",
+          "issue": "Policy Audit"
+        },
+        {
+          "component": "PA - Feature Request",
+          "issue": "Policy Audit"
+        },
+        {
+          "component": "PA - Reports",
+          "issue": "Policy Audit"
+        },
+        {
+          "component": "PA - New UI",
+          "issue": "Policy Audit"
+        },
+        {
+          "component": "PA - PCRS Reports",
+          "issue": "Policy Audit"
+        },
+        {
+          "component": "PA - PCRS",
+          "issue": "Policy Audit"
+        },
+        {
+          "component": "PA - AutoR",
+          "issue": "Policy Audit"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-10T18:15:54.657747+00:00",
+      "status": "success"
+    }
   },
   "1c0532b05d11": {
     "key": "1c0532b05d11",
@@ -10123,7 +10207,35 @@
       "CRI"
     ],
     "month_label": "February 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 09, 2026",
+      "features": [
+        {
+          "heading": "Multiple KEM visibility for Certificates and Assets Tabs",
+          "summary": "With this release, we have enhanced the user interface to provide visibility of multiple Key Encapsulation Mechanism (KEM) algorithms across the Certificates and Assets Tabs. With this enhancement, you can have a more comprehensive view of…"
+        },
+        {
+          "heading": "Post-Quantum Cryptography (PQC) Support in Cipher Suite Details",
+          "summary": "We have enhanced the Cipher Suite details of the grade summary by adding support for the Post-Quantum Cryptography (PQC). Previously, PQC support was limited to certificate and asset levels, making it difficult to access PQC readiness across Cipher…"
+        },
+        {
+          "heading": "Added New QQL Tokens Support",
+          "summary": "The following QQL tokens are added in this release"
+        },
+        {
+          "heading": "Updated QQL Token Support",
+          "summary": "The following QQL token nameis updated to align with Token Standardization introduced inCertificate View Release 4.7"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-10T18:15:54.657747+00:00",
+      "status": "success"
+    }
   },
   "af1c0f180b1b": {
     "key": "af1c0f180b1b",
@@ -10133,7 +10245,34 @@
       "CAR"
     ],
     "month_label": "February 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 09, 2026",
+      "features": [
+        {
+          "heading": "Improved Filtering of Asset Jobs",
+          "summary": "TheExecution Passedasset jobs are now displayed by default on the job'sView Detailspage. This helps you to quickly review successful asset jobs without manually applying filters."
+        },
+        {
+          "heading": "Updated QQL Tokens",
+          "summary": "The following QQL token names are updated to align with theToken Standardizationintroduced inCustom Assessment and Remediation Release 2.6.1"
+        },
+        {
+          "heading": "New QQL Tokens",
+          "summary": "The following table provides the new QQL tokens added in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2023-56789",
+        "CVE-2024-12345"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-10T18:15:54.657747+00:00",
+      "status": "success"
+    }
   },
   "488a3589f498": {
     "key": "488a3589f498",
@@ -10143,7 +10282,23 @@
       "PNS"
     ],
     "month_label": "February 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 09, 2026",
+      "features": [
+        {
+          "heading": "Subscription Updates for Network Passive Sensors",
+          "summary": "Network Passive Sensor now discovers assets in your network only when you have a validNetwork Passive SensorandQualys Enterprise TruRisk™ Platformsubscription."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-10T18:15:54.657747+00:00",
+      "status": "success"
+    }
   },
   "2faf0216978c": {
     "key": "2faf0216978c",
