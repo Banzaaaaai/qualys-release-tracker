@@ -10604,7 +10604,100 @@
       "PM"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 27, 2026",
+      "features": [
+        {
+          "heading": "AI-Powered Patch Reliability Assessment",
+          "summary": "You can now make smarter deployment decisions with the newAI-powered (beta phase) Patch Reliabilitycapability. Even before deploying a patch, this feature helps you access intelligent insights that highlight the stability, known issues, and its data…"
+        },
+        {
+          "heading": "Create Custom Mitigation Scripts",
+          "summary": "You can now create custom mitigation scripts in the Custom Assessment Remediation (CAR) application to mitigate CVEs. So you can select either the Qualys provided script or the custom script you create to perform the mitigation on the QIDs."
+        },
+        {
+          "heading": "Support for IPv6 in Isolation Exceptions",
+          "summary": "You can now add IPv6 addresses to the Isolation Exceptions list when creating the Isolation job for Linux assets. This enhancement allows isolated Linux assets to communicate with IPv6 machines.You can also add the IPv6 address…"
+        },
+        {
+          "heading": "Support Windows Feature Updates",
+          "summary": "We now support patching for Windows Feature updates. This ensures that your assets remain up-to-date with the Windows operating system enhancements. To enable these patches acquired from the vendor, you can now generate the SHA256 value using…"
+        },
+        {
+          "heading": "Execute Job Between 12 to 2.59 AM",
+          "summary": "All themonthly-day-of-the-week jobs scheduled to run between 12 to 2:59AM when triggered, the job definition file of these jobs will now be sent to the Cloud Agent at 12.05 AM."
+        },
+        {
+          "heading": "Restricted Commands in Job Actions Scripts",
+          "summary": "We have introduced restrictions on specific commands used in the custom scripts of the pre-action or post-action for the Windows deployment job. This precaution ensures uninterrupted patch deployment. The following commands are now restricted"
+        },
+        {
+          "heading": "Enhanced Report Download Options",
+          "summary": "While downloading the report, you can now select the columns that you want to include in the report . This enhancement applies to reports from theJobProgresstab for Mitigation and Isolation application."
+        },
+        {
+          "heading": "Deactivated Asset Visibility in Job Progress",
+          "summary": "You can now see a deactivation indicator for an asset on theJobProgresspage. If an asset was active during job execution but later becomes deactivated, an icon is displayed next to the asset name to highlight its deactivated status, as shown in the…"
+        },
+        {
+          "heading": "New QQL Tokens",
+          "summary": "Refer to the following table to learn more about the new and updated tokens in this release."
+        },
+        {
+          "heading": "API Release Updates",
+          "summary": "For more details on the API updates for this release, seePatch Management API Release 3.11."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PM - Job Windows",
+          "issue": "An issue was observed in which the asset reboot was delayed. Although theRebootCountdowntoggle was turned off in a deployment job, the asset was rebooted an hour after the patch deployment was successful.This issue is now fixed, and the asset reboot occurs soon after the patch deployment."
+        },
+        {
+          "component": "PM - Job Windows",
+          "issue": "An issue was observed in which, for QQL-based deployment jobs, the deprecated patches incorrectly displayed the action indicator to fix them. This issue occurred because the patch list was refreshed for the next run, while the disabled patch belonged to the previous run."
+        },
+        {
+          "component": "PM - Assets",
+          "issue": "An issue was observed where some assets displayed an incorrect IP address or no IP address appeared on the Assets page.This issue is now fixed, and the assets display the correct IP addresses."
+        },
+        {
+          "component": "PM - Job Windows",
+          "issue": "We have introduced validations of the QQL query during deployment job creation."
+        },
+        {
+          "component": "PM - Configuration",
+          "issue": "An issue was observed patch job completion notification emails were delivered with a delay.This issue is fixed, and notification emails are now sent promptly."
+        },
+        {
+          "component": "PM - Reports",
+          "issue": "An issue was fixed in which the patch and asset reports for Windows and Linux platforms fetched incomplete data displaying an unexpected error message in the report.The issue is now fixed the reports display complete data."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "An issue occurred where if a user clicked theEditoption for a deployment page and left the screen idle for five minutes, the page displayed \"UnauthorizedAccess\"error."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "An issue occurred where, while creating a widgetVulnerabilitiesFixedBasedonSuccessfullyInstalledPatches,the data was visible in thePreview,but after adding the widget to the dashboard, the widget displayed no data.This issue is resolved and the widget on the dashboard displays the relevant data."
+        },
+        {
+          "component": "PM - Licensing",
+          "issue": "An issue was observed in which the assets that were included in the tag under theLicensestab, were not actually licensed assets.This issue is now resolved and the assets included in the tags will be licensed assets."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "An issue was fixed in which, the year 2026 was not shown in the calendar on theScheduletab for the Windows, Mac and Linux deployment jobs."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-11T18:40:28.860067+00:00",
+      "status": "success"
+    }
   },
   "244fb0265db9": {
     "key": "244fb0265db9",
@@ -10616,7 +10709,42 @@
       "PM"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 27, 2026",
+      "features": [
+        {
+          "heading": "New API: Generate MTG Deployment Job Progress Report",
+          "summary": "We have introduced a new Get MTG Deployment Job Progress API that generates customized Mitigation job progress report for the specified job ID. All columns are selected by default, but you can modify and provide only the required columns. This API…"
+        },
+        {
+          "heading": "New API: Generate ISL Deployment Job Progress Report",
+          "summary": "We have introduced a new Get ISL Deployment Job Progress API that generates customized Isolation job progress report for the specified job ID. All columns are selected by default, but you can modify and provide only the required columns. This API…"
+        },
+        {
+          "heading": "Updated API: Create Deployment Job",
+          "summary": "With this release, we have updated the Create Deployment Job API, which will display an error message in the API response, if the pre or post actions includes restricted commands."
+        },
+        {
+          "heading": "Updated API: Update Deployment Job",
+          "summary": "With this release, we have updated the Update Deployment Job API, which will display an error message in the API response, if the pre or post actions includes restricted commands."
+        },
+        {
+          "heading": "Updated API: Get List of Mitigations",
+          "summary": "We have updated the Get List of Mitigations API to include a new parameter,mitigationSource, in the API response. This parameter specifies the source of the mitigation script, indicating whether it is a Qualys script or a user-defined custom script."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2024-30080",
+        "CVE-2024-35250"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-11T18:40:28.860067+00:00",
+      "status": "success"
+    }
   },
   "59a358e42aa3": {
     "key": "59a358e42aa3",
@@ -10626,7 +10754,36 @@
       "CA"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 16, 2025",
+      "features": [
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "No new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues or limitations in this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Untrusted Search Path Vulnerability",
+          "issue": "The shell scripts packaged with the Cloud Agent installer execute multiple system utilities without an absolute path or resetting a path to a safe value. This allows a malicious actor to place harmful files on your assets when the shell scripts are executed with elevated privileges.We have updated this behavior by setting up the fixed paths for shell script execution. This enhancement prevents the infiltration of malicious files on your assets and prevents you from any potential security threats. The updated shell script behavior also helps in mitigating theUntrusted Search Path Vulnerability (CWE-426)."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-11T18:40:28.860067+00:00",
+      "status": "success"
+    }
   },
   "8d6c062d7b7e": {
     "key": "8d6c062d7b7e",
@@ -10636,7 +10793,36 @@
       "CA"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 20, 2026",
+      "features": [
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "No new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues or limitations in this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Untrusted Search Path Vulnerability",
+          "issue": "The shell scripts packaged with the Cloud Agent installer execute multiple system utilities without an absolute path or resetting a path to a safe value. This allows a malicious actor to place harmful files on your assets when the shell scripts are executed with elevated privileges.We have updated this behavior by setting up the fixed paths for shell script execution. This enhancement prevents the infiltration of malicious files on your assets and prevents you from any potential security threats. The updated shell script behavior also helps in mitigating theUntrusted Search Path Vulnerability (CWE-426)."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-11T18:40:28.860067+00:00",
+      "status": "success"
+    }
   },
   "3de76c9dce73": {
     "key": "3de76c9dce73",
@@ -10646,7 +10832,43 @@
       "CS"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 21, 2026",
+      "features": [
+        {
+          "heading": "Permission, Ownership Tracking in File Events",
+          "summary": "CRS now capturesfile permissionchanges,file ownershipchanges, andfile size truncationevents occurring in file activity details. These updates appear in the event payload under:File->xattributes."
+        },
+        {
+          "heading": "Track 'Update Events' triggered by 'Truncate' Command",
+          "summary": "With the help of CRS, you can now track the 'update events' triggered by the 'Truncate' command. You can gain real-time visibility into 'Truncate' operations, improving security, auditability, and protection against unintended data loss in…"
+        },
+        {
+          "heading": "File Soft-Link and Hard-Link Create Event Support (Phase 1)",
+          "summary": "CRS has introduced support for detecting 'symbolic link (sym-link)' and 'hard-link' creation.To view the exact file event type - soft-link or hard-link - please referfile/file-result->type fieldin the event payload."
+        },
+        {
+          "heading": "Support for Latest CRI-O Version (1.30+)",
+          "summary": "CRS now supports newer CRI-O versions, whereas earlier versions failed to fetch events. To support this, the global values.yaml (qualys-tc > values.yaml) has been updated."
+        },
+        {
+          "heading": "Support for Kill Action in Tracing Policies",
+          "summary": "In addition to 'audit' action, CRS now supports the 'kill' action inTracing Policies. This allows you not only to audit or monitor events but also to terminate processes that trigger specific events."
+        },
+        {
+          "heading": "Support for Process Binary Matching Filter in Tracing Policies",
+          "summary": "You can now filter events based on the process binary that generated them. Paths or complete binary names can be specified for filtering. For example, you can specify the paths or the complete names of the binaries whose process events need to be…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-11T18:40:28.860067+00:00",
+      "status": "success"
+    }
   },
   "78e2b3b4f964": {
     "key": "78e2b3b4f964",
