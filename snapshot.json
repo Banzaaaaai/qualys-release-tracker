@@ -10308,7 +10308,44 @@
       "CA"
     ],
     "month_label": "February 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 03, 2026",
+      "features": [
+        {
+          "heading": "Enhanced Manifest Version Control Profile",
+          "summary": "We have updated the Manifest Version Control (MVC) profile to support the different Qualys application manifests. Earlier, you could only use the Vulnerability Management manifests in the MVC profiles."
+        },
+        {
+          "heading": "New Search Tokens",
+          "summary": "We are introducing the following new token for theActivation Keystab in Cloud Agent application."
+        },
+        {
+          "heading": "Updated QQL Tokens",
+          "summary": "To standardize the use of search tokens across Qualys platforms, we have updated the following tokens for the activation key."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues for this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Agent Version Control",
+          "issue": "The Agent Version Control Profile displayed incorrect Cloud Agent versions after changing the platform type. We fixed this issue by implementing a solution to display the Cloud Agent versions specific to the selected platform."
+        },
+        {
+          "component": "Application Configuration",
+          "issue": "The Endpoint Detection and Response (EDR) with an expired license was not getting deactivated for Cloud Agents. We fixed this issue with suitable code changes to deactivate the EDR application if its license has expired."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-11T13:31:58.353551+00:00",
+      "status": "success"
+    }
   },
   "fea51194f892": {
     "key": "fea51194f892",
@@ -10320,7 +10357,52 @@
       "FIM"
     ],
     "month_label": "February 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 02, 2026 (Updated April 20, 2026)",
+      "features": [
+        {
+          "heading": "Support for Qualys Applications",
+          "summary": "We updated the Solaris Cloud Agent to support the following important applications"
+        },
+        {
+          "heading": "Updated Certificate Verification",
+          "summary": "The new Solaris package is updated to.PKG. With this update, we have also updated the certificate verification process for Solaris Cloud Agents. The new signing process help you fix the permission errors that may be encountered during the Cloud…"
+        },
+        {
+          "heading": "Enhancements for Solaris Cloud Agent",
+          "summary": "We have upgraded the Solaris Cloud Agent to support the following features"
+        },
+        {
+          "heading": "Behavioral Change",
+          "summary": "Solaris Cloud Agent does not support auto-upgrade from its previous versions, 3.11.x to 7.1.0 as the installer type is updated from .PKG to .P5P (SVR4 to IPS-based package). To learn more about upgrading Solaris Cloud Agent, refer toQualys Cloud…"
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "The following are the changes to platform coverage support for Solaris Cloud Agent"
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "We recommend uninstallation using theqagent_uninstallscript packaged with the Cloud Agent installer."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Configuration Profile Status",
+          "issue": "We fixed an issue where the Solaris Cloud Agent reported an incorrect status ofConfiguration Pending Downloadeven when the configuration had already been successfully downloaded. Now, we display the correct status asDownload Complete."
+        },
+        {
+          "component": "Reporting",
+          "issue": "TheAgent Provisioning Rulecould not merge duplicate asset records because MAC addresses were not collected for asset validation. Now, Cloud Agent collects the MAC addresses to validate the duplicate assets."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-11T13:31:58.353551+00:00",
+      "status": "success"
+    }
   },
   "6bec8c7b13a1": {
     "key": "6bec8c7b13a1",
@@ -10330,7 +10412,52 @@
       "TA"
     ],
     "month_label": "February 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 02, 2026",
+      "features": [
+        {
+          "heading": "Enhanced Detection Details",
+          "summary": "With this release, you can now viewEU AI Act ArticlesandMITRE Atlas Techniquesin theDetection Detailspage for all the mapped QIDs. This helps you easily understand the regulatory impact and associated AI attack techniques, making it simpler to…"
+        },
+        {
+          "heading": "Support for New Model Runtime - Databricks Chat",
+          "summary": "We are expanding the TotalAI capability with the new model runtime support. You can now onboard theDatabricks Chatmodel to TotalAI and perform a scan to find the vulnerabilities in the model."
+        },
+        {
+          "heading": "MCP Server Detection Inventory",
+          "summary": "With this release, we have enhanced an inventory view to display the discovery ofMCP Servers, providing a standardized and centralized view of MCP integrations. Users can view discovered MCP servers along with details such as MCP name, last…"
+        },
+        {
+          "heading": "Parallelism Configuration for Option Profiles",
+          "summary": "With this release, a newParallelismparameter is available on theScan Settingspage during option profile creation."
+        },
+        {
+          "heading": "Discover AI Services in AWS Environment",
+          "summary": "With this release, you can discover AI services running in your AWS environment, monitor them, and launch scans for detected models."
+        },
+        {
+          "heading": "AI Filter in Installed Software View",
+          "summary": "We have enhanced theInstalled Softwareview within theAsset Detailsto improve focus on AI-related software."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Google Vertex",
+          "issue": "We fixed an issue where users could not edit aGoogle Vertexmodel using JSON authentication data, causing scan failures. This issue is fixed. Users can now edit Google Vertex models with JSON authentication data."
+        },
+        {
+          "component": "Scan Report",
+          "issue": "An issue was observed where the incompatible scanner status was displayed with inconsistent colors in online and downloaded scan reports. This issue is fixed."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-11T13:31:58.353551+00:00",
+      "status": "success"
+    }
   },
   "4e8c9aa6a52d": {
     "key": "4e8c9aa6a52d",
@@ -10342,7 +10469,104 @@
       "PM"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 29, 2026",
+      "features": [
+        {
+          "heading": "ETM Identity Support for Windows",
+          "summary": "We have updated the Windows Cloud Agent to support a new Qualys module — ETM Identity. The ETM Identity is optimized for secure and efficient posture data collection from Active Directory (AD) Domain Controllers."
+        },
+        {
+          "heading": "Database Assessment with Client Authentication",
+          "summary": "We have updated the Windows Cloud Agent to support client authentication for database assessments."
+        },
+        {
+          "heading": "Proxy Randomization Enhancements",
+          "summary": "We have enhanced the proxy randomization feature to improve reliability and load distribution when multiple proxies are configured."
+        },
+        {
+          "heading": "Patch Management Enhancements",
+          "summary": "Cloud Agent for Windows now supports feature updates, allowing in-place upgrades within the same Windows OS or application family."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "Patches installed withWindows Cloud Agent 6.3 or earlier versions, and havePending Rebootstatus, display the status asFailedwhen Cloud Agent is upgraded to the latest version 6.4. The patch status is not updated even after a system reboot."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "On-demand scan",
+          "issue": "Cloud Agent could not launch the on-demand scan because of a pending delta from previous scans. Now, Cloud Agent logs clearly highlight the scan failure information in Cloud Agent logs."
+        },
+        {
+          "component": "CPU Throttling",
+          "issue": "Cloud Agent was causing high CPU usage during the patch management scans. We fixed this issue by implementing the CPU throttle limits for Patch Management."
+        },
+        {
+          "component": "Cloud Agent Upgrade",
+          "issue": "We fixed an issue where Cloud Agent could not be upgraded to new versions due to a discrepancy in the Cloud Agent permissions."
+        },
+        {
+          "component": "Cloud Agent Installation",
+          "issue": "We fixed an issue where the Cloud Agent upgrade failed due to a missing MSI cache file, leading to an inconsistent agent installation state."
+        },
+        {
+          "component": "Cloud Agent Scans",
+          "issue": "We fixed an issue where the scan status was not reported correctly on Cloud Agent user interface."
+        },
+        {
+          "component": "Cloud Agent Service",
+          "issue": "We fixed a known issue where the Cloud Agent service was crashing and creating minidump files on host assets."
+        },
+        {
+          "component": "Cloud Agent Health Check",
+          "issue": "We fixed an issue where Cloud Agent health check tool attempted to download a file even when the Patch Management was disabled."
+        },
+        {
+          "component": "Manifest Download",
+          "issue": "We fixed an issue where the updated manifests were not downloaded because the Cloud Agent was stuck in decompressing the uncompressed self-patch binary."
+        },
+        {
+          "component": "Patch Management-False Negative",
+          "issue": "We fixed an issue where patch management reported missing patches for the unsupported Windows platforms. Now, Cloud Agent no longer reports missing patches for unsupported platforms."
+        },
+        {
+          "component": "Patch Installation",
+          "issue": "Patch installation was incorrectly reported asfaileddue to the system reboot during patch installation. Now we scan the failed patches after reboot to ensure the correct patch status."
+        },
+        {
+          "component": "Patch Installation",
+          "issue": "We fixed an issue where Cloud Agent could not install patches when a single QGS proxy was configured and direct connection was disabled."
+        },
+        {
+          "component": "EDR Activation",
+          "issue": "We fixed an issue where the Endpoint Detection and Response (EDR) application could not be activated by updating the EDR buffer memory allocation."
+        },
+        {
+          "component": "SwCA Scan",
+          "issue": "We fixed an issue where SwCA scans failed when scanning a non-standard package file with an unsupported format."
+        },
+        {
+          "component": "SwCA Scan",
+          "issue": "The SwCA Scans were failing as Cloud Agent could not retry the scan delta upload. We fixed this issue by implementing the scan delta upload retry mechanism."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-11T13:31:58.353551+00:00",
+      "status": "success"
+    }
   },
   "fe866526eb2f": {
     "key": "fe866526eb2f",
@@ -10352,7 +10576,23 @@
       "CS"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 20, 2026",
+      "features": [
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following issue has been fixed with this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-11T13:31:58.353551+00:00",
+      "status": "success"
+    }
   },
   "442c7eb732c1": {
     "key": "442c7eb732c1",
