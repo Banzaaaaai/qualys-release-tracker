@@ -10878,7 +10878,40 @@
       "CRA"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 19, 2026 (Updated February 19, 2026)",
+      "features": [
+        {
+          "heading": "Updated GPG Signing Key",
+          "summary": "We have updated the GPG Signing key for the Linux ARM Cloud Agent to SHA-256. The updated GPG signing key enhances the Cloud Agent package verification process by implementing the latest cryptography and modern security standards with SHA-256."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "No new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues or limitations in this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Untrusted Search Path Vulnerability",
+          "issue": "The shell scripts packaged with the Cloud Agent installer execute multiple system utilities without an absolute path or resetting a path to a safe value. This allows a malicious actor to place harmful files on your assets when the shell scripts are executed with elevated privileges.We have updated this behavior by setting up the fixed paths for shell script execution. This enhancement prevents the infiltration of malicious files on your assets and prevents you from any potential security threats. The updated shell script behavior also helps in mitigating theUntrusted Search Path Vulnerability (CWE-426)."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-12T16:07:38.228137+00:00",
+      "status": "success"
+    }
   },
   "d431773c9bae": {
     "key": "d431773c9bae",
@@ -10888,7 +10921,64 @@
       "CRA"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 19, 2026",
+      "features": [
+        {
+          "heading": "Add IPv6 Addresses to Allowed List",
+          "summary": "We updated theHost Isolationfeature to support an allowed list for IPv6 assets. Earlier, the allowed list support was available only for IPv4 assets."
+        },
+        {
+          "heading": "Privilege Management for CEP Processes",
+          "summary": "We enhanced the Command Execution Pipeline (CEP) to optimize the default privileges."
+        },
+        {
+          "heading": "Runtime and Static Analysis for SwCA Scans",
+          "summary": "We have upgraded the Linux Cloud Agent to support Runtime and Static analysis during SwCA scans. In theRuntimeanalysis, SwCA scans application components in production environments, which are detected during the scan execution. In theStaticanalysis,…"
+        },
+        {
+          "heading": "Client Certificate Support for Database Authentication",
+          "summary": "We updated the Linux Cloud Agent to support uploading client certificate files for database authentication. You can upload the client certificate file in.pfxformat to fetch the vault connection profiles. The client certificate file also needs a…"
+        },
+        {
+          "heading": "Behavior Change",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "No new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues and limitations for this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "SwCA Scans",
+          "issue": "The SwCA scans were failing as certain network files were not being excluded during the scan. We fixed this issue by adding these files to the default exclusion list."
+        },
+        {
+          "component": "Cloud Agent Resources",
+          "issue": "We fixed an issue where the SwCA processes were causing high CPU usage by improving the SwCA scan performance."
+        },
+        {
+          "component": "Cloud Agent Reporting",
+          "issue": "We fixed an issue where the RPM command failures were not reported correctly. Now QID 45613 reports the RPMcommand failure."
+        },
+        {
+          "component": "Cloud Agent Notifications",
+          "issue": "We fixed an issue where theuseSudoForCepconfiguration was always honored for root users. Now, we honor it only if configuration ofuseSudois set to 1."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-12T16:07:38.228137+00:00",
+      "status": "success"
+    }
   },
   "48d8bbcd45a9": {
     "key": "48d8bbcd45a9",
@@ -10898,7 +10988,35 @@
       "EDR"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 18, 2026",
+      "features": [
+        {
+          "heading": "Anti-malware Granular Notifications",
+          "summary": "We have introduced a new enhancement toNotification Settings, where you can manage the notifications that appear as background pop-up alerts. Previously, enabling notifications, you used to get the pop-up alerts from all the feature groups, and…"
+        },
+        {
+          "heading": "Enhancements in Email Alerts",
+          "summary": "This release marks the following new enhancements and permission in Email Alerts"
+        },
+        {
+          "heading": "Added New Permission: Actions View",
+          "summary": "We have added a new permission,Actions View, that provides visibility access to theActionstab under theResponsespage to sub-users. The admins can provide this permission to their sub-users."
+        },
+        {
+          "heading": "Apply Profile on Assets",
+          "summary": "With this release, theApply Profiles on Assetsfunctionality is now available. This feature allows you to apply new or existing profiles to your assets quickly and efficiently."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-12T16:07:38.228137+00:00",
+      "status": "success"
+    }
   },
   "4fe9ae3fc29d": {
     "key": "4fe9ae3fc29d",
@@ -27830,6 +27948,63 @@
     "enrichment": {
       "attempts": 1,
       "last_attempt_at": "2026-10-05T21:28:38.715260+00:00",
+      "status": "success"
+    }
+  },
+  "a22b89d5d979": {
+    "key": "a22b89d5d979",
+    "url": "https://docs.qualys.com/en/ud/release-notes/unified_dashboard/release_2_17.htm",
+    "title": "Unified Dashboard 2.17",
+    "tags": [
+      "UD"
+    ],
+    "month_label": "October 2026",
+    "detected_at": "2026-10-12T16:07:38+00:00",
+    "details": {
+      "release_date": "October 09, 2026This release streamlines the Frequently Used tab to show only the dashboards you used in the past 30 days and fixes a time zone issue in trending widgets.",
+      "features": [
+        {
+          "heading": "Faster Access to Active Dashboards in the Frequently Used Tab",
+          "summary": "What Changed For You"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Unified Dashboard",
+          "issue": "We fixed an issue where trending widgets could show today's data under the wrong date when the browser time zone differed from the time zone in the profile settings. Because of this, team members in different locations with the same time zone in the profile settings could see the data under different dates.Now, trending widgets always use the time zone in the profile settings to assign the date, so the dates stay consistent regardless of the browser time zone."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-12T16:07:38.228137+00:00",
+      "status": "success"
+    }
+  },
+  "b9cd26659d80": {
+    "key": "b9cd26659d80",
+    "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_vmdr_rn/vmdr/release_2_14.htm",
+    "title": "Vulnerability Management, Detection and Response 2.14",
+    "tags": [
+      "VMDR"
+    ],
+    "month_label": "October 2026",
+    "detected_at": "2026-10-12T16:07:38+00:00",
+    "details": {
+      "release_date": "October 09, 2026Fixed an issue that prevented detailed vulnerability reports from being downloaded from theVulnerabilitiestab.",
+      "features": [
+        {
+          "heading": "Fix",
+          "summary": "The following reported and notable customer issue is fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-12T16:07:38.228137+00:00",
       "status": "success"
     }
   }
