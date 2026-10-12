@@ -11027,7 +11027,27 @@
       "EDR"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "Jaunuary 18, 2026",
+      "features": [
+        {
+          "heading": "New Public API Support",
+          "summary": "This API returns the number of events after grouping them into a specified number of buckets."
+        },
+        {
+          "heading": "Enhancement: UserInfo fields in the SearchAfter API for Antimalware events",
+          "summary": "We have enriched the antimalware events with UserInfo fields to provide better visibility and security investigations in the SearchAfter API for EPP events."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-12T21:59:39.904136+00:00",
+      "status": "success"
+    }
   },
   "265e211a5e54": {
     "key": "265e211a5e54",
@@ -11037,7 +11057,35 @@
       "CRA"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 07, 2026",
+      "features": [
+        {
+          "heading": "Updated Base Image for Compliance",
+          "summary": "We have updated the base image used for AWS Bottlerocket Cloud Agent to fix the vulnerabilities."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "We have updated the AWS Bottlerocket container image path in theymlfile. The new container image path is"
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-12T21:59:39.904136+00:00",
+      "status": "success"
+    }
   },
   "edcdc08e10cb": {
     "key": "edcdc08e10cb",
@@ -11047,7 +11095,35 @@
       "CRA"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 07, 2026",
+      "features": [
+        {
+          "heading": "Updated Base Image for Compliance",
+          "summary": "We have updated the base image used for Redhat Enterprise Linux CoreOS Cloud Agent to fix the vulnerabilities."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "We have updated the Redhat Enterprise Linux CoreOS container image path in theymlfile. The new container image path is"
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-12T21:59:39.904136+00:00",
+      "status": "success"
+    }
   },
   "f30af42a7dbf": {
     "key": "f30af42a7dbf",
@@ -11057,7 +11133,35 @@
       "CRA"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 07, 2026",
+      "features": [
+        {
+          "heading": "Updated Base Image for Compliance",
+          "summary": "With this release, we have updated the base image used for the Google Cloud Platform Container Optimized OS (GCP-COS) Cloud Agent to fix the vulnerabilities."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "We have updated the GCP-COS container image path in theymlfile. The new container image path is"
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-12T21:59:39.904136+00:00",
+      "status": "success"
+    }
   },
   "6db83eb3445d": {
     "key": "6db83eb3445d",
@@ -11067,7 +11171,23 @@
       "Conn"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 08, 2026",
+      "features": [
+        {
+          "heading": "Enhanced the Run Frequency Validation for Azure Org Connector",
+          "summary": "With this release, we have updated the polling frequency validation logic for the Azure Org Connector to standardize scheduling behavior and improve consistency."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-12T21:59:39.904136+00:00",
+      "status": "success"
+    }
   },
   "b6d97deaf823": {
     "key": "b6d97deaf823",
