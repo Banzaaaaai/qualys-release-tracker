@@ -28127,5 +28127,280 @@
       "last_attempt_at": "2026-10-12T16:07:38.228137+00:00",
       "status": "success"
     }
+  },
+  "debc920fe171": {
+    "key": "debc920fe171",
+    "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_pa/pa/release_1_17_api.htm",
+    "title": "Policy Audit Release 1.17 API",
+    "tags": [
+      "API",
+      "PA"
+    ],
+    "month_label": "October 2026",
+    "detected_at": "2026-10-13T14:35:10+00:00",
+    "details": {
+      "release_date": "October 12, 2026This release adds update and delete support to the Report Template APIs, so you can now modify or remove existing policy, scorecard, mandate, and STIG report templates via the API. You can also launch STIG based reports and filter the report list by report type using the Report APIs. In addition, you can create IBM DB2 and PostgreSQL system record templates and assign them to the compliance option profiles to automatically create authentication records for discovered database instances.",
+      "features": [
+        {
+          "heading": "Reports API: Launch and List STIG Based Reports Using Report APIs",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Authentication Records API: Support for IBM DB2 and PostgreSQL Instance Discovery and System Record Templates",
+          "summary": "What's New for You"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-13T14:35:10.871170+00:00",
+      "status": "success"
+    }
+  },
+  "ec0de7bc85e0": {
+    "key": "ec0de7bc85e0",
+    "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_pa/pa/release_1_17.htm",
+    "title": "Policy Audit Release 1.17",
+    "tags": [
+      "PA"
+    ],
+    "month_label": "October 2026",
+    "detected_at": "2026-10-13T14:35:10+00:00",
+    "details": {
+      "release_date": "October 12, 2026This release introduces improved control statements for System Defined Controls (SDCs) and email notifications when a compliance scan fails. It also adds import and export support for Network UDCs, auto discovery for IBM DB2 and PostgreSQL authentication records, recurring timeframe options in policy report templates, and new QQL tokens to search policies. Policy Audit now supports Nutanix CVM, PostgreSQL 18.x, Oracle Database 26ai, Cisco NX-OS 8.x, 9.x, and 10.x, and VMware NSX Manager and NSX Edge 4.x, along with new Unix technologies for UDCs and several customer-reported fixes.",
+      "features": [
+        {
+          "heading": "Improved Control Statements for SDCs",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Get Notified When a Compliance Scan Fails",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "UDC Support for New Technologies",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Import and Export Support for Network UDCs",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Auto Discovery Support for IBM DB2 and PostgreSQL Database Authentication",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "New Timeframe Options in Compliance Policy Report Templates",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "New QQL Tokens to Search Policies",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Support for New Technologies",
+          "summary": "What's New for You"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PA - Network UDC",
+          "issue": "When users selectedInfofrom the Quick Action menu for a Network User Defined control, theTechnologies Includedtab on theTechnical Control Informationpage did not show the scan parameter values.This is now resolved. The tab shows the scan parameter values for the Network User Defined Control."
+        },
+        {
+          "component": "PA - Scan Schedule",
+          "issue": "When users scheduled scans with a duration limit, the scans paused but did not resume automatically. The scans remained in thePausedstatus.This issue is now resolved. The scans now resume automatically at the configured time."
+        },
+        {
+          "component": "PA - New UI",
+          "issue": "When users searched for posture data in thePosturetab, a discrepancy was observed between the asset count on the posture listing page and the count in the exported CSV file.This is now resolved. The count now matches the exported data."
+        },
+        {
+          "component": "SCA",
+          "issue": "When users launched Compliance or SCA scans on Cloud Agent assets in subscriptions with native IPv6 enabled, the Cloud Agent scan completed successfully. However, the last scan date was not updated for some assets.This is now resolved. Scan results are now processed successfully for these assets, and the scan dates have been updated as expected."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-13T14:35:10.871170+00:00",
+      "status": "success"
+    }
+  },
+  "1725a94b0bdd": {
+    "key": "1725a94b0bdd",
+    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10_41_api.htm",
+    "title": "Enterprise TruRisk™ Platform Release 10.41 API",
+    "tags": [
+      "API",
+      "VM"
+    ],
+    "month_label": "October 2026",
+    "detected_at": "2026-10-13T14:35:10+00:00",
+    "details": {
+      "release_date": "OCTOBER 12, 2026This release extends the scan report template APIs to include Vulnerability Tag filtering and Qualys Patchable and Mitigable details. It also adds authenticated Vulnerability Management scanning for Oracle Linux Virtualization Manager (OLVM) through new authentication record and option profile API support. The Remediation Ticket List API can now exclude ticket history to reduce response size.",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "NEW FEATURE"
+        },
+        {
+          "heading": "Report API: Filter Scan Reports Using Vulnerability Tags",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Reports API: Reduce API Response Size by Excluding Ticket History",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Perform Authenticated Vulnerability Scans on Oracle Linux Virtualization Manager Assets",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Report API: Configure Scan Report Templates with Qualys Patchable and Mitigable Details",
+          "summary": "What CHANGED for You"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Asset API",
+          "issue": "When users added IP addresses to the Excluded Hosts list using the API with a distribution group specified in the dg_names parameter, the API rejected the request as invalid.This occurred because the request was made by a user who was not the owner of the specified distribution group.The issue is now resolved. Managers and auditors can now use any group, unit managers can use groups within their unit, and other users can use only the groups they created within their own unit."
+        },
+        {
+          "component": "VM - Report API",
+          "issue": "When the sub user was trying to launch a report on Tags, and also added a few AGs/IPs to the template used to launch the report. However, the user did not have access to AGs/IPs added in the template, and an error was observed in the API response.The issue is fixed, and the report will now be launched on the tags specified in the API call, even if the user does not have access to the AG/IP mentioned in the template."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-13T14:35:10.871170+00:00",
+      "status": "success"
+    }
+  },
+  "16afa68c3c6c": {
+    "key": "16afa68c3c6c",
+    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10_41.htm",
+    "title": "Enterprise TruRisk™ Platform Release 10.41",
+    "tags": [
+      "VM"
+    ],
+    "month_label": "October 2026",
+    "detected_at": "2026-10-13T14:35:10+00:00",
+    "details": {
+      "release_date": "OCTOBER 12, 2026This release expands scan report templates with Vulnerability Tag filtering and Qualys Patchable and Mitigable details. It extends authenticated Vulnerability Management scanning to Oracle Linux Virtualization Manager (OLVM) environments. It also introduces email notifications for scan failures along with several fixes across Vulnerability Management.",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "NEW FEATURE"
+        },
+        {
+          "heading": "Secure Your OLVM Environment with an Authenticated Scan",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Generate Scan Reports with Qualys Patchable and Mitigable Details",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Get Notified the Moment a Scan Fails",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Filter Scan Reports Using Vulnerability Tags",
+          "summary": "What's New for You"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Asset API",
+          "issue": "When Manager users add IP addresses to the Excluded Hosts list using the API with a distribution group specified in the dg_names parameter, the API rejected the request as invalid.This occurred because the request was made by a Manager user who was not the owner of the specified distribution group.The issue is now resolved. Managers and auditors can now use any group. Unit Managers can use groups within their unit, and other users can use only the groups they created within their own unit."
+        },
+        {
+          "component": "VM - Scan Schedule",
+          "issue": "When users launched a VM scheduled scan and an on-demand scan with include and exclude tags that did not resolve to any scannable assets, the scan was skipped and displayed error messages that differed from those shown during an on-demand scan under the same conditions.This inconsistency could make it difficult for users to understand why the scan did not run.This issue is now resolved, and VM scheduled, and on-demand scans consistently display the message \"No scannable assets match the selected tag(s)\" when the selected tags do not resolve any scannable assets."
+        },
+        {
+          "component": "VM - Assets (Scanner)",
+          "issue": "When users configured an Amazon EC2 API Proxy for an EC2 scanner appliance, proxy hostnames that included alphanumeric domain suffixes were rejected as invalid, even though the same hostname worked successfully for the scanner proxy configuration. This prevented users from using certain internal proxy hostnames and required them to use an IP address instead.This issue is now resolved. Users can configure Amazon EC2 API Proxy settings using supported proxy hostnames with alphanumeric domain suffixes, and the configuration is saved successfully without validation errors."
+        },
+        {
+          "component": "VM - Report API",
+          "issue": "When the sub user was trying to launch a report on Tags and also added a few AGs/IPs to the template used to launch the report. However, the user did not have access to AGs/IPs added in the template, and an error was observed in the API response.The issue is fixed, and the report will now be launched on the tags specified in the API call, even if the user does not have access to the AG/IP mentioned in the template."
+        },
+        {
+          "component": "VM - Azure VM Scans",
+          "issue": "When users launched a Cloud Internal Azure VM scan using a scanner appliance configured on a custom network, a scan authentication error occurred, even though a valid authentication record was configured for that network.This occurred because the scan configuration had no option to select a network, soit was set to the default option Global Default Network (GDN)and used the authentication record associated with GDN instead of the one set up for the custom network.This issue is now resolved, and Cloud Internal - Azure VM scans now automatically use the network associated with the selected scanner appliance."
+        },
+        {
+          "component": "VM - Reports General",
+          "issue": "When users downloaded scan results in PDF format from the Scans tab, some results failed to download, even though the same results could be downloaded successfully in CSV format.This issue is now resolved, and scan results can be downloaded successfully as PDFs."
+        },
+        {
+          "component": "VM - Scans",
+          "issue": "When users shared VMDR PCI scans that included native IPv6 targets with PCI, some IPv6 addresses were not imported into the PCI merchant account.This issue occurred for IPv6 targets that were part of the scan target list but were not detected as active during the scan. As a result, the PCI merchant account did not contain all the IPv6 targets included in the original scan.The issue is now resolved, and all configured native IPv6 scan targets are included when PCI scan data is shared from VMDR to PCI, ensuring complete target information is imported into the PCI merchant account."
+        },
+        {
+          "component": "VM - Scans",
+          "issue": "When users generated scan reports (HTML or PDF) for subscriptions with extensive vulnerability data, the process used excessive memory, causing reports to fail or, in some cases, affecting platform performance.This occurred because large volumes of vulnerability data were loaded during report generation and scan result processing.This issue is now resolved, and scan results and reports are processed more efficiently by loading vulnerability data on demand. This reduces memory consumption, improves report generation performance, and enhances overall platform stability."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-13T14:35:10.871170+00:00",
+      "status": "success"
+    }
+  },
+  "d4fd79bc1954": {
+    "key": "d4fd79bc1954",
+    "url": "https://docs.qualys.com/en/pm/release-notes/patch_management/release_4_2_1.htm",
+    "title": "TruRisk™ Eliminate Release 4.2.1",
+    "tags": [
+      "ISL",
+      "MTG",
+      "PM",
+      "TE"
+    ],
+    "month_label": "October 2026",
+    "detected_at": "2026-10-13T14:35:10+00:00",
+    "details": {
+      "release_date": "October 12, 2026This release introduces Agent Sara recommended remediation waves, which roll out patches from a risk elimination plan either as patch automation jobs or in phases, from a lab ring through ring jobs (Lab > Staging > Production). It also lets you mitigate findings to reduce risk on assets where a patch is not available or cannot be deployed yet due to low reliability.",
+      "features": [
+        {
+          "heading": "With Agent Sara, Remediate Smarter, and Roll Out in Phased Rings",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Mitigate ETM Plan Findings to Reduce Risk When No Patch Is Available",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "New QQL Tokens",
+          "summary": "Refer to the following table to learn more about the new tokens in this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "MTG - Job Windows",
+          "issue": "An issue occurred in which mitigation jobs failed because the mitigation signature was not found.The issue is now resolved and the mitigation jobs complete successfully."
+        },
+        {
+          "component": "PM - Job Windows",
+          "issue": "An issue occurred in vendor-acquired patches enabled through Qualys Cloud, which were failing to install.This issue is now resolved, and the vendor-acquired patches enabled through Qualys Cloud are deployed successfully."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-13T14:35:10.871170+00:00",
+      "status": "success"
+    }
   }
 }
