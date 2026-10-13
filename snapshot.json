@@ -11198,7 +11198,31 @@
       "Conn"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 08, 2026",
+      "features": [
+        {
+          "heading": "Enhanced the Run Frequency Validation for Azure Tenant Connector APIs",
+          "summary": ""
+        },
+        {
+          "heading": "Create Azure Tenant Connector",
+          "summary": "Parameter"
+        },
+        {
+          "heading": "Update Azure Tenant Connector",
+          "summary": "Parameter"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-13T20:07:14.723457+00:00",
+      "status": "success"
+    }
   },
   "fcfaaacb1387": {
     "key": "fcfaaacb1387",
@@ -11208,7 +11232,33 @@
       "CAR"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 08, 2026",
+      "features": [
+        {
+          "heading": "Custom Mitigation and Remediation Script",
+          "summary": "You can mitigate or remediate the risk of active vulnerabilities detected in your environment by applying custom mitigation or remediation actions. A newMitigation QIDscript type is introduced, providing the ability to define custom mitigation or…"
+        },
+        {
+          "heading": "Email Notifications for New Library Scripts",
+          "summary": "You can now receive email notifications whenever new scripts are added to the CAR Script Library. This helps you start using the script as soon as they are available in theLibrary."
+        },
+        {
+          "heading": "New Tokens for Scripts Tab",
+          "summary": "The implication values for token"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2022-23"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-13T20:07:14.723457+00:00",
+      "status": "success"
+    }
   },
   "47889543f364": {
     "key": "47889543f364",
@@ -11218,7 +11268,92 @@
       "ETM"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 02, 2026",
+      "features": [
+        {
+          "heading": "Introduced Unified Asset Inventory (UAI)",
+          "summary": "The Unified Asset Inventory (UAI) provides a single, comprehensive view of all assets across your organization’s hybrid IT environment. It consolidates asset data from Identity, Applications, Compute, Containers, Storage, Software, Network,…"
+        },
+        {
+          "heading": "Introduced Vulnerability Scoring System (QVSS)",
+          "summary": "QVSS brings the power of Qualys threat intelligence (TruLens and RTIs) together with a CVSS-like 0–10 scale. It preserves QDS logic while expressing severity in a way that’s easier to interpret and compare across teams."
+        },
+        {
+          "heading": "Introduced TruLens Contextual Threat Intelligence and Industry Risk Visibility",
+          "summary": "TruLens is a new capability in Enterprise TruRisk Management (ETM) that delivers context-aware threat intelligence, industry benchmarking, and risk contextualization in a single, interactive experience. TruLens helps you move beyond static…"
+        },
+        {
+          "heading": "Manage Lifecycle State of Important Vulnerabilities Ingested via CSV",
+          "summary": "With this release, we have introduced a new feature that allows you to manage the lifecycle state manually (Open/Closed) of urgent vulnerabilities and misconfigurations ingested through Generic CSV imports. This update brings speed, control, and…"
+        },
+        {
+          "heading": "Enhanced Internet-Facing Tag Behavior and Risk Impact",
+          "summary": "This enhancement clarifies how Internet-Facing tags are applied and used in Enterprise TruRisk Management (ETM). With this release, risk scoring and prioritization are now supported on Internet-Facing child tags."
+        },
+        {
+          "heading": "Enhanced User Interface for ETM",
+          "summary": "We introduced an improved user experience across all ETM pages, with updates to fonts, colors, typography, and buttons that make the interface more intuitive and user-friendly. Enhancements to the User Interface and design system improve visual…"
+        },
+        {
+          "heading": "Introduced New Color Code for QDS, QVS, and TruRisk™ Score",
+          "summary": "In this release, we have introduced a new color scheme to indicate and highlight the criticality of the TruRisk™ Score, Qualys Detection Score (QDS), Qualys Vulnerability Score (QVS), and Asset Criticality Score (ACS)."
+        },
+        {
+          "heading": "Revamped Findings Details and In-Product CVE Details Page",
+          "summary": "This release enhances the Finding Details experience and introduces a new built-in CVE Details page within ETM, eliminating the need for third-party redirection and consolidating all CVE intelligence into a single, consistent workflow."
+        },
+        {
+          "heading": "Enhanced Identification Rules for Expanded Asset Class and Subclass",
+          "summary": "With this release, Identification Rules have been enhanced to support the expanded set of asset classes and subclasses introduced as part of recent User Interface updates."
+        },
+        {
+          "heading": "Introduced Simplified Asset Class and Subclass Filtering for Risk Prioritization",
+          "summary": "This release enhances the Asset Class and Subclass filter used in risk prioritization by simplifying the user experience while maintaining existing risk calculation behavior. The updated design introduces a clearer, hierarchical selection model that…"
+        },
+        {
+          "heading": "Introduced Asset Grouping by Class and Subclass in Risk Management and Dashboard",
+          "summary": "With this release, we have expanded the grouping and filtering capabilities on the Asset Listing page by adding support for Asset Class and Asset Subclass."
+        },
+        {
+          "heading": "Improved Vulnerability Visibility with CVE Grouping",
+          "summary": "With this release, the Vulnerabilities tab is enhanced to improve visibility and prioritization. By default, vulnerabilities are now displayed in a CVE-grouped view, providing an instant, consolidated view of all CVEs present in your environment."
+        },
+        {
+          "heading": "Introduced New Tokens for Findings Tab",
+          "summary": "finding.qvss"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Unified Dashboard",
+          "issue": "Fixed an issue where ETM widgets were not populating trend lines. Trending data is now correctly displayed when queries are applied."
+        },
+        {
+          "component": "Unified Dashboard",
+          "issue": "Fixed an issue where widget count sorting was not working correctly. Code changes have been implemented to ensure accurate and consistent sorting."
+        },
+        {
+          "component": "Unified Dashboard",
+          "issue": "Fixed an issue where a Manager User encountered a dashboard crash when accessing the External Web Apps – Build dashboard. The dashboard now loads correctly, including in incognito browser sessions."
+        },
+        {
+          "component": "User Interface",
+          "issue": "Fixed an issue where users encountered an Unauthorized access error when attempting to view asset details, even though the user account had the required roles, scopes, and permissions assigned. With this fix, authorization handling has been corrected, and users with valid permissions and scoped asset access can now view asset details successfully across all affected applications."
+        },
+        {
+          "component": "Risk Management",
+          "issue": "Fixed an issue where the ETM Purge Report UI encountered an OutOfMemoryError while downloading extensive purge reports. Memory handling has been improved, allowing purge reports to be successfully generated and downloaded as a ZIP file even for large datasets."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-13T20:07:14.723457+00:00",
+      "status": "success"
+    }
   },
   "e9f276a84e01": {
     "key": "e9f276a84e01",
@@ -11228,7 +11363,23 @@
       "CRA"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 06, 2026",
+      "features": [
+        {
+          "heading": "Cloud Agent",
+          "summary": "With this release, we are introducing token-based authentication forCloud Agent APIs. This update allows for secure authentication and authorization of API access directly from the user interface. Our API interactions are now authenticated with…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-13T20:07:14.723457+00:00",
+      "status": "success"
+    }
   },
   "b1b0e7762323": {
     "key": "b1b0e7762323",
@@ -11238,7 +11389,23 @@
       "CRA"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 06, 2026",
+      "features": [
+        {
+          "heading": "Cloud Agent",
+          "summary": "With this release, we are introducing token-based authentication forCloud Agent APIs. This update allows for secure authentication and authorization of API access directly from the user interface. Our API interactions are now authenticated with…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-13T20:07:14.723457+00:00",
+      "status": "success"
+    }
   },
   "18be519b5e98": {
     "key": "18be519b5e98",
