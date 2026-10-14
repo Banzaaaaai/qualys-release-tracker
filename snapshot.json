@@ -11688,7 +11688,23 @@
       "PC"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 5, 2026",
+      "features": [
+        {
+          "heading": "Get Posture Info API",
+          "summary": "With this release we have implemented two new enhancements in the Get Posture Info API. They are"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-14T18:22:24.696903+00:00",
+      "status": "success"
+    }
   },
   "9f9ba4e9194e": {
     "key": "9f9ba4e9194e",
@@ -11698,7 +11714,88 @@
       "TAS"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 05, 2026",
+      "features": [
+        {
+          "heading": "Enhanced Security for OAuth2 Client Secret",
+          "summary": "We have enhanced OAuth2 authentication records to better protect sensitive credentials."
+        },
+        {
+          "heading": "Expanded API Discovery with RAML Support",
+          "summary": "The MuleSoft API connector now supports RESTful API Modeling Language (RAML) file formats, in addition to OpenAPI (OAS). This enhancement enables the discovery of APIs defined using RAML, expanding coverage for customers using MuleSoft-standard API…"
+        },
+        {
+          "heading": "Improved Header Injection Guidance",
+          "summary": "We have updated the text guidance for theHeader Injectionfield in theAdditional Configurationssection during web application creation."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "TAS and WAS",
+          "issue": "Scan Schedules"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Web Application"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Web Applications"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scan schedules with tags"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Web Application Sitemap"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Detections"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scan Schedule"
+        },
+        {
+          "component": "WAS",
+          "issue": "WAS Widget"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scan Schedule"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Detection Details"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Detection Details"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "ETM Module"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Mandatory Distribution List"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Edit API"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-14T18:22:24.696903+00:00",
+      "status": "success"
+    }
   },
   "907f9b7414a0": {
     "key": "907f9b7414a0",
@@ -11708,7 +11805,55 @@
       "TC"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 12, 2026",
+      "features": [
+        {
+          "heading": "Important Announcement: Migration to Azure SDK for Java v2",
+          "summary": "We would like to inform you that the Azure SDK used by Qualys CloudView services has been upgraded fromAzure SDK for Java v1 (1.41.4)toAzure SDK for Java v2 (Resource Manager SDK). This upgrade affects multiple CloudView and Connector services,…"
+        },
+        {
+          "heading": "Extended Attack Path coverage support for insights",
+          "summary": ""
+        },
+        {
+          "heading": "Enhanced Connector Configuration in User Onboarding via Launch Stack",
+          "summary": ""
+        },
+        {
+          "heading": "Enhanced Policy Management",
+          "summary": ""
+        },
+        {
+          "heading": "Enhanced Inventory: AMI Deployment Visibility",
+          "summary": ""
+        },
+        {
+          "heading": "Event-Driven Connector Processing - Enhanced Terminated Asset Visibility",
+          "summary": ""
+        },
+        {
+          "heading": "Enhanced Visibility of Service and Resource Types for User-Defined Controls",
+          "summary": ""
+        },
+        {
+          "heading": "Cloud Detection and Response (CDR)",
+          "summary": "The following sections describe the enhancements made to the CDR environment in the upcoming CDR release."
+        },
+        {
+          "heading": "Control Updates",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-14T18:22:24.696903+00:00",
+      "status": "success"
+    }
   },
   "c46b97de18fd": {
     "key": "c46b97de18fd",
@@ -11719,7 +11864,23 @@
       "TC"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 12, 2026",
+      "features": [
+        {
+          "heading": "Get Control MetaDeta",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-14T18:22:24.696903+00:00",
+      "status": "success"
+    }
   },
   "78e898a7c9b5": {
     "key": "78e898a7c9b5",
@@ -11729,7 +11890,35 @@
       "VMDR OT"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 05, 2026",
+      "features": [
+        {
+          "heading": "Modbus Support in Process Integrity Monitoring (PIM)",
+          "summary": "We have enhanced PIM capabilities to include the detection of events between assets communicating over the Modbus protocol."
+        },
+        {
+          "heading": "New Report for PIM Events",
+          "summary": "We have introduced a newMonitoring Detailsreport that enables you to generate a detailed and customized report for all PIM events. This provides you with a consolidated view of all process-related events detected across your OT environment."
+        },
+        {
+          "heading": "Updated QQL Tokens",
+          "summary": "With this release, the following QQL token names are updated to align with the Token Standardization introduced inVMDR OT Release 1.3.1"
+        },
+        {
+          "heading": "New QQL Tokens",
+          "summary": "The following new QQL tokens are added in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-14T18:22:24.696903+00:00",
+      "status": "success"
+    }
   },
   "cad0ddc56d3f": {
     "key": "cad0ddc56d3f",
