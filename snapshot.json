@@ -11417,7 +11417,36 @@
       "VM"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 5, 2026",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "/api/2.0/fo/auth/nsx"
+        },
+        {
+          "heading": "Qualys Policy Compliance (PC)",
+          "summary": "For the list of features and improvements made in Policy Compliance/Policy Audit, refer to thePolicy Audit API Release Notes for Release 1.7."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Host List API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Host List API",
+          "issue": "Vulnerability Management"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-14T12:23:44.505044+00:00",
+      "status": "success"
+    }
   },
   "c46f0501ee67": {
     "key": "c46f0501ee67",
@@ -11428,7 +11457,76 @@
       "GAV"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 07, 2026",
+      "features": [
+        {
+          "heading": "Business Valuation of Organizations and Subsidiaries in External Attack Surface Management (EASM)",
+          "summary": "You can now view the business valuation of your organization and subsidiaries discovered by EASM. This enhancement provides clear visibility into the business impact of assets across your organization and subsidiaries, enabling more informed risk…"
+        },
+        {
+          "heading": "DNS Records Report for Domain Visibility",
+          "summary": "We have introduced a newDNS Recordsreport that provides visibility into the domains associated with your organization. This report includes detailed information of your organization's resolved, unresolved, and typosquatted domains."
+        },
+        {
+          "heading": "Enhanced Asset Purge Behavior for EASM Assets",
+          "summary": "We have enhanced the asset purge workflow for EASM assets to ensure consistent asset data across applications."
+        },
+        {
+          "heading": "Automatic Tagging for Third-party Assets",
+          "summary": "When a new third-party asset is imported through a connector, it automatically receives the tags specified for that connector. Now, these tags are also applied to existing assets imported from the same connector. This ensures consistent tagging…"
+        },
+        {
+          "heading": "Enhanced Activity Logs",
+          "summary": "We have enhanced theActivity Logsto display detailed information for each user action. You can monitor, track, and review user actions across CSAM using these logs."
+        },
+        {
+          "heading": "Group Assets by Business Information",
+          "summary": "We have introduced a new asset grouping capability on theInventory > Assetstab to organize assets based on their business attributes. You can now filter and review assets based on their business information."
+        },
+        {
+          "heading": "Software Instances Discovery Source in Asset Details",
+          "summary": "TheAsset Detailspage now displays the discovery source for each software instance linked to an asset."
+        },
+        {
+          "heading": "IPv6 Asset Activation Support",
+          "summary": "We have introduced support for activating IPv6 assets across the applications within your subscription. With this enhancement, you can now bring unmanaged IPv6 assets into theAddress Managementtab of VMDR and assign them to the appropriate IPv6…"
+        },
+        {
+          "heading": "Implementation of QQL Token Standardization",
+          "summary": "We have now implemented Qualys Query Language (QQL) token standardization across all Qualys applications. As part of this enhancement, both common and CSAM/GAV-specific tokens are updated with new token names that follow a standard, consistent…"
+        },
+        {
+          "heading": "New QQL Tokens in CSAM",
+          "summary": "The following sections provide the new QQL tokens introduced in this release"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "CSAM+GAV - System Information",
+          "issue": "We fixed an issue where theLast System Bootdate and timefor certain assets were not displayed on theAsset Details > System Informationpage."
+        },
+        {
+          "component": "CSAM - Hardware Details",
+          "issue": "We fixed an issue where the hardware details of assets using NetApp OS were not displayed on theHardwaresection of theAsset Details > System Informationpage."
+        },
+        {
+          "component": "CSAM+GAV - Trending Widget",
+          "issue": "We fixed an issue where trending widgets displayed incorrect counts. The trending widgets now accurately show the correct count for the selected date range."
+        },
+        {
+          "component": "CSAM+GAV - System Information",
+          "issue": "We fixed an issue where theBIOS Serial Numberfor assets using PAN-OS was not displayed on theAsset Details > System Informationpage."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-14T12:23:44.505044+00:00",
+      "status": "success"
+    }
   },
   "8ee13354148f": {
     "key": "8ee13354148f",
@@ -11440,7 +11538,35 @@
       "GAV"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 07, 2026",
+      "features": [
+        {
+          "heading": "New APIs to Fetch Organization or Subsidiaries Count and List",
+          "summary": "We have introduced new APIs to fetch information about your organizations and subsidiaries. These include details such as asset count, business valuation, and TruRisk™ score of your organizations and subsidiaries."
+        },
+        {
+          "heading": "Import and Export Software Instances with Third-party Sources",
+          "summary": "You can now import and export software instance data between CSAM and Third-party sources (such as ServiceNow, Webhooks, and others) using CSAM APIs. This integration enables you to sync software instance information of assets across CSAM and…"
+        },
+        {
+          "heading": "Enhanced Third-Party Asset Import API",
+          "summary": "We have enhanced the Third-Party Asset Import API to ensure consistent tagging of assets imported by a connector. Now, whenever new assets are imported through a connector, the tags defined for the connector are also applied to existing assets…"
+        },
+        {
+          "heading": "Enhanced APIs with New QQL Search Tokens",
+          "summary": "As a part of QQL token standardization, we have renamed common and CSAM/GAV-specific tokens. The standardization helps reuse and customize the QQL queries across all Qualys applications, leading to a consistent user experience. The standardized…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-14T12:23:44.505044+00:00",
+      "status": "success"
+    }
   },
   "8fbf97a6cd5c": {
     "key": "8fbf97a6cd5c",
@@ -11450,7 +11576,23 @@
       "SA"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 12, 2026",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "qPSA 4.1.8-1 Oracle Linux 8-Based Image with Enhanced Security"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-14T12:23:44.505044+00:00",
+      "status": "success"
+    }
   },
   "a73ec5ceb620": {
     "key": "a73ec5ceb620",
@@ -11461,7 +11603,80 @@
       "PC"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 5, 2026",
+      "features": [
+        {
+          "heading": "View QDS in Downloaded CSV Compliance Reports",
+          "summary": "With this release, we have added support to display the Qualys Detection Score (QDS) in the downloaded CSV reports."
+        },
+        {
+          "heading": "HashiCorp Support Added to VMware ESXi and vCenter AD",
+          "summary": "With this release, we have added support for using HashiCorp Vault with Active Directories (AD) VMware ESXi and vCenter to create authentication technology."
+        },
+        {
+          "heading": "Extended Tag Rule Support for Palo Alto Network Firewall",
+          "summary": "With this release, we have added support forIP Range in Tag RuleandAsset Tagsin Palo Alto Network Firewall authentication record."
+        },
+        {
+          "heading": "Export Policy with Original Control Sequence",
+          "summary": "With this release, we have introduced an option that allows you to preserve the original sequence of controls when exporting a policy."
+        },
+        {
+          "heading": "Activate or Deactivate Multiple Controls in a Policy",
+          "summary": "With this release, we have added the functionality to activate or deactivate multiple controls associated to a policy."
+        },
+        {
+          "heading": "Editable Instance for Authentication Record Azure MS SQL",
+          "summary": "With this release, we have added support to edit the Instance field for the Azure MS SQL authentication record."
+        },
+        {
+          "heading": "Enhanced Posture Detection Source",
+          "summary": "With this release, we have made the following enhancements to the posture detection source in thePosturetab"
+        },
+        {
+          "heading": "Group By Policy Support Added for Table Widget",
+          "summary": "With this release, we have added support to create or edit a Table widget using the Group By Policy option. This enhancement allows you to view detailed policy information directly from the Dashboards tab."
+        },
+        {
+          "heading": "Support for New Authentication Technology - Windows 2025 Active Directory",
+          "summary": "With this release, Windows 2025 Active Directory technology is supported for Policy Audit authenticated scans using scanners and agents. This technology is now available for use at the following places, at both the scanner and the agent"
+        },
+        {
+          "heading": "Update - Automated Policy Creation using Compliance Framework",
+          "summary": "In the previous release, we introduced the ability to create policies using controls mapped to Compliance Frameworks. This enhancement enables quick alignment with industry standards such as CIS, DISA, and others, ensuring accurate compliance…"
+        },
+        {
+          "heading": "Update - Agent Correlation Identifier",
+          "summary": "With this release, we have updated the text that was displayed below the Agent Correlation Identifier checkbox (Scans>Option Profiles>New>Compliance Profile>Additional)."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PA / PC - Policy Summary",
+          "issue": "Policy Audit / Policy Compliance"
+        },
+        {
+          "component": "PA / PC - Scan Processing",
+          "issue": "Policy Audit / Policy Compliance"
+        },
+        {
+          "component": "PA / PC - Policy Editor",
+          "issue": "Policy Audit / Policy Compliance"
+        },
+        {
+          "component": "PA / PC - Feature Request",
+          "issue": "Policy Audit / Policy Compliance"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-14T12:23:44.505044+00:00",
+      "status": "success"
+    }
   },
   "1b2b5da2dee4": {
     "key": "1b2b5da2dee4",
