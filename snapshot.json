@@ -12106,7 +12106,36 @@
       "WAS"
     ],
     "month_label": "December 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 22, 2025 (January 09, 2026)",
+      "features": [
+        {
+          "heading": "Cloud Agent",
+          "summary": "We have updated the response for the SBOM Report Download API to clearly display the asset details for convenient asset identification. The following table highlights the new details added in the API response for different Cloud providers."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Search Activation Key API",
+          "issue": "Cloud Agent API"
+        },
+        {
+          "component": "Update Tag API",
+          "issue": "Asset Management API"
+        },
+        {
+          "component": "Schedule WAS Scan API",
+          "issue": "WAS API"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-15T18:04:49.708797+00:00",
+      "status": "success"
+    }
   },
   "d39aff53d7d8": {
     "key": "d39aff53d7d8",
@@ -12117,7 +12146,23 @@
       "SaaS DR"
     ],
     "month_label": "December 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 19, 2025",
+      "features": [
+        {
+          "heading": "New Reporting API",
+          "summary": "We are introducing the new API for generating customized reports through the SaaSDR Public API. This update enables seamless automation and workflow integration for report generation."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-15T18:04:49.708797+00:00",
+      "status": "success"
+    }
   },
   "98835d1607b3": {
     "key": "98835d1607b3",
@@ -12127,7 +12172,27 @@
       "Conn"
     ],
     "month_label": "December 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 17, 2025",
+      "features": [
+        {
+          "heading": "Improved Resilience to Azure API Throttling",
+          "summary": "With this release, we have enhanced our Azure connector to provide increased resilience to API throttling. Azure APIs enforce rate limits on a per-application identity basis. When these limits are exceeded, Azure responds with anHTTP 429 - Too Many…"
+        },
+        {
+          "heading": "Implementation of QQL Token Standardization",
+          "summary": "We have now implemented Qualys Query Language (QQL) token standardization across all Qualys applications. As part of this enhancement, both common and TotalCloud-specific tokens are updated with new token names that follow a standard, consistent…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-15T18:04:49.708797+00:00",
+      "status": "success"
+    }
   },
   "d96b2d4f1428": {
     "key": "d96b2d4f1428",
@@ -12138,7 +12203,43 @@
       "Conn"
     ],
     "month_label": "December 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 17, 2025",
+      "features": [
+        {
+          "heading": "API Support for Azure Secondary Application",
+          "summary": "With this release, we have introduced new Azure Connector APIs to resolve the Azure API throttling issues mentioned inConnector Release 2.13. These APIs can help you register and update a secondary application that achieves load sharing and reduces…"
+        },
+        {
+          "heading": "Register Secondary Application",
+          "summary": "This API registers secondary Azure application credentials for one or more Azure connectors. Use this to add secondary app IDs and their secrets for connectors that support multiple application credentials."
+        },
+        {
+          "heading": "Update Secondary Application",
+          "summary": "Update existing secondary application credentials (for example, to rotate secret keys). Request structure is identical to register API; updated credentials are validated and tested during processing."
+        },
+        {
+          "heading": "List Secondary Application",
+          "summary": "Retrieves a list of connectors and their associated secondary application IDs."
+        },
+        {
+          "heading": "Delete Secondary Application",
+          "summary": "Removes secondary application IDs from specified connectors."
+        },
+        {
+          "heading": "Sync Secondary Application In Redis",
+          "summary": "Triggers synchronization of secondary application metadata into the Redis cache used by connector processing pipelines."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-15T18:04:49.708797+00:00",
+      "status": "success"
+    }
   },
   "93b5c6fad538": {
     "key": "93b5c6fad538",
@@ -12148,7 +12249,72 @@
       "VMDR"
     ],
     "month_label": "December 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 26, 2025",
+      "features": [
+        {
+          "heading": "Provided New Sub-user Permissions for TruRisk™ Reports",
+          "summary": "We have enhanced our user permission model to provide sub-users with greater flexibility and control when managing TruRisk™ reports. With this update, sub-users can now"
+        },
+        {
+          "heading": "Enhanced Applied Mitigations Dialog Box",
+          "summary": "In this release, we have enhanced theApplied Mitigationsdialog box to provide additional details about partially and fully mitigated Qualys IDs (QIDs) to enhance the user experience. You can now check fully mitigated and partially mitigated…"
+        },
+        {
+          "heading": "Provided Information for Show Only Patchable Toggle",
+          "summary": "We have added an information icon () next to theShow Only Patchabletoggle on theVMDR Prioritizationtab. TheShow Only Patchabletoggle allows you to filter the patches available with Qualys for detections and assets."
+        },
+        {
+          "heading": "Introduced New Color Code for QDS, QVS, and TruRisk™ Score",
+          "summary": "In this release, we have introduced a new color scheme to indicate and highlight the criticality of the TruRisk™ Score, Qualys Detection Score (QDS), Qualys Vulnerability Score (QVS), and Asset Criticality Score (ACS).Previously, a differentcolor…"
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "The following new tokens are added to theRule Queryunder theResponsestab"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "TruRisk™Score Report",
+          "issue": "We have resolved an issue where the TruRisk™Score report displayed an incorrect count for critical assets.Now, you can view the correct count for the critical assets in the TruRisk™ score report."
+        },
+        {
+          "component": "TruRisk™Score Report",
+          "issue": "We have resolved an issue related to the color code for scores in the critical range (850–1000) in the TruRisk™ Score report. When a TruRisk™ Score report was generated through the VMDR module, an auto-generated email notification was sent displaying the TruRisk™ score for the selected tags. However, the score did not include a color code when the value was in the critical range (850–1000). The color coding was displayed correctly only for the following ranges: High (700–849), Medium (500–699), and Low (0–499).Now, you can view the correct color code for TruRisk™ scores in the critical range (850–1000), like other score ranges, in the email notification."
+        },
+        {
+          "component": "TruRisk™ Summary Report",
+          "issue": "We have resolved an issue where the TruRisk™ Summary report displayed incorrect data for End of Support (EOS) assets and compliance numbers.Now, you can view correct data for the End of Support (EOS) assets and compliance numbers in the TruRisk™ Summary report."
+        },
+        {
+          "component": "Detection Summary Report",
+          "issue": "We have fixed the issues where:TheDetection Summary>Download Formatsdialog box did not display theDeep Scan Resultcheck box. While generating the Detection Summary report, theDownload Formatsdialog box did not display theDeep Scan Resultcheck box.TheResultscolumn did not display Deep scan results in the downloaded report. When the Detection Summary report was generated, theResultscolumn in the downloaded CSV report file did not display Deep Scan results.Now, theDownload Formatsdialog box displays theDeep Scan Resultcheck box, and theResultscolumn in the downloaded CSV report file displays Deep Scan results."
+        },
+        {
+          "component": "TruRisk™ Tab",
+          "issue": "We have fixed an issue where the time displayed in theDETECTED DATEcolumn on theTruRisk™ Scoretab was four hours ahead of the current time. This error occurred due to the time zone difference between the Coordinated Universal Time (UTC) set on theTruRisk™ Scoretab for a user account and the RiskScore service.Now, you can view the correct current time in theDETECTED DATEcolumn on theTruRisk™ Scoretab according to your time zone."
+        },
+        {
+          "component": "Users Tab",
+          "issue": "We have resolved an issue where an error message was displayed when the Unit Manager users with the Role-Based Access Control (RBAC) feature enabled tried opening theUserstab in the VMDR module. This occurred because RBAC restricted their access to theUserstab.Now, the Unit Manager users can access theUserstab without seeing any error messages."
+        },
+        {
+          "component": "Search Token",
+          "issue": "We have addressed an incorrect example in thevulnerabilities.riskFactor.rti:\"Denial_of_Service\"search token description in the Online Help.Now you can view the correct example of this token inSearch Tokens for VMDR."
+        },
+        {
+          "component": "Search Token",
+          "issue": "We have addressed an incorrect example in thevulnerabilities.statussearch token description in the Online Help.Now, you can view the correct example of this token inSearch Tokens for VMDR."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-15T18:04:49.708797+00:00",
+      "status": "success"
+    }
   },
   "d8d4a912e3d6": {
     "key": "d8d4a912e3d6",
