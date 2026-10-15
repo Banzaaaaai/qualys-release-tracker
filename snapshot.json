@@ -32,7 +32,7 @@
   "011e58391cf3": {
     "key": "011e58391cf3",
     "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_vmdr_rn/vmdr/release_2_13.htm",
-    "title": "Vulnerability Management, Detection and Response Release 2.13",
+    "title": "Vulnerability Management, Detection and Response 2.13",
     "tags": [
       "VMDR"
     ],
@@ -11928,7 +11928,35 @@
       "CS"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 08, 2026",
+      "features": [
+        {
+          "heading": "Enhanced 'Image Pull Secrets' using Unified Helm Chart",
+          "summary": "Currently, Qualys Container Security Sensor supports theglobal.imagePullSecretflag in Qualys Unified Helm Chart to pull an image from a private repository."
+        },
+        {
+          "heading": "Helm Chart 1.20.0 Updates",
+          "summary": "The Qualys Container Security package consists of the 'values.yaml' file, which deploys the sensor in various environments.This section explains the updates in the latest Helm chart (values.yaml) file. Refer toQCS Sensor Helm Chart (qcs-sensor)."
+        },
+        {
+          "heading": "Unified Helm Chart (qualys-tc 2.7.0) Updates",
+          "summary": "The unified helm chart can be used to install QCS Sensor, Admission Controller, Cluster Sensor, and Container Runtime Sensor.Refer toQualys Unified Helm Chart (qualys-tc)."
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following issue has been fixed with this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-15T12:08:02.415674+00:00",
+      "status": "success"
+    }
   },
   "091a1cda9985": {
     "key": "091a1cda9985",
@@ -11939,7 +11967,52 @@
       "VM"
     ],
     "month_label": "January 2026",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 5, 2026",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "With this release, we have introduced authentication support for VMware NSX environments. This capability allows you to securely authenticate to NSX managed components using VMware NSX credentials, enabling authenticated vulnerability and compliance…"
+        },
+        {
+          "heading": "Qualys Policy Compliance (PC)",
+          "summary": "For the list of features and improvements we have made in Policy Compliance/Policy Audit, refer to thePolicy Audit UI Release Notes for Release 1.7."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Option Profile",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Authentication",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Host List API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Host List API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan UI",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan UI",
+          "issue": "Vulnerability Management"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-15T12:08:02.415674+00:00",
+      "status": "success"
+    }
   },
   "8d1db7a3da7c": {
     "key": "8d1db7a3da7c",
@@ -11949,7 +12022,27 @@
       "UD"
     ],
     "month_label": "December 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 30, 2025",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "UD - CSAM",
+          "issue": "An issue occurred while editing a savedCSAM Multi-Grouped Assetdashboard widget. When the user changed the format from a bar chart to a pie chart, theGroup Byfield displayed an invalid value,N/A, resulting in no data being reflected on the UI.This issue was resolved by ensuring the correctGroup Byfield value,Software Product, is retained during format changes."
+        },
+        {
+          "component": "UD",
+          "issue": "An issue occurred where users were unable to rearrange the dashboard widget in the layout. When the widget was dragged from one position to another, it automatically returned to its original position.This issue is now resolved, and the user can drag the dashboard widget to another position."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-15T12:08:02.415674+00:00",
+      "status": "success"
+    }
   },
   "7af2b1ab2ab7": {
     "key": "7af2b1ab2ab7",
@@ -11960,7 +12053,48 @@
       "WAS"
     ],
     "month_label": "December 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 22, 2025 (January 09, 2026)",
+      "features": [
+        {
+          "heading": "Cloud Agent",
+          "summary": "We updated the Cloud Agent to support launching on-demand ETM Identity scans from the Cloud Agent user interface."
+        },
+        {
+          "heading": "Token Update",
+          "summary": "The following search token(s) are updated for the Cloud Agent user interface."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Cloud Agent Reporting",
+          "issue": "Cloud Agent UI"
+        },
+        {
+          "component": "Reporting",
+          "issue": "WAS UI"
+        },
+        {
+          "component": "Search Activation Key API",
+          "issue": "Cloud Agent API"
+        },
+        {
+          "component": "Update Tag API",
+          "issue": "Asset Management API"
+        },
+        {
+          "component": "Schedule WAS Scan API",
+          "issue": "WAS API"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-15T12:08:02.415674+00:00",
+      "status": "success"
+    }
   },
   "1d909041d22b": {
     "key": "1d909041d22b",
@@ -28971,6 +29105,72 @@
     "enrichment": {
       "attempts": 1,
       "last_attempt_at": "2026-10-13T14:35:10.871170+00:00",
+      "status": "success"
+    }
+  },
+  "9846762ae3cd": {
+    "key": "9846762ae3cd",
+    "url": "https://docs.qualys.com/en/etm/release-notes/etm/release_1_14.htm",
+    "title": "Enterprise TruRisk Management 1.14",
+    "tags": [
+      "ETM"
+    ],
+    "month_label": "October 2026",
+    "detected_at": "2026-10-15T12:08:02+00:00",
+    "details": {
+      "release_date": "October 14, 2026This release addsChat Nowto Agent Sara, the AI agent in ETM. Chat Now is a guided workflow. It turns your prioritized findings into a remediation plan in a few clicks. Agent Sara groups the work into waves based on operational impact. It then creates the plans your IT Operations team needs. A newInstaScantab inRisk Managementshows the newest InstaScan findings right away. Two new dashboard widgets track CISA BOD 26-04 deadlines and SLA compliance. WithMitigate Now, you can view mitigation options and start a mitigation job from ETM. Risk Workbench now shows how many assets and findings each template covers. TruConfirm scan results now show the evidence behind each result. TruConfirm scans also show which findings and assets were skipped, and why. New tokens let you search findings by mitigation details, patch details, and Patch Tuesday release.",
+      "features": [
+        {
+          "heading": "Build Remediation Plans with Agent Sara Chat Now",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "View InstaScan Findings in Risk Management",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Track CISA BOD 26-04 Remediation with New Dashboard Widgets",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Mitigate Vulnerabilities Directly from ETM",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Create Alerts and Exceptions Using Mitigation and Patch Details",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "New Tokens for Mitigation and Patch Details",
+          "summary": "Use the new tokens to search for findings by mitigation and patch details. You can also use all of these tokens when you create alert rules and exception rules."
+        },
+        {
+          "heading": "See Template Coverage and Mitigation Counts in Risk Workbench Plans",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Evidence Section in TruConfirm Scan Results",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "ErrorHandlingforSkippedFindingsandAssetsinTruConfirmScans",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "New Tokens for Patch Tuesday",
+          "summary": "Use these tokens to find the vulnerabilities from a specific Microsoft Patch Tuesday release, so you can track and fix them each month. You can use the following tokens to search for findings related to Patch Tuesday releases"
+        },
+        {
+          "heading": "Fixes",
+          "summary": "The following reported and notable customer issues are fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-15T12:08:02.415674+00:00",
       "status": "success"
     }
   }
