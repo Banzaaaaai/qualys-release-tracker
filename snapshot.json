@@ -12428,7 +12428,27 @@
       "TA"
     ],
     "month_label": "December 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 25, 2025",
+      "features": [
+        {
+          "heading": "New API: Launch New Scan",
+          "summary": "We have introduced the launch scan API to launch a new scan. The scan ID will be returned in the response."
+        },
+        {
+          "heading": "New API: Get Scan Details by ID",
+          "summary": "This API allows you to retrieve scan details using its identifier, returning record details."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-16T17:50:27.386775+00:00",
+      "status": "success"
+    }
   },
   "f7e3a1e2bec3": {
     "key": "f7e3a1e2bec3",
@@ -12438,7 +12458,27 @@
       "PNS"
     ],
     "month_label": "December 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 05, 2025",
+      "features": [
+        {
+          "heading": "IPv6 Asset Tagging Support from NPS",
+          "summary": "NPS now assigns the correct network UUID to all discovered IPv6 assets in your environment. This ensures that each asset is correctly assigned to the network tag created in CSAM or VM."
+        },
+        {
+          "heading": "IPv6 Asset Discovery by CAPS",
+          "summary": "The NPS backend services are enhanced to support the processing of assets with IPv6 addresses discovered by CAPS."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-16T17:50:27.386775+00:00",
+      "status": "success"
+    }
   },
   "eb231b382c1d": {
     "key": "eb231b382c1d",
@@ -12449,7 +12489,48 @@
       "VM"
     ],
     "month_label": "December 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 4, 2025",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "With this release, we have enhanced theRemediationtab search filters to improve accuracy for AGMS-enabled accounts. These changes ensure accurate filtering and better usability for remediation searches."
+        },
+        {
+          "heading": "Qualys Policy Compliance (PC)",
+          "summary": "For the list of features and improvements we have made in Policy Compliance/Policy Audit, refer to thePolicy Audit UI Release Notes for Release 1.6."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Reports General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Assets",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - User Management",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan UI",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Reports General",
+          "issue": "Vulnerability Management"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-16T17:50:27.386775+00:00",
+      "status": "success"
+    }
   },
   "c2d59d3da785": {
     "key": "c2d59d3da785",
@@ -12461,7 +12542,32 @@
       "VM"
     ],
     "month_label": "December 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 4, 2025",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "/api/2.0/fo/knowledge_base/qvs/"
+        },
+        {
+          "heading": "Qualys Policy Compliance (PC)",
+          "summary": "For the list of features and improvements made in Policy Compliance/Policy Audit, refer to thePolicy Audit API Release Notes for Release 1.6."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2017-0199",
+        "CVE-2021-36764",
+        "CVE-2021-36765",
+        "CVE-2021-36798"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-16T17:50:27.386775+00:00",
+      "status": "success"
+    }
   },
   "4815fc05418b": {
     "key": "4815fc05418b",
@@ -12472,7 +12578,56 @@
       "PC"
     ],
     "month_label": "December 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 4, 2025",
+      "features": [
+        {
+          "heading": "Updated Tokens names for job.scheduleFrequency and job.scheduleType",
+          "summary": "With this release, we have updated the Qualys Query Language (QQL) token namesjob.scheduleFrequencyandjob.scheduleTypeas part of our ongoing QQL Token Standardization efforts."
+        },
+        {
+          "heading": "Update - View Audit Command",
+          "summary": "In release 1.1.0, we had released the feature to view Audit Commands for a particular type of Technology used in a Control. This enhancement provides visibility into how a Controls Actual Value is derived, helping better understand the underlying…"
+        },
+        {
+          "heading": "Support for New Authentication Technology - HP ILO",
+          "summary": "With this release we have added support for the new technology HP ILO. This technology is supported for Policy Audit authenticated scans using scanner. This technology is now available for use at the following places, at scanner"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PA / PC - Policy Editor",
+          "issue": "Policy Audit / Policy Compliance"
+        },
+        {
+          "component": "PA / PC - PCRS API",
+          "issue": "Policy Audit / Policy Compliance"
+        },
+        {
+          "component": "PA / PC - New UI",
+          "issue": "Policy Audit / Policy Compliance"
+        },
+        {
+          "component": "PA / PC - New UI",
+          "issue": "Policy Audit / Policy Compliance"
+        },
+        {
+          "component": "PA / PC - Feature Request",
+          "issue": "Policy Audit / Policy Compliance"
+        },
+        {
+          "component": "PA / PC - Feature Request",
+          "issue": "Policy Audit / Policy Compliance"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-16T17:50:27.386775+00:00",
+      "status": "success"
+    }
   },
   "c46f5b277204": {
     "key": "c46f5b277204",
