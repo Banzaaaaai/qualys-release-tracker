@@ -12324,7 +12324,35 @@
       "CAR"
     ],
     "month_label": "December 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 15, 2025",
+      "features": [
+        {
+          "heading": "Qualys Recommendations in CAR Library",
+          "summary": "You can now view a curated list of Qualys-recommended scripts on theLibrary > Hometab. These scripts are specifically selected to address complex vulnerabilities, including residual Chrome files, leftover Java components, Windows build upgrade…"
+        },
+        {
+          "heading": "Bulk Deprecation of Scripts",
+          "summary": "You can now deprecate multiple scripts at once, eliminating the need to deprecate each script individually."
+        },
+        {
+          "heading": "Enhanced Script Categorization in the Library",
+          "summary": "We have enhanced how scripts are categorized in theScript Library. Previously grouped under broad categories, scripts are now further classified into sub-categories based on the specific actions they perform or the outcomes they are intended to…"
+        },
+        {
+          "heading": "API Enhancements",
+          "summary": "For information on API enhancements, refer to theCustom Assessment and Remediation 2.7 API Release Notes."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-16T11:54:59.352660+00:00",
+      "status": "success"
+    }
   },
   "3c61359508a5": {
     "key": "3c61359508a5",
@@ -12335,7 +12363,27 @@
       "CAR"
     ],
     "month_label": "December 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 15, 2025",
+      "features": [
+        {
+          "heading": "Import and Create Scripts from GitLab",
+          "summary": "You can now import scripts from your private or public GitLab repositories using CAR Script-based APIs to create and execute them on your assets."
+        },
+        {
+          "heading": "Bulk Deprecate Scripts API",
+          "summary": "Use this API to deprecate multiple scripts."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-16T11:54:59.352660+00:00",
+      "status": "success"
+    }
   },
   "1ea3f51c1b25": {
     "key": "1ea3f51c1b25",
@@ -12345,7 +12393,31 @@
       "TA"
     ],
     "month_label": "December 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 15, 2025",
+      "features": [
+        {
+          "heading": "Download Scan Report",
+          "summary": "With this release, you can download the scan report from theScansandModelstabs."
+        },
+        {
+          "heading": "Updated Token",
+          "summary": "A new category is added to theVulnerabilitiestab to filter and view AI vulnerabilities only related to LLMs from the list of all AI vulnerabilities."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-16T11:54:59.352660+00:00",
+      "status": "success"
+    }
   },
   "5fd9ddd0e4b8": {
     "key": "5fd9ddd0e4b8",
@@ -29337,6 +29409,79 @@
     "enrichment": {
       "attempts": 1,
       "last_attempt_at": "2026-10-15T12:08:02.415674+00:00",
+      "status": "success"
+    }
+  },
+  "5803bbcb7339": {
+    "key": "5803bbcb7339",
+    "url": "https://docs.qualys.com/en/car/release-notes/car/release_2_9_3_api.htm",
+    "title": "Custom Assessment and Remediation 2.9.3 API",
+    "tags": [
+      "API",
+      "CAR"
+    ],
+    "month_label": "October 2026",
+    "detected_at": "2026-10-16T11:54:59+00:00",
+    "details": {
+      "release_date": "October 15, 2026Before you review the API release highlights, learn which API server URL to use in your API requests. SeeKnow Your Qualys API Server URL. The sample API requests in these release notes use <qualys_base_url> as a placeholder for that URL.",
+      "features": [
+        {
+          "heading": "Run Scripts on Assets That Match a QQL Query (Execute Scripts On Demand API)",
+          "summary": "What Changed For You"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-16T11:54:59.352660+00:00",
+      "status": "success"
+    }
+  },
+  "a998373d0f20": {
+    "key": "a998373d0f20",
+    "url": "https://docs.qualys.com/en/car/release-notes/car/release_2_9_3.htm",
+    "title": "Custom Assessment and Remediation 2.9.3",
+    "tags": [
+      "CAR"
+    ],
+    "month_label": "October 2026",
+    "detected_at": "2026-10-16T11:54:59+00:00",
+    "details": {
+      "release_date": "October 15, 2026This release introduces support for assessing perimeter devices that cannot host the Cloud Agent, scheduling software package deployments, requiring a second reviewer before scripts and packages can run, and finding scripts by describing the task in natural language.",
+      "features": [
+        {
+          "heading": "Assess Perimeter Devices Without the Cloud Agent",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Schedule Software Packages for Automated Deployments",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Require Second Reviewer Before Scripts and Packages Run",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Find Scripts by Describing Your Task",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "New QQL Tokens",
+          "summary": "The following table provides the new QQL token added in this release"
+        },
+        {
+          "heading": "API Enhancements",
+          "summary": "For information on API enhancements, refer to theCustom Assessment and Remediation 2.9.3 API Release Notes."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-16T11:54:59.352660+00:00",
       "status": "success"
     }
   }
