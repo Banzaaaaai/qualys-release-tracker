@@ -12832,7 +12832,31 @@
       "CS"
     ],
     "month_label": "December 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 02, 2025",
+      "features": [
+        {
+          "heading": "Added GCFS Storage Driver Support for GKE Environment",
+          "summary": "GCFS is a local storage driver used in GKE. CS Sensor now supports the GCFS storage driver in GKE environments using Containerd, ensuring seamless integration with modern Kubernetes runtimes."
+        },
+        {
+          "heading": "Parallel Listing of Registry Images",
+          "summary": "Enhancing registry images listing for a better user experience. Earlier, the Registry image listing was happening sequentially; now, it will happen in parallel."
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following issue has been fixed with this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-17T16:53:18.489360+00:00",
+      "status": "success"
+    }
   },
   "54970a6ab5f6": {
     "key": "54970a6ab5f6",
@@ -12842,7 +12866,36 @@
       "QS"
     ],
     "month_label": "December 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 02, 2025",
+      "features": [
+        {
+          "heading": "Improved Data Collection",
+          "summary": "With this release, QScanner has upgraded its data collection process by improving the collection of the following Package Managers."
+        },
+        {
+          "heading": "Improvement in Network Retries",
+          "summary": "QScanner now supports retries for all backend communications. The retries use exponential back-offs on each failed attempt. So, we would have default retries after 5s, 10s, 20s, 40s, 80s, 120s, and so on up to 10 times. The exact behavior is…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "SCA Scan Mode",
+          "issue": "Scan remains in offline mode after fallback, affecting subsequent scans."
+        },
+        {
+          "component": "Post Scan Operation",
+          "issue": "Temporary artifacts on Host were not getting deleted after interrupting a scan."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-17T16:53:18.489360+00:00",
+      "status": "success"
+    }
   },
   "a5102200cd80": {
     "key": "a5102200cd80",
@@ -12854,7 +12907,68 @@
       "PM"
     ],
     "month_label": "November 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 21, 2025 (Updated January 19, 2026)",
+      "features": [
+        {
+          "heading": "Support for Chunk Downloads",
+          "summary": "The Cloud Agent for Windows now supports downloading large files such as manifests, binaries, and patches in segmented chunks. Cloud Agent downloads the large files in chunks of 1MB each."
+        },
+        {
+          "heading": "Troubleshooting Quarantined Assets",
+          "summary": "With this release of Cloud Agent, we have added support to unquarantine host assets. This feature helps in troubleshooting the quarantined assets."
+        },
+        {
+          "heading": "Improvements for Cloud Agent Health Check Tool",
+          "summary": "We have enhanced our Cloud Agent Health Check Tool to fetch the details for Cloud Agent troubleshooting. The Cloud Agent Health Check Tool now reports the local system issues and displays them in the Health Check logs. This enhancement reduces the…"
+        },
+        {
+          "heading": "Enhancements for Patch Management",
+          "summary": "We are streamlining the Patch Management support for the legacy Windows operating systems. To ensure the timely delivery, high-quality content, and continuous innovation we are introducing the Patch Management life-cycle changes for the following…"
+        },
+        {
+          "heading": "HTTPS Proxy for Cloud Agent Communication",
+          "summary": "We have updated Windows Cloud Agent to support the HTTPS Proxy for communicating with the Qualys Platform. Earlier, only HTTP Proxy was supported for the Windows Cloud Agent."
+        },
+        {
+          "heading": "Enhancements for CAR",
+          "summary": "The Cloud Agent for Windows now supports the RemoteShell commands for Custom Assessment and Remediation (CAR). With this feature, you can connect to any remote assets from the CAR user interface and execute the remote shell commands to retrieve host…"
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues for this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Patch Failure",
+          "issue": "We fixed an issue where the patching to assets were failing with exit code -2145124329 due to unavailability of patch file."
+        },
+        {
+          "component": "Hash-based Blocking",
+          "issue": "TheHash-based Blockingfeature in theEndpoint Detection and Responseapplication could not block the applications with file size more than 25 MB. Now, we have increased the file size limit for the Hash-based Blocking to 100 MB to fix this issue."
+        },
+        {
+          "component": "Reduced Activity Period",
+          "issue": "The Middleware scans were running during the reduced activity period for Policy Audit/ Policy Compliance.We fixed this issue by updating the Middleware scan configuration to support the reduced activity period for Policy Audit/ Policy Compliance."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-17T16:53:18.489360+00:00",
+      "status": "success"
+    }
   },
   "50adc02b2a37": {
     "key": "50adc02b2a37",
@@ -12864,7 +12978,66 @@
       "ETM"
     ],
     "month_label": "November 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 24, 2025",
+      "features": [
+        {
+          "heading": "Enhanced Risk Acceptance Feature",
+          "summary": "With this release, the Risk Acceptance workflow is enhanced to strengthen governance, accountability, and ease of justification during exception handling."
+        },
+        {
+          "heading": "Enhanced Search with New Tokens Support (Aligned with VMDR Capabilities)",
+          "summary": "To improve threat visibility and risk-based vulnerability management, we have launched a new set of search tokens that are compatible with VMDR capabilities. This release includes support for Real-Time Threat Indicator (RTI) tokens, along with…"
+        },
+        {
+          "heading": "Enhanced Default GroupBy View Updated to CVE for Vulnerabilities Tab",
+          "summary": "With this release, the default view of the Vulnerabilities Listing page has been enhanced. The vulnerabilities are now grouped by CVE (Common Vulnerabilities and Exposures) by default, providing a standardized and more informative way to analyze…"
+        },
+        {
+          "heading": "Enhanced GroupBy Options  for Vulnerabilities Findings",
+          "summary": "We have introduced new options for GroupBy to enhance vulnerability filtering and visualization. You can use GroupBy as a filter to view vulnerabilities grouped by specific attributes."
+        },
+        {
+          "heading": "Extended GroupBy CVE Support and Multi Grouped Capability for Dashboard",
+          "summary": "We have enhanced theGroupBy CVEfunctionality to provide more detailed data visualization within tables. You can now view multiple columns when usingGroupBy CVE, providing insights into each CVE record. Along with these columns, a Detection Count…"
+        },
+        {
+          "heading": "Enhanced Asset Search with New Tokens Support (Aligned with CSAM Capabilities)",
+          "summary": "We have introduced a new set of search tokens for viewing asset details. These tokens help to retrieve detailed asset, software, hardware, and connector data, providing deeper insights into operational, performance, and security parameters. By…"
+        },
+        {
+          "heading": "Enhanced GroupBy Options for Assets",
+          "summary": "We have introduced new options forGroupByto enhance assets filtering and visualization. You can useGroupByas a filter to view vulnerabilities grouped by specific attributes."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Documentation",
+          "issue": "Corrected the token name discrepancy on the Risk Acceptance page. The documentation now displays the correct token name toasset.tag.name"
+        },
+        {
+          "component": "Dashboard",
+          "issue": "Resolved a UI issue where Business Entities chart labels in the TruRisk Summary were not visible on smaller screens. The labels now display correctly across all screen sizes."
+        },
+        {
+          "component": "Dashboard",
+          "issue": "Resolved an issue where ETM dashboard widgets displayed incorrect TruRisk™ Scores (showing “-1” or abnormal negative percentages). The score calculation logic has been corrected, and widgets now show accurate values."
+        },
+        {
+          "component": "Dashboard",
+          "issue": "In the ETM Dashboard, users observed that when creating a widget using only an asset-based query (for example,operatingSystem.category:'windows client' and tags.name:'Child Tag'), the trend graph was not displayed. The dashboard logic for data retrieval and trend visualization has been updated to ensure that widgets created with only asset queries now correctly display the trend graph. Users can now view accurate trend data for all asset-based widgets."
+        }
+      ],
+      "cves": [
+        "CVE-2025-12345"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-17T16:53:18.489360+00:00",
+      "status": "success"
+    }
   },
   "dce88f99488b": {
     "key": "dce88f99488b",
@@ -12874,7 +13047,31 @@
       "QF"
     ],
     "month_label": "November 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 20, 2025",
+      "features": [
+        {
+          "heading": "View Execution Workflow Version",
+          "summary": "We have enhanced theExecution Detailsview to include a snapshot of the workflow version that ran during the last execution."
+        },
+        {
+          "heading": "Added Support for New GCP Templates",
+          "summary": "We have introduced94 new templatesto the GCP template library. These templates enable one-click remediation of cloud vulnerabilities and misconfigurations, reducing manual effort and improving compliance posture. Each template maps to a Control ID…"
+        },
+        {
+          "heading": "Enhancements to the Cloud Selection Screen",
+          "summary": "We have updated the screen for selecting cloud credentials on the workflow configuration page. These updates apply to AWS, Azure, and GCP credential screens, aligning functionality with the newly introduced OCI cloud provider support."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-17T16:53:18.489360+00:00",
+      "status": "success"
+    }
   },
   "c9a2b0450b32": {
     "key": "c9a2b0450b32",
