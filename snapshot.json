@@ -12639,7 +12639,32 @@
       "PC"
     ],
     "month_label": "December 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 4, 2025",
+      "features": [
+        {
+          "heading": "Get Posture Info API: Extended Support to exclude Extended Evidence",
+          "summary": "With this release, we have added support for extended evidence as a dedicated request parameter, giving users explicit control over whether to retrieve extended evidence."
+        },
+        {
+          "heading": "Get Host ID API: Resolve Host IDs for Compliance Policies",
+          "summary": "With this release, we have included two new input parameters – assetDeploymentType and assetState. When selected, these parameters enable you to filter cloud-based hosts from compliance policies."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PA / PC - PCRS API",
+          "issue": "Policy Audit / Policy Compliance"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-17T11:10:48.144539+00:00",
+      "status": "success"
+    }
   },
   "927c9044987d": {
     "key": "927c9044987d",
@@ -12649,7 +12674,43 @@
       "TC"
     ],
     "month_label": "December 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 03, 2025",
+      "features": [
+        {
+          "heading": "Implementation of QQL Token Standardization",
+          "summary": ""
+        },
+        {
+          "heading": "Enhanced IP Address Classification for EC2 Instance Resources",
+          "summary": ""
+        },
+        {
+          "heading": "Event-Driven Connector Processing (Beta)",
+          "summary": ""
+        },
+        {
+          "heading": "IaC Security: Enhanced SARIF Output for GitHub Integration",
+          "summary": ""
+        },
+        {
+          "heading": "Cloud Detection and Response (CDR)",
+          "summary": "The following sections describe the enhancements made to the CDR environment in the upcoming CDR release."
+        },
+        {
+          "heading": "Control Updates",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-17T11:10:48.144539+00:00",
+      "status": "success"
+    }
   },
   "7d7053e7a184": {
     "key": "7d7053e7a184",
@@ -12660,7 +12721,23 @@
       "TC"
     ],
     "month_label": "December 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 03, 2025",
+      "features": [
+        {
+          "heading": "QQL Token Standardization - API Updates",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-17T11:10:48.144539+00:00",
+      "status": "success"
+    }
   },
   "434d5a27453b": {
     "key": "434d5a27453b",
@@ -12670,7 +12747,43 @@
       "CS"
     ],
     "month_label": "December 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 02, 2025 (updated on December 22, 2025)",
+      "features": [
+        {
+          "heading": "Data Retention Service for Registry Schedules",
+          "summary": "Previously, Qualys Container Security allowed deletion of images and containers present in your account after a certain interval. With this release, an option to delete registry schedules is added to theData Retention Policypage. Registry schedules…"
+        },
+        {
+          "heading": "Enhancements in Registry Scan",
+          "summary": "Previously, Registry Scanning provided limited image details, making it difficult to understand what was being scanned, which images were processed, and where issues occurred during a scan.With this release, Qualys Container Security has improved…"
+        },
+        {
+          "heading": "Continuous Assessment Configuration",
+          "summary": "Earlier, Qualys Container Security offered 'Continuous Assessment of Images' feature by default and you were allowed to disable it by contacting Qualys TAMs. With this release, we are providing the ability to enable or disable this feature through…"
+        },
+        {
+          "heading": "Static and Dynamic Scan Vulnerabilities Merge",
+          "summary": "Previously, Qualys Container Security used to override existing Static scan results if a Dynamic scan was run later. With this release, both Static and Dynamic Scan data are preserved."
+        },
+        {
+          "heading": "Upcoming Container Security QQL Standardization",
+          "summary": "Qualys is implementing standardization of the Qualys Query Language (QQL) across all its modules. As a part of this enhancement, both common and Qualys Container Security (K8s Container Security)-specific QQL tokens are getting updated with new…"
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following issue has been fixed in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-17T11:10:48.144539+00:00",
+      "status": "success"
+    }
   },
   "7d1bc74bd57c": {
     "key": "7d1bc74bd57c",
@@ -12681,7 +12794,35 @@
       "CS"
     ],
     "month_label": "December 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 02, 2025",
+      "features": [
+        {
+          "heading": "Improvement in Dynamic Tags",
+          "summary": "Earlier, dynamic tags were allowed to be created only usingQualysEnterprise TruRisk™ Platform>Container Security. With this release, you can create a dynamic tag using the Container Security APIs. Additionally, you can re-evaluate a Dynamic tag for…"
+        },
+        {
+          "heading": "Enhancement in Registry Scan Jobs",
+          "summary": "With this release, the 'Scan Jobs' page is renamed to 'Schedules'. Additionally, the 'PENDING IMAGES' column present in this page is removed. To support this feature, the following APIs are introduced."
+        },
+        {
+          "heading": "New Parameters in Report Templates",
+          "summary": "With this release, Qualys Container Security introduces eight new parameters under 'CS_IMAGE_VULNERABILITY' and 'CS_CONTAINER_VULNERABILITY' report templates. To support this enhancement, the following API is updated."
+        },
+        {
+          "heading": "Image Digest Information in Containers",
+          "summary": "You can now see Image Digest or Image SHA information in Container Details APIs, using which you can match containers with their images captured from different non-CS-sensor sources.To support this enhancement, the following APIs are updated."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-17T11:10:48.144539+00:00",
+      "status": "success"
+    }
   },
   "b28a858d43d5": {
     "key": "b28a858d43d5",
