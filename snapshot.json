@@ -13081,7 +13081,23 @@
       "SA"
     ],
     "month_label": "November 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 24, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "This release brings new features and updates to data centers and desktop platforms."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-18T11:43:13.129805+00:00",
+      "status": "success"
+    }
   },
   "10408f186708": {
     "key": "10408f186708",
@@ -13092,7 +13108,52 @@
       "PM"
     ],
     "month_label": "November 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 14, 2025",
+      "features": [
+        {
+          "heading": "Upgrades to MacOS Apple Silicon 6.3.0 Cloud Agent",
+          "summary": "This release of Cloud Agent supersedesCloud Agent for MacOS Apple Silicon Release 6.3.0. MacOS Apple Silicon Cloud Agent 6.3.1 supports all the features available with release 6.3.0."
+        },
+        {
+          "heading": "Cloud Agent Log Relocation",
+          "summary": "We have updated the Cloud Agent logs directoryto/Library/Application\\ Support/QualysCloudAgent/Logs/qualys-cloud-agent.log. Earlier, the Cloud Agent logs were stored at/var/log/qualys."
+        },
+        {
+          "heading": "Patch Management Enhancements",
+          "summary": "We made the following enhancements for the Patch Management application."
+        },
+        {
+          "heading": "Behavioral Changes",
+          "summary": "There are no behavioral changes for this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "Cloud Agent for macOS Apple Silicon may get unresponsive during post-update restart for endpoints where Endpoint Protection Platform (EPP) is enabled."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Cloud Agent Installation",
+          "issue": "Cloud Agent for MacOS Apple Silicon v6.3 could not be installed on the host assets and displayed an error message indicating the Cloud Agent is damaged. For more details, refer toCloud Agent for macOS 6.2.0-36 (Intel) / 6.3.0-41 (ARM): “Application Damaged” Popup on macOS 15.6.1 (Sequoia) (IM-12268).We fixed this issue by updating the Cloud Agent pre-installation script."
+        },
+        {
+          "component": "Un-trusted Search Path Vulnerability",
+          "issue": "The shell scripts packaged with the Cloud Agent installer execute multiple system utilities without an absolute path or resetting a path to a safe value. This allows a malicious actor to place harmful files on your assets when the shell scripts are executed with elevated privileges.We have updated this behavior by setting up the fixed paths for shell script execution. This enhancement prevents the infiltration of malicious files on your assets and prevents you from any potential security threats. The updated shell script behavior also helps in mitigating theUntrusted Search Path Vulnerability (CWE-426)."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-18T11:43:13.129805+00:00",
+      "status": "success"
+    }
   },
   "5481a1f43f66": {
     "key": "5481a1f43f66",
@@ -13103,7 +13164,52 @@
       "PM"
     ],
     "month_label": "November 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 14, 2025",
+      "features": [
+        {
+          "heading": "Upgrades to MacOS Intel 6.2.0 Cloud Agent",
+          "summary": "This release of Cloud Agent supersedesCloud Agent for MacOS Intel Release 6.2.0. MacOS Intel Cloud Agent 6.2.1 supports all the features available with release 6.2.0."
+        },
+        {
+          "heading": "Cloud Agent Log Relocation",
+          "summary": "We have updated the Cloud Agent logs directoryto/Library/Application\\ Support/QualysCloudAgent/Logs/qualys-cloud-agent.log. Earlier, the Cloud Agent logs were stored at/var/log/qualys."
+        },
+        {
+          "heading": "Patch Management Enhancements",
+          "summary": "We made the following enhancements for the Patch Management application."
+        },
+        {
+          "heading": "Behavioral Changes",
+          "summary": "There are no behavioral changes for this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "Cloud Agent for macOS Intel may get unresponsive during post-update restart for endpoints where Endpoint Protection Platform (EPP) is enabled."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Cloud Agent Installation",
+          "issue": "Cloud Agent for macOS Intel v6.3 could not be installed on the host assets and displayed an error message indicating the Cloud Agent is damaged. For more details, refer toCloud Agent for macOS 6.2.0-36 (Intel) / 6.3.0-41 (ARM): “Application Damaged” Popup on macOS 15.6.1 (Sequoia) (IM-12268).We fixed this issue by updating the Cloud Agent pre-installation script."
+        },
+        {
+          "component": "Un-trusted Search Path Vulnerability",
+          "issue": "The shell scripts packaged with the Cloud Agent installer execute multiple system utilities without an absolute path or resetting a path to a safe value. This allows a malicious actor to place harmful files on your assets when the shell scripts are executed with elevated privileges.We have updated this behavior by setting up the fixed paths for shell script execution. This enhancement prevents the infiltration of malicious files on your assets and prevents you from any potential security threats. The updated shell script behavior also helps in mitigating theUntrusted Search Path Vulnerability (CWE-426)."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-18T11:43:13.129805+00:00",
+      "status": "success"
+    }
   },
   "e49c023ec5ba": {
     "key": "e49c023ec5ba",
@@ -13114,7 +13220,39 @@
       "CRI"
     ],
     "month_label": "November 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 12, 2025",
+      "features": [
+        {
+          "heading": "Support for Post-Quantum Cryptography (PQC)",
+          "summary": "With this release, we are extending support for PQC to provide quantum-resilient security and protection of sensitive data. Quantum computing technology is evolving, and it poses a major threat to traditional cryptographic systems. It can break…"
+        },
+        {
+          "heading": "Implementation of QQL Token Standardization",
+          "summary": "We have now implemented Qualys Query Language (QQL) token standardization across all Qualys applications. As part of this enhancement, Certificate View tokens are updated with new token names that follow a standard and consistent nomenclature."
+        },
+        {
+          "heading": "Improved Asset List UI to Show Instance Data for Certificates",
+          "summary": "With this release, we have improved the user experience by making it easier to view certificate details linked to an asset. Now, you can view associated certificates at a glance by clickingpresent in front of list. If an asset has more than five…"
+        },
+        {
+          "heading": "API Features and Enhancements",
+          "summary": "We have introduced a new version of the List Certview Certificates (v2.3) API to support filtering and retrieving through Post-Quantum Cryptography (PQC) by using the filterinstance.PQCSupportfilter and PQC supported algorithms. This filter allows…"
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following reported and notable customer issue is fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-18T11:43:13.129805+00:00",
+      "status": "success"
+    }
   },
   "eb61c5c0a592": {
     "key": "eb61c5c0a592",
@@ -13126,7 +13264,23 @@
       "CRI"
     ],
     "month_label": "November 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 12, 2025",
+      "features": [
+        {
+          "heading": "List CertView Certificates (v2) API: PQC Support",
+          "summary": "With this release, the List CertView Certificates (v2) API now supports filtering and retrieving certificates through Post-Quantum Cryptography (PQC)."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-18T11:43:13.129805+00:00",
+      "status": "success"
+    }
   },
   "6f4776c70160": {
     "key": "6f4776c70160",
