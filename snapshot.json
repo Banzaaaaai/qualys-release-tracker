@@ -13290,7 +13290,35 @@
       "UD"
     ],
     "month_label": "November 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 5, 2025",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "UD",
+          "issue": "An issue occurred where sub users withCreate, Edit, Delete your own dashboardspermissionwere unable to edit the cloned dashboard.This issue is now resolved, and the sub users can edit the cloned dashboard."
+        },
+        {
+          "component": "UD",
+          "issue": "An issue occurred where users were unable to create a Reporting Schedule for any dashboards from the Safari browser. The error received by users was \"CANNOT CREATE SCHEDULE REPORT. NAME OR SERVICE IS UNKNOWN.\"This issue is now resolved, and users can create the reporting schedule."
+        },
+        {
+          "component": "UD-VM",
+          "issue": "An issue occurred where the user was unable to view the widget template title and detailed description on the VMDR dashboard when the language was set to their local language, Japanese. This information was displayed when the language was set to English.This issue is now fixed, and the user is able to view the widget template title and detailed description on the dashboard in Japanese."
+        },
+        {
+          "component": "UD-PA",
+          "issue": "An issue occurred where the user was unable to view any data in the reports generated from the PC Ratio and Count widgets dashboard, although the dashboards displayed correct data.This issue is now fixed, and the scheduled reports correctly reflect the data for the PC widget dashboard."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-18T17:07:55.383409+00:00",
+      "status": "success"
+    }
   },
   "0dac495f110a": {
     "key": "0dac495f110a",
@@ -13301,7 +13329,84 @@
       "WAS"
     ],
     "month_label": "November 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 14, 2025",
+      "features": [
+        {
+          "heading": "Enhanced Discovery of Web Applications and APIs through Scans",
+          "summary": "We have enhanced TotalAppSec capabilities to discover potential web applications and APIs within existing web assets through the discovery and vulnerability scans."
+        },
+        {
+          "heading": "End-to-End Logging for Connector Activities",
+          "summary": "With this release, we have introduced end-to-end logging for connector activities. You can now view these comprehensive logs directly on the Connector screen in theLogstab."
+        },
+        {
+          "heading": "New Scan Settings in the Additional Configurations for Web Application",
+          "summary": "You can now define key scan parameters directly from the user interface using the new options available in theAdditional Configurationssection of the create and edit Web Application workflow."
+        },
+        {
+          "heading": "Addition of Debug Scan Option",
+          "summary": "We have introduced theDebug Scancheckbox under theScan Settingspage in the create and edit vulnerability scan workflow. To troubleshoot scan issues, you can now select theDebug Scanoption to collect detailed scan logs."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "TAS",
+          "issue": "API Discovery Scan"
+        },
+        {
+          "component": "TAS",
+          "issue": "Azure API Connector Configuration"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scans, user roles, and permissions"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Authentication Configuration"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Proxy Configuration"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Certificate authentication"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Web Application Configuration"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scheduled scan"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scan schedules with tags"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scheduled Scans"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scheduled and On-demand scans"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Detections"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-18T17:07:55.383409+00:00",
+      "status": "success"
+    }
   },
   "cc8f7a3ec9fe": {
     "key": "cc8f7a3ec9fe",
@@ -13312,7 +13417,43 @@
       "PM"
     ],
     "month_label": "November 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 06, 2025 (Updated November 18, 2025)",
+      "features": [
+        {
+          "heading": "New Feature — Manifest Version Control",
+          "summary": "We are introducing a new feature —Manifest Version Control(MVC) for the Cloud Agent application. Manifest Version Control (MVC) gives organizations greater control over theVulnerability Management (VM)manifests used by Cloud Agents. With this…"
+        },
+        {
+          "heading": "New Feature — CPU Limit for Patch Management",
+          "summary": "In the Qualys Patch Management application, the provision to control CPU utilization is not available. Due to this limitation, Patch Management may cause high CPU utilization, extended scan times, or patch job timeouts."
+        },
+        {
+          "heading": "Upload Client Certificates to Vault Connections",
+          "summary": "We have updated theVault Connectionsfor database authentication to support uploading the client certificates while creating or editing a CCP connection profile. Uploading the certificate files for the CCP Vault Connection profile gives an extra…"
+        },
+        {
+          "heading": "Install FedRamp Compliant Cloud Agent",
+          "summary": "We have introduced a new variable in the Cloud Agent installation command to select a FedRamp-compliant package while installing the Cloud Agent. You can select theFEDRAMP={true|false}to install the FedRamp-compliant package forWindows Cloud Agents.…"
+        },
+        {
+          "heading": "Enable Static and Runtime Analysis for SwCA Scans",
+          "summary": "We have introduced new options in the SwCA Configuration profile to specify the Software Composition Analysis Setting. With this option, you can specify whether to execute Runtime Analysis or Static Analysis during the SwCA scans."
+        },
+        {
+          "heading": "QQL Token Changes",
+          "summary": "We have renamed the following QQL tokens in theActivation Keystab to align with the standard token naming convention."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-18T17:07:55.383409+00:00",
+      "status": "success"
+    }
   },
   "23dd4de67431": {
     "key": "23dd4de67431",
@@ -13323,7 +13464,23 @@
       "CA"
     ],
     "month_label": "November 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 06, 2025",
+      "features": [
+        {
+          "heading": "New Activation Key APIs",
+          "summary": "We are introducing the following new APIs for Activation Key management and search."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-18T17:07:55.383409+00:00",
+      "status": "success"
+    }
   },
   "ea8811220400": {
     "key": "ea8811220400",
@@ -13335,7 +13492,112 @@
       "PM"
     ],
     "month_label": "November 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 09, 2025",
+      "features": [
+        {
+          "heading": "Upload Software Installer Files to Qualys Cloud Storage",
+          "summary": "You can now upload your software application installer files directly to Qualys Cloud Storage. This feature provides access to a secure, cloud-based repository within Qualys, with allocated storage space to save and manage your files."
+        },
+        {
+          "heading": "Add Assets to Jobs from the Assets Tab",
+          "summary": "You can now create a newPatchRollbackDeployment,Isolation,orIsolationRollbackjob from theAssetstab, or add assets to existing jobs.Previously, you could create these jobs through theEliminationsorJobstab.If an asset is not activated for the Patch…"
+        },
+        {
+          "heading": "Support for IPv6 in Isolation Exceptions",
+          "summary": "You can now add IPv6 addresses to the Isolation Exceptions list when creating the Isolation Linux job for Linux assets. This enhancement allows isolated Linux assets to communicate with IPv6 machines. You can add the IPv6 addresses directly while…"
+        },
+        {
+          "heading": "Enhanced Report Download Options",
+          "summary": "While downloading the report, you can now select the columns that you want to include in the report. This enhancement applies to reports fromPatches,Assets,JobProgress,andAggregatedJobProgresstabs."
+        },
+        {
+          "heading": "Support Patching for Mac Platform",
+          "summary": "We now support patching for Mac Tahoe 26.x operating system (OS). For more information on the supported operating systems, seeSupported Mac Products."
+        },
+        {
+          "heading": "Display Details for Skipped Mitigation Jobs",
+          "summary": "With this release, the detailed reasons for the Skipped mitigations in the job are now displayed on theViewJobProgresspage."
+        },
+        {
+          "heading": "Enhanced Script Output Visibility for Mitigation Jobs",
+          "summary": "With this release, we have extended the script output visibility to includeSucceededandSkippedmitigation jobs. Previously, script output was available only forFailedjobs.To view the script output, navigate to theJobProgresspage, and click on the…"
+        },
+        {
+          "heading": "Support for Auth ID Client Management from UI",
+          "summary": "With this release, we have extended our support for OpenID Connect Authentication Client Management capabilities from UI. This update allows for secure authentication and authorization of API access directly from the user interface. Our API…"
+        },
+        {
+          "heading": "New QQL Tokens",
+          "summary": "Refer to the following table to learn more about the new and updated tokens in this release."
+        },
+        {
+          "heading": "API Release Updates",
+          "summary": "For more details on the API updates for this release, seePatch Management API Release 3.10."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PM - Job Windows",
+          "issue": "An issue was observed where, for run-once patch jobs, duplicate entries for the assets were displayed on the Job Progress page and the generated report.The issue is now fixed and only single entries of the assets are displayed."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "TheReboot Deferredcount on the patch Job Progress page, encountered the following issues:If the number of deferrals available were 0, the count displayed a blank value, instead of 0. For example, it displayed \"(3 of)\" rather than the correct count \"(3 of 0)\".The deferral count displayed the total available deferral counts rather than displaying the configured count in the job settings.The issue is fixed and the deferral count now displays the correct count."
+        },
+        {
+          "component": "PM - Job Windows",
+          "issue": "An issue was observed in which a job was stuck in the queue, pending execution. The issue is fixed and the job now executes successfully."
+        },
+        {
+          "component": "PM - Job Windows",
+          "issue": "An issue occurred in which the job status icons were greyed out after clicking on the status. The issue is fixed and the icons remain active after clicking the status."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "The following issues were observed for the PM Dashboard widgets:In theQuery Settings, after selecting theAssetsoption, if theComparewithanotherreferencequerycheckbox was selected, the API failed to send the results.In theQuery Settings, if you selected theAssetsoption and specified multiple patch QQL tokens in the Patch Query field, inaccurate results were displayed.In theQuery Settings, with theJobsoption selected, if theNumericalwidget type was selected, the result displayed zero count.All issues have now been resolved, and the correct data is now displayed."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "An issue was observed with existing Bar type widgets, where if you selected any value in theGroup Byfield, although the data appeared correctly, the bars displayed the term \"Undefined\" rather than the actual names.The issue is now fixed and the bars display the correct names."
+        },
+        {
+          "component": "PM - Reports",
+          "issue": "An issue was observed where, when generating the patch report, the report was downloaded but displayed incomplete details with an error message: \"The list of records is truncated, as it reached the maximum time limit to generate\" at the end of the report. This issue occurredwhen unwanted records were printed in the report if the installed, missing, and superseded filter was selectedThis issue is now fixed, and the report generates all the data without any error."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "An issue was observed in which, although the patch job completes and displays theCompletedstatus, the number of installed, skipped, and failed patches displayed zero count.The issue is now fixed, displaying the correct count."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "An issue was observed where the QQL tokenasset.lastRebootDatequery returned inconsistent results with the assets displaying old last reboot date.The issue is now fixed, and the QQL token query displays the actual reboot date of the assets."
+        },
+        {
+          "component": "MTG - UI",
+          "issue": "An issue was observed in which the QIDs on the VMDR application displayed inconsistent Mitigation icons.The issue is now fixed, and the VMDR application displays consistent Mitigation icons for the QIDs that are mitigable."
+        },
+        {
+          "component": "PM - Job Windows",
+          "issue": "An issue was observed in which users were unable to delete a linked job. The issue occurred while removing the job linking, if no patches were selected and the job was tried to be saved, an error was displayed and after selecting the patches, the linked job details were removed from the UI, but remain linked from backend.This issue is now fixed, and the linked jobs have been completely removed, allowing users to delete them."
+        },
+        {
+          "component": "MTG - Jobs Scheduling",
+          "issue": "An issue was fixed where assets displayed an incorrect message stating that Mitigation was not enabled, even though the Mitigation application was activated from the Cloud Agent side."
+        },
+        {
+          "component": "PM - Licensing",
+          "issue": "An issue occurred where users were unable to enable ESU patching in Patch Management. This issue is now fixed with the required support enabled, and users can now perform ESU patching."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-18T17:07:55.383409+00:00",
+      "status": "success"
+    }
   },
   "d21faba92f15": {
     "key": "d21faba92f15",
