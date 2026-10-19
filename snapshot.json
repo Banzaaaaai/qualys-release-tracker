@@ -13846,7 +13846,31 @@
       "QGS"
     ],
     "month_label": "November 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 07, 2025",
+      "features": [
+        {
+          "heading": "Container Image Versions Update",
+          "summary": "With this release, we have updated the following containers to new versions"
+        },
+        {
+          "heading": "Introduced Support for Remote Troubleshooting in the QGS TextUI",
+          "summary": "With this release,CAMS/QGSintroduces theRemote Troubleshootingfeature to simplify and accelerate diagnostic efforts. This feature can be enabled by customers directly from theDiagnosticstab in the TextUI, giving them full control over when remote…"
+        },
+        {
+          "heading": "Added Support for Configurable HAProxy Concurrent Connections",
+          "summary": "With this release,HAProxynow supportsconfigurable concurrent connection limitsfor both Tunnel and Cache modes. Previously capped at 2,000 simultaneous connections, the limit can now be increased up to10,000 connectionsby contactingQualys…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-19T19:41:46.897061+00:00",
+      "status": "success"
+    }
   },
   "e6b8a2c80ddd": {
     "key": "e6b8a2c80ddd",
@@ -13856,7 +13880,31 @@
       "CAR"
     ],
     "month_label": "November 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 06, 2025",
+      "features": [
+        {
+          "heading": "Integration with GitLab",
+          "summary": "You can now import scripts from your private or public GitLab repositories into CAR. This feature enables you to use these imported scripts from the repositories to create scripts and execute them on your assets from CAR."
+        },
+        {
+          "heading": "Enhanced Script Categorization in the Library",
+          "summary": "We have enhanced how scripts are categorized in theLibrary. Previously grouped under broad categories, scripts are now further classified into sub-categories based on the specific actions they perform or the outcomes they are intended to…"
+        },
+        {
+          "heading": "New QQL Tokens",
+          "summary": "The following table provides the new QQL tokens added in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-19T19:41:46.897061+00:00",
+      "status": "success"
+    }
   },
   "402cd4a23188": {
     "key": "402cd4a23188",
@@ -13868,7 +13916,72 @@
       "CSAM"
     ],
     "month_label": "November 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 06, 2025 (Updated November 24, 2025)",
+      "features": [
+        {
+          "heading": "Cloud Agent",
+          "summary": "We have introduced a new variable in the Cloud Agent installation command to select a FedRamp-compliant package while installing the Cloud Agent. You can select theFEDRAMP={true|false}to install the FedRamp-compliant package forWindows Cloud Agents.…"
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "We have introduced the following new tokens for Cloud Agent search."
+        },
+        {
+          "heading": "Token Updates",
+          "summary": "We have updated the following Cloud Agent Token(s)"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Cloud Agent Activation",
+          "issue": "Cloud Agent"
+        },
+        {
+          "component": "SwCA Activation",
+          "issue": "Cloud Agent"
+        },
+        {
+          "component": "Cloud Agent Search",
+          "issue": "Cloud Agent"
+        },
+        {
+          "component": "Report Download",
+          "issue": "Cloud Agent"
+        },
+        {
+          "component": "Reporting",
+          "issue": "CSAM"
+        },
+        {
+          "component": "Purging",
+          "issue": "CSAM"
+        },
+        {
+          "component": "Purging",
+          "issue": "CSAM"
+        },
+        {
+          "component": "Alert Notification",
+          "issue": "CM"
+        },
+        {
+          "component": "Qualys Scheduling Service",
+          "issue": "WAS API"
+        },
+        {
+          "component": "Binary Download API",
+          "issue": "Cloud Agent API"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-19T19:41:46.897061+00:00",
+      "status": "success"
+    }
   },
   "ef73698b78b3": {
     "key": "ef73698b78b3",
@@ -13878,7 +13991,43 @@
       "TA"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 23, 2025",
+      "features": [
+        {
+          "heading": "View Scan Report",
+          "summary": "You can now view the scan report from theScanstab. The report provides a summary of severity, detected QIDs, and the failure percentage."
+        },
+        {
+          "heading": "View Error Information in Scan Details",
+          "summary": "With this release, we have introduced an Error Status display in theScanstab."
+        },
+        {
+          "heading": "Enhancements in Models Tab",
+          "summary": "With this release, we have enhanced theModelstab by introducing a toggle to help users easily distinguish betweenConfirmedandPotentialmodels. This improvement introduces the ability to review and manage potential models automatically detected…"
+        },
+        {
+          "heading": "Enhanced Detection Capability - New Attack Methods and New Jailbreak Attacks",
+          "summary": "We have enhanced our detection capabilities by adding new attack methods and new jailbreak attacks in the model scanning process."
+        },
+        {
+          "heading": "Enhanced Search Tokens",
+          "summary": "With the token standardization, we have made the QQL token names consistent across all Qualys applications to enhance the consistency and usability of search."
+        },
+        {
+          "heading": "Updated Tokens",
+          "summary": "We have updated the following tokens in the TotalAI user interface for Models, Option Profiles, and Detections tabs."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-19T19:41:46.897061+00:00",
+      "status": "success"
+    }
   },
   "841ff6237854": {
     "key": "841ff6237854",
@@ -30572,6 +30721,36 @@
     "enrichment": {
       "attempts": 1,
       "last_attempt_at": "2026-10-16T11:54:59.352660+00:00",
+      "status": "success"
+    }
+  },
+  "9a29b04048b2": {
+    "key": "9a29b04048b2",
+    "url": "https://docs.qualys.com/en/ca/release-notes/swca/windows/release_1_24_8.htm",
+    "title": "SwCA Scanner for Windows 1.24.8",
+    "tags": [
+      "CA"
+    ],
+    "month_label": "October 2026",
+    "detected_at": "2026-10-19T19:41:46+00:00",
+    "details": {
+      "release_date": "October 19, 2026SwCA Scanner for Windows 1.24.8 provides runtime support for Node.js, skips PHP and C++ language for runtime, fixes blank values in host-based reports, and prevents .NET language false-positive detection.",
+      "features": [
+        {
+          "heading": "Enhanced Runtime Analysis: See Only What You Scan",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Fixes",
+          "summary": "The following important and notable customer issues are fixed in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-19T19:41:46.897061+00:00",
       "status": "success"
     }
   }
