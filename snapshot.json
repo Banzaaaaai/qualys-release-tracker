@@ -13609,7 +13609,39 @@
       "PM"
     ],
     "month_label": "November 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 09, 2025",
+      "features": [
+        {
+          "heading": "New API: Get List of Report Columns",
+          "summary": "We have introduced a new Get List of Columns API that fetches the list of available columns that can be selected to generate a report. This API generates list Patch, Asset, Job Progress, and Job Progress Action columns, supporting only Windows and…"
+        },
+        {
+          "heading": "Updated API: Get Assets Report",
+          "summary": "With this release, we have updated the Get Assets Report API, which allows you to provide only the required columns and generate a customized assets report according to the filters provided in the input. All columns are selected by default, but you…"
+        },
+        {
+          "heading": "Updated API: Get Patches Report",
+          "summary": "With this release, we have updated the Get Patches Report API, which allows you to provide only the required columns and generate a customized patches report according to the filters provided in the input. All columns are selected by default, but…"
+        },
+        {
+          "heading": "Updated API: Get Deployment Job Progress Report",
+          "summary": "With this release, we have updated the Get Deployment Job Progress API, which allows you to generate a customized patches report by providing only the required columns for the specified job ID. All columns are selected by default, but you can modify…"
+        },
+        {
+          "heading": "New API: Change Mitigation Job Status",
+          "summary": "We have introduced a new Change Mitigation Job Status API to change the status of Mitigation Jobs (Pass mitigation job Ids)"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-19T13:57:37.495390+00:00",
+      "status": "success"
+    }
   },
   "0400a8249cc9": {
     "key": "0400a8249cc9",
@@ -13620,7 +13652,52 @@
       "VM"
     ],
     "month_label": "November 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 6, 2025",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "With this enhancement, you can now delete scanner appliances even when scans are in running or paused states. Previously, deletion attempts were blocked if any associated scans were active, resulting in the following error message:The selected…"
+        },
+        {
+          "heading": "Qualys Policy Compliance (PC)",
+          "summary": "For the list of features and improvements we have made in Policy Compliance/Policy Audit, refer to the Policy AuditUI Release Notes for Release 1.5."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Remediation",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "UILIB/RX",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scans",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Assets",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Assets",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scans",
+          "issue": "Vulnerability Management"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-19T13:57:37.495390+00:00",
+      "status": "success"
+    }
   },
   "81d63a0a1fbf": {
     "key": "81d63a0a1fbf",
@@ -13632,7 +13709,30 @@
       "VM"
     ],
     "month_label": "November 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 7, 2025",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "With this feature, you can now identify the highest contributing CVE under the QDS_FACTORS tag to improve the prioritization and remediation strategies. The Qualys Detection Score (QDS) factor includes the risk factors associated with each detection…"
+        },
+        {
+          "heading": "Qualys Policy Compliance (PC)",
+          "summary": "For the list of features and improvements made in Policy Compliance/Policy Audit, refer to the Policy AuditAPI Release Notes for Release 1.5."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2012-0002",
+        "CVE-2019-0708"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-19T13:57:37.495390+00:00",
+      "status": "success"
+    }
   },
   "856484325d23": {
     "key": "856484325d23",
@@ -13643,7 +13743,60 @@
       "PC"
     ],
     "month_label": "November 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 7, 2025",
+      "features": [
+        {
+          "heading": "Policy Audit Alerting",
+          "summary": "With this release, we have introduced Alerting, a feature that allows you to receive real time updates of the events or incidents related to your configurations."
+        },
+        {
+          "heading": "Automated Policy Creation using Compliance Framework",
+          "summary": "With this release, we have introduced automation for creating policies using Compliance Framework-mapped controls. This enhancement enables you to efficiently generate policies aligned with Compliance Standards, ensuring accurate evaluation of their…"
+        },
+        {
+          "heading": "New Columns Added to Posture Reports in CSV Format",
+          "summary": "With this release, we have added a new columns to the different Posture reports when downloaded in CSV format. These enhancements provide deeper insights into attacker behavior, compliance posture, and asset level risk. The details are as follows"
+        },
+        {
+          "heading": "Support for New Authentication Technologies",
+          "summary": "With this release, we have added support for the following new technologies"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PA / PC - PCRS Reports",
+          "issue": "Policy Audit / Policy Compliance"
+        },
+        {
+          "component": "PA / PC - Authentication Records",
+          "issue": "Policy Audit / Policy Compliance"
+        },
+        {
+          "component": "PA / PC - Scan Processing",
+          "issue": "Policy Audit / Policy Compliance"
+        },
+        {
+          "component": "PA / PC",
+          "issue": "Policy Audit / Policy Compliance"
+        },
+        {
+          "component": "PA / PC - New UI",
+          "issue": "Policy Audit / Policy Compliance"
+        },
+        {
+          "component": "PA / PC - New UI",
+          "issue": "Policy Audit / Policy Compliance"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-19T13:57:37.495390+00:00",
+      "status": "success"
+    }
   },
   "01bbe3b7af75": {
     "key": "01bbe3b7af75",
@@ -13655,7 +13808,35 @@
       "PC"
     ],
     "month_label": "November 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 7, 2025",
+      "features": [
+        {
+          "heading": "Manage Policies Using Various Policy APIs",
+          "summary": "With this release, we are introducing certain APIs that can help you manage policies better."
+        },
+        {
+          "heading": "Get Posture Info API: View API Response in JSON Format",
+          "summary": "Earlier, the cloud Resource Metadata for assets was received as a string in the API response, which was difficult to interpret the information. With this enhancement, you can now interpret the posture information for all the specified hosts for each…"
+        },
+        {
+          "heading": "Get Host ID API: Resolve Host IDs for Compliance Policies",
+          "summary": "With this release, we have introduced the Get Host ID API (/pcrs/4.0/posture/hostids/) that help you resolve host IDs for one or more compliance policies. The API also consists of some optional filters such as policyId, lastScanDate,…"
+        },
+        {
+          "heading": "EOS Message Applicable Only to XML Response Format",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-19T13:57:37.495390+00:00",
+      "status": "success"
+    }
   },
   "7b5544c64128": {
     "key": "7b5544c64128",
