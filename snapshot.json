@@ -14037,7 +14037,31 @@
       "VMDR"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 29, 2025(Updated on November 18, 2025)New TokensThe following new tokens are added to Risk Acceptance Rules in VMDR > Responses.vulnerabilities.nonExploitableServicevulnerabilities.vulnerability.categoryvulnerabilities.vulnerability.titlevulnerabilities.qualysPatchablevulnerabilities.vulnerability.patchAvailablegcp.compute.instanceIdQQL Token:Deprecation of the asset.riskScore tokenIn this release, we have deprecated theasset.riskScoreQQL token from theCreate New Tagdialog. You can no longer create tags using this token. The token is deprecated because the risk scores are dynamic and change approximately every four hours based on asset conditions and threat intelligence. Using such a rapidly-changing metric for grouping assets can lead to inconsistent tagging, unstable automation workflows, and inaccurate reporting.There is no replacement token forasset.riskScore. For reliable results, use consistent asset attributes instead of risk scores when creating tags.For more information about this deprecated QQL token, seeVMDR Release 0.10.0.The deprecated QQL token does not affect existing tags created using this token.Issue AddressedThe following reported and notable customer issue is fixed in this release.Category/ComponentIssueVulnerabilities DetailsClarified CVE Visibility inUnderstanding the Qualys Vulnerability Score for CVEstopic.Previously, the topic did not clearly specify which CVEs are displayed in the different sections of the QID details, leading to confusion about CVE visibility.The documentation has been updated to clarify that:General Information: Displays all CVEs associated with the QID, including those published by NVD, as well as private or reserved CVEs.CVE Details: Displays only the CVEs that contribute to the QDS/QVS score.This update helps you better understand which CVEs appear in each section and how they relate to the vulnerability scoring.",
+      "features": [
+        {
+          "heading": "New Tokens",
+          "summary": "The following new tokens are added to Risk Acceptance Rules in VMDR > Responses."
+        },
+        {
+          "heading": "QQL Token:Deprecation of the asset.riskScore token",
+          "summary": "In this release, we have deprecated theasset.riskScoreQQL token from theCreate New Tagdialog. You can no longer create tags using this token. The token is deprecated because the risk scores are dynamic and change approximately every four hours based…"
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following reported and notable customer issue is fixed in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-20T12:12:53.881544+00:00",
+      "status": "success"
+    }
   },
   "9e42488671d6": {
     "key": "9e42488671d6",
@@ -14047,7 +14071,27 @@
       "VMDR OT"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 27, 2025",
+      "features": [
+        {
+          "heading": "Implementation of QQL Token Standardization",
+          "summary": "We have now implemented Qualys Query Language (QQL) token standardization across all Qualys applications. As part of this enhancement, both common and VMDR OT-specific tokens are updated with new token names that follow a standard, consistent…"
+        },
+        {
+          "heading": "Enhanced Visualization of Asset Vulnerability Data",
+          "summary": "We have enhanced the visualization of vulnerability data detected on an asset. Previously displayed as a bar chart, the data is now displayed in a pie chart and segregated based on severity. This enables you to assess theConfirmedandPotential…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-20T12:12:53.881544+00:00",
+      "status": "success"
+    }
   },
   "af561a9abcb3": {
     "key": "af561a9abcb3",
@@ -14057,7 +14101,43 @@
       "EDR"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 24, 2025",
+      "features": [
+        {
+          "heading": "Implementation of QQL Token Standardization",
+          "summary": "We have now implemented Qualys Query Language (QQL) token standardization across all Qualys applications. As part of this enhancement, both common and Endpoint Detection and Response tokens are updated with new token names that follow a standard,…"
+        },
+        {
+          "heading": "Enhanced Feature: Endpoint Security Profile (Formerly Anti-malware Profile)",
+          "summary": "This release introduces a significant enhancement to the existing Anti-malware Profile, which has evolved into a comprehensive Endpoint Security Profile."
+        },
+        {
+          "heading": "Report Scheduling for Dashboards",
+          "summary": "We have introduced the Report Schedule functionality to enhance dashboard reporting capabilities."
+        },
+        {
+          "heading": "Recovering Encrypted Files",
+          "summary": "EPP with anti-ransomware detection is designed to identify, block, and mitigate ransomware attacks. Ransomware is malicious software that encrypts a victim's files, rendering them unreadable unless a ransom is paid."
+        },
+        {
+          "heading": "Dynamic Event Attribute Gathering",
+          "summary": "This release introduces enhanced support for gathering dynamic attributes from multiple providers. The update improves the event management system’s robustness, flexibility, and scalability, making it easier to integrate new providers and event…"
+        },
+        {
+          "heading": "Extended EDR Remediation Actions for Mac Assets",
+          "summary": "We’ve extended support for Quarantine File, Delete File, and Kill Process remediation actions to Mac assets."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-20T12:12:53.881544+00:00",
+      "status": "success"
+    }
   },
   "e71a3fa2e051": {
     "key": "e71a3fa2e051",
@@ -14068,7 +14148,23 @@
       "EDR"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 24, 2025",
+      "features": [
+        {
+          "heading": "Extended searchAfter API to Support Additional Sections",
+          "summary": "We have extended the searchAfter API to include mappings for the following sections that previously existed in our OpenSearch template but were not exposed via the API"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-20T12:12:53.881544+00:00",
+      "status": "success"
+    }
   },
   "1c17ea15e4b1": {
     "key": "1c17ea15e4b1",
@@ -14079,7 +14175,27 @@
       "VM"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 23, 2025",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "Earlier, we provided details of the scanner's health status by displaying theHeartbeat Checks Missedin the preview page of theAppliances(Scans>Appliances) andScanner Capacity Graphin the Info page (Select any Scanner>Quick Actionsmenu >Info)."
+        },
+        {
+          "heading": "Qualys Policy Compliance (PC)",
+          "summary": "For the list of features and improvements we have made in Policy Compliance/Policy Audit, refer to the Policy AuditUI Release Notes for Release 1.4."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-20T12:12:53.881544+00:00",
+      "status": "success"
+    }
   },
   "a9dee55710fb": {
     "key": "a9dee55710fb",
