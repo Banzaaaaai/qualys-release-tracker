@@ -14207,7 +14207,48 @@
       "VM"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 23, 2025",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "In an earlier release, we introduced the Qualys Recommended Option Profile for all new VM/VMDR subscriptions. Refer toCloud Platform 10.30 Release Notes.With this release, we have further enhanced the Qualys Recommended Option Profile to provide…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Scan API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Knowledge Base",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - API General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - API General",
+          "issue": "Vulnerability Management"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-20T18:22:51.494405+00:00",
+      "status": "success"
+    }
   },
   "aeef6ca7e8c7": {
     "key": "aeef6ca7e8c7",
@@ -14218,7 +14259,56 @@
       "PC"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 23, 2025",
+      "features": [
+        {
+          "heading": "Upgrade to Policy Audit - Update",
+          "summary": "All users are to be upgraded from Policy Compliance to Policy Audit by default on 18th January 2026."
+        },
+        {
+          "heading": "Improved Merging of Agent and Scan Data",
+          "summary": "With this release, we have introduced a new optionAgent Correlation Identifierto address the issue of duplicate records being created during compliance scans, especially for databases. On selecting this option, merging of agent and scan data is…"
+        },
+        {
+          "heading": "View Source for Host in Posture Tab",
+          "summary": "With this release, we have added a new columnSourcein the Posture tab. This column identifies whether the scanned host was a scanner or an agent. This enhancement provides clarity when multiple scan sources are associated with the same host."
+        },
+        {
+          "heading": "Timeframe Selection of Report Template in CSV Format",
+          "summary": "With this release, we have introducedTimeframe Selectionfor compliance policy report templates downloaded in CSV format. When creating or editing a template, you can now specify a timeframe so that reports (in CSV format) include only hosts scanned…"
+        },
+        {
+          "heading": "Support for New Authentication Technologies",
+          "summary": "With this release, we have added support for the following new technologies"
+        },
+        {
+          "heading": "Support for New Operators in asset.compliance.score Token",
+          "summary": "With this release, we have added support for the operators >, >=, <, and <= for the QQL token asset.compliance.score. These operators were previously not available for this token."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PA / PC - Reports",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PA / PC - Middleware",
+          "issue": "Policy Audit / Policy Compliance"
+        },
+        {
+          "component": "PA / PC - Middleware",
+          "issue": "Policy Audit / Policy Compliance"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-20T18:22:51.494405+00:00",
+      "status": "success"
+    }
   },
   "2f33f10fa178": {
     "key": "2f33f10fa178",
@@ -14230,7 +14320,35 @@
       "PC"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 23, 2025",
+      "features": [
+        {
+          "heading": "Exceptions API: Create Multiple Exceptions Using Asset Tags",
+          "summary": "/api/3.0/fo/compliance/exception/"
+        },
+        {
+          "heading": "Option Profile API: Enable Agent Correlation Identifier",
+          "summary": "With this release, we have added support for Agent Correlation Identifier to address the issue of duplicate records being created during compliance scans, especially for databases. On enabling this option, merging of agent and scan data is ensured,…"
+        },
+        {
+          "heading": "Infoblox Record API: Update Details for HashiCorp and Wallix Authentication Vaults",
+          "summary": "With this release, we have updated the Infoblox API to update the authentication records created using HashiCorp or Wallix authentication vault."
+        },
+        {
+          "heading": "EOS/EOL in Policy Audit/Policy Compliance APIs",
+          "summary": "With this release, all Policy Audit/Policy Compliance API versions will follow a defined lifecycle ending in June 2026. After the 1.1.0 release, each API version will remain valid for one year, comprising six months of End Of Service (EOS) followed…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-20T18:22:51.494405+00:00",
+      "status": "success"
+    }
   },
   "14070d5fd187": {
     "key": "14070d5fd187",
@@ -14240,7 +14358,23 @@
       "SA"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 17, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "This release brings new features and updates to data centers and desktop platforms."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-20T18:22:51.494405+00:00",
+      "status": "success"
+    }
   },
   "34dbcd94b849": {
     "key": "34dbcd94b849",
@@ -14250,7 +14384,52 @@
       "CA"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 05, 2025 (Updated November 13, 2025)",
+      "features": [
+        {
+          "heading": "Enhancements for Unix Cloud Agent",
+          "summary": "We have upgraded the Unix Cloud Agent to support the following features"
+        },
+        {
+          "heading": "Behavioral Change",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "The Unix Cloud Agent 6.0 is supported on AIX platforms — AIX 7.1 TL5 and later versions. To learn more about supported platforms, refer to theCloud Agent Platform Availability Matrix."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are the following known issues or limitations in this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Asset Details",
+          "issue": "We fixed an issue where theLifecycle Informationof the scanned assets was not displayed in the CSAM user interface."
+        },
+        {
+          "component": "Cloud Agent Vulnerability",
+          "issue": "We fixed an issue where vulnerability warnings were reported for the Cloud Agent by making the appropriate code changes."
+        },
+        {
+          "component": "False Positives",
+          "issue": "We fixed an issue where QID 330134 reported false positives due to incorrect data collected by Cloud Agent when multiple entries for the same software were present. Now, Cloud Agent collects the latest software data."
+        },
+        {
+          "component": "Un-trusted Search Path Vulnerability",
+          "issue": "The shell scripts packaged with the Cloud Agent installer execute multiple system utilities without an absolute path or resetting a path to a safe value. This allows a malicious actor to place harmful files on your assets when the shell scripts are executed with elevated privileges.We have updated this behavior by setting up the fixed paths for shell script execution. This enhancement prevents the infiltration of malicious files on your assets and prevents you from any potential security threats. The updated shell script behavior also helps in mitigating theUntrusted Search Path Vulnerability (CWE-426)."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-20T18:22:51.494405+00:00",
+      "status": "success"
+    }
   },
   "6e55609e75a3": {
     "key": "6e55609e75a3",
