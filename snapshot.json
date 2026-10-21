@@ -14441,7 +14441,52 @@
       "FIM"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 09, 2025 (Updated April 20, 2026)",
+      "features": [
+        {
+          "heading": "Support for New Qualys Applications",
+          "summary": "The Cloud Agent for BSD now supports the following Qualys applications"
+        },
+        {
+          "heading": "Enhancements for BSD Cloud Agent",
+          "summary": "We have upgraded the BSD Cloud Agent to support the following features"
+        },
+        {
+          "heading": "Behavioral Change",
+          "summary": "The following behavior changes are noticed for the BSD Cloud Agent 7.1"
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "We have extended BSD Cloud Agent support for the FreeBSD 14.x platform."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "We observed the following limitations for the BSD Cloud Agent"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Cloud Agent Process",
+          "issue": "We fixed an issue where Cloud Agent processes were not starting automatically after booting or rebooting the system."
+        },
+        {
+          "component": "Cloud Agent Scans",
+          "issue": "We fixed an issue where Cloud Agent could not update the last scan date as the agent scans were getting terminated."
+        },
+        {
+          "component": "Un-trusted Search Path Vulnerability",
+          "issue": "The shell scripts packaged with the Cloud Agent installer execute multiple system utilities without an absolute path or resetting a path to a safe value. This allows a malicious actor to place harmful files on your assets when the shell scripts are executed with elevated privileges.We have updated this behavior by setting up the fixed paths for shell script execution. This enhancement prevents the infiltration of malicious files on your assets and prevents you from any potential security threats. The updated shell script behavior also helps in mitigating theUntrusted Search Path Vulnerability (CWE-426)."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-21T12:26:11.356002+00:00",
+      "status": "success"
+    }
   },
   "1cf03393749f": {
     "key": "1cf03393749f",
@@ -14451,7 +14496,27 @@
       "Conn"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 10, 2025",
+      "features": [
+        {
+          "heading": "Member Connector Edit Support – Enhanced Configuration Flexibility",
+          "summary": "With Connector 2.12,you have greater flexibility in managing member connector configurations while maintaining consistency with organizational standards."
+        },
+        {
+          "heading": "Enhanced AWS and Azure Snapshot Scan Versions",
+          "summary": "With Connector 2.12, we have introduced the AWS V9 and V10, and Azure V3 CFT versions. These new templates come with several enhancements."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-21T12:26:11.356002+00:00",
+      "status": "success"
+    }
   },
   "c806090474a8": {
     "key": "c806090474a8",
@@ -14461,7 +14526,68 @@
       "CS"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 14, 2025",
+      "features": [
+        {
+          "heading": "Optional Cilium Policy Loading",
+          "summary": "CRS has introduced an option to enable or disable Cilium policy loading through Helm configuration, providing a debug mode and flexibility for diverse Kubernetes environments."
+        },
+        {
+          "heading": "Support for File Create Events",
+          "summary": "CRS now supports file creation events using FIM policies. This allows monitoring of critical directories for new file creation, helping detect unauthorized or suspicious changes. A tracing policy example of file creation is shown…"
+        },
+        {
+          "heading": "Threat Detection Rules for Containers",
+          "summary": "CRS now enables advanced threat detection by analyzing process behavior and binary characteristics. To achieve this, it collects binary properties—privilege changes—from process events."
+        },
+        {
+          "heading": "TCP Connection Event Monitoring through Network Policy",
+          "summary": "With this release, CRS has added support for network policies using mini-CRD, including TCP connection monitoring. This enhancement provides fine-grained control over network activity. CRS can now capture 'tcp_connect' requests and generate events…"
+        },
+        {
+          "heading": "Optimization in Process Exit Event",
+          "summary": "The eBPF agent now filters outprocess-exitevents unless the exit status indicates failure.This enhancement reduces resource consumption by eliminating process events that are exited successfully, improving performance and clarity in event logs."
+        },
+        {
+          "heading": "Optimized eBPF Agent",
+          "summary": "CRS has optimized the eBPF-agent to reduce resource consumption. Due to this enhancement, the CPU and memory usage are reduced, improving sensor efficiency and scalability."
+        },
+        {
+          "heading": "Rate Limiting for Network Events",
+          "summary": "Network policies now support rate limiting using"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "eBPF Agent",
+          "issue": "eBPF-Agent retry mechanism failed after its process termination, ensuring continuous agent recovery."
+        },
+        {
+          "component": "File event",
+          "issue": "Fixed incorrect and inconsistent categorization of file creation events, improving FIM (File Integrity Monitoring) data reliability."
+        },
+        {
+          "component": "CRS Pod",
+          "issue": "Addressed an issue where deleting the CRS sensor pod caused existing runtime policies to stop triggering file events."
+        },
+        {
+          "component": "CRS Upgrade using Helm",
+          "issue": "Resolved Helm upgrade failures caused by existing net-policy-tcp-open RuntimePolicy CRDs, ensuring smooth upgrade workflows."
+        },
+        {
+          "component": "Exit Event Status code",
+          "issue": "Fixed missing exit_code or status fields in process exit events to ensure complete and accurate event payloads."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-21T12:26:11.356002+00:00",
+      "status": "success"
+    }
   },
   "8b88beff0656": {
     "key": "8b88beff0656",
@@ -14471,7 +14597,140 @@
       "TC"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 15, 2025",
+      "features": [
+        {
+          "heading": "TotalCloud Dashboard: New and Enhanced Connector Widgets",
+          "summary": ""
+        },
+        {
+          "heading": "Snapshot-Based Scans Logs",
+          "summary": ""
+        },
+        {
+          "heading": "Enhanced Cloud Posture: QFlow UDC Evaluation Visibility",
+          "summary": ""
+        },
+        {
+          "heading": "Enhanced Connector Configuration in User Onboarding",
+          "summary": ""
+        },
+        {
+          "heading": "Enhanced Evidence Details for Control Evaluation",
+          "summary": ""
+        },
+        {
+          "heading": "Enhanced CSV Reports: New Column for Resources deleted from Cloud",
+          "summary": ""
+        },
+        {
+          "heading": "Extended Inventory Support to AWS AI Services",
+          "summary": ""
+        },
+        {
+          "heading": "Enhanced Google Cloud Run Services Inventory Support",
+          "summary": ""
+        },
+        {
+          "heading": "Cloud Detection and Response (CDR)",
+          "summary": "The following sections describe the enhancements made to the CDR environment in the upcoming CDR release."
+        },
+        {
+          "heading": "New Buildtime and Runtime Controls",
+          "summary": "New buildtime and runtime controls introduced to the cloud posture analysis."
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "The following section describes the new tokens introduced as part of TotalCloud 2.19.0"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "CV - Monitor",
+          "issue": "We have fixed the issue where thefirstEvaluatedOntoken is not working when running a scan to fetch a list of controls, and inconsistent evaluations were observed for AWS controls."
+        },
+        {
+          "component": "CV - Azure Connector",
+          "issue": "We have fixed the issue where azure connectors were receiving 429 error due to throttling issue."
+        },
+        {
+          "component": "CV - Reports",
+          "issue": "We have fixed the broken CSV report issue and the problem where downloading the Inventory Report was failing for GCP."
+        },
+        {
+          "component": "CV - Resources, CV - UI",
+          "issue": "We have fixed the issue where searching with a date range to find when a resource was first evaluated did not work as expected."
+        },
+        {
+          "component": "CV - Reports, TotalCloud - Portal",
+          "issue": "We have fixed the issue where SCF-related Control Objectives were incorrectly included in reports. Controls under these objectives are now displayed directly under their respective parent requirements as a separate field, across all mandates."
+        },
+        {
+          "component": "CV - False Positive",
+          "issue": "We have fixed the issue where evaluations were failing for the following control: 50011, 50142, 50075, 50313"
+        },
+        {
+          "component": "CV-False Negative",
+          "issue": "For CID-40092,We have resolved the issue by skipping theIdentityUsers causing Status Code 429 and suchIdentityUsers will not evaluate."
+        },
+        {
+          "component": "CV - GCP Connector",
+          "issue": "We have fixed the issue where GCP Zero Touch perimeter scans ran successfully, but the scan titles in the Qweb UI did not reflect the prefix set in the connector settings."
+        },
+        {
+          "component": "AV - AWS, CV - EC2 Connector",
+          "issue": "We have updated the role creation section for AWS in the connector online help document to provide steps for the creation of a role for cross-account access and External ID."
+        },
+        {
+          "component": "CV - EC2 Connector",
+          "issue": "We have fixed the issue where the last synced date format was updated as ‘ONMONTH’ without space for all the connector types, and the issue where the TotalCloud AWS connectors gave the error “There was an error during connector execution”."
+        },
+        {
+          "component": "CV-Resources, CV-UI",
+          "issue": "We have fixed the issue wherein the Inventory failed column showed no data whereas the posture showed failed Inventory types/services."
+        },
+        {
+          "component": "TotalCloud - UI",
+          "issue": "We have fixed the issues where exceptions were not being populated for resources with tags for the CID 50073.The issues where incorrect references were listed for the CID-50256 and incorrect resources were reported for CID 52122 are also fixed"
+        },
+        {
+          "component": "TotalCloud - UI",
+          "issue": "We have fixed the issues where exceptions were not being populated for resources with tags for the CID 50073.The issues where incorrect references were listed for the CID-50256 and incorrect resources were reported for CID 52122 are also fixed"
+        },
+        {
+          "component": "CV - Control behavior",
+          "issue": "We updated the detection logic of the following controls : 330, 50071, 52122."
+        },
+        {
+          "component": "CV-Remediation and evidence Clarification",
+          "issue": "We have updated the remediation steps for the following controls 204, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 172, 50047, 50050 50059,50063,50068,50069,50070,50071,50126,50135,50142."
+        },
+        {
+          "component": "CV-ControlEnhancement",
+          "issue": "We have fixed the issues where Azure controls of APP services needed enhancement: 50084, 50085, 50086, 50087, 50088, 50205, 50049, 50204, 50048, 50051, 50050, 50136, 50235,50234, 50233,50202, 50089,50061, 50147, 50148, 50203, 50058, 50097, 50206, 50344, 50047."
+        },
+        {
+          "component": "CV-ControlEnhancement",
+          "issue": "We have Enhanced CID-106 and CID-107 to accommodate the pagination and retry mechanism while making an API call through the SDK. Updated the control logic to handle a few edge cases."
+        },
+        {
+          "component": "CV - UI, Documentation",
+          "issue": "We have fixed the issue where the\"AI Powered\"tag was shown on all insights."
+        },
+        {
+          "component": "CV-Policy reference changes",
+          "issue": "We have corrected CIS policy mapping for CID-50256 and CID-50240. The controls was incorrectly mapped to CIS Azure foundation benchmark policy. CID-50256 has now been migrated to Azure Best Practices Policy, and Incorrect CIS reference has been removed from both control."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-21T12:26:11.356002+00:00",
+      "status": "success"
+    }
   },
   "c84c090f0842": {
     "key": "c84c090f0842",
@@ -14482,7 +14741,31 @@
       "TC"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 15, 2025",
+      "features": [
+        {
+          "heading": "Get AWS Resource Details",
+          "summary": ""
+        },
+        {
+          "heading": "Get GCP Resource Details",
+          "summary": ""
+        },
+        {
+          "heading": "Create a Report",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-21T12:26:11.356002+00:00",
+      "status": "success"
+    }
   },
   "acd0f3e608d0": {
     "key": "acd0f3e608d0",
