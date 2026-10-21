@@ -14775,7 +14775,27 @@
       "UD"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 10, 2025",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "UD -PC",
+          "issue": "An issue occurred in which aDashboard Crashederror appeared while entering a few lines of text in the description field to edit the dashboard."
+        },
+        {
+          "component": "UD - VM",
+          "issue": "An issue occurred in which, if the user enabled trending on a widget on the VMDR dashboard, theSaveoption became invisible. TheSaveoption appeared only if the user navigated from one chart to another on theWidget Detailstab."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-21T18:27:37.593934+00:00",
+      "status": "success"
+    }
   },
   "3b2c0ebf9d2f": {
     "key": "3b2c0ebf9d2f",
@@ -14785,7 +14805,23 @@
       "FIM"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 10, 2025",
+      "features": [
+        {
+          "heading": "Download FIM Reports Using One-time Password",
+          "summary": "We have introduced a secure method to download FIM reports through email without requiring users to log in to the FIM. This enhancement enables you to share reports with users, such as auditors, who may not have access to theQualys Enterprise…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-21T18:27:37.593934+00:00",
+      "status": "success"
+    }
   },
   "f031151ae6e3": {
     "key": "f031151ae6e3",
@@ -14797,7 +14833,88 @@
       "PM"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 07, 2025 (Updated December 10, 2025)",
+      "features": [
+        {
+          "heading": "Enhanced Qualys Command Execution Pipeline (CEP)",
+          "summary": "The Qualys Command Execution Pipeline (CEP) has been enhanced to provide greater flexibility and control over command execution. This update introduces configurable Sudo access and user-level execution permissions, allowing administrators to define…"
+        },
+        {
+          "heading": "Vault Connection Profile — Bypass Proxy and Server SSL Verification",
+          "summary": "The vault connection profiles are used to fetch the credentials for database assessment. We have introduced the following new options —Bypass ProxyandBypass Server SSL Verification, in the database authenticationVault Connectionprofiles."
+        },
+        {
+          "heading": "Patch Management Enhancements",
+          "summary": "Previously, the standard error (stderr) logs from patch management pre-actions and post-actions were appended to the standard output (stdout) file if the log size was under 1KB. This limitation often led to incomplete error logs, making…"
+        },
+        {
+          "heading": "Behavior Change",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues or limitations in this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Cloud Agent Migration",
+          "issue": "We fixed an issue where a Cloud Agent migrated between subscriptions on same platform was not displayed in the new subscription."
+        },
+        {
+          "component": "Manifest Download",
+          "issue": "We fixed an issue where the Cloud Agent stopped performing vulnerability scans after thePrevent Manifest Updateoption was enabled in theManifest Version Controlprofile. Now, the Cloud Agent uses the previously downloaded manifest to perform vulnerability scans, even when thePrevent Manifest Updateoption is enabled.TheManifest Version Controlfeature has limited availability. ContactQualys supportor TAM to get it enabled."
+        },
+        {
+          "component": "Provisioning",
+          "issue": "We fixed an issue where Cloud Agent cloned from master nodes were not displayed in the Qualys platform as they were assigned the same instance ID as that of master node."
+        },
+        {
+          "component": "Installation",
+          "issue": "We fixed an issue where an incorrect error message was displayed after the patch installation failure. Now, we display the correct error message to help in troubleshooting."
+        },
+        {
+          "component": "Installation",
+          "issue": "We fixed an issue where the Cloud Agent service stopped when thehostidfile was missing on host assets."
+        },
+        {
+          "component": "SwCA Installation",
+          "issue": "We fixed an issue where the SwCA installer was getting deleted without successfully installing the SwCA application. Now, we will delete the installer only after the successful installation of SwCA."
+        },
+        {
+          "component": "SwCA Scan",
+          "issue": "We fixed an issue where the Cloud Agent could not perform SwCA scans due to the missing SwCA binary. To fix this issue, we have corrected the SwCA installation workflows."
+        },
+        {
+          "component": "Cloud Agent Storage",
+          "issue": "We fixed an issue where Cloud Agent functions were crashing because of the dump files generated during the execution of GET request."
+        },
+        {
+          "component": "Cloud Agent Parsing Error",
+          "issue": "We fixed an issue where AWS Instance and Linux Cloud Agent could not merge due to an IMDS Instance ID parsing error."
+        },
+        {
+          "component": "Control ID Error",
+          "issue": "We fixed an issue where the users were getting function errors for CIDs due to undetected OS versions for Ubuntu platforms, causing inconsistencies in the actual OS version and OS version displayed on the Cloud Agent user interface. Now, we have implemented the code changes to detect the latest Ubuntu platform versions to resolve this issue."
+        },
+        {
+          "component": "Un-trusted Search Path Vulnerability",
+          "issue": "The shell scripts packaged with the Cloud Agent installer execute multiple system utilities without an absolute path or resetting a path to a safe value. This allows a malicious actor to place harmful files on your assets when the shell scripts are executed with elevated privileges.We have updated this behavior by setting up the fixed paths for shell script execution. This enhancement prevents the infiltration of malicious files on your assets and prevents you from any potential security threats. The updated shell script behavior also helps in mitigating theUntrusted Search Path Vulnerability (CWE-426)."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-21T18:27:37.593934+00:00",
+      "status": "success"
+    }
   },
   "ce007a460375": {
     "key": "ce007a460375",
@@ -14807,7 +14924,35 @@
       "CAR"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 07, 2025",
+      "features": [
+        {
+          "heading": "Software Package Management in CAR",
+          "summary": "CAR now enables you to install or uninstall any software on Windows and Linux operating systems using the new software package creation feature. You can create software packages by providing details such as the software name, version, installer…"
+        },
+        {
+          "heading": "Home Page for the Scripts Library",
+          "summary": "We have introduced a newHomepage for the CARLibraryto provide you with the following existing details of the scripts in the library"
+        },
+        {
+          "heading": "Support for Shell Command Execution on Remote Assets",
+          "summary": "You can now execute shell commands on any Windows remote assets in real time from CAR. We have added a newConnect To Hostoption in theQuick Actionsmenu for each asset to initiate a remote connection. You can access this option for a Windows asset…"
+        },
+        {
+          "heading": "New QQL Tokens",
+          "summary": "The following table provides the new QQL tokens added in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-21T18:27:37.593934+00:00",
+      "status": "success"
+    }
   },
   "3f5f76e48bec": {
     "key": "3f5f76e48bec",
@@ -14817,7 +14962,31 @@
       "PNS"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 06, 2025",
+      "features": [
+        {
+          "heading": "Ability to Purge for IPv6 Assets",
+          "summary": "We have enhanced the passive sensor by introducing the ability to purge inventoried IPv6 assets, regardless of the subnet size defined within the internal inventory range. This improvement provides control over asset management in large-scale IPv6…"
+        },
+        {
+          "heading": "Support for Link-Local Addresses",
+          "summary": "Network Passive Sensor now supports the discovery of assets with link-local addresses. This enhancement provides visibility into assets that communicate using link-local addresses within your network."
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following reported and notable issue is fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-21T18:27:37.593934+00:00",
+      "status": "success"
+    }
   },
   "e7d004c73187": {
     "key": "e7d004c73187",
