@@ -14996,7 +14996,72 @@
       "ETM"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 03, 2025",
+      "features": [
+        {
+          "heading": "Support for Mitigating Vulnerabilities",
+          "summary": "With this release, we are extending support for Mitigation of Vulnerabilities to provide better visibility, search, and analysis of remediation efforts. An attacker can exploit the vulnerability to gain remote access to servers, admin rights on user…"
+        },
+        {
+          "heading": "Introduced Four New Widgets",
+          "summary": "With this release, we have introduced three new widgets"
+        },
+        {
+          "heading": "Column Customization in Risk Management Tab",
+          "summary": "We have enhanced the Risk Management tab by introducing a customizable column selection feature across all three subtabs."
+        },
+        {
+          "heading": "Optimized On-Demand TruRisk Prioritization for Better Performance",
+          "summary": "TruRisk™ score calculation currently works on-demand for all assets within scope. Asset-level scores are computed first, followed by tag-level scores using the defined tag score formula. While this works well for smaller data sets (with results…"
+        },
+        {
+          "heading": "New Token for Risk Management",
+          "summary": "finding.cvePublishedDate"
+        },
+        {
+          "heading": "Delete Prioritization Report Templates",
+          "summary": "With this release, you can now delete custom Prioritization report templates in the ETM using theManage Filter Template. A maximum of 13 templates can be active at any time. Note that system-generated templates cannot be deleted."
+        },
+        {
+          "heading": "Implementation of QQL Token Standardization",
+          "summary": "We have now implemented Qualys Query Language (QQL) token standardization across all Qualys applications. As part of this enhancement, ETM tokens are updated with new token names that follow a standard and consistent nomenclature."
+        },
+        {
+          "heading": "Risk Acceptance Tokens Support for Alerting",
+          "summary": "With this release, we have extended support for Risk Acceptance tokens to create alerts. This enhancement allows you to incorporate risk acceptance details when defining alert conditions. This update improves alerting flexibility by enabling users…"
+        },
+        {
+          "heading": "Pagination Support for Templates in Prioritization",
+          "summary": "With this release, we have enhanced our prioritization page by introducing pagination support. This improvement makes it easier to manage larger sets of templates, resulting in faster page loading and preventing your browser from slowing down, even…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "ETM User Interface",
+          "issue": "There was a discrepancy in the Top Risk Factors Count. Previously, the Top Risk Factors displayed on the ETM Home page displayed a different count compared to the Overview page in the Findings tab.The discrepancy occurred because the Home page displayed counts for findings, while the detail page also included total assets. To avoid this confusion, we have improved the UI by introducing a new field:Contributing Assets: Assets that directly impact the TruRisk™ Score.Total Assets: All assets in your environment, regardless of whether they impact the score.This update ensures greater clarity and consistency between the Home page and Findings Overview."
+        },
+        {
+          "component": "ETM User Interface",
+          "issue": "A discrepancy was identified in the TruRisk™ Score tab under Asset Details, where the same vulnerabilities appeared with different statuses depending on the view: In the CVE tab, vulnerabilities appeared with an Active status. In the QID tab, the same vulnerabilities appeared with Fixed status.We fixed this issues now, any finding without a CVE ID is now re-ingested with the appropriate CVE ID. The earlier finding without a CVE ID will be marked as Invalid and dropped."
+        },
+        {
+          "component": "ETM User Interface",
+          "issue": "An intermittent issue was observed where, upon clicking Test Connection, the expected pop-up message (Connection Successful or Connection Failed) is not displayed. In such cases, users had to refresh the page and re-test the connection to view the result.The issue is fixed. The pop-up messages for both Test Connection Successful and Test Connection Failed now appear reliably without requiring a page refresh."
+        },
+        {
+          "component": "ETM Dashboard",
+          "issue": "The issue is resolved regarding the ETM Dashboard, where the Closed option in the filter was previously unchecked by default in dashboard widgets. As a result, vulnerabilities associated with closed QIDs were incorrectly included in the widget data counts. The default filter behavior has been corrected. The ETM Dashboard widgets now properly exclude closed findings, ensuring that vulnerability data reflects only active findings as intended."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-22T12:27:03.857473+00:00",
+      "status": "success"
+    }
   },
   "7561ec38bf76": {
     "key": "7561ec38bf76",
@@ -15007,7 +15072,35 @@
       "QS"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 01, 2025",
+      "features": [
+        {
+          "heading": "Added Support to MacOS (darwin-amd64)",
+          "summary": "QScanner now supports image scanning on MacOS (Darwin). Individual QScanner binary build will be published for 'darwin-amd64' architecture. With this enhancement, QScanner now supports the following architectures."
+        },
+        {
+          "heading": "Integration with GitLab",
+          "summary": "With this release, QScanner supports its integration with GitLab, enabling any image to be scanned directly through the GitLab pipeline. There are the following two approaches to perform the scan"
+        },
+        {
+          "heading": "Improvement in Masked Environmental Variable Reporting",
+          "summary": "Environment Variables are masked with the help of '--mask-env-variable'flag. Such masked variables are reported underAssets>Images>Layers. With this release, Qualys Container Security Sensor indicates the masked environmental variable in masked…"
+        },
+        {
+          "heading": "Renaming Storage Driver Option for 'Containerd' Environment",
+          "summary": "With this release, the storage driver option inContainerdenvironment is renamed as mentioned in the table below."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-22T12:27:03.857473+00:00",
+      "status": "success"
+    }
   },
   "4e239776ae55": {
     "key": "4e239776ae55",
@@ -15017,7 +15110,23 @@
       "SaaS DR"
     ],
     "month_label": "October 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 01, 2025",
+      "features": [
+        {
+          "heading": "Implementation of QQL Token Standardization",
+          "summary": "We have now implemented Qualys Query Language (QQL) token standardization across all Qualys applications. As part of this enhancement, both common andSaaSDR-specific tokens are updated with new token names that follow a standard, consistent…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-22T12:27:03.857473+00:00",
+      "status": "success"
+    }
   },
   "e9a8a69a5846": {
     "key": "e9a8a69a5846",
@@ -15028,7 +15137,84 @@
       "GAV"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 30, 2025",
+      "features": [
+        {
+          "heading": "Tag-based Scoping for EASM Lightweight Scan",
+          "summary": "The EASM lightweight scan can now be configured to perform the scan on selective assets. Instead of scanning all your EASM assets, you can limit the scan scope by including or excluding assets using asset tags."
+        },
+        {
+          "heading": "Domain Security Finding Status",
+          "summary": "You can now view the specific statuses of domain security findings detected in your domains during DNS resolution. These statuses provide information on the progress of detection and remediation of findings."
+        },
+        {
+          "heading": "New Custom Script Tag Rule for Asset Tagging",
+          "summary": "CSAM can now automatically apply dynamic tags to assets based on the output of custom script execution in the Custom Assessment and Remediation (CAR) application. Once a custom script is executed on multiple assets, CSAM automatically tags those…"
+        },
+        {
+          "heading": "New Trigger Criteria for Alerts",
+          "summary": "The system can now trigger alerts based on the newTime-Window or Count-Based Match (Whichever Occurs First)criteria. This trigger criteria generates alerts in either of the following cases"
+        },
+        {
+          "heading": "Purge Oracle Cloud Infrastructure (OCI) Assets",
+          "summary": "You can now purge OCI assets from your CSAM Inventory. You can purge assets on demand or create an asset purge rule to remove all OCI assets automatically."
+        },
+        {
+          "heading": "IPv6 Address Visibility for Cloud Assets",
+          "summary": "You can now view the IPv6 addresses of your cloud assets. This includes both private and public IPv6 addresses of the asset."
+        },
+        {
+          "heading": "New QQL Tokens in CSAM",
+          "summary": "The following sections provide the new QQL tokens introduced in this release"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "CSAM - Web Applications",
+          "issue": "We fixed an issue where Web application details did not appear in theCSAM > Web Applications > Application Detailswindow."
+        },
+        {
+          "component": "CSAM+GAV - Asset Activation",
+          "issue": "We fixed the warning message shown when attempting to activate unsupported asset types from theCSAM > Inventory > Assetstab."
+        },
+        {
+          "component": "CSAM - EASM Open Ports",
+          "issue": "We fixed an issue where the total number of open ports on theEASM > Open Portstab did not match the count displayed underEASM > Inventory >Assettab."
+        },
+        {
+          "component": "CSAM - EASM Discovery",
+          "issue": "We fixed an issue where assets identified as Citrix Gateway in Shodan were not getting discovered as an application or software-based service in EASM."
+        },
+        {
+          "component": "API-based Scan",
+          "issue": "We fixed an issue where assets discovered through API-based scans did not display the source in theInventory > Assetstab under theSourcecolumn."
+        },
+        {
+          "component": "CSAM - EASM Asset Details Report",
+          "issue": "We fixed an issue where an incorrect EASM asset count was displayed in theEASM Asset Detailsreport."
+        },
+        {
+          "component": "CSAM - EASM Vulnerability Report",
+          "issue": "We fixed an issue in the EASM Vulnerability report where the result column exceeded the cell limit due to large text. The report now automatically splits large text across multiple columns."
+        },
+        {
+          "component": "CSAM+GAV - Dashboard Widgets",
+          "issue": "We fixed an issue where the Dashboard widgets displayed all types of software instead of listing the selected software."
+        },
+        {
+          "component": "CSAM+GAV - System Information",
+          "issue": "We fixed an issue where processor information was not displaying for Red Hat systems running on IBM z hardware in theAsset Details > System Information > Processorssection."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-22T12:27:03.857473+00:00",
+      "status": "success"
+    }
   },
   "0270946fbe47": {
     "key": "0270946fbe47",
@@ -15040,7 +15226,31 @@
       "GAV"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 30, 2025",
+      "features": [
+        {
+          "heading": "Filter Assets by Agent Activation Key and Status",
+          "summary": "We have added support for filtering assets based on the activation key and status of the installed agent."
+        },
+        {
+          "heading": "Asset APIs Enhanced with Asset Source Details",
+          "summary": "We have enhanced the Asset APIs to provide visibility into all the sources from which an asset is discovered. The API response now includes a new parameter that lists these discovery sources."
+        },
+        {
+          "heading": "EASM Lightweight Scan Scope Configuration through EASM Profile APIs",
+          "summary": "The EASM Profile APIs are now enhanced with new input parameters, which enable you to limit the scope of EASM lightweight scans using asset tags. With these parameters, you can include or exclude assets from the scan."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-22T12:27:03.857473+00:00",
+      "status": "success"
+    }
   },
   "d162db12e92f": {
     "key": "d162db12e92f",
