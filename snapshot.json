@@ -15260,7 +15260,47 @@
       "UD"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 30, 2025",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "UILIB/RX",
+          "issue": "An issue was fixed in which anApplicationCrashederror occurred on the page where the user inserted any type of brackets, such as square, curly, or round brackets, in the QQL search query bar."
+        },
+        {
+          "component": "UD - VM",
+          "issue": "An issue was observed where a Unit Manager could not access the VM Dashboard when a network dynamic tag was assigned to the dashboard, although the Unit Manager had all the required permissions."
+        },
+        {
+          "component": "UD - VM",
+          "issue": "An issue was fixed in which theActiveVulnerabilities Count as of today(baseline servers) widget did not appear in the scheduled dashboard report,althoughitexisted on the VM dashboard."
+        },
+        {
+          "component": "ETM-Dashboard",
+          "issue": "An issue was observed in which the trurisk widgets displayed an incorrectTotalAssetscount. This issue occurred because the count was redirected incorrectly to theETM> Inventorytab instead of theETM>Risk Managementtab, as per the QQL query in the widget."
+        },
+        {
+          "component": "UD-VM",
+          "issue": "An issue occurred in which theCreateCopyoption was not visible under the dashboard settings for users with an ETM subscription. This option is available for ETM customers only when tags are applied to the dashboard. TheOnline Helpis now updated to mention these details."
+        },
+        {
+          "component": "UD-PC",
+          "issue": "An issue was fixed in which the widget values appeared incorrect instead of the actual values in the downloaded scheduled dashboard report"
+        },
+        {
+          "component": "UD-PC",
+          "issue": "An issue was observed in which the trend-line data for the Pass Controls widget was not visible when the PC/PA widget was added from VMDR application."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-22T18:22:39.243688+00:00",
+      "status": "success"
+    }
   },
   "828283d6e4ff": {
     "key": "828283d6e4ff",
@@ -15270,7 +15310,39 @@
       "QF"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 26, 2025",
+      "features": [
+        {
+          "heading": "Implementation of QQL Token Standardization",
+          "summary": "We have now implemented Qualys Query Language (QQL) token standardization across all Qualys applications. As part of this enhancement, both common and Qualys Flow specific tokens are updated with new token names that follow a standard consistent…"
+        },
+        {
+          "heading": "OCI Cloud Support in QFlow",
+          "summary": "We have extended QFlow withOracle Cloud Infrastructure (OCI) support. As part of this enhancement, two new node types are available:OCI ResourceandOCI Action. These nodes allow you to seamlessly integrate OCI services into your Qualys workflows."
+        },
+        {
+          "heading": "Updates to QFlow API Permissions",
+          "summary": "To improve security and ensure proper access control, public API access for the QFlow application now requires the\"Qualys Flow Access\"permission to be enabled for the client account."
+        },
+        {
+          "heading": "Improved Execution Guidance forInactive Workflows",
+          "summary": "With this release of QFlow, we haveintroduced a refinement to how workflows are executed to ensure users are working with the most relevant and active configurations."
+        },
+        {
+          "heading": "Enhanced Evaluation Experience in TotalCloud",
+          "summary": "We have introduced a new enhancement to theTotalCloud node evaluationexperience that helps users gain clearer insights into control execution, especially when no resources are found."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-22T18:22:39.243688+00:00",
+      "status": "success"
+    }
   },
   "6848bd5f3f75": {
     "key": "6848bd5f3f75",
@@ -15281,7 +15353,18 @@
       "QF"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 26, 2025",
+      "features": [],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-22T18:22:39.243688+00:00",
+      "status": "success"
+    }
   },
   "e44e6b898c8f": {
     "key": "e44e6b898c8f",
@@ -15291,7 +15374,35 @@
       "CA"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 18, 2025",
+      "features": [
+        {
+          "heading": "Updated Base Image for Compliance",
+          "summary": "We have updated the base image used for AWS Bottlerocket Cloud Agent to fix the vulnerabilities."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-22T18:22:39.243688+00:00",
+      "status": "success"
+    }
   },
   "b8237d1a005b": {
     "key": "b8237d1a005b",
@@ -31708,6 +31819,52 @@
     "enrichment": {
       "attempts": 1,
       "last_attempt_at": "2026-10-19T19:41:46.897061+00:00",
+      "status": "success"
+    }
+  },
+  "d12387c1e5db": {
+    "key": "d12387c1e5db",
+    "url": "https://docs.qualys.com/en/vmdr-ot/release-notes/vmdr-ot/release_1_7_1.htm",
+    "title": "VMDR OT 1.7.1",
+    "tags": [
+      "VMDR OT"
+    ],
+    "month_label": "October 2026",
+    "detected_at": "2026-10-22T18:22:39+00:00",
+    "details": {
+      "release_date": "October 19, 2026This release introduces support for reports with more than 10,000 records, so you can capture complete OT data in a single report, and passive sensor filtering to help you analyze the traffic each sensor detects. It also makes vulnerabilities and alerts easier to review with clearer CISA KEV naming and readable timestamps, adds new QQL tokens for more precise searches, and improves API reliability.",
+      "features": [
+        {
+          "heading": "Analyze Complete OT Data in a Single Report",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Analyze Asset Communications by Passive Sensor",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Identify CISA Known Exploited Vulnerabilities",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Readable Timestamps in Alert Email Notifications",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "New QQL Tokens",
+          "summary": "This release adds the following new QQL tokens"
+        },
+        {
+          "heading": "Fixes",
+          "summary": "The following reported and notable customer issue is fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-22T18:22:39.243688+00:00",
       "status": "success"
     }
   }
