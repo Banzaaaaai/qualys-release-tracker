@@ -15412,7 +15412,35 @@
       "CA"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 18, 2025",
+      "features": [
+        {
+          "heading": "Updated Base Image for Compliance",
+          "summary": "We have updated the base image used for Redhat Enterprise Linux CoreOS Cloud Agent to fix the vulnerabilities."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-23T12:07:42.128007+00:00",
+      "status": "success"
+    }
   },
   "2e5e0331c7d0": {
     "key": "2e5e0331c7d0",
@@ -15422,7 +15450,35 @@
       "CA"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 18, 2025",
+      "features": [
+        {
+          "heading": "Updated Base Image for Compliance",
+          "summary": "With this release, we have updated the base image used for the Google Cloud Platform Container Optimized OS (GCP-COS) Cloud Agent to fix the vulnerabilities."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-23T12:07:42.128007+00:00",
+      "status": "success"
+    }
   },
   "bb6413245f9c": {
     "key": "bb6413245f9c",
@@ -15432,7 +15488,23 @@
       "PCI"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 26, 2025",
+      "features": [
+        {
+          "heading": "Enhanced PCI Compliance User Interface (UI 4.0)",
+          "summary": "With this release, we are introducing the new and improved user interface for PCI Compliance. An exciting milestone in improving your PCI Compliance experience. This new interface is designed to make your platform experience faster, smoother."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-23T12:07:42.128007+00:00",
+      "status": "success"
+    }
   },
   "b4b168808e3b": {
     "key": "b4b168808e3b",
@@ -15442,7 +15514,23 @@
       "SA"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 25, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "This release brings new features and updates to data centers and desktop platforms."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-23T12:07:42.128007+00:00",
+      "status": "success"
+    }
   },
   "0dad6d6d30a5": {
     "key": "0dad6d6d30a5",
@@ -15453,7 +15541,40 @@
       "CRI"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 22, 2025",
+      "features": [
+        {
+          "heading": "Improved Certificate List UI to Show Instance Data for Certificates",
+          "summary": "With this release, we have improved the user experience by making it easier to view asset details linked to a certificate. Now, you can view associated assets at a glance by clickingpresent in front of list. If a certificate has more than five…"
+        },
+        {
+          "heading": "Enhanced User Interface for Direct Navigation to Certificate Grade Summaries",
+          "summary": "With this release, the user interface has been enhanced to provide a smoother and more intuitive experience by enabling direct navigation to Grade Summary Details through the grade icon."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Alerting",
+          "issue": "Fixed an issue where the Certificate View alert ruleCertificate expiring within 30 daysgenerated over 100 duplicate alert emails for a single certificate. This occurred because non- Certificate View events were incorrectly processed by the rule. We have optimized the alert logic to improve scalability and maintainability. The Certificate View module alert rule now directly generates matched events for the notification service, resulting in enhanced performance and more efficient alert processing."
+        },
+        {
+          "component": "Data Discrepancy",
+          "issue": "Fixed an issue where the leaf certificate imported by the user was incorrectly linked to an expired Root CA certificate, despite a valid version of the Root CA already being present in the inventory.The logic has now been improved to ensure that leaf certificatesare correctly linked to valid root certificates, not expired ones."
+        },
+        {
+          "component": "Documentation",
+          "issue": "Updated the product documentation to assist users in integrating alert notifications with Microsoft Teams channels using thePost to Teams Channelfeature.The enhanced guide provides step-by-step instructions, configuration details, and best practices to streamline the setup process, enabling users to receive real-time alerts directly inMicrosoft Teamsenvironment."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-23T12:07:42.128007+00:00",
+      "status": "success"
+    }
   },
   "64e429fe21f1": {
     "key": "64e429fe21f1",
