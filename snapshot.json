@@ -15586,7 +15586,23 @@
       "CRI"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 22, 2025",
+      "features": [
+        {
+          "heading": "List CertView Certificates (v2): Support Added for NOT_EQUALS Operator on asset.tagName",
+          "summary": "New or Updated API"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-23T18:09:07.854645+00:00",
+      "status": "success"
+    }
   },
   "13980ff42832": {
     "key": "13980ff42832",
@@ -15596,7 +15612,59 @@
       "CS"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 22, 2025",
+      "features": [
+        {
+          "heading": "Added Support for CS TruRisk™ Widget in Dashboard",
+          "summary": "Qualys Container Security now supports the TruRisk™ widget underDashboard. This widget shows you TruRisk™ insights related to your Images and Containers."
+        },
+        {
+          "heading": "Scheduling Integration in Dashboard",
+          "summary": "With this feature, we have added support for report scheduling for a Container Security dashboard."
+        },
+        {
+          "heading": "Column Selection Flexibility in 'Images' and 'Containers' Tabs",
+          "summary": "With this release, Qualys Container Security has introduced column customization support (also known as, 'Flex Column Selection') under the Images and Containers tabs present under the Assets page. You can now configure columns to be displayed on…"
+        },
+        {
+          "heading": "Centralized Policy Management Enhancements",
+          "summary": "Qualys container security has improved to the Centralized Policy Management evaluation mechanism to support input-specific (scan type) rule evaluation, improving both accuracy and efficiency. In this phase, a new TAGS column is also introduced for…"
+        },
+        {
+          "heading": "'Image Architecture' and 'Repo Digest' Information on the Image Listing Page",
+          "summary": "With this release, we haveimproved the image listing experience by adding'IMAGE ARCHITECTURE' and 'REPO DIGEST' columns to the image listing page (Assets>Images)."
+        },
+        {
+          "heading": "Added Support for CISA Known Exploited Vulnerabilities Catalog",
+          "summary": "The Cybersecurity and Infrastructure Security Agency (CISA) maintains the Known Exploited Vulnerabilities (KEV) Catalog, a critical resource for identifying and prioritizing vulnerabilities that are actively being exploited in the wild. The KEV…"
+        },
+        {
+          "heading": "Added Support for 'Compliance' Report",
+          "summary": "Earlier, Qualys Container Security supported reports for image and container vulnerabilities, image secrets, and malware. With this release, Qualys Container Security supports Compliance Management (Posture Management) reports. The Compliance report…"
+        },
+        {
+          "heading": "Data Retention Service Improvements",
+          "summary": "With this release, all the Data Retention period fields are configurable now. Earlier, Container Security offered fixed periods for the data retention of assets with the help of drop-downs underConfigurations. Now, these drop-down options are…"
+        },
+        {
+          "heading": "Threat Detection Rules for Containers",
+          "summary": "Qualys Container Runtime Sensor (CRS) introduces new runtime Threat Detection Rules. CRS now enables advanced threat detection by analyzing process behavior and binary characteristics. With the new runtime process Threat Detection Rules, Qualys…"
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "The following issues have been identified in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-23T18:09:07.854645+00:00",
+      "status": "success"
+    }
   },
   "a2b110459ad8": {
     "key": "a2b110459ad8",
@@ -15607,7 +15675,27 @@
       "CS"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 22, 2025",
+      "features": [
+        {
+          "heading": "New Report Template - Compliance",
+          "summary": "With this release, Qualys Container Security has introduced a new report template - Compliance for your K8s Posture evaluation. To support this enhancement, the following APIs are updated."
+        },
+        {
+          "heading": "Policy Tag Support for Centralized Policies",
+          "summary": "In this phase of Centralized Policy Management, you can get a list of all centralized policies based on a policy tag. To support this, Qualys Container Security has introduced a new filter value -policy.tags.name:<tag name>."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-23T18:09:07.854645+00:00",
+      "status": "success"
+    }
   },
   "7d8b81c81d93": {
     "key": "7d8b81c81d93",
@@ -15617,7 +15705,48 @@
       "CS"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 22, 2025",
+      "features": [
+        {
+          "heading": "Support Sensor Scanning using 'Overlay' Storage Driver on a host having 'Cri-o' Runtime",
+          "summary": "With this release, Qualys Container Security Sensor adds Overlay scanning support for CS Sensor on a host having 'Cri-o' Runtime. General and Registry sensors support the 'Overlay' storage driver."
+        },
+        {
+          "heading": "Change in Data Collection for 'Chainguard' and 'Wolfi'",
+          "summary": "With this release, Qualys Container Security has enhanced the package collection logic of Chainguard and Wolfi images. Earlier, only main packages were considered for the scanning, now, sub-packages of these images will also be considered. With this…"
+        },
+        {
+          "heading": "Improvement in Masked Environmental Variable Reporting",
+          "summary": "Environment Variables are masked with the help of--mask-env-variableflag. Such masked variables are reported under Assets > Images > Layers and Assets > Containers. With this release, Qualys Container Security Sensor indicates the masked…"
+        },
+        {
+          "heading": "Helm Chart 1.19.0 Updates",
+          "summary": "The Qualys Container Security package consists of the 'values.yaml' file, which deploys the sensor in various environments.This section explains the updates in the latest Helm chart (values.yaml) file. Refer toQCS Sensor Helm Chart (qcs-sensor)."
+        },
+        {
+          "heading": "Unified Helm Chart (qualys-tc2.6.0) Updates",
+          "summary": "The unified helm chart can be used to install QCS Sensor, Admission Controller, Cluster Sensor, and Container Runtime Sensor.Refer toQualys Unified Helm Chart (qualys-tc)."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Registry Sensor",
+          "issue": "Registry Sensor failed to iterate the next URL for the Catalog list API in Harbor. This Harbor API wasonly iterating over the first 100 responses of Repositories and Tags.This issue is resolved asRegistry Sensor now iterates more than 100 responses in batches. Wherein each batch consists of 100 responses."
+        },
+        {
+          "component": "AWS Fargate",
+          "issue": "If any image contains unknown or unspecified architecture, QCS lambda Function was reporting the imageSha as empty to the Qualys Container Security backend. Thus, the event processing in the backend failed, and QCS Sensor was unable to get image details in QualysEnterprise TruRisk™ Platform.Going forward, QCS Sensor will ignore such unknown architectures."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-23T18:09:07.854645+00:00",
+      "status": "success"
+    }
   },
   "ac140bcf990d": {
     "key": "ac140bcf990d",
@@ -15628,7 +15757,112 @@
       "WAS"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 12, 2025",
+      "features": [
+        {
+          "heading": "AI-Powered Scan Optimization",
+          "summary": "With this release, we have a newAI-Powered Scan Optimizationoption with which you can perform faster and enhanced vulnerability scans on web applications and APIs."
+        },
+        {
+          "heading": "Discover APIs using AWS API Connectors",
+          "summary": "With the AWS API Connectors, TotalAppSec can discover Swagger files with all endpoints exposed in your AWS environment. This enhances TotalAppSec's discovery feature and strengthens your organization's security posture."
+        },
+        {
+          "heading": "TotalAppSec Trial Expiration",
+          "summary": "Starting this release, the TotalAppSec trial is available for one month from the start date of the trial. After the trial period ends, TAS features will no longer be accessible."
+        },
+        {
+          "heading": "License Consumption Data in Account Information Page",
+          "summary": "TheAccount Informationpage now displays the number of applications and license consumption in percentage. To view the details of license consumption, clickicon >Account Info."
+        },
+        {
+          "heading": "Configure Columns for Detection Datalist Reports",
+          "summary": "While downloading the detection datalist report, you can now select the columns that you want to include in the report."
+        },
+        {
+          "heading": "Create Distribution Groups in Report Schedule",
+          "summary": "With this release, we have introduced the option to create a distribution list and add recipients when scheduling reports. This enhancement ensures that reports can be automatically shared with users to download the reports."
+        },
+        {
+          "heading": "Customize Datalist Report Names",
+          "summary": "With this release, we have introduced the field to customize the report name before downloading. Previously, when downloading a datalist report, the report name was automatically generated based on the tab name."
+        },
+        {
+          "heading": "Token Changes forKnowledge Base",
+          "summary": "The following tokens are added to theKnowledge Basetab."
+        },
+        {
+          "heading": "Implementation of QQL Token Standardization",
+          "summary": "We have now implemented Qualys Query Language (QQL) token standardization across all Qualys applications. As part of this enhancement, both common and TotalAppSec and Web Application Scanning specific tokens are updated with new token names that…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "TAS",
+          "issue": "MuleSoft API connector"
+        },
+        {
+          "component": "TAS",
+          "issue": "Azure API connector"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Detection details"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scan status"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Dynamic search list"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Authentication record"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scan report wit dynamic search list"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Vulnerability Scan"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "DNS override record"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Web Applications"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Scans"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Multi scan details"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Knowledge Base"
+        },
+        {
+          "component": "TAS and WAS",
+          "issue": "Edit web application"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-23T18:09:07.854645+00:00",
+      "status": "success"
+    }
   },
   "005aa209cf3d": {
     "key": "005aa209cf3d",
