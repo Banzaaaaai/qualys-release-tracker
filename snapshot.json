@@ -15876,7 +15876,68 @@
       "WAS"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 08, 2025",
+      "features": [
+        {
+          "heading": "AssetView",
+          "summary": "We have updated how Asset View permissions are managed in Qualys. These permissions are now consolidated under their respective modules within Global Permissions."
+        },
+        {
+          "heading": "Cloud Agent",
+          "summary": "We have implemented standardized search tokens across all Qualys applications. As part of this enhancement, both common and Cloud Agent-specific tokens are updated with new token names that follow a standard and consistent nomenclature."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Configuration Profile Assignment",
+          "issue": "Cloud Agent UI"
+        },
+        {
+          "component": "Cloud Agent Self Protection",
+          "issue": "Cloud Agent UI"
+        },
+        {
+          "component": "Asset Tag Creation",
+          "issue": "Asset Tagging"
+        },
+        {
+          "component": "Roles and Permissions",
+          "issue": "Administration"
+        },
+        {
+          "component": "Roles and Permissions",
+          "issue": "Administration"
+        },
+        {
+          "component": "Roles and Permissions",
+          "issue": "Administration"
+        },
+        {
+          "component": "Purge Rules",
+          "issue": "CSAM UI"
+        },
+        {
+          "component": "CSAM Search",
+          "issue": "CSAM UI"
+        },
+        {
+          "component": "CSAM API",
+          "issue": "CSAM API"
+        },
+        {
+          "component": "WAS API",
+          "issue": "WAS API"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-24T11:38:29.572968+00:00",
+      "status": "success"
+    }
   },
   "2d3e41bbb448": {
     "key": "2d3e41bbb448",
@@ -15887,7 +15948,27 @@
       "WAS"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 08, 2025",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "WAS API",
+          "issue": "We fixed an issue where the Update Web Application API could not update the scanner assets in web applications.Impacted API:/qps/rest/3.0/update/was/webapp/<id>"
+        },
+        {
+          "component": "CSAM API",
+          "issue": "We fixed an issue where the Search Tags API was failing with error code 500.Impacted API:/qps/rest/2.0/search/am/tag/"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-24T11:38:29.572968+00:00",
+      "status": "success"
+    }
   },
   "77b26310b856": {
     "key": "77b26310b856",
@@ -15897,7 +15978,35 @@
       "VMDR OT"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 08, 2025",
+      "features": [
+        {
+          "heading": "Process Integrity monitoring (PIM)",
+          "summary": "Process Integrity Monitoring (PIM) enhances the security of Industrial Control Systems (ICS) by continuously monitoring your OT network for process-related events such as firmware downloads, configuration changes, PLC mode changes, and so on. This…"
+        },
+        {
+          "heading": "Support for Detection of IPv6 Address for OT Assets",
+          "summary": "VMDR OT now discovers and tracks the IPv6 addresses of your OT assets. This provides complete visibility of all the IP addresses used by your OT assets across industrial environments."
+        },
+        {
+          "heading": "Patch Details for QIDs",
+          "summary": "VMDR OT has improved the information provided on the patches available to fix the vulnerability detected on your OT assets."
+        },
+        {
+          "heading": "New Tokens for Events Tab",
+          "summary": "Example"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-24T11:38:29.572968+00:00",
+      "status": "success"
+    }
   },
   "ce94768a21bb": {
     "key": "ce94768a21bb",
@@ -15907,7 +16016,23 @@
       "OCA"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 08, 2025",
+      "features": [
+        {
+          "heading": "Implementation of QQL Token Standardization",
+          "summary": "We have now implemented Qualys Query Language (QQL) token standardization across all Qualys applications. As part of this enhancement, both common and Out-of-band Configuration Assessment specific tokens are updated with new token names that follow…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-24T11:38:29.572968+00:00",
+      "status": "success"
+    }
   },
   "eb815ca4ddab": {
     "key": "eb815ca4ddab",
@@ -15917,7 +16042,27 @@
       "CAR"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 02, 2025",
+      "features": [
+        {
+          "heading": "Implementation of QQL Token Standardization",
+          "summary": "We have now implemented Qualys Query Language (QQL) token standardization across all Qualys applications. As part of this enhancement, both common and CAR-specific tokens are updated with new token names that follow a standard, consistent…"
+        },
+        {
+          "heading": "API Release Updates",
+          "summary": "You can use the new standardized token in the CAR APIs to filter the response as required. For more information, refer toEnhanced APIs with New QQL Search Tokens."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-24T11:38:29.572968+00:00",
+      "status": "success"
+    }
   },
   "0f0615e745cd": {
     "key": "0f0615e745cd",
