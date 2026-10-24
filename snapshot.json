@@ -16073,7 +16073,23 @@
       "CAR"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 02, 2025",
+      "features": [
+        {
+          "heading": "Enhanced APIs with New QQL Search Tokens",
+          "summary": "As a part of QQL token standardization, we have renamed common and CAR-specific tokens. The standardization helps reuse and customize the QQL queries across all Qualys applications, leading to a consistent user experience. The standardized tokens…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-24T17:14:59.617403+00:00",
+      "status": "success"
+    }
   },
   "ddb4bc7a0ff5": {
     "key": "ddb4bc7a0ff5",
@@ -16083,7 +16099,32 @@
       "VM"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 18, 2025",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "We have completely redesigned the App Picker to deliver a more streamlined and enhanced user experience. These enhancements are built on structured feedback from our Product Advisory Board, direct customer input, and insights gathered from industry…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Option Profile",
+          "issue": "Vulnerability Management"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-24T17:14:59.617403+00:00",
+      "status": "success"
+    }
   },
   "84e70834135c": {
     "key": "84e70834135c",
@@ -16093,7 +16134,36 @@
       "FIM"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 01, 2025",
+      "features": [
+        {
+          "heading": "Implementation of QQL Token Standardization",
+          "summary": "We have now implemented Qualys Query Language (QQL) token standardization across all Qualys applications. As part of this enhancement, both common and FIM-specific tokens are updated with new token names that follow a standard, consistent…"
+        },
+        {
+          "heading": "File Integrity Monitoring on FreeBSD",
+          "summary": "FIM now supports monitoring files and directories on the FreeBSD operating system. Detected changes are displayed as events on theEvents > All Events > Host Basedtab. You can use the following QQL token to filter the FreeBSD events"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "FIM Events",
+          "issue": "We fixed an issue where Windows events were not generating on time due to system processing issues."
+        },
+        {
+          "component": "FIM Profile Rule",
+          "issue": "We fixed an issue where an error message was incorrectly shown even when entering a valid path while creating aRegistry Valuerule in a monitoring profile."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-24T17:14:59.617403+00:00",
+      "status": "success"
+    }
   },
   "2d443ae1f7c5": {
     "key": "2d443ae1f7c5",
@@ -16104,7 +16174,23 @@
       "FIM"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 01, 2025",
+      "features": [
+        {
+          "heading": "Enhanced APIs with New QQL Search Tokens",
+          "summary": "As a part of QQL token standardization, we have renamed common and CAR-specific tokens. The standardization helps reuse and customize the QQL queries across all Qualys applications, leading to a consistent user experience. The standardized tokens…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-24T17:14:59.617403+00:00",
+      "status": "success"
+    }
   },
   "34b9b5ee1715": {
     "key": "34b9b5ee1715",
@@ -16116,7 +16202,72 @@
       "PM"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 31, 2025",
+      "features": [
+        {
+          "heading": "Implementation of QQL Token Standardization",
+          "summary": "We have now implemented Qualys Query Language (QQL) token standardization across all Qualys applications. As part of this enhancement, both common and Patch Management-specific tokens are updated with new token names that follow a standard…"
+        },
+        {
+          "heading": "Enhancement to the New Updates Option",
+          "summary": "We have now enhanced the look and structure of theNewUpdatesoption on the Patch Management application. This option displays new features, enhancements to existing features, and API updates released in the new version of Patch Management.…"
+        },
+        {
+          "heading": "Define a Default Job for Inactive and Newly Activated Assets",
+          "summary": "You can now define and execute a default deployment patch job for the Windows, Linux, and Mac assets that are newly activated or have been inactive for a while. To create this job, navigate to theJobs>DefaultJobstab."
+        },
+        {
+          "heading": "Customize CVE Selection for Mitigation Jobs",
+          "summary": "You can now select specific CVEs associated with a QID when creating mitigation jobs for the Windows or Linux platform. This enhancement offers greater flexibility and control, allowing you to mitigate only the CVEs you intend to mitigate, rather…"
+        },
+        {
+          "heading": "Support Added for Ubuntu24.10, 25.04, and RHEL 10 Linux Assets",
+          "summary": "We now support patching and mitigation along with rollback operation for the Ubuntu 24.10, 25.04, and RHEL 10 Linux assets across supported architectures. The RHEL 10 Linux operating system also supports non-security updates."
+        },
+        {
+          "heading": "Asset Data Retention Policy for Deactivated Assets",
+          "summary": "With the new asset data retention policy, we now retain the asset data of the deactivated assets for 45 days from the date of deactivation."
+        },
+        {
+          "heading": "API Release Updates",
+          "summary": "For more details on the API updates for this release, seePatch Management API Release 3.9."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PM - Licensing",
+          "issue": "An issue was observed in which users received no license error while deploying patches on certain assets. This issue occurred because the Cloud Agent was uninstalled from the assets, but the inactive assets were still visible on the Patch Management application.The issue is now fixed with the removal of the stale assets from the Patch Management application."
+        },
+        {
+          "component": "PM - Reports",
+          "issue": "An issue was fixed in which the asset report generation failed when the search query included QQL tokens, which made the query too long."
+        },
+        {
+          "component": "PM - Job Windows",
+          "issue": "An issue was fixed in which the users did not receive the deployment job completion email notification."
+        },
+        {
+          "component": "Patch",
+          "issue": "An issue was fixed where an Unauthorized Access error occurred on the Job Progress page when users refreshed the page or navigated to other consoles. This error occurred although users had the appropriate permission to access the page."
+        },
+        {
+          "component": "Patch UI Jobs",
+          "issue": "An issue was fixed where, after a Manager user changed the deployment job owner's name, the owner's field displayed a dash (-) instead of the updated new name. After the new job owner modified the job, the owner's name reverted to the previous owner's name instead of the new owner's."
+        },
+        {
+          "component": "MTG - Job Windows",
+          "issue": "An issue was fixed where, during mitigation job creation through theVMDR > Prioritizationworkflow, assets incorrectly displayed a Not Applicable status."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-24T17:14:59.617403+00:00",
+      "status": "success"
+    }
   },
   "fb505fa1bcdb": {
     "key": "fb505fa1bcdb",
