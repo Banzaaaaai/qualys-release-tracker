@@ -16547,7 +16547,44 @@
       "PM"
     ],
     "month_label": "August 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 21, 2025",
+      "features": [
+        {
+          "heading": "Upgrades to Cloud Agent for Windows Release 6.2.0",
+          "summary": "This release of Cloud Agent supersedesCloud Agent for Windows Release 6.2.0. Windows Cloud Agent 6.2.5 supports all the features available with release 6.2.0 and additionally addresses a known issue for Patch Management —Cloud Agent for Windows…"
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues for this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Patch Management Jobs",
+          "issue": "We fixed an issue where, for Windows Cloud Agent 6.2.0, the Patch Management jobs were getting stuck in thePendingstate."
+        },
+        {
+          "component": "Status Interval",
+          "issue": "We fixed an issue where Cloud Agent for Windows was causing excessive status intervals for patch management jobs.For more details, refer to theCloud Agent for Windows 6.2.0: Excessive Status Interval Issue with Patch Management."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-25T17:56:54.961411+00:00",
+      "status": "success"
+    }
   },
   "16e798e5b616": {
     "key": "16e798e5b616",
@@ -16557,7 +16594,35 @@
       "CA"
     ],
     "month_label": "August 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 14, 2025",
+      "features": [
+        {
+          "heading": "Updated Base Image for Compliance",
+          "summary": "We have updated the base image used for AWS Bottlerocket Cloud Agent to fix the vulnerabilities."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-25T17:56:54.961411+00:00",
+      "status": "success"
+    }
   },
   "aaa360a96819": {
     "key": "aaa360a96819",
@@ -16567,7 +16632,35 @@
       "CA"
     ],
     "month_label": "August 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 15, 2025",
+      "features": [
+        {
+          "heading": "Updated Base Image for Compliance",
+          "summary": "We have updated the base image used for Redhat Enterprise Linux CoreOS Cloud Agent to fix the vulnerabilities."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-25T17:56:54.961411+00:00",
+      "status": "success"
+    }
   },
   "301014aa7128": {
     "key": "301014aa7128",
@@ -16577,7 +16670,35 @@
       "CA"
     ],
     "month_label": "August 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 14, 2025",
+      "features": [
+        {
+          "heading": "Updated Base Image for Compliance",
+          "summary": "With this release, we have updated the base image used for the Google Cloud Platform Container Optimized OS (GCP-COS) Cloud Agent to fix the vulnerabilities."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-25T17:56:54.961411+00:00",
+      "status": "success"
+    }
   },
   "009ddd37101c": {
     "key": "009ddd37101c",
@@ -16588,7 +16709,68 @@
       "GAV"
     ],
     "month_label": "August 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 19, 2025",
+      "features": [
+        {
+          "heading": "New Tag Rule with IPv6 Support",
+          "summary": "We have introduced theNetwork Addressestag rule to support tagging assets automatically based onIPv4,IPv6,DNS, orNetBIOScriteria. This rule applies the tag based on the selected criteria to the discovered assets."
+        },
+        {
+          "heading": "Enhanced Domain Security",
+          "summary": "You can now view missing or misconfiguredDomainKeys Identified Mail (DKIM)andSender Policy Framework (SPF)records that may expose your organization to external threats such as spoofing and phishing. This information is available in the newDomain…"
+        },
+        {
+          "heading": "Domain Security Findings Report",
+          "summary": "You can now generate a report that lists all findings related to domains within your organization. Using this report, you can review missing or misconfiguredSPF and DKIMrecords and take corrective action to strengthen your domain security."
+        },
+        {
+          "heading": "EASM Lightweight Scan on IPv6 Assets",
+          "summary": "The EASM Lightweight scan can now detect vulnerabilities on assets with IPv6 addresses. With the detected vulnerabilities, you can identify and assess security threats across your IPv6 assets."
+        },
+        {
+          "heading": "New Publicly Unavailable Status for Software Lifecycle",
+          "summary": "Software with missing lifecycle information is now displayed with thePublicly Unavailablestatus. This helps you identify software for which no vendor details are available."
+        },
+        {
+          "heading": "Business Entity is now Business Apps",
+          "summary": "We have renamed theBusiness Entitytab toBusiness Appsto better reflect its function and align with the management and organization of your business applications within CSAM."
+        },
+        {
+          "heading": "Tag Management Enhancements",
+          "summary": "We have introduced several enhancements to the tag management workflow to improve the organization and management of tags on theTagstab."
+        },
+        {
+          "heading": "New QQL Tokens in CSAM",
+          "summary": "The following sections provide the new QQL tokens."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "CSAM+GAV - QQL Token",
+          "issue": "We fixed an issue where the application crashed when typing theOpenportstoken."
+        },
+        {
+          "component": "CSAM - Assets missing Agent count",
+          "issue": "We fixed an issue where the CSAM home page displays an incorrectAssets Missing Agentcount. We update the associated QQL token to show the correct count."
+        },
+        {
+          "component": "CSAM - Widget",
+          "issue": "We fixed an issue where the non-Manager user could not create a widget using the query on the CSAMInventorytab."
+        },
+        {
+          "component": "CSAM - Tags",
+          "issue": "We fixed an issue where attempting to delete a tag from theQuickActionsmenu on theTagstab did not successfully delete the tag."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-25T17:56:54.961411+00:00",
+      "status": "success"
+    }
   },
   "48fe0882b2f4": {
     "key": "48fe0882b2f4",
