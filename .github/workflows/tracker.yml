@@ -4,10 +4,10 @@ on:
   schedule:
     # Morning run — 08:45 Amsterdam (CEST, summer)
     # DST adjuster patches this line automatically each Oct/Mar
-    - cron: "45 6 * * *"
+    - cron: "45 7 * * *"
     # Afternoon run — 16:00 Amsterdam (CEST, summer)
     # DST adjuster patches this line automatically each Oct/Mar
-    - cron: "0 14 * * *"
+    - cron: "0 15 * * *"
     # Monthly digest — first day of each month at 08:00 UTC
     - cron: "0 8 1 * *"
   workflow_dispatch:
