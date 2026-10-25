@@ -16279,7 +16279,51 @@
       "PM"
     ],
     "month_label": "September 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 31, 2025",
+      "features": [
+        {
+          "heading": "Enhanced API:Get a List ofAssets",
+          "summary": "We have added new parameters: installedPatches, missingPatches, and interface.ipv6Address to the API response to enhance the Get a List of Assets API. These new fields provide the asset details such as IPv6 address, missing patches, and installed…"
+        },
+        {
+          "heading": "Enhanced API:Get a List of All Patch ManagementAssets",
+          "summary": "/pm/v1/assets"
+        },
+        {
+          "heading": "Enhanced API: Get Deployment Job Details by Job ID",
+          "summary": "With this release, we have enhanced the Get Deployment Job Details by Job ID API to include new parameters to create a default job. This API gets the details of the default  deployment job based on the specified deployment job ID."
+        },
+        {
+          "heading": "Enhanced API: Create a Deployment Job",
+          "summary": "With this release, we have enhanced the Create Deployment Job API to include new parameters to create a default deployment job. This API creates a default deployment job with the defined configurations."
+        },
+        {
+          "heading": "Enhanced API: Update Deployment Job",
+          "summary": "With this release, we have enhanced the Update Deployment Job API, in which you can edit a default job to update the configurations.Note: You can update a default job only if it is in a disabled state."
+        },
+        {
+          "heading": "Enhanced API:Get Mitigation JobActionResult By Job ID",
+          "summary": "In this release, we have removed the pageSize and pageNumber parameters from the Get Mitigation Job Action result by Job ID API. This API will directly fetch all the job action results for the specified job ID and agent UUID.Note: There is no change…"
+        },
+        {
+          "heading": "Enhanced APIs with New QQL Search Tokens",
+          "summary": "As a part of QQL token standardization, we have renamed common and Patch Management-specific tokens. The standardization helps reuse and customize the QQL queries across all Qualys applications, leading to a consistent user experience.  The…"
+        },
+        {
+          "heading": "UI Release Updates",
+          "summary": "To know in detail about the UI features, enhancements and issues addressed, seePatch Management Release 3.9."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-25T12:45:53.853961+00:00",
+      "status": "success"
+    }
   },
   "0b1d51ca7aa0": {
     "key": "0b1d51ca7aa0",
@@ -16289,7 +16333,63 @@
       "ETM"
     ],
     "month_label": "August 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 28, 2025",
+      "features": [
+        {
+          "heading": "Introduced Prioritization Using MITRE ATT&CK Matrix",
+          "summary": "The MITRE ATT&CK Matrix is a framework created by the non-profit organization MITRE. It helps organizations understand and respond to cyber attacks by describing how attackers behave. This tool gives the cyber security community a common way to talk…"
+        },
+        {
+          "heading": "Introduced Asset Criticality Score Prediction by AI",
+          "summary": "ETM provides an innovative solution for asset criticality assessment: a cutting-edge automated system designed to enhance accuracy and objectivity. The current manual processes can be prone to inconsistencies and may overlook critical assets,…"
+        },
+        {
+          "heading": "Enhanced Risk Acceptance Rules for Finding Exceptions",
+          "summary": "Risk acceptance allows organizations to make informed decisions to tolerate specific vulnerabilities without immediate remediation. Common reasons include"
+        },
+        {
+          "heading": "Introduced ImprovedTruRisk™v2 Formula for Tags and Business Entities",
+          "summary": "We have a new and improvedTruRisk™v2 formula for Tags and Business Entities, designed to address the limitations of the existing tag-level risk scoring methodology and provide a more accurate and transparent representation of risk."
+        },
+        {
+          "heading": "Added New Tokens for Risk Management Tab",
+          "summary": "finding.riskAcceptance.reasonType"
+        },
+        {
+          "heading": "Extended Support for Authentication ID Client Management from UI",
+          "summary": "With this release, we have extended our support for OpenID Connect Authentication Client Management capabilities from the UI. This update allows for secure authentication and authorization of API access directly from the user interface. Our API…"
+        },
+        {
+          "heading": "Introduced Multigrouped Table and Bar Widgets in Widget Builder",
+          "summary": "We have updated our widget builder to create multigrouped table and bar widgets. You can now consolidate various data points and group them using a multi-parameter multi-grouped widget. This multigrouped option is available for Findings."
+        },
+        {
+          "heading": "Enhanced Misconfiguration Tab for TruRisk™ Score Page",
+          "summary": "With this release, you can now view End of Support (EOS) and End of Life (EOL) GA release dates for products by hovering over the EOS Software entries in the Misconfiguration tab of the TruRisk™ Score page. Additionally, when you hover over a…"
+        },
+        {
+          "heading": "Introduced Patch Details for Vulnerabilities",
+          "summary": "We have introduced Patch details for vulnerabilities. You can now view Patches available for CVE on the Finding details page."
+        },
+        {
+          "heading": "Enhanced Identification Rules",
+          "summary": "In ETM, vulnerability data is derived from multiple sources, so there is a chance that data may overlap (for example, identical CVEs with asset context). To prevent duplicates, predefined Vulnerability Rule conditions use unique identification…"
+        },
+        {
+          "heading": "Improved UI Detection Details Page",
+          "summary": "With this release, the Detection Details section of the Finding Details page has been improved. Fields with NA values are now hidden, resulting in a cleaner, more focused interface. This helps users quickly locate relevant information without…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-25T12:45:53.853961+00:00",
+      "status": "success"
+    }
   },
   "c05eb96acd77": {
     "key": "c05eb96acd77",
@@ -16300,7 +16400,52 @@
       "SCA"
     ],
     "month_label": "August 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 26, 2025",
+      "features": [
+        {
+          "heading": "Activation Key Tab ― UI Enhancement",
+          "summary": "As part of our platform-wide UI modernization effort, theActivation Keytab has been migrated to the new interface framework. This transition aligns with the latest design standards across our platform and also shifts theActivation Keytab to a…"
+        },
+        {
+          "heading": "Increased Configuration Profile Assignment Limit",
+          "summary": "Qualys Cloud Agent is updated to support assigning a configuration profile to more than fifty (50) Cloud Agents at a time while creating the configuration profile. Earlier, you could assign a configuration profile only to fifty cloud agents in one…"
+        },
+        {
+          "heading": "CPU Usage Limit for SwCA Module",
+          "summary": "With this release of the Cloud Agent application, we have updated the CPU usage limit for the SwCA Module. This enhancement ensures optimal performance for Cloud Agent and other Qualys modules."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "SwCA Configuration Profile",
+          "issue": "We fixed an issue where trailing commas at the end of an excluded directory list removed the existing vulnerabilities from the detection list by adding clear and concise error messages on the SwCA Configuration Profile creation page."
+        },
+        {
+          "component": "License Limit Banner",
+          "issue": "The license limit warning message was not being displayed on the new Configuration Profiles tab. We fixed this issue by adding the license limit warning banner on the new configuration profile banner."
+        },
+        {
+          "component": "SwCA Activation",
+          "issue": "We fixed an issue where no warning message was displayed while saving the edited activation after enabling the SwCA. Now, we clearly display the warning message while adding the SwCA to an existing key to highlight the impact of SwCA activation."
+        },
+        {
+          "component": "AVC — Binary Download",
+          "issue": "We fixed an issue where the users were getting the File not found (404) error when the Cloud Agent binary was not available for download from the Agent Version Control (AVC) tab by adding the proper error message on the AVC user interface."
+        },
+        {
+          "component": "Agent Scan Merge",
+          "issue": "When configuring the Agent Scan Merge setting in the Configuration profile, users were getting an error message while specifying the IPv6 assets without CIDR. Now, we have added an intuitive real-time validation message on the user interface to assist them with the Agent Scan Merge configuration."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-25T12:45:53.853961+00:00",
+      "status": "success"
+    }
   },
   "fec78b33b43e": {
     "key": "fec78b33b43e",
@@ -16311,7 +16456,40 @@
       "PC"
     ],
     "month_label": "August 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 26, 2025",
+      "features": [
+        {
+          "heading": "Implementation of QQL Token Standardization",
+          "summary": "We have now implemented Qualys Query Language (QQL) token standardization across all Qualys applications. As part of this enhancement, both common and Policy Audit specific tokens are updated with new token names that follow a standard consistent…"
+        },
+        {
+          "heading": "View Source for a Host",
+          "summary": "With this release, we have added a new columnSourcein the scan authentication report. This column identifies whether the scanned host was a scanner or an agent."
+        },
+        {
+          "heading": "Default Upgrade to Policy Audit - Coming Soon",
+          "summary": "All users are to be upgraded from Policy Compliance to Policy Audit by default."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PA / PC - New UI",
+          "issue": "Policy Audit / Policy Compliance"
+        },
+        {
+          "component": "PA / PC - New UI",
+          "issue": "Policy Audit / Policy Compliance"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-25T12:45:53.853961+00:00",
+      "status": "success"
+    }
   },
   "d5df42162d1e": {
     "key": "d5df42162d1e",
@@ -16321,7 +16499,44 @@
       "VMDR"
     ],
     "month_label": "August 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 25, 2025",
+      "features": [
+        {
+          "heading": "UI Changes on Vulnerabilities Listing and TruRisk™ Score Details Pages",
+          "summary": "The changes have been implemented on the Vulnerability Listing and TruRisk™ Score Details pages to maintain UI consistency and enhance the user experience."
+        },
+        {
+          "heading": "UI Changes on VMDR Prioritization",
+          "summary": "The following changes have been implemented in the Reports and Schedules sub-sections in VMDR Prioritization to maintain UI consistency and enhance the user experience."
+        },
+        {
+          "heading": "Partial Token Removal",
+          "summary": "Thevulnerabilities.vulnerability.descriptiontoken has been removed from theAlertingpage, as it was not in active use. It remains available on theVulnerabilitiespage."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Threat Intelligence",
+          "issue": "We have fixed an issue where the riskiest asset distribution by geo-location was pointing to the wrong location."
+        },
+        {
+          "component": "Patch Superseded Filter",
+          "issue": "Updated documentation for the Patch Superseded filter (located under Excluded Vulnerabilities in the Vulnerabilities tab) to include a complete list of patch supersessions. This clarifies that the filter applies beyond Microsoft Detections, as previously indicated in earlier release notes."
+        },
+        {
+          "component": "Search Token",
+          "issue": "We have addressed an incorrect example in thevulnerabilities.lastFoundsearch token description."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-25T12:45:53.853961+00:00",
+      "status": "success"
+    }
   },
   "c348e20122bf": {
     "key": "c348e20122bf",
