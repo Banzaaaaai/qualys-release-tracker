@@ -16989,7 +16989,39 @@
       "PM"
     ],
     "month_label": "August 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 05, 2025",
+      "features": [
+        {
+          "heading": "Enhanced Support for Qualys EDR",
+          "summary": "With this release of the Cloud Agent for MacOS Apple Silicon, we have enhanced the Qualys Endpoint Detection and Remediation support with the following features."
+        },
+        {
+          "heading": "Cloud Agent Log Compression",
+          "summary": "The Cloud Agent for MacOS Apple Silicon now supports compressing log files to optimize disk space utilization. You can set theLogCompressionparameter using the Cloud Agent configuration tool to enable or disable log file compression. Log compression…"
+        },
+        {
+          "heading": "HMAC Authentication for MacOS Cloud Agents",
+          "summary": "With this release, we have added the Hash-based Message Authentication Code (HMAC) to the URLs used for communicating with the Cloud Agent Server. The HMAC headers prevent tampering and spoofing and ensure the integrity and authenticity of data…"
+        },
+        {
+          "heading": "Support IPv6 Assets for Qualys EPP",
+          "summary": "We have enhanced the Anti-malware Protection option (EPP) for MacOS Apple Silicon Cloud Agent to support IPv6 assets. You can now use IPv6 assets in EPP while configuring exclusions and prohibitions for the applications and web access control."
+        },
+        {
+          "heading": "Enhancements for Countdown Window",
+          "summary": "We have updated the patch deployment deferral, countdown, progress, and success windows to display the list of applications for which the patches are being installed. This enhancement helps you view the affected applications with the upcoming patch…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-26T20:13:06.018137+00:00",
+      "status": "success"
+    }
   },
   "937522b87f36": {
     "key": "937522b87f36",
@@ -17001,7 +17033,39 @@
       "PM"
     ],
     "month_label": "August 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 05, 2025 (Updated October 3, 2025)",
+      "features": [
+        {
+          "heading": "Enhanced Support for Qualys EDR",
+          "summary": "With this release of the Cloud Agent for MacOS Intel, we have enhanced the Qualys Endpoint Detection and Remediation support with the following features."
+        },
+        {
+          "heading": "Cloud Agent Log Compression",
+          "summary": "The Cloud Agent for MacOS now supports compressing log files to optimize disk space utilization. You can set theLogCompressionparameter using the Cloud Agent configuration tool to enable or disable log file compression. Log compression considerably…"
+        },
+        {
+          "heading": "HMAC Authentication for MacOS Cloud Agents",
+          "summary": "With this release, we have added the Hash-based Message Authentication Code (HMAC) to the URLs used for communicating with the Cloud Agent Server. The HMAC headers prevent tampering and spoofing and ensure the integrity and authenticity of data…"
+        },
+        {
+          "heading": "Support IPv6 Assets for Qualys EPP",
+          "summary": "We have enhanced the Anti-malware Protection option (EPP) for MacOS Intel Cloud Agent to support IPv6 assets. You can now use IPv6 assets in EPP while configuring exclusions and prohibitions for the applications and web access control."
+        },
+        {
+          "heading": "Enhancements for Countdown Window",
+          "summary": "We have updated the patch deployment deferral, countdown, progress, and success windows to display the list of applications for which the patches are being installed. This enhancement helps you view the affected applications with the upcoming patch…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-26T20:13:06.018137+00:00",
+      "status": "success"
+    }
   },
   "123a6ec74c40": {
     "key": "123a6ec74c40",
@@ -17011,7 +17075,23 @@
       "TA"
     ],
     "month_label": "August 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 18, 2025",
+      "features": [
+        {
+          "heading": "View Scan Report",
+          "summary": "With this release, you can now view the scan report for the model scans. The scan reports provide a clear picture of the model's security."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-26T20:13:06.018137+00:00",
+      "status": "success"
+    }
   },
   "49dd5226b244": {
     "key": "49dd5226b244",
@@ -17022,7 +17102,31 @@
       "TA"
     ],
     "month_label": "August 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 27, 2025",
+      "features": [
+        {
+          "heading": "Detection API",
+          "summary": "With this release, we are introducing the following detection APIs to search for detections in your account and get the detection count with different filters"
+        },
+        {
+          "heading": "Search Detections",
+          "summary": "We have introduced the search detection API to search the detection for your subscription. You can apply filters to search the detection on specific models and detection criteria, such as, attack type, severity, category, and so on."
+        },
+        {
+          "heading": "Get Detection Count",
+          "summary": "We have introduced the detection count API to get the detection count for your subscription. You can apply filters to get the detection count on specific models and detection criteria, such as, attack type, severity, category, and so on."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-26T20:13:06.018137+00:00",
+      "status": "success"
+    }
   },
   "757d4870b7b7": {
     "key": "757d4870b7b7",
@@ -17033,7 +17137,72 @@
       "VM"
     ],
     "month_label": "August 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 4, 2025",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "With this enhancement, you can now create a CyberArk AIM authentication record using REST (Representational State Transfer Protocol) APIs in addition to the existing support for SOAP (Simple Object Access Protocol). This extension gives you more…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Authentication Records",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - User Management",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Authentication Records",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Host Based Report",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Remediation",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Agent Deployment UI",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - API General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Authentication Records",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - API General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - User Management",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Reports General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Remediation",
+          "issue": "Vulnerability Management"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-26T20:13:06.018137+00:00",
+      "status": "success"
+    }
   },
   "353d302f0c8f": {
     "key": "353d302f0c8f",
