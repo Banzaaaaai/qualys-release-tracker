@@ -16782,7 +16782,31 @@
       "GAV"
     ],
     "month_label": "August 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 19, 2025",
+      "features": [
+        {
+          "heading": "Enhanced Typosquatted Domain APIs",
+          "summary": "We have enhanced the Typosquatted Domain APIs to support new DNS-based filters. You can now fetch typosquatted domains by DNS type, source, and value using the following APIs"
+        },
+        {
+          "heading": "EASM Profile APIs Enhanced with Domain Security Details",
+          "summary": "You can now enable, disable, or fetch the Domain Security details for an EASM profile using the EASM profile APIs. A newenableDomainSecurityparameter is introduced to the following APIs"
+        },
+        {
+          "heading": "New Software Lifecycle Information in Asset APIs",
+          "summary": "Asset APIs can now fetch assets that have software with thePublicly Unavailablelifecycle status. This information is available in the response of the following APIs"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-26T14:33:44.913964+00:00",
+      "status": "success"
+    }
   },
   "795fc9438efb": {
     "key": "795fc9438efb",
@@ -16792,7 +16816,44 @@
       "UD"
     ],
     "month_label": "August 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 18, 2025",
+      "features": [
+        {
+          "heading": "New Manage Dashboards tab",
+          "summary": "TheManageDashboardstab is now available as a new dedicated tab within the Unified Dashboard application. All the existing features, such as import, export, mark as favorite, edit, delete, and print, continue to support in the same way. The Manage…"
+        },
+        {
+          "heading": "Bulk Delete for Dashboards Now Available",
+          "summary": "You can now select and delete multiple dashboards at once from theManageDashboardstab. Select multiple dashboards or select all dashboards listed on the page, and clickDeletefromtheActionsmenu.This enhancement eliminates the need to delete single…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "UD - VM",
+          "issue": "An issue was observed in which theDashboardscreen appeared blank for a subuser. This issue occurred if a sub-user account had certain tags assigned and the same tags were added to that dashboard.The issue is now fixed, and the subuser can view theDashboardscreen."
+        },
+        {
+          "component": "UD - VM",
+          "issue": "An issue has been fixed in which the horizontal X-axis label overlapped with the X-axis values for theBarwidgets."
+        },
+        {
+          "component": "UD - VM",
+          "issue": "An issue was observed in which theVennwidgets displayed three values instead of 2 values with two non-concentric circles.This issue is now fixed, and the Venn widgets now display concentric circles with two values."
+        },
+        {
+          "component": "UD - VM",
+          "issue": "An issue was observed in which the Last Used column under theManage Dashboardtab did not display any date, although dashboard widgets were modified. This issue occurred for all applications."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-26T14:33:44.913964+00:00",
+      "status": "success"
+    }
   },
   "bcd7e178b433": {
     "key": "bcd7e178b433",
@@ -16802,7 +16863,23 @@
       "QF"
     ],
     "month_label": "August 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 13, 2025",
+      "features": [
+        {
+          "heading": "Updated Minimum Schedule in QFlow Trigger Node",
+          "summary": "The minimum allowed schedule for Trigger node execution in QFlow has been updated to support less frequent execution intervals. Previously, the minimum scheduling frequency was set to every 6 minutes. The new minimum schedule allowed is every 4…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-26T14:33:44.913964+00:00",
+      "status": "success"
+    }
   },
   "d39ad7b5159b": {
     "key": "d39ad7b5159b",
@@ -16813,7 +16890,31 @@
       "QF"
     ],
     "month_label": "August 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 13, 2025",
+      "features": [
+        {
+          "heading": "Introduced Date Restrictions on the Execution List API",
+          "summary": "TheExecution ListAPI has been introduced with a date restriction to ensure consistency and accuracy in execution data retrieval."
+        },
+        {
+          "heading": "Support for Variable Override in Run Workflow Public API",
+          "summary": "TheRun Workflow PublicAPI now supports overriding saved variables during workflow execution, offering greater flexibility in runtime configurations."
+        },
+        {
+          "heading": "Introduced a Parameter to Generate Output in JSON Object Format",
+          "summary": "Previously, with the 1.16.0 release, we introduced theWorkflow Execution InputAPI andExecution Step OutputAPIs, which return the input/output of an execution step when provided with thenodeId."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-26T14:33:44.913964+00:00",
+      "status": "success"
+    }
   },
   "dc4d24337a82": {
     "key": "dc4d24337a82",
@@ -16824,7 +16925,59 @@
       "QS"
     ],
     "month_label": "August 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 14, 2025",
+      "features": [
+        {
+          "heading": "Added Support for Secret Scans",
+          "summary": "Running a Secret scan helps detect hard-coded credentials early, reducing the risk of security breaches. It also supports compliance and integration into CI/CD workflows that can fit your specific environments.With this release, QScanner can run…"
+        },
+        {
+          "heading": "Update in Software Composition Analysis",
+          "summary": "With this release, QScanner has upgraded its Software Composition Analysis (SCA) by improving the collection of software language packages. Packages of the following languages are upgraded."
+        },
+        {
+          "heading": "New Vulnerability Tabular Report Format",
+          "summary": "With this release, the vulnerability report in Tabular format is changed to be software-name-oriented instead of QID-oriented, making it more user-friendly. This enhancement allows you to see the software name in the first column, followed by…"
+        },
+        {
+          "heading": "New Flag for Report Filtering",
+          "summary": "Sometimes, the vulnerability tabular report may display an extensive list of issues, and you might want to focus specifically on the most critical ones. To cater to such a situation, QScanner has introduced a new flag--qds-threshold <value>.Using…"
+        },
+        {
+          "heading": "Update in java.db Download",
+          "summary": "QScanner downloads java.db to enable Java-specific vulnerability detection. With this release, QScanner downloads java.db only if .jar files are present in an image. GitHub Container Registry (GHCR) acts as a default repository to host the java.db…"
+        },
+        {
+          "heading": "Detection Behavior",
+          "summary": "When QScanner performs any scan along with OS scan, it keeps track of files that were installed by OS package manager. It uses this list of files to filter out the final scan result (SCA, and Secret) so that such files are not reported. This is done…"
+        },
+        {
+          "heading": "Local Cache Support",
+          "summary": "With this release, QScanner enables cache as the default option. This improves performance and availability by avoiding repeated image analysis. To enable this support, QScanner has changed the default value of the--cacheflag from 'none' to 'local'."
+        },
+        {
+          "heading": "Retry Mechanism for Vulnerability Report",
+          "summary": "In the previous QScanner release 4.4.0, Qualys introduced the retry mechanism in the case of Changelist.db or SBOM upload failure. With this release, QScanner now supports the retry mechanism in case of failure in fetching theVulnerability reportand…"
+        },
+        {
+          "heading": "Upcoming 'Environment Variable Deprecation'",
+          "summary": "With the upcoming QScanner 4.6.0 release,XDG_RUNTIME_DIRenvironment variable will be deprecated for the Podman runtime. With this change,PODMAN_SOCKET_PATHwill be used to read the absolute socket path for the Podman runtime."
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following issue has been fixed with this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-26T14:33:44.913964+00:00",
+      "status": "success"
+    }
   },
   "7c58ac598d66": {
     "key": "7c58ac598d66",
