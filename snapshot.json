@@ -17213,7 +17213,28 @@
       "PC"
     ],
     "month_label": "August 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 4, 2025",
+      "features": [
+        {
+          "heading": "Qualys Policy Compliance (PC)",
+          "summary": "For the list of features and improvements made in Policy Audit/Policy Compliance, refer to the Policy AuditAPI Release Notes for Release 1.2.0."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - API General",
+          "issue": "Vulnerability Management"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-27T13:33:46.117638+00:00",
+      "status": "success"
+    }
   },
   "824dd4604bf1": {
     "key": "824dd4604bf1",
@@ -17224,7 +17245,48 @@
       "PC"
     ],
     "month_label": "August 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 4, 2025",
+      "features": [
+        {
+          "heading": "Updated Message for Unlocking Locked Policies",
+          "summary": "With this release, we have updated the message displayed when attempting to unlock policies locked during import."
+        },
+        {
+          "heading": "Discontinuation of Policy Summary and Control View Tabs",
+          "summary": "With this release, we have discontinued the Policy Summary and Control View tabs."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PA / PC - Reports",
+          "issue": "Policy Audit / Policy Compliance"
+        },
+        {
+          "component": "PA / PC",
+          "issue": "Policy Audit / Policy Compliance"
+        },
+        {
+          "component": "PA / PC - Reports",
+          "issue": "Policy Audit / Policy Compliance"
+        },
+        {
+          "component": "PA / PC - UI",
+          "issue": "Policy Audit / Policy Compliance"
+        },
+        {
+          "component": "PA / PC - Reports",
+          "issue": "Policy Audit / Policy Compliance"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-27T13:33:46.117638+00:00",
+      "status": "success"
+    }
   },
   "add61e921949": {
     "key": "add61e921949",
@@ -17236,7 +17298,23 @@
       "PC"
     ],
     "month_label": "August 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 4, 2025",
+      "features": [
+        {
+          "heading": "Polices List API Upgrade to V4.0",
+          "summary": "/api/4.0/fo/compliance/policy/"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-27T13:33:46.117638+00:00",
+      "status": "success"
+    }
   },
   "42bd2839a043": {
     "key": "42bd2839a043",
@@ -17246,7 +17324,23 @@
       "UD"
     ],
     "month_label": "August 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 25, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "The legends are now displayed on the Count and Ratio widgets that have trending enabled. The following enhancements are now available"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-27T13:33:46.117638+00:00",
+      "status": "success"
+    }
   },
   "a12873b78a58": {
     "key": "a12873b78a58",
@@ -17256,7 +17350,23 @@
       "SA"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 29, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "This release supports new features and enhancements in the following Linux Distributions."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-27T13:33:46.117638+00:00",
+      "status": "success"
+    }
   },
   "7616c1073741": {
     "key": "7616c1073741",
