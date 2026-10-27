@@ -17376,7 +17376,39 @@
       "CAR"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 29, 2025",
+      "features": [
+        {
+          "heading": "View Pending Asset Jobs of Scripts",
+          "summary": "You can now access and view the details of pending asset jobs of a script from theScriptstab. TheQuick Actionsmenu includes aView Pending Asset Jobsoption that enables you to check the details and status of these asset jobs in a single click."
+        },
+        {
+          "heading": "Script Subtypes for Custom Scripts",
+          "summary": "You can now identify the purpose of your custom scripts without reading their content or description. A newSubtypefield is added to categorize custom scripts as eitherDetectionorResponse."
+        },
+        {
+          "heading": "Monitor File Integrity Monitoring (FIM) Assets with Scripts",
+          "summary": "From this release, you can now share the script output with FIM when a script is executed in Custom Assessment and Remediation (CAR). This script monitors and detects any changes to the FIM assets and displays those changes as events in FIM."
+        },
+        {
+          "heading": "Features Availability by License Type",
+          "summary": "The following Custom Assessment and Remediation features are now available based on the Qualys modules"
+        },
+        {
+          "heading": "New QQL Token",
+          "summary": "The following table provides the new QQL token added in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-27T19:44:01.800449+00:00",
+      "status": "success"
+    }
   },
   "99d619d5be02": {
     "key": "99d619d5be02",
@@ -17387,7 +17419,31 @@
       "CAR"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 29, 2025",
+      "features": [
+        {
+          "heading": "New APIs to Manage Script Schedules",
+          "summary": "In this release, we have introduced the following new APIs that enable you to manage and automate your script schedules"
+        },
+        {
+          "heading": "API Support for Sharing Script Output with FIM",
+          "summary": "You can now share script output with the Qualys File Integrity Monitoring (FIM) module when executing scripts in CAR. We have introduced a new input parameter in the following APIs to help you configure this capability"
+        },
+        {
+          "heading": "Enhancements to Create and Import Script APIs",
+          "summary": "We have introduced the following new input parameters to enhance the Create and Import Script APIs"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-27T19:44:01.800449+00:00",
+      "status": "success"
+    }
   },
   "aeed6f999b1e": {
     "key": "aeed6f999b1e",
@@ -17397,7 +17453,35 @@
       "FIM"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 28, 2025",
+      "features": [
+        {
+          "heading": "Database Monitoring with FIM",
+          "summary": "File Integrity Monitoring (FIM) can now monitor and detect changes to your databases. Any changes detected on your databases are logged as events and displayed under theEvents > Scan Basedtab. These events are displayed with theHost TypeasDatabase."
+        },
+        {
+          "heading": "Enhanced FIM Events Report with Incident Information",
+          "summary": "File Integrity Monitoring event reports now display incident details related to events. The events report generated through the report rule now includes two additional columns:Incident NameandIncident Status."
+        },
+        {
+          "heading": "New QQL Tokens",
+          "summary": "The following table provides the new QQL tokens added in this release"
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following reported and notable issue is fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-27T19:44:01.800449+00:00",
+      "status": "success"
+    }
   },
   "68bfdb5dae26": {
     "key": "68bfdb5dae26",
@@ -17408,7 +17492,23 @@
       "FIM"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 28, 2025",
+      "features": [
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following reported and notable API issue is fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-27T19:44:01.800449+00:00",
+      "status": "success"
+    }
   },
   "ffcbd3170067": {
     "key": "ffcbd3170067",
@@ -17419,7 +17519,60 @@
       "WAS"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 28, 2025",
+      "features": [
+        {
+          "heading": "Customize Advanced Filters for Enhanced Search",
+          "summary": "Advanced filters now support operators for building precise search queries. With the operators, you can build complex and specific search queries without manually entering QQL tokens."
+        },
+        {
+          "heading": "Enhanced QQL Searches Across Tabs",
+          "summary": "We have enhanced the QQL search experience with the new enhancement, where the QQL search results in a tab are retained even when navigating the application to different tabs."
+        },
+        {
+          "heading": "Custom Header Support for OAuth 2.0 Authentication",
+          "summary": "You can now define a custom header value while creating OAuth 2 Record authentication. This custom header is used only for access token and refresh token requests, enabling secure API authentication workflows and seamless integration with external…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Retest scan",
+          "issue": "An issue was observed when the retest scan on some QIDs was stuck and did not provide any results. When the user tried to cancel the retest, an error was displayed. The issue is fixed."
+        },
+        {
+          "component": "Web application import",
+          "issue": "While importing a web application using the CSV file, an issue was encountered if the web application name contains special characters, such as ä, ö, or ü. The web application name did not display correctly, and the special characters were displayed as.The issue is now resolved, and we can import web applications with a name containing special characters."
+        },
+        {
+          "component": "QQL token",
+          "issue": "We fixed an issue where incorrect results were displayed in theSchedulestab inScanswith thescan.schedule.nextDate query."
+        },
+        {
+          "component": "Authentication Record, User Permissions",
+          "issue": "We fixed an issue where the Reader user could not update an authentication record with a Selenium script. With the additional permissions assigned to the user,  the Reader user can now update the authentication record."
+        },
+        {
+          "component": "Web application edit",
+          "issue": "When the user edited the web application URL, the web application was updated successfully; however, the updated URL did not reflect. The issue is fixed."
+        },
+        {
+          "component": "Scheduled scan",
+          "issue": "We fixed two issues with scheduled scans:- When the user added Start Time for a scheduled scan, theStart Timewas not saved.-TheCancel Scan AtandStart Timefields displayed different values in theEdit Scan ScheduleandView Scan Schedulewindows."
+        },
+        {
+          "component": "Authentication status in detection details",
+          "issue": "We fixed an issue where the user could not find whether the authentication was used for the fixed vulnerabilities in theDetection Details|History & Commentssection.Now, theHistory & Commentssection displays the text indicating whether the authentication record is used and the name of the authentication record."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-27T19:44:01.800449+00:00",
+      "status": "success"
+    }
   },
   "2a31159ead93": {
     "key": "2a31159ead93",
