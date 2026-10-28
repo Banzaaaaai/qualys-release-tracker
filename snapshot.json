@@ -17837,7 +17837,35 @@
       "QGS"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 23, 2025",
+      "features": [
+        {
+          "heading": "Support for Global Certificate",
+          "summary": "With this release, CAMS/QGS now supports QGS-bound global certificates, simplifying agent configuration and expanding the appliance capabilities."
+        },
+        {
+          "heading": "Certificate Label Update",
+          "summary": "TheQualys Signed Certificateis now renamed toSubscriptionfor better clarity and alignment with platform terminology."
+        },
+        {
+          "heading": "Introduced Appliance Update Status Indicators",
+          "summary": "With this release, we have enhanced the visibility of appliance version compliance inthe UP-TO-DATE column"
+        },
+        {
+          "heading": "Support for Auditing Logs for QGS Operations",
+          "summary": "With this release, we have added support for Audit trail for all QGS UI operations in the Administration application"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-28T19:58:31.884956+00:00",
+      "status": "success"
+    }
   },
   "07d9137ceb89": {
     "key": "07d9137ceb89",
@@ -17847,7 +17875,35 @@
       "UD"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 22, 2025",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "UD - VM",
+          "issue": "We fixed an issue where the dashboard reports displayed unfiltered data, even though the report indicated that the tags were applied to the dashboard."
+        },
+        {
+          "component": "UD - VM",
+          "issue": "An issue was observed where the warning message was not displayed when the number of widgets exceeded the maximum number of widgets that can be added to the dashboard. This issue occurred while creating the widgetusing the search query from theVMDR>Vulnerabilitiestab.This issue is now fixed, and a warning message, \"The maximum widgets limit exceeds in dashboard\" is displayed."
+        },
+        {
+          "component": "UD - VM",
+          "issue": "We fixed an issue, where if the user refreshes the dashboard or logs back in to the application, the dashboard displays unfiltered data despite the tags being applied."
+        },
+        {
+          "component": "UD - VM",
+          "issue": "When users edited theNumericalwidget and changed theWidget RepresentationtoSummary,the widget that was initially positioned at the bottom of the dashboard moved to the top.The widget position could not be adjusted back after editing the widget layout.TheNumericalwidget withSummarytype representation is always positioned at the top of the dashboard. We have now documented this default behavior in theUnified Dashboard Online Help."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-28T19:58:31.884956+00:00",
+      "status": "success"
+    }
   },
   "9c2919c58555": {
     "key": "9c2919c58555",
@@ -17858,7 +17914,39 @@
       "CRI"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 21, 2025",
+      "features": [
+        {
+          "heading": "Revocation Status for Certificates",
+          "summary": "Revocation of a certificate means canceling the certificate before it expires. This ensures that the certificate is no longer considered valid for secure communication. To support these features, we have added token support, visibility of revoke…"
+        },
+        {
+          "heading": "Cipher Strength Visibility for Report Customization",
+          "summary": "Cipher suites are groups of encryption methods used to protect communication between a client, like a web browser, and a server. When a digital certificate is involved in creating a secure connection, such as HTTPS, cipher suites decide how well the…"
+        },
+        {
+          "heading": "New Tokens for Cipher Information",
+          "summary": "We have introduced new tokens to get details of the certificates based on Cipher information."
+        },
+        {
+          "heading": "Unified Certificate Details Page Across Qualys Apps",
+          "summary": "The Certificate Details page has been revamped to provide a consistent experience across Qualys and all associated modules. A unified Certificate Details page facilitates a consistent experience across all Qualys apps and helps you understand…"
+        },
+        {
+          "heading": "API Features and Enhancements",
+          "summary": "We have introduced new versions of List CertView Certificates v1 and v2 APIs,"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-28T19:58:31.884956+00:00",
+      "status": "success"
+    }
   },
   "535a6caf8673": {
     "key": "535a6caf8673",
@@ -17870,7 +17958,31 @@
       "CRI"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 21, 2025",
+      "features": [
+        {
+          "heading": "Certificate View API Versioning Support",
+          "summary": "We have scheduled API versioning for End-of-Support (EOS) and End-of-Life (EOL). We recommend migrating to the latest versions of these APIs to ensure continued compatibility, support, and access to the latest features and security enhancements."
+        },
+        {
+          "heading": "Certificate Revocation Status Enhancements in List CertView Certificates v1 API",
+          "summary": "New or Updated API"
+        },
+        {
+          "heading": "Certificate Revocation and CipherSuite Enhancements in List CertView Certificates v2 API",
+          "summary": "New or Updated API"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-28T19:58:31.884956+00:00",
+      "status": "success"
+    }
   },
   "4dc7df8c4016": {
     "key": "4dc7df8c4016",
@@ -33701,6 +33813,38 @@
     "enrichment": {
       "attempts": 1,
       "last_attempt_at": "2026-10-22T18:22:39.243688+00:00",
+      "status": "success"
+    }
+  },
+  "31b9506f689c": {
+    "key": "31b9506f689c",
+    "url": "https://docs.qualys.com/en/pm/release-notes/patch_management/release_4_2_1_1.htm",
+    "title": "TruRisk™ Eliminate Release 4.2.1.1",
+    "tags": [
+      "ISL",
+      "MTG",
+      "PM",
+      "TE"
+    ],
+    "month_label": "October 2026",
+    "detected_at": "2026-10-28T19:58:31+00:00",
+    "details": {
+      "release_date": "October 28, 2026This release adds PHP2Shell remediation widgets to theTruRisk™ EliminateHomepage. The widgets show your exposure to the critical PHP2Shell vulnerabilities (CVE-2026-109618 and CVE-2026-109619) on assets with and without the Qualys Cloud Agent, and direct you to the options to patch or mitigate them.",
+      "features": [
+        {
+          "heading": "Identify and Remediate PHP2Shell Risk Faster Across All Assets",
+          "summary": "What's New for You"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-28T19:58:31.884956+00:00",
       "status": "success"
     }
   }
