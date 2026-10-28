@@ -17582,7 +17582,40 @@
       "Conn"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 25, 2025",
+      "features": [
+        {
+          "heading": "Support for the Windows OS in Snapshot-based Scan",
+          "summary": "With this release, we have added new support for the Windows OS in the AWS Snapshot-based scan.  Now, you can perform this advanced scan technique on Windows workloads without disrupting running operations."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "CV - EC2 Connector",
+          "issue": "We have fixed an issue where the connector names were not sorting correctly in alphabetical order."
+        },
+        {
+          "component": "CV - UI",
+          "issue": "We have fixed an issue where the connector names were not sorting correctly in alphabetical order, and the issue where the 'Run Connector' operation fails to execute succesfully due to an internal timeout error."
+        },
+        {
+          "component": "CV - Azure Connector",
+          "issue": "We fixed an issue where the Azure Tenant connector returned a NonUniqueResultException error due to an incorrect method for fetching connector details. This issue occurred only in cases where org connector names were the same across multiple cloud providers."
+        },
+        {
+          "component": "CV - EC2 Connector",
+          "issue": "We fixed an issue where the AWS connector displayed events in AWS from a region that was deselected."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-28T14:29:56.158016+00:00",
+      "status": "success"
+    }
   },
   "c7ae4db16e0d": {
     "key": "c7ae4db16e0d",
@@ -17593,7 +17626,23 @@
       "Conn"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 25, 2025",
+      "features": [
+        {
+          "heading": "List Cloud Connectors",
+          "summary": "This API retrieves a paginated list of connectors for a specific cloud type (e.g., AWS, Azure, GCP). It supports advanced filtering on connector properties, tags, and statuses, enabling users to query and manage cloud connector configurations…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-28T14:29:56.158016+00:00",
+      "status": "success"
+    }
   },
   "da29d7da4171": {
     "key": "da29d7da4171",
@@ -17603,7 +17652,104 @@
       "TC"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 25, 2025",
+      "features": [
+        {
+          "heading": "Important Announcement: Migration of Qualys Services from ADAL to MSAL",
+          "summary": "We would like to inform you that theAzure Active Directory Authentication Library (ADAL)has been officially deprecated by Microsoft. Although existing applications using ADAL may continue to function, Microsoft has ended all support and development…"
+        },
+        {
+          "heading": "IPv6 Support Enhancements for Cloud Security Posture Management (CSPM)",
+          "summary": "With this release, we have added comprehensive IPv6 support across the Cloud Security Posture Management (CSPM) platform to provide enhanced visibility, evaluation, and control of cloud assets with IPv6 addressing."
+        },
+        {
+          "heading": "Enhanced Resource Filtering in TotalCloud Inventory",
+          "summary": "Previously, the TotalCloud Inventory displayed all resources based on the selected date range, regardless of their status. This included terminated Instances (AWS and OCI), deleted VMs (Azure), and terminated VM instances (GCP). With this release,…"
+        },
+        {
+          "heading": "Redesigned Summary Details Screen for Inventory Details Workflow",
+          "summary": "TheSummary Detailsscreen within the Inventory Details workflow has been completely redesigned to enhance user experience and improve data clarity. The new layout provides a more intuitive interface, making it easier to view and manage inventory…"
+        },
+        {
+          "heading": "Microsoft Azure",
+          "summary": "The following sections describe the enhancements made to the TotalCloud environment in this release for Azure."
+        },
+        {
+          "heading": "New Insights with Azure Attack Path Visualization Support",
+          "summary": "With this release, we are adding new insights to improve visibility into potential risks in your cloud environment. Additionally, support for Attack Path visualization has been expanded to include these new insights, helping you better understand…"
+        },
+        {
+          "heading": "Cloud Detection and Response (CDR)",
+          "summary": "The following sections describe the enhancements made to the CDR environment in the upcoming CDR release."
+        },
+        {
+          "heading": "Exception Handling for Threat Findings",
+          "summary": "With this release, we have added a new exception handling feature that that enhances your ability to manage threat findings with greater precision. This feature allows you to"
+        },
+        {
+          "heading": "Connection-based Analysis for AWS Appliances",
+          "summary": "With this release, we are introducing a new feature that analyzes network connection-based events for AWS appliances within the CDRInvestigatetab. This enhancement allows you to gain deeper visibility into network activity."
+        },
+        {
+          "heading": "Control Updates",
+          "summary": "New runtime controls introduced to the cloud posture analysis."
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "The following section describes the new tokens introduced as part of TotalCloud 2.18.0"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "CV-False Positive",
+          "issue": "We updated the detection logic of the following controls to resolve false positive cases - CID 539, 50250, 50393, and deprecated the control CID 327."
+        },
+        {
+          "component": "CV-False Negative",
+          "issue": "We updated the detection logic of the following controls to resolve false negative cases - CID 50215,"
+        },
+        {
+          "component": "CV-Monitor",
+          "issue": "We have resolved the issue where the number of virtual machines was not displayed in the table view when using the query:virtualmachine.status: VM running"
+        },
+        {
+          "component": "CV-UI",
+          "issue": "We have resolved the syntax help issue for the QQL token\"iam.classification\""
+        },
+        {
+          "component": "CV-Resources",
+          "issue": "We have resolved the issue where Redis resources were not visible in the TotalCloud Inventory."
+        },
+        {
+          "component": "CV-API",
+          "issue": "We have resolved the issue where API requests for the last page of data returned anullvalue along with a500 INTERNAL SERVER ERROR."
+        },
+        {
+          "component": "CV-Monitor, TotalCloud-Portal",
+          "issue": "We have resolved the issue where inaccurate vulnerability data was being fetched for resources. The problem was caused by the incorrect mapping of the new asset ID, which led to the data discrepancies."
+        },
+        {
+          "component": "CV - Azure Connector",
+          "issue": "We have enhanced the control CID: 500335 to support the latest TLS versions."
+        },
+        {
+          "component": "CV-RemediationClarification",
+          "issue": "We have updated the title and remediation steps for the following controls according to the new Azure Portal: CID 50331, 50365."
+        },
+        {
+          "component": "CV - UI, Documentation",
+          "issue": "We have resolved an issue where thevulnerability.customerSeveritytoken displayed incorrect help description."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-28T14:29:56.158016+00:00",
+      "status": "success"
+    }
   },
   "9b9a4b97070b": {
     "key": "9b9a4b97070b",
@@ -17614,7 +17760,27 @@
       "TC"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 25, 2025",
+      "features": [
+        {
+          "heading": "Get GCP Resource Details",
+          "summary": "With this release, we have added support for IPv6 addresses to the API. The API response now includespublicIpv6AddressandprivateIpv6Addressfields, which help identify instances with IPv6 addresses."
+        },
+        {
+          "heading": "Get OCI Resource Details",
+          "summary": "With this release, we have added support for IPv6 addresses to this API. The API response now includespublicIpv6AddressandprivateIpv6Addressfields, which help identify instances with IPv6 addresses."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-28T14:29:56.158016+00:00",
+      "status": "success"
+    }
   },
   "1c76c5d994fa": {
     "key": "1c76c5d994fa",
@@ -17624,7 +17790,44 @@
       "VMDR"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 24, 2025",
+      "features": [
+        {
+          "heading": "Reports Tab Renamed to VMDR Prioritization",
+          "summary": "TheReportstab in Prioritization has been renamed toVMDR Prioritizationto provide clearer distinction between prioritization methods."
+        },
+        {
+          "heading": "New Icon for Pending CVE Mitigations on the Vulnerabilities Listing Page",
+          "summary": "We have added a new icon to theVulnerabilities Listingpage to indicate when some CVEs under a vulnerability are still pending mitigation."
+        },
+        {
+          "heading": "Rule Creation Limit Increased",
+          "summary": "The limit for creating rules has been increased from 15 to 30. This improvement was made in response to customer requests for better support of complex and large-scale global operations."
+        },
+        {
+          "heading": "New Token",
+          "summary": "To view vulnerabilities that are mitigable, use this token."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Widgets",
+          "issue": "We fixed an issue that caused the TruRisk™ Score to change unexpectedly on the Trending widget."
+        },
+        {
+          "component": "Save and Download Prioritization Report",
+          "issue": "We fixed an issue that caused an error during the downloading of Prioritization Reports.This error occurred when an asset could not be tracked by its IP address.The relevant code has been updated to correctly handle these situations, ensuring smooth report generation."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-28T14:29:56.158016+00:00",
+      "status": "success"
+    }
   },
   "9cbc2c7e9b86": {
     "key": "9cbc2c7e9b86",
