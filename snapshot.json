@@ -18054,7 +18054,31 @@
       "CA"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 14, 2025",
+      "features": [
+        {
+          "heading": "Updated Base Image for Compliance",
+          "summary": "We have updated the base image used for AWS Bottlerocket Cloud Agent to fix the vulnerabilities."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-29T19:55:59.084263+00:00",
+      "status": "success"
+    }
   },
   "e81bf5e0efbc": {
     "key": "e81bf5e0efbc",
@@ -18064,7 +18088,35 @@
       "CA"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 14, 2025",
+      "features": [
+        {
+          "heading": "Updated Base Image for Compliance",
+          "summary": "With this release, we have updated the base image used for the Google Cloud Platform Container Optimized OS (GCP-COS) Cloud Agent to fix the vulnerabilities."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-29T19:55:59.084263+00:00",
+      "status": "success"
+    }
   },
   "e15e9d62b5e0": {
     "key": "e15e9d62b5e0",
@@ -18074,7 +18126,23 @@
       "SA"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 16, 2025",
+      "features": [
+        {
+          "heading": "New SupportedPlatforms: OCI | VMware",
+          "summary": "The latest release introduces the QVSA Terraform Templates, an innovative automation tool for the efficient management of Scanner Virtual Machines (VMs) within the Oracle Cloud Infrastructure (OCI) and VMware platform. This template helps simplify…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-29T19:55:59.084263+00:00",
+      "status": "success"
+    }
   },
   "06cbe7941a38": {
     "key": "06cbe7941a38",
@@ -18088,7 +18156,76 @@
       "WAS"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 14, 2025",
+      "features": [
+        {
+          "heading": "Cloud Agent",
+          "summary": "With this release, we have added support for IPv6 Addresses while configuring the Agent Scan Merge. Now,  you can provide the IPv6 address range to specify the Cloud Agents for enabling the agent scan merge feature."
+        },
+        {
+          "heading": "Security Assessment Questionnaire",
+          "summary": "We have added support to allow questionnaire managers to generate a single instance report for campaigns managed by other questionnaire managers in the same subscription. Now, any questionnaire manager who has access to the Security Assessment…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Asset Identification",
+          "issue": "CSAM"
+        },
+        {
+          "component": "Asset Tagging",
+          "issue": "CSAM"
+        },
+        {
+          "component": "Admin UI",
+          "issue": "Administration"
+        },
+        {
+          "component": "Dashboard Widgets",
+          "issue": "CSAM"
+        },
+        {
+          "component": "Asset Discovery",
+          "issue": "CSAM"
+        },
+        {
+          "component": "Asset Purging",
+          "issue": "CSAM"
+        },
+        {
+          "component": "SAML-SSO Login",
+          "issue": "ETP"
+        },
+        {
+          "component": "Create/Edit Web Application",
+          "issue": "WAS UI"
+        },
+        {
+          "component": "Reporting",
+          "issue": "WAS UI"
+        },
+        {
+          "component": "Scanning",
+          "issue": "WAS UI"
+        },
+        {
+          "component": "Reporting",
+          "issue": "WAS UI"
+        },
+        {
+          "component": "QID Detection",
+          "issue": "WAS API"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-29T19:55:59.084263+00:00",
+      "status": "success"
+    }
   },
   "6fb9d5166dba": {
     "key": "6fb9d5166dba",
@@ -18099,7 +18236,28 @@
       "WAS"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 14, 2021",
+      "features": [
+        {
+          "heading": "Asset Management",
+          "summary": "We have added two new parameters in the API response—reEvalStatusandreEvalStatusProgressfor theGet Tag Info API(/qps/rest/2.0/get/am/tag/<id>) andSearch Tags API(/qps/rest/2.0/search/am/tag). With the introduction of these parameters, you can view…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "QID Detection",
+          "issue": "WAS API"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-29T19:55:59.084263+00:00",
+      "status": "success"
+    }
   },
   "5e75945f5ae5": {
     "key": "5e75945f5ae5",
