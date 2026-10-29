@@ -17992,7 +17992,32 @@
       "CA"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 17, 2025",
+      "features": [
+        {
+          "heading": "Support for IPv6 Assets in Agent Scan Merge",
+          "summary": "With this release, we have added support for IPv6 Addresses while configuring the Agent Scan Merge. Now,  you can provide the IPv6 addresses, subnets, gateways, and DNS suffixes to specify the Cloud Agents for enabling the agent scan merge feature."
+        },
+        {
+          "heading": "Updates for SwCA Scan Profile",
+          "summary": "We have updated the SwCA Scan Profile creation user interface to introduce a new option for defining the SwCA Scan scope. Now, you can select theInclude Directories for Running Processes and Installed Applicationsto launch a quick SwCA scan only for…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Configuration Profile Deletion",
+          "issue": "We fixed an issue where an empty error message was displayed while deleting a configuration profile assigned to a Cloud Agent."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-29T14:39:05.616499+00:00",
+      "status": "success"
+    }
   },
   "12ad918d1aaa": {
     "key": "12ad918d1aaa",
@@ -18003,7 +18028,23 @@
       "CA"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 02, 2025",
+      "features": [
+        {
+          "heading": "Support for IPv6 Assets in Agent Scan Merge",
+          "summary": "We have added support for IPv6 Addresses while configuring the Agent Scan Merge option. Now, you can provide the IPv6 addresses, subnets, gateways, and DNS suffixes to specify the Cloud Agents for enabling the agent scan merge feature."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-29T14:39:05.616499+00:00",
+      "status": "success"
+    }
   },
   "7995b7dacb98": {
     "key": "7995b7dacb98",
@@ -33845,6 +33886,117 @@
     "enrichment": {
       "attempts": 1,
       "last_attempt_at": "2026-10-28T19:58:31.884956+00:00",
+      "status": "success"
+    }
+  },
+  "ad4c15998d92": {
+    "key": "ad4c15998d92",
+    "url": "https://docs.qualys.com/en/portal-cloud-platform-rn/cloud_platform/release_3_25_1.htm",
+    "title": "Enterprise TruRisk™ Platform 3.25.1",
+    "tags": [
+      "Admin"
+    ],
+    "month_label": "October 2026",
+    "detected_at": "2026-10-29T14:39:05+00:00",
+    "details": {
+      "release_date": "October 29, 2026This release introduces the new Administration application with RBAC 2.0 for centralized user and role management, lets you exclude specific usernames from inactivity deactivation, expands the Administrator role's permissions, and updates the activity.Source QQL token.",
+      "features": [
+        {
+          "heading": "Centralize User and Role Management with the New Administration Application",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Keep Critical Accounts Active with Deactivation Exclusions",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Get Full Administration Access with the Updated Administrator Role",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Updated QQL Tokens",
+          "summary": "Refer to the following table to learn more about the updated tokens in this release."
+        },
+        {
+          "heading": "API Release Updates",
+          "summary": "For more details on the API updates for this release, seeEnterprise TruRisk™ Platform Release 3.25.1 API."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-29T14:39:05.616499+00:00",
+      "status": "success"
+    }
+  },
+  "b8722a71ab96": {
+    "key": "b8722a71ab96",
+    "url": "https://docs.qualys.com/en/portal-cloud-platform-rn/cloud_platform/release_3_25_1_api.htm",
+    "title": "Enterprise TruRisk™ Platform 3.25.1 API",
+    "tags": [
+      "Admin",
+      "API"
+    ],
+    "month_label": "October 2026",
+    "detected_at": "2026-10-29T14:39:05+00:00",
+    "details": {
+      "release_date": "October 29, 2026This release adds RESTful V2 User Management APIs to update, delete, tag, export, and change the status of users, along with new APIs for self-service password changes and administrator-initiated password resets.",
+      "features": [
+        {
+          "heading": "User Management V2 APIs",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Password Management APIs",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "UI Release Updates",
+          "summary": "To know more about the UI features, enhancements, and issues addressed, seeEnterprise TruRisk™ Platform Release 3.25.1."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-29T14:39:05.616499+00:00",
+      "status": "success"
+    }
+  },
+  "fb3e58058738": {
+    "key": "fb3e58058738",
+    "url": "https://docs.qualys.com/en/ps/release-notes/ps/release_2_7.htm",
+    "title": "Network Passive Sensor 2.7",
+    "tags": [
+      "PNS"
+    ],
+    "month_label": "October 2026",
+    "detected_at": "2026-10-29T14:39:05+00:00",
+    "details": {
+      "release_date": "October 29, 2026This release adds tag-based user scoping for sensor access, business unit-based sensor access for sub-users, and granular role-based permissions for sensor configuration settings.",
+      "features": [
+        {
+          "heading": "Restrict Sensor Access with Asset Tags",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Restrict Sensor Access with Business Units",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Prevent Unauthorized Changes to Configuration Settings",
+          "summary": "What's New For You"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-29T14:39:05.616499+00:00",
       "status": "success"
     }
   }
