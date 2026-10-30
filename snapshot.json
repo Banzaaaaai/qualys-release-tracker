@@ -18447,7 +18447,56 @@
       "CS"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 14, 2025",
+      "features": [
+        {
+          "heading": "Added Support for ARM64 Architecture",
+          "summary": "The Qualys Container Runtime Sensor now supports ARM64 (aarch64) platforms, in addition to existing AMD64 support. This enables deployment on a wider range of hardware, including modern cloud-native environments and ARM-based infrastructure like AWS…"
+        },
+        {
+          "heading": "Added Support for Threat detection",
+          "summary": "We’ve introduced process event monitoring to detect suspicious behavior in real time. This helps you proactively identify and respond to potential threats during container runtime, improving your overall security posture."
+        },
+        {
+          "heading": "Kubernetes Metadata in Process Events",
+          "summary": "CRS process events now include Kubernetes metadata, such as pod and pod owner references. This provides better visibility and traceability, making it easier to investigate incidents and correlate events with specific workloads."
+        },
+        {
+          "heading": "Increased Memory Allocation for CRS Pods",
+          "summary": "The Helm chart has been updated with increased default CPU and memory allocations for CRS pods. This ensures the sensor performs optimally under high workloads, reducing the risk of missed events or performance bottlenecks."
+        },
+        {
+          "heading": "More Resilient Sensor Startup",
+          "summary": "We’ve increased the retry limit and wait time for establishing a connection to the eBPF agent. This improves startup reliability, especially in environments with delayed service availability, ensuring consistent monitoring."
+        },
+        {
+          "heading": "Expanded AWS ARN Support",
+          "summary": "The CRS sensor now recognizes ARNs across all AWS partitions, as follows"
+        },
+        {
+          "heading": "Added Support to Configure Process Allowlist",
+          "summary": "You can now configure a process allowlist directly through the Helm chart’svalues.yamlfile. This gives you greater control over what processes are allowed, reducing false positives and aligning runtime policies with your security requirements."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "File Event",
+          "issue": "No event generated for any file operations execution from its working directory."
+        },
+        {
+          "component": "Unified Helm Chart",
+          "issue": "Container Runtime Sensor installation using the Helm chart failed with the following error when a proxy certificate was used in the command.Error: W0617 00:16:28.039070    2809 warnings.go:70] unknown field \"spec.template.spec.containers[1].secret\"Error: UPGRADE FAILED: failed to create resource: DaemonSet.apps \"qualys-runtime-sensor\" is invalid: [spec.template.spec.containers[0].volumeMounts[0].name: Not found: \"proxy-cert-path\", spec.template.spec.containers[1].image: Required value]"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-30T19:46:23.732358+00:00",
+      "status": "success"
+    }
   },
   "a0797c49f279": {
     "key": "a0797c49f279",
@@ -18457,7 +18506,56 @@
       "CS"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 07, 2025 (Updated on July 25, 2025)",
+      "features": [
+        {
+          "heading": "Continuous Assessment of Images",
+          "summary": "Container Security offers Continuous Image Assessment. This refers to the ongoing and automated scanning of container images for vulnerabilities, misconfigurations, and policy violations throughout the software life cycle."
+        },
+        {
+          "heading": "Ability to Block Malicious Images",
+          "summary": "With this release, Qualys Container Security can block images that have malware in them. CS scans the Malware scan report, and if the image is found malicious, then it blocks the image from further use. Blocking images with Malware enhances your…"
+        },
+        {
+          "heading": "Ability to Block Images with Secrets",
+          "summary": "Another enhancement in Container Security's Centralized Policy Management is the introduction of a new rule sub-type—BlockImage withSecrets—to block images with secrets whose severity level is above the prescribed margin — Low, Medium, High, or…"
+        },
+        {
+          "heading": "Asset Tracking Activity",
+          "summary": "Asset Tracking Activityrefers to the ongoing actions or events related to the discovery, monitoring, and life-cycle changes of images in your cloud environment. Earlier, all sensor errors were monitored using sensor logs sent by you. This process…"
+        },
+        {
+          "heading": "OAuth and OpenID Connect Support using QualysEnterprise TruRisk™ Platform",
+          "summary": "In Container Security Release 1.36, Qualys started supporting OAuth 2.0 and OpenID Connect (OIDC) Authentication standards for its APIs. This integration enhanced the authentication and authorization measures of Container Security APIs. With this…"
+        },
+        {
+          "heading": "Pod and Workload Information in Runtime JSON Payload",
+          "summary": "With this release, the runtime event JSON Payload shows information about POD and Workload used by the selected process event. Including this information in the Payload provides clear Kubernetes context, enabling faster root cause analysis and…"
+        },
+        {
+          "heading": "Added Support for IPv6 Resources",
+          "summary": "Qualys Container Security now supports IPv6 resources present in your cluster. Earlier, only IPV4 resources were supported. IPV6 solves the address exhaustion problem of IPv4.You can see IPv6 address of your sensors, images, and containers in their…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Dynamic Scan on Docker Image",
+          "issue": "The Docker image scan got stuck due to the difference in the Docker image and Docker host architectures. To tackle this, CS Sensor now returns a fatal error for the Dynamic scan, and it will fallback to the Static scan."
+        },
+        {
+          "component": "Scan Jobs",
+          "issue": "Legacy Scan jobs (Registry Schedules) erased from a QualysEnterprise TruRisk™ Platformaccount. To handle this, a null check is implemented. If the on-demand field is 'null', the system now safely accounts for it during schedule retrieval."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-30T19:46:23.732358+00:00",
+      "status": "success"
+    }
   },
   "e257abd59de8": {
     "key": "e257abd59de8",
@@ -18468,7 +18566,31 @@
       "CS"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 07, 2025",
+      "features": [
+        {
+          "heading": "Continuous Assessment of Images",
+          "summary": "With this release, CS supports Continuous Assessment of images. As a result, the Response section of some Image APIs shows the following fields. To know more about Continuous Assessment of the images, refer toContainer Security 1.39 Release Notes."
+        },
+        {
+          "heading": "Ability to Block Malicious Images",
+          "summary": "With this release, Container Security can block images having malware in them with the help of Centralized Admission Controller policies. To support this feature, the following APIs are updated."
+        },
+        {
+          "heading": "Ability to Block Images having Secrets",
+          "summary": "With this release, Container Security blocks images having secrets in them with the help of Centralized CICD policies. To support this feature, the following APIs are updated."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-30T19:46:23.732358+00:00",
+      "status": "success"
+    }
   },
   "0a1fafda58fa": {
     "key": "0a1fafda58fa",
@@ -18478,7 +18600,60 @@
       "CS"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 07, 2025 (Updated on 14th August 2025)",
+      "features": [
+        {
+          "heading": "Added Support for Asset Tracking Activity",
+          "summary": "Asset Tracking Activityrefers to the ongoing actions or events related to the discovery, monitoring, and life-cycle changes of assets (Images, Registry Schedules, Sensor Containers) in your cloud environment. Earlier, all sensor errors were…"
+        },
+        {
+          "heading": "Added Support for Java DB Update Interval",
+          "summary": "CS Sensor downloads java.db to enable Java-specific vulnerability detection. The downloaded java.db is also useful for offline scanning. With this release, the CS Sensor downloads java.db only if .jar files are present in a package. GitHub Container…"
+        },
+        {
+          "heading": "Sensor Installation on Cluster using IPV6 Format",
+          "summary": "With this release, the sensor can be installed and operate fully on cluster nodes that use IPv6 networking."
+        },
+        {
+          "heading": "Update in HostIP Environment Variable",
+          "summary": "With this release, the HostIP environment variable, in a runtime environment, is renamed fromSENSOR_HOST_IPtoQUALYS_SENSOR_HOST_IPto align with best practices in your runtime environments. This also helps prevent naming collisions in runtime…"
+        },
+        {
+          "heading": "Added Support to Disable Log Collection in Sensor",
+          "summary": "Earlier, we added support to add logs inside the container sensor (qpa.log) when the console logging was enabled using--enable-console-logs. At times, you may not need to save the sensor logs under the default log collection file - qpa.log. To…"
+        },
+        {
+          "heading": "Helm Chart 1.18.0 Updates",
+          "summary": "The Qualys Container Security package consists of the 'values.yaml' file which deploys the sensor in various environments.This section explains the updates in the latest Helm chart (values.yaml) file. Refer toQCS Sensor Helm Chart (qcs-sensor)."
+        },
+        {
+          "heading": "Unified Helm Chart (qualys-tc2.5.0) Updates",
+          "summary": "The unified helm chart can be used to install QCS Sensor, Admission Controller, Cluster Sensor, and Container Runtime Sensor.Refer toQualys Unified Helm Chart (qualys-tc)."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Unified Helm Chart",
+          "issue": "qualys-tc Helm chart did not account for imagePullSecrets policy, causing the sensor deployment to fail with an ImagePullBackOff error."
+        },
+        {
+          "component": "Unified Helm Chart",
+          "issue": "CS Sensor failed to connect to qualys cms services when proxy with proxy certificate was used. This happened due to the certificate was mounted to different path. This path is now corrected in helm chart 2.5.0."
+        },
+        {
+          "component": "Unified Helm Chart",
+          "issue": "If multiple sensor types were installed with proxy which requires a proxy certificate to be passed, the sensor installation used to fail. This issue has been fixed."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-30T19:46:23.732358+00:00",
+      "status": "success"
+    }
   },
   "3b66616c0169": {
     "key": "3b66616c0169",
@@ -18488,7 +18663,35 @@
       "ETM"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 07, 2025",
+      "features": [
+        {
+          "heading": "Enhanced Custom Attributes",
+          "summary": "We have introduced the following enhancements for a better UI experience with Custom Attributes"
+        },
+        {
+          "heading": "Introduced New Tokens for Findings Tab",
+          "summary": "finding.technologyCategory"
+        },
+        {
+          "heading": "Improved Findings Details Page with Information for Technology on UI",
+          "summary": "We have enhanced the Findings Details Page to provide more context in the Technology field. Now, when you hover over the Technology field label, a tooltip displays additional information, including"
+        },
+        {
+          "heading": "API Features and Enhancements",
+          "summary": "With this update, we have enhanced reporting columns. The output response of theDownload report usingthe resource name API now includes information for patches, findings from VMDR, ServiceNow, and WAS, and other existing details. For detailed…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-30T19:46:23.732358+00:00",
+      "status": "success"
+    }
   },
   "bea4b0b95247": {
     "key": "bea4b0b95247",
