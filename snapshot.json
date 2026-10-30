@@ -18269,7 +18269,68 @@
       "PM"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 14, 2025",
+      "features": [
+        {
+          "heading": "Remediation Support for Linux Patch Jobs",
+          "summary": "You can now create remediation jobs for Linux assets with only patches through theEliminationstab. Earlier, remediation jobs were not supported for the Linux assets."
+        },
+        {
+          "heading": "New Roles for Access Management",
+          "summary": "We have introduced two new roles to provide access to the following features"
+        },
+        {
+          "heading": "Updated Deployment Job Status: Completed With Failure",
+          "summary": "The status of deployment and rollback jobs with failed patches or actions is now indicated asCompletedwithFailure.The Job Progress page provides details of the failed patches and actions."
+        },
+        {
+          "heading": "Updated Isolation Job Status: Completed With Failure",
+          "summary": "The status of isolation and rollback jobs with failed device isolation is now indicated asCompletedwithFailure.This status indicates that the job is completed, but the device isolation failed. You can refer to theError Detailsto know more about the…"
+        },
+        {
+          "heading": "Display Job Owner's Full Name on the Jobs tab",
+          "summary": "TheOwnercolumn in the Jobs tab displays the full name of the job owner."
+        },
+        {
+          "heading": "Retention Policy for On-Demand and Scheduled Deployment Jobs",
+          "summary": "We have implemented a new retention policy for theOn-DemandandScheduled(run-once) patch deployment jobs. The key highlights of this policy are"
+        },
+        {
+          "heading": "API Release Updates",
+          "summary": "For more details on the API updates for this release, seePatch Management API Release 3.8."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PM - UI",
+          "issue": "We fixed an issue where the Linux asset report generation failed when the user tried to generate a report without using any filter."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "We fixed an issue in which, while configuring the deferment value under the job reboot request in minutes, the wordMinutesin the information tool tip on the Edit Job page, automatically changed toHoursafter the job is saved."
+        },
+        {
+          "component": "PM - Assets",
+          "issue": "The missing patches count on theAssetstab did not get updated for Linux assets, even when there were no missing patches. This issue is fixed, and now the missing patches value is updated for the Linux assets."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "An issue was observed where theModifiedDatefield displayed a value although the user did not modify the deployment job. The issue was observed for patch, remediation, mitigation, and isolation jobs."
+        },
+        {
+          "component": "PM - UI",
+          "issue": "An issue occurred wherethejob did not appear in the list under theJobstab, if the deployment job did not contain any asset."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-30T14:30:55.653716+00:00",
+      "status": "success"
+    }
   },
   "8b666b99f856": {
     "key": "8b666b99f856",
@@ -18281,7 +18342,76 @@
       "PM"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 14, 2025",
+      "features": [
+        {
+          "heading": "New API: Get List of Fix Based Mitigations",
+          "summary": "We have introduced a new Get List of Fix based Mitigations API that provides a list of fix-based mitigations with CVE and mitigation details for Windows and Linux platforms."
+        },
+        {
+          "heading": "New API: Create Mitigation Job",
+          "summary": "We have introduced a new Create On-Demand Mitigation Job API that is used to create on-demand and run-once Windows and Linux mitigation jobs."
+        },
+        {
+          "heading": "New API: Update Mitigation Job",
+          "summary": "We have introduced a new Update Mitigation Job API that is used to update the on-demand and run-once Windows and Linux mitigation jobs."
+        },
+        {
+          "heading": "New API: Get Mitigation Job Details",
+          "summary": "We have introduced a new Get Mitigation Job Details API that fetches the details of the mitigation job for the specified job ID."
+        },
+        {
+          "heading": "New API: Get Mitigation Deployment Job Result Summary",
+          "summary": "We have introduced a new get Mitigation Deployment Job Result Summary for the specified job ID. This API provides a detailed summary of the job result for the given job ID."
+        },
+        {
+          "heading": "New API: Get Mitigation Deployment Job Action Result By Job ID",
+          "summary": "We have introduced a new Get Mitigation Deployment Job Action Result by Job ID API that fetches the results of the job action for the specified job ID."
+        },
+        {
+          "heading": "New API: Get List of All Mitigation Deployment Jobs",
+          "summary": "We have introduced a new Get List of All Mitigation Deployment Jobs API for the specified platform. This API fetches the list of all mitigation jobs for Windows or Linux platforms."
+        },
+        {
+          "heading": "New API: Delete Mitigation Deployment Jobs",
+          "summary": "We have introduced a new Delete Mitigation Deployment Jobs API that can be used to delete the specified mitigation jobs using the job IDs."
+        },
+        {
+          "heading": "Updated API: Create Deployment Job API for Access Management",
+          "summary": "With this release, we have added two new roles:CustomAccessManagerandPatchCustomAccessManager.If theCustomAccessManagerrole is not assigned to the user, the user cannot add any co-authors to the patch, mitigation, and isolation deployment jobs."
+        },
+        {
+          "heading": "Updated API: Update Deployment Job API for Access Management",
+          "summary": "With this release, we have added two new rolesCustom Access ManagerandPatch Custom Access Manager. If theCustomAccessManagerrole is not assigned to the user, the user cannot add any co-authors to the patch, mitigation, and isolation deployment…"
+        },
+        {
+          "heading": "UI Release Updates",
+          "summary": "To know in detail about the UI features, enhancements and issues addressed, seePatch Management Release 3.8."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2016-2183",
+        "CVE-2016-7855",
+        "CVE-2019-9513",
+        "CVE-2019-9516",
+        "CVE-2022-41125",
+        "CVE-2022-41128",
+        "CVE-2023-22883",
+        "CVE-2023-24882",
+        "CVE-2024-27239",
+        "CVE-2024-27245",
+        "CVE-2024-27246",
+        "CVE-2024-38177"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-30T14:30:55.653716+00:00",
+      "status": "success"
+    }
   },
   "b901dda9e5ac": {
     "key": "b901dda9e5ac",
@@ -18291,7 +18421,23 @@
       "CS"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 07, 2025 (Updated on August 14, 2025)",
+      "features": [
+        {
+          "heading": "Added Support for AWS ARN Partition",
+          "summary": "The parameterglobal.clusterInfoArgs.AWS.arnspecifies the ARN value of your AWS ARN of EKS cluster.Valid format-global.clusterInfoArgs.AWS.arn = arn:partition:service:region:account-id:resource-type/resource-idExample,global.clusterInfoArgs.AWS.arn =…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-30T14:30:55.653716+00:00",
+      "status": "success"
+    }
   },
   "1f68234b43e3": {
     "key": "1f68234b43e3",
@@ -34155,6 +34301,67 @@
     "enrichment": {
       "attempts": 1,
       "last_attempt_at": "2026-10-29T14:39:05.616499+00:00",
+      "status": "success"
+    }
+  },
+  "a696b1af8033": {
+    "key": "a696b1af8033",
+    "url": "https://docs.qualys.com/en/qgs/release-notes/qgs/release_3_16_2.htm",
+    "title": "Qualys Gateway Service 3.16.2",
+    "tags": [
+      "QGS"
+    ],
+    "month_label": "October 2026",
+    "detected_at": "2026-10-30T14:30:55+00:00",
+    "details": {
+      "release_date": "October 24, 2026Qualys Gateway Service (QGS) 3.16.2 migrates the CAMS Registry from a VM-based deployment to a highly available, scalable Kubernetes-based architecture, with no changes to client-facing endpoints or workflows.",
+      "features": [
+        {
+          "heading": "CAMS Registry Migration to Kubernetes",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Updated CAMS/QGS Images and Containers",
+          "summary": "What Changed For You"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-30T14:30:55.653716+00:00",
+      "status": "success"
+    }
+  },
+  "7d105e76aae2": {
+    "key": "7d105e76aae2",
+    "url": "https://docs.qualys.com/en/certview/release-notes/certview/release_4_8_2.htm",
+    "title": "Certificate View 4.8.2",
+    "tags": [
+      "CRA",
+      "CRI"
+    ],
+    "month_label": "October 2026",
+    "detected_at": "2026-10-30T14:30:55+00:00",
+    "details": {
+      "release_date": "October 29, 2026This release refreshes the Certificate View user interface to improve readability and consistency, and updates the QQL token names for Asset Details and Certificate Details.",
+      "features": [
+        {
+          "heading": "Spot Certificate Risk Faster with a Cleaner, More Readable Interface",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Updated QQL Tokens",
+          "summary": "What Changed For You"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-30T14:30:55.653716+00:00",
       "status": "success"
     }
   }
