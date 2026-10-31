@@ -18927,7 +18927,27 @@
       "PC"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 7, 2025 (Updated on July 16, 2025)",
+      "features": [
+        {
+          "heading": "Polices API: View Control Status for a Policy",
+          "summary": "/api/3.0/fo/compliance/policy/"
+        },
+        {
+          "heading": "Policies API: Display Control Status for a Control",
+          "summary": "With this release, we have introduced a new tag - IS_ACTIVEin the API response to display the status of the control for the Windows and Linuxtechnologies.  Thistag is added to the following APIs"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-31T18:54:01.778989+00:00",
+      "status": "success"
+    }
   },
   "811eba8ef83b": {
     "key": "811eba8ef83b",
@@ -18937,7 +18957,23 @@
       "QF"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 7, 2025",
+      "features": [
+        {
+          "heading": "Tokens for Templates",
+          "summary": "With this release, we have introduced new tokens in theTemplatestab. Filter QFlows by their names, cloud provider, supported apps or services."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-31T18:54:01.778989+00:00",
+      "status": "success"
+    }
   },
   "1363323d51fa": {
     "key": "1363323d51fa",
@@ -18947,7 +18983,27 @@
       "UD"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 7, 2025",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "UD - VM",
+          "issue": "An issue occurred where, in the existing search queries the > symbol automatically got converted to &gt; in both the name and the query. This issue occurred after the Unified Dashboard 2.4.0.0 release.We have now fixed this issue and the saved queries appear correctly with the > symbol."
+        },
+        {
+          "component": "UD - VM",
+          "issue": "We have fixed an issue in which, when the user logged in to the Qualys application, the dashboards marked as favorite disappeared and users could see the pinned dashboards of other users having same subscription ID."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-31T18:54:01.778989+00:00",
+      "status": "success"
+    }
   },
   "a0e2d3aec830": {
     "key": "a0e2d3aec830",
@@ -18961,7 +19017,104 @@
       "PM"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 04, 2025 (Updated July 29, 2025)",
+      "features": [
+        {
+          "heading": "Reattempt Patch Deployment",
+          "summary": "The Cloud Agent for Windows now supports retrying patch installation for failed patches. This improvement reduces the number of failed patches and minimizes the need for manual intervention to install them."
+        },
+        {
+          "heading": "Launch Deep Scan",
+          "summary": "With this release, we are providing an option to enable a deep scan from the Cloud Agent user interface while creating a configuration profile."
+        },
+        {
+          "heading": "New Feature — Create Isolation Job for Host Assets",
+          "summary": "With this release, we are introducing a feature to isolate vulnerable host assets from your network. The isolated host assets can not interact with other assets in your network, preventing them from exploiting critical vulnerabilities. Earlier, we…"
+        },
+        {
+          "heading": "Proxy Randomization",
+          "summary": "The Cloud Agent for Windows now supports proxy randomization. When you configure multiple proxies, the Cloud Agent randomly selects one of them to establish an outbound connection."
+        },
+        {
+          "heading": "Special Code for Handling Missing Patches",
+          "summary": "We have introduced a special code 15 in the patch job logs to indicate the patch installation failure during or after the system reboot. Now, an error code and associated error message clearly mentions the reasons for patch installation failure."
+        },
+        {
+          "heading": "Improvements for EDR Hash-based Blocking",
+          "summary": "With the hash-based blocking option in the Endpoint Detection and Response (EDR), you use a hash to restrict access to the respective applications."
+        },
+        {
+          "heading": "Cloud Agent Cross-Platform Migration",
+          "summary": "Cloud Agent for Windows now supports cross-platform migration. With this feature, you can migrate a Cloud Agent installed on one Qualys platform to another without reinstalling it."
+        },
+        {
+          "heading": "Event Tracing for Windows Assets",
+          "summary": "The Event Tracing for Windows (ETW) is a high-performance system and application events tracing utility provided by Microsoft Windows. You can use the logs from ETW for system analysis and troubleshooting."
+        },
+        {
+          "heading": "IPv6 Support for Anti-malware Protection",
+          "summary": "We enhanced the Qualys Anti-malware Protection (EPP) feature to support IPv6 addresses in exclusion criteria. With this enhancement, you can add IPv6 addresses in the exclusion rule to allow your assets to communicate with excluded IP addresses."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Proxy Connection",
+          "issue": "When multiple proxies were configured for Cloud Agent, agents encountered the same errors and could not establish the proxy connection in some cases.We fixed this issue by adding support for randomized proxy selection."
+        },
+        {
+          "component": "FIM Event Reporting",
+          "issue": "The FIM events were reported even after the users were added to the exclusion rule. We fixed this issue by modifying the exclusion rule filters."
+        },
+        {
+          "component": "Agent Upgrade",
+          "issue": "Cloud Agents were unexpectedly upgraded to the new versions even when the correct configuration profile was assigned. We fixed this issue by adding a check to prevent unexpected self-upgradation."
+        },
+        {
+          "component": "Agent Reboot",
+          "issue": "Cloud Agents initiated the reboot countdown before reaching the configured deferment limit. We fixed this issue by increasing the waiting period for initiating a new deferment instance."
+        },
+        {
+          "component": "False Positives",
+          "issue": "We fixed the false positives for the Web Logic QIDs: QID-87467 and QID-87524, which were reported even after installing the latest patches."
+        },
+        {
+          "component": "Patch Installation",
+          "issue": "We fixed an issue where the patch installation through pre-actions was failing for the MSI-based applications by adding the installation execution command for MSI-based applications."
+        },
+        {
+          "component": "Asset Startup",
+          "issue": "We fixed an issue where Active Directory assets displayed the Blue Screen of Death (BSOD) error while restoring from the backup."
+        },
+        {
+          "component": "Network Communication",
+          "issue": "We fixed an issues where Cloud Agent was not responding on Windows Server 2025 assets in AWS EC2 instances by adding checks for preventing CAPS binary execution."
+        },
+        {
+          "component": "Agent Reboot",
+          "issue": "We fixed an issue where scheduled Cloud Agent reboot jobs were delayed for the Custom Assessment and Remediation (CAR) application."
+        },
+        {
+          "component": "Traces Removal",
+          "issue": "We fixed an issue where Cloud Agent could not remove the traces for Patch Management, even after it was disabled for the agent."
+        },
+        {
+          "component": "AgentId Service",
+          "issue": "Some users reported an issue that the AgentId service is not supported for Windows 2008 R2 assets. As this is the expected behavior, we have updated our documentation on supported platforms for Cloud Agent."
+        },
+        {
+          "component": "False Positives",
+          "issue": "We fixed an issue where false positives were reported QID 92215 as the patch versions were not correctly reflected for the installed patches."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-31T18:54:01.778989+00:00",
+      "status": "success"
+    }
   },
   "f1d21abe92b7": {
     "key": "f1d21abe92b7",
@@ -18971,7 +19124,31 @@
       "EDR"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 30, 2025",
+      "features": [
+        {
+          "heading": "New Permissions for Asset Configuration",
+          "summary": "We have introduced new permissions that provide greater control over quarantining assets at both the global and job levels."
+        },
+        {
+          "heading": "Added a New Event Action to Modify Registry Events",
+          "summary": "We have added a new event action,Modified, to theActiontoken drop-down menu under theHunting > Eventstab. This enhancement enables you to filter and investigate modified registry events more effectively."
+        },
+        {
+          "heading": "Content Enhancement",
+          "summary": "We have updated theLinux Hardware Requirementssection to provide clearer guidance on the minimum hardware specifications for Linux EDR/EPP. These standardized guidelines apply to all supported Linux agent versions and not tied to any specific…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-31T18:54:01.778989+00:00",
+      "status": "success"
+    }
   },
   "005e8bf6c777": {
     "key": "005e8bf6c777",
