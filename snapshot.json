@@ -18702,7 +18702,13 @@
       "ETM"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-31T13:52:50.302880+00:00",
+      "status": "failed",
+      "error": "All 3 fetch attempts failed for https://docs.qualys.com/en/etm/release-notes/etm/release_1_3_2_api.htm "
+    }
   },
   "b88b5148ee9a": {
     "key": "b88b5148ee9a",
@@ -18713,7 +18719,68 @@
       "VM"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 7, 2025",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "With this release, we have enabled the option to purge Software Composition Analysis (SwCA) vulnerabilities identified in the Asset Search report, either for specific agent hosts or all agent hosts containing SwCA vulnerabilities for a specific…"
+        },
+        {
+          "heading": "Qualys Policy Compliance (PC)",
+          "summary": "For the list of features and improvements we have made in Policy Compliance/Policy Audit, refer to the Policy AuditUI Release Notes for Release 1.1.0."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Scan Schedule",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - API General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Reports General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan Schedule",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Map Scan",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - New UI",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Users API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan Schedule",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan Schedule",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - API General",
+          "issue": "Vulnerability Management"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-31T13:52:50.302880+00:00",
+      "status": "success"
+    }
   },
   "909b07e98820": {
     "key": "909b07e98820",
@@ -18725,7 +18792,48 @@
       "VM"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 7, 2025",
+      "features": [
+        {
+          "heading": "VM, PC API Versioning",
+          "summary": "We have scheduled API versioning for End-of-Support (EOS) and End-of-Life (EOL). We recommend migrating to the latest versions of these APIs to ensure continued compatibility, support, and access to the latest features and security enhancements."
+        },
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "With this release, we have added two new tags for Azure and EC2 scans and one new tag to identify recently updated scheduled scans in the API response of the scheduled scan list API."
+        },
+        {
+          "heading": "Qualys Policy Compliance (PC)",
+          "summary": "For the list of features and improvements made in Policy Compliance/Policy Audit, refer to the Policy AuditAPI Release Notes for Release 1.1.0."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - API General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - API General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Users API",
+          "issue": "Vulnerability Management"
+        }
+      ],
+      "cves": [
+        "CVE-2024-47072",
+        "CVE-2025-24970",
+        "CVE-2025-31650"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-31T13:52:50.302880+00:00",
+      "status": "success"
+    }
   },
   "300465a48e98": {
     "key": "300465a48e98",
@@ -18735,7 +18843,23 @@
       "SA"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 07, 2025 (Updated July 28, 2025)",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "This release brings new features and updates to desktop platforms"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-31T13:52:50.302880+00:00",
+      "status": "success"
+    }
   },
   "1e1621993acc": {
     "key": "1e1621993acc",
@@ -18746,7 +18870,52 @@
       "PC"
     ],
     "month_label": "July 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "July 7, 2025 (Updated on July 16, 2025)",
+      "features": [
+        {
+          "heading": "Activate or Deactivate User Defined Controls",
+          "summary": "With this release, you can activate or deactivate user defined controls for Windows and Linux technologies."
+        },
+        {
+          "heading": "View Audit Command",
+          "summary": "With this release, you can view the Audit Command for a particular type of Technology used in a Control. This provides visibility into how the actual value for a Control is derived."
+        },
+        {
+          "heading": "Updated Authentication Vault Name for BeyondTrust PBPS",
+          "summary": "In this release, we updated the authentication vault name forBeyondTrust PowerBroker Password Safe (PBPS)toBeyondTrustto reflect the current BeyondTrust branding. You can view the revised name in the following places"
+        },
+        {
+          "heading": "End of Support for the Hash Type MD5",
+          "summary": "With this release, support for the Message Digest Algorithm 5 (MD5) hash type has been discontinued forFile Integrity CheckandData Integretity Check. The SHA-1 algorithm is now set as the default."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PA / PC - Reports",
+          "issue": "Policy Audit / Policy Compliance"
+        },
+        {
+          "component": "PA / PC - Report Template",
+          "issue": "Policy Audit / Policy Compliance"
+        },
+        {
+          "component": "PA / PC - Policy Editor",
+          "issue": "Policy Audit / Policy Compliance"
+        },
+        {
+          "component": "PA / PC - Authentication Records",
+          "issue": "Policy Audit / Policy Compliance"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-10-31T13:52:50.302880+00:00",
+      "status": "success"
+    }
   },
   "7177c5df4171": {
     "key": "7177c5df4171",
