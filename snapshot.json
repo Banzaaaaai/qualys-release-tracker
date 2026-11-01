@@ -18704,8 +18704,8 @@
     "month_label": "July 2025",
     "detected_at": "2026-05-18T17:20:41+00:00",
     "enrichment": {
-      "attempts": 1,
-      "last_attempt_at": "2026-10-31T13:52:50.302880+00:00",
+      "attempts": 2,
+      "last_attempt_at": "2026-11-01T14:30:07.572595+00:00",
       "status": "failed",
       "error": "All 3 fetch attempts failed for https://docs.qualys.com/en/etm/release-notes/etm/release_1_3_2_api.htm "
     }
@@ -19159,7 +19159,76 @@
       "ISL"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 26, 2025",
+      "features": [
+        {
+          "heading": "Onboard to File Integrity Monitoring in a Few Steps",
+          "summary": "FIM now provides an easy, end-to-end onboarding experience designed to help new customers quickly set up and start using File Integrity Monitoring with minimal effort. The process guides through each step, from choosing a framework to setting up…"
+        },
+        {
+          "heading": "Visibility into FIMC Failures for Linux Assets",
+          "summary": "When the Qualys agent returns aFIMC Stoppedfailure status to FIM, FIM performs prerequisite checks to identify the reason for theFIMC Stoppedfailure. If any prerequisite check fails, the agent cannot monitor files or generate events."
+        },
+        {
+          "heading": "Save Search Query Enhancements",
+          "summary": "You can now save search queries with a customized name, save search queries as favorites, and share the saved queries with other users."
+        },
+        {
+          "heading": "Qualys Data Retention Policy now Applicable to FIM Incidents",
+          "summary": "To comply with the Qualys data retention policy, the incidents created within the last 15 months from thecurrent dateare maintained in the system. If you attempt to search for incidents created more than 15 months ago, no incidents are displayed as…"
+        },
+        {
+          "heading": "File Naming Convention for Events",
+          "summary": "We have updated the file naming convention forScan Basedevents to identify baseline events received from assets. From now on, when a new baseline event is received, the file name of the event is appended with the wordBaseline."
+        },
+        {
+          "heading": "Enhancements in Inclusion and Exclusion Filters",
+          "summary": "We have improved the UI for inclusion and exclusion filters to display the logical operators (ANDandOR). This helps you understand how the filters work together."
+        },
+        {
+          "heading": "Support for Agentless FIM on Additional Network Devices",
+          "summary": "We have extended support for Agentless FIM on network devices with additional technologies. This update enables you to monitor changes on these devices without the need to install an agent."
+        },
+        {
+          "heading": "Updated Widget Names for Asset List Filter Cards",
+          "summary": "The widget names on the FIM dashboard for asset list filter cards are updated as follows"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "FIM - AIX Assets",
+          "issue": "We fixed an issue where AIX assets were incorrectly listed underBad Agent Health Statuson theReal Time Assetstab."
+        },
+        {
+          "component": "FIM - Alerting",
+          "issue": "We fixed an issue where the email alert displayed the incorrect or a different reviewer's name, even when a different user reviewed and closed the incident."
+        },
+        {
+          "component": "FIM - Real Time Assets",
+          "issue": "We fixed the issue where asset tags were not visible in theTagscolumn of theReal Time Assetstab."
+        },
+        {
+          "component": "FIM - Scan-based Events",
+          "issue": "We fixed the issue where scan-based events were incorrectly categorized under source type agent when searched using theeventSourcetoken on theAll EventsandEvent Reviewtabs."
+        },
+        {
+          "component": "FIM - Report Schedule",
+          "issue": "We fixed the issue where scheduled reports unexpectedly reset toRun Now."
+        },
+        {
+          "component": "FIM - Alerting",
+          "issue": "We fixed the issue that caused delays in receiving email notifications for alerts."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-01T14:30:07.572595+00:00",
+      "status": "success"
+    }
   },
   "80dc1fca9e51": {
     "key": "80dc1fca9e51",
@@ -19170,7 +19239,27 @@
       "FIM"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 26, 2025",
+      "features": [
+        {
+          "heading": "Qualys Data Retention Policy in FIM APIs",
+          "summary": "To comply with the Qualys data retention policy, the FIM Incident APIs response now only includes incidents created within the last 15 months from the current date. An error response is received if you request data older than 15 months."
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following reported and notable customer API issue is fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-01T14:30:07.572595+00:00",
+      "status": "success"
+    }
   },
   "a9593723c471": {
     "key": "a9593723c471",
@@ -19180,7 +19269,43 @@
       "QF"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 26, 2025",
+      "features": [
+        {
+          "heading": "Introduced Azure CLI Node",
+          "summary": "We have introduced the Azure CLI Node, a powerful node that allows users to execute Azure CLI commands directly within your workflow or automation. This feature overcomes previous limitations in Azure Resource Node and Azure Action Node by allowing…"
+        },
+        {
+          "heading": "Introduced Wait-for Option in AWS Action Node",
+          "summary": "We introduced wait-for support in the AWS Action Node, which makes automation workflows more reliable. This enhancement ensures that each AWS action is completed successfully before the next step begins, reducing the chance of errors."
+        },
+        {
+          "heading": "GovCloud Support for AWS and Azure Resource Node",
+          "summary": "We have extended our support for GovCloud in the AWS and Azure Resource Node, enabling secure and compliant automation for U.S. government agencies and public sector organizations."
+        },
+        {
+          "heading": "New Application Dashboard",
+          "summary": "To enhance user experience and ensure a consistent User Interface across all products, we have integrated the Unified Dashboard in QFlow. This enhancement allows you to seamlessly view and manage data through a single, unified dashboard by adding…"
+        },
+        {
+          "heading": "Support for Authentication ID Client Management from UI",
+          "summary": "With this release, we have extended our support for OpenID Connect Authentication Client Management capabilities from UI. This update allows for secure authentication and authorization of API access directly from the user interface. Our API…"
+        },
+        {
+          "heading": "Introduced Public APIs for Workflows, Details and Executions",
+          "summary": "With this release, we have introduced public APIs for workflow management, workflow execution, and workflow execution steps."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-01T14:30:07.572595+00:00",
+      "status": "success"
+    }
   },
   "a3114b4fac5e": {
     "key": "a3114b4fac5e",
@@ -19191,7 +19316,31 @@
       "QF"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 26, 2025",
+      "features": [
+        {
+          "heading": "IntroducedWorkflow Management APIs",
+          "summary": "The Workflow Management APIs let you work with automated workflows in the system. They help you find existing workflows, get detailed information about each one, and start workflow runs. These APIs are important for organizing automated tasks and…"
+        },
+        {
+          "heading": "IntroducedWorkflowExecutionAPIs",
+          "summary": "The Workflow Execution APIs allow you to monitor and manage the execution history of automated workflows. These APIs provide insights into when workflows were run, their execution status, and detailed metadata for each execution instance. They are…"
+        },
+        {
+          "heading": "IntroducedWorkflowExecution StepsAPIs",
+          "summary": "The Execution Steps APIs provide visibility of each step in a workflow process. These APIs allow users to monitor, inspect, and troubleshoot individual steps, providing better visibility and control over automated workflows."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-01T14:30:07.572595+00:00",
+      "status": "success"
+    }
   },
   "a5ef291ee57d": {
     "key": "a5ef291ee57d",
