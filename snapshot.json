@@ -19350,7 +19350,39 @@
       "CAR"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 25, 2025 (Updated on July 11, 2025)",
+      "features": [
+        {
+          "heading": "Enhancements in Tag-based User Scope",
+          "summary": "TheTag-based User Scopefeature is enhanced to include additional CAR entities beyond those introduced in theCAR 2.5.1 Release."
+        },
+        {
+          "heading": "Visibility into Blocked Command Modifications",
+          "summary": "You can now view the names of the users who have created and updated each blocked command. We have introduced the following new columns in theBlocked Commandstab"
+        },
+        {
+          "heading": "Modify Script Parameters Without Editing the Script",
+          "summary": "Running scripts with different script parameter values is now possible without modifying the script itself. We have introduced theScript Parameterssection, which enables you to modify script parameters in the parameterized script while configuring…"
+        },
+        {
+          "heading": "Enhanced Custom QID Detection based on Script Output",
+          "summary": "For detection logic based on script output, you can now use multiple cardinalities to configure detection conditions asDetectedorNot-Detectedas per theEvaluation Criteria. If both conditions are not satisfied, no QIDs are detected."
+        },
+        {
+          "heading": "CAR Features Based on License Types",
+          "summary": "From this release, CAR features are available based on different Qualys modules/product licenses. The table below provides which CAR features you can access with each type of license."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-01T19:15:46.846926+00:00",
+      "status": "success"
+    }
   },
   "01b24bceb9a6": {
     "key": "01b24bceb9a6",
@@ -19361,7 +19393,33 @@
       "CAR"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 25, 2025",
+      "features": [
+        {
+          "heading": "CAR API Versioning Support",
+          "summary": "We have scheduled a few CAR version 1 APIs for End-of-Support (EOS) and End-of-Life (EOL) from this release. We recommend migrating to the latest versions of these APIs to ensure continued compatibility, support, and access to the latest features…"
+        },
+        {
+          "heading": "Enhancement in Blocked Command APIs",
+          "summary": "You can now update or delete blocked commands by sending their unique command ID(s) in the API request. This unique identifier is introduced as a new input parameter (commandId) in the following APIs"
+        },
+        {
+          "heading": "Support for Multiple Detection Conditions in Custom QID Scripts",
+          "summary": "We have extended the support for multiple detection conditions to the Scripts APIs. You can now"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2023-3452"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-01T19:15:46.846926+00:00",
+      "status": "success"
+    }
   },
   "cb457c0770a1": {
     "key": "cb457c0770a1",
@@ -19371,7 +19429,27 @@
       "VMDR OT"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 25, 2025",
+      "features": [
+        {
+          "heading": "Support for OAuth from Qualys Enterprise TruRisk™ Platform",
+          "summary": "We have now extended our support for OpenID Connect Authentication Client Management capabilities from the VMDR OT user interface. This update allows for secure authentication and authorization of API access directly from the user interface. With…"
+        },
+        {
+          "heading": "Visibility into File Import Failures",
+          "summary": "You can now view specific failure reasons when the import of a project file fails. The failure reason is displayed when you hover over the caution icon () next to theFailedstatus."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-01T19:15:46.846926+00:00",
+      "status": "success"
+    }
   },
   "684a4f234a7d": {
     "key": "684a4f234a7d",
@@ -19382,7 +19460,27 @@
       "VMDR OT"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 25, 2025",
+      "features": [
+        {
+          "heading": "VMDR OT API Versioning",
+          "summary": "We have updated the versioning for our VMDR OT APIs fromv1to version1.0. As a result, allV1APIs are scheduled for the End-of-Support (EOS) and End-of-Life (EOL) from this release. We recommend using the new1.0endpoints to ensure continued…"
+        },
+        {
+          "heading": "JWT Token Generation using Client ID and Secret Key",
+          "summary": "You can generate the JWT token by providing the client ID and client secret key in the following API request headers for either a user level or subscription level client."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-01T19:15:46.846926+00:00",
+      "status": "success"
+    }
   },
   "0a59d766f4a8": {
     "key": "0a59d766f4a8",
@@ -19394,7 +19492,64 @@
       "PM"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 24, 2025",
+      "features": [
+        {
+          "heading": "Ability to Save Vulnerabilities in a View",
+          "summary": "You can now create a view and save the required vulnerabilities from theEliminationstab to the view. You can select the priority of the view and assign users who can access the View. The created views appear on the newViewstab. You can also search…"
+        },
+        {
+          "heading": "Support Rollback for Partial Mitigation",
+          "summary": "We now support rollback action for QIDs that are partially mitigated. You can search for the partially mitigated vulnerabilities using the tokenvulnerabilities. mitigated.state:Partialand create rollback mitigation job. This feature allows you to…"
+        },
+        {
+          "heading": "New Permissions to Restrict the Pre and Post Actions in a Job",
+          "summary": "We have introduced a new permission,AllowPMPre/PostActionAccess,assigned to a new role,PatchActionManager,that is required to add or modify pre and post actions to all deployment jobs. Earlier, all users could add these actions to the deployment…"
+        },
+        {
+          "heading": "Download Vulnerabilities Report from Eliminations Tab",
+          "summary": "You can now download the vulnerabilities report required for the patch installations from theEliminationstab through theMicrosoftEndpointConfigurationManagement(MECM)plugin. Earlier, you could download this report only through…"
+        },
+        {
+          "heading": "Ability to Add All Tags in the Subscription",
+          "summary": "You can now interact with all the tags that exist in your subscription. This feature allows you to add all tags in your subscription to the Dashboard, configuration profiles, licences, and patch jobs. Earlier, you could add only thosetags that were…"
+        },
+        {
+          "heading": "View Details of Special Error Code 15 for the Failed Job",
+          "summary": "You can now view the detailed information for the special error code (recognized by error code 15) that occurs when the patch installation job fails, although the reboot was completed. The failure details describe the reason, in addition to the…"
+        },
+        {
+          "heading": "New Permissions to Restrict Global-Level Asset Exceptions",
+          "summary": "We have introduced new permissions that restricts the configuration of asset isolation exceptions at the global level. With these permissions, users cannot add exceptions through theConfiguration >AssetIsolationExceptionstab at global level, but can…"
+        },
+        {
+          "heading": "New QQL Tokens",
+          "summary": "Refer to the following table to learn more about the new and updated tokens in this release."
+        },
+        {
+          "heading": "API Release Updates",
+          "summary": "For more details on the API updates for this release, seePatch Management API Release 3.7."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "PM - Job Windows",
+          "issue": "We fixed an issue where the script with a digital signature configured as a pre-action in a deployment job failed. The issue occurred as the blank line at the end of the script got deleted.The issue is now fixed, retaining the blank line in the script and ensuring its successful execution."
+        },
+        {
+          "component": "PM - Linux_Content",
+          "issue": "We fixed an issue where theAssets>Linuxtab displayed no missing patches for the Amazon Linux 2023 assets, even though the assets had missing patches.Now, theAssets>Linuxtab displays the correct number of missing patches for the Amazon Linux 2023 assets."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-01T19:15:46.846926+00:00",
+      "status": "success"
+    }
   },
   "36206aeec558": {
     "key": "36206aeec558",
