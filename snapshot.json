@@ -19661,7 +19661,25 @@
       "ETM"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 23, 2025",
+      "features": [
+        {
+          "heading": "Updated Fields in Response of Download Report Using Resource Name API",
+          "summary": "With this update, we have improved coverage in reporting columns. The output response of theDownload report using resource name APInow, has the title, description, impact,  solution and detectionResultalong with other existing details."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2024-49896"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-02T22:56:03.505394+00:00",
+      "status": "success"
+    }
   },
   "ba9511fd0a07": {
     "key": "ba9511fd0a07",
@@ -19672,7 +19690,39 @@
       "CRI"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 16, 2025",
+      "features": [
+        {
+          "heading": "Introducing Trending Toggle in Widget",
+          "summary": "The Trending toggle allows you to monitor and visualize certificate-related metrics over time. This enhancement allows tracking of key indicators such as certificates going to expire, expired certificates, and the use of weak cryptographic…"
+        },
+        {
+          "heading": "Introduced CC Field Option in Report Email Notifications",
+          "summary": "We have introduced aCCfield option for email notifications in the report. This new feature allows you to send a copy of the email to additional recipients. You can use theEmail Tofield for primary stakeholders, while the other user account email can…"
+        },
+        {
+          "heading": "Introduced Approval of Certificate Authority from Monitored Tab",
+          "summary": "We have added a newApproveoption in theQuick Actionmenu for the certificates in theMonitoredtab. This enhancement simplifies the approval process, allowing you to approve certificates directly from this tab rather than navigating to the…"
+        },
+        {
+          "heading": "Support for Authentication ID Client Management from UI",
+          "summary": "With this release, we have extended our support for OpenID Connect Authentication Client Management capabilities from UI. This update allows for secure authentication and authorization of API access directly from the user interface. Our API…"
+        },
+        {
+          "heading": "API Features and Enhancements",
+          "summary": "We have introduced new version of List CertView Certificates v2 API to include Key Algorithm Information used such as RSA or ECC, alongside the key size such as 256, 384, 512, 768. This addition allows customers to determine the security posture of…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-02T22:56:03.505394+00:00",
+      "status": "success"
+    }
   },
   "36035ca6322d": {
     "key": "36035ca6322d",
@@ -19684,7 +19734,23 @@
       "CRI"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 16, 2025",
+      "features": [
+        {
+          "heading": "Updated List CertView Certificates V2 API: Enhanced the API to Include Key Algorithm Information",
+          "summary": "New or Updated API"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-02T22:56:03.505394+00:00",
+      "status": "success"
+    }
   },
   "0ae7c585f1af": {
     "key": "0ae7c585f1af",
@@ -19694,7 +19760,27 @@
       "Conn"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 16, 2025",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "CV-UI",
+          "issue": "We fixed an issue where theCPS scans executed via the connector were showing a different username than the scan's actual user."
+        },
+        {
+          "component": "CV-EC2 Connector",
+          "issue": "We have fixed an issue where connectors linked to suspended AWS accounts prior to the TotalCloud 2.16.0 deployment were not updating their status toSUSPENDED."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-02T22:56:03.505394+00:00",
+      "status": "success"
+    }
   },
   "f9618eb99856": {
     "key": "f9618eb99856",
@@ -19704,7 +19790,23 @@
       "Conn"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 16, 2025",
+      "features": [
+        {
+          "heading": "Assign Tags",
+          "summary": "This API can be used to assign or override tags on cloud connectors across AWS, Azure, and GCP environments. It enables consistent tagging and classification of connectors for reporting, filtering, and automation purposes."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-02T22:56:03.505394+00:00",
+      "status": "success"
+    }
   },
   "0769dc7e68a8": {
     "key": "0769dc7e68a8",
