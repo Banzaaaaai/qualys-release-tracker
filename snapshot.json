@@ -18704,8 +18704,8 @@
     "month_label": "July 2025",
     "detected_at": "2026-05-18T17:20:41+00:00",
     "enrichment": {
-      "attempts": 2,
-      "last_attempt_at": "2026-11-01T14:30:07.572595+00:00",
+      "attempts": 3,
+      "last_attempt_at": "2026-11-02T17:25:53.642279+00:00",
       "status": "failed",
       "error": "All 3 fetch attempts failed for https://docs.qualys.com/en/etm/release-notes/etm/release_1_3_2_api.htm "
     }
@@ -19562,7 +19562,23 @@
       "PM"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 24, 2025",
+      "features": [
+        {
+          "heading": "New API: Get List of Whitelisted Domains for Windows and Mac",
+          "summary": "We have introduced a new Get List of Whitelisted Domains API that provides the list of unique domains for Windows and Mac platforms that you need to whitelist to download the patches from a trusted source securely."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-02T17:25:53.642279+00:00",
+      "status": "success"
+    }
   },
   "635f850ca6e2": {
     "key": "635f850ca6e2",
@@ -19572,7 +19588,23 @@
       "TA"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 10, 2025",
+      "features": [
+        {
+          "heading": "Discover AI Services in Cloud Environment",
+          "summary": "We are introducing support for AI services inventory in the TotalAI user interface. With this update, you can discover AI services running in your cloud account, monitor them, and launch scans for detected models."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-02T17:25:53.642279+00:00",
+      "status": "success"
+    }
   },
   "4cff14a8d8db": {
     "key": "4cff14a8d8db",
@@ -19582,7 +19614,43 @@
       "ETM"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 23, 2025",
+      "features": [
+        {
+          "heading": "Enhanced User Experience for Vulnerability and Misconfigurations Tabs",
+          "summary": "We have refined the data presentation in the columns to deliver more compact and meaningful information. The following sections outline the details in the Findings sub tabs."
+        },
+        {
+          "heading": "Enhanced Vulnerabilities Tab for TruRisk™ Score",
+          "summary": "We have added a new CVE ID / QID toggle to theVulnerabilitiestab, giving you a more transparent and flexible way to analyze vulnerability data in TruRisk™ Score. You can switch the vulnerability list between CVE identifiers and Qualys QIDs. When a…"
+        },
+        {
+          "heading": "Introduced CVE Details Tab in Findings",
+          "summary": "We have improved our user interface to enhance the user experience. On the QDS Details page, you can now view the total count of CVEs. By clicking CVE, you are navigated to the QDS details, where you can find the corresponding CVE ID list. You can…"
+        },
+        {
+          "heading": "Improved Projected Risk Score Calculation in Risk Workbench Tab",
+          "summary": "To improve the user experience in the Risk Workbench, we have implemented enhancements related to how the Potential TruRisk Reduction Score is calculated for on-demand plans. Previously, users encountered longer loading times without much…"
+        },
+        {
+          "heading": "API Features and Enhancements",
+          "summary": "With this update, we have improved coverage in reporting columns. The output response of the Download report using resource name API now, has the title, description, impact,  solution and detectionResultalong with other existing details. For…"
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following reported issue is fixed in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-02T17:25:53.642279+00:00",
+      "status": "success"
+    }
   },
   "dde1a271a362": {
     "key": "dde1a271a362",
@@ -35215,6 +35283,48 @@
     "enrichment": {
       "attempts": 1,
       "last_attempt_at": "2026-10-30T14:30:55.653716+00:00",
+      "status": "success"
+    }
+  },
+  "2e875846e672": {
+    "key": "2e875846e672",
+    "url": "https://docs.qualys.com/en/mroc/release-notes/managed_risk_operations_center/release_2_4.htm",
+    "title": "Managed Risk Operations Center 2.4",
+    "tags": [
+      "mROC"
+    ],
+    "month_label": "November 2026",
+    "detected_at": "2026-11-02T17:25:53+00:00",
+    "details": {
+      "release_date": "October 30, 2026mROC 2.4.0 introduces role-based access control. Roles define what each team member can view and manage. User groups define which customers they can access. Risk Overview now also shows license status and consumption for each customer, and highlights customers exposed to Node2Shell and PHP2Shell vulnerabilities.",
+      "features": [
+        {
+          "heading": "Manage team access with role-based permissions",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Set up customer access for your whole team in one step",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "View license status to plan renewals and purchases",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Track Node2Shell and PHP2Shell Exposure Across Customers",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Partner tab removed from the mROC console",
+          "summary": "What Changed For You"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-02T17:25:53.642279+00:00",
       "status": "success"
     }
   }
