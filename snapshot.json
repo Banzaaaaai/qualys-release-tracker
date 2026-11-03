@@ -19817,7 +19817,36 @@
       "GAV"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 16, 2025",
+      "features": [
+        {
+          "heading": "External Attack Surface Management (EASM) Summary Report Enhancements",
+          "summary": "The External Attack Surface Management Summary report is enhanced to provide an organized and insightful overview of your internet-facing assets. The enhancements include"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "CSAM+GAV - Asset Search",
+          "issue": "We fixed the issue where assets could not be searched using the primary IP address on theInventory > Assetstab."
+        },
+        {
+          "component": "CSAM+GAV - QQL Token",
+          "issue": "We fixed the issue where the suggestion for thecustomAttributes:(connectorId:)token was not displayed."
+        },
+        {
+          "component": "CSAM+GAV - Asset Inventory",
+          "issue": "We fixed the issue where the VM-scanned assets did not show up on theInventory > Assetstab when searched using IP addresses."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-03T15:28:12.380896+00:00",
+      "status": "success"
+    }
   },
   "31a3333c3333": {
     "key": "31a3333c3333",
@@ -35427,6 +35456,169 @@
     "enrichment": {
       "attempts": 1,
       "last_attempt_at": "2026-11-02T17:25:53.642279+00:00",
+      "status": "success"
+    }
+  },
+  "466c41046ed9": {
+    "key": "466c41046ed9",
+    "url": "https://docs.qualys.com/en/tas/release-notes/total_app_sec/tas_2_12_was_1_32.htm",
+    "title": "TotalAppSec 2.12 | Web Application Scanning 1.32",
+    "tags": [
+      "TAS",
+      "WAS"
+    ],
+    "month_label": "November 2026",
+    "detected_at": "2026-11-03T15:28:12+00:00",
+    "details": {
+      "release_date": "november 03, 2026This release widens how you find what to scan. Your VMDR scan detections become a discovery source for web applications, deployed MuleSoft APIs are discovered with their live runtime endpoint, and the MuleSoft connector can now be pointed at the Government Cloud and EU control planes or at your own MuleSoft URL. It also lets you choose which scan outcomes send you a completion email, set the page you land on after signing in, maps Burp Suite Informational findings to Information Gathered, rebrands the free web application scanning report, and moves scorecard CSV, CSV_V2, and XML reports to the new reporting flow.",
+      "features": [
+        {
+          "heading": "Discover Web Applications from VMDR Detections",
+          "summary": "Applies to:TotalAppSec"
+        },
+        {
+          "heading": "Select the MuleSoft Control Plane for Your Connector",
+          "summary": "Applies to:TotalAppSec"
+        },
+        {
+          "heading": "MuleSoft API Discovery Now Includes Deployed Runtime Endpoints",
+          "summary": "Applies to:TotalAppSec"
+        },
+        {
+          "heading": "Burp Suite Informational Findings Mapped to Information Gathered",
+          "summary": "Applies to:TotalAppSec and Web Application Scanning"
+        },
+        {
+          "heading": "Landing Page Preference for Default Module",
+          "summary": "Applies to:TotalAppSec and Web Application Scanning"
+        },
+        {
+          "heading": "Choose Which Scan Outcomes Send a Completion Email",
+          "summary": "Applies to:TotalAppSec and Web Application Scanning"
+        },
+        {
+          "heading": "Fixes",
+          "summary": "The following reported issues are fixed in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-03T15:28:12.380896+00:00",
+      "status": "success"
+    }
+  },
+  "ec437067636b": {
+    "key": "ec437067636b",
+    "url": "https://docs.qualys.com/en/tas/release-notes/total_app_sec/tas_2_12_was_1_32_api.htm",
+    "title": "TotalAppSec 2.12 | Web Application Scanning 1.32 API",
+    "tags": [
+      "API",
+      "TAS",
+      "WAS"
+    ],
+    "month_label": "November 2026",
+    "detected_at": "2026-11-03T15:28:12+00:00",
+    "details": {
+      "release_date": "november 03, 2026This release adds API endpoints for launching, checking, and canceling web application retests, and for retrieving vault connection usage. It also moves scorecard CSV, CSV_V2, and XML reports to the new reporting framework, and adds scan settings fields that control which scan outcomes send a completion email.",
+      "features": [
+        {
+          "heading": "New APIs: Retest Web Applications",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "New API: Vault Connection Usage",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Updated APIs: Scorecard Reports",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Updated APIs: Scan Completion Email Preferences",
+          "summary": "What Changed For You"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-03T15:28:12.380896+00:00",
+      "status": "success"
+    }
+  },
+  "094161df6095": {
+    "key": "094161df6095",
+    "url": "https://docs.qualys.com/en/fim/release-notes/file_integrity_monitoring/release_4_9_5.htm",
+    "title": "File Integrity Monitoring 4.9.5",
+    "tags": [
+      "FIM"
+    ],
+    "month_label": "November 2026",
+    "detected_at": "2026-11-03T15:28:12+00:00",
+    "details": {
+      "release_date": "November 02, 2026This release adds hourly scheduling for correlation rules, daily updates to failure reasons for FIMC Stopped assets, start and end dates to scheduled event reports, new container search tokens, and a correlation rule fix.",
+      "features": [
+        {
+          "heading": "Run Correlation Rules Every Hour to Detect Incidents Sooner",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Troubleshoot Stopped FIM Agents Sooner with Daily Failure Reasons",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Verify the Reporting Period in Scheduled Event Reports",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "New Tokens in FIM",
+          "summary": "container.cluster.name"
+        },
+        {
+          "heading": "Fixes",
+          "summary": "The following issues are fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-03T15:28:12.380896+00:00",
+      "status": "success"
+    }
+  },
+  "4b22fd9a5609": {
+    "key": "4b22fd9a5609",
+    "url": "https://docs.qualys.com/en/saasdr/release-notes/saasdr/release_1_17_0.htm",
+    "title": "SaaS Detection and Response 1.17.0",
+    "tags": [
+      "SaaS DR"
+    ],
+    "month_label": "November 2026",
+    "detected_at": "2026-11-03T15:28:12+00:00",
+    "details": {
+      "release_date": "NOVEMBER 02, 2026This release adds an OpenAI connector to SaaSDR, letting you monitor users, groups, pending invitations, and audit log events from your OpenAI organization. It also introduces an enhanced user interface across all SaaSDR pages.",
+      "features": [
+        {
+          "heading": "Enhanced User Interface for SaaSDR",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "OpenAI Connector Support",
+          "summary": "What's New for You"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-03T15:28:12.380896+00:00",
       "status": "success"
     }
   }
