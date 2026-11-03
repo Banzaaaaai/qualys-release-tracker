@@ -19858,7 +19858,27 @@
       "GAV"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 16, 2025 (Updated on June 19, 2025)",
+      "features": [
+        {
+          "heading": "Enhanced Assets Host Data API",
+          "summary": "TheAsset Host Data APIsare enhanced to fetch additional metadata related to business applications. The API response now includes the creation and last updated timestamps of the business application associated with each asset."
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following reported and notable customer API issue is fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-03T20:42:02.553138+00:00",
+      "status": "success"
+    }
   },
   "a34dcef8a00d": {
     "key": "a34dcef8a00d",
@@ -19868,7 +19888,100 @@
       "TC"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 11, 2025",
+      "features": [
+        {
+          "heading": "ServiceNow Integration with TotalCloud CSPM for ITSM",
+          "summary": "With this release, we have introduced an integration between TotalCloud (CSPM application) and ServiceNow ITSM. This integration enhances cloud security operations by seamlessly managing cloud configuration issues through ITSM workflows."
+        },
+        {
+          "heading": "Introduced an Attack Path Icon to Supported Insights",
+          "summary": "With previous releases, we had delivered the Attack Path visualization, which provided you with a clear view of the attack trajectory, its steps and how you can remediate it."
+        },
+        {
+          "heading": "Introduced Attack Path Insights for Azure and AWS Cloud",
+          "summary": "With this release, we are supporting Attack Path visualization for the following Azure and AWS insights. Now, you can have a comprehensive view of your cloud account's attack surface."
+        },
+        {
+          "heading": "Microsoft Azure",
+          "summary": "The following sections describe the enhancements made to the TotalCloud environment in this release for Azure."
+        },
+        {
+          "heading": "Extended Inventory Support to Azure AI Services",
+          "summary": "TotalCloud is now adding a new resource to its Azure inventory base. TheAzure AI Servicesprovide a detailed view of the AI services running in your Azure environment."
+        },
+        {
+          "heading": "Enhanced Searchability and Accuracy in Policy Selection of CSPM Reports",
+          "summary": "With this release, we have enhanced the count of policies retrieved when selecting policies for a CSPM report. Previously, TotalCloud had a hardcoded pagination limit which restricted policy retrieval to the first 100 entries, resulting in missing…"
+        },
+        {
+          "heading": "Control Updates",
+          "summary": "New runtime controls introduced to the cloud posture analysis."
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "The following section describes the new tokens introduced as part of TotalCloud 2.17.0"
+        },
+        {
+          "heading": "Azure AI Services Token",
+          "summary": "This new Azure token is introduced with TotalCloud 2.17.0."
+        },
+        {
+          "heading": "TotalCloud Insights Token",
+          "summary": "This new Insight token is introduced with TotalCloud 2.17.0."
+        },
+        {
+          "heading": "Cloud Detection and Response (CDR)",
+          "summary": "The following sections describe the enhancements made to the CDR environment in the upcoming CDR release."
+        },
+        {
+          "heading": "IPv6 Support Added for AWS",
+          "summary": "With this release, we have added IPv6 addressing support for AWS to the previously supported IPv4 addressing. This enhancement allows you to view findings for AWS and Azure resources with IPv6 addresses in theInvestigatetab."
+        },
+        {
+          "heading": "Integrated Container Security Runtime Process Events",
+          "summary": "With this release, we have integrated the Container Runtime Security (CRS) Process-Events logs with the CDRInvestigatemenu. The CRS process event logs are analysed based on a predefined set of rules. When a CRS process event meets the criteria, a…"
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "Starting in July, these new Tokens will be available to help search for specific findings in Investigate."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "CV-False Negative",
+          "issue": "We updated the detection logic of the following controls to resolve false negative cases - CID 50188 and 50189"
+        },
+        {
+          "component": "CV-ControlEnhancement",
+          "issue": "We have introduced a control (CID 560) in TotalCloud that checks whether the encryption for the SNS topic is activated."
+        },
+        {
+          "component": "CV-False Positive",
+          "issue": "We updated the detection logic of the following controls to resolve false positive cases - CID 122, 161, 170, and 50169"
+        },
+        {
+          "component": "CV-ControlEnhancement",
+          "issue": "We have fixed an issue where Azure controls for log analysis only provided remediation with older Diagnostics settings. The issue was fixed by enhancing the remediation logic for the following controls -CIDs 50215, 50455, and 50456."
+        },
+        {
+          "component": "CV-UI",
+          "issue": "We fixed an issue where the customer wasn unable to view posture details of the Azure resources."
+        },
+        {
+          "component": "CV-ControlEnhancement",
+          "issue": "We have enhanced the detection logic of CID 351 to ensure Load Balancers without any listeners do not fail the evaluation. Since Load Balancers without listeners cannot accept traffic, they do not pose a security risk and thus, pass the evaluation criteria."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-03T20:42:02.553138+00:00",
+      "status": "success"
+    }
   },
   "b11746840ede": {
     "key": "b11746840ede",
@@ -19879,7 +19992,31 @@
       "TC"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 11, 2025",
+      "features": [
+        {
+          "heading": "Get Azure AI Service Resources",
+          "summary": "With this release, we are introducing a new resource ID to the Get Azure Resources API to retrieve the list of Azure AI services of your cloud account."
+        },
+        {
+          "heading": "Cloud Detection and Response (CDR)",
+          "summary": "The following sections describe the enhancements made to the CDR APIs in this release."
+        },
+        {
+          "heading": "View CDR Findings",
+          "summary": "With this release, we are introducing a new API that will enable you to view threat findings related to the CDR unified view, making the threat findings data more accessible and allowing for more refined, filterable results, improving overall user…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-03T20:42:02.553138+00:00",
+      "status": "success"
+    }
   },
   "513944d55c08": {
     "key": "513944d55c08",
@@ -19889,7 +20026,23 @@
       "SA"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 16, 2025 (Updated July 08, 2025)",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "This release brings new features and updates to data centers"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-03T20:42:02.553138+00:00",
+      "status": "success"
+    }
   },
   "ec2a8a6d9787": {
     "key": "ec2a8a6d9787",
@@ -19901,7 +20054,47 @@
       "PM"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 11, 2025",
+      "features": [
+        {
+          "heading": "New Feature — Launch Patch Jobs for Non-Security Updates",
+          "summary": "The Cloud Agent for Linux Intel now has the support to launch the patch jobs for non-security updates. Earlier, we only supported the patch jobs for security updates to fix the vulnerabilities and launch OS patches for Linux assets."
+        },
+        {
+          "heading": "Isolate Linux Host Assets",
+          "summary": "We are introducing a feature to isolate vulnerable Linux assets from your network. The isolated assets can not interact with other assets in your network except for the excluded IP addresses, applications, and domains. Isolating assets from your…"
+        },
+        {
+          "heading": "Cloud Agent Enhancements",
+          "summary": "We optimized the CPU Throttle to ensure the minimum CPU utilization for Command Execution Pipeline (CEP) process (qualys-cepprocess). Cloud Agent is upgraded to execute a maximum of 5 manifests simultaneously byqualys-cepprocess. This enhancement…"
+        },
+        {
+          "heading": "Behavioral Change",
+          "summary": "The following behavioral change is observed for Cloud Agent."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "No new platform coverage is added in this release."
+        },
+        {
+          "heading": "Issues Addressed in Cloud Agent for Linux Intel Release 7.2",
+          "summary": "The following notable and important issues are fixed in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "When a large number of Custom Assessment and Remediation (CAR) Scripts are assigned to the Cloud Agent using an API, the Cloud Agent may skip downloading some of these scripts if the CAR script manifest gets stuck in a pending state. To learn more,…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-03T20:42:02.553138+00:00",
+      "status": "success"
+    }
   },
   "ddf526e687a6": {
     "key": "ddf526e687a6",
