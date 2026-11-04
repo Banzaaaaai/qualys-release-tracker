@@ -20325,7 +20325,51 @@
       "UD"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 08, 2025",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "UD - VM",
+          "issue": "We have fixed an issue where, after logging in to the Qualys application, theDashboardtab displayed a blank white screen for two to three minutes."
+        },
+        {
+          "component": "UD - VM",
+          "issue": "We have fixed an issue in which the trurisk score on the scheduled report displayed a discrepancy in value from the actual score on the dashboard. This issue is fixed, and the correct trurisk count is now displayed in the scheduled report."
+        },
+        {
+          "component": "UD",
+          "issue": "We have fixed an issue where the horizontal bar widget overlapped the other widgets in a scheduled dashboard report."
+        },
+        {
+          "component": "UD",
+          "issue": "We have fixed an issue in which the users, when logged in for the first time, experienced slowness while accessing the dashboard and widgets."
+        },
+        {
+          "component": "UD",
+          "issue": "We have fixed an issue where users could not edit and save the dashboard due to the limited character limit for theDashboard Descriptionfield.We now support multiple rich text characters to manage the character limit, and users can now edit and save the dashboard details."
+        },
+        {
+          "component": "UD",
+          "issue": "An issue occurred in which, for aNumericalwidget, whereShow Ratio as Percentageoption was selected withWidget RulesandBasecolor were set with specific colors, if the widget rule was applicable, the base color and rule color were interchangeably displayed on the widget.The issue is now fixed, and the base color and rule color are applied correctly on the widget."
+        },
+        {
+          "component": "UD",
+          "issue": "An issue occurred in which, when the same tag was applied to multiple dashboards and the user navigated through the widget details, all the widget counts on the dashboard displayed incorrect values when the user first accessed the dashboard. When the user returned to the dashboard, the widget counts were displayed correctly. This issue occurred because while navigating through the widget details, the tag was not correctly applied to the dashboard.We have fixed this issue, and the tag is correctly applied to the dashboard, displaying the correct widget counts."
+        },
+        {
+          "component": "UD",
+          "issue": "An issue occurred where in a Pie Chart widget that has custom labels configured, after clicking any of the custom label value on the widget, the user was redirected to the Vulnerabilities tab that displayed the vulnerability query including the label. This query returned no vulnerabilities due to incorrect query.The issue is now fixed displaying the correct query without the custom label."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-04T20:58:57.863064+00:00",
+      "status": "success"
+    }
   },
   "e94ff83cf78c": {
     "key": "e94ff83cf78c",
@@ -20336,7 +20380,35 @@
       "FIM"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 05, 2025",
+      "features": [
+        {
+          "heading": "Updates for Reporting FIM Events",
+          "summary": "We have made the following updates for FIM event reporting"
+        },
+        {
+          "heading": "Behavior Change",
+          "summary": "There are no behavior changes for this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "No new platform coverage is added in this release."
+        },
+        {
+          "heading": "Known Issues for FIM",
+          "summary": "The following are the known issues for FIM working on AIX assets"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-04T20:58:57.863064+00:00",
+      "status": "success"
+    }
   },
   "39864f25d61c": {
     "key": "39864f25d61c",
@@ -20346,7 +20418,60 @@
       "VM"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 4, 2025",
+      "features": [
+        {
+          "heading": "Update - Qualys Policy Audit",
+          "summary": "We have rolled outPolicy Audit (PA)in the latter half of May 2025! Policy Audit- a tool that automates every stage of the audit process and enables you to be continuously audit ready.Once you access Policy Audit, you can tackle complex audits with…"
+        },
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "Qualys TruRisk™ Report provides a clear and actionable assessment of your enterprise's security posture, highlighting critical vulnerabilities and risks while offering strategic guidance for their mitigation. It prioritizes vulnerabilities and…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Reports General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Knowledge Base",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - ASR",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Host Based Report",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Activity logs",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan UI",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "PC - API",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PA / PC - API",
+          "issue": "Policy Compliance"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-04T20:58:57.863064+00:00",
+      "status": "success"
+    }
   },
   "c374f6f2e5fb": {
     "key": "c374f6f2e5fb",
@@ -20357,7 +20482,31 @@
       "VM"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 4, 2025",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "VM - Knowledge Base",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "PC - API",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PA / PC - API",
+          "issue": "Policy Compliance"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-04T20:58:57.863064+00:00",
+      "status": "success"
+    }
   },
   "7b8fc97fb84a": {
     "key": "7b8fc97fb84a",
@@ -20367,7 +20516,51 @@
       "TA"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 03, 2025",
+      "features": [
+        {
+          "heading": "Support for New Model Runtime",
+          "summary": "We are expanding the TotalAI capability with the new model runtime support. You can now onboard the chat completion model to TotalAI and perform a scan to find the vulnerabilities in the model."
+        },
+        {
+          "heading": "Change in the Model Support - Completion API on the Azure runtime",
+          "summary": "We are discontinuing support for the Completion API on the Azure runtime in TotalAI. With this change, the Instruct-only models in Azure runtime are not supported, as these models can be inferenced only with the Completion API."
+        },
+        {
+          "heading": "Enhanced Detection Capability with New Attack Methods",
+          "summary": "We have enhanced our detection capabilities by incorporating new attack methods in the model scanning process."
+        },
+        {
+          "heading": "New Attacks",
+          "summary": "The attack coverage is increased with the new attacks added to the detection scope, increasing the scanning efficiency."
+        },
+        {
+          "heading": "Enhancements in the Scans Tab",
+          "summary": "With the functionalities added to theScanstab, you can now perform the following actions"
+        },
+        {
+          "heading": "New Quick Filters in the Models Tab",
+          "summary": "In theModelstab, a new quick filter is added for theModel Runtime. With thisModel Runtimequick filter, you can quickly find the models onboarded based on the model runtime without manually entering the QQL token."
+        },
+        {
+          "heading": "New Widgets in Dashboard",
+          "summary": "You can create new widgets to display scan data on the dashboard.The following image indicates the widget creation with the scan data. ."
+        },
+        {
+          "heading": "QQLTokens",
+          "summary": "The following QQL tokens are added in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-04T20:58:57.863064+00:00",
+      "status": "success"
+    }
   },
   "173b659b3b19": {
     "key": "173b659b3b19",
