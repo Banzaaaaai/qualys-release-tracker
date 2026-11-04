@@ -20104,7 +20104,35 @@
       "EDR"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 10, 2025",
+      "features": [
+        {
+          "heading": "EDR Onboarding for Mac",
+          "summary": "EDR onboarding is now supported for Mac-based assets, expanding protection to macOS devices. You can onboard Intel-based and Apple Silicon (ARM) Macs through the standard onboarding workflow and deploy the EDR agent directly."
+        },
+        {
+          "heading": "New Permissions Added to EDR Roles in UI Access",
+          "summary": "As part of this release, we have introduced the following new UI Access permissions to enhance fine-grained access control."
+        },
+        {
+          "heading": "Renamed 'Notifications' to 'Local Desktop Notifications'",
+          "summary": "The UI toggle previously labeledNotificationshas been renamedLocal Desktop Notificationsto better reflect its purpose."
+        },
+        {
+          "heading": "Updated EDR Status Information",
+          "summary": "We have simplified the EDR Status column by removing date and time details. The status will now only display Active, Inactive, or Disabled states to reduce confusion and better reflect the current state."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-04T15:45:06.992271+00:00",
+      "status": "success"
+    }
   },
   "a995afc86d7b": {
     "key": "a995afc86d7b",
@@ -20115,7 +20143,35 @@
       "EDR"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 10, 2025",
+      "features": [
+        {
+          "heading": "New Feature: API Versioning Support",
+          "summary": "We’ve introduced API versioning to offer greater flexibility and long-term compatibility for clients integrating with our APIs."
+        },
+        {
+          "heading": "API Versioning Documentation Sample",
+          "summary": "The following is a documentation sample illustrating how versioning has been added in this release. For complete information on the remaining APIs, see EDR API Online Help."
+        },
+        {
+          "heading": "Backward Compatibility",
+          "summary": ""
+        },
+        {
+          "heading": "Correction to API Documentation",
+          "summary": "The internal 'Asset Alert' API was mistakenly marked as public and included in the API Online Help andEDR Release 3.6.0 API. This API is not intended for external use and is now removed from public documentation."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-04T15:45:06.992271+00:00",
+      "status": "success"
+    }
   },
   "6a4cb5b4ddb6": {
     "key": "6a4cb5b4ddb6",
@@ -20125,7 +20181,32 @@
       "CA"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 09, 2025",
+      "features": [
+        {
+          "heading": "Updates for Agent Version Control",
+          "summary": "We have made the following updates to the Agent Version Control."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Database Authentication",
+          "issue": "When deleting a Database Assessment profile, the warning message displayed an incorrect count of impacted Cloud Agents. To fix this issue, we have updated the confirmation message to display the database instance count."
+        },
+        {
+          "component": "Application Configuration",
+          "issue": "In some cases, the option to enable the File Integrity Monitoring (FIM) application was not displayed while creating or editing a configuration profile in the Cloud Agent user interface. We fixed this issue with suitable code changes to display the option to enable FIM when the users have a valid license."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-04T15:45:06.992271+00:00",
+      "status": "success"
+    }
   },
   "564ef464983e": {
     "key": "564ef464983e",
@@ -20135,7 +20216,75 @@
       "ETM"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 06, 2025",
+      "features": [
+        {
+          "heading": "Introduced Time to Detect and Time to Remediate Indicatorsfor Findings",
+          "summary": "We have introduced the Time to Detect (TTD) and Time to Remediate (TTR)indicatorsyou can apply to your business entities."
+        },
+        {
+          "heading": "Introduced Identification Rule for Web Applications",
+          "summary": "In ETM, vulnerability data is imported from various sources, often leading to overlapping information like identical CVEs. To prevent duplicate records, the system uses specific identification attributes from the Common Data Model as unique…"
+        },
+        {
+          "heading": "Introduced Risk Heat Map Widget",
+          "summary": "We have introduced a new widget called the Risk Heat Map. You can create a graph of the Asset Criticality Score (ACS) versus the Qualys Detection Score (QDS) to identify critical vulnerabilities in your most important assets. You can prioritize…"
+        },
+        {
+          "heading": "Enhanced Risk Management: Introduction of the Risk Workbench",
+          "summary": "We have renamed the Prioritization tab to Risk Workbench to better capture its enhanced role in prioritizing, analyzing, planning, and taking action on risk. This new name reflects how you can effectively engage with this feature: by deconstructing…"
+        },
+        {
+          "heading": "Introduced Purge Rules and Custom Attributes",
+          "summary": "ETM has two out-of-the-box (OOTB) roles for ETM users"
+        },
+        {
+          "heading": "Enhanced CSV Report Download Capacity for Vulnerabilities and Misconfigurations tab",
+          "summary": "You can now download a CSV report containing up to 50,000 findings records from the Vulnerabilities and Misconfiguration tab. Previously, the limit was set to 5,000 records. This improvement helps you access more comprehensive data for analysis and…"
+        },
+        {
+          "heading": "Introduced Vendor Product Name as an Attribute in Purge Rules",
+          "summary": "We have added the Vendor Product Name as an attribute when creating the Findings Purge Rule. Now, when setting up a rule, you can use the Vendor Product Name alongside other existing attributes to define your criteria."
+        },
+        {
+          "heading": "Added Custom Attributes Column in Findings",
+          "summary": "Custom Attributes allows you to define and manage custom attributes for findings within Qualys ETM. This enhancement provides enhanced flexibility to create calculated fields for findings in ETM.With this release, a column for custom attributes is…"
+        },
+        {
+          "heading": "Introduced Quick Filters and Pivot in the All tab",
+          "summary": "We have introduced Quick Filters and Pivot in theAlltab fromFindingstab.  You can sort data based on various filters. This allows you to quickly narrow down the information to what you need. Once you click on a specific category from the list, your…"
+        },
+        {
+          "heading": "Reorganized the Navigation for Asset and Finding Overview Pages",
+          "summary": "We have reorganized the navigation to improve the user experience. As overview page was already there in inventory we have moved Overview tab under Assets in inventory. As overview was already there in Risk management tab we have moved Overview…"
+        },
+        {
+          "heading": "Enhanced Dashboard Widgets Support for All Finding Types",
+          "summary": "We have added support for widgets that allows for more comprehensive queries. Previously, you could use query for vulnerabilities or misconfigurations Findings separately for building widgets. Now, you can incorporate a query that supportsAllsub…"
+        },
+        {
+          "heading": "Extended Support for New Connectors",
+          "summary": "We are expanding our connector ecosystem with two new API integrations and an update to our CSV integration."
+        },
+        {
+          "heading": "Added New Tokens for Findings Tab",
+          "summary": "Name/Description"
+        },
+        {
+          "heading": "API Features and Enhancements",
+          "summary": "With this release, we have extended support for OpenID Connect Authentication Standards. This new update benefits users by eliminating the need for them to provide a username and password and system-generated JWT tokens. This streamlines access by…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-04T15:45:06.992271+00:00",
+      "status": "success"
+    }
   },
   "f6e070b8b66e": {
     "key": "f6e070b8b66e",
@@ -20146,7 +20295,27 @@
       "ETM"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 06, 2025",
+      "features": [
+        {
+          "heading": "Support for OpenID Connect Authentication Standards",
+          "summary": "With this release, we have upgraded our API security by incorporating OpenID Connect for Qualys API authentication and authorization. When OpenID Connect API authentication is implemented, IdP is used for user authentication and JWT token generation…"
+        },
+        {
+          "heading": "Token Supported for APIs",
+          "summary": "We have added detailed descriptions of supported tokens in the API documentation to enhance clarity. This update provides a clearer understanding of how to use these tokens when making API requests, improving the overall user experience."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-04T15:45:06.992271+00:00",
+      "status": "success"
+    }
   },
   "cc6073d7156f": {
     "key": "cc6073d7156f",
