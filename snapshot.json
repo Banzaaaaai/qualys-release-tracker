@@ -20570,7 +20570,35 @@
       "TAS"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "June 02, 2025",
+      "features": [
+        {
+          "heading": "Discover APIs using MuleSoft API Connectors",
+          "summary": "With the MuleSoft API Connectors, TotalAppSec can discover Swagger files with all endpoints exposed in your environment. This enhances the TotalAppSec's discovery feature and strengthens your organization's security posture."
+        },
+        {
+          "heading": "Discover APIs using Azure API Connectors",
+          "summary": "With the Azure API Connectors, TotalAppSec can now discover Swagger files with all endpoints exposed in your Azure environment. This enhances the TotalAppSec's discovery feature and strengthens your organization's security posture."
+        },
+        {
+          "heading": "Support for Discovery Widgets in Dashboard",
+          "summary": "You can create new widgets to display discovered application data, which includes discovered web applications and discovered APIs."
+        },
+        {
+          "heading": "View and Download API Reports",
+          "summary": "You can now view and download the report for the API collection."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-05T15:47:57.726660+00:00",
+      "status": "success"
+    }
   },
   "d28f9a3d200c": {
     "key": "d28f9a3d200c",
@@ -20581,7 +20609,68 @@
       "WAS"
     ],
     "month_label": "June 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 28, 2025",
+      "features": [
+        {
+          "heading": "Enhancements in Authentication Record",
+          "summary": "Authentication Records creation is enhanced with the following changes to improve the security and efficiency of authentication records."
+        },
+        {
+          "heading": "Enhancements in Scan Schedule",
+          "summary": "TheProgressive ScanningandCancel Scanoptions are now moved from theScan Settingsto theSchedulingpage in the create and edit scan schedule workflow."
+        },
+        {
+          "heading": "Addition of Group By Option",
+          "summary": "TheGroup Byoption is now available in theDetections,Scan List,Schedulesin theScans,Reportstabs, and tabs underConfiguration. With theGroup Byoption, you can quickly sort the data in the tabs."
+        },
+        {
+          "heading": "Customized Advanced Filter in Scan List and Detections Tab",
+          "summary": "We have now added theAdvancedfilter option to theScan ListandDetectionstab, with which you can search through the datalist quicklyusing multiple criteriawithout entering the QQL tokens manually. You can also add customized filters to the list of…"
+        },
+        {
+          "heading": "New Tokens in the Schedules Tab in Scans",
+          "summary": "The following tokens are added to theSchedulestab underScans."
+        },
+        {
+          "heading": "Create Distribution Group in Report Scheduling",
+          "summary": "While creating or editing a report schedule, you can now create a new distribution group to which the notification must be sent."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Scheduled Scan",
+          "issue": "We fixed an issue where authentication failed for the scheduled scans as the scan used an old authentication record, even if the new authentication record was assigned."
+        },
+        {
+          "component": "WAS Engine version",
+          "issue": "We fixed an issue where theHelp>About Viewdialog box displayed an incorrect version of WAS Engine. The issue is fixed, and the correct WAS Engine version is available in theAbout Viewdialog box."
+        },
+        {
+          "component": "Dashboard, TruRisk widget",
+          "issue": "In the TruRisk widget, the hyperlink added for the TruRisk score was not clickable. The hyperlink is removed now as the TruRisk score indicates a combined score for web applications and API assets (for TAS accounts)."
+        },
+        {
+          "component": "QQL Tokens",
+          "issue": "No QQL token was available to find the scan schedules associated with the specific asset name. We have now added the asset.name token to find scan schedules with the specific asset names.For details on the asset.name and other tokens added to the Schedule tab in Scans, seeNew Tokens in Schedules Tab in Scans."
+        },
+        {
+          "component": "Scan count",
+          "issue": "A discrepancy was observed in the scan count in the Scans tab and scan count fetched by API/qps/rest/3.0/search/was/wasscan. The issue is resolved now."
+        },
+        {
+          "component": "Burp report import",
+          "issue": "We fixed an issue where the user encountered issues while importing the burp report."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-05T15:47:57.726660+00:00",
+      "status": "success"
+    }
   },
   "226d6f73e233": {
     "key": "226d6f73e233",
@@ -20591,7 +20680,13 @@
       "VMDR"
     ],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-05T15:47:57.726660+00:00",
+      "status": "failed",
+      "error": "All 3 fetch attempts failed for https://docs.qualys.com/en/integration/vmdr-itsm/release_notes/release_core_3_0_0_vmdr_3_0_1.htm"
+    }
   },
   "edd495d28c86": {
     "key": "edd495d28c86",
@@ -36174,6 +36269,70 @@
     "enrichment": {
       "attempts": 1,
       "last_attempt_at": "2026-11-03T15:28:12.380896+00:00",
+      "status": "success"
+    }
+  },
+  "08bd52bbc9ed": {
+    "key": "08bd52bbc9ed",
+    "url": "https://docs.qualys.com/en/ud/release-notes/unified_dashboard/release_2_17_1.htm",
+    "title": "Unified Dashboard 2.17.1",
+    "tags": [
+      "UD"
+    ],
+    "month_label": "November 2026",
+    "detected_at": "2026-11-05T15:47:57+00:00",
+    "details": {
+      "release_date": "November 02, 2026You get a focused dashboard list that cleans up automatically, a landing page that gives you quick access to modules, and Qualys Recommended dashboards that show you insights right away. This release also lowers the default limits to 100 active dashboards per subscription and 40 widgets per dashboard.",
+      "features": [
+        {
+          "heading": "Inactive Dashboards Now Move to the Recycle Bin Automatically",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Go Straight to Your Most-Used Module When You Sign In",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Start with Ready-Made Qualys Recommended Dashboards for Each Module",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Fixes",
+          "summary": "The following reported and notable customer issues are fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-05T15:47:57.726660+00:00",
+      "status": "success"
+    }
+  },
+  "0952374b58f0": {
+    "key": "0952374b58f0",
+    "url": "https://docs.qualys.com/en/pci/release-notes/pci_ui/release_6_9.htm",
+    "title": "PCI Compliance 6.9",
+    "tags": [
+      "PCI"
+    ],
+    "month_label": "October 2026",
+    "detected_at": "2026-11-05T15:47:57+00:00",
+    "details": {
+      "release_date": "October 30, 2026This release adds time-based one-time password (TOTP) multi-factor authentication, so you can verify your identity with a second factor when you sign in to PCI Compliance.",
+      "features": [
+        {
+          "heading": "TOTP-based Multi-Factor Authentication",
+          "summary": "What's New for You"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-05T15:47:57.726660+00:00",
       "status": "success"
     }
   }
