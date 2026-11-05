@@ -20694,7 +20694,39 @@
     "title": "Qualys Gateway Service 3.11",
     "tags": [],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 28, 2025",
+      "features": [
+        {
+          "heading": "QGS Versions Update",
+          "summary": "With this release, we have updated the QGS services to new versions"
+        },
+        {
+          "heading": "Container Image Versions Update",
+          "summary": "With this release, we have updated the following containers to new versions"
+        },
+        {
+          "heading": "QGS TextUI Updates",
+          "summary": "With this release, we have implemented several key enhancements to the CAMS and QGS TextUI, to improve the user experience, visibility, and streamline interactions within both platforms. The enhancements are as follows"
+        },
+        {
+          "heading": "QGS Appliance Updates",
+          "summary": "With this release, we have added the service version information for both CAMS and QGS to the QGS appliance details page to improve visibility and streamline interactions within both platforms."
+        },
+        {
+          "heading": "Appliance Base Download Image Version",
+          "summary": "With this release, we have upgraded the appliance base download image version on the QGS application. When deploying a new QGS appliance, download the latest base download image version from theDownload Imagetab in the QGS app."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-05T21:16:04.158533+00:00",
+      "status": "success"
+    }
   },
   "59791fa2871c": {
     "key": "59791fa2871c",
@@ -20704,7 +20736,23 @@
       "SaaS DR"
     ],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 26, 2025",
+      "features": [
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following reported issue is fixed in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-05T21:16:04.158533+00:00",
+      "status": "success"
+    }
   },
   "c5fc81919386": {
     "key": "c5fc81919386",
@@ -20714,7 +20762,27 @@
       "PM"
     ],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 19, 2025",
+      "features": [
+        {
+          "heading": "Eliminations Workflow from VMDR Prioritization tab",
+          "summary": "You can now initiate the Eliminations workflow from theVMDR Prioritizationtab. This workflow allows you to select multiple assets using tags and apply a fix when a patch is not available for those assets. Unlike the workflow through…"
+        },
+        {
+          "heading": "Support Patching for Non-Security Updates for Linux Platform",
+          "summary": "We now support patching for non-security updates for the Linux assets. For more information on the supported operating systems, seeNSU Supported Linux Operating Systems."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-05T21:16:04.158533+00:00",
+      "status": "success"
+    }
   },
   "7e5530369669": {
     "key": "7e5530369669",
@@ -20724,7 +20792,35 @@
       "CA"
     ],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 15, 2025",
+      "features": [
+        {
+          "heading": "Updated Base Image for Compliance",
+          "summary": "We have updated the base image used for AWS Bottlerocket Cloud Agent to fix the vulnerabilities."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-05T21:16:04.158533+00:00",
+      "status": "success"
+    }
   },
   "9e84321e9062": {
     "key": "9e84321e9062",
@@ -20734,7 +20830,35 @@
       "CA"
     ],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 15, 2025",
+      "features": [
+        {
+          "heading": "Updated Base Image for Compliance",
+          "summary": "We have updated the base image used for Redhat Enterprise Linux CoreOS Cloud Agent to fix the vulnerabilities."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-05T21:16:04.158533+00:00",
+      "status": "success"
+    }
   },
   "f4822ad5c7d5": {
     "key": "f4822ad5c7d5",
