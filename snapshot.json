@@ -20868,7 +20868,35 @@
       "CA"
     ],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 15, 2025",
+      "features": [
+        {
+          "heading": "Updated Base Image for Compliance",
+          "summary": "We have updated the base image used for GCP Container Optimized OS Cloud Agent to fix the vulnerabilities."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-06T15:23:26.716011+00:00",
+      "status": "success"
+    }
   },
   "868c2690c720": {
     "key": "868c2690c720",
@@ -20879,7 +20907,116 @@
       "GAV"
     ],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 16, 2025 (Updated on May 23, 2025)",
+      "features": [
+        {
+          "heading": "Ability to View Database Details",
+          "summary": "We have introduced the ability to view detailed information of your database instances and servers. A newDatabasetab is added underInventoryto viewInstancesandDatabase Serversrelated information."
+        },
+        {
+          "heading": "Ability to Update Basic Business Information",
+          "summary": "You can now edit the basic business information of an asset from theAsset Details > Inventory > Business Informationpage."
+        },
+        {
+          "heading": "Trigger Criteria for Alerts",
+          "summary": "You can now specify the alertTrigger Criteriawhen creating a rule for monitoring critical events. This feature provides you with precise control over when and how alerts are generated. The system automatically executes your selected action whenever…"
+        },
+        {
+          "heading": "Ability to View EASM Profile History",
+          "summary": "You can now view and manage the EASM profile modification history. This feature enables you to track changes, revert to previous configurations, and analyze historical records of configuration changes as needed."
+        },
+        {
+          "heading": "Information on Registrant Country and Expiration Date of Domains",
+          "summary": "You can now view domain details, such as the country of the registrant and the expiration date for both resolved and unresolved domains on theInventory > EASM > Domainstab. This enhancement provides greater visibility into the ownership and validity…"
+        },
+        {
+          "heading": "ETM Asset Classification in CSAM",
+          "summary": "All assets retrieved from the Qualys Enterprise TruRisk Management (ETM) connector are now automatically classified as managed and displayed underCSAM Inventory > Assets > Managed."
+        },
+        {
+          "heading": "Enhanced EASM Summary Report",
+          "summary": "EASM Summary Report allows you to understand and have visibility into your organization's entire external attack surface. In this release, we have updated the report to include the following enhancements"
+        },
+        {
+          "heading": "EASM Scan Access Control Enhancement",
+          "summary": "Only a user with the manager role can enable or disable the EASM Scan option while creating or updating the EASM profile. This enhancement ensures that only users with the right level of access can enable EASM scanning."
+        },
+        {
+          "heading": "Detection of Open Ports and Software with EASM Lightweight Scan",
+          "summary": "The EASM Lightweight scan now detects open ports and identifies the software running on external-facing assets. The assets, along with their associated open ports and software details, are listed under theInventory > Assetstab."
+        },
+        {
+          "heading": "Introduction of the EASM Rule for Asset Identification",
+          "summary": "In this release, we have introduced a new system-generated rule calledEASM Rules. This rule identifies EASM assets based on their primary IP address. These identified assets can be viewed on theInventory > EASM > Assetstab."
+        },
+        {
+          "heading": "Ability to Remove Static Asset Tags in Bulk",
+          "summary": "You can now remove static tags from multiple assets in a single operation. This simplifies removing tags from large numbers of assets that can be time-consuming."
+        },
+        {
+          "heading": "Improvement in Agent Provisioning Rules",
+          "summary": "When onlyHostnameis selected as a primary attribute for merging agents, it may create an issue with environments that have sub-domains. Specifically, different agents that share identical hostnames could be incorrectly merged."
+        },
+        {
+          "heading": "Agent Provisioning Rule Feature Now Available to all Users",
+          "summary": "TheAgent Provisioning Rulefeature, which was previously accessible only upon request, is now available to all users. This feature enhances agent management by enabling the automatic merging of assets that share a common identification attribute,…"
+        },
+        {
+          "heading": "Enhancement in Trending Widget Data Range",
+          "summary": "Widgets now display trending data for up to 365 days. This enables you to perform thorough trend analyses and tailor your data view to meet your specific requirements."
+        },
+        {
+          "heading": "Filter AWS Assets by Tag Name or Tag Value",
+          "summary": "You can now groupAWSassets byTags NameorTags Value."
+        },
+        {
+          "heading": "Ability to Purge Assets Not Scanned by VM",
+          "summary": "With this release, you can configure theAsset Purge Ruleto remove assets that are not scanned by VM. To support this, set the attribute tolastVMScanDateand selectIS NULLas the operator for theTime-Based Criteria."
+        },
+        {
+          "heading": "Enhanced AIX Asset Identification with LPAR ID",
+          "summary": "You can now view the Logical Partitions (LPAR) ID to identify and manage AIX assets in your inventory. The LPAR ID is displayed on theAsset Inventory > Asset Details > System Information > Specificationpage."
+        },
+        {
+          "heading": "Visibility into Unscoped Tags",
+          "summary": "When a user opens the tag selector window, they can now see parent tags that are outside their scope, but one or more of their child tags are within their scope."
+        },
+        {
+          "heading": "Support for Auth ID Client Management from UI",
+          "summary": "With this release, we have extended our support for OpenID Connect Authentication Client Management capabilities from UI. This update allows for secure authentication and authorization of API access directly from the user interface. Our API…"
+        },
+        {
+          "heading": "New QQL Tokens",
+          "summary": "The following sections provide the new QQL tokens."
+        },
+        {
+          "heading": "QQL Token Change",
+          "summary": "Refer to the following table to learn the QQL tokens that are changed from this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "CSAM - Reporting",
+          "issue": "We fixed the issue where theAsset Open Portreport was being generated for scanner assets, which do not have open ports, causing the report to fail. The system will now skip report generation when the asset is a scanner and the report type isAsset Open Port."
+        },
+        {
+          "component": "CSAM - Reporting",
+          "issue": "We fixed the issue where theLast Synced Date for Agentcolumn was not displayed in theAWS DetailsandAzure Detailsreport."
+        },
+        {
+          "component": "CSAM+GAV - Asset Details",
+          "issue": "We fixed the issue where uninstalled applications continued to appear under installed software."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-06T15:23:26.716011+00:00",
+      "status": "success"
+    }
   },
   "6366f423f416": {
     "key": "6366f423f416",
@@ -20891,7 +21028,35 @@
       "GAV"
     ],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 16, 2025",
+      "features": [
+        {
+          "heading": "LPAR ID Filtering Support for Asset APIs",
+          "summary": "With this release, we have enhanced the asset APIs to support LPAR ID-based filtering. This improvement allows you to fetch asset details specific to a particular LPAR."
+        },
+        {
+          "heading": "Support for Filtering Domains by Registrant Country and Expiration Date",
+          "summary": "With this release, we have enhanced the Asset and Domain APIs that allows you to filter the response based on the domain registered country and their expiration date."
+        },
+        {
+          "heading": "EASM Scan Access Control through EASM APIs",
+          "summary": "Only managers can enable or disable the EASM Scan option. If a non-manager user tries to create or update the EASM profile with theenableEASMScanparameter set totrue, the following error message is displayed"
+        },
+        {
+          "heading": "JWT Token Generation using Client ID and Secret Key",
+          "summary": "You can generate the JWT access token by providing the client ID and client secret key in the following API request headers."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-06T15:23:26.716011+00:00",
+      "status": "success"
+    }
   },
   "938c719eeb43": {
     "key": "938c719eeb43",
@@ -20902,7 +21067,31 @@
       "CRI"
     ],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 15, 2025",
+      "features": [
+        {
+          "heading": "Enhanced Searchability of Certificates Based on Issuer Name",
+          "summary": "With this release, you can search certificates using issuer names. Previously, you could use the token certificate:(issuer.name:  ) only when the complete path of the certificates was available. Now, you can search for a certificate using the issuer…"
+        },
+        {
+          "heading": "New Tokens for Alerting",
+          "summary": "You can set up an alert using these tokens to refer to the latest certificates or assets, making sure your reports are always current without needing to do it manually."
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following reported and notable customer issue is fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-06T15:23:26.716011+00:00",
+      "status": "success"
+    }
   },
   "c4e40a9eb47f": {
     "key": "c4e40a9eb47f",
@@ -20917,7 +21106,68 @@
       "WAS"
     ],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 12, 2025 (Updated June 23, 2025)",
+      "features": [
+        {
+          "heading": "View Long-Term Trending Data in Application Dashboard",
+          "summary": "With this release, we have added support for representing long-term trending data in the application dashboard. The administrator user can configure the time duration for displaying the trend data on selected user accounts."
+        },
+        {
+          "heading": "Cloud Agent",
+          "summary": "We are introducing a new tool, Qualys Policy Audit. This tool allows you to continuously monitor the compliance status of your assets and keeps you audit-ready."
+        },
+        {
+          "heading": "Web Malware Detection",
+          "summary": "We have introducednew QIDs to get visibility into server authentication used in malware scans in Web Malware Detection (MDS). These QIDs are available in the Detections and KnowledgeBase tabs and can be added to the reports."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Asset Purging",
+          "issue": "CSAM"
+        },
+        {
+          "component": "Policy Evaluation",
+          "issue": "AssetView"
+        },
+        {
+          "component": "Asset Purging",
+          "issue": "CSAM"
+        },
+        {
+          "component": "Tagging",
+          "issue": "Administration"
+        },
+        {
+          "component": "Asset Identification",
+          "issue": "CSAM"
+        },
+        {
+          "component": "Reports",
+          "issue": "CSAM"
+        },
+        {
+          "component": "Asset Activation",
+          "issue": "CSAM"
+        },
+        {
+          "component": "WAS Scans",
+          "issue": "WAS"
+        },
+        {
+          "component": "WAS API",
+          "issue": "WAS"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-06T15:23:26.716011+00:00",
+      "status": "success"
+    }
   },
   "adda85d7cb39": {
     "key": "adda85d7cb39",
