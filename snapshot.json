@@ -20682,8 +20682,8 @@
     "month_label": "May 2025",
     "detected_at": "2026-05-18T17:20:41+00:00",
     "enrichment": {
-      "attempts": 1,
-      "last_attempt_at": "2026-11-05T15:47:57.726660+00:00",
+      "attempts": 2,
+      "last_attempt_at": "2026-11-06T20:38:46.452496+00:00",
       "status": "failed",
       "error": "All 3 fetch attempts failed for https://docs.qualys.com/en/integration/vmdr-itsm/release_notes/release_core_3_0_0_vmdr_3_0_1.htm"
     }
@@ -21178,7 +21178,23 @@
       "WAS"
     ],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 12, 2025",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "WAS API",
+          "issue": "We fixed an issue in which some web application records did not display the application name in the Search WAS Scan API response.Impacted API:/qps/rest/3.0/search/was/wasscan"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-06T20:38:46.452496+00:00",
+      "status": "success"
+    }
   },
   "56bff7e5fe2e": {
     "key": "56bff7e5fe2e",
@@ -21188,7 +21204,43 @@
       "Conn"
     ],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 13, 2025",
+      "features": [
+        {
+          "heading": "Amazon Web Services",
+          "summary": ""
+        },
+        {
+          "heading": "Snapshot-based Scan Secrets Detection Integration",
+          "summary": "With this release, we have enhanced the visibility of exposed secrets across AWS instances and strengthened risk prioritization through enriched insights. You can enable Secrets detection while configuring your Snapshot scan deployment on AWS. The…"
+        },
+        {
+          "heading": "Enhanced Handling ofSuspended AWS Accounts and Connector Cleanup",
+          "summary": "Previously, when an AWS account was suspended or terminated, its associated connector appeared in an error state without being disabled. Now, AWS accounts that are terminated or suspended result in the detachment and disabling of the respective…"
+        },
+        {
+          "heading": "Common Cloud Updates",
+          "summary": ""
+        },
+        {
+          "heading": "AMI Images Scanning in Connectors",
+          "summary": "Connector Snapshot-based scan now extends its vulnerability management capabilities to includeAmazon Machine Images (AMIs), allowing organizations to assess security posturebeforeruntime deployment. This supports proactive hardening of golden images…"
+        },
+        {
+          "heading": "Zero-Touch Cloud Perimeter Scan for GCP",
+          "summary": "Building on previous capabilities for AWS and Azure,Zero-Touch Cloud Perimeter Scanis now extended toGCPenvironments. This enhancement provides automated vulnerability scanning of internet-facing (public) assets in Google Cloud Platform without the…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-06T20:38:46.452496+00:00",
+      "status": "success"
+    }
   },
   "7cc4d835c663": {
     "key": "7cc4d835c663",
@@ -21198,7 +21250,87 @@
       "TC"
     ],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 13, 2025",
+      "features": [
+        {
+          "heading": "Amazon Web Services (AWS)",
+          "summary": "The following sections describe the enhancements made to the TotalCloud environment in this release for AWS."
+        },
+        {
+          "heading": "Secrets Detection Integration with TruRiskTMInsights for AWS Instances",
+          "summary": "With this release, we have enhanced the visibility of exposed secrets across AWS instances and strengthened risk prioritization through enriched insights. You can enable Secrets detection while configuring your Snapshot scan deployment on AWS. The…"
+        },
+        {
+          "heading": "Oracle Cloud Infrastructure (OCI)",
+          "summary": "The following sections describe the enhancements made to the TotalCloud environment in this release for OCI."
+        },
+        {
+          "heading": "Extended Support for Alerting to OCI",
+          "summary": "With this release, TotalCloud supports Oracle Cloud Infrastructure (OCI) in its alerting framework, allowing security and operations teams to monitor misconfigurations, policy violations, and other key findings across OCI environments. We have…"
+        },
+        {
+          "heading": "Common Cloud Updates",
+          "summary": "The following sections describe the enhancements made to the TotalCloud environment in this release, common to all cloud providers."
+        },
+        {
+          "heading": "AMI Images Scanning in TotalCloud",
+          "summary": "TotalCloud now extends its vulnerability management capabilities to include Amazon Machine Images (AMIs), allowing organizations to assess security posture before runtime deployment. This supports proactive hardening of golden images and minimizes…"
+        },
+        {
+          "heading": "Jira Integration with TotalCloud CSPM",
+          "summary": "TotalCloud CSPM introduces Jira integration as a response action, which automatically raises tickets in Jira for critical misconfigurations. This integration supports automated, rule-based notifications and ticket creation in Jira using QQL-based…"
+        },
+        {
+          "heading": "Cloud Detection and Response (CDR)",
+          "summary": "The following sections describe the enhancements made to the CDR environment in this release, common to all cloud providers."
+        },
+        {
+          "heading": "Introduced the Ability to View Findings by Remote IP",
+          "summary": "With this release, we have added the ability to view findings by IP addresses in the Investigate tab for easier tracking and analysis. This enhancement provides"
+        },
+        {
+          "heading": "Introduced an Overview Section for Findings",
+          "summary": "With this release, we have added an overview tab to the security findings detail view page. This section extracts and highlights key information from the raw data associated with each finding and presents it in an accessible and structured format."
+        },
+        {
+          "heading": "Added Support for Integration with Microsoft Sentinel",
+          "summary": "With this release, TotalCloud 2.16 introduces support for CDR event forwarding to Microsoft Sentinel, enabling security teams to centralize threat detection and streamline incident management within their existing MS Sentinel SIEM workflows."
+        },
+        {
+          "heading": "Support for Auth ID Client Management from UI",
+          "summary": "With this release, we have extended our support forOpenID Connect Authentication Client Management capabilitiesfrom the TotalCloud UI. This update allows for secure authentication and authorization of API access directly from the user interface. Our…"
+        },
+        {
+          "heading": "Mandate Updates",
+          "summary": "The following mandates have been deprecated and are no longer supported in TotalCloud"
+        },
+        {
+          "heading": "New Mandates",
+          "summary": "The following mandates have been newly added to the platform"
+        },
+        {
+          "heading": "Updated Mandates",
+          "summary": "The following mandates have been updated to their latest versions"
+        },
+        {
+          "heading": "Control Updates",
+          "summary": "New runtime controls introduced to the cloud posture analysis."
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "New Tokens introduced in TotalCloud 2.16.0"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-06T20:38:46.452496+00:00",
+      "status": "success"
+    }
   },
   "b994bdbc8f29": {
     "key": "b994bdbc8f29",
@@ -21209,7 +21341,27 @@
       "TC"
     ],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 02, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, the API to list AWS EC2 instances and now includessecretStatsandhasSecretsfields. These additions help identify instances with exposed secrets and their severity distribution."
+        },
+        {
+          "heading": "JWT Token Generation using Client ID and Secret Key",
+          "summary": "You can generate the JWT access token by providing the client ID and client secret key in the following API request headers."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-06T20:38:46.452496+00:00",
+      "status": "success"
+    }
   },
   "1d2a7aefc1ab": {
     "key": "1d2a7aefc1ab",
