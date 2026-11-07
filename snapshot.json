@@ -21371,7 +21371,35 @@
       "CAR"
     ],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 12, 2025",
+      "features": [
+        {
+          "heading": "Tag-based User Scoping in CAR",
+          "summary": "We have introduced theTag-based User Scopingfeature, that restricts a user to execute scripts only on the assets that are in their scope. The user with manager role can define the scope of other users by assigning the required tags to different…"
+        },
+        {
+          "heading": "Custom Remediation for Failed Controls in Policy Audit/Policy Compliance",
+          "summary": "You can now remediate any Policy Audit/Policy Compliance control that is failing in PA/PC scan. For this we have introduced a new script type -Control ID Remediationin CAR."
+        },
+        {
+          "heading": "CAR Features based on License Types",
+          "summary": "From this release, CAR features are available based on different Qualys modules/product licenses. The following table provides which features you can access with each type of license."
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following issue is fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-07T14:20:51.165916+00:00",
+      "status": "success"
+    }
   },
   "f6ef2a4c5db3": {
     "key": "f6ef2a4c5db3",
@@ -21382,7 +21410,27 @@
       "CAR"
     ],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 12, 2025",
+      "features": [
+        {
+          "heading": "Tag-based User Scoping in CAR APIs",
+          "summary": "With theTag-based User Scopingfeature, the response of the CAR APIs is filtered based on the tags assigned to the scope of the user calling the API. There is no change in the existing request body of the CAR APIs."
+        },
+        {
+          "heading": "Support for Control ID Remediation through APIs",
+          "summary": "With the introduction of the Control ID Remediation, you can now create and update the Control ID Remediation script through the following mentioned scripts APIs."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-07T14:20:51.165916+00:00",
+      "status": "success"
+    }
   },
   "87332bb1d1b2": {
     "key": "87332bb1d1b2",
@@ -21392,7 +21440,44 @@
       "VMDR"
     ],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 12, 2025(Updated on June 06, 2025)",
+      "features": [
+        {
+          "heading": "New Report: TruRisk™",
+          "summary": "The TruRisk™ Report delivers a clear, actionable assessment of your organization’s security posture. It highlights critical vulnerabilities and risks while providing strategic guidance to support effective mitigation."
+        },
+        {
+          "heading": "Enhancements in Vulnerabilities Listing",
+          "summary": "The following enhancements have been added to theAsset Detailssection on theVulnerabilities Listingpage"
+        },
+        {
+          "heading": "Enhanced Trending Data",
+          "summary": "We have enhanced the Trending Data configuration in VMDR dashboards to provide visibility for up to365 days. This update offers insight into long-term security trends powered by optimized data processing and customizable reporting to support…"
+        },
+        {
+          "heading": "Content Enhancements",
+          "summary": "We have expanded and improved the documentation for one of our long-supported features, \"CISA Known Exploitable Vulnerabilities.\" We have added a comprehensive new topic that provides in-depth coverage and clarification, ensuring you have a better…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Vulnerability Listing",
+          "issue": "We fixed an issue where exporting vulnerabilities data in CSV format showed the first and last detected details in a date format (DD/MM/YYYY or MM/DD/YYYY), but did not include the time (HH:MM) information.This fix will be included in the Qualys Enterprise TruRisk™ Platform 3.21.0 release."
+        },
+        {
+          "component": "Asset Listing",
+          "issue": "We fixed an issue where the TruRisk™ Score displayed in the UI differed from the value shown in the CSV export.This fix will be included in the Qualys Enterprise TruRisk™ Platform 3.21.0 release."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-07T14:20:51.165916+00:00",
+      "status": "success"
+    }
   },
   "8a378aca3f86": {
     "key": "8a378aca3f86",
@@ -21402,7 +21487,23 @@
       "SA"
     ],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 12, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "This release brings new features and updates to data centers and desktop platforms."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-07T14:20:51.165916+00:00",
+      "status": "success"
+    }
   },
   "2e69a4ee2386": {
     "key": "2e69a4ee2386",
@@ -21413,7 +21514,80 @@
       "VM"
     ],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 2, 2025",
+      "features": [
+        {
+          "heading": "Introducing Qualys Policy Audit",
+          "summary": "Policy Audit - a tool that automates every stage of the audit process and enables you to be continuously audit ready.Check outourblog/videoforinsights todiscover the key enhancements designed to improve your audit readiness."
+        },
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "With this release, we have updated the message displayed on the Reports tab to align with the one shown on the Vulnerability Management, Detection, and Response (VMDR) Dashboard. This change is made to clearly convey the importance of generating a…"
+        },
+        {
+          "heading": "Qualys Policy Compliance (PC)",
+          "summary": "With this release, you can now create multiple PostgreSQL authentication records by selecting the same IP and port with different databases. Earlier, you were not able to create an authentication record with the same configuration. With this…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Users API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Reports General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Distribution Group",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - User Management",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Authentication Records",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Assets",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Activity logs",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Knowledge Base",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "PC - API",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC - Reports",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "Documentation",
+          "issue": "Policy Compliance"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-07T14:20:51.165916+00:00",
+      "status": "success"
+    }
   },
   "9474956b2c24": {
     "key": "9474956b2c24",
