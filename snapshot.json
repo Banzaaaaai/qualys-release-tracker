@@ -21599,7 +21599,36 @@
       "VM"
     ],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 2, 2025",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "/api/5.0/fo/asset/host"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Users API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "PC - API",
+          "issue": "Policy Compliance"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-07T19:09:52.063730+00:00",
+      "status": "success"
+    }
   },
   "1dde07dddf20": {
     "key": "1dde07dddf20",
@@ -21609,7 +21638,58 @@
       "FIM"
     ],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 05, 2025 (Updated on May 29, 2025)",
+      "features": [
+        {
+          "heading": "Retrieve Network Assets using Tags",
+          "summary": "You can now retrieve your network assets using tags into your File Integrity Monitoring (FIM) asset inventory. Previously, retrieving assets required manually entering a QQL query. This improvement simplifies your workflow by eliminating the need to…"
+        },
+        {
+          "heading": "New Cards to Easily Visualize FIM Non-compliant Assets",
+          "summary": "We have now introduced two summary count cards under theAssets > Real Time Assetstab. These cards give you a quick insight into assets that are non-compliant without manually filtering or searching through the list."
+        },
+        {
+          "heading": "Enhanced FIM Profile and Queries Library",
+          "summary": "We have updated the File Integrity Monitoring Profiles and Queries in the library to include the following enhancements and updates"
+        },
+        {
+          "heading": "Support forAuthID Client Management fromUI",
+          "summary": "We have extended our support forOpenIDConnect Authentication Client Management capabilities from theUI. This update allows for secure authentication and authorization of API access directly from the user interface. Our API interactions are now…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "FIM Reporting",
+          "issue": "We fixed an issue where the event details associated with assets were not displayed in the downloaded report for a unit manager. Now, the report includes all relevant event details."
+        },
+        {
+          "component": "Correlation Rule",
+          "issue": "We fixed the issue where selecting a Rule Query from Saved Searches caused an error during Correlation rule creation. Now, the error is no longer displayed."
+        },
+        {
+          "component": "FIM Reporting",
+          "issue": "We fixed an issue where downloading a CSV report from theAssets > Real Time Assetstab using QQL filters resulted in a blank file. The report now correctly includes the expected data based on the applied filters."
+        },
+        {
+          "component": "FIM Incident",
+          "issue": "We fixed the issue where incidents created through correlation rules did not capture all events linked to a specific profile. Now, all relevant events are correctly captured."
+        },
+        {
+          "component": "FIM Reporting",
+          "issue": "We fixed an issue where downloading a report with a large number of events showed aGateway Time-out error. Now, the report downloads successfully, even when it contains many events."
+        }
+      ],
+      "cves": [
+        "CVE-2021-26858"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-07T19:09:52.063730+00:00",
+      "status": "success"
+    }
   },
   "2d7f2d365e8d": {
     "key": "2d7f2d365e8d",
@@ -21620,7 +21700,23 @@
       "FIM"
     ],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 05, 2025",
+      "features": [
+        {
+          "heading": "JWT Token Generation",
+          "summary": "You can generate the JWT access token by providing the client ID and client secret key in the following API request headers."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-07T19:09:52.063730+00:00",
+      "status": "success"
+    }
   },
   "8f544d46e39f": {
     "key": "8f544d46e39f",
@@ -21630,7 +21726,23 @@
       "PNS"
     ],
     "month_label": "May 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "May 05, 2025",
+      "features": [
+        {
+          "heading": "Issue Addressed",
+          "summary": "In this release, we have fixed an issue with theSensorstab where the existing sensor data was not displayed due to certain conditions. This issue prevented users from accessing or managing sensors effectively through the UI. Now, theSensorstab…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-07T19:09:52.063730+00:00",
+      "status": "success"
+    }
   },
   "efd4fb6e2a44": {
     "key": "efd4fb6e2a44",
@@ -21640,7 +21752,31 @@
       "UD"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 28, 2025",
+      "features": [
+        {
+          "heading": "Enhanced View of Manage Dashboard Page",
+          "summary": "We have revamped the appearance and layout of the Manage Dashboard page with the following changes"
+        },
+        {
+          "heading": "Pin and Unpin the Dashboard through Settings icon",
+          "summary": "You can pin and unpin your dashboards directly through theSettingson theDashboardtab.The pinned dashboards will appear even after you log out from your account or refresh the page."
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following reported and notable customer issues are fixed in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-07T19:09:52.063730+00:00",
+      "status": "success"
+    }
   },
   "4e415e7f2ffa": {
     "key": "4e415e7f2ffa",
