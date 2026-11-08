@@ -20682,8 +20682,8 @@
     "month_label": "May 2025",
     "detected_at": "2026-05-18T17:20:41+00:00",
     "enrichment": {
-      "attempts": 2,
-      "last_attempt_at": "2026-11-06T20:38:46.452496+00:00",
+      "attempts": 3,
+      "last_attempt_at": "2026-11-08T14:31:07.743404+00:00",
       "status": "failed",
       "error": "All 3 fetch attempts failed for https://docs.qualys.com/en/integration/vmdr-itsm/release_notes/release_core_3_0_0_vmdr_3_0_1.htm"
     }
@@ -21786,7 +21786,31 @@
       "VMDR Mobile"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 30, 2025",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "SEM",
+          "issue": "An issue was observed where, although the maximum assets enrollment limit was set to 50, more than 50 Intune mobile devices were enrolled after the connector setup. This issue is now fixed, and if the maximum limit of 50 devices is exceeded, a message stating that the device cannot be added due to the maximum limit reached is displayed on theView Connector Detailswindow."
+        },
+        {
+          "component": "SEM",
+          "issue": "An issue occurred in which if the QAgent mobile application was not launched for a long time, theLastSeentime stamp on the VMDR Mobile application did not show the latest time.This issue is fixed, and the QAgent mobile application now syncs correctly, showing the correctLastSeentime stamp."
+        },
+        {
+          "component": "SEM",
+          "issue": "An issue occurred in which the Intune assets not considered in the sync process were still shown asEnrolledon the VMDR Mobile application. In the next sync cycle, when these assets were successfully synced, their status was shown asEnrolledthe second time, which resulted in duplicate entries of the enrolled assets.This issue is now fixed, and the VMDR Mobile application displays the correctEnrolledIntune assets only after the successful sync."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-08T14:31:07.743404+00:00",
+      "status": "success"
+    }
   },
   "73013edbe92e": {
     "key": "73013edbe92e",
@@ -21796,7 +21820,23 @@
       "CS"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 22, 2025",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "With this release, Qualys Container Security can manage your Kubernetes (K8s) Posture. It refers to a set of practices and processes aimed at securing your K8s environments. Qualys is developing this feature in phases. In this first phase, Qualys…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-08T14:31:07.743404+00:00",
+      "status": "success"
+    }
   },
   "9422b0b96615": {
     "key": "9422b0b96615",
@@ -21806,7 +21846,44 @@
       "CS"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 22, 2025 (Updated on 6th June 2025)",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, Qualys Container Security Sensor supportsCS General Sensorinstallation on a host with Podman Runtime. Earlier, CS Registry Sensor provided support to the Linux host with Podman Runtime. With this release, CS General Sensor…"
+        },
+        {
+          "heading": "Helm Chart 1.17.0 Updates",
+          "summary": "The Qualys Container Security package consists of the 'values.yaml' file which deploys the sensor in various environments. This section explains the updates in the latest Helm chart (values.yaml) file. Refer toQCS Sensor Helm Chart (qcs-sensor)."
+        },
+        {
+          "heading": "Unified Helm Chart (qualys-tc 2.4.0) Updates",
+          "summary": "The unified helm chart can be used to install QCS Sensor, Admission Controller, Cluster Sensor, and Container Runtime Sensor. Refer toQualys Unified Helm Chart (qualys-tc)."
+        },
+        {
+          "heading": "Unified Helm Chart (qualys-tc 2.4.1) Updates",
+          "summary": "Ensure you use this helm chart to scan your GKE Autopilot clusters."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Sensor in Harbor registry",
+          "issue": "Fixed an issue where the CS Sensor failed to tag images larger than the page size in the Harbor Registry, which prevented pagination from being generated."
+        },
+        {
+          "component": "Host IP Address",
+          "issue": "Sensor failed to display IP address of a host having more than one IPv4 addresses and showed '- (empty)' value in QualysEnterprise TruRisk™ Platform. (Configurations>Sensors>Sensor Details>Host Summary)."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-08T14:31:07.743404+00:00",
+      "status": "success"
+    }
   },
   "cc2798a5b92f": {
     "key": "cc2798a5b92f",
@@ -21816,7 +21893,35 @@
       "EDR"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 15, 2025",
+      "features": [
+        {
+          "heading": "New Enhancements in Advanced Hunting",
+          "summary": "In anearlier release, we introduced theAdvanced Huntingtab underHunting, featuring a set of predefined queries developed by our Threat Research team. These queries enabled quick identification of potential threats, anomalies, or suspicious…"
+        },
+        {
+          "heading": "Added JSON Support for Web Access Control Exclusions in the Antimalware Profile",
+          "summary": "We have added support for uploading JSON files to improve the management of Web Access Control exclusions within the Antimalware Profile."
+        },
+        {
+          "heading": "New Enhancements in Asset Configuration",
+          "summary": "The following new enhancements are added to the Asset Configuration functionality"
+        },
+        {
+          "heading": "New Override Host Config Option for Quarantined Assets",
+          "summary": "The Override Quarantined Host Configuration is a security feature that enables you to bypass or adjust restrictions on a quarantined host."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-08T14:31:07.743404+00:00",
+      "status": "success"
+    }
   },
   "082a6697aa32": {
     "key": "082a6697aa32",
