@@ -21931,7 +21931,31 @@
       "PM"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 21, 2025",
+      "features": [
+        {
+          "heading": "New Pre-Action to Update Package Cache in Linux Deployment Job",
+          "summary": "With this release, a new pre-action is added to the Linux deployment job, which updates the package repository before the patch job starts. This helps prevent patch deployment failure that occurs due to the package cache not being updated. In this…"
+        },
+        {
+          "heading": "Reattempt Failed Windows Patches",
+          "summary": "Before this release, you had to re-run the job or create a new job to attempt the installation of the failed Windows patches.With this release, you can reattempt installing the failed patches in an existing Windows patch job. A new toggleReattempt…"
+        },
+        {
+          "heading": "Support forSuSE Linux Enterprise Server 15 SP6 andOpenSuSE Linux 15.2, 15.3,15.6",
+          "summary": "We have now supported patching for theSuSE Linux Enterprise Server 15 SP6 andOpenSuSE Linux 15.2, 15.3,15.6 Linux assets."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-08T19:13:34.964119+00:00",
+      "status": "success"
+    }
   },
   "68d068fa6cc4": {
     "key": "68d068fa6cc4",
@@ -21942,7 +21966,27 @@
       "PM"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 21, 2025",
+      "features": [
+        {
+          "heading": "Enhanced Linux Deployment Job APIs",
+          "summary": "In earlier release, certain errors occurred in Linux patching as the package cache was not updated correctly, due to which users had to run commands to update the cache."
+        },
+        {
+          "heading": "Enhanced Windows Deployment Job APIs",
+          "summary": "With this release, we have updated the Create Deployment Job API for Windows with options to retry the deployment of failed patches again in the same job, once the job is completed."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-08T19:13:34.964119+00:00",
+      "status": "success"
+    }
   },
   "eda3cc6d1552": {
     "key": "eda3cc6d1552",
@@ -21952,7 +21996,43 @@
       "VMDR OT"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 21, 2025",
+      "features": [
+        {
+          "heading": "Introduced New Reports Tab",
+          "summary": "In this release, we have added a newReportstab that allows you to create, schedule, edit, download, and delete VMDR OT reports. Reports provide all detailed information in one file, eliminating the need for manual data compilation and significantly…"
+        },
+        {
+          "heading": "Ability to View External IPs",
+          "summary": "With this release, you can now view the list of all external IPs (unidentified IPs) that are communicating with your organization's internal IPs. This feature helps you to"
+        },
+        {
+          "heading": "New Summary Count Cards on VMDR OT Dashboard",
+          "summary": "The summary count cards previously available under theAssetstab have been moved to theDashboardtab. The following summary cards are now available on theDashboardtab"
+        },
+        {
+          "heading": "Support for Parsing New File Formats",
+          "summary": "In this release, we have enhanced the asset information import functionality to support additional project file formats from vendors such as Beckhoff, Siemens, and Red Lion Controls.You can now import the following new project file formats."
+        },
+        {
+          "heading": "New Tokens for Reports Tab",
+          "summary": ""
+        },
+        {
+          "heading": "New Tokens for Network Tab",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-08T19:13:34.964119+00:00",
+      "status": "success"
+    }
   },
   "ab486174c96f": {
     "key": "ab486174c96f",
@@ -21962,7 +22042,39 @@
       "CA"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 18, 2025",
+      "features": [
+        {
+          "heading": "New Features",
+          "summary": "There are no new features for this release."
+        },
+        {
+          "heading": "Cloud Agent Enhancements",
+          "summary": "With this release, we have updated the base image used for Linux AWS Bottlerocket Cloud Agent to update the latest versions of third-party packages."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-08T19:13:34.964119+00:00",
+      "status": "success"
+    }
   },
   "81be45e6850b": {
     "key": "81be45e6850b",
@@ -21972,7 +22084,39 @@
       "CA"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 18, 2025",
+      "features": [
+        {
+          "heading": "New Features",
+          "summary": "There are no new features for this release."
+        },
+        {
+          "heading": "Cloud Agent Enhancements",
+          "summary": "With this release, we have updated the base image used for Redhat Enterprise Linux CoreOS Cloud Agent to update the latest versions of third-party packages."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-08T19:13:34.964119+00:00",
+      "status": "success"
+    }
   },
   "4c30965280a5": {
     "key": "4c30965280a5",
