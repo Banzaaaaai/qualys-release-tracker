@@ -22126,7 +22126,39 @@
       "CA"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 18, 2025",
+      "features": [
+        {
+          "heading": "New Features",
+          "summary": "There are no new features for this release."
+        },
+        {
+          "heading": "Cloud Agent Enhancements",
+          "summary": "With this release, we have updated the base image used for the Google Cloud Platform Container Optimized OS (GCP-COS) Cloud Agent to update the latest versions of third-party packages."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-09T17:48:04.009020+00:00",
+      "status": "success"
+    }
   },
   "bf5948134e00": {
     "key": "bf5948134e00",
@@ -22136,7 +22168,23 @@
       "ETM"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 18, 2025",
+      "features": [
+        {
+          "heading": "What's New in Connectors",
+          "summary": "We are expanding our connector ecosystem with six new API integrations that significantly enhance vulnerability management capabilities across diverse security domains."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-09T17:48:04.009020+00:00",
+      "status": "success"
+    }
   },
   "53a26e817b97": {
     "key": "53a26e817b97",
@@ -22147,7 +22195,25 @@
       "CS"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 16, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With the Container Security 1.38 release, the following enhancements in APIs are made."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2022-0185"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-09T17:48:04.009020+00:00",
+      "status": "success"
+    }
   },
   "a92b6824a592": {
     "key": "a92b6824a592",
@@ -22157,7 +22223,23 @@
       "CA"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 14, 2025",
+      "features": [
+        {
+          "heading": "New Features",
+          "summary": "We are introducing the following new features and enhancements with this release of the Cloud Agent user interface."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-09T17:48:04.009020+00:00",
+      "status": "success"
+    }
   },
   "07c88229350d": {
     "key": "07c88229350d",
@@ -22168,7 +22250,23 @@
       "CA"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 14, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we have added support to generate the list of Cloud Agents assigned using Direct Assignment API (/caui/v1/config-profiles/direct-assign/<profile_id>). This API generates the paginated list of Cloud Agents."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-09T17:48:04.009020+00:00",
+      "status": "success"
+    }
   },
   "1c818b8f2aa2": {
     "key": "1c818b8f2aa2",
