@@ -22276,7 +22276,35 @@
       "TAS"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 14, 2025",
+      "features": [
+        {
+          "heading": "Qualys API Security in TotalAppSec",
+          "summary": "Qualys TotalAppSec (TAS) introduces API scanning with new QIDs, coverage of the OWASP API Top 10, and compliance verification for OpenAPI and Swagger. Qualys API security secures API assets by discovering API endpoints - internal, external, rogue,…"
+        },
+        {
+          "heading": "Discovering Potential Web Applications in Cloud Instances using TotalCloud",
+          "summary": "With this feature, Web Application Scanning is integrated with TotalCloud. This integration leverages the configurations of the cloud environment to autonomously identify and catalog potential web applications within your subscription. The potential…"
+        },
+        {
+          "heading": "Discovering Potential API Assets",
+          "summary": "With this release, we have introduced the API discovery scan with which potential API assets are discovered from the web applications in your subscription."
+        },
+        {
+          "heading": "Support for Customized Signature",
+          "summary": "With this release, you can enhance the security testing capabilities by creating customized vulnerability signatures with targeted and automated detection rules addressing your specific security needs."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-09T23:38:08.015505+00:00",
+      "status": "success"
+    }
   },
   "b83125f02763": {
     "key": "b83125f02763",
@@ -22286,7 +22314,27 @@
       "WAS"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 14, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "We have renamed the Classic filters in theWeb ApplicationstoAdvanced."
+        },
+        {
+          "heading": "Issues Addressed in Web Applications Scanning 1.20",
+          "summary": "The following notable and important issues are fixed in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-09T23:38:08.015505+00:00",
+      "status": "success"
+    }
   },
   "825f2b41fbe0": {
     "key": "825f2b41fbe0",
@@ -22299,7 +22347,48 @@
       "WAS"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 14, 2025",
+      "features": [
+        {
+          "heading": "What's new?",
+          "summary": "With this release, we are providing the docker hub URL for the AWS Bottlerocket, GCP-COS, and Redhat CoreOS agent installer packages on theInstall Agentspage. This gives you earlier access to the docker images containing Cloud Agent installer for…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "AssetView UI",
+          "issue": "AssetView"
+        },
+        {
+          "component": "CSAM UI",
+          "issue": "CSAM"
+        },
+        {
+          "component": "CAUI",
+          "issue": "Cloud Agent"
+        },
+        {
+          "component": "Portal API",
+          "issue": "Enterprise TruRisk™ Platform"
+        },
+        {
+          "component": "CSAM API",
+          "issue": "CSAM"
+        },
+        {
+          "component": "WAS API",
+          "issue": "WAS"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-09T23:38:08.015505+00:00",
+      "status": "success"
+    }
   },
   "d1f34e5a9b16": {
     "key": "d1f34e5a9b16",
@@ -22311,7 +22400,23 @@
       "WAS"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 14, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we have added support for downloading Software Composition Analysis (SwCA) Scan Report for multiple assets as per Cyclone Dx standard in JSON format."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-09T23:38:08.015505+00:00",
+      "status": "success"
+    }
   },
   "4aad6d071ce6": {
     "key": "4aad6d071ce6",
@@ -22321,7 +22426,27 @@
       "PNS"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 11, 2025 (Updated on April 17, 2025)",
+      "features": [
+        {
+          "heading": "NPS Support for CAPS Leader Assignment",
+          "summary": "With this release, we have enhanced the NPS services to provide support for theCloud Agent as Passive Sensor (CAPS)leader assignment feature."
+        },
+        {
+          "heading": "Appliance Release 2.1.0 - New Features and Updates",
+          "summary": "The Appliance 2.1.0 release include the following new features and security enhancements of NPS Virtual Appliance."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-09T23:38:08.015505+00:00",
+      "status": "success"
+    }
   },
   "c3ddbd8262e0": {
     "key": "c3ddbd8262e0",
