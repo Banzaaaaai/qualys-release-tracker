@@ -22589,7 +22589,27 @@
       "VMDR"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 07, 2025",
+      "features": [
+        {
+          "heading": "What's New in MITRE ATT&CK",
+          "summary": "We have enhanced theVulnerability Detailswindow to include MITRE ATT&CK Tactics and Techniques. This enhancement offers more profound insights into how vulnerabilities relate to real-world attack strategies and adversary behaviors."
+        },
+        {
+          "heading": "What's New in Responses",
+          "summary": "Integrating alerts with Microsoft Teams empowers security and IT teams to receive real-time notifications directly in their Teams channels. This integration significantly enhances the response to critical evaluations, fosters collaboration, and…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-10T21:05:00.680940+00:00",
+      "status": "success"
+    }
   },
   "d89cbeb180e3": {
     "key": "d89cbeb180e3",
@@ -22599,7 +22619,23 @@
       "ETM"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 04, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "Home page displays the TruRisk Summary. This summary includes comprehensive insights into Business Entities."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-10T21:05:00.680940+00:00",
+      "status": "success"
+    }
   },
   "d55443c51bad": {
     "key": "d55443c51bad",
@@ -22609,7 +22645,23 @@
       "PM"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 04, 2025",
+      "features": [
+        {
+          "heading": "New Qualys TruRisk™ Eliminate MCM Plugin",
+          "summary": "With this release, we have introduced the Qualys TruRisk™ Eliminate Microsoft Configuration Manager (MCM) Plugin in the Patch Management application."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-10T21:05:00.680940+00:00",
+      "status": "success"
+    }
   },
   "7fddc5f769cf": {
     "key": "7fddc5f769cf",
@@ -22619,7 +22671,23 @@
       "QF"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 04, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we have introduced a default dashboard designed to enhance your user experience. A predefined dashboard gives you insights into your account's workflows and executions. As you become more familiar with the platform, you can create…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-10T21:05:00.680940+00:00",
+      "status": "success"
+    }
   },
   "6b119ca5a001": {
     "key": "6b119ca5a001",
@@ -22630,7 +22698,76 @@
       "VM"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 2, 2025",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "With this release, the MITRE ATT&CK tactics and techniques, is now extended to the scan report. This enables you to generate a detailed report that displays the tactic and technique names and IDs in the host-based report. This allows you to take…"
+        },
+        {
+          "heading": "Qualys Policy Compliance (PC)",
+          "summary": "With this release, you can include control statistics information in the Policy Compliance report in the CSV format."
+        },
+        {
+          "heading": "User Interface (UI 4.0) of the Qualys Enterprise TruRisk™ Platform",
+          "summary": "Our goal is to continuously improve user interaction with the Qualys Enterprise TruRisk™ Platform through UI enhancements. With this release, we have made the following changes"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Scan Based Report",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - User Management",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "Licensing - Addon Enable/Disable",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - User Management",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Asset API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Host List Detection API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "Documentation",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan Schedule",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Host List Detection API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "PC",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC - PCRS Reports",
+          "issue": "Policy Compliance"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-10T21:05:00.680940+00:00",
+      "status": "success"
+    }
   },
   "7299f715cfaa": {
     "key": "7299f715cfaa",
