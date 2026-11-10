@@ -22456,7 +22456,23 @@
       "UD"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 11, 2025",
+      "features": [
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following reported and notable customer issues has been fixed in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-10T15:46:24.786342+00:00",
+      "status": "success"
+    }
   },
   "28f11da9b781": {
     "key": "28f11da9b781",
@@ -22466,7 +22482,23 @@
       "SA"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 11, 2025(Updated on April 18, 2025)",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "This release brings new features and updates to supported cloud platforms, data centers, and desktop platforms."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-10T15:46:24.786342+00:00",
+      "status": "success"
+    }
   },
   "02d6dd61575b": {
     "key": "02d6dd61575b",
@@ -22476,7 +22508,23 @@
       "CAR"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 28, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "We have introduced a new detection logic for identifying custom QIDs using script output instead of exit codes. In many cases, script results may not return meaningful exit codes or may produce detailed logs. This enhancement ensures accurate QID…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-10T15:46:24.786342+00:00",
+      "status": "success"
+    }
   },
   "994908913f25": {
     "key": "994908913f25",
@@ -22487,7 +22535,25 @@
       "CAR"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 28, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "We have updated this API to simplify script execution on lab assets. You can now provide lab asset tags instead of individual assets in the API request to execute scripts on lab assets."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2023-3452"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-10T15:46:24.786342+00:00",
+      "status": "success"
+    }
   },
   "0c51e6875d60": {
     "key": "0c51e6875d60",
@@ -22497,7 +22563,23 @@
       "OCA"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "April 2, 2025",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "OCA 1.11 brings updates to reports."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-10T15:46:24.786342+00:00",
+      "status": "success"
+    }
   },
   "85ce7d394586": {
     "key": "85ce7d394586",
