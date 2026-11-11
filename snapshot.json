@@ -22778,7 +22778,13 @@
       "VM"
     ],
     "month_label": "April 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-11T15:37:11.436717+00:00",
+      "status": "failed",
+      "error": "All 3 fetch attempts failed for https://docs.qualys.com/en/vm/release-notes/qweb/release_10_33_api.htm "
+    }
   },
   "7e275949dda7": {
     "key": "7e275949dda7",
@@ -22788,7 +22794,23 @@
       "QGS"
     ],
     "month_label": "March 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 05, 2025",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "QGS 3.10 brings updates to the Appliance OS Versions to enhance system security."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-11T15:37:11.436717+00:00",
+      "status": "success"
+    }
   },
   "a1dc2000c295": {
     "key": "a1dc2000c295",
@@ -22798,7 +22820,36 @@
       "QS"
     ],
     "month_label": "March 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 27, 2025",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "Harbor is an open-source container image registry that can store, scan, and distribute container images securely. The Harbor Scanner Adapter acts as a bridge between Harbor and third-party vulnerability scanning tools, enabling Harbor to perform…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Image Scan on Containerd Runtime",
+          "issue": "Vulnerability scan of an image failed when QScanner scanned specific images with 'containerd' runtime."
+        },
+        {
+          "component": "Changelist.db or SBOM",
+          "issue": "QScanner was exiting the scan process due to failure in changelist.db or SBOM upload."
+        },
+        {
+          "component": "Data Collection",
+          "issue": "QScanner failed to detect OS packages. To tackle this issue, collection of packages from RPM package manager is improved."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-11T15:37:11.436717+00:00",
+      "status": "success"
+    }
   },
   "79532e716230": {
     "key": "79532e716230",
@@ -22809,7 +22860,32 @@
       "CRI"
     ],
     "month_label": "March 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 20, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we have extended our support to import Intermediate and Root certificates. Earlier, you could only import Leaf certificates. This enhancement allows for a more comprehensive certificate management."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Certificate Reporting",
+          "issue": "We resolved an issue where users could not save settings for delivering the report as an attachment over email."
+        },
+        {
+          "component": "Certificate UI",
+          "issue": "We resolved an issue where users could not import DigiCert CA to the configuration tab by making relevant code changes."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-11T15:37:11.436717+00:00",
+      "status": "success"
+    }
   },
   "a9af007df751": {
     "key": "a9af007df751",
@@ -22819,7 +22895,27 @@
       "Conn"
     ],
     "month_label": "March 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 15, 2025",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "Connector 2.8 introduces updates to Connector tags."
+        },
+        {
+          "heading": "Issues Fixed",
+          "summary": "© 2026 Qualys, Inc. All rights reserved.Privacy Policy."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-11T15:37:11.436717+00:00",
+      "status": "success"
+    }
   },
   "525d4bf76a72": {
     "key": "525d4bf76a72",
