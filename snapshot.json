@@ -22925,7 +22925,59 @@
       "TC"
     ],
     "month_label": "March 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 1, 2025",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "TotalCloud 2.15.0 brings updates to the resource inventory, Insights, controls and more."
+        },
+        {
+          "heading": "Amazon Web Service",
+          "summary": "With this release, Qualys TotalCloud has enhanced AWS TruRisk Insights enabling a visual representation of resource relationships and potential security impact paths across your AWS environments. The new Attack Path column in AWS TruRisk…"
+        },
+        {
+          "heading": "Microsoft Azure",
+          "summary": "With this releases, we have extended the support of TotalCloud's CDR to Azure resources. Now, CDR candetectmalware, ransomware, crypto-miner, and malicious network activity in your Azure environment using VTap."
+        },
+        {
+          "heading": "Oracle Cloud Infrastructure",
+          "summary": "With this release, we are extending the assessment repor features of TotalCloud to our OCI Cloud as well, assisting in the full maturity of OCI's CSPM features. Generate detailed reports identifying evaluated controls and the…"
+        },
+        {
+          "heading": "Common Updates",
+          "summary": "TotalCloud's Reporting feature is also extended to the CDR events. Generate CSV reports on CDR findings of any cloud provider. You can narrow down your findings with our advanced QQL search bar. Now, you can improve your threat posture with…"
+        },
+        {
+          "heading": "Control Changes",
+          "summary": "Changes introduced to controls in this release."
+        },
+        {
+          "heading": "Amazon Web Services",
+          "summary": "CID"
+        },
+        {
+          "heading": "Microsoft Azure",
+          "summary": "CID"
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "New Tokens introduced in TotalCloud 2.15.0"
+        },
+        {
+          "heading": "Issues Fixed",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-11T21:38:09.150065+00:00",
+      "status": "success"
+    }
   },
   "99f3520c7d9f": {
     "key": "99f3520c7d9f",
@@ -22936,7 +22988,23 @@
       "TC"
     ],
     "month_label": "March 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 15, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we have added a new support for OCI in the \"cloudType\" parameter of the Create Assessment report. Now, you can generate reports for your OCI resources and their control evaluations, gaining a deeper insight into the security…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-11T21:38:09.150065+00:00",
+      "status": "success"
+    }
   },
   "2cb2923de76d": {
     "key": "2cb2923de76d",
@@ -22947,7 +23015,54 @@
       "CS"
     ],
     "month_label": "March 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 11, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With the Container Security 1.37 release, the following enhancements in APIs are made."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2007-4559",
+        "CVE-2016-3709",
+        "CVE-2017-1000366",
+        "CVE-2017-7526",
+        "CVE-2018-12015",
+        "CVE-2019-3462",
+        "CVE-2020-10735",
+        "CVE-2021-20190",
+        "CVE-2021-22946",
+        "CVE-2021-22947",
+        "CVE-2021-46143",
+        "CVE-2022-2068",
+        "CVE-2022-22822",
+        "CVE-2022-22823",
+        "CVE-2022-22824",
+        "CVE-2022-22825",
+        "CVE-2022-22826",
+        "CVE-2022-22827",
+        "CVE-2022-28391",
+        "CVE-2022-37434",
+        "CVE-2022-45061",
+        "CVE-2022-48560",
+        "CVE-2022-48564",
+        "CVE-2023-27043",
+        "CVE-2023-6129",
+        "CVE-2023-6237",
+        "CVE-2024-0727",
+        "CVE-2024-1485",
+        "CVE-2024-36114",
+        "CVE-2024-6119"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-11T21:38:09.150065+00:00",
+      "status": "success"
+    }
   },
   "fa6cadfb0139": {
     "key": "fa6cadfb0139",
@@ -22957,7 +23072,35 @@
       "CS"
     ],
     "month_label": "March 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 11, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, Qualys Container Security Sensor adds Overlay2 scanning support for CS Sensor on a host having Docker Runtime. The 'Overlay2' storage driver is supported by these sensors - General, CI/CD, and Registry.To enable Overlay2 scanning,…"
+        },
+        {
+          "heading": "Helm Chart 1.16.0 Updates",
+          "summary": "The Qualys Container Security package consists of the 'values.yaml' file which deploys the sensor in various environments. This section explains the updates in the latest Helm chart (values.yaml) file. Refer toQCS Sensor Helm Chart (qcs-sensor)."
+        },
+        {
+          "heading": "Unified Helm Chart (qualys-tc 2.3.1) Updates",
+          "summary": "The unified helm chart can be used to install Qcs Sensor, Admission Controller, Cluster Sensor, and Container Runtime Sensor. Refer toQualys Unified Helm Chart (qualys-tc)."
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following issue has been fixed with this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-11T21:38:09.150065+00:00",
+      "status": "success"
+    }
   },
   "719e48dae221": {
     "key": "719e48dae221",
@@ -22967,7 +23110,23 @@
       "PM"
     ],
     "month_label": "March 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 06, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we introduced a new application, TruRisk Eliminate, which includes Patch Management, Mitigation, and Isolation support."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-11T21:38:09.150065+00:00",
+      "status": "success"
+    }
   },
   "373202c71e03": {
     "key": "373202c71e03",
