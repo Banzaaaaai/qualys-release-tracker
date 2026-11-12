@@ -22780,8 +22780,8 @@
     "month_label": "April 2025",
     "detected_at": "2026-05-18T17:20:41+00:00",
     "enrichment": {
-      "attempts": 1,
-      "last_attempt_at": "2026-11-11T15:37:11.436717+00:00",
+      "attempts": 2,
+      "last_attempt_at": "2026-11-12T16:13:37.299692+00:00",
       "status": "failed",
       "error": "All 3 fetch attempts failed for https://docs.qualys.com/en/vm/release-notes/qweb/release_10_33_api.htm "
     }
@@ -23136,7 +23136,63 @@
       "ETM"
     ],
     "month_label": "March 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 04, 2025",
+      "features": [
+        {
+          "heading": "Support for New Connectors",
+          "summary": "We are expanding our connector ecosystem with four new API integrations and one new Generic CSV integration."
+        },
+        {
+          "heading": "Custom Attributes",
+          "summary": "We have introduced a new feature of Custom Attributes allowing you to define and manage Custom Attributes for findings within Qualys ETM. This enhancement provides enhanced flexibility to create calculated fields for findings in ETM."
+        },
+        {
+          "heading": "Purge Findings",
+          "summary": "With this release, we have introduced the purge Findings. It is designed to facilitate the routine removal of outdated information, notably findings that are no longer relevant in your environment. In fast-paced, dynamic settings such as cloud…"
+        },
+        {
+          "heading": "Support for CSAM and VMDR QQL Search Tokens for Assets",
+          "summary": "With this release, we have extended support for CSAM and VMDR QQL search tokens for assets. The following are the categories for which we have introduced tokens."
+        },
+        {
+          "heading": "New Tokens for Findings Tab",
+          "summary": "Name"
+        },
+        {
+          "heading": "New Tokens for Business Entities",
+          "summary": "Name"
+        },
+        {
+          "heading": "New Default Dashboard",
+          "summary": "With this release, we have introduced a default dashboard designed to enhance your user experience. A predefined dashboard that allows new users to quickly start viewing. As you become more familiar with the platform you have the option to create…"
+        },
+        {
+          "heading": "Integration with Qualys Applications: PC, SCA, and WAS",
+          "summary": "ETM now supports integration with other Qualys applications, including PC (Policy Compliance), SCA (Security Configuration Assessment), and WAS (Web Application Scanning). You can view findings from these applications in the ETM Findings tab."
+        },
+        {
+          "heading": "Support for Venn Chart in ETM Dashboard Widget",
+          "summary": "With this release, you can use a Venn diagram representation for your widgets. A Venn diagram is a powerful tool for representing findings. It visually illustrates relationships between different elements, highlighting overlaps, gaps, and…"
+        },
+        {
+          "heading": "New Group By Option for Vulnerabilities and Misconfigurations",
+          "summary": "When you have findings ready, you can organize them further into logical groupings. We offer several Group by options like Detection age, CVE Protocol, and so on. With this release, you can group your findings by usingType Detectedfor Vulnerability…"
+        },
+        {
+          "heading": "API Features and Enhancements",
+          "summary": "With this release, we have introduced ETM Report APIs designed for asynchronous operations. For detailed information on APIs, refer to theETM API Release Notes."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-12T16:13:37.299692+00:00",
+      "status": "success"
+    }
   },
   "5f82f3163c8d": {
     "key": "5f82f3163c8d",
@@ -23147,7 +23203,23 @@
       "ETM"
     ],
     "month_label": "March 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 04, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we have introduced ETM Report APIs designed for asynchronous operations. You can now request services and receive responses later, ensuring non-blocking execution."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-12T16:13:37.299692+00:00",
+      "status": "success"
+    }
   },
   "c7422b93b4b6": {
     "key": "c7422b93b4b6",
@@ -23157,7 +23229,23 @@
       "TA"
     ],
     "month_label": "March 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 05, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we introduce the following new features and enhancements to the TotalAI application."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-12T16:13:37.299692+00:00",
+      "status": "success"
+    }
   },
   "af5194529769": {
     "key": "af5194529769",
@@ -23167,7 +23255,23 @@
       "CS"
     ],
     "month_label": "March 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 11, 2025",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "With this release, the Qualys Container Security is now 'Red Hat Vulnerability Scanner' Certified enabling you to secure your Red Hat environment. With this change, you can choose to see 'Red Hat Security Advisory (RHSA)' information in Image and…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-12T16:13:37.299692+00:00",
+      "status": "success"
+    }
   },
   "51e896aa2308": {
     "key": "51e896aa2308",
