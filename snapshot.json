@@ -23281,7 +23281,23 @@
       "EDR"
     ],
     "month_label": "March 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 03, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "We have added a new capability in the Assets tab that lets you retry failed Antimalware Protection (EPP) installations with a single click. Previously, there was no direct way to reinstall failed EPP installations. With this update, you can now…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-12T21:38:56.989249+00:00",
+      "status": "success"
+    }
   },
   "76b0cbd8c1e6": {
     "key": "76b0cbd8c1e6",
@@ -23292,7 +23308,64 @@
       "VM"
     ],
     "month_label": "March 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 03, 2025",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "We rolled out ournewly designed user interface (UI)for the entire platform in the latter half of January 2025! This update introduced a consistent and streamlined experience across all applications simultaneously, ensuring that navigation and…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Option Profile",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan Schedule",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Reports General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Host Based Report",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - UI General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - UI General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "PC - API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "PC - Controls",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC - Reports",
+          "issue": "Policy Compliance"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-12T21:38:56.989249+00:00",
+      "status": "success"
+    }
   },
   "431c4ddcfc1d": {
     "key": "431c4ddcfc1d",
@@ -23304,7 +23377,32 @@
       "VM"
     ],
     "month_label": "March 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 11, 2025 (Updated on March 03, 2025)",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we have introduced a new description section within the evidence section to display the control description in the JSON response. You can now view the control description for a particular host posture when you execute this API.…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Scan API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "PC - API",
+          "issue": "Policy Compliance"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-12T21:38:56.989249+00:00",
+      "status": "success"
+    }
   },
   "2092ef61a508": {
     "key": "2092ef61a508",
@@ -23315,7 +23413,23 @@
       "GAV"
     ],
     "month_label": "March 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "March 03, 2025 (Updated on April 08, 2025)",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "The following are the new features available with the CSAM subscription."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-12T21:38:56.989249+00:00",
+      "status": "success"
+    }
   },
   "bcb1577d6046": {
     "key": "bcb1577d6046",
@@ -23325,7 +23439,23 @@
       "FIM"
     ],
     "month_label": "February 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 27, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "TheTag-based User Scopingfeature is currently available to limited customers and is in the early preview stage. Access to this feature is provided on request. For more details, contact Qualys Technical support."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-12T21:38:56.989249+00:00",
+      "status": "success"
+    }
   },
   "2fe929cd2e9f": {
     "key": "2fe929cd2e9f",
