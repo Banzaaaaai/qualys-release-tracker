@@ -23466,7 +23466,23 @@
       "FIM"
     ],
     "month_label": "February 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 27, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "TheTag-based User Scopingfeature is currently available to limited customers and is in the early preview stage. Access to this feature is provided on request. For more details, contact Qualys Technical support."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-13T15:40:54.079601+00:00",
+      "status": "success"
+    }
   },
   "b0f0cf225f9d": {
     "key": "b0f0cf225f9d",
@@ -23478,7 +23494,64 @@
       "PM"
     ],
     "month_label": "February 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 17, 2025 (Updated July 16, 2025)",
+      "features": [
+        {
+          "heading": "New Features",
+          "summary": "With this release of Qualys Cloud Agent for Windows, we are introducing the following new features and enhancements."
+        },
+        {
+          "heading": "Cloud Agent Enhancements",
+          "summary": "With this release, we have added support to remove the traces of previously installed Cloud Agents from the host asset. Earlier, the Cloud Agent installations were aborted for some of the assets due to the presence of traces from previously…"
+        },
+        {
+          "heading": "Patch Management Enhancements",
+          "summary": "With this release, we have introduced script-based pre-actions to cancel the ongoing patch deployment jobs. You can now configure a script to define the pre-actions and special code if these pre-actions are not completed. The following table shows…"
+        },
+        {
+          "heading": "Mitigation Enhancements",
+          "summary": "We have enhanced Qualys Mitigation to support the rolling back of applied mitigation. With the mitigation rollback job, you can rollback the fix script applied as a temporary fix for the vulnerabilities for which patches are available and deploy the…"
+        },
+        {
+          "heading": "EDR Enhancements",
+          "summary": "Microsoft's Anti-malware Solution Interface (AMSI) tool detects non-browser-based script events. With its built-in script inspection capabilities, AMSI protects your assets from malicious software that uses script-based infiltration methods to…"
+        },
+        {
+          "heading": "Behavior Change",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues or limitations in this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "CRM-132773",
+          "issue": "We had an issue where the patch jobs caused unexpected reboots if you deferred reboot action during the job execution window. We fixed this issue by prompting a manual reboot if the job execution window has elapsed and reboot action for the patch job is pending."
+        },
+        {
+          "component": "CRM-132173",
+          "issue": "We fixed an issue where the scheduled patch jobs were getting timed out due to the execution of special reboot jobs.Now we execute the special reboot jobs when no other patch jobs are running."
+        },
+        {
+          "component": "CRM-129605",
+          "issue": "We fixed an issue where theDeployment Completenotification was displayed even if no patches were installed during the patch job.Now, we have provided an option to manage notifications in the job configuration workflow."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-13T15:40:54.079601+00:00",
+      "status": "success"
+    }
   },
   "1a607ea02ee3": {
     "key": "1a607ea02ee3",
@@ -23488,7 +23561,23 @@
       "VMDR"
     ],
     "month_label": "February 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 21, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "We previously released a 2024 Wrapped Video, highlighting your risk reduction journey throughout the year. Now, the video comes with a downloadable PDF report enhancement for easy sharing and reference. The download option is available at the end of…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-13T15:40:54.079601+00:00",
+      "status": "success"
+    }
   },
   "106e4f3654ca": {
     "key": "106e4f3654ca",
@@ -23498,7 +23587,23 @@
       "UD"
     ],
     "month_label": "February 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 19, 2025",
+      "features": [
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following reported and notable customer issue has been fixed in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-13T15:40:54.079601+00:00",
+      "status": "success"
+    }
   },
   "c06c1397d3aa": {
     "key": "c06c1397d3aa",
@@ -23509,7 +23614,39 @@
       "EDR"
     ],
     "month_label": "February 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 14, 2025",
+      "features": [
+        {
+          "heading": "New Features",
+          "summary": "With this release of Qualys Cloud Agent for Linux ARM, we have added support for Endpoint Detection and Response (EDR) and Endpoint Protection Platform (EPP).  Qualys EDR and EPP allow you to monitor your security profile, detect vulnerabilities,…"
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "No notable and important issues were reported for this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workaround",
+          "summary": "There are no known limitations for this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-13T15:40:54.079601+00:00",
+      "status": "success"
+    }
   },
   "b03e1f0a5d74": {
     "key": "b03e1f0a5d74",
