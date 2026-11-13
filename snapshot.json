@@ -22780,8 +22780,8 @@
     "month_label": "April 2025",
     "detected_at": "2026-05-18T17:20:41+00:00",
     "enrichment": {
-      "attempts": 2,
-      "last_attempt_at": "2026-11-12T16:13:37.299692+00:00",
+      "attempts": 3,
+      "last_attempt_at": "2026-11-13T21:04:02.149011+00:00",
       "status": "failed",
       "error": "All 3 fetch attempts failed for https://docs.qualys.com/en/vm/release-notes/qweb/release_10_33_api.htm "
     }
@@ -23656,7 +23656,35 @@
       "CA"
     ],
     "month_label": "February 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 14, 2025",
+      "features": [
+        {
+          "heading": "New Features",
+          "summary": "We are introducing the following new features and enhancements with this release of the Cloud Agent user interface."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes for this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "No new platform support is provided with this release."
+        },
+        {
+          "heading": "Know Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues for this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-13T21:04:02.149011+00:00",
+      "status": "success"
+    }
   },
   "2519ae575d98": {
     "key": "2519ae575d98",
@@ -23666,7 +23694,35 @@
       "CS"
     ],
     "month_label": "February 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 17, 2025 (Updated on February 25, 2025)",
+      "features": [
+        {
+          "heading": "What's new?",
+          "summary": "With this release, the following flags are deprecated in order to maintain uniformity across Qualys sensors (Qualys CS Sensor, Cluster Sensor, and Container Runtime Sensor). With this change, the sensor development is more streamlined."
+        },
+        {
+          "heading": "Helm Chart 1.15.1 Updates",
+          "summary": "The Qualys Container Security package consists of the 'values.yaml' file which deploys the sensor in various environments. This section explains the updates in the latest Helm chart (values.yaml) file. Refer toQCS Sensor Helm Chart (qcs-sensor)."
+        },
+        {
+          "heading": "Unified Helm Chart (qualys-tc 2.2.1) Updates",
+          "summary": "This is the unified helm chart to install Qcs Sensor, Admission Controller, Cluster Sensor, and Container Runtime Sensor. Refer toQualys Unified Helm Chart (qualys-tc)."
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following issue has been fixed with this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-13T21:04:02.149011+00:00",
+      "status": "success"
+    }
   },
   "a58df4916fa4": {
     "key": "a58df4916fa4",
@@ -23681,7 +23737,84 @@
       "WAS"
     ],
     "month_label": "February 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 14, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this version of Qualys Cloud Platform, we are introducing the following new features and enhancements."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Shared Portal",
+          "issue": "CSAM"
+        },
+        {
+          "component": "Administration Logs",
+          "issue": "Administration"
+        },
+        {
+          "component": "Shared Portal",
+          "issue": "CSAM"
+        },
+        {
+          "component": "Shared Portal",
+          "issue": "Administration"
+        },
+        {
+          "component": "Shared Portal",
+          "issue": "Administration"
+        },
+        {
+          "component": "WAS UI",
+          "issue": "WAS"
+        },
+        {
+          "component": "Shared Portal",
+          "issue": "Administration"
+        },
+        {
+          "component": "Shared Portal",
+          "issue": "Cloud Agent"
+        },
+        {
+          "component": "CSAM UI",
+          "issue": "CSAM"
+        },
+        {
+          "component": "Shared Portal",
+          "issue": "WAS"
+        },
+        {
+          "component": "Shared Portal",
+          "issue": "CSAM"
+        },
+        {
+          "component": "WAS",
+          "issue": "WAS UI"
+        },
+        {
+          "component": "WAS",
+          "issue": "WAS UI"
+        },
+        {
+          "component": "Shared Portal",
+          "issue": "CSAM API"
+        },
+        {
+          "component": "SAQ UI",
+          "issue": "SAQ"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-13T21:04:02.149011+00:00",
+      "status": "success"
+    }
   },
   "629a4d9e35eb": {
     "key": "629a4d9e35eb",
@@ -23692,7 +23825,23 @@
       "CSAM"
     ],
     "month_label": "February 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 14, 2025",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "CSAM-API",
+          "issue": "We have added a partial indexing flag to address an issue where the asset management API was taking more time to generate a response.Impacted API:/qps/rest/2.0/update/am/asset"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-13T21:04:02.149011+00:00",
+      "status": "success"
+    }
   },
   "3ff93dbcaeef": {
     "key": "3ff93dbcaeef",
