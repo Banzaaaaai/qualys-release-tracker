@@ -24047,7 +24047,23 @@
       "PNS"
     ],
     "month_label": "February 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 07, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "The following improvements are introduced to enhance the overall user experience by providing a more consistent and visually appealing interface."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-14T19:33:30.455269+00:00",
+      "status": "success"
+    }
   },
   "618cd46ac366": {
     "key": "618cd46ac366",
@@ -24058,7 +24074,64 @@
       "VM"
     ],
     "month_label": "February 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 02, 2025",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Authentication Records",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - UI General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Asset Groups",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Reports General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scans",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - User Management",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "PC - Reports",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC - New UI",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC - Schedule Report",
+          "issue": "Policy Compliance"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-14T19:33:30.455269+00:00",
+      "status": "success"
+    }
   },
   "6714d56b2f7e": {
     "key": "6714d56b2f7e",
@@ -24070,7 +24143,23 @@
       "VM"
     ],
     "month_label": "February 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 02, 2025",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "VM - Scans",
+          "issue": "Vulnerability Management"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-14T19:33:30.455269+00:00",
+      "status": "success"
+    }
   },
   "dc6dec8af92f": {
     "key": "dc6dec8af92f",
@@ -24080,7 +24169,27 @@
       "Conn"
     ],
     "month_label": "February 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 20, 2025",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "Connector 2.7 introduces updates to the User Interface, and OCI connector."
+        },
+        {
+          "heading": "",
+          "summary": "The redesigned navigation menu offers a streamlined layout with apparent distinction between primary, secondary, and tertiary navigation elements, making it easier to access critical features."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-14T19:33:30.455269+00:00",
+      "status": "success"
+    }
   },
   "e9484dd03d52": {
     "key": "e9484dd03d52",
@@ -24090,7 +24199,39 @@
       "TC"
     ],
     "month_label": "February 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 20, 2025",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "TotalCloud 2.14.0 brings updates to the user interface, resource inventory, controls and more."
+        },
+        {
+          "heading": "Control Changes",
+          "summary": "Changes introduced to controls in this release."
+        },
+        {
+          "heading": "Amazon Web Service",
+          "summary": "CID"
+        },
+        {
+          "heading": "Microsoft Azure",
+          "summary": "Changes introduced to Microsoft Azure Controls."
+        },
+        {
+          "heading": "Oracle Cloud Infrastructure",
+          "summary": "CID"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-14T19:33:30.455269+00:00",
+      "status": "success"
+    }
   },
   "7a9a18884610": {
     "key": "7a9a18884610",
