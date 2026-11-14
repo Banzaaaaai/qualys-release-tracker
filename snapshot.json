@@ -23851,7 +23851,40 @@
       "WAS"
     ],
     "month_label": "February 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 10, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "There are no new features added in this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Dashboard",
+          "issue": "We fixed an issue where the tags assigned to web applications were not displayed in the WAS Dashboard widgets."
+        },
+        {
+          "component": "Detection Details",
+          "issue": "We fixed an issue where the payload parameters were not highlighted on theDetection Detailspage, which hampered their visibility.Now we clearly highlight the payload parameters."
+        },
+        {
+          "component": "Web Application Creation",
+          "issue": "We fixed an issue where users could not create a web application with the web application URLs containing IP addresses."
+        },
+        {
+          "component": "Retest QIDs",
+          "issue": "We fixed an issue where users encounteredRetest findings failederror while retesting SSL QIDs―38879 and 38794. TheRetestoption was incorrectly available in theQuick Actionsmenu when theRetestfunctionality is not supported for SSL QIDs, resulting in an error. Now, theRetestoption is not available for SSL QIDs -38879 and 38794."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-14T14:30:04.235103+00:00",
+      "status": "success"
+    }
   },
   "1ec434341812": {
     "key": "1ec434341812",
@@ -23862,7 +23895,68 @@
       "PM"
     ],
     "month_label": "February 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 11, 2025",
+      "features": [
+        {
+          "heading": "New Features",
+          "summary": "With this release, we have added support for rolling back the installed patches for Debian Ubuntu and RPM-based Linux assets."
+        },
+        {
+          "heading": "Mitigation Enhancements",
+          "summary": "We have enhanced Qualys Mitigation to support the rolling back of applied mitigations. With this feature, you can roll back the mitigated vulnerabilities for which patches are available, and deploy the patch job to fix these vulnerabilities.Qualys…"
+        },
+        {
+          "heading": "Behavioral Change",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues or limitations in this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "CRM-128460",
+          "issue": "We fixed an issue where the scheduled Security Configuration Assessment (SCA) scan was initiated during the Reduced Activity Period(RAP) by introducing the proper mapping for SCA."
+        },
+        {
+          "component": "CRM-129091",
+          "issue": "We fixed an issue where the Cloud Agent took more time to stop its services while provisioning version 5.9 and above agents by implementing an Activation ID and Customer ID check before provisioning."
+        },
+        {
+          "component": "CRM-119844",
+          "issue": "We fixed an issue where an empty SysV init folder was created during Cloud Agent installation on RedHat Enterprise Linux 9 systems by adding a check to remove this empty folder after the installation is complete."
+        },
+        {
+          "component": "CRM-129423",
+          "issue": "We fixed an issue where Cloud Agents were improperly merged as the cloud providers sent invalid Instance ID by implementing a validation to verify Instance ID received from Cloud Provider."
+        },
+        {
+          "component": "CRM-127310",
+          "issue": "We fixed an issue where Cloud Agent could not properly clean the Patch Management log files after shutting down the application by implementing a database pointer reset."
+        },
+        {
+          "component": "CRM-131824",
+          "issue": "We fixed an issue where the On Demand Scan feature did not work as expected for the Linux agents installed with relocation commands after upgrading to 6.4 and later versions. Now, we have added support for launching the On Demand scans for Cloud Agents installed in the alternate folder."
+        },
+        {
+          "component": "CRM-130647",
+          "issue": "We fixed an issue where an exceptional race condition in the Qualys Command Execution Pipeline (qualys-cep) processes triggered high CPU utilization after upgrading Cloud Agent to 6.3 and above versions."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-14T14:30:04.235103+00:00",
+      "status": "success"
+    }
   },
   "d644821d07d5": {
     "key": "d644821d07d5",
@@ -23872,7 +23966,23 @@
       "CAR"
     ],
     "month_label": "February 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 11, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "In this release, we have introduced a new feature that allows you to delete asset jobs with theMANIFEST_EXPIREDandMANIFEST_ASSIGNMENT_FAILEDstatuses. These jobs no longer move to the next status, leading to unnecessary clutter in the system.…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-14T14:30:04.235103+00:00",
+      "status": "success"
+    }
   },
   "cd1b208ea3ca": {
     "key": "cd1b208ea3ca",
@@ -23883,7 +23993,25 @@
       "CAR"
     ],
     "month_label": "February 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 14, 2025 (Updated February 11, 2025)",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "In this release, we have enhanced our configuration-based APIs by introducing new parameters to improve user activity tracking and logging. Furthermore, we have updated the Scripts APIs with additional parameters, enabling you to define and create…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2023-3452"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-14T14:30:04.235103+00:00",
+      "status": "success"
+    }
   },
   "4c460d4910aa": {
     "key": "4c460d4910aa",
@@ -23893,7 +24021,23 @@
       "FIM"
     ],
     "month_label": "February 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "February 10, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "We have introduced audit trail forFIMincidents. An audit trail is a record of events, including changes and user activities, that helps track actions. This audit trail can be viewed on the newActivity Logstab."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-14T14:30:04.235103+00:00",
+      "status": "success"
+    }
   },
   "fe52301d7be0": {
     "key": "fe52301d7be0",
