@@ -24242,7 +24242,23 @@
       "TC"
     ],
     "month_label": "February 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 20, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we have upgraded our API security by incorporating OAuth 2.0 and OpenID Connect for Qualys API authentication and authorization. When OpenID Connect API authentication is implemented along with OAuth 2.0, IdP is used for user…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-15T14:57:30.963257+00:00",
+      "status": "success"
+    }
   },
   "3babcc979b75": {
     "key": "3babcc979b75",
@@ -24252,7 +24268,60 @@
       "WAS"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 30, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we introduce the following new features and enhancements to the Web Application Scanning user interface."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Scans",
+          "issue": "We fixed an issue where the defined DNS override option is not considered in scanning, and the scan report does not display DNS override settings. This was observed when the user launched a scan from theWeb Applicationstab by selecting multiple web applications, where the DNS Override is set to Use DNS override per application if proxy is not used.The issue is fixed."
+        },
+        {
+          "component": "Malware monitoring",
+          "issue": "It was observed that when malware monitoring is enabled, the timezone for malware monitoring is not set to the user's default timezone. The issue is fixed."
+        },
+        {
+          "component": "Web application creation",
+          "issue": "We fixed an issue where the user could not create a web application with the characterü in the Web Application URL or Swagger File URL field."
+        },
+        {
+          "component": "Scan details",
+          "issue": "We fixed an issue where, in the View Scan Details window > Scan Options tab, the Form Submission field displays a value different from the value set in the option profile."
+        },
+        {
+          "component": "QID modification",
+          "issue": "In a scenario where the user modified a QID in the Knowledge Base, the modification in QID did not reflect in the detections in the newer scans."
+        },
+        {
+          "component": "Scheduled scan",
+          "issue": "We fixed an issue where the scheduled scan instance did not display scanner details when the user opened or edited the scheduled scan instance."
+        },
+        {
+          "component": "Scorecard report",
+          "issue": "A discrepancy was observed in the data displayed in the online scorecard report and downloaded CSV report. The issue is fixed."
+        },
+        {
+          "component": "Global exclusions",
+          "issue": "We fixed an issue where the user encountered an internal error while editing exclusions from theGlobal Settings."
+        },
+        {
+          "component": "Detection Details",
+          "issue": "We fixed a typo in theDetection Details>Infosection."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-15T14:57:30.963257+00:00",
+      "status": "success"
+    }
   },
   "3dfcebf2d267": {
     "key": "3dfcebf2d267",
@@ -24262,7 +24331,23 @@
       "CS"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 24, 2025",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "With this release, Admission Controller introduced Pod Security Policies to enforce compliance with organizational security standards using the following policies."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-15T14:57:30.963257+00:00",
+      "status": "success"
+    }
   },
   "e9bf5e56bff6": {
     "key": "e9bf5e56bff6",
@@ -24272,7 +24357,23 @@
       "CS"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 24, 2025",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "With this release, you can enforce the 'Deny' action on an image using various new CI/CD Policy rule sub-types. Previously, you only had theIMAGESCAN_VULN_SEVERITYCOUNTpolicy rule sub-type to mark an image as 'Deny', but now Qualys Container…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-15T14:57:30.963257+00:00",
+      "status": "success"
+    }
   },
   "6316f5789e82": {
     "key": "6316f5789e82",
@@ -24282,7 +24383,27 @@
       "CS"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 24, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, Qualys Container Security Sensor supports CS Registry Sensor installation on a host having Podman Runtime."
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following issue has been fixed with this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-15T14:57:30.963257+00:00",
+      "status": "success"
+    }
   },
   "f1f946d459ea": {
     "key": "f1f946d459ea",
