@@ -24413,7 +24413,13 @@
       "VMDR Mobile"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-15T20:00:34.292183+00:00",
+      "status": "failed",
+      "error": "All 3 fetch attempts failed for https://docs.qualys.com/en/vmdr-mobile/release-notes/vmdr_mobile/release_1_5_9_0.htm   "
+    }
   },
   "47e8c74b3a0a": {
     "key": "47e8c74b3a0a",
@@ -24423,7 +24429,28 @@
       "UD"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 23, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "Introducing the new and improved UI with the following key upgrades"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "UD - VM",
+          "issue": "We have fixed an issue where the scheduled dashboard reports do not display data when the reports are downloaded in PDF. However, the dashboard reports are displayed correctly in the Unified Dashboard user interface.The issue occurs in the following scenarios:For thePiewidget —VM Org - Vulnerabilities due to EOL/EOS by Vendor, the issue occurred when the user switched theCustom Labeltoggle in theDisplay SettingstoON, but the QQL tokens selected in theQuery Settingsdid not support custom labels.For theTablewidget—Top 25—Critical VulnerabilitiesandTop 25—High Vulnerabilities, the issue occurred because the pivot option inQuery Settingsused for report generation was different from the option defined in the widget."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-15T20:00:34.292183+00:00",
+      "status": "success"
+    }
   },
   "62d5863599cd": {
     "key": "62d5863599cd",
@@ -24433,7 +24460,23 @@
       "PM"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 20, 2025 (Updated on February 21, 2025)",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, you can select another job (a parent job) that includes post-actions during theSelect Patchesstep for Windows, Linux, and Mac jobs. By doing so, you can control the execution of the child job based on the successful percentage…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-15T20:00:34.292183+00:00",
+      "status": "success"
+    }
   },
   "2c5e877eeaf7": {
     "key": "2c5e877eeaf7",
@@ -24444,7 +24487,23 @@
       "PM"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 08, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, this API is updated so that you can accomplish the following"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-15T20:00:34.292183+00:00",
+      "status": "success"
+    }
   },
   "752ee09e016a": {
     "key": "752ee09e016a",
@@ -24454,7 +24513,23 @@
       "VMDR"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 7, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "Introducing the new and improved UI with the following key upgrades. This new interface is designed to make your platform experience faster, smoother."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-15T20:00:34.292183+00:00",
+      "status": "success"
+    }
   },
   "df410da86f73": {
     "key": "df410da86f73",
