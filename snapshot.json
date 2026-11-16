@@ -24415,8 +24415,8 @@
     "month_label": "January 2025",
     "detected_at": "2026-05-18T17:20:41+00:00",
     "enrichment": {
-      "attempts": 1,
-      "last_attempt_at": "2026-11-15T20:00:34.292183+00:00",
+      "attempts": 2,
+      "last_attempt_at": "2026-11-16T23:34:20.275915+00:00",
       "status": "failed",
       "error": "All 3 fetch attempts failed for https://docs.qualys.com/en/vmdr-mobile/release-notes/vmdr_mobile/release_1_5_9_0.htm   "
     }
@@ -24624,7 +24624,23 @@
       "QF"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 16, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "Introducing the new and improved UI with the following key upgrades"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-16T23:34:20.275915+00:00",
+      "status": "success"
+    }
   },
   "39be6edaaf73": {
     "key": "39be6edaaf73",
@@ -24634,7 +24650,23 @@
       "SaaS DR"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 16, 2025",
+      "features": [
+        {
+          "heading": "What's new",
+          "summary": "Introducing the new and improved UI with the following key upgrades"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-16T23:34:20.275915+00:00",
+      "status": "success"
+    }
   },
   "957b49dc0646": {
     "key": "957b49dc0646",
@@ -24644,7 +24676,23 @@
       "EDR"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 14, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "Introducing the new and improved UI. An exciting milestone in improving your platform experience. This new interface is designed to make your platform experience faster, smoother."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-16T23:34:20.275915+00:00",
+      "status": "success"
+    }
   },
   "485a6a49f1f7": {
     "key": "485a6a49f1f7",
@@ -24655,7 +24703,18 @@
       "EDR"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 29, 2024 (Updated May 29, 2025)",
+      "features": [],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-16T23:34:20.275915+00:00",
+      "status": "success"
+    }
   },
   "659e26ad64d3": {
     "key": "659e26ad64d3",
