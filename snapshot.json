@@ -24540,7 +24540,23 @@
       "GAV"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 10, 2025 (Updated on February 27, 2025)",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "The following are the new features available with the CSAM and GAV subscriptions."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-16T17:25:57.978620+00:00",
+      "status": "success"
+    }
   },
   "e69ab2fb3a2f": {
     "key": "e69ab2fb3a2f",
@@ -24552,7 +24568,23 @@
       "GAV"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 10, 2025 (Updated on February 10, 2025)",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we introduced a new API to get the list of all components discovered from the SwCA scan."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-16T17:25:57.978620+00:00",
+      "status": "success"
+    }
   },
   "29320f27c09c": {
     "key": "29320f27c09c",
@@ -24563,7 +24595,26 @@
       "CS"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 18, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, Container Security has introduced new rules and rule types for Admission Controller and CI/CD Policies. Along with this, Container Security now supports OAuth and OpenID Connect Authentication Standards."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2014-9999",
+        "CVE-2021-36222"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-16T17:25:57.978620+00:00",
+      "status": "success"
+    }
   },
   "2eb2dd9b723b": {
     "key": "2eb2dd9b723b",
@@ -39116,6 +39167,106 @@
     "enrichment": {
       "attempts": 1,
       "last_attempt_at": "2026-11-05T15:47:57.726660+00:00",
+      "status": "success"
+    }
+  },
+  "b31ee789e906": {
+    "key": "b31ee789e906",
+    "url": "https://docs.qualys.com/en/tc/release-notes/totalcloud/release_2_29.htm",
+    "title": "TotalCloud Release 2.29",
+    "tags": [
+      "TC"
+    ],
+    "month_label": "November 2026",
+    "detected_at": "2026-11-16T17:25:57+00:00",
+    "details": {
+      "release_date": "November 16, 2026TotalCloud Release 2.29 adds AI-guided cloud remediation, cross-cloud security dashboards, custom CSV inventories, enhanced CSPM reports, and expanded AI/ML asset tracking in OCI and GCP, plus updates to the UI, Azure VMSS discovery, audit logs, cloud detection and response, Azure Activity Log alerts, tokens, and controls.",
+      "features": [
+        {
+          "heading": "Simplified Remediation with AI",
+          "summary": ""
+        },
+        {
+          "heading": "Global Posture View Across All Clouds",
+          "summary": ""
+        },
+        {
+          "heading": "Custom CSV Reports for Your Inventory",
+          "summary": ""
+        },
+        {
+          "heading": "Improved Discovery and Reconciliation for Azure VMSS",
+          "summary": ""
+        },
+        {
+          "heading": "Support for MultiCloud Dashboards",
+          "summary": ""
+        },
+        {
+          "heading": "Enhanced CSPM Reports",
+          "summary": ""
+        },
+        {
+          "heading": "Expanded AI/ML Inventory Coverage for OCI and GCP",
+          "summary": ""
+        },
+        {
+          "heading": "Audit Logs for Reports, Exceptions, Alert Rules, and Alert Actions",
+          "summary": ""
+        },
+        {
+          "heading": "Enhanced User Interface",
+          "summary": ""
+        },
+        {
+          "heading": "CDR Enhancements and Updates",
+          "summary": "The following sections describe the enhancements made to the Cloud Detection and Response (CDR) environment in the upcoming CDR release."
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "The following section describes the new tokens introduced as part of TotalCloud 2.29."
+        },
+        {
+          "heading": "Control Updates",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-16T17:25:57.978620+00:00",
+      "status": "success"
+    }
+  },
+  "86388ea1f595": {
+    "key": "86388ea1f595",
+    "url": "https://docs.qualys.com/en/conn/release-notes/connector/release_2_22.htm",
+    "title": "Connector Release 2.22",
+    "tags": [
+      "Conn"
+    ],
+    "month_label": "November 2026",
+    "detected_at": "2026-11-16T17:25:57+00:00",
+    "details": {
+      "release_date": "November 16, 2026Connector 2.22 introduces FlexScan support for Oracle Cloud Infrastructure (OCI) snapshots and Qualys Native deployment for Zero-touch Snapshot-based Scan for Azure.",
+      "features": [
+        {
+          "heading": "FlexScan Support for Oracle Cloud Infrastructure (OCI) Snapshots",
+          "summary": ""
+        },
+        {
+          "heading": "Zero-touch Snapshot-based Scan for Azure with Qualys Native Deployment",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-16T17:25:57.978620+00:00",
       "status": "success"
     }
   }
