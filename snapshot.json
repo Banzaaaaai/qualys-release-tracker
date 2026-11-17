@@ -24901,7 +24901,60 @@
       "VM"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 08, 2025",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": ""
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - ASR",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Authentication Records",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan Based Report",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan Schedule",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Assets (Scanner)",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "PC - API",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC - Reports",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC - Authentication Records",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC - Authentication Records",
+          "issue": "Policy Compliance"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-17T22:42:50.039007+00:00",
+      "status": "success"
+    }
   },
   "99fe92aa78bc": {
     "key": "99fe92aa78bc",
@@ -24913,7 +24966,18 @@
       "VM"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 08, 2025, 2024",
+      "features": [],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-17T22:42:50.039007+00:00",
+      "status": "success"
+    }
   },
   "e92337ed0675": {
     "key": "e92337ed0675",
@@ -24924,7 +24988,23 @@
       "GAV"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 07, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "The initially planned CSAM 3.3.0.0 release is clubbed with CSAM 3.3.1.0. Refer to the following Release Notes to learn about the CSAM 3.3.0.0 new features."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-17T22:42:50.039007+00:00",
+      "status": "success"
+    }
   },
   "11ec14e385eb": {
     "key": "11ec14e385eb",
@@ -24934,7 +25014,23 @@
       "QF"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 05, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "This release introduces an optional aggregation feature to the existing Loop Node. You can now accumulate and transform data across iterations, improving usability and performance of loops."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-17T22:42:50.039007+00:00",
+      "status": "success"
+    }
   },
   "b4ec070ad957": {
     "key": "b4ec070ad957",
@@ -24944,7 +25040,23 @@
       "CAR"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 06, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we have introduced a newReportstab. You can now generate reports in CAR for any job and conveniently download them from thisReportstab."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-17T22:42:50.039007+00:00",
+      "status": "success"
+    }
   },
   "58299c47fa95": {
     "key": "58299c47fa95",
