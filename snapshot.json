@@ -24725,7 +24725,32 @@
       "CRI"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 13, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "Introducing the new and improved UI with the following key upgrades"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "User Interface",
+          "issue": "The user received a Grade T for their intermediate certificates due to codes"
+        },
+        {
+          "component": "User Interface",
+          "issue": "Earlier, servers supporting only TLS 1.3 were incorrectly marked as not supporting Perfect Forward Secrecy (PFS) due to a mislabeling in the grading system. With this fix, TLS 1.3 ciphers are now correctly recognized as supporting PFS, resulting in accurate grading for these servers. Users need to rescan the server to view the corrected grading of the impacted certificates."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-17T17:04:14.919484+00:00",
+      "status": "success"
+    }
   },
   "a7d583cbac16": {
     "key": "a7d583cbac16",
@@ -24735,7 +24760,23 @@
       "SA"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 10, 2025(Updated on January 31, 2025)",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "This release brings new features and updates to supported cloud platforms, data centers, and desktop platforms."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-17T17:04:14.919484+00:00",
+      "status": "success"
+    }
   },
   "2708b20e423b": {
     "key": "2708b20e423b",
@@ -24747,7 +24788,23 @@
       "VM"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 10, 2025",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "With this release, we have upgraded our API security by incorporating OpenID Connect for Qualys API authentication and authorization. When OpenID Connect API authentication is implemented, IdP is used for user authentication and JWT token generation…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-17T17:04:14.919484+00:00",
+      "status": "success"
+    }
   },
   "f77624fed1ba": {
     "key": "f77624fed1ba",
@@ -24758,7 +24815,56 @@
       "VM"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 10, 2025 (Updated on January 28, 2025)",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "Introducing the new and improved UI. An exciting milestone in improving your platform experience.This new interface is designed to make your platform experience faster, smoother."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Feature Request",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - UI General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Remediation",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Remediation",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - UILIB",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Activity logs",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "Licensing - Addon Enable/Disable",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "PC - Authentication Records",
+          "issue": "Policy Compliance"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-17T17:04:14.919484+00:00",
+      "status": "success"
+    }
   },
   "136e715a0b80": {
     "key": "136e715a0b80",
@@ -24768,7 +24874,23 @@
       "QGS"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 10, 2025",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "QGS 3.9 brings updates to the Appliance OS Versions to enhance system security."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-17T17:04:14.919484+00:00",
+      "status": "success"
+    }
   },
   "7e41027cf658": {
     "key": "7e41027cf658",
