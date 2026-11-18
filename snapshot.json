@@ -39562,5 +39562,228 @@
       "last_attempt_at": "2026-11-16T17:25:57.978620+00:00",
       "status": "success"
     }
+  },
+  "7065e76c38d9": {
+    "key": "7065e76c38d9",
+    "url": "https://docs.qualys.com/en/csam/release-notes/cybersecurity_asset_management/release_3_8.htm",
+    "title": "Global AssetView/CyberSecurity Asset Management 3.8",
+    "tags": [
+      "CSAM",
+      "GAV"
+    ],
+    "month_label": "November 2026",
+    "detected_at": "2026-11-18T16:43:49+00:00",
+    "details": {
+      "release_date": "November 18, 2026This release includes enhancements that help you uncover the parts of your external attack surface that open ports do not reveal, such as silent hosts, exposed Model Context Protocol (MCP) servers, and misconfigured email and DNS records that attackers can exploit. This release also brings your Oracle Cloud Infrastructure (OCI) assets and IPv6 hosts into your vulnerability and compliance programs.",
+      "features": [
+        {
+          "heading": "Discover Internet-Facing Assets Without Open Ports",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Include VMDR Map Scan Assets in EASM Discovery",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Discover MCP Servers on Your Internet-Facing Assets",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Exclude Cloud Assets from EASM Lightweight Scans",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Understand AI Footprint Across Your External Attack Surface",
+          "summary": "What Changed for You"
+        },
+        {
+          "heading": "View Hosting Categories for EASM Assets Not Discovered from Shodan",
+          "summary": "What Changed for You"
+        },
+        {
+          "heading": "Detect Email Authentication and DNS Misconfigurations on Your Domains",
+          "summary": "What Changed for You"
+        },
+        {
+          "heading": "Identify Cloud Asset Ownership Using Aliases",
+          "summary": "What Changed for You"
+        },
+        {
+          "heading": "Extend Vulnerability and Compliance Detection to OCI Assets",
+          "summary": "What Changed for You"
+        },
+        {
+          "heading": "Activate IPv6 Assets Based on Their DNS Hostnames",
+          "summary": "What Changed for You"
+        },
+        {
+          "heading": "Search Cloud Assets by IPv6 Addresses and OCI Network Details",
+          "summary": "You can now use the following tokens to search for your AWS, Azure, GCP, and OCI assets by their IPv6 addresses, and for your OCI assets by their IPv4 addresses and DNS names"
+        },
+        {
+          "heading": "Tokens Update",
+          "summary": "As part of the QQL Token Standardization introduced inCSAM/GAV Release 3.7.0.0, the following scan tokens now use thequalys.scanprefix"
+        },
+        {
+          "heading": "Fixes",
+          "summary": "The following reported and notable customer issues are fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-18T16:43:49.846961+00:00",
+      "status": "success"
+    }
+  },
+  "3bb2d5b39141": {
+    "key": "3bb2d5b39141",
+    "url": "https://docs.qualys.com/en/csam/release-notes/cybersecurity_asset_management/release_3_8_api.htm",
+    "title": "Global AssetView/CyberSecurity Asset Management 3.8 API",
+    "tags": [
+      "API",
+      "CSAM",
+      "GAV"
+    ],
+    "month_label": "November 2026",
+    "detected_at": "2026-11-18T16:43:49+00:00",
+    "details": {
+      "release_date": "November 18, 2026The EASM profile APIs now support two new configuration options. You can include assets from your VMDR map scan results in EASM discovery for the networks that you select, and exclude cloud-hosted assets from EASM lightweight scans.",
+      "features": [
+        {
+          "heading": "Include Assets from VMDR Map Scan through EASM Profile APIs",
+          "summary": "What Changed for You"
+        },
+        {
+          "heading": "Exclude Cloud Assets from EASM Lightweight Scans through EASM Profile APIs",
+          "summary": "What Changed for You"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-18T16:43:49.846961+00:00",
+      "status": "success"
+    }
+  },
+  "a800a674ae1c": {
+    "key": "a800a674ae1c",
+    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10_41_1.htm",
+    "title": "Enterprise TruRisk™ Platform Release 10.41.1",
+    "tags": [
+      "VM"
+    ],
+    "month_label": "November 2026",
+    "detected_at": "2026-11-18T16:43:49+00:00",
+    "details": {
+      "release_date": "November 16, 2026This release fixes five customer-reported issues in Vulnerability Management. Most importantly, deactivating a user’s Symantec VIP credential no longer turns off two-factor authentication for that user. You can also generate Host Based reports in PDF when Third Party Findings is included, download Asset Search reports with their previous column names and order, save a user’s API External ID, and get faster, more reliable responses from the Host List Detection API.",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "Fix"
+        },
+        {
+          "heading": "Fixes",
+          "summary": "The following reported and notable customer issues are fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-18T16:43:49.846961+00:00",
+      "status": "success"
+    }
+  },
+  "5c631aaa5335": {
+    "key": "5c631aaa5335",
+    "url": "https://docs.qualys.com/en/vm/release-notes/qweb/release_10_41_1_api.htm",
+    "title": "Enterprise TruRisk™ Platform Release 10.41.1 API",
+    "tags": [
+      "API",
+      "VM"
+    ],
+    "month_label": "November 2026",
+    "detected_at": "2026-11-18T16:43:49+00:00",
+    "details": {
+      "release_date": "November 16, 2026This release includes a fix that improves Host List Detection API performance for large subscriptions, so API calls complete faster without timing out.",
+      "features": [
+        {
+          "heading": "Qualys Vulnerability Management (VM)",
+          "summary": "Fix"
+        },
+        {
+          "heading": "Fixes",
+          "summary": "The following reported and notable customer issues are fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-18T16:43:49.846961+00:00",
+      "status": "success"
+    }
+  },
+  "9c86335c963a": {
+    "key": "9c86335c963a",
+    "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_pa/pa/release_1_18.htm",
+    "title": "Policy Audit Release 1.18",
+    "tags": [
+      "PA"
+    ],
+    "month_label": "November 2026",
+    "detected_at": "2026-11-18T16:43:49+00:00",
+    "details": {
+      "release_date": "November 16, 2026This release adds a What’s New window where you can find the latest Policy Audit features and open any of them in one click. When you expand a policy on the Workspace tab, you can now tell included tags from excluded tags at a glance and see every technology, tag, and asset group the policy covers. This release also includes four customer-reported fixes",
+      "features": [
+        {
+          "heading": "View and Try Out Latest Features in the What’s New Window",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Improved Tags, Technology, and Asset Group Visibility in Policy Details",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Fixes",
+          "summary": "The following customer reported issues are fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-18T16:43:49.846961+00:00",
+      "status": "success"
+    }
+  },
+  "920c919e5612": {
+    "key": "920c919e5612",
+    "url": "https://docs.qualys.com/en/vm/release-notes/mergedProjects/qualys_pa/pa/release_1_18_api.htm",
+    "title": "Policy Audit Release 1.18 API",
+    "tags": [
+      "API",
+      "PA"
+    ],
+    "month_label": "November 2026",
+    "detected_at": "2026-11-18T16:43:49+00:00"
+  },
+  "3d5955348b88": {
+    "key": "3d5955348b88",
+    "url": "https://docs.qualys.com/en/ud/release-notes/unified_dashboard/release_2_18.htm",
+    "title": "Unified Dashboard 2.18",
+    "tags": [
+      "UD"
+    ],
+    "month_label": "November 2026",
+    "detected_at": "2026-11-18T16:43:49+00:00"
   }
 }
