@@ -24415,8 +24415,8 @@
     "month_label": "January 2025",
     "detected_at": "2026-05-18T17:20:41+00:00",
     "enrichment": {
-      "attempts": 2,
-      "last_attempt_at": "2026-11-16T23:34:20.275915+00:00",
+      "attempts": 3,
+      "last_attempt_at": "2026-11-18T22:25:00.607016+00:00",
       "status": "failed",
       "error": "All 3 fetch attempts failed for https://docs.qualys.com/en/vmdr-mobile/release-notes/vmdr_mobile/release_1_5_9_0.htm   "
     }
@@ -25067,7 +25067,23 @@
       "CAR"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 06, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "This release introduces new APIs to streamline report management, including fetching, generating, downloading, and deleting reports."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-18T22:25:00.607016+00:00",
+      "status": "success"
+    }
   },
   "1332cd2b262b": {
     "key": "1332cd2b262b",
@@ -25077,7 +25093,23 @@
       "FIM"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 06, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we have introduced audit trail for FIM profile. An audit trail is a record of events, including file changes and user activities, that helps track actions."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-18T22:25:00.607016+00:00",
+      "status": "success"
+    }
   },
   "7ba8dd6be7b9": {
     "key": "7ba8dd6be7b9",
@@ -25088,7 +25120,23 @@
       "FIM"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 06, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "To comply with data retention policies and regulations, we have restricted access to the data for up to 15 months. You now have access to data that is up to 15 months old. With the upcoming release, retrieval of data older than 15 months will no…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-18T22:25:00.607016+00:00",
+      "status": "success"
+    }
   },
   "1069ca6ae970": {
     "key": "1069ca6ae970",
@@ -25098,7 +25146,32 @@
       "UD"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 06, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "Oracle Cloud Infrastructure (OCI) support is now added in the following Total Cloud (TC) widgets. These TC widgets now have two new optionsOCI Inventory-Inventory datasource for OCICloudandOCI Posture - Posture datasource for OCI Cloud, added under…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "UD - VM",
+          "issue": "We have fixed an issue where the baseline count in the VM Count Comparison ratio widget appeared inaccurate in the scheduled dashboard report."
+        },
+        {
+          "component": "UD - VM",
+          "issue": "We fixed an issue where the scheduled dashboard report displayed inaccurate data or did not display data when the widget included vulnerability data in the Simple List table format sorted by TruRisk Score."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-18T22:25:00.607016+00:00",
+      "status": "success"
+    }
   },
   "180f30eb5a6e": {
     "key": "180f30eb5a6e",
