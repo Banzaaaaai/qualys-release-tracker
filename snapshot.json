@@ -25181,7 +25181,23 @@
       "PNS"
     ],
     "month_label": "January 2025",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 02, 2025",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, NPS backend services have added support for audit logging Cloud Agent Passive Sensor (CAPS) operations. This enables the user to see the detailed list of changes made to CAPS configuration and track the user activities."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-19T16:47:19.396665+00:00",
+      "status": "success"
+    }
   },
   "a6dd84d5cc9c": {
     "key": "a6dd84d5cc9c",
@@ -25193,7 +25209,48 @@
       "WAS"
     ],
     "month_label": "December 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 18, 2024 (April 30, 2025)",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "We are introducing the following new features and enhancements with the Qualys 3.19.1.0 release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Cloud Agent UI",
+          "issue": "Cloud Agent"
+        },
+        {
+          "component": "Shared Portal",
+          "issue": "VMDR"
+        },
+        {
+          "component": "Portal",
+          "issue": "AssetView"
+        },
+        {
+          "component": "Portal",
+          "issue": "CSAM API"
+        },
+        {
+          "component": "WAS UI",
+          "issue": "WAS"
+        },
+        {
+          "component": "Cloud Agent UI",
+          "issue": "Cloud Agent"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-19T16:47:19.396665+00:00",
+      "status": "success"
+    }
   },
   "2718c660899e": {
     "key": "2718c660899e",
@@ -25203,7 +25260,31 @@
       "UD"
     ],
     "month_label": "December 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 12, 2024",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "UD - VM",
+          "issue": "When users scheduled a dashboard report and tried to download it, the report download failed with the errorReport not yet generated against the given dashboard report schedule.This issue occurred when the user added the Scoped Vulnerabilities filter to the dashboard widget.We have now added support for the Scoped Vulnerabilities widget filter to the dashboard to fix this issue. Users can now download the report successfully."
+        },
+        {
+          "component": "UD - VM",
+          "issue": "When the user tried to download the scheduled dashboard report for the pinned dashboard or dashboard, which includes tags, the following issues were observed:The report email did not contain an attachment, and after manually downloading the report, an old report date was displayed.Scheduled reports did not show the updated date.The following error message was displayed while downloading the report:Report not yet generated against the given dashboard report schedule.We fixed these issues, and users can now download the scheduled report for pinned dashboards or dashboards with tags."
+        },
+        {
+          "component": "UD - VM",
+          "issue": "Users saw different scores for the same date on the TruRisk widget. To clarify about this discrepancy, a note is added in the online help under theTrending DataandWidgets FAQssection, mentioning that Qualys displays only the latest score on the widget, and users can download the reports to view the historical values."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-19T16:47:19.396665+00:00",
+      "status": "success"
+    }
   },
   "223d6f86ba32": {
     "key": "223d6f86ba32",
@@ -25214,7 +25295,23 @@
       "CA"
     ],
     "month_label": "December 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 18, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this API, we added support for downloading Software Composition Analysis (SwCA) Scan Report as per CycloneDX standard in JSON format. You can either view the SwCA scan report or download it."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-19T16:47:19.396665+00:00",
+      "status": "success"
+    }
   },
   "543d6b273c71": {
     "key": "543d6b273c71",
@@ -25224,7 +25321,23 @@
       "CS"
     ],
     "month_label": "December 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 17, 2024",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "Earlier,admissionController.tagparameter was used to specify the tag to deploy the admission controller. With this release,admissionController.imageparameter is used to specify the tag along with the image name to deploy the admission controller."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-19T16:47:19.396665+00:00",
+      "status": "success"
+    }
   },
   "d08a3537a4e8": {
     "key": "d08a3537a4e8",
