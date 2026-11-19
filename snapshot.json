@@ -25347,7 +25347,23 @@
       "CS"
     ],
     "month_label": "December 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 16, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "Container Runtime Sensor (CRS) 1.0.1 release introduces key enhancements that focus on improving event monitoring and management capabilities. It introduces the following features."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-19T22:30:01.800788+00:00",
+      "status": "success"
+    }
   },
   "b3e0e72c9845": {
     "key": "b3e0e72c9845",
@@ -25357,7 +25373,27 @@
       "CS"
     ],
     "month_label": "December 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 16, 2024",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "Qualys offers the option to download the Software Bill of Material (SBOM) report. The SBOM report provides details about your software, such as the software components used, their versions, relationships with each other, metadata, and so on. You can…"
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "The following issues are the Known issues in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-19T22:30:01.800788+00:00",
+      "status": "success"
+    }
   },
   "c1d886ec9046": {
     "key": "c1d886ec9046",
@@ -25368,7 +25404,23 @@
       "CS"
     ],
     "month_label": "December 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 16, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With Container Security 1.35 release, the following enhancements in APIs are made."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-19T22:30:01.800788+00:00",
+      "status": "success"
+    }
   },
   "12663e0c3be3": {
     "key": "12663e0c3be3",
@@ -25378,7 +25430,35 @@
       "CS"
     ],
     "month_label": "December 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 16, 2024 (Updated on January 09, 2025)",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "CS Sensor now supports scanning images based on the following Operating Systems."
+        },
+        {
+          "heading": "Helm Chart 1.14.0 Updates",
+          "summary": "The Qualys Container Security package consists of the 'values.yaml' file which deploys the sensor in various environments. This section explains the updates in the latest Helm chart (values.yaml) file. Refer toQCS Sensor Helm Chart (qcs-sensor)."
+        },
+        {
+          "heading": "Unified Helm Chart (qualys-tc 2.1.1) Updates",
+          "summary": "This is the unified helm chart to install Qcs Sensor, Admission Controller, Cluster Sensor, and Container Runtime Sensor. Refer toQualys Unified Helm Chart (qualys-tc)."
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following issue has been fixed with this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-19T22:30:01.800788+00:00",
+      "status": "success"
+    }
   },
   "df2dfd0b0076": {
     "key": "df2dfd0b0076",
@@ -25388,7 +25468,23 @@
       "SA"
     ],
     "month_label": "December 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 16, 2024 (Updated April 25, 2025)",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "This release supports new features and enhancements in the following Linux Distributions."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-19T22:30:01.800788+00:00",
+      "status": "success"
+    }
   },
   "f09c16aef4b2": {
     "key": "f09c16aef4b2",
