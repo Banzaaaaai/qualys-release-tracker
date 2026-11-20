@@ -25494,7 +25494,23 @@
       "PM"
     ],
     "month_label": "December 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 09, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we provided mitigation rollback support for Windows and Linux platforms. You can create a mitigation rollback job to undo the scripts applied as a temporary fix to address the vulnerabilities. Refer to the Online Help to learn the…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-20T16:21:56.127572+00:00",
+      "status": "success"
+    }
   },
   "853ef1a00ac6": {
     "key": "853ef1a00ac6",
@@ -25504,7 +25520,88 @@
       "WAS"
     ],
     "month_label": "December 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 15, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we introduce the following new features and enhancements to the Web Application Scanning user interface."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Scan report",
+          "issue": "We fixed an issue where the Scan Details section in the Scan Report displays Authentication as Not Used even when QIDs 150035 and 150116 were reported. Together, QIDs 150116 and 150035 indicate successful server authentication."
+        },
+        {
+          "component": "Scan schedule",
+          "issue": "If a web application removed from the subscription is part of an existing scheduled scan, it was not removed from the scheduled scan, and the user could not edit the scan schedule.This issue has been fixed. Now, the web application removed from the subscription is removed from the scan schedule automatically, and the user can edit the scan schedule."
+        },
+        {
+          "component": "DNS Override, Scans",
+          "issue": "When the user launched a scan for multiple web applications, the scans did not use the DNS Override value even when the default setting for DNS Override was set toUse DNS override defined per application if proxy is not used.Now, the defined DNS override value is used for multiple web application scanning and is available in theScan Detailsscreen and Scan Report."
+        },
+        {
+          "component": "Authentication record",
+          "issue": "While editing an authentication record with a parametrized Selenium script, when the user deleted and uploaded the script again and launched a scan, the authentication failed due to an empty password tag.This issue is fixed."
+        },
+        {
+          "component": "Scan schedule",
+          "issue": "We fixed an issue where the user could not view or edit a scan schedule if the Scanner Appliance option from legacy WAS.Now, the user can access the scan schedule from the new WAS even if the scanner appliance is marked as deleted."
+        },
+        {
+          "component": "Sitemap report",
+          "issue": "An issue was observed when the user downloaded the sitemap report for links greater than 10000 in a CSV format; the report did not display crawl links.The issue is fixed, and the sitemap reports get downloaded with all results available in the report."
+        },
+        {
+          "component": "Scan report",
+          "issue": "We have fixed an issue where theDetection Informationsection in the web application report and scan report did not display which keywords or regex were matched during scanning even when keywords and regex are defined to detect sensitive content in the target web application."
+        },
+        {
+          "component": "Scans",
+          "issue": "We have fixed an issue where the scan status was displayed as Processing even when the scan ended."
+        },
+        {
+          "component": "Scan report",
+          "issue": "We fixed an issue where the DNS override setting was visible in the Scan Details but not available in the scan Report. This was observed for scheduled and on-demand scans."
+        },
+        {
+          "component": "Scan settings",
+          "issue": "We fixed an issue where the user could not update the Cancel Scan option > Cancel Scan After value to the value configured for the subscription while editing a scan schedule. The user could set the value between 24 to 48 hours."
+        },
+        {
+          "component": "Retest web application",
+          "issue": "We fixed an issue where the user encountered an error while retesting some web applications."
+        },
+        {
+          "component": "User permissions",
+          "issue": "We fixed an issue where the sub-user could not update the authentication record even though the right permissions were assigned."
+        },
+        {
+          "component": "Proxy support",
+          "issue": "We fixed an issue where the scheduled scan did not use proxy settings when the scan target is defined using tags and the Proxy Support option is set toUser Proxy defined for each web application."
+        },
+        {
+          "component": "Dashboard, QQL",
+          "issue": "Earlier, when the user clicked a dashboard widget, the data list displayed incorrect results for the query. This was observed due to incorrect mapping of QQL queries from the dashboard to the data list for table and graph widgets.The issue is resolved."
+        },
+        {
+          "component": "Web Application data list report",
+          "issue": "We fixed an issue where a discrepancy was observed between the web application count and the downloaded data list report."
+        },
+        {
+          "component": "Dashboard, QQL",
+          "issue": "An issue was observed when the user clicked a dashboard widget, the data list displayed incorrect data. This was observed as the backticks were getting incorrectly added to the QQL token value. This issue is fixed."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-20T16:21:56.127572+00:00",
+      "status": "success"
+    }
   },
   "ae00f102b660": {
     "key": "ae00f102b660",
@@ -25514,7 +25611,23 @@
       "VMDR OT"
     ],
     "month_label": "December 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "January 13, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we have added support for displaying MAC addresses parsed from industrial OCA files in the user interface. You can view these details on the listing page of the Assets tab."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-20T16:21:56.127572+00:00",
+      "status": "success"
+    }
   },
   "f04240320615": {
     "key": "f04240320615",
@@ -25525,7 +25638,23 @@
       "VMDR OT"
     ],
     "month_label": "December 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 13, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we have upgraded our API security by incorporating OAuth 2.0 and OpenID Connect for Qualys API authentication and authorization. When OpenID Connect API authentication is implemented along with OAuth 2.0, IdP is used for user…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-20T16:21:56.127572+00:00",
+      "status": "success"
+    }
   },
   "103dce29e127": {
     "key": "103dce29e127",
@@ -25536,7 +25665,23 @@
       "CRI"
     ],
     "month_label": "December 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 10, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we have extended support for authentication scans. We now support host authentication (trusted scanning), allowing it to log into each target system during scans. This feature enables in-depth security assessments and enhances…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-20T16:21:56.127572+00:00",
+      "status": "success"
+    }
   },
   "ed893dc15ea0": {
     "key": "ed893dc15ea0",
