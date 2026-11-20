@@ -25693,7 +25693,23 @@
       "CRI"
     ],
     "month_label": "December 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 10, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we have upgraded our API security by incorporating OpenID Connect for Qualys API authentication and authorization. When OpenID Connect API authentication is implemented, IdP is used for user authentication and JWT token generation…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-20T22:02:08.356997+00:00",
+      "status": "success"
+    }
   },
   "98680ce5b74f": {
     "key": "98680ce5b74f",
@@ -25703,7 +25719,23 @@
       "PNS"
     ],
     "month_label": "December 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 10, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, the instructions for deploying the NPS Virtual Machines have changed. Starting with the NPS Appliance version 2.0.0, the appliance platform has transitioned to Oracle Enterprise Linux (OEL) from CentOS, which was previously used…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-20T22:02:08.356997+00:00",
+      "status": "success"
+    }
   },
   "f33b3cccae79": {
     "key": "f33b3cccae79",
@@ -25714,7 +25746,80 @@
       "VM"
     ],
     "month_label": "December 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 08, 2024",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "With this release, the following reports are enhanced to display more information"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - SAML Authentication",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan Schedule",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Users API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Report Schedule",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan Schedule",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Option Profile",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - User Management",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - API General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Reports General",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "PC - Reports",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC - Reports",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC - API",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC - Schedule Report",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC - UDC",
+          "issue": "Policy Compliance"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-20T22:02:08.356997+00:00",
+      "status": "success"
+    }
   },
   "44e024984ea2": {
     "key": "44e024984ea2",
@@ -25726,7 +25831,18 @@
       "VM"
     ],
     "month_label": "December 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 08, 2024",
+      "features": [],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-20T22:02:08.356997+00:00",
+      "status": "success"
+    }
   },
   "40195be954ea": {
     "key": "40195be954ea",
@@ -25736,7 +25852,32 @@
       "QS"
     ],
     "month_label": "December 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 9, 2024",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "QScanner now supports scanning images based on the following Operating Systems."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Image Scan",
+          "issue": "QScanner collected incorrect OS version while scanning an image."
+        },
+        {
+          "component": "Data Collection",
+          "issue": "QScanner was throwing an irrelevant warning \"dpkg:scan error xxxxxxx\" while scanning a certain files. Now it ignores such irrelevant warnings."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-20T22:02:08.356997+00:00",
+      "status": "success"
+    }
   },
   "da3dc33df970": {
     "key": "da3dc33df970",
