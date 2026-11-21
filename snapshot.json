@@ -25887,7 +25887,23 @@
       "VMDR"
     ],
     "month_label": "December 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 09, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, the Asset Criticality Score (ACS) functionality will no longer be supported when selecting theVulnerability Detection Searches Ruleunder Dynamic Tagging during tag creation. This change is made because ACS is designed for…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-21T15:36:16.453935+00:00",
+      "status": "success"
+    }
   },
   "15d3d8b6a742": {
     "key": "15d3d8b6a742",
@@ -25897,7 +25913,23 @@
       "EDR"
     ],
     "month_label": "December 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 05, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "The following significant enhancements to the Anti-malware Profile UI will improve your experience."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-21T15:36:16.453935+00:00",
+      "status": "success"
+    }
   },
   "e8fed54bf1ad": {
     "key": "e8fed54bf1ad",
@@ -25908,7 +25940,23 @@
       "EDR"
     ],
     "month_label": "December 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 05, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "We are introducing a new API that enhances performance by retrieving remediation details directly from Oracle instead of Elasticsearch. This modification guarantees faster and more reliable data access, improving user experience."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-21T15:36:16.453935+00:00",
+      "status": "success"
+    }
   },
   "18f8b8fe537f": {
     "key": "18f8b8fe537f",
@@ -25918,7 +25966,25 @@
       "QGS"
     ],
     "month_label": "December 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "December 01, 2024",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "QGS 3.8.1 brings updates to the Appliance OS Versions to enhance system security."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2024-6387"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-21T15:36:16.453935+00:00",
+      "status": "success"
+    }
   },
   "2b30f2174074": {
     "key": "2b30f2174074",
@@ -25929,7 +25995,23 @@
       "TC"
     ],
     "month_label": "November 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 26, 2024 (Last Updated December 20, 2024)",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we bring improvements to mandate accessibility through our enhanced Get Mandates API. Now available to all TotalCloud users regardless of subscription tier, this API delivers streamlined access to retrieve comprehensive compliance…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-21T15:36:16.453935+00:00",
+      "status": "success"
+    }
   },
   "425b092b6888": {
     "key": "425b092b6888",
