@@ -26021,7 +26021,39 @@
       "CA"
     ],
     "month_label": "November 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 21, 2024",
+      "features": [
+        {
+          "heading": "New Features",
+          "summary": "There are no new features in this release."
+        },
+        {
+          "heading": "Cloud Agent Enhancements",
+          "summary": "With this release, we have updated the base image used for the Google Cloud Platform Container Optimized OS (GCP-COS) Cloud Agent."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known issues in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-21T20:42:21.207188+00:00",
+      "status": "success"
+    }
   },
   "f8756988ff85": {
     "key": "f8756988ff85",
@@ -26031,7 +26063,39 @@
       "TC"
     ],
     "month_label": "November 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 22, 2024 (Last Updated October 27, 2025)",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "TotalCloud 2.13.0 brings updates to the cloud inventory, Insights, onboarding and more."
+        },
+        {
+          "heading": "Common Features",
+          "summary": "With this release, TotalCloud offers improved visibility and management of global security mandates through a dedicated interface, simplifying compliance tracking and reporting. With this dedicated interface, you do not have to rely on QQL knowledge…"
+        },
+        {
+          "heading": "Google Cloud Platform",
+          "summary": "With this releases, we have extended the support of TotalCloud's CDR to GCP resources. Now, CDR candetectmalware, ransomware, crypto-miner, and malicious network activity in your GCP environment using traffic mirroring."
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "Tokens introduces as part of the new AWS resources in TotalCloud."
+        },
+        {
+          "heading": "Control Updates",
+          "summary": "The following issues reported by customers, as well as other notable problems, have been resolved in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-21T20:42:21.207188+00:00",
+      "status": "success"
+    }
   },
   "30719a9b898c": {
     "key": "30719a9b898c",
@@ -26041,7 +26105,27 @@
       "UD"
     ],
     "month_label": "November 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 28, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "The trending feature is now available for the Policy Audit application. With this feature, you can configure dashboard widgets to display trend data for up to 90 days.The trending toggle is available only for theCountandRatiofunction type of…"
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following reported and notable customer issue has been fixed in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-21T20:42:21.207188+00:00",
+      "status": "success"
+    }
   },
   "ca40d2e23cfb": {
     "key": "ca40d2e23cfb",
@@ -26052,7 +26136,88 @@
       "VM"
     ],
     "month_label": "November 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 12, 2024",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "Previously, in the scan-based reports, theFixedfilter option was enabled by default while creating the scan report template. You had to manually disable it while editing the scan reports as theFixedfilter option applies only to host-based reports…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - Scan UI",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Activity logs",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Authentication Records",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan Based Report",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM-Host List Detection API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan Schedule",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM-Scan Schedule",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Users API",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scans",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "PC - Authentication Records",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC - API",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC - API",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC - Policy Editor",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC-Authentication",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC",
+          "issue": "Policy Compliance"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-21T20:42:21.207188+00:00",
+      "status": "success"
+    }
   },
   "926bd49ccd27": {
     "key": "926bd49ccd27",
@@ -26064,7 +26229,18 @@
       "VM"
     ],
     "month_label": "November 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 12, 2024",
+      "features": [],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-21T20:42:21.207188+00:00",
+      "status": "success"
+    }
   },
   "3ad0cf13dcfe": {
     "key": "3ad0cf13dcfe",
