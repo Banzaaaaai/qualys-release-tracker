@@ -26252,7 +26252,51 @@
       "PM"
     ],
     "month_label": "November 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 12, 2024",
+      "features": [
+        {
+          "heading": "New Features",
+          "summary": "The following are the new features and enhancements provided with the Qualys Cloud Agent for Linux ARM 6.0 release."
+        },
+        {
+          "heading": "Cloud Agent Enhancements",
+          "summary": "With this feature, you can change the activation key for any existing agents from the Cloud Agent user interface. Earlier, this feature was accessible only through the command line utility."
+        },
+        {
+          "heading": "Patch Management Enhancements",
+          "summary": "With this enhancement, the missing patches for your host assets are displayed in the Cloud Agent user interface for RPM and DEB platforms. The same missing patches are also displayed in the Patch Management user interface. You can launch the…"
+        },
+        {
+          "heading": "Custom Assessment and Remediation Enhancements",
+          "summary": "With this release, Cloud Agent for Linux ARM has added support for the Qualys Custom Assessment and Remediation (CAR) application."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "With this release, Qualys Cloud Agent for Linux ARM has added support for the following new platforms (operating systems)."
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following notable and important customer issue is fixed in this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workaround",
+          "summary": "The Cloud Agent for Linux ARM allows manifest download during the reduced activity period even if the respective application's network transmission is blocked. However, it does not affect the normal Cloud Agent functions and operations."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-22T15:40:20.029088+00:00",
+      "status": "success"
+    }
   },
   "dd10df5b8758": {
     "key": "dd10df5b8758",
@@ -26262,7 +26306,39 @@
       "CA"
     ],
     "month_label": "November 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 11, 2024",
+      "features": [
+        {
+          "heading": "New Features",
+          "summary": "There are no new features in this release."
+        },
+        {
+          "heading": "Cloud Agent Enhancements",
+          "summary": "With this release, we have updated the base image used for the Cloud Agent Linux AWS Bottlerocket to OEL 8.10 Slim."
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage added in this release."
+        },
+        {
+          "heading": "Known Issues",
+          "summary": "There are no known limitations in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-22T15:40:20.029088+00:00",
+      "status": "success"
+    }
   },
   "13bf251e9d96": {
     "key": "13bf251e9d96",
@@ -26272,7 +26348,23 @@
       "PM"
     ],
     "month_label": "November 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 06, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "We have provided patching support for ARM: Ubuntu 22 and Amazon Linux 2 assets."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-22T15:40:20.029088+00:00",
+      "status": "success"
+    }
   },
   "3a5358c8837b": {
     "key": "3a5358c8837b",
@@ -26282,7 +26374,23 @@
       "SA"
     ],
     "month_label": "November 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 06, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "This release supports new features and enhancements for the following Physical Scanner Appliance products."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-22T15:40:20.029088+00:00",
+      "status": "success"
+    }
   },
   "d86cc9a0107c": {
     "key": "d86cc9a0107c",
@@ -26293,7 +26401,35 @@
       "EDR"
     ],
     "month_label": "November 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 04, 2024",
+      "features": [
+        {
+          "heading": "New Features",
+          "summary": "With this release of Qualys Cloud Agent for MacOS Apple-Silicon, we are providing the following new features and enhancements."
+        },
+        {
+          "heading": "Behavioral Changes",
+          "summary": "There are no behavioral changes for this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "The Qualys Cloud Agent for MacOS Apple-Silicon 6.1 and later versions are supported on the following operating systems with malware protection enabled."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues or limitations to this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-22T15:40:20.029088+00:00",
+      "status": "success"
+    }
   },
   "7076da0e38dc": {
     "key": "7076da0e38dc",
