@@ -26440,7 +26440,35 @@
       "EDR"
     ],
     "month_label": "November 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "November 04, 2024",
+      "features": [
+        {
+          "heading": "New Features",
+          "summary": "With this release of Qualys Cloud Agent for MacOS Intel, we are providing the following new features and enhancements."
+        },
+        {
+          "heading": "Behavioral Changes",
+          "summary": "There are no behavioral changes for this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "The Qualys Cloud Agent for MacOS Intel 6.0 and later versions are supported on the following operating systems with malware protection enabled."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues or limitations to this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-22T20:52:59.626554+00:00",
+      "status": "success"
+    }
   },
   "8cad7e4bf375": {
     "key": "8cad7e4bf375",
@@ -26450,7 +26478,23 @@
       "FIM"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 29, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we have enhanced the Incident Details page with a more interactive, user-friendly, and efficient user interface."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-22T20:52:59.626554+00:00",
+      "status": "success"
+    }
   },
   "7f259f9c109d": {
     "key": "7f259f9c109d",
@@ -26461,7 +26505,23 @@
       "FIM"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 29, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we have added the following fields in response to the two Incident APIs: the Approve Incident API and the Fetch Incidents API. The parameters include the reviewer's name, ID, and the date of the review. This helps in better…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-22T20:52:59.626554+00:00",
+      "status": "success"
+    }
   },
   "dc73d0505285": {
     "key": "dc73d0505285",
@@ -26472,7 +26532,23 @@
       "CRI"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 21, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "We have introduced an enhancement that improves the functionality and usability of theDashboard.Now, when you are defining your query settings forWidgetson theDashboard, There is an optionGroup BySourcesto refine your query further.  You can enter…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-22T20:52:59.626554+00:00",
+      "status": "success"
+    }
   },
   "c2cb9ea3d595": {
     "key": "c2cb9ea3d595",
@@ -26482,7 +26558,23 @@
       "SA"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 22, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "This release brings new features and updates to supported cloud platforms, data centers, and desktop platforms."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-22T20:52:59.626554+00:00",
+      "status": "success"
+    }
   },
   "ff55fce19224": {
     "key": "ff55fce19224",
