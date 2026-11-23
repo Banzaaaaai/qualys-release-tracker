@@ -40839,5 +40839,229 @@
     ],
     "month_label": "November 2026",
     "detected_at": "2026-11-18T16:43:49+00:00"
+  },
+  "5aa8885fed80": {
+    "key": "5aa8885fed80",
+    "url": "https://docs.qualys.com/en/etm/release-notes/etm/release_1_15.htm",
+    "title": "Enterprise TruRisk Management 1.15",
+    "tags": [
+      "ETM"
+    ],
+    "month_label": "November 2026",
+    "detected_at": "2026-11-23T19:28:41+00:00",
+    "details": {
+      "release_date": "November 23, 2026This release enhances TruConfirm with exploit validation source visibility, downloadable CSV scan reports, Cloud Agent evidence details, alert rule tokens, assessment scope filters, automatic scan deletion, and scan launch from Risk Management.Attack Path adds a new Catalog tab, a rule domain search, 20 new rules, node icons in the graph, and APIs to export attack path data.In TruLens, you can find the CVEs that InstaScan can validate.Feature AvailabilityEach feature in these release notes shows its availability:Generally Available: Available to all customers when the release is deployed on your platform.Enablement Required: Available on request. To turn it on, contact Qualys Support or your Technical Account Manager (TAM).",
+      "features": [
+        {
+          "heading": "(Beta) Explore All Attack Path Rules in the New Catalog Tab",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "(Beta) Attack Paths for Identity Domain",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "(Beta) 20 New Attack Path Rules",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Prioritize Validated Findings That Are Reachable from the Internet",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Download TruConfirm Scan Results as a CSV Report",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "See Why TruConfirm Reached Each Result on Cloud Agent Assets",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Create Alerts Using TruConfirm Tokens",
+          "summary": "Availability:Enablement Required"
+        },
+        {
+          "heading": "Scope TruConfirm Assessments by Past Results, Scan Date, and QVSS",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "TruConfirm Scans Are Now Automatically Deleted After 30 Days",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Launch TruConfirm Scans from Risk Management",
+          "summary": "Availability:Enablement Required"
+        },
+        {
+          "heading": "(Beta) Export Attack Path Data Using APIs",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Find CVEs InstaScan Can Validate in TruLens",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "New Tokens for Attack Path and TruLens",
+          "summary": "The following tokens are introduced in this release"
+        },
+        {
+          "heading": "Fixes",
+          "summary": "The following reported and notable customer issues are fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-23T19:28:41.864038+00:00",
+      "status": "success"
+    }
+  },
+  "deccfd879eb5": {
+    "key": "deccfd879eb5",
+    "url": "https://docs.qualys.com/en/etm/release-notes/etm/release_1_15_api.htm",
+    "title": "Enterprise TruRisk Management 1.15 API",
+    "tags": [
+      "API",
+      "ETM"
+    ],
+    "month_label": "November 2026",
+    "detected_at": "2026-11-23T19:28:41+00:00",
+    "details": {
+      "release_date": "November 23, 2026This release introduces three Attack Path APIs. Use them to get the attack path rules that have attack paths, the attack paths each rule found, and the findings and mitigation steps for each asset on an attack path.For the other features in this release, seeETM Release 1.15.",
+      "features": [
+        {
+          "heading": "(Beta) Export Attack Path Data Using the New Attack Path APIs",
+          "summary": "What's New for You"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2026-0001"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-23T19:28:41.864038+00:00",
+      "status": "success"
+    }
+  },
+  "48de9fc786d4": {
+    "key": "48de9fc786d4",
+    "url": "https://docs.qualys.com/en/ca/release-notes/ca_application/release_2_9.htm",
+    "title": "Cloud Agent Application 2.9",
+    "tags": [
+      "CA"
+    ],
+    "month_label": "November 2026",
+    "detected_at": "2026-11-23T19:28:41+00:00",
+    "details": {
+      "release_date": "November 18, 2026Cloud Agent Application 2.9 brings you a common binary for Containerized operating systems, an enhanced Cloud Agent dashboard, advanced configurations for peer-to-peer distribution, intuitive options in additional configuration settings, local timestamps for all records in Cloud Agent UI, and excluded IPv6 address validation in Cloud Agent user interface (UI).",
+      "features": [
+        {
+          "heading": "New Common Container Agent for Efficient Agent Deployment",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Get More from Enhanced Cloud Agent Dashboard",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Control Peer-to-Peer Distribution with Advanced Settings",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Cloud Agent UI Updates for Intuitive Experience",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Cloud Agent Token Updates",
+          "summary": "The following are the new and updated search tokens for Cloud Agent"
+        },
+        {
+          "heading": "Fixes",
+          "summary": "The following important and notable customer issues are fixed in this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-23T19:28:41.864038+00:00",
+      "status": "success"
+    }
+  },
+  "1ee79c031868": {
+    "key": "1ee79c031868",
+    "url": "https://docs.qualys.com/en/ca/release-notes/ca_application/release_2_9_api.htm",
+    "title": "Cloud Agent Application 2.9 API",
+    "tags": [
+      "API",
+      "CA"
+    ],
+    "month_label": "November 2026",
+    "detected_at": "2026-11-23T19:28:41+00:00",
+    "details": {
+      "release_date": "November 18, 2026",
+      "features": [
+        {
+          "heading": "Advanced Settings for Peer-to-Peer Distribution",
+          "summary": "Peer-to-peer to distribution now provides advanced settings for more control over content distribution. With these advanced configuration parameters, you can control peer discovery interval, limit peer connections for a Cloud Agent, exclude subnets…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-23T19:28:41.864038+00:00",
+      "status": "success"
+    }
+  },
+  "7cc15409896c": {
+    "key": "7cc15409896c",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/macos_apple_silicon/release_7_1.htm",
+    "title": "Cloud Agent MacOS Apple Silicon 7.1",
+    "tags": [
+      "CA"
+    ],
+    "month_label": "November 2026",
+    "detected_at": "2026-11-23T19:28:41+00:00",
+    "details": {
+      "release_date": "November 20, 2026Cloud Agent for macOS Apple Silicon 7.1 supports an independent patch management tool for reliable patching. Also, you can now automate macOS updates with saved credentials and get patch management notifications with an updated notification header.",
+      "features": [
+        {
+          "heading": "Independent Patch Management for Seamless Patching",
+          "summary": "What's New"
+        },
+        {
+          "heading": "Automate MacOS Update Installation with Saved Credentials",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Unified TruRisk Eliminate",
+          "summary": "What Changed For You"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-23T19:28:41.864038+00:00",
+      "status": "success"
+    }
+  },
+  "4cfe7b84a962": {
+    "key": "4cfe7b84a962",
+    "url": "https://docs.qualys.com/en/ca/release-notes/cloud_agent/macos_intel/release_7_0.htm",
+    "title": "Cloud Agent MacOS Intel x86_64 7.0",
+    "tags": [
+      "CA"
+    ],
+    "month_label": "November 2026",
+    "detected_at": "2026-11-23T19:28:41+00:00"
   }
 }
