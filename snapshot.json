@@ -26585,7 +26585,23 @@
       "CRI"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 21, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we have enhanced Alerting in Certificate View. For Alerting,  you can define the conditions, significant findings, or events that should trigger the rules and send you alerts. This functionality is accessible in the Responses tab.…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-24T01:56:46.830021+00:00",
+      "status": "success"
+    }
   },
   "a19be6747c07": {
     "key": "a19be6747c07",
@@ -26597,7 +26613,52 @@
       "PM"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 21, 2024 (Updated June 25, 2025)",
+      "features": [
+        {
+          "heading": "New Features",
+          "summary": "With this release of Qualys Cloud Agent for Linux Intel, we bring you the following new features and enhancements."
+        },
+        {
+          "heading": "Cloud Agent Enhancements",
+          "summary": "With this enhancement, a new option is provided on the Cloud Agent user interface to create the vault connection for your database assessment profile. The vault connection includes details such as vault connection name, secret manager type, and…"
+        },
+        {
+          "heading": "Patch Management Enhancements",
+          "summary": "With this enhancement, we are providing you package-level status for your patch deployment jobs with respective sub-codes. It gives you details of the patch deployment job status and helps you understand the reason for failure. It also displays the…"
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage support added for this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "If a proxy is configured, Cloud Agent for Linux connects to the Vault URL via proxy. In this case, the communication fails if the proxy does not have the path to the internal vault URL. By default, Cloud Agent does not attempt a direct connection.…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "CRM-122013",
+          "issue": "We fixed an issue where the FIM events were generated for the excluded users and processes by updating the values for AUID and audit username fields in the filter queries."
+        },
+        {
+          "component": "CRM-129148",
+          "issue": "We fixed an issue where the qualys-cep process was not getting terminated after upgrading or restarting the Cloud Agent."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-24T01:56:46.830021+00:00",
+      "status": "success"
+    }
   },
   "3c32a8f56596": {
     "key": "3c32a8f56596",
@@ -26607,7 +26668,56 @@
       "CA"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 21, 2024 (Updated February 26, 2025)",
+      "features": [
+        {
+          "heading": "New Features",
+          "summary": "With this release of Qualys Cloud Agent for Windows, we bring you the following new features and enhancements."
+        },
+        {
+          "heading": "Cloud Agent Enhancements",
+          "summary": "With this enhancement, a new option is provided on the Cloud Agent user interface to create the vault connection for your database assessment profile. The vault connection includes details such as vault connection name, secret manager type, and…"
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "For Windows Cloud Agent 6.0 and higher, we updated the Transport Layer Security protocol to TLS 1.3. The previous agent versions continue supporting TLS 1.2."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "With this release, the Cloud Agent for Windows supports the following new platforms (Operating Systems)."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues or limitations noticed for this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "CRM-120767",
+          "issue": "We fixed an issue where the Instance Metadata Service (IMDSv2) calls were failing for cloned Cloud Agents during agent the provisioning call as they were sending Gold Image or Master Node Instance ID."
+        },
+        {
+          "component": "CRM-126193",
+          "issue": "We fixed an issue where the Cloud Agent was sending virtual MAC Addresses during provisioning by configuring it to collect only valid MAC addresses."
+        },
+        {
+          "component": "CRM-127256",
+          "issue": "We fixed an issue where duplicate Cloud Agent records were generated for a unique host due to repeated reprovisioning of Cloud Agent caused by an empty Instance ID response from the API."
+        },
+        {
+          "component": "CRM-87668",
+          "issue": "We fixed an issue where the security identifier (SID) - Name translations done by the Cloud Agent were causing SID traffic on the Domain Controllers."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-24T01:56:46.830021+00:00",
+      "status": "success"
+    }
   },
   "014a1f6d5749": {
     "key": "014a1f6d5749",
@@ -26617,7 +26727,23 @@
       "Conn"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 21, 2024",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "Connector 2.5 introduces updates to  FlexScan and bug fixes."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-24T01:56:46.830021+00:00",
+      "status": "success"
+    }
   },
   "562793f8d362": {
     "key": "562793f8d362",
@@ -26627,7 +26753,63 @@
       "TC"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 21, 2024",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "TotalCloud 2.12.0 brings updates to the cloud inventory."
+        },
+        {
+          "heading": "Amazon Web Service",
+          "summary": "With this release, we have included support for new resources on the AWS Inventory. The cloud inventory ensures these new resources are assessedagainst the best global compliance standards supported by Qualys, such as NIST, PCI DSS, HIPAA, GDPR, etc."
+        },
+        {
+          "heading": "Microsoft Azure",
+          "summary": "With this release, we have enhanced the behavior of CDR findings for Azure flow logs. You can now configure Azure NSG flow log findings with the new deployment scripts on theAzuretab on theThreat Scannerpage. The tab helps create configurations with…"
+        },
+        {
+          "heading": "Google Cloud Platform",
+          "summary": "With this release, we have included support for new resources on the GCP Inventory. The cloud inventory ensures these new resources are assessedagainst the best global compliance standards supported by Qualys, such as NIST, PCI DSS, HIPAA, GDPR, etc."
+        },
+        {
+          "heading": "Oracle Cloud Infrastructure",
+          "summary": "With this release, we have included support for a new resource on the OCI Inventory. The cloud inventory ensures these new resources are assessedagainst the best global compliance standards supported by Qualys, such as NIST, PCI DSS, HIPAA, GDPR,…"
+        },
+        {
+          "heading": "Common Features",
+          "summary": "With this release, we have added support for a QQL search bar under the CDR tab of your AWS Instances and Azure VMs. You can search for specific findings using the available Qualys Query Language token and narrow down the list of threats you want to…"
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "With this release, we have introduced support for new tokens."
+        },
+        {
+          "heading": "Control Changes",
+          "summary": "Changes introduced to controls in this release."
+        },
+        {
+          "heading": "AWS",
+          "summary": "CID"
+        },
+        {
+          "heading": "Azure",
+          "summary": "CID"
+        },
+        {
+          "heading": "OCI",
+          "summary": "CID"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-24T01:56:46.830021+00:00",
+      "status": "success"
+    }
   },
   "a58e2c230da8": {
     "key": "a58e2c230da8",
