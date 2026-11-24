@@ -26820,7 +26820,23 @@
       "GAV"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 15, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "The following is the new feature available with the CSAM and GAV subscriptions."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-24T19:05:23.624140+00:00",
+      "status": "success"
+    }
   },
   "79a18b8969dc": {
     "key": "79a18b8969dc",
@@ -26830,7 +26846,23 @@
       "PM"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 16, 2024 (Updated on November 04, 2024)",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With the introduction of a new application, Mitigation, you can now mitigate vulnerabilities on Windows and Linux assets using actions and scripts, creating mitigation jobs."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-24T19:05:23.624140+00:00",
+      "status": "success"
+    }
   },
   "f5b3b746d4cf": {
     "key": "f5b3b746d4cf",
@@ -26841,7 +26873,23 @@
       "PM"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 16, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we have introduced a new version of the 'Get a List of Generated Reports' API. This API limits the number of reports that can be listed. Using this API, you can get a list of a maximum of 20 reports with the latest report status."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-24T19:05:23.624140+00:00",
+      "status": "success"
+    }
   },
   "a423152c12da": {
     "key": "a423152c12da",
@@ -26851,7 +26899,23 @@
       "CAR"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 15, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "We have introduced a new Library Script Importer (Read-Only) user role to streamline administrative tasks and enhance the management of scripts within the system. This role is designed to facilitate easier script management without the ability to…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-24T19:05:23.624140+00:00",
+      "status": "success"
+    }
   },
   "37cdf02aeb2f": {
     "key": "37cdf02aeb2f",
@@ -26862,7 +26926,25 @@
       "CAR"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 15, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "In our latest update, we have made an important change to how we handle time-based threshold values. Specifically, we have removed the 'thresholdTimeUnit' field. From now on, you need to provide values for the 'threshold' field inSECONDS. This…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2023-3452"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-24T19:05:23.624140+00:00",
+      "status": "success"
+    }
   },
   "7034c06ad1f8": {
     "key": "7034c06ad1f8",
