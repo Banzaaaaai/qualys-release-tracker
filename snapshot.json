@@ -26954,7 +26954,23 @@
       "PNS"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 14, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, NPS services have improved support for the Cisco Discovery Protocol (CDP) protocol and Link Layer Discovery Protocol (LLDP) handlers to enhance OS and device predictions for assets reported by the Cloud Agent Passive Sensor (CAPS)…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-24T23:41:33.603179+00:00",
+      "status": "success"
+    }
   },
   "c63c0f44ec3f": {
     "key": "c63c0f44ec3f",
@@ -26964,7 +26980,23 @@
       "EDR"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 09, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "This release introduces a set of predefined hunting queries developed by our Threat Research team. These queries help you quickly identify specific event data related to potential threats, anomalies, or suspicious activities in your environment.…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-24T23:41:33.603179+00:00",
+      "status": "success"
+    }
   },
   "d9410986a6ae": {
     "key": "d9410986a6ae",
@@ -26975,7 +27007,23 @@
       "EDR"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 09, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "Introducing a new API that provides comprehensive asset details without limitations. Filter data by date range for greater flexibility in managing and accessing asset information according to your requirements."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-24T23:41:33.603179+00:00",
+      "status": "success"
+    }
   },
   "74a173e4a7e0": {
     "key": "74a173e4a7e0",
@@ -26985,7 +27033,32 @@
       "WAS"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 15, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we introduce the following new features and enhancements to the Web Application Scanning user interface."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "WAS Scans",
+          "issue": "We fixed an issue where some Japanese characters in the scan completion email notification were corrupted by updating the UTF-8 library."
+        },
+        {
+          "component": "WAS Reports",
+          "issue": "We fixed an issue where users received an error while uploading the burp report by updating the CDATA in the report files."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-24T23:41:33.603179+00:00",
+      "status": "success"
+    }
   },
   "68110acf7405": {
     "key": "68110acf7405",
@@ -26996,7 +27069,23 @@
       "VM"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 13, 2024",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "When a VMDR subscription is enabled, you may have opted for only a certain number of features. It may be the case that you are not aware of all the features VMDR offers. Once you become familiar with all available features, you would typically need…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-24T23:41:33.603179+00:00",
+      "status": "success"
+    }
   },
   "53cfcc9d4183": {
     "key": "53cfcc9d4183",
