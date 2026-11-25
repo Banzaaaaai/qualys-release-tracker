@@ -27097,7 +27097,41 @@
       "VM"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 06, 2024 (Updated September 20, 2024)",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "With this release, we have introduced the Qualys Recommended Option Profile for all new VM/VMDR subscriptions. With this enhancement, when creating a new Option Profile, the default settings from the Qualys Recommended Option Profile are applied."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": [
+        "CVE-2004-0795",
+        "CVE-2013-3336",
+        "CVE-2017-16260",
+        "CVE-2017-16261",
+        "CVE-2017-16262",
+        "CVE-2017-16263",
+        "CVE-2018-19183",
+        "CVE-2019-18988",
+        "CVE-2021-28235",
+        "CVE-2023-23931",
+        "CVE-2023-23948",
+        "CVE-2023-32082",
+        "CVE-2023-4692",
+        "CVE-2023-4693",
+        "CVE-2024-38856",
+        "CVE-2024-38858",
+        "CVE-2024-40780"
+      ]
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-25T18:10:51.238413+00:00",
+      "status": "success"
+    }
   },
   "ce0179c79314": {
     "key": "ce0179c79314",
@@ -27107,7 +27141,18 @@
       "VMDR Mobile"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "Oct 10, 2024",
+      "features": [],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-25T18:10:51.238413+00:00",
+      "status": "success"
+    }
   },
   "f78fe600c8cd": {
     "key": "f78fe600c8cd",
@@ -27117,7 +27162,23 @@
       "VMDR OT"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 10, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "We have extended our support for a new project file for the Industrial Out of Band Configuration Assessment. You can enhance your inventory by importing project files with the .rsh extension. This enhancement allows you to import files from Rockwell…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-25T18:10:51.238413+00:00",
+      "status": "success"
+    }
   },
   "62036c2a8810": {
     "key": "62036c2a8810",
@@ -41416,5 +41477,116 @@
     ],
     "month_label": "November 2026",
     "detected_at": "2026-11-23T19:28:41+00:00"
+  },
+  "fab5c952191b": {
+    "key": "fab5c952191b",
+    "url": "https://docs.qualys.com/en/etm-identity/release-notes/etm_identity/release_1_6.htm",
+    "title": "ETM Identity 1.6.0",
+    "tags": [
+      "ID"
+    ],
+    "month_label": "November 2026",
+    "detected_at": "2026-11-25T18:10:51+00:00",
+    "details": {
+      "release_date": "November 23, 2026ETM Identity 1.6.0 helps you find attack paths to your most privileged assets and prioritize Active Directory (AD) groups by business criticality. This release also extends visibility to local accounts on Windows and Linux endpoints.",
+      "features": [
+        {
+          "heading": "Find Attack Paths to Privileged Assets with Attack Path Insights (Beta)",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Prioritize Critical AD Groups with Asset Criticality Score Import and Export",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Monitor Local Accounts on Windows and Linux Endpoints with Local Identities (Beta)",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Retrieve Active Directory Monitoring Alerts with the Public API",
+          "summary": "What's New for You"
+        },
+        {
+          "heading": "Detect More Identity Risks with the Active Directory Connector",
+          "summary": "What Changed for You"
+        },
+        {
+          "heading": "See Consistent User Status Across Identity Sources",
+          "summary": "What Changed for You"
+        },
+        {
+          "heading": "Identify Collection Sources Clearly with the Updated Source Label",
+          "summary": "What Changed for You"
+        },
+        {
+          "heading": "Remediate Misconfigurations with Clearer Detection Details",
+          "summary": "What Changed for You"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-25T18:10:51.238413+00:00",
+      "status": "success"
+    }
+  },
+  "61ad836c3860": {
+    "key": "61ad836c3860",
+    "url": "https://docs.qualys.com/en/pm/release-notes/patch_management/release_4_3.htm",
+    "title": "TruRisk™ Eliminate Release 4.3",
+    "tags": [
+      "ISL",
+      "MTG",
+      "PM",
+      "TE"
+    ],
+    "month_label": "November 2026",
+    "detected_at": "2026-11-25T18:10:51+00:00",
+    "details": {
+      "release_date": "November 24, 2026This release lets you create ring-based deployment jobs from the Jobs page, track patch SLA compliance, check patch and mitigation availability for any CVE, patch macOS 27 assets, and align automated Windows jobs with Patch Tuesday.",
+      "features": [
+        {
+          "heading": "Create Ring-Based Deployment Jobs from the Jobs Page",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Overview and Operational Status Page Enhancements",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Expand Patch Coverage to macOS 27 GoldenGate",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Keep Automated Jobs Aligned with Patch Tuesday",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Preview and Download Exactly Which Assets a Job Will Patch Before You Deploy",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Share Job Results by Email with a Report Download Link",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "Get Accurate Missing Patches for Linux Assets with Extended Support Subscriptions",
+          "summary": "What Changed For You"
+        },
+        {
+          "heading": "New QQL Tokens",
+          "summary": "Refer to the following table to learn more about the new token in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-25T18:10:51.238413+00:00",
+      "status": "success"
+    }
   }
 }
