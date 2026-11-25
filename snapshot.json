@@ -27188,7 +27188,23 @@
       "SA"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 08, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "This release introduces Automation template support (Terraform Support) for Virtual Scanners (qVSA)."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-25T23:24:30.971700+00:00",
+      "status": "success"
+    }
   },
   "7b0edc7cb60c": {
     "key": "7b0edc7cb60c",
@@ -27199,7 +27215,84 @@
       "GAV"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 03, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "The following are the new features available with the CSAM subscription."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "CSAM+GAV - Asset Mapper",
+          "issue": "We fixed the issue of assets not reporting to the platform, although the latest checked-in date was shown on the UI."
+        },
+        {
+          "component": "CSAM+GAV - Asset Mapper",
+          "issue": "We fixed the issue where theLast System Bootinformation was not shown on theAsset Details>System Informationtab."
+        },
+        {
+          "component": "CSAM+GAV - Asset Mapper",
+          "issue": "We fixed the issue where the BIOS Serial Number for Juniper OS was not displayed on theAsset Details>System Informationtab."
+        },
+        {
+          "component": "CSAM+GAV - EASM Discovery",
+          "issue": "We fixed the issue of several unrelated assets discovered after the EASM scan, though theSubsidiaries Enumerationcheckbox was cleared while creating the EASM configuration profile. Now, if theHorizontal Domain EnumerationandSubsidiaries Enumerationcheckboxes are cleared, the assets from the subdomain enumeration are correctly discovered."
+        },
+        {
+          "component": "CSAM+GAV - EASM UI",
+          "issue": "We fixed the issue where, for a multiple EASM profile account, the EASM Summary Report generated for one profile contained the seed value information of a different profile."
+        },
+        {
+          "component": "CSAM+GAV - EASM Discovery",
+          "issue": "We fixed the issue where the EASM configuration profile-related data was not deleted upon the CSAM trial subscription expiration, and the account was moved to a Free account."
+        },
+        {
+          "component": "CSAM+GAV - EASM UI",
+          "issue": "We fixed the issue where, on theVulnerabilitiestab of EASM, using Lightweight Scan data, theGroup By Last Fixedfilter did not show the correct result."
+        },
+        {
+          "component": "CSAM+GAV - Dashboard",
+          "issue": "We have fixed the issue for the EASM dashboard template where the redirection did not work correctly upon clicking the count from the CSAM or EASM widgets. Now, with the introduction of the newExternal Attack Surface Management (v3)template, upon clicking the count on the widget that belongs to CSAM, you are redirected to theInventorytab with theCSAMtoggle selected. Upon clicking the count on the widget that belongs to EASM, you are redirected to theInventorytab with theEASMtoggle selected."
+        },
+        {
+          "component": "CSAM+GAV - Alerting",
+          "issue": "We fixed the issue where the alert notifications configured to notify the new asset on the third-party host were not getting sent."
+        },
+        {
+          "component": "CSAM+GAV - Asset Mapper",
+          "issue": "We fixed the issue where the lifecycle information was not correctly displayed on theAsset Details>System Informationtab for some assets, like the OS and hardware details."
+        },
+        {
+          "component": "CSAM+GAV - Asset Mapper",
+          "issue": "We fixed the tags removal issue observed for some assets tagged based on Custom Attributes and Keys and Values defined on Assets."
+        },
+        {
+          "component": "CSAM+GAV-UI",
+          "issue": "We fixed the issue where the \"synced inventory data\" from the CSAM and GAV Home page was not updated despite scanning all the cloud agent assets."
+        },
+        {
+          "component": "CSAM+GAV-Feature Request",
+          "issue": "We fixed the issue where the Mac Address details were not displayed on theAsset Details>Network Informationtab."
+        },
+        {
+          "component": "Shared - Portal",
+          "issue": "We fixed the data sorting issue that was not working as expected for vulnerabilities on theSoftware Composition Analysistab of theAsset Detailspage. The sorting now works as expected for theQIDandDetected Datecolumns."
+        },
+        {
+          "component": "AV - Azure",
+          "issue": "We fixed the discrepancy in asset counts on CSAM and Connector user interfaces for Azure connectors by updating dates filed in the asset index for every connector run."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-25T23:24:30.971700+00:00",
+      "status": "success"
+    }
   },
   "cdb9258ff62e": {
     "key": "cdb9258ff62e",
@@ -27211,7 +27304,23 @@
       "GAV"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 03, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "Before this release, the total count of unresolved domains was visible only through CSAM UI. With this release, we have introduced a new Unresolved Domains Count API that fetches the total count of the unresolved domains."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-25T23:24:30.971700+00:00",
+      "status": "success"
+    }
   },
   "726e048f42d4": {
     "key": "726e048f42d4",
@@ -27221,7 +27330,23 @@
       "SA"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 03, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "This release brings new features and updates to supported cloud platforms, data centers, and desktop platforms."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-25T23:24:30.971700+00:00",
+      "status": "success"
+    }
   },
   "d623aeb25ca8": {
     "key": "d623aeb25ca8",
@@ -27234,7 +27359,48 @@
       "SAQ"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 17, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "The following are the new features and enhancements provided by the Qualys Cloud Platform 3.19.0 release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Cloud Agent UI",
+          "issue": "Cloud Agent"
+        },
+        {
+          "component": "Portal",
+          "issue": "VMDR"
+        },
+        {
+          "component": "WAS API",
+          "issue": "WAS"
+        },
+        {
+          "component": "WAS API",
+          "issue": "WAS"
+        },
+        {
+          "component": "SAQ UI",
+          "issue": "SAQ"
+        },
+        {
+          "component": "SAQ UI",
+          "issue": "SAQ"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-25T23:24:30.971700+00:00",
+      "status": "success"
+    }
   },
   "392c3f1c142b": {
     "key": "392c3f1c142b",
