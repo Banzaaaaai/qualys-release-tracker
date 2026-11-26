@@ -27410,7 +27410,23 @@
       "VMDR"
     ],
     "month_label": "October 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "October 04, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "While creating dynamic tags, theasset.riskScoreQQL token will now be visible to limited users. This is because this QQL is now deprecated and is in the withdrawal phase. Also, you cannot create tags using this token in combination with other QQL…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-26T17:53:16.903348+00:00",
+      "status": "success"
+    }
   },
   "091c2de88c21": {
     "key": "091c2de88c21",
@@ -27420,7 +27436,23 @@
       "VMDR"
     ],
     "month_label": "September 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 30, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "InRelease 0.8.0, we simplified the GroupBy results for MITRE Tactics and Techniques. In our latest release, we have enhanced the GroupBy results for MITRE Tactics and Techniques by introducing two new options. These options allow you to analyze all…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-26T17:53:16.903348+00:00",
+      "status": "success"
+    }
   },
   "0e2e94bcf12c": {
     "key": "0e2e94bcf12c",
@@ -27430,7 +27462,68 @@
       "WAS"
     ],
     "month_label": "September 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 25, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "Earlier, the option to create a widget from a query added to the data list tabs -Create Widget from Query-was available only in theWeb ApplicationsandDetectionstab."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Scan Schedule Start Date",
+          "issue": "We have fixed an issue where theStart Dateis displayed in a format different than the date format in the user profile settings. This was observed while scheduling a scan."
+        },
+        {
+          "component": "Web Application Creation",
+          "issue": "An issue was observed while creating a web application having a long URL with a slash (/), and the crawl scope was set to Limit to URL hostname and specified sub-domain; when the user tried to add a subdomain value, the application stopped responding.The issue is resolved now."
+        },
+        {
+          "component": "Scanner Appliance",
+          "issue": "An issue was observed where, in the scheduled multi-scans, some web applications were scanned with external scanners even though the user had selected the tag for the internal scanner pool in the Scanner Appliance. This resulted in scan failure. This issue is resolved, and all the web applications are mapped to the scanner pool."
+        },
+        {
+          "component": "Web Application Import",
+          "issue": "We have fixed an issue the user faced while importing a web application using a .txt file."
+        },
+        {
+          "component": "Crawl Settings",
+          "issue": "We have fixed an issue where the domain description message displayed multiple domain names. Now, the description message contains only the first domain name."
+        },
+        {
+          "component": "Reports",
+          "issue": "An issue was observed where a sub user could not generate a web application report and scan report. This issue was observed when create, edit, and delete report permissions were assigned to the sub-user; however, the user was not assigned read report permission.The issue is resolved now. Now, the sub-user with create, edit, and delete report permissions can create a web application and scan reports even when the read report permission is not assigned."
+        },
+        {
+          "component": "Scan Report Download",
+          "issue": "When downloading the scan reports, an issue was observed: The scan report generation encountered an error due to corrupted data.The issue is resolved now."
+        },
+        {
+          "component": "Web Applications, EASM-related tag",
+          "issue": "We have fixed an issue where the user encountered an issue while editing web applications with the EASM Confidence MediumorEASM Confidence Hightags assigned. The issue is resolved now."
+        },
+        {
+          "component": "Crawl Scope, Web Application Creation",
+          "issue": "Earlier, while creating a web application, the user could not enter URLs to the Explicit URLs to Crawl field when the Crawl Scope was set to Limit to Content Located at or below URL subdirectory.The issue is resolved, and the user can add an explicit URL using a subdomain while creating a web application."
+        },
+        {
+          "component": "Detection Status",
+          "issue": "An issue was observed where the status of the finding did not change toFixedeven though the setting to close the finding when the URL could not be found was done.The issue is resolved now."
+        },
+        {
+          "component": "Dashboard Widgets",
+          "issue": "The user encountered issues while editing the TruRisk-related widgets in the dashboard created in the Web Application Scanning version earlier to 1.15.For example, if the user added a detection query, no data was displayed upon saving the  query. If the users deleted the detection query and tried to add the application query, the Detection Query field was added.These issues are resolved now, and the user can edit the dashboard widgets related to the TruRisk™ score."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-26T17:53:16.903348+00:00",
+      "status": "success"
+    }
   },
   "bcaf24d85016": {
     "key": "bcaf24d85016",
@@ -27440,7 +27533,27 @@
       "CS"
     ],
     "month_label": "September 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 24, 2024",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "Earlier, Qualys Cluster Sensor container user was 'root'. With this release, Qualys Cluster Sensor runs as a non-root user."
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following issue has been fixed with this release"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-26T17:53:16.903348+00:00",
+      "status": "success"
+    }
   },
   "614123ccd841": {
     "key": "614123ccd841",
@@ -27450,7 +27563,27 @@
       "CS"
     ],
     "month_label": "September 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 24, 2024",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "Qualys Container Security now supports the TruRisk™ score and Qualys Detection Score (QDS) for your Container Security assets. These scores are calculated in pre-defined formulas. The TruRisk™ score is based on the Asset Criticality Score (ACS),…"
+        },
+        {
+          "heading": "Known Issue",
+          "summary": "The following issue is the Known issues in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-26T17:53:16.903348+00:00",
+      "status": "success"
+    }
   },
   "a35ff21bf08f": {
     "key": "a35ff21bf08f",
