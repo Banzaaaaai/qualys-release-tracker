@@ -27604,7 +27604,31 @@
       "CS"
     ],
     "month_label": "September 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 24, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "Admin or user can create a robot account under a project that authenticates to your Harbor instance using a secret or generated password, allowing you to connect to your Harbor instance through the OCI client or Harbor API to automate tasks. A…"
+        },
+        {
+          "heading": "Helm Chart 1.13.0 Updates",
+          "summary": "The Qualys Container Security package consists of the 'values.yaml' file which deploys the sensor in various environments. This section explains the updates in the latest Helm chart (values.yaml) file."
+        },
+        {
+          "heading": "Issue Addressed",
+          "summary": "The following issue has been fixed with this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-26T23:24:10.596809+00:00",
+      "status": "success"
+    }
   },
   "f62cab51c5ad": {
     "key": "f62cab51c5ad",
@@ -27614,7 +27638,32 @@
       "QS"
     ],
     "month_label": "September 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 24, 2024",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "QScanner now supports scanning images based on the following Operating Systems."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "Data Collection Mode",
+          "issue": "QScanner failed to access large tokens present in dpkg (Debian Package) status file which resulted in reporting of false QIDs."
+        },
+        {
+          "component": "Data Collection Mode",
+          "issue": "When a non-root user executed QScanner, it failed to access thejava-db.lockfile."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-26T23:24:10.596809+00:00",
+      "status": "success"
+    }
   },
   "1b4c65749dec": {
     "key": "1b4c65749dec",
@@ -27624,7 +27673,23 @@
       "FIM"
     ],
     "month_label": "September 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 23, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we have introduced a groundbreaking feature calledFIM on Containers. On FIM events tab, you can view FIM events detected by different sources such as"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-26T23:24:10.596809+00:00",
+      "status": "success"
+    }
   },
   "0a0b840d5d1d": {
     "key": "0a0b840d5d1d",
@@ -27635,7 +27700,23 @@
       "FIM"
     ],
     "month_label": "September 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 23, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "File Integrity Monitoring v1 APIs are not available from this FIM 4.2. release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-26T23:24:10.596809+00:00",
+      "status": "success"
+    }
   },
   "cf83a8b4efe6": {
     "key": "cf83a8b4efe6",
@@ -27645,7 +27726,23 @@
       "QGS"
     ],
     "month_label": "September 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 18, 2024",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "QGS 3.8 brings updates to the TextUI, Appliance Details and the Appliance and Container image versions."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-26T23:24:10.596809+00:00",
+      "status": "success"
+    }
   },
   "1fa8726ac3e4": {
     "key": "1fa8726ac3e4",
