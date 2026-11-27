@@ -27942,7 +27942,23 @@
       "PM"
     ],
     "month_label": "September 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 02, 2024 (Updated on November 04, 2024)",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "Until this release, only one report type was supported for all platforms: Windows, Linux, and Mac. This report type included a detailed list of assets with missing and installed patches."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-27T23:03:38.568073+00:00",
+      "status": "success"
+    }
   },
   "e318808b99c3": {
     "key": "e318808b99c3",
@@ -27953,7 +27969,23 @@
       "PM"
     ],
     "month_label": "September 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 02, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "We have introduced a new API: Get a List of More than Ten Thousand Patches. You can use this API to get a list of more than ten thousand patches in a paginated format."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-27T23:03:38.568073+00:00",
+      "status": "success"
+    }
   },
   "015b5d3a42f7": {
     "key": "015b5d3a42f7",
@@ -27963,7 +27995,23 @@
       "QGS"
     ],
     "month_label": "September 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 18, 2024",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "QGS 3.7.1 brings updates to the Appliance base download image."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-27T23:03:38.568073+00:00",
+      "status": "success"
+    }
   },
   "7aa499df848e": {
     "key": "7aa499df848e",
@@ -27982,7 +28030,52 @@
       "XDR"
     ],
     "month_label": "August 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 23, 2024 (Updated February 25, 2025)",
+      "features": [
+        {
+          "heading": "New Features",
+          "summary": "With this feature, we are providing an option to select an alternate installation folder for RPM-based Cloud Agent packages. You can now configure the installation path for your Cloud Agent as either/usr/localor/opt. This flexibility helps you adapt…"
+        },
+        {
+          "heading": "Cloud Agent Enhancement",
+          "summary": "With the existing languages (NodeJS, DotNet, Python, Java, Ruby, Rust, Go, and PHP), we added support for C/C++ language. The following table shows the added language support for Software Composition Analysis."
+        },
+        {
+          "heading": "Patch Management (PM) Enhancement",
+          "summary": "With this enhancement, the date and time for patch installation are displayed with the status of the patch job in the Patch Management user interface. The patch installation date and time are shown according to your browser (user profile) timezone…"
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "Platform Coverage Support",
+          "summary": "There is no new platform coverage support added for this release."
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "You must restart the Cloud Agent service when you switch user privileges from non-root to root."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "CRM-119555",
+          "issue": "For assets with the Systemd, Cloud Agent displayed the missing files error CID-9676 result section. We fixed this issue by preventing Cloud Agent from creating extra files."
+        },
+        {
+          "component": "CRM-118216",
+          "issue": "We fixed an issue in which the Cloud Agent displayed public-facing IP addresses instead of private IPv4 addresses in the CSAM, VM, and PC applications when configured with a loopback proxy (127.0.0.1)."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-27T23:03:38.568073+00:00",
+      "status": "success"
+    }
   },
   "7a7b8a0e6614": {
     "key": "7a7b8a0e6614",
@@ -27993,7 +28086,64 @@
       "VM"
     ],
     "month_label": "August 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 21, 2024",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "Asset Criticality Score (ACS) for your TruRisk adoption is defined based on the business impact in the asset group. Earlier, the business impact of each asset group was set to high by default when creating or updating the asset group. As the…"
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "VM - ASR",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Scan Based Report",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Assets",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "VM - Authentication Records",
+          "issue": "Vulnerability Management"
+        },
+        {
+          "component": "PC-Reports",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC-Reports",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC-Reports",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC-Reports",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC - New UI",
+          "issue": "Policy Compliance"
+        },
+        {
+          "component": "PC - New UI",
+          "issue": "Policy Compliance"
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-27T23:03:38.568073+00:00",
+      "status": "success"
+    }
   },
   "38a6e98750eb": {
     "key": "38a6e98750eb",
