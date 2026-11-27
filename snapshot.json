@@ -27752,7 +27752,23 @@
       "EDR"
     ],
     "month_label": "September 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 16, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "Stay protected with our new \"Ransomware Mitigation\" feature in Qualys Antimalware. This feature is designed to detect and prevent ransomware, recover encrypted files, and secure local processes and remotely accessed network paths. You can access…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-27T17:39:25.387990+00:00",
+      "status": "success"
+    }
   },
   "82f86a66c1da": {
     "key": "82f86a66c1da",
@@ -27762,7 +27778,27 @@
       "UD"
     ],
     "month_label": "September 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 13, 2024",
+      "features": [],
+      "issues_fixed": [
+        {
+          "component": "UD-VM",
+          "issue": "We have fixed an issue where the increasing trending number of vulnerabilities in the VM trending widget displayed negative numbers."
+        },
+        {
+          "component": "UD",
+          "issue": "Previously, theindex numbers displayed on the dashboard widgets appeared incomplete and cut off.We have fixed this issue, and the numbers on the dashboard appear in an updated format.For example, 60000 is now displayed as 60K."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-27T17:39:25.387990+00:00",
+      "status": "success"
+    }
   },
   "6ef866a3c264": {
     "key": "6ef866a3c264",
@@ -27782,7 +27818,68 @@
       "XDR"
     ],
     "month_label": "September 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 06, 2024",
+      "features": [
+        {
+          "heading": "New Features",
+          "summary": "With this feature, we have added support for downloading and executing configuration scripts after patch deployment on an asset. The Cloud Agent downloads the configuration script from CDN."
+        },
+        {
+          "heading": "Cloud Agent Enhancements",
+          "summary": "With this release, the following enhancements are available for the Cloud Agent Health Check reports"
+        },
+        {
+          "heading": "Patch Management Enhancements",
+          "summary": "Previously, the patch deferral and reboot countdown were initiated according to the defined schedule irrespective of an active user session on the system."
+        },
+        {
+          "heading": "Endpoint Detection and Response Enhancements",
+          "summary": "Earlier, the setting for removal of third-party anti-malware applications was applicable based on subscription. The setting to enable Qualys EndPoint Protection and removal of third-party anti malware applications were available in Cloud Agent and…"
+        },
+        {
+          "heading": "Behavior Changes",
+          "summary": "There are no behavior changes in this release."
+        },
+        {
+          "heading": "End of Support for Platforms (Operating Systems)",
+          "summary": "With this release, the Qualys Cloud Agent for Windows discontinues the support for the following platforms"
+        },
+        {
+          "heading": "Known Issues, Limitations, and Workarounds",
+          "summary": "There are no known issues and limitations available for this release."
+        }
+      ],
+      "issues_fixed": [
+        {
+          "component": "CRM-111943",
+          "issue": "We had an issue where Cloud Agent was unable to complete the scan due to the missing manifest files. Now, Cloud Agent honors the newly downloaded manifest and completes the scan."
+        },
+        {
+          "component": "CRM-116377",
+          "issue": "We had an issue where Cloud Agent was using extra memory and disk resources, which caused slowness. We fixed this issue by optimizing the disk I/O operations during the scan."
+        },
+        {
+          "component": "CRM-116082",
+          "issue": "We had an issue where the Cloud Agent self-protection feature caused slowness in launching other applications on the host. We fixed this issue by filtering out the processes not relevant to Qualys' self-protection feature."
+        },
+        {
+          "component": "CRM-122617",
+          "issue": "We had an issue where the FIM events were excluded when any of the multiple filter types matched the exclusion criterion. Now, FIM events are excluded only if all the applicable filters match."
+        },
+        {
+          "component": "CRM-125493",
+          "issue": "We fixed an issue where the Cloud Agent custom reboot script failed because additional parameters were passed in the script."
+        }
+      ],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-27T17:39:25.387990+00:00",
+      "status": "success"
+    }
   },
   "13555574be64": {
     "key": "13555574be64",
@@ -27792,7 +27889,23 @@
       "QF"
     ],
     "month_label": "September 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 12, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we have introduced several improvements to the QFlow Editor. It now features new nodes and functions designed to simplify creating workflows."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-27T17:39:25.387990+00:00",
+      "status": "success"
+    }
   },
   "03f85c02f5e0": {
     "key": "03f85c02f5e0",
@@ -27803,7 +27916,23 @@
       "CRI"
     ],
     "month_label": "September 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "September 02, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "We have updated the Certificate View Reports. We have added several new columns to the Certificate View reports. With this update, you can now view additional details, including"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-27T17:39:25.387990+00:00",
+      "status": "success"
+    }
   },
   "fca65b593f7e": {
     "key": "fca65b593f7e",
