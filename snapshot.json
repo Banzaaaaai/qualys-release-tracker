@@ -28154,7 +28154,27 @@
       "PC"
     ],
     "month_label": "August 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 21, 2024",
+      "features": [
+        {
+          "heading": "Qualys API Server URL",
+          "summary": "The Qualys API URL you should use for API requests depends on the Qualys platform where your account is located.Click here to identify your Qualys platform and get the API URL. This documentation uses the API server URL for Qualys US Platform 1…"
+        },
+        {
+          "heading": "What’s New?",
+          "summary": "We have enhanced compliance scan option profile to allow you to remove compliance scan data for hosts that are not found alive. A dead host is unreachable—it didn't respond to any of our pings. Typically, you would want to avoid reporting dead…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-28T16:23:58.212089+00:00",
+      "status": "success"
+    }
   },
   "9252a1c04494": {
     "key": "9252a1c04494",
@@ -28164,7 +28184,35 @@
       "Conn"
     ],
     "month_label": "August 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 20, 2024",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "Connector 2.4 brings updates to AWS connectors and bug fixes."
+        },
+        {
+          "heading": "Common Features",
+          "summary": "We have introduced a new validation feature designed to protect service accountconnectors from accidental deletion. This enhancement ensures the integrity of your Snapshot-based scan configurations by preventing the unintentional removal of…"
+        },
+        {
+          "heading": "Amazon Web Services",
+          "summary": "With Connector 2.4.0, you can select additional regions when configuring an AWS connector. This new support allowsorganizations to leverage AWS’s expanding infrastructure while ensuring all their assets are monitored and protected effectively,…"
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "Tokens introduced for AWS and Azure connectors."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-28T16:23:58.212089+00:00",
+      "status": "success"
+    }
   },
   "79a7236aaaf2": {
     "key": "79a7236aaaf2",
@@ -28185,7 +28233,43 @@
       "TC"
     ],
     "month_label": "August 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 28, 2024",
+      "features": [
+        {
+          "heading": "What’s New?",
+          "summary": "TotalCloud 2.11.0 brings updates to Insights, CDR, Resources and Controls."
+        },
+        {
+          "heading": "Common Features",
+          "summary": "Common features introduced to the TotalCloud application in this release."
+        },
+        {
+          "heading": "Amazon Web Service",
+          "summary": "With this release, we have introduced a powerful enhancement to CDR's threat detection capabilities with the integration of AWS GuardDuty. This new feature leverages GuardDuty's advanced threat intelligence to provide comprehensive security…"
+        },
+        {
+          "heading": "Microsoft Azure",
+          "summary": "With this release, we have included support for new resources on the Azure Inventory. The cloud inventory ensures these new resources are assessedagainst the best global compliance standards supported by Qualys, such as NIST, PCI DSS, HIPAA, GDPR,…"
+        },
+        {
+          "heading": "New Tokens",
+          "summary": "With this release, we have introduced support for new tokens."
+        },
+        {
+          "heading": "Control Changes",
+          "summary": "Changes introduced to controls in this release."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-28T16:23:58.212089+00:00",
+      "status": "success"
+    }
   },
   "5f143a9f5c22": {
     "key": "5f143a9f5c22",
@@ -28195,7 +28279,23 @@
       "CAR"
     ],
     "month_label": "August 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 08, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "With this release, we have introduced newParameterized Scripts,which are accessible via the ScriptLibrarytab. This feature allows Manager users to customize the script's parameters to meet specific requirements."
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-28T16:23:58.212089+00:00",
+      "status": "success"
+    }
   },
   "c8ef08c87bbe": {
     "key": "c8ef08c87bbe",
@@ -28216,7 +28316,23 @@
       "EDR"
     ],
     "month_label": "August 2024",
-    "detected_at": "2026-05-18T17:20:41+00:00"
+    "detected_at": "2026-05-18T17:20:41+00:00",
+    "details": {
+      "release_date": "August 09, 2024",
+      "features": [
+        {
+          "heading": "What's New?",
+          "summary": "We have introduced a new enhancement to support custom scans on Windows assets. This enhancement lets you perform customized scans by defining scan criteria directly through the command prompt window. This will enhance your system monitoring and…"
+        }
+      ],
+      "issues_fixed": [],
+      "cves": []
+    },
+    "enrichment": {
+      "attempts": 1,
+      "last_attempt_at": "2026-11-28T16:23:58.212089+00:00",
+      "status": "success"
+    }
   },
   "d4454364c191": {
     "key": "d4454364c191",
